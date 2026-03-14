@@ -1,3 +1,14 @@
+/*
+Megoldás lényege:
+A napfény iránya adott, ezért a hegygerinc pontjait a fényirányra merőleges vetületben vizsgáljuk.
+Egy szakasz akkor árnyékos, ha teljes egészében egy korábban látott (nap felőli) pont mögé kerül;
+részben árnyékos, ha a szakasz egyik része a határ előtt, másik része mögötte van.
+A sweep iránya az alfa előjelétől függ: balról jobbra vagy jobbról balra haladunk, és folyamatosan
+vezetjük a maximális \"árnyékhatár\" értéket.
+
+Idő: O(M)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
