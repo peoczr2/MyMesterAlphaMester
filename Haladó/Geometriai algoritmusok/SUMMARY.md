@@ -34,7 +34,7 @@ Skála:
 | 24 | Zárt poligon készítése | Rendezés, konstrukció | x-monoton (bitonikus) egyszerű poligon konstrukció | 3 | Magyarázat | ✅ kész |
 | 25 | Épület belső udvarai | Téglalap-unió lyukai | Unió komplementjének lyukkomponensei | 5 | Mélyebb megértés | ⏳ következő batch |
 | 26 | Facsemeték bekerítése | Konvex burok / minimális kerítés | Pontok bekerítése minimális határral | 4 | Mélyebb megértés | ⏳ következő batch |
-| 27 | Háromszög | Háromszög-feltételek | Geometriai döntés/konstrukció három pontból | 2 | Magyarázat | ⏳ következő batch |
+| 27 | Háromszög | Háromszög-feltételek | Üres háromszög konstrukció irány-rendezéssel | 2 | Magyarázat | ✅ kész |
 | 28 | Oszlopok | Vetület, takarás | Origóból látható pontok száma irány-normalizálással | 1 | Bevezetés | ✅ kész |
 | 29 | Épület elhagyása | Útvonaltervezés geometriában | Akadályok közti minimális/érvényes út | 4 | Mélyebb megértés | ⏳ következő batch |
 | 30 | Elválasztó egyenes | Szeparáció | Két halmaz lineáris szeparálhatósága | 5 | Mélyebb megértés | ⏳ következő batch |
@@ -53,9 +53,9 @@ Skála:
 | 43 | Szakaszok | Szakaszmetszések | Metszésszám / metsző párok detektálása | 3 | Magyarázat | ⏳ következő batch |
 | 44 | Házak | Árnyék/lefedés | Épületprofil-láthatóság jellegű feladat | 2 | Magyarázat | ⏳ következő batch |
 | 45 | Várfalak száma | Poligon topológia | Várfal-szakaszok összefüggő komponenseinek száma | 3 | Magyarázat | ✅ kész |
-| 46 | Várfalak hossza | Kerület számítás | Határszakaszok teljes hossza | 3 | Magyarázat | ⏳ következő batch |
+| 46 | Várfalak hossza | Kerület számítás | Komponensenkénti falhossz, kívülről befelé rendezve | 3 | Magyarázat | ✅ kész |
 | 47 | Úthálózatbővítés | Geometriai gráfépítés | Nem metsző új élek + elérhetőség javítás | 4 | Mélyebb megértés | ⏳ következő batch |
 
 ## Batch állapot
-- **Elkészült C++ megoldások**: 1, 2, 6, 7, 8, 11, 21, 23, 24, 28, 45
+- **Elkészült C++ megoldások**: 1, 2, 6, 7, 8, 11, 21, 23, 24, 27, 28, 45, 46
 - **Következő batch javaslat**: 3, 4, 5, 9, 10
