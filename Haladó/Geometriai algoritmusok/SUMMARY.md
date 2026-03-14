@@ -28,14 +28,14 @@ Skála:
 | 18 | Poligon | Alap poligon műveletek | Terület, orientáció, konvexitás, metszés alapok | 2 | Bevezetés | ⏳ következő batch |
 | 19 | Poligonok metszése | Poligon clip/metszés | Metsző sokszög számítása, terület/perem | 4 | Mélyebb megértés | ⏳ következő batch |
 | 20 | Szoborpark | Fedés/optimalizálás | Geometriai optimalizálás korlátokkal | 4 | Mélyebb megértés | ⏳ következő batch |
-| 21 | Telek | Alap sokszög | Határ/terület/pozíció döntés | 1 | Bevezetés | ⏳ következő batch |
+| 21 | Telek | Alap sokszög | Szakasz-háromszög metszet és eset-szétválasztás | 1 | Bevezetés | ✅ kész |
 | 22 | Terv | Konstrukciós geometria | Feltételeknek megfelelő síkbeli konstrukció | 2 | Magyarázat | ⏳ következő batch |
-| 23 | Vágás | Felező egyenes / darabolás | Sík vágása egyenessel, részek számolása | 1 | Bevezetés | ⏳ következő batch |
-| 24 | Zárt poligon készítése | Rendezés, konstrukció | Pontokból egyszerű zárt poligon felépítése | 3 | Magyarázat | ⏳ következő batch |
+| 23 | Vágás | Felező egyenes / darabolás | Poligon-útszakasz metszésszám alapján darabszám | 1 | Bevezetés | ✅ kész |
+| 24 | Zárt poligon készítése | Rendezés, konstrukció | x-monoton (bitonikus) egyszerű poligon konstrukció | 3 | Magyarázat | ✅ kész |
 | 25 | Épület belső udvarai | Téglalap-unió lyukai | Unió komplementjének lyukkomponensei | 5 | Mélyebb megértés | ⏳ következő batch |
 | 26 | Facsemeték bekerítése | Konvex burok / minimális kerítés | Pontok bekerítése minimális határral | 4 | Mélyebb megértés | ⏳ következő batch |
 | 27 | Háromszög | Háromszög-feltételek | Geometriai döntés/konstrukció három pontból | 2 | Magyarázat | ⏳ következő batch |
-| 28 | Oszlopok | Vetület, távolság | Szakasz/pont távolság és takarás | 1 | Bevezetés | ⏳ következő batch |
+| 28 | Oszlopok | Vetület, takarás | Origóból látható pontok száma irány-normalizálással | 1 | Bevezetés | ✅ kész |
 | 29 | Épület elhagyása | Útvonaltervezés geometriában | Akadályok közti minimális/érvényes út | 4 | Mélyebb megértés | ⏳ következő batch |
 | 30 | Elválasztó egyenes | Szeparáció | Két halmaz lineáris szeparálhatósága | 5 | Mélyebb megértés | ⏳ következő batch |
 | 31 | Pontok poligonban | Geometriai lekérdezések | Több pont gyors PIP tesztje (logaritmikus/lineáris) | 5 | Mélyebb megértés | ⏳ következő batch |
@@ -52,10 +52,10 @@ Skála:
 | 42 | Szurikáta | Haladó síkgeometria | Láthatóság + optimalizáció kombináció | 5 | Mélyebb megértés | ⏳ következő batch |
 | 43 | Szakaszok | Szakaszmetszések | Metszésszám / metsző párok detektálása | 3 | Magyarázat | ⏳ következő batch |
 | 44 | Házak | Árnyék/lefedés | Épületprofil-láthatóság jellegű feladat | 2 | Magyarázat | ⏳ következő batch |
-| 45 | Várfalak száma | Poligon topológia | Falrészek/komponensek számolása | 3 | Magyarázat | ⏳ következő batch |
+| 45 | Várfalak száma | Poligon topológia | Várfal-szakaszok összefüggő komponenseinek száma | 3 | Magyarázat | ✅ kész |
 | 46 | Várfalak hossza | Kerület számítás | Határszakaszok teljes hossza | 3 | Magyarázat | ⏳ következő batch |
 | 47 | Úthálózatbővítés | Geometriai gráfépítés | Nem metsző új élek + elérhetőség javítás | 4 | Mélyebb megértés | ⏳ következő batch |
 
 ## Batch állapot
-- **Elkészült C++ megoldások**: 1, 2, 6, 7, 8, 11
+- **Elkészült C++ megoldások**: 1, 2, 6, 7, 8, 11, 21, 23, 24, 28, 45
 - **Következő batch javaslat**: 3, 4, 5, 9, 10
