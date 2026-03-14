@@ -12,7 +12,7 @@ Skála:
 | 2 | Autópálya | Konvex burok, tartóegyenes | Egyesített ponthalmaz konvex burka, különböző színű szomszédos burokpont keresése | 3 | Magyarázat | ✅ kész |
 | 3 | Bekerítő háromszög | Pontok, üres háromszög | Fix él + harmadik csúcs keresés, pont-bennevan és „empty triangle” feltétel | 4 | Mélyebb megértés | ⏳ következő batch |
 | 4 | Csomópontok | Síkgráf, útvonal | Nem metsző szakaszokkal erős összefüggőség kialakítása geometriai feltételekkel | 4 | Mélyebb megértés | ⏳ következő batch |
-| 5 | Épület | Téglalap-unió, lyukak | Rács/kompresszió + komponensek, belső udvarok kerület/terület számítás | 4 | Mélyebb megértés | ⏳ következő batch |
+| 5 | Épület | Téglalap-unió, lyukak | Kompresszált söprés + üres komponensek kerület/terület számítás | 4 | Mélyebb megértés | ✅ kész |
 | 6 | Épület kerülete | Sweep line, szegmentfa | Téglalap-unió külső kerület: x-söprés + fedett hossz + szakaszszám | 4 | Mélyebb megértés | ✅ kész |
 | 7 | Fák kivágása | Pont poligonban | Ray casting (sugármetszés) egyszerű ortogonális poligonra | 2 | Magyarázat | ✅ kész |
 | 8 | Futárok | Lineáris mozgás metszése | Időintervallum átfedés + két lineáris pozíciófüggvény metszésvizsgálata | 1 | Bevezetés | ✅ kész |
@@ -57,5 +57,5 @@ Skála:
 | 47 | Úthálózatbővítés | Geometriai gráfépítés | Nem metsző új élek + elérhetőség javítás | 4 | Mélyebb megértés | ⏳ következő batch |
 
 ## Batch állapot
-- **Elkészült C++ megoldások**: 1, 2, 6, 7, 8, 11, 21, 23, 24, 27, 28, 45, 46
-- **Következő batch javaslat**: 3, 4, 5, 9, 10
+- **Elkészült C++ megoldások**: 1, 2, 5, 6, 7, 8, 11, 21, 23, 24, 27, 28, 45, 46
+- **Következő batch javaslat**: 3, 4, 9, 10
