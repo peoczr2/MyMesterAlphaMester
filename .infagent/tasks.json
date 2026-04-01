@@ -1,0 +1,158 @@
+{
+	"tasks": [
+		{
+			"name": "Szülők 1",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/1. A legkvesebb gyerek */. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd hozd létre vagy frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy az 1-es feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/1. A legkvesebb gyerek */. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és az 1-es feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 2",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/2. A legkevesebb testvér/. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 2-es feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/2. A legkevesebb testvér/. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 2-es feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 3",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/3. A legtöbb féltestvér */. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 3-as feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/3. A legtöbb féltestvér */. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 3-as feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 4",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/4. A legtöbb gyerek */. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 4-es feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/4. A legtöbb gyerek */. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 4-es feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 5",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/5. A legtöbb testvér/. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy az 5-ös feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/5. A legtöbb testvér/. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és az 5-ös feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 6",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/6. Ismeretlen szülők */. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 6-os feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/6. Ismeretlen szülők */. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 6-os feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 7",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/7. Közös gyerek */. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 7-es feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/7. Közös gyerek */. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 7-es feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 8",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/8. Szülők */. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 8-as feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/8. Szülők */. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 8-as feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 9",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/9. Testvéreim szülei */. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 9-es feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/9. Testvéreim szülei */. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 9-es feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 10",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/10. Van-e édestestvéred? **/. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 10-es feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/10. Van-e édestestvéred? **/. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 10-es feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		},
+		{
+			"name": "Szülők 11",
+			"agent": "exercise-single-solver",
+            "model": "gpt-5.4-mini",
+            "reasoning-effort": "medium",
+			"approval_mode": "autopilot",
+			"prompt": "Oldd meg pontosan ezt az egy feladatot: Középhaladó/Szülők/11. Van-e féltestvéred? **/. A helyi feladatleírás legyen a forrás, készíts hozzá magyar task.cpp megoldást, futtasd a rendelkezésre álló mintát időkorláttal, majd frissítsd a Középhaladó/Szülők/SUMMARY.md fájlt úgy, hogy a 11-es feladat helyesen szerepeljen benne. Csak ezt az egy feladatot oldd meg.",
+			"evaluator": {
+				"agent": "exercise-format-verifier",
+                "model": "gpt-5.4-mini",
+                "reasoning-effort": "medium",
+				"prompt": "Ellenőrizd pontosan ezt az egy feladatot: Középhaladó/Szülők/11. Van-e féltestvéred? **/. Vizsgáld meg, hogy a task.cpp szerkezete megfelelő-e: legyen magyar megoldási ötletet leíró blokk, utána közvetlenül külön Hint blokk, majd a kód; a fájl legyen fordítható időkorlátos ellenőrzéssel; és a 11-es feladat pontosan egyszer szerepeljen a Középhaladó/Szülők/SUMMARY.md fájlban a megfelelő címmel és kész állapottal"
+			}
+		}
+	]
+}

@@ -1,0 +1,47 @@
+Diákolimpiai Válogatóverseny 2020
+
+3. forduló
+
+Szakaszok
+Adott a síkon M vízszintes és N függőleges szakasz. Bármely két vízszintes szakasznak nincs közös
+pontja. Hasonlóan, bármely két függőleges szakasznak nincs közös pontja.
+Írjunk programot, amely meghatározza azt a függőleges szakaszt, amelynek a legtöbb vízszintes
+szakasszal van közös pontja!
+
+Bemenet
+A standard bemenet első sorában a vízszintes szakaszok száma (1≤M≤50 000), valamint a
+függőleges szakaszok száma (1≤N≤50 000) van. A következő M sor mindegyikében a vízszintes
+szakaszokat leíró x1, x2, y számok vannak: a szakasz bal végpontjának koordinátái (x1,y), a jobb
+végpontjának koordinátái pedig (x2,y) (-109≤x1,x2,y≤109). A következő N sor mindegyikében a függőleges szakasz leírása van (x, y1, y2), a szakasz alsó végpontjának koordinátái (x,y1),
+a felső végpontjának koordinátái pedig (x,y2) (-109≤x,y1,y2≤109). A szakaszok a bemenetnek megfelelően sorszámozottak 1-től M-ig, illetve 1-től N-ig.
+
+Kimenet
+A standard kimenet első sorába annak a függőleges szakasznak a sorszámát kell írni, amelynek a legtöbb vízszintes szakasszal van közös pontja! Több megoldás esetén a legkisebb sorszámút
+kell kiírni! Ha nincs ilyen függőleges szakasz, akkor a 0 számot kell kiírni!
+
+Példa
+Bemenet
+
+Kimenet
+
+3 3
+4 6 1
+1 4 2
+3 6 3
+3 1 4
+5 2 4
+4 0 1
+
+2
+
+Korlátok
+Időlimit: 0.15 mp.
+Memórialimit: 32 MB
+
+Pontozás
+A pontok 10%-a kapható, ha N*M≤10 000 000.
+A pontok további 10%-a kapható, ha N*M≤100 000 000.
+
+1. oldal
+
+
