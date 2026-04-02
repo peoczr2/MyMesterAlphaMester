@@ -1,30 +1,31 @@
 /*
 Megoldási ötlet:
-Legyen az első kód s, a második t. Egy betű másik betűvé alakításának ára a két irány közül a
-kisebb körkörös ábécébeli távolság, mert ugyanazon a helyen végig csak növelő vagy végig csak
-csökkentő lépésekre van szükség. A beszúrás ára 2, a belső törlés ára 2, de az s elejéről levágott
-prefix és a végéről levágott suffix betűi csak 1-1 energiába kerülnek.
+Az olcsó, 1 energiás törlések miatt a végső megoldás mindig három részre bontható:
+1. az első kódból eldobunk egy prefixet olcsón, és a második kód elejére szükség esetén betűket szúrunk be;
+2. utána következik egy valódi középső blokk, ahol már csak a szokásos edit-distance műveletek élnek
+    2-es beszúrási és törlési árral, illetve a körkörös ábécetávolság szerinti átalakítási árral;
+3. végül az első kód megmaradt suffixét olcsón eldobjuk, és a második kód végére még beszúrjuk a hiányzó betűket.
 
-Ezért az optimális szerkesztés három szakaszra bontható:
-1. még nem használtunk fel betűt s-ből, tehát csak olcsó prefix-törléseket és beszúrásokat végzünk;
-2. már bent vagyunk a középső, valóban összeillesztett részben, itt a szokásos súlyozott edit
-    distance lépései élnek;
-3. már nem fogunk több betűt felhasználni s-ből, ezért csak olcsó suffix-törlések és beszúrások
-    maradnak.
+Fontos, hogy a középső blokk elejét és végét is valódi összepárosítás horgonyozza le. Ha a blokk elején vagy
+végén csak beszúrás vagy törlés állna, azt olcsóbban át lehetne tolni az első vagy a harmadik részbe. Emiatt
+elég azt vezetni, hogy egy középső blokkot milyen minimális áron tudunk felépíteni úgy, hogy az s[i-1] és t[j-1]
+betűk össze vannak párosítva, tehát a blokk itt biztosan "értelmesen" végződik.
 
-Dinamikus programozással vezetjük mindhárom szakasz legjobb árát az s első i és t első j betűjére.
-Az "előtte" állapotból olcsó törléssel vagy beszúrással maradhatunk ugyanebben a szakaszban.
-A "középen" állapotban lehet törölni 2-ért, beszúrni 2-ért, illetve az aktuális két betűt
-egymásnak megfeleltetni az átalakítási árral. Az "utána" állapotba akkor lépünk át, amikor a
-középső rész már befejeződött; innen kezdve a törlés ismét 1-be kerül, a beszúrás továbbra is 2.
+Legyen dp[j] az a legkisebb költség az aktuális i sorban, amellyel valamely középső blokk s[...i) és t[...j)
+prefixei között már felépült. Ebből a blokkból az aktuális (i,j) helyen egy parositas érték képződik:
+- vagy egy korábbi blokkot folytatunk, és az új két betűt egymásnak feleltetjük meg;
+- vagy belülről törlések/beszúrások után jutunk ide;
+- vagy itt indul a középső blokk, ekkor a korábbi ár egyszerűen (i-1) + 2*(j-1).
 
-Mindhárom átmenet csak az előző sorból és a bal szomszédból dolgozik, ezért elég soronként három
-darab N+1 hosszú tömb. Az algoritmus időigénye O(M*N), memóriaigénye O(N).
+Ha egy blokk s[i-1] és t[j-1] párral végződik, akkor azonnal teljes megoldást kapunk: a hátralévő m-i darab
+betű olcsó suffix-törlés, a hátralévő n-j darab betű pedig 2-es áru beszúrás. Így minden cellában frissíthető
+a válasz. Az időigény O(M*N), a memóriaigény O(N).
 */
 /*
-Hint 1: || Az olcsó törlések csak az első kód egy prefixén és egy suffixén történhetnek, középen nem. ||
-Hint 2: || Emiatt érdemes három fázist külön kezelni: a középső rész előtt, a középső részben és a középső rész után. ||
-Hint 3: || A középső fázis átmenetei ugyanazok, mint egy súlyozott edit distance-nél: törlés, beszúrás, illetve két betű összepárosítása. ||
+Hint 1: || Az optimális megoldásban a középső "drága" rész két végét mindig egy-egy valódi betűpár rögzíti. ||
+Hint 2: || Ha a középső blokk elején csak törlés vagy beszúrás állna, azt át lehetne tolni az olcsó prefix/suffix részbe. ||
+Hint 3: || Érdemes azt tárolni, hogy egy középső blokk minimális költsége mennyi, ha az aktuális két betű biztosan össze van párosítva. ||
+Hint 4: || Egy lezárt középső blokk után a maradék költség már közvetlenül kiszámolható: olcsó suffix-törlés plusz 2-es áru suffix-beszúrás. ||
 */
 
 #include <algorithm>
@@ -35,8 +36,8 @@ Hint 3: || A középső fázis átmenetei ugyanazok, mint egy súlyozott edit di
 using namespace std;
 
 int atalakitasi_ar(char bal, char jobb) {
-    int elteres = abs(bal - jobb);
-    return min(elteres, 26 - elteres);
+    int kulonbseg = abs(bal - jobb);
+    return min(kulonbseg, 26 - kulonbseg);
 }
 
 int main() {
@@ -45,49 +46,32 @@ int main() {
 
     int m, n;
     string s, t;
-
     cin >> m >> s >> n >> t;
 
     const int VEGTELEN = 1'000'000'000;
 
-    vector<int> elo_elott(n + 1), elo_kozep(n + 1, VEGTELEN), elo_utana(n + 1, VEGTELEN);
-    for (int j = 0; j <= n; ++j) {
-        elo_elott[j] = 2 * j;
-    }
+    vector<int> elozo(n + 1, VEGTELEN);
+    int valasz = m + 2 * n;
 
     for (int i = 1; i <= m; ++i) {
-        vector<int> most_elott(n + 1, VEGTELEN);
-        vector<int> most_kozep(n + 1, VEGTELEN);
-        vector<int> most_utana(n + 1, VEGTELEN);
-
-        most_elott[0] = elo_elott[0] + 1;
-        if (min(elo_kozep[0], elo_utana[0]) < VEGTELEN) {
-            most_utana[0] = min(elo_kozep[0], elo_utana[0]) + 1;
-        }
+        vector<int> aktualis(n + 1, VEGTELEN);
 
         for (int j = 1; j <= n; ++j) {
-            most_elott[j] = min(elo_elott[j] + 1, most_elott[j - 1] + 2);
-
             int ar = atalakitasi_ar(s[i - 1], t[j - 1]);
-            most_kozep[j] = min({
-                elo_kozep[j] + 2,
-                most_kozep[j - 1] + 2,
-                elo_kozep[j - 1] + ar,
-                elo_elott[j - 1] + ar
+
+            int parositas = min(elozo[j - 1], (i - 1) + 2 * (j - 1)) + ar;
+            aktualis[j] = min({
+                parositas,
+                elozo[j] + 2,
+                aktualis[j - 1] + 2
             });
 
-            most_utana[j] = min({
-                min(elo_kozep[j], elo_utana[j]) + 1,
-                min(most_kozep[j - 1], most_utana[j - 1]) + 2,
-                most_kozep[j]
-            });
+            valasz = min(valasz, parositas + (m - i) + 2 * (n - j));
         }
 
-        swap(elo_elott, most_elott);
-        swap(elo_kozep, most_kozep);
-        swap(elo_utana, most_utana);
+        swap(elozo, aktualis);
     }
 
-    cout << min({elo_elott[n], elo_kozep[n], elo_utana[n]}) << '\n';
+    cout << valasz << '\n';
     return 0;
 }

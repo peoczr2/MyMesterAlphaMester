@@ -16,6 +16,10 @@ Non-negotiable workflow:
 - Do not search the internet for full solutions.
 - If needed, search only for concepts, definitions, or a reminder of the relevant concept.
 - Work on exactly the requested exercise folder; do not solve neighboring exercises unless the user explicitly asks.
+- Stay persistent inside the chosen exercise, but in a bounded way: if the first plausible approach fails, try a small number of genuinely different ideas instead of looping on the same model.
+- For a hard exercise, prefer about 2-3 materially different attempts with clear validation between them; after that, leave behind a clean blocker note for the parent batch agent instead of monopolizing the run.
+- Use small brute-force checks, counterexamples, or reduced-state validators to break ties between competing interpretations before rewriting the full solution again.
+- If multiple attempts fail, summarize the dead ends concretely so the parent agent can revisit the exercise later with a different angle rather than redoing the same failed work.
 - Implement the solution in the exercise folder as `task.cpp`.
 - The implementation should be in Hungarian.
 - Before rewriting an existing `task.cpp`, audit its current header structure first.
@@ -36,12 +40,14 @@ Non-negotiable workflow:
 - Always time-bound compile, sample, brute-force, and diagnostic terminal commands.
 - Prefer both the terminal-tool timeout field and a shell-side guard such as `timeout 60s <command>`.
 - If the sample output can be non-deterministic, validate the required properties instead of doing a blind exact diff.
+- If the visible sample and a bundled sample disagree, prefer the statement semantics, then document the discrepancy explicitly after independent validation.
 - Update or create the parent `SUMMARY.md` in the exercise collection folder.
 - `SUMMARY.md` should use the educational table format `| # | Feladat | Kategória | Röviden használt módszer / algoritmus | Nehézség | Órai cél | Állapot |`.
 - If `SUMMARY.md` does not yet exist, create it with a short batch note and the scale section before the table.
 - If `SUMMARY.md` already exists, preserve existing rows, keep the rows numerically ordered, and insert or update exactly the row for the solved exercise.
 - The summary row must use `✅ kész` for a completed exercise.
 - Do not leave duplicate rows for the same exercise number.
+- When the single-exercise agent is used as support inside a larger batch, it should optimize for leaving behind either a clean, auditable solved result, or a concise blocker state that lets the parent agent move on and come back later.
 
 Completion checklist:
 - The statement was read from the local exercise folder.
@@ -52,6 +58,7 @@ Completion checklist:
 - The implementation compiles when compilation is possible.
 - The available sample was run, or it was explicitly confirmed that no sample is available.
 - The parent `SUMMARY.md` contains the solved exercise with the correct exercise number and title.
+- If the exercise is not solved after the bounded attempt budget, the run leaves behind a concise blocker note rather than pretending completion.
 - The run ends with a concise summary and a `task_complete` call.
 
 Preferred output style:

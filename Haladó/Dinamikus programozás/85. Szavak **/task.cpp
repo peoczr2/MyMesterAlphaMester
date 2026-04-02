@@ -1,108 +1,200 @@
 /*
-Megoldás lényege:
-Ha minden betűt egy csak 'A' karakterekből álló szóra cserélünk, akkor a két
-kapott kép pontosan akkor egyezik meg, ha a teljes hossz megegyezik. Ezért elég
-az egyes betűkhöz rendelt hosszakat meghatározni.
+Megoldási ötlet:
+Legyen `x_B` annak a nem üres szónak a hossza, amelyre a `B` betűt helyettesítjük.
+Ha a két bemeneti szó képe megegyezik, akkor a közös kép teljes hossza mindkét oldalról ugyanaz:
 
-Legyen c1[X] és c2[X] az X betű előfordulásszáma a két szóban. Az L közös hossz
-feltétele:
+    sum(cnt1[B] * x_B) = sum(cnt2[B] * x_B).
 
-sum c1[X] * len[X] = sum c2[X] * len[X],   len[X] >= 1.
+Itt `cnt1[B]` és `cnt2[B]` a betű előfordulásszáma az első, illetve a második szóban.
 
-Átrendezve:
+A konkrét helyettesítő szavak betűi valójában nem fontosak: ha találtunk pozitív egész hosszakat,
+akkor minden betűt helyettesíthetünk egyszerűen `x_B` darab `A` betűből álló szóval. Ekkor mindkét
+kép csak `A` betűkből áll, tehát pontosan akkor egyeznek meg, ha a teljes hossz megegyezik. Emiatt
+a feladat egzaktul egy pozitív egész megoldás keresése az előbbi lineáris egyenletre, minimális
+közös hossz mellett.
 
-sum (c1[X] - c2[X]) * len[X] = 0.
+Legyen `d_B = cnt1[B] - cnt2[B]`. Azok a betűk, amelyekre `d_B = 0`, optimálisan 1 hosszúak.
+A pozitív és negatív különbségű betűkön a feltétel így írható át:
 
-Mivel a hosszakat minimalizálni akarjuk, kezdetben minden betűhöz 1-et adunk,
-és csak a szükséges oldalon növelünk. Így egy egyváltozós, korlátlan hátizsák
-DP-t kapunk: az eltérést pontosan ki kell egyenlíteni minimális többlethosszal.
+    sum(d_B * x_B) = T      a pozitív oldalon,
+    sum((-d_B) * x_B) = T   a negatív oldalon.
 
-Az elkészült hosszakból a konkrét helyettesítés egyszerű: minden betű képe legyen
-"A" ismételve a neki kiosztott hossz szerint.
+Ugyanazt a `T` értéket kell mindkét oldalon előállítani. Mindkét oldalra külön unbounded knapsack
+DP-t futtatunk: `dp[t]` a legkisebb bal oldali képhossz, amellyel pontosan `t` hozzájárulás érhető
+el úgy, hogy minden ottani betű legalább egyszer szerepel. A súlyok legfeljebb 200-asak, ezért az
+elérhető maradékosztályok 40000 körül már periodikusan viselkednek; `40200`-ig számolni elegendő az
+optimum lefedéséhez.
 
-Idő: O(26 * |len1-len2|)
+Az optimum az a közös `T`, amelynél a két oldal összköltsége minimális. A konkrét hosszakat a két
+DP elődmutatóiból visszafejtjük, és minden betűhöz `A` ismétlésével kiírjuk a helyettesítő szót.
 */
 /*
-Hint 1: || Nem magukat a helyettesítő szavakat kell először keresni, hanem csak a hosszukat. ||
-Hint 2: || Ha minden kép csak 'A' betűkből áll, akkor az egyenlőséghez csak a teljes hossz számít. ||
-Hint 3: || Az alapértelmezett 1 hossz után csak azon a betűhalmazon kell növelni, amelyik a rövidebb oldalt tudja felhozni. ||
+Hint 1: || Először ne a helyettesítő szavak konkrét betűit keresd, hanem csak azt, milyen hosszúak legyenek. ||
+Hint 2: || Ha minden kép csak `A...A`, akkor az egyezéshez kizárólag a két oldali teljes hossz egyezése kell. ||
+Hint 3: || A pozitív és negatív `cnt1-cnt2` különbségű betűk két oldalát szét lehet választani, és ugyanazt a `T` összeget kell mindkét oldalon előállítani. ||
+Hint 4: || Egy oldal önmagában egy korlátlan hátizsák: pontosan adott súlyt kell elérni minimális hossz-költséggel. ||
 */
 
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
+
+namespace {
+
+constexpr int INF = 1'000'000'000;
+constexpr int LIMIT = 40200;
+
+struct SideItem {
+    int letter;
+    int weight;
+    int cost;
+};
+
+struct SideResult {
+    vector<int> best_cost;
+    vector<int> parent_sum;
+    vector<int> parent_item;
+    int base_weight = 0;
+    int base_cost = 0;
+};
+
+SideResult solve_side(const vector<SideItem>& items) {
+    SideResult result;
+    result.best_cost.assign(LIMIT + 1, INF);
+    result.parent_sum.assign(LIMIT + 1, -1);
+    result.parent_item.assign(LIMIT + 1, -1);
+
+    for (const SideItem& item : items) {
+        result.base_weight += item.weight;
+        result.base_cost += item.cost;
+    }
+
+    if (result.base_weight > LIMIT) {
+        return result;
+    }
+
+    result.best_cost[result.base_weight] = result.base_cost;
+
+    for (int sum = result.base_weight; sum <= LIMIT; ++sum) {
+        if (result.best_cost[sum] == INF) {
+            continue;
+        }
+        for (int index = 0; index < static_cast<int>(items.size()); ++index) {
+            int next_sum = sum + items[index].weight;
+            if (next_sum > LIMIT) {
+                continue;
+            }
+            int next_cost = result.best_cost[sum] + items[index].cost;
+            if (next_cost < result.best_cost[next_sum]) {
+                result.best_cost[next_sum] = next_cost;
+                result.parent_sum[next_sum] = sum;
+                result.parent_item[next_sum] = index;
+            }
+        }
+    }
+
+    return result;
+}
+
+}  // namespace
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    string a, b;
-    cin >> a >> b;
+    string first_word;
+    string second_word;
+    cin >> first_word >> second_word;
 
-    vector<int> cnt1(26, 0), cnt2(26, 0), present(26, 0);
-    for (char ch : a) {
-        cnt1[ch - 'A']++;
-        present[ch - 'A'] = 1;
+    vector<int> count_first(26, 0);
+    vector<int> count_second(26, 0);
+    vector<int> present_letters;
+
+    for (char ch : first_word) {
+        ++count_first[ch - 'A'];
     }
-    for (char ch : b) {
-        cnt2[ch - 'A']++;
-        present[ch - 'A'] = 1;
+    for (char ch : second_word) {
+        ++count_second[ch - 'A'];
     }
 
-    int base_diff = (int)a.size() - (int)b.size();
-    vector<int> len(26, 1);
-
-    if (base_diff != 0) {
-        int need = abs(base_diff);
-        vector<int> weight, cost, letter;
-        for (int i = 0; i < 26; ++i) {
-            int diff = cnt1[i] - cnt2[i];
-            if ((base_diff < 0 && diff > 0) || (base_diff > 0 && diff < 0)) {
-                weight.push_back(abs(diff));
-                cost.push_back(cnt1[i]);
-                letter.push_back(i);
-            }
-        }
-
-        const int INF = 1e9;
-        vector<int> dp(need + 1, INF), parent_sum(need + 1, -1), parent_item(need + 1, -1);
-        dp[0] = 0;
-        for (int sum = 0; sum <= need; ++sum) {
-            if (dp[sum] == INF) {
-                continue;
-            }
-            for (int i = 0; i < (int)weight.size(); ++i) {
-                int next_sum = sum + weight[i];
-                if (next_sum > need) {
-                    continue;
-                }
-                if (dp[sum] + cost[i] < dp[next_sum]) {
-                    dp[next_sum] = dp[sum] + cost[i];
-                    parent_sum[next_sum] = sum;
-                    parent_item[next_sum] = i;
-                }
-            }
-        }
-
-        int cur = need;
-        while (cur > 0) {
-            int item = parent_item[cur];
-            len[letter[item]]++;
-            cur = parent_sum[cur];
+    for (int letter = 0; letter < 26; ++letter) {
+        if (count_first[letter] > 0 || count_second[letter] > 0) {
+            present_letters.push_back(letter);
         }
     }
 
-    long long total = 0;
-    for (int i = 0; i < 26; ++i) {
-        total += 1LL * cnt1[i] * len[i];
+    vector<int> lengths(26, 0);
+    vector<SideItem> positive_items;
+    vector<SideItem> negative_items;
+    int zero_cost = 0;
+
+    for (int letter : present_letters) {
+        int diff = count_first[letter] - count_second[letter];
+        lengths[letter] = 1;
+        if (diff > 0) {
+            positive_items.push_back({letter, diff, count_first[letter]});
+        } else if (diff < 0) {
+            negative_items.push_back({letter, -diff, count_first[letter]});
+        } else {
+            zero_cost += count_first[letter];
+        }
     }
 
-    cout << total << '\n';
-    for (int i = 0; i < 26; ++i) {
-        if (!present[i]) {
+    if (positive_items.empty() && negative_items.empty()) {
+        cout << first_word.size() << '\n';
+        for (int letter : present_letters) {
+            cout << static_cast<char>('A' + letter) << ' ' << 'A' << '\n';
+        }
+        return 0;
+    }
+
+    if (positive_items.empty() || negative_items.empty()) {
+        cout << 0 << '\n';
+        return 0;
+    }
+
+    SideResult positive = solve_side(positive_items);
+    SideResult negative = solve_side(negative_items);
+
+    int best_total = INF;
+    int best_sum = -1;
+    int start_sum = max(positive.base_weight, negative.base_weight);
+    for (int sum = start_sum; sum <= LIMIT; ++sum) {
+        if (positive.best_cost[sum] == INF || negative.best_cost[sum] == INF) {
             continue;
         }
-        cout << char('A' + i) << ' ' << string(len[i], 'A') << '\n';
+        int total = positive.best_cost[sum] + negative.best_cost[sum] + zero_cost;
+        if (total < best_total) {
+            best_total = total;
+            best_sum = sum;
+        }
+    }
+
+    if (best_sum < 0) {
+        cout << 0 << '\n';
+        return 0;
+    }
+
+    int current = best_sum;
+    while (current > positive.base_weight) {
+        int item_index = positive.parent_item[current];
+        ++lengths[positive_items[item_index].letter];
+        current = positive.parent_sum[current];
+    }
+
+    current = best_sum;
+    while (current > negative.base_weight) {
+        int item_index = negative.parent_item[current];
+        ++lengths[negative_items[item_index].letter];
+        current = negative.parent_sum[current];
+    }
+
+    cout << best_total << '\n';
+    for (int letter : present_letters) {
+        cout << static_cast<char>('A' + letter) << ' ' << string(lengths[letter], 'A') << '\n';
     }
 
     return 0;

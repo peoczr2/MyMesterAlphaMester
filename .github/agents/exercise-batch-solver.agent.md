@@ -72,6 +72,9 @@ Non-negotiable workflow:
 Batch-specific behavior:
 - Own the requested numeric range from first exercise to last.
 - Keep a clear notion of the first unresolved exercise and continue until the range is complete.
+- In a long batch, prefer forward progress over getting stuck on one hard exercise too early.
+- If the batch already has a live `SUMMARY.md`, keep it updated during the run, not only at the very end, so deferred items and completed items stay visible.
+- Do not stop just because a few exercises are solved or because you reached a convenient checkpoint; continue until the whole requested range is either solved or explicitly documented as still blocked.
 - Treat a blocking exercise as temporarily deferrable, not as a reason to stall the whole batch for an open-ended amount of time.
 - Use an explicit blocker budget instead of trying to guess subjectively whether you have "thought too much".
 - Mark the exercise as blocked and move on for now if any of these triggers fire:
@@ -81,16 +84,19 @@ Batch-specific behavior:
 - or you keep reproducing the same failure mode such as the same wrong-answer pattern, timeout pattern, or contradiction with the statement.
 - When a blocker is deferred, record it immediately in the relevant `SUMMARY.md` with a non-complete status and a short concrete note about the current obstacle.
 - Keep a small return queue of deferred exercise numbers and revisit them after the next few solvable exercises or after the first full forward pass through the requested range.
+- When revisiting a deferred exercise, use the fact that later solved neighboring exercises may have clarified patterns, state design, or validation strategy; do not assume the second pass must look like the first.
 - On returning to a deferred exercise, do not simply resume the same failing line of thought; first summarize the previous dead ends, then either change the algorithmic model, reduce the claim being tested with a smaller brute-force or counterexample, or use a support subagent for a focused independent derivation.
 - Do not mark the overall batch complete while any requested exercise remains deferred, but also do not let one blocker monopolize the whole run before other solvable exercises are finished.
 - Prefer sequential exercise work: finish one exercise end-to-end before starting the next one, unless there is a deliberate support-task parallelization.
 - The parent agent owns the final implementation decision, validation, `SUMMARY.md`, and the full-range audit.
 - Do not default to subagents for the main solve loop.
 - Use subagents only as support for isolated tasks such as statement extraction, sample lookup, or independent derivation.
+- Prefer the `exercise-single-solver` agent as the focused support mode when exactly one numbered exercise needs a dedicated independent pass, but still keep the parent responsible for the final audit and integration.
 - If a subagent writes or proposes a solution, the parent agent must still read the file, verify the explanation and hints, compile it, run the sample when available, and decide whether to keep or replace it.
 - Never treat unaudited worker output as complete.
 - Do not let subagents update `SUMMARY.md` without a parent audit immediately afterward.
 - Do not trust existing completion claims in comments, summaries, or prior chat state; audit the actual files in the folder.
+- If a blocker survives one return pass, explicitly compare the latest idea against the previous failed ideas before investing in another long attempt.
 - Before completion, run a full-range audit to confirm that every requested `task.cpp` begins with the explanation comment and also contains a contiguous, sequentially numbered hint block directly after it.
 - That final header audit must be structure-based, not phrase-based: verify the first block comment is the explanation and the very next block comment is the sequential `Hint 1`, `Hint 2`, ... block.
 - If some files already existed before the batch, they still must be audited for compliance with this workflow.

@@ -5,7 +5,7 @@ Rövid batch megjegyzés: ez egy munkaközi, teljes tartományt lefedő nyilván
 Skála:
 - `Nehézség`: jelenleg előzetes, főként a mappanév csillagozása alapján becsült érték.
 - `Állapot`: `🟡 task.cpp megvan, audit hátra` = van megoldásfájl, de még kell a fejlécaudit, fordítás és mintaellenőrzés; `⬜ hiányzik task.cpp` = még nincs megoldásfájl; `🟠 feladatértelmezési ellenőrzés kell` = van kísérleti megoldás, de a minta és a szöveg jelenleg ellentmond egymásnak; `⏸️ blokkolt` = próbálkozás történt, de még nincs teljes korlátokra védhető egzakt megoldás; `✅ kész` = a megoldás lefordult, a fejléc rendben van, és a rendelkezésre álló mintákat ellenőriztem.
-- Jelenlegi nyitott lista: `85, 86, 94, 142, 143`.
+- Jelenlegi nyitott lista: `86`.
 
 | # | Feladat | Kategória | Röviden használt módszer / algoritmus | Nehézség | Órai cél | Állapot |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -93,7 +93,7 @@ Skála:
 | 82 | Szállítás - minimális kegkevésbé terhelt kamionnal | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
 | 83 | Szállítás - minimálisan legjobban terhelt kamionnal | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
 | 84 | Számösszegzés | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
-| 85 | Szavak | DP | kísérleti task.cpp megvan, de a minta és a szöveg ellentmondását még tisztázni kell | 2 | Bevezetés | 🟠 feladatértelmezési ellenőrzés kell |
+| 85 | Szavak | DP, sztringek | közös képhossz minimalizálása kétoldali korlátlan hátizsák-DP-vel | 2 | Bevezetés | ✅ kész |
 | 86 | Szerviz | DP, k-szerver egyenesen | az egzakt modell még nyitott; a sűrű path-cover túl nagy, a heurisztikus ág nem elfogadható | 2 | Bevezetés | ⏸️ blokkolt |
 | 87 | Szovegkirako | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
 | 88 | Táblás játék csapdákkal és gyöngyökkel | DP | task.cpp megvan, minta- és fejlécaudit hátra | 1 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
@@ -102,7 +102,7 @@ Skála:
 | 91 | Tukorszavakra bontas | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
 | 92 | Túlélőverseny | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
 | 93 | Tükörszó betűk beszúrásával | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
-| 94 | Tükörszó kezdőszelete betűk törlésével | DP | kísérleti task.cpp megvan, de a prefixre vett döntési logikát újra kell deriválni | 2 | Bevezetés | 🟠 feladatértelmezési ellenőrzés kell |
+| 94 | Tükörszó kezdőszelete betűk törlésével | DP, sztringek | kétvéges törlés-DP suffix array + LCP gyorsítással | 2 | Bevezetés | ✅ kész |
 | 95 | Utazás vonattal | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
 | 96 | Ülőhely igénylés | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
 | 97 | Városnézés | DP | task.cpp megvan, minta- és fejlécaudit hátra | 2 | Bevezetés | 🟡 task.cpp megvan, audit hátra |
@@ -150,8 +150,8 @@ Skála:
 | 139 | Adószedő | DP | task.cpp megvan, minta- és fejlécaudit hátra | 3 | Magyarázat | 🟡 task.cpp megvan, audit hátra |
 | 140 | Táblatörés | DP | task.cpp megvan, minta- és fejlécaudit hátra | 3 | Magyarázat | 🟡 task.cpp megvan, audit hátra |
 | 141 | Főzet készítés | DP | task.cpp megvan, minta- és fejlécaudit hátra | 3 | Magyarázat | 🟡 task.cpp megvan, audit hátra |
-| 142 | Mutáció | DP | task.cpp megvan, fordul; az egyik mintára eltérést mutat, ezért még auditálni kell a specifikációt | 3 | Magyarázat | 🟠 feladatértelmezési ellenőrzés kell |
-| 143 | Repülők indulása és érkezése | DP | task.cpp megvan, de a második mintára eltér az elvárt kimenettől, ezért újra kell auditálni | 3 | Magyarázat | 🟠 feladatértelmezési ellenőrzés kell |
+| 142 | Mutáció | DP, sztringek | prefix/suffix végtörlést és középső edit-blokkot kezelő O(MN) DP; a csomagolt 2. minta valószínűleg hibás | 3 | Magyarázat | ✅ kész |
+| 143 | Repülők indulása és érkezése | DP, ütemezés | prefix-DP minimális költséggel és legkorábbi utolsó idővel | 3 | Magyarázat | ✅ kész |
 | 144 | Mutációk | DP, szerkesztési távolság | gördülő soros DP olcsó széltörléssel és korlátozott átírásokkal | 3 | Magyarázat | ✅ kész |
 | 145 | Repülők indulása és érkezése korlátokkal | DP, ütemezés | induló/érkező prefix-DP várakozásállapottal | 3 | Magyarázat | ✅ kész |
 | 146 | Misztikus táblázat | DP, kombinatorika | inklúzió-kizárás a szomszédos sorpárokra, derangement szorzóval | 3 | Magyarázat | ✅ kész |
