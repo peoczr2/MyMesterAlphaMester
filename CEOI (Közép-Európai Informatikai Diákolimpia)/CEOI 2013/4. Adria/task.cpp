@@ -1,67 +1,56 @@
 /*
 Megoldás lényege:
-Két sziget között egy lépés akkor lehetséges, ha a sorszámuk és az oszlopszámuk is szigorúan ugyanabba az irányba változik.
-A legrövidebb út hossza nem korlátozódik 3-ra: a szigetek cikcakkos láncot is alkothatnak, ilyenkor 4 vagy több lépés kell.
-Ezért minden kezdő szigetből szélességi bejárást (BFS) futtatunk, és a távolságok összegét adjuk ki.
-A bejárásban a csúcs szomszédai a nála északnyugatra és délkeletre lévő, még nem látogatott szigetek; ezeket a sorszám szerint rendezett szigeteken két szegmensfa (oszlopszám minimum) adja meg, a meglátogatott szigetet törléssel kivesszük.
-Időigény: O(N^2 log N); a teljes korlátnál (N <= 250 000) ez már túl lassú, ott gyorsabb ötlet kell.
+Az A=(a,b) szigetből 1 lépésben pontosan az északnyugati és a délkeleti negyed szigetei érhetők el; az elérhetetlenek egy jobb felső sarok (sor <= a, oszlop >= b) és egy bal alsó sarok (sor >= a, oszlop <= b) szigetei.
+Ha a jobb felső elérhetetlen sarok éppen a T(P,Q) = {sor <= P, oszlop >= Q} téglalap, akkor egy y sziget ebből a következő lépésben akkor érhető el, ha van (már elért) sziget, amelynek oszlopa < Q és sora < y sora, vagy amelynek sora > P és oszlopa > y oszlopa.
+Így az új elérhetetlen rész ismét ilyen sarok: T(min(P, a Q-nál kisebb oszlopú szigetek legkisebb sora), max(Q, a P-nél nagyobb sorú szigetek legnagyobb oszlopa)), és ez csak (P,Q)-tól függ, a kiinduló szigettől nem.
+A távolságösszeg az egyes lépések után még el nem ért szigetek számának összege, ezért F(P,Q) = (szigetek száma T(P,Q)-ban) + F(következő sarok) a teljes 2500x2500-as rácson kiszámolható (sor szerint növekvő, oszlop szerint csökkenő sorrendben, mert a következő sarok sora nem nagyobb, oszlopa nem kisebb).
+A bal alsó sarok ugyanez a sor és oszlop felcserélésével, ezért ugyanazt a függvényt hívjuk a felcserélt koordinátákra.
+Az A szigetre a válasz (N-1) + (F(a,b)-1) + (F'(b,a)-1), ahol a -1 azért kell, mert A maga mindkét kezdő sarokban benne van.
+Időigény: O(N + K^2), ahol K = 2500 a koordináták korlátja; memória kb. 75 MB.
 */
 /*
-Hint 1: || Két sziget között a lépés csak akkor lehetséges, ha mindkét koordináta szigorúan ugyanabba az irányba változik. Ezért a szomszédok két átlós negyedsíkban vannak, és a távolság nem korlátozódik 3-ra: próbálj ki egy cikcakkos láncot. ||
-Hint 2: || Mivel a távolság tetszőlegesen nagy lehet, kezdő szigetenként szélességi bejárást futtass, és a sziget összes távolságát add össze. ||
-Hint 3: || A sorban a szomszédok keresése gyors legyen: a szigeteket sorszám szerint rendezd, így az északnyugati és délkeleti tartomány sorszám szerint prefix és szuffix. Az oszlopszámra egy minimum-szegmensfa adja a feltételt, és a már látogatott szigetet töröld belőle. ||
+Hint 1: || Egy lépés után mely szigetek maradnak elérhetetlenek? Rajzold le: a jobb felső és a bal alsó "sarok" szigetei. Nézd meg, hogy a következő lépés után is sarok alakú marad-e az elérhetetlen rész. ||
+Hint 2: || A jobb felső {sor <= P, oszlop >= Q} sarokból a következő lépés után a {sor <= min(P, X), oszlop >= max(Q, Y)} sarok marad, ahol X a Q-nál kisebb oszlopú szigetek legkisebb sora, Y a P-nél nagyobb sorú szigetek legnagyobb oszlopa. Ez két egydimenziós tömbből adódik. ||
+Hint 3: || A távolságok összege = sum_k (k lépés után még el nem ért szigetek száma). Ezért F(P,Q) = darab(P,Q) + F(következő sarok) dinamikus programozással kiszámolható az egész rácsra; a bal alsó sarokhoz cseréld fel a sorokat és az oszlopokat. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
 
-// Minimum-szegmensfa: egy pozíció törölhető (az értéke INT_MAX lesz), és egy
-// tartományban meg lehet keresni egy olyan pozíciót, ahol az érték x-nél kisebb.
-struct MinSeg {
-    int n = 0;
-    vector<int> t;
+const int K = 2500;  // a koordináták felső korlátja
 
-    void build(int v, int l, int r, const vector<int>& a) {
-        if (l == r) {
-            t[v] = a[l];
-            return;
+// Minden szigetre visszaadja F(r, c)-t: lépésenként összeadva, hány sziget van még
+// az elérhetetlen jobb felső sarokban (az első sarokban a kiinduló sziget is benne van).
+vector<long long> cornerSums(const vector<int>& r, const vector<int>& c) {
+    int n = r.size();
+    // minRowLeft[q]: a q-nál kisebb oszlopú szigetek legkisebb sora (ha nincs: K+1)
+    // maxColBelow[p]: a p-nél nagyobb sorú szigetek legnagyobb oszlopa (ha nincs: 0)
+    vector<int> minRowLeft(K + 2, K + 1), maxColBelow(K + 2, 0);
+    vector<vector<int>> cnt(K + 2, vector<int>(K + 2, 0));
+    for (int i = 0; i < n; ++i) {
+        minRowLeft[c[i] + 1] = min(minRowLeft[c[i] + 1], r[i]);
+        maxColBelow[r[i] - 1] = max(maxColBelow[r[i] - 1], c[i]);
+        cnt[r[i]][c[i]]++;
+    }
+    for (int q = 2; q <= K + 1; ++q) minRowLeft[q] = min(minRowLeft[q], minRowLeft[q - 1]);
+    for (int p = K - 1; p >= 0; --p) maxColBelow[p] = max(maxColBelow[p], maxColBelow[p + 1]);
+
+    // cnt[p][q]: szigetek száma a {sor <= p, oszlop >= q} sarokban
+    // F[p][q] = cnt[p][q] + F[következő sarok]
+    vector<vector<long long>> F(K + 2, vector<long long>(K + 2, 0));
+    for (int p = 1; p <= K; ++p) {
+        for (int q = K; q >= 1; --q) {
+            cnt[p][q] += cnt[p - 1][q] + cnt[p][q + 1] - cnt[p - 1][q + 1];
+            int np = min(p, minRowLeft[q]);
+            int nq = max(q, maxColBelow[p]);
+            F[p][q] = cnt[p][q];
+            if (np != p || nq != q) F[p][q] += F[np][nq];
         }
-        int m = (l + r) / 2;
-        build(2 * v, l, m, a);
-        build(2 * v + 1, m + 1, r, a);
-        t[v] = min(t[2 * v], t[2 * v + 1]);
     }
-    void init(const vector<int>& a) {
-        n = a.size();
-        t.assign(4 * n, INT_MAX);
-        build(1, 0, n - 1, a);
-    }
-    void erase(int v, int l, int r, int pos) {
-        if (l == r) {
-            t[v] = INT_MAX;
-            return;
-        }
-        int m = (l + r) / 2;
-        if (pos <= m) erase(2 * v, l, m, pos);
-        else erase(2 * v + 1, m + 1, r, pos);
-        t[v] = min(t[2 * v], t[2 * v + 1]);
-    }
-    void erase(int pos) {
-        erase(1, 0, n - 1, pos);
-    }
-    int find(int v, int l, int r, int ql, int qr, int x) const {
-        if (qr < l || r < ql || t[v] >= x) return -1;
-        if (l == r) return l;
-        int m = (l + r) / 2;
-        int res = find(2 * v, l, m, ql, qr, x);
-        if (res != -1) return res;
-        return find(2 * v + 1, m + 1, r, ql, qr, x);
-    }
-    // egy pozíció a [ql, qr] tartományból, ahol az érték < x; -1, ha nincs
-    int find(int ql, int qr, int x) const {
-        if (ql > qr) return -1;
-        return find(1, 0, n - 1, ql, qr, x);
-    }
-};
+
+    vector<long long> res(n);
+    for (int i = 0; i < n; ++i) res[i] = F[r[i]][c[i]];
+    return res;
+}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -72,67 +61,9 @@ int main() {
     vector<int> r(n), c(n);
     for (int i = 0; i < n; ++i) cin >> r[i] >> c[i];
 
-    // a szigetek sorszám (majd oszlopszám) szerint rendezett sorrendben
-    vector<int> ord(n);
-    iota(ord.begin(), ord.end(), 0);
-    sort(ord.begin(), ord.end(), [&](int a, int b) {
-        return r[a] != r[b] ? r[a] < r[b] : c[a] < c[b];
-    });
+    vector<long long> upRight = cornerSums(r, c);   // jobb felső sarok
+    vector<long long> downLeft = cornerSums(c, r);  // bal alsó sarok (felcserélt koordinátákkal)
 
-    vector<int> R(n), C(n), negC(n), pos(n), lo(n), hi(n);
-    for (int p = 0; p < n; ++p) {
-        R[p] = r[ord[p]];
-        C[p] = c[ord[p]];
-        negC[p] = -C[p];
-        pos[ord[p]] = p;
-    }
-    for (int p = 0; p < n; ++p) {
-        // lo[p]: az első pozíció, ahol a sorszám nem kisebb R[p]-nél; hi[p]: ahol nagyobb
-        lo[p] = lower_bound(R.begin(), R.end(), R[p]) - R.begin();
-        hi[p] = upper_bound(R.begin(), R.end(), R[p]) - R.begin();
-    }
-
-    MinSeg lessC, greaterC;  // lessC az oszlopszámokat, greaterC a negatívjukat tartalmazza
-    vector<int> dist(n);
-    for (int s = 0; s < n; ++s) {
-        lessC.init(C);
-        greaterC.init(negC);
-        fill(dist.begin(), dist.end(), -1);
-
-        queue<int> q;
-        int sp = pos[s];
-        dist[sp] = 0;
-        lessC.erase(sp);
-        greaterC.erase(sp);
-        q.push(sp);
-
-        while (!q.empty()) {
-            int p = q.front();
-            q.pop();
-            // északnyugat: sorszám kisebb és oszlopszám kisebb
-            while (true) {
-                int x = lessC.find(0, lo[p] - 1, C[p]);
-                if (x == -1) break;
-                dist[x] = dist[p] + 1;
-                lessC.erase(x);
-                greaterC.erase(x);
-                q.push(x);
-            }
-            // délkelet: sorszám nagyobb és oszlopszám nagyobb
-            while (true) {
-                int x = greaterC.find(hi[p], n - 1, negC[p]);
-                if (x == -1) break;
-                dist[x] = dist[p] + 1;
-                lessC.erase(x);
-                greaterC.erase(x);
-                q.push(x);
-            }
-        }
-
-        long long sum = 0;
-        for (int p = 0; p < n; ++p)
-            if (dist[p] > 0) sum += dist[p];
-        cout << sum << '\n';
-    }
+    for (int i = 0; i < n; ++i) cout << (n - 1) + (upRight[i] - 1) + (downLeft[i] - 1) << '\n';
     return 0;
 }

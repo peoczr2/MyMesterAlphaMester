@@ -26,7 +26,7 @@
       "konvex négyszög",
       "szögrendezés"
     ],
-    "note": "Megjegyzés: a megoldás helyes (271 véletlen és degenerált kis blokkon brute-force egyezik: library/.work/NT-006/t9/brute9.py), de O(N²): a be2 mintán ~1,3 s, a 0,1 s időlimit nem teljesül, N=10^5-re nem fut le. O(N log N)-es ötletet nem találtam. Több helyes kimenet van, ezért a minta-eltérés nem hiba; a kimenetek érvényességét library/.work/NT-006/t9/check9_big.py ellenőrzi (be1, be2: érvényes). Feltételezés: ha q a ponthalmaz eleme, a válasz 0 0 0 0; a négyszög csúcsai szigorúan konvexek.",
+    "note": "Megjegyzés: a megoldás helyes (271 véletlen és degenerált kis blokkon brute-force egyezik: library/.work/NT-006/t9/brute9.py), de O(N²): a be2 mintán ~1,3 s, a 0,1 s időlimit nem teljesül, N=10^5-re nem fut le. Később egy O(N log² N)-es, az ellenőrzött véletlen eseteken helyes megoldás is készült (library/.work/FAST/FAST-05/new_task.cpp), de véletlen, K = 10, N = 10^5 bemeneten ~0,33 s, így a 0,1 s időlimitet (a teljes teszt-fájlra értve) még mindig nem tartja, és diákoknak nehezen követhető; ezért nem került a katalógusba. Több helyes kimenet van, ezért a minta-eltérés nem hiba; a kimenetek érvényességét library/.work/NT-006/t9/check9_big.py ellenőrzi (be1, be2: érvényes). Feltételezés: ha q a ponthalmaz eleme, a válasz 0 0 0 0; a négyszög csúcsai szigorúan konvexek.",
     "minta": "kézi",
     "blocked": true,
     "solved_by": "haiku",

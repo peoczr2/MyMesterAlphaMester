@@ -339,6 +339,33 @@
   "samples_total": 3
  },
  {
+  "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/4. Adria",
+  "category": "CEOI (Közép-Európai Informatikai Diákolimpia)",
+  "topic": "CEOI 2013",
+  "topic_dir": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013",
+  "topic_title": "CEOI 2013",
+  "number": 4,
+  "title": "Adria",
+  "folder": "4. Adria",
+  "stars": 0,
+  "difficulty": 4,
+  "goal": "Mélyebb megértés",
+  "method": "Az elérhetetlen szigetek két sarokban maradnak; sarok-állapotokon DP a teljes rácson",
+  "category_label": "Rácsos dinamikus programozás",
+  "tags": [
+   "dp",
+   "geometria",
+   "legrövidebb-út",
+   "prefixösszeg"
+  ],
+  "note": "A régi O(N² log N) megoldás N ≤ 250 000-nél túl lassú volt. Az új O(N + K²) rácson DP, 0,14 s a legnagyobb bemeneten (határ 2 s). Független BFS-ellenőrzővel 800 összefüggő eset egyezett.",
+  "has_pdf": true,
+  "has_solution": true,
+  "status": "kész",
+  "samples_passed": 2,
+  "samples_total": 2
+ },
+ {
   "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/5. Játéktábla",
   "category": "CEOI (Közép-Európai Informatikai Diákolimpia)",
   "topic": "CEOI 2013",

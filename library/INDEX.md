@@ -2,11 +2,11 @@
 
 > Generált fájl (`library/tools/catalog.py`). A használatát és a tanóra-tervezést lásd: [README.md](README.md).
 
-Összesítés: 2376 feladat · ✅ kész 1824 · ❌ hibás 0 · 🟡 kézi 429 · 🟡 nincs minta/speciális 123 · ⬜ nincs megoldás 0
+Összesítés: 2377 feladat · ✅ kész 1825 · ❌ hibás 0 · 🟡 kézi 429 · 🟡 nincs minta/speciális 123 · ⬜ nincs megoldás 0
 
 | Gyűjtemény | Témakörök | Feladatok | ✅ kész | ❌ hibás | ⬜ nincs megoldás |
 |---|---:|---:|---:|---:|---:|
-| [CEOI (Közép-Európai Informatikai Diákolimpia)](<../CEOI (Közép-Európai Informatikai Diákolimpia)/SUMMARY.md>) | 7 | 34 | 19 | 0 | 0 |
+| [CEOI (Közép-Európai Informatikai Diákolimpia)](<../CEOI (Közép-Európai Informatikai Diákolimpia)/SUMMARY.md>) | 7 | 35 | 20 | 0 | 0 |
 | [Haladó](<../Haladó/SUMMARY.md>) | 20 | 1071 | 692 | 0 | 0 |
 | [Kezdő](<../Kezdő/SUMMARY.md>) | 12 | 554 | 513 | 0 | 0 |
 | [Középhaladó](<../Középhaladó/SUMMARY.md>) | 14 | 519 | 446 | 0 | 0 |
@@ -16,7 +16,7 @@
 
 - [CEOI 2005](<../CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2005/SUMMARY.md>) — 5 feladat, ✅ 2, ❌ 0, ⬜ 0
 - [CEOI 2012](<../CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2012/SUMMARY.md>) — 6 feladat, ✅ 0, ❌ 0, ⬜ 0
-- [CEOI 2013](<../CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/SUMMARY.md>) — 3 feladat, ✅ 2, ❌ 0, ⬜ 0
+- [CEOI 2013](<../CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/SUMMARY.md>) — 4 feladat, ✅ 3, ❌ 0, ⬜ 0
 - [CEOI 2016](<../CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2016/SUMMARY.md>) — 2 feladat, ✅ 1, ❌ 0, ⬜ 0
 - [CEOI 2017](<../CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2017/SUMMARY.md>) — 6 feladat, ✅ 5, ❌ 0, ⬜ 0
 - [CEOI 2018](<../CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2018/SUMMARY.md>) — 6 feladat, ✅ 5, ❌ 0, ⬜ 0

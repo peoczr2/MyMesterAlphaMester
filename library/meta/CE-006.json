@@ -1,20 +1,21 @@
 [
   {
     "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/4. Adria",
-    "method": "Szélességi bejárás minden kezdőpontból, a szomszédok keresése szegmensfával.",
-    "category": "Gráf: BFS, szegmensfa",
+    "method": "Az elérhetetlen szigetek két sarokban maradnak; sarok-állapotokon DP a teljes rácson",
+    "category": "Rácsos dinamikus programozás",
     "difficulty": 4,
-    "goal": "Magyarázat",
+    "goal": "Mélyebb megértés",
     "tags": [
-      "gráf",
-      "bfs",
-      "szegmensfa"
+      "dp",
+      "geometria",
+      "legrövidebb-út",
+      "prefixösszeg"
     ],
-    "note": "Megjegyzés: a megoldás minden bemenetre helyes (a távolság 3-nál nagyobb is lehet, az 1. mintában 4), de O(N^2 log N) időigénye miatt a 2 mp-es időlimitet nagy N-re (N ≤ 250 000) nem tartja; gyorsabb algoritmus kell.",
+    "note": "A régi O(N² log N) megoldás N ≤ 250 000-nél túl lassú volt. Az új O(N + K²) rácson DP, 0,14 s a legnagyobb bemeneten (határ 2 s). Független BFS-ellenőrzővel 800 összefüggő eset egyezett.",
     "minta": "",
-    "blocked": true,
-    "solved_by": "haiku",
-    "problematic": true
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
   },
   {
     "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/5. Játéktábla",
