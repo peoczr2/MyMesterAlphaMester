@@ -1,1 +1,3 @@
 library/.work/
+__pycache__/
+*.pyc
