@@ -115,7 +115,7 @@ A `method` ne tartalmazzon státuszt („task.cpp megvan”, „hátra van”, s
 
 - Csak a batch-fájlban megadott mappákban dolgozz. Más feladatot ne oldj meg, más mappát ne módosíts.
 - A feladatmappában lévő **meglévő fájlt nem törölsz és nem mozgatsz** (pl. `task_bin`, `task`, `task.out`, `minta.zip`, `feladat.pdf`), még akkor sem, ha binárisnak látszik. Ezek a repó részei. Ha egy binárist „kidobnál”, hagyd helyben; a munkakönyvtárba (`library/.work/`) csak másolatot készíts.
-- `SUMMARY.md`, `library/INDEX.md`, `library/catalog.*`, a `.github/` és a `library/tools/` mappa nem a te feladatod: ezeket nem módosíthatod.
+- `SUMMARY.md`, `library/INDEX.md`, `library/catalog.*` és a `library/tools/` mappa nem a te feladatod: ezeket nem módosíthatod.
 - Ne használj git-írást (commit, add, stash, checkout). Ne telepíts csomagot.
 - Kész megoldást az internetről ne keress; fogalmakat, definíciókat szabad.
 - Minden parancs legyen időkorlátos (`timeout …`). A fordítás és a futtatás is.
