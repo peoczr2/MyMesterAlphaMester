@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/6. Kanna *",
+    "method": "Állapotgráf Dijkstra-val, teljes öntésekkel; A-beli mennyiségenként a legkisebb idő",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "állapottér"],
+    "note": "A teljes öntés modellt az 1. minta igazolja (tetszőleges mennyiségű öntésnél 2 5 jönne ki). A 2. minta A=9588, a feladat szerint A≤1000; a megoldás ezt is helyesen adja. Mért idő A=B=C=1000 esetén: kb. 0,01 mp, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/7. Kastély *",
+    "method": "Rácsgráf Dijkstra-val: az átlós (rejtekajtós) lépés plusz R költséggel",
+    "category": "Gráf: rácsgráf",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "rács", "dijkstra"],
+    "note": "Az átlósan szomszédos termek közötti rejtekajtó modelljét az 1. minta igazolja (780). A minta.zip egyik párjában a számokat 0xA0 (nem szóköz) bájt választja el, ezért a beolvasás minden nem számjegyet elválasztónak tekint. Mért idő 500×500 rácson: kb. 0,05 mp, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/8. Legnagyobb átviteli sebességű útvonal **",
+    "method": "Élek csökkenő sebesség szerint DSU-val összevonva; az első összekötéskor a sebesség a válasz",
+    "category": "Gráf: minimax út",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dsu", "feszítőfa"],
+    "note": "A 2. minta más, de optimális útvonalat tartalmaz; a feladat szerint bármelyik megoldás elfogadható. Az ellenőrző program (library/.work/HA-041/perf8/check8.py) igazolja: a végpontok helyesek, minden él létezik, és a minimum 3639, ami a minta értéke. A 2. minta s≤7000 sebességeket is tartalmaz (a feladat s≤1000). Mért idő M=1 000 000 élnél: kb. 0,23 mp, az időlimit 0,6 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/9. Raktár *",
+    "method": "Fa gyökerezése, részfa-súlyok, gyökércsere-képlettel minden csúcs költsége",
+    "category": "Fa: újragyökerezés",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "újragyökerezés", "súlyozott"],
+    "note": "Mért idő N=30 000 esetén (lánc és véletlen fa): kb. 0,01 mp, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -5,7 +5,11 @@ szamoljuk visszafele: dp[i][j] a legjobb ut hossza az adott cellabol indulva.
 Minden cellahoz eltesszuk a kovetkezo cellat is, majd a legnagyobb dp-ju
 kezdocellat kiirjuk.
 */
-
+/*
+Hint 1: || A lépések csak délre vagy keletre mehetnek, ezért a rácson nincs kör: a cellák irányított körmentes gráfot alkotnak, a feladat ebben egy leghosszabb út keresése. ||
+Hint 2: || Számold ki minden (i, j) cellára, hogy onnan indulva hány lépésből álló könnyű út lehetséges. Ez csak a jobb és a lefelé szomszédtól függ, ezért a rácsot jobbról, alulról felfelé dolgozd fel. ||
+Hint 3: || A kezdőcella a legnagyobb értékű cella, a végpont pedig úgy kapható meg, hogy minden cellához eltárolod a választott következő lépést, és végigköveted az utat. Több azonos hosszú út esetén bármelyik elfogadható. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

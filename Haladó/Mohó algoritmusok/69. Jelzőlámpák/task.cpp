@@ -1,6 +1,7 @@
 /*
-Feladat: A jelzőlámpákat a pályán a lehető legkevesebb robotnak kell elhelyeznie úgy, hogy minden robot csak jobbra vagy lefelé léphessen.
-Ötlet: A pontokat sor szerint, azon belül oszlop szerint rendezzük, és a lehető legkevesebb nemcsökkenő oszlopsorozatra bontjuk őket. Minden robot egy ilyen lánc.
+Megoldás lényege: Egy robot útja mentén a sor- és az oszlopindex is csak nőhet, így egy robot lámpái olyan pontsorozatot alkotnak, amelyben bármely két pont összehasonlítható. A szükséges robotok száma ezért a pontok legkevesebb láncra bontása, amit Dilworth tétele szerint a legnagyobb olyan halmaz mérete ad, amelyben semelyik két pont nem összehasonlítható. A mohó megoldás a pontokat sor, azon belül oszlop szerint rendezi, és minden pontot ahhoz a lánchoz fűz, amelynek utolsó oszlopa a legnagyobb, de még nem nagyobb az aktuális oszlopnál; ha nincs ilyen, új robot kell. Az időigény O(K log K).
+*/
+/*
 Hint 1: || Egy robot útja mentén mind a sor-, mind az oszlopszám csak nőhet. ||
 Hint 2: || A sor szerinti rendezés után csak az oszlopokra kell figyelni. ||
 Hint 3: || Mindig a legnagyobb még nem nagyobb végű láncba tedd az aktuális lámpát. ||

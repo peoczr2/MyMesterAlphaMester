@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/1. Állatkert *",
+    "method": "Fokszámok számolása élenként, majd egy bejárás a fokszám-1 csúcsok és a maximum keresésére.",
+    "category": "Gráf: fokszám",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "fokszám", "számlálás"],
+    "note": "A 0 bejárat nem állat, ezért a legtöbb utat kereső maximumból kimarad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/10. Hálózat átmérője *",
+    "method": "Szülő-gyerek sorrend miatt fordított sorrendű bejárás, csúcsonként a két leghosszabb ág összege.",
+    "category": "Fa: átmérő",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["fa", "átmérő", "dinamikus programozás"],
+    "note": "Az átmérő élekben értendő. A mintákon és 300 véletlen kis teszten brute-force egyezés.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/11. Hálózat központja *",
+    "method": "Két szélességi bejárással megkeressük az átmérő végpontjait, a központ az átmérő felénél van.",
+    "category": "Fa: központ",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["fa", "központ", "bfs"],
+    "note": "A minta.zip ki2.txt fájlja „6 0” tartalmat ad, a feladat viszont egyetlen számot kér. A program 6-ot ír, egy független brute-force (minden csúcsból BFS, excentricitás) szerint 6 az egyetlen központ (excentricitás 17), így a minta második száma hibás. Az első mintán (3) a kimenet egyezik. A validátor ezért hibás állapotot jelez.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/12. Hír a legtöbb tanulónak *",
+    "method": "Irányított gráf, minden tanulóból BFS, a legtöbb elérhető tanuló közül a legkisebb sorszám.",
+    "category": "Gráf: BFS elérhetőség",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "bfs", "elérhetőség"],
+    "note": "Több azonos eredmény esetén a legkisebb sorszámú tanulót írjuk ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

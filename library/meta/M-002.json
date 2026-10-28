@@ -1,0 +1,52 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/73. Fantasztikus feladat",
+    "method": "Mozgó ablak prímtényező-számlálókkal, frissítésnél az érintett ablakok lokális újraszámolása",
+    "category": "Mozgó ablak, prímtényezők",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "ablak",
+      "prímtényező",
+      "frissítés"
+    ],
+    "note": "A magyarázat a kód működését írja le: prímenkénti számlálók a mozgó ablakban, frissítésnél csak az érintett ablakok újraszámolása. A minta 2/2; 300 véletlen kis esetben egyezik egy brute-force ellenőrzővel. Helyi időmérés: egy maximális eset (N=10000, K=1000, M=1000) 0,17 s, T=10 esetén 1,7 s, az időlimit 0,3 mp. Ha az időlimit a teljes tesztfájlra vonatkozik, a T=10-es teszt túllépi.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/76. Járatok **",
+    "method": "Rácskoordináták számítása fabejárással, oszloponként a legmélyebb terem kiválasztása",
+    "category": "Fabejárás, koordináták",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "bejárás",
+      "koordináta"
+    ],
+    "note": "A minta 2/2; a kód a mintával azonos sorrendet ad, a feladat szerint a sorrend tetszőleges. Fán O(N log N) időben fut.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/78. Barlangrendszer **",
+    "method": "BFS koordinátákkal, bejárt termek jelölésével, oszloponként a legmagasabb terem",
+    "category": "Gráfbejárás, koordináták",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bfs",
+      "koordináta",
+      "bejárás"
+    ],
+    "note": "A régi megoldás a bejárt termek jelölése nélkül exponenciális volt; az új, koordinátás BFS O(N+M). A minta.zip be1 eltér a PDF példától (M=9, hiányzik a „2 B 5” sor), a PDF példája egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
+  }
+]

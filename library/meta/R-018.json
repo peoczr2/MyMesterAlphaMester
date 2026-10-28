@@ -1,0 +1,34 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/37. Négyszög",
+    "method": "Kis N-re négyesek, nagy N-re egy szinte egyenes előjel- és arányvizsgálata",
+    "category": "Geometria: konvex négyszög",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "konvex négyszög",
+      "egyenes"
+    ],
+    "note": "N>=7 esetre az állítást (kimerítő kereséssel ellenőrizve kis rácsokon, bizonyítás nélkül): nincs konvex négyszög => van N-2 pontos egyenes. A régi konvex-burkos megoldás hibás volt (belső négyzet ellenpélda).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/38. Szuperhuszár",
+    "method": "Lépésvektorok kúpjának ellenőrzése: 2D-ben a szögrések legyenek mind 180 foknál kisebbek",
+    "category": "Geometria: szögrendezés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "szögrendezés",
+      "konvex burok"
+    ],
+    "note": "Egyirányú egyenesre eső lépéseknél mindkét irány kell. A régi megoldás zárt szakaszt fogadott el és a nulla lépést nem kezelte; a javítás brute force-szal (kúp-alapú) ellenőrizve.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

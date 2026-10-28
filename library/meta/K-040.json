@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/17. Műholddal kétszer lefényképezett területek **",
+    "method": "Kétdimenziós különbségi tömb és prefixösszeg, a pontosan kétszer fedett cellák számolása",
+    "category": "Megszámolás: rácsfedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "2d-tömb", "prefixösszeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/18. Kissé szeles napok száma *",
+    "method": "Egyetlen végigolvasás, a 0-nál nagyobb, M-nél kisebb sebességek számlálása",
+    "category": "Megszámolás: feltétel",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "számláló"],
+    "note": "A szélcsend (S = 0) kizárását a minta igazolja (be1: a két nulla napot nem számoljuk, kimenet 1). A K-t nem használjuk, mert a kimenet a feladatszöveg szerint csak a kis szeles napok száma; a mintákban K mindig 3, ezért K szerepe nem ellenőrizhető.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/19. Közös territóriummal rendelkező madarak **",
+    "method": "Négyzetek sarokkoordinátáinak összehasonlítása, minden madárra az összes többi madárral",
+    "category": "Megszámolás: tartalmazás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "téglalap", "tartalmazás"],
+    "note": "Azonos territóriumú madárpárnál a szó szerinti értelmezés szerint mindkét madár számít (j ≠ i); a mintákban nincs ilyen eset, így ez nem ellenőrizhető.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/2. Balaton befagyott napjainak száma *",
+    "method": "Egyetlen végigolvasás, a pozitív vastagságú mérések számlálása",
+    "category": "Megszámolás: feltétel",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "számláló"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

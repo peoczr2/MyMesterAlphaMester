@@ -1,6 +1,8 @@
 /*
-Feladat: N asztalt lehet két vásár között szétosztani (x és y, x+y<=N). Adott az 1..N asztalhoz tartozó összbevétel mindkét vásárra, asztalonként fix K költséggel. Maximum hasznot kell adni, holtversenyben minimális összasztalszám, azon belül maximális első vásári asztalszám.
-Ötlet: Profit(x,y)=A[x]+B[y]-K*(x+y), ahol A[0]=B[0]=0. Egy fix x-hez csak a y<=N-x tartomány legjobb B[y]-K*y értéke kell. Ezt prefix-maximumként előre kiszámítjuk (holtversenyben kisebb y). Utána minden x-re O(1)-ben kapunk jelöltet, és a feladat szerinti tie-breakkel kiválasztjuk az optimumot.
+Megoldás lényege:
+A profit P(x,y) = (A[x] - K*x) + (B[y] - K*y), a két vásár tehát független, így minden x-hez csak az y <= N-x tartomány legjobb B[y] - K*y értéke kell. Ezt prefixmaximummal O(1)-ben lekérdezzük, egyenlőség esetén a kisebb y marad. Minden x-re így megkapjuk a legjobb párt, majd a feladat szerinti tie-breakkel (kevesebb asztal, azonos esetben nagyobb első szám) választunk. A bevétel konkávitása itt nem kell, a prefixmaximum általánosan is helyes. Az időigény O(N).
+*/
+/*
 Hint 1: || Vezesd be az A'[x]=A[x]-Kx és B'[y]=B[y]-Ky értékeket. ||
 Hint 2: || x-hez csak a y<=N-x legjobb B' prefix kell. ||
 Hint 3: || Tie-break: előbb kevesebb asztal, azon belül nagyobb x. ||

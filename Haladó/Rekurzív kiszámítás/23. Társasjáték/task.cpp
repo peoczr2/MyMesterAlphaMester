@@ -5,11 +5,10 @@ Visszafelé számolva minden mezőből a következő és az ugrómező közül a
 választjuk.
 
 */
-
-// Hint 1: || A gráf itt DAG, ezért elég hátulról előre számolni. ||
-// Hint 2: || A következő mező mindig elérhető, az ugrás csak akkor, ha valóban előre visz. ||
-// Hint 3: || A válasz a startmezőből induló legrövidebb út hossza. ||
-
+/*
+Hint 1: || A gráf itt DAG, ezért elég hátulról előre számolni. ||
+Hint 2: || A következő mező mindig elérhető, az ugrás csak akkor, ha valóban előre visz. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

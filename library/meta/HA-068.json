@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/28. Mérőkannák *",
+    "method": "Állapottér (a, b) szélességi bejárása a lépések visszakövetésével",
+    "category": "Állapottér-keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "bfs", "állapottér"],
+    "note": "A feladat szerint bármelyik helyes kimérés megadható; a kimenet szimulációval és a lépésszám minimalitásával ellenőrizve.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/29. Modul **",
+    "method": "Függőségi gráf előre- és visszirányú bejárása, szerzők halmaza",
+    "category": "Gráf: bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bejárás", "függőség"],
+    "note": "A feladat szerint több megoldás esetén bármelyik kiírható (C-rész); a B-részben M saját szerzője kimarad, ezt a minta igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/3. 80 nap alatt a Föld körül ***",
+    "method": "Dijkstra (város, fordulatszám) állapotokon, a hosszúsági elmozdulás nyomon követésével",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "dijkstra", "körbefordulás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/30. Mozi ***",
+    "method": "Elrendezések (permutációk) szélességi bejárása szomszédos cserékkel",
+    "category": "Állapottér-keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["állapottér", "bfs", "permutáció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

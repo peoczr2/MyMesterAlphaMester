@@ -1,55 +1,56 @@
 /*
-Feladat: A megadott benzinkutak közül a lehető legkevesebbet kell tankolásra használni, hogy az autó eljusson a célig.
-Ötlet: Sorban haladva mindig gyűjtjük a már elérhető kutak tankolásait, és amikor már nem érnénk el a következő pontot, a legnagyobb eddig látott tankolást vesszük fel. Ez a klasszikus "max heap" mohó.
-Hint 1: || Amíg elérsz a következő állomásig, addig gyűjtsd a közben látott kutak tankolásait. ||
-Hint 2: || Ha kevés a benzin, mindig a legnagyobb korábban látott tankolást használd fel. ||
-Hint 3: || A cél az, hogy ugyanannyi megtett út mellett a lehető legkevesebbszer állj meg. ||
-*/
+Feladat: Egy K km-es úton B liter benzinnel indulunk, a fogyasztás 100 km-enként L liter. Útközben N helyen
+tankoltunk (a kút távolsága a kiindulástól Ti, a tankolt mennyiség Mi), a tankolások sorrendjében megadva.
+Hány tankolás lett volna minimálisan elég ahhoz, hogy az autó eljusson a célig?
 
+Értelmezés (a hivatalos tesztek alapján): a tankolásokat a megadott sorrendben vesszük igénybe, tehát az
+első j tankolást tartjuk meg, és a legkisebb olyan j a válasz, amellyel az autó minden kúthoz és a célig is
+eljut. (Ha a kutakat szabadon válogathatnánk, a 2. minta válasza 455 lenne, a tesztek viszont 466-ot várnak,
+ami pontosan ennek az értelmezésnek felel meg. A feladat példájára mindkét értelmezés 2-t ad.)
+
+Ötlet (mohó szimuláció): sorban haladunk a kutakon, végül a célon. Ha a benzin nem elég a következő pontig,
+akkor a még fel nem használt tankolások közül a legkorábbit (a következőt a sorban) is felhasználjuk, és ezt
+addig ismételjük, amíg elég nem lesz. Ha egy rövidebb előtag elég lenne, akkor egyszer sem akadnánk el úgy,
+hogy a következő tankolásra szükség legyen, ezért a felhasznált tankolások száma pontosan a legkisebb jó j.
+Benzin helyett "liter*100" egységben számolunk, így a d km megtételéhez d*L egység kell, nincs tört.
+Lépésszám: O(N).
+*/
+/*
+Hint 1: || A benzint számold liter*100 egységben: így d km megtételéhez pontosan d*L egység kell, nem lesz tört szám. ||
+Hint 2: || Haladj sorban a kutakon és végül a célon. Ha a meglévő benzin nem elég a következő pontig, vond be a következő még fel nem használt tankolást. ||
+Hint 3: || A tankolásokat csak a megadott sorrendben lehet bevonni, és csak olyat, amelynek a kútjához már eljutottál. Ha ez is kevés, az út nem tehető meg. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    // beolvasás
+    int k, n, b, l;
+    cin >> k >> n >> b >> l;
+    vector<int> t(n), m(n);
+    for (int i = 0; i < n; i++) cin >> t[i] >> m[i];
 
-    long long K, N, B, L;
-    cin >> K >> N >> B >> L;
-    vector<pair<long long, long long>> st(N);
-    for (int i = 0; i < N; ++i) cin >> st[i].first >> st[i].second;
+    // a megállási pontok: a K-nál nem távolabbi kutak, végül maga a cél
+    vector<int> pont;
+    for (int i = 0; i < n && t[i] <= k; i++) pont.push_back(t[i]);
+    int kutak = (int)pont.size();
+    pont.push_back(k);
 
-    sort(st.begin(), st.end());
-    priority_queue<long long> pq;
-    long long fuel = B * 100;
-    long long used = 0;
-    long long prev = 0;
-    int ptr = 0;
-
-    auto needTo = [&](long long dist) { return dist * L; };
-
-    while (prev < K) {
-        long long nextPos = K;
-        if (ptr < N) nextPos = min(nextPos, st[ptr].first);
-
-        while (ptr < N && st[ptr].first <= prev + fuel / L) {
-            pq.push(st[ptr].second * 100);
-            ++ptr;
+    long long benzin = (long long)b * 100;  // eddig összesen kapott benzin, liter*100 egységben
+    int felhasznalt = 0;                    // az első ennyi tankolást használjuk fel
+    for (int i = 0; i <= kutak; i++) {
+        // a pont[i]-ig összesen pont[i]*L egység kell; ha kevés, jöhet a következő tankolás
+        while (benzin < (long long)pont[i] * l) {
+            if (felhasznalt >= i) {  // csak már elért kútnál lehet tankolni
+                cout << -1 << '\n';  // nem lehet eljutni (a feladat szerint nem fordul elő)
+                return 0;
+            }
+            benzin += (long long)m[felhasznalt] * 100;
+            felhasznalt++;
         }
-
-        long long target = nextPos;
-        if (fuel >= needTo(target - prev)) {
-            fuel -= needTo(target - prev);
-            prev = target;
-            if (prev == K) break;
-            continue;
-        }
-
-        if (pq.empty()) break;
-        fuel += pq.top();
-        pq.pop();
-        ++used;
     }
 
-    cout << used << '\n';
+    // kiírás
+    cout << felhasznalt << '\n';
     return 0;
 }

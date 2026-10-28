@@ -1,10 +1,13 @@
 /*
- * Átváltás 10-es és -10-es számrendszer között __int128 használatával.
- 
+Megoldás lényege:
+A 10-es számrendszerből a -10-es alapú felírás ismételt maradékos osztással készül, ahol a C++ negatív maradékát kell korrigálni: ha a maradék negatív, 10-et adunk hozzá, és a hányadost 1-gyel növeljük, így a számjegy mindig 0 és 9 közé esik.
+A -10-es számrendszerből való visszaváltás a Horner-séma szerint történik: az eredmény minden lépésben -10-szeresére szorzódik, és hozzáadódik a következő számjegy.
+Mivel az értékek legfeljebb 10^20 nagyságúak, a számoláshoz __int128 típus elegendő, a két átváltás a számjegyek számával arányos időben fut.
+*/
+/*
 Hint 1: || A `-10` alapú átváltásnál ugyanúgy ismételt osztás működik, csak a negatív maradékot korrigálni kell. ||
 Hint 2: || Ha az osztás maradéka negatív lenne, adj hozzá 10-et, és növeld az új hányadost 1-gyel, hogy a számjegy 0 és 9 közé essen. ||
 */
-
 #include "../common.hpp"
 
 static __int128 parse_int128(const string& s) {

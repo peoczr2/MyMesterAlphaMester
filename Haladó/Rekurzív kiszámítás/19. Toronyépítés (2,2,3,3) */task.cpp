@@ -1,14 +1,11 @@
 /*
 Megoldás lényege:
-Most az elemek 2 és 3 magasak, mindkettőből kétféle szín van. A toronyépítés ezért
-T(n)=2T(n-2)+2T(n-3) rekurziót követ.
-
+Az elemek közül a piros és a zöld 2 magas, a sárga és a fehér 3 magas, és mindkét magasságból kétféle szín van. A legfelső elem szerinti felbontásból T(n)=2T(n-2)+2T(n-3) adódik, ahol T(k) a k magasságú tornyok száma. A T(0)=1, T(1)=0 és T(2)=2 kezdőértékekből a sorozatot egy tömbben, 20210108-cal vett maradékkal számoljuk. Az időigény O(N), a memóriaigény szintén O(N).
 */
-
-// Hint 1: || 1 magas elemek már nincsenek, ezért az első nem nulla érték a 2 magasságnál jelenik meg. ||
-// Hint 2: || A 2 magas elemből kétféle, a 3 magasból szintén kétféle darab van. ||
-// Hint 3: || Figyelj arra, hogy N=1 esetén semmilyen torony nem építhető. ||
-
+/*
+Hint 1: || Nincs 1 magas elem, ezért N=1 esetén nem építhető torony; az első nem nulla érték a 2 magasságnál van. ||
+Hint 2: || A 2 magas elemből kétféle, a 3 magasból szintén kétféle darab van. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

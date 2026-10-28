@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/20. Szoborpark ***",
+    "method": "Bal alsó sarok paraméterezése, szögtartományok különbségtömbbel, prefix-összeggel.",
+    "category": "Szögtartomány, különbségtömb",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "szögtartomány",
+      "különbségtömb"
+    ],
+    "note": "Feltevés: a bal alsó sarok koordinátái nemnegatívak (a feladat ezt nem mondja ki explicit).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/21. Telek *",
+    "method": "Szakasz és háromszög metszete egész számokkal: t-intervallum és előjelek alapján.",
+    "category": "Szakasz és háromszög metszése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "metszés",
+      "háromszög"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/22. Terv **",
+    "method": "Szögintervallumok, mohó intervallum-kiválasztás a jobb végpont szerint.",
+    "category": "Intervallum-kiválasztás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "intervallum",
+      "mohó"
+    ],
+    "note": "Több helyes kimenet van: be1-re a program 8 9 5 1-et ad a minta 2 3 4 8 helyett, be2-re ugyanazt a halmazt adja más sorrendben; mindkettő érvényes. A helyességet szögintervallum-alapú ellenőrzővel és független DP-vel (be1: 4, be2: 6) igazoltam.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/23. Vágás *",
+    "method": "Az AB szakasz és a sokszög éleinek metszéspontjait számoljuk, paritással.",
+    "category": "Sokszög és egyenes metszése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "sokszög",
+      "metszés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/24. Zárt poligon készítése **",
+    "method": "Az LR egyenes két oldalán lévő láncok összefűzése: x-monoton, nem metsző poligon.",
+    "category": "Egyszerű poligon építése",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "poligon",
+      "rendezés"
+    ],
+    "note": "Több helyes kimenet van: be1 egyezik a mintával; be2-re a program 6 8 10 7 9 3 1 2 4 5 sorrendet ad, a minta 1..10 sorrendje is nem metsző poligon. A helyességet szakasz-metszés-ellenőrzővel igazoltam, több száz véletlen (kollineáris pontokat is tartalmazó) teszten is.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/25. Épület belső udvarai ***",
+    "method": "Sweep sávonként üres futásokkal, szakasz-fával, csempékhez DSU-val a kerület és terület összegzésére.",
+    "category": "Sweep és unió-keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "sweep",
+      "unió-keresés"
+    ],
+    "note": "Nincs minta-kimenet (a minta.zip csak be1/be2 bemenetet tartalmaz), ezért kézzel futtattam: be1: 2 udvar, kerület 100 200, terület 500 1500; be2: 400 udvar. Független rácsos BFS-referenciával egyezik, több száz véletlen teszten is; a legnagyobb véletlen teszten (N=10000) kb. 0,04 mp.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

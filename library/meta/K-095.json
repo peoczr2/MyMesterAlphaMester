@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/4. Gazda szilvafái *",
+    "method": "Összefüggő szakaszok száma: nyárfaszám szerint csökkenő rendezés, mohó összeadás",
+    "category": "Rendezés, mohó kiválasztás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "mohó", "összegzés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/5. Inverz orgonasíp elrendezés *",
+    "method": "Csökkenő rendezés, majd váltakozva a sor elejére és végére töltés",
+    "category": "Rendezés, sorozat átrendezése",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "tömb", "mutató"],
+    "note": "A PDF példa kimenetében a 3. érték '2'-ként szerepel (elírás); a minta.zip ki1.txt szerint a helyes sorozat a 3-at tartalmazza, a megoldás ezt adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/6. Kalapácsvető verseny *",
+    "method": "Dobássorok csökkenő rendezése, lexikografikus összehasonlítás, stabil rendezés",
+    "category": "Rendezés, egyedi összehasonlítás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "komparátor", "lexikografikus"],
+    "note": "A minta.zip ki1.txt első 13 sora (rendezett dobássorok és 'csere:i-j' sorok) nincs a feladatszövegben, és a ki2.txt is csak a sorszámsort tartalmazza, ezért a ki1.txt utolsó sora (2 5 4 3 1 6) a helyes kimenet; a megoldás ezt adja, és a library/.work/K-095/check_6.py párosításos ellenőrzője igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/7. Kalapácsvető verseny selejtezője *",
+    "method": "H-t elérők és a legjobbak K-ig; csökkenő rendezés dobás szerint",
+    "category": "Rendezés, kiválasztás küszöbbel",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "kiválasztás", "küszöb"],
+    "note": "Egyenlő dobás a döntő határán nincs kimondva: a K. helyen egyenlő dobásúak közül a kisebb sorszám kerül be, és az egyenlő dobásúak sorrendje is sorszám szerinti; a mintákban ilyen eset nincs.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

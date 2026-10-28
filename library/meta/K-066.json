@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/20. Legnagyobb lélekszámú helység a Kihívás napján *",
+    "method": "Maximumkiválasztás egy bejárásban: a legnagyobb lélekszám sorszámának és résztvevőinek nyilvántartása.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "kiválasztás", "sorszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/21. Legnagyobb mennyiségű teavásárlás *",
+    "method": "Maximumkiválasztás egy bejárásban, a legnagyobb egyedi mennyiség sorszámának követésével.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "kiválasztás", "sorszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/22. Legnagyobb mértékben nőtt légszennyeződés *",
+    "method": "Napi különbség (este − reggel) maximuma egy bejárásban, 0 kezdőértékkel.",
+    "category": "Maximális különbség",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "különbség", "feltétel"],
+    "note": "A mintafájl ellentmond a feladatszövegnek: a be2 (1000 nap) ki2 szerint a helyes válasz 224, de a 224. napon a növekedés este − reggel = 249 − 205 = 44. A szöveg szerinti legnagyobb növekedés a 279. napon van (247 − 53 = 194), a program ezt adja. A 224 a legmagasabb esti szennyeződés napja (249), tehát a minta más mennyiséget mér. A saját kimenetet független Python brute-force ellenőrzővel igazoltam. Ha egy nap sem nőtt, a kimenet 0 (a szöveg „ha nincs ilyen” ága). A PDF-ben az időlimit és a memórialimit mértékegysége fel van cserélve (32 MB / 0,1 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/23. Legrövidebb útfelújítás *",
+    "method": "Minden felújítás hosszának (V − K + 1) minimuma egy bejárásban.",
+    "category": "Minimumkiválasztás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "intervallum", "kiválasztás"],
+    "note": "A feladatszöveg a hosszt nem definiálja pontosan. A PDF-példa szerint a [13, 14] felújítás hossza 2, ami V − K + 1 (mindkét kilométerkő beleszámít); V − K szerint 1 lenne. A két további minta (be1: 3, be2: 120) ugyanezt a szabályt igazolja, ezért így számolunk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

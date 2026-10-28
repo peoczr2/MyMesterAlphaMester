@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/24. Meleg napok száma *",
+    "method": "Egyetlen menetben, beolvasás közben számoljuk a K-nál nagyobb méréseket.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/25. Múzeum szolgálatában lévő őrök száma napi leosztásban **",
+    "method": "Különbségtömb: kezdőnapon +1, a végét követő napon -1, majd prefixösszeg.",
+    "category": "Megszámolás, prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "prefixösszeg", "tömb"],
+    "note": "A minta.zip be-fájljaiban előfordul E=0 határ (pl. „0 7”), a feladat szerint pedig 1≤E,U≤M. A megoldás a határt az [1, M] tartományra vágja; a minta kimenete így egyezik, ezért a mintát nem tekintem hibásnak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/26. Nagy hőingadozású napok száma *",
+    "method": "Naponként a maximum és minimum különbségét vizsgáljuk, és számoljuk a legalább 10 fokosakat.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "különbség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/27. Nyelvórán egyesek száma *",
+    "method": "Beolvasás közben egy számlálóval megszámoljuk az 1-es osztályzatokat.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

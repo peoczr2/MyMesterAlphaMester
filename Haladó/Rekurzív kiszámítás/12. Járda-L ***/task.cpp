@@ -1,17 +1,16 @@
 /*
 Megoldás lényege:
-Két soros járdán 1x1-es lapokkal és L-alakú triominokkal dolgozunk. Profile DP-vel
+Két soros járdán 1x2-es (dominó) lapokkal és L-alakú triominókkal dolgozunk. Profile DP-vel
 haladunk balról jobbra: az állapot megmondja, mely cellák vannak már lefedve a jelenlegi
 profilban.
 
 */
-
-// Hint 1: || A bal szélső még üres cellát mindig valamilyen, onnan induló lappal kell lefedni. ||
-// Hint 2: || Az L-lapnak csak a 2 soros táblán belül érvényes elforgatásai számítanak. ||
-// Hint 3: || A jelenlegi oszlop teljesülése után a profilt egy oszloppal balra kell csúsztatni. ||
-
+/*
+Hint 1: || A bal szélső még üres cellát mindig valamilyen, onnan induló lappal kell lefedni. ||
+Hint 2: || Az L-lapnak csak a 2 soros táblán belül érvényes elforgatásai számítanak. ||
+Hint 3: || Ha az aktuális oszlop már teljesen le van fedve, a profilt egy oszloppal balra kell csúsztatni. ||
+*/
 #include <bits/stdc++.h>
-#include "../bigint.hpp"
 using namespace std;
 
 using Mask = int;
@@ -91,14 +90,14 @@ int main() {
     };
 
     auto trans = buildTransitions(shapes);
-    vector<BigInt> dp(64), ndp(64);
+    vector<long long> dp(64), ndp(64);
     dp[0] = 1;
 
     for (int col = 0; col < N; ++col) {
         fill(ndp.begin(), ndp.end(), 0);
         int rem = min(3, N - col);
         for (int s = 0; s < 64; ++s) {
-            if (dp[s].isZero()) continue;
+            if (dp[s] == 0) continue;
             map<Mask, long long> cnt;
             // Re-run the same local generation for the exact start state.
             vector<vector<Mask>> cover(2);

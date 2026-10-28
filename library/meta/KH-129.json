@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/8. Árvizek csúcsmagassága növekszik-e? ***",
+    "method": "Balról jobbra bejárás: az árvizek csúcsai, majd szigorú növekedés ellenőrzése a szomszédos párokon.",
+    "category": "Szakaszok, monotonitás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "szakasz", "monotonitás"],
+    "note": "Időlimit 0,1 mp; N = 10 000 bemeneten mért futásidő kb. 0,00 s. A PDF-példa (csúcsok 1100 1200 1200, NEM) és a minta mindkét párja egyezik. Szigorú növekedés: az egyenlő csúcs NEM. K = 1 esetén a válasz IGEN (a minta igazolja).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/9. Árvizek csúcsmagasságainak helyei és értékei ***",
+    "method": "Balról jobbra bejárás az árvizek kigyűjtésére, majd árvizenként a csúcs keresése első előfordulással.",
+    "category": "Szakaszok, maximum",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["árvíz", "szakasz", "maximum"],
+    "note": "Időlimit 0,1 mp; N = 10 000 bemeneten mért futásidő kb. 0,00 s. A PDF-példa (csúcsok: 1 1100, 5 1200, 7 1200) és a minta mindkét párja egyezik. Egyenlő csúcs esetén az első előfordulás a helyes.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

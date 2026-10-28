@@ -1,12 +1,13 @@
+/*
+Megoldás lényege:
+A kérdések egy bináris fát alkotnak: a kérdések a belső csúcsok, a kitalálandók a levelek. A fát DFS-sel (veremmel) járjuk be, és menet közben számoljuk az út IGEN és NEM válaszainak számát. A levélben a címke az IGEN-ek és NEM-ek számának különbsége, ennek előfordulását hash-táblában gyűjtjük. A végén a legtöbbször előforduló címkét választjuk, döntetlennél a legkisebbet. Mivel N belső csúcs és N+1 levél van, az időigény O(N) (hash-táblával átlagosan).
+*/
+/*
+Hint 1: || Nem kell tudni, melyik kérdéseken át jutottunk el egy kitalálandóhoz, csak az út IGEN és NEM válaszainak száma számít. Ezt a két számlálót bejárás közben, minden lépésnél növeld a megfelelő ágon. ||
+Hint 2: || Ha egy sorszám N-nél nagyobb, az már kitalálandó: ott nem megyünk tovább, hanem a címke (IGEN-szám mínusz NEM-szám) gyakoriságát növeljük. Az eredményben a leggyakoribb címke kell; döntetlennél a kisebb címke. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A kérdéssor egy teljes bináris fa. DFS-sel bejárjuk, és minden levélhez
-    kiszámoljuk, hogy a gyökértől odáig vezető úton mennyi IGEN és NEM válasz
-    szerepelt. A címke ezek különbsége, a feladat pedig a leggyakoribb címkét
-    kéri.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

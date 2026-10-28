@@ -1,11 +1,16 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
+Megoldás lényege:
     Minden napszámos keresete egyszerűen a ledolgozott napok száma szorozva a
     napi bérrel. A teljes költség ezek összege, a legtöbbet kereső pedig az,
     akinek a keresete maximális; holtversenyben a több napot dolgozó előnyt élvez.
+    Ha ez is egyenlő, bármelyik megfelelő, itt az első marad.
 */
+/*
+Hint 1: || Egy napszámos ledolgozott napjainak száma Végi - Kezdi + 1, a keresete ennek és a napi bérnek a szorzata. A teljes költség ezeknek az összege, így a sorokat egyszer kell beolvasni. ||
+Hint 2: || Közben tartsd nyilván az eddigi legnagyobb keresetet, a hozzá tartozó sorszámot és munkanapszámot. Egyenlő keresetnél akkor frissíts, ha ennek a napszámosnak több munkanapja van. Az összeg akár 10^10 is lehet, ezért 64 bites típust használj. ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/17. Kevés könyv *",
+    "method": "Lineáris bejárás, feltétel szerinti kiválogatás sorszámmal",
+    "category": "Lineáris kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "szöveg", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/18. Magánhangzók **",
+    "method": "Magánhangzók közti szakaszok: azonos betűk összevonása, majd digrafok egy hangként számolása",
+    "category": "Szövegfeldolgozás: hangok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szöveg", "magánhangzó", "karakterek"],
+    "note": "A digráflista (cs, dz, dzs, gy, ly, ny, sz, ty, zs) a magyar írásmódból származik, a feladatszöveg csak „…”-tal utal rá. A mintákban az sz és a kk, ss+sz előfordulása ellenőrzött, a többi digráf nem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/19. Mássalhangzók *",
+    "method": "Balról jobbra bejárás, mássalhangzó-futamok hosszának számlálása",
+    "category": "Szövegfeldolgozás: futamok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szöveg", "mássalhangzó", "számlálás"],
+    "note": "A feladatszöveg nem mondja meg, hogy az y magánhangzó-e: itt mássalhangzónak számít (a mintákban nincs y).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/2. Állatevő állatok **",
+    "method": "Két bejárás: az evők halmaza, majd az állatot evő élőlények kiválogatása",
+    "category": "Halmaz szerinti kiválogatás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kiválogatás", "halmaz", "párok"],
+    "note": "A kimenet sorrendje az evő első előfordulása szerinti. A feladat tetszőleges sorrendet enged, de mindkét minta ezt a sorrendet adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

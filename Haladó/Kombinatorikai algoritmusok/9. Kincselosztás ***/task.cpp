@@ -1,7 +1,18 @@
 /*
-   Kincselosztás: a csökkenően rendezett felosztások lexikografikus sorrendjét
-   partiíciószámláló DP-vel kezeljük. Az I-edik felosztást unrankeléssel,
-   az adott felosztás előzőjét és következőjét rang alapján állítjuk elő.
+Megoldás lényege:
+A felosztásokat csökkenő lexikografikus sorrendben számozzuk, az első az [N] felosztás.
+Ha az első tag f, a maradék N-f szám f-nél nem nagyobb tagokból áll, ezek száma egy
+partíciószámláló táblából (p(n,k): n olyan felbontása, amelyben minden tag legfeljebb k)
+kiszámolható. Az I-edik felosztást az első tagtól lefelé haladva, a csoportok méreteinek
+levonásával (unrankeléssel) állítjuk elő. Egy felosztás sorszámát (rangját) pozíciónként
+számoljuk: összeadjuk, hány nagyobb következő tagú felosztás áll előtte. A következő felosztás
+a rang+1, az előző a rang-1 sorszámú, ezért mindkettőt unrankeléssel kapjuk. Az időigény
+és a memória O(N²), N ≤ 150 esetén ez messze az időlimit alatt marad.
+*/
+/*
+Hint 1: || Csoportosítsd a felosztásokat az első tag szerint: ha az első tag f, a maradék N-f az f-nél nem nagyobb tagokból áll. A csoportok mérete előre kiszámolható, és az I-edik felosztás megkeresése a nagy első tagtól lefelé haladva a csoportok méreteinek levonásával történik. ||
+Hint 2: || Legyen p(n,k) azon felbontások száma, amelyekben minden tag legfeljebb k. Ekkor p(0,k)=1, p(n,0)=0, ha n>0, és p(n,k) = p(n,k-1) + p(n-k,k): vagy nincs k-s tag a felbontásban, vagy van legalább egy. A tábla N ≤ 150 esetén 64 bites egész számba elfér, memoizálással O(N²) lépésben kitölthető. ||
+Hint 3: || Egy felosztás rangját 1-től számoljuk ([N] a 1.), és minden pozíción összeadjuk, hány olyan felosztás van előtte, amely ugyanazt a prefixet adja, de ezen a helyen nagyobb tagot tartalmaz. A megadott felosztás rangja +1 és -1 szerinti felosztását ugyanazzal az unrank eljárással állítsd elő. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

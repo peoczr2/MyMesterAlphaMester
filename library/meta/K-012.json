@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok/28. Sakktábla **",
+    "method": "Színek darabszámának számolása K×K-s táblára, a legnagyobb megfelelő K megkeresése növeléssel",
+    "category": "Számolás, paritás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["paritás", "egész osztás", "ciklus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/29. Bimmbamm **",
+    "method": "Lineáris bejárás, a sorszám oszthatóságából számolt helyes szó összevetése",
+    "category": "Oszthatóság, feltételes ellenőrzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["oszthatóság", "maradék", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/3. Gyufa **",
+    "method": "Rendezett oldalhármasok két ciklussal, a harmadik oldal N-a-b, egyenlőtlenség ellenőrzése",
+    "category": "Felsorolás, háromszög-egyenlőtlenség",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["felsorolás", "háromszög", "egyenlőtlenség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/30. A sárkány feladványa **",
+    "method": "Legkisebb közös többszörös és a 10^(N-1) feletti legkisebb többszörös számolása jegyenkénti átvitellel",
+    "category": "Számelmélet, nagy számok",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["többszörös", "maradék", "nagy szám"],
+    "note": "Több helyes kimenet van: a minta 1400 és 22 jegyű 9-es válasza is érvényes, a program más, de helyes számot ad; a munkakönyvtári ellenőrző minden feladványra igazolta a kimenetet, a második minta-fájl kimenete pedig egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

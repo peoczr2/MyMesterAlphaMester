@@ -3,21 +3,22 @@ using namespace std;
 
 /*
 Megoldási ötlet:
-Az eredeti fa magasságát egyetlen csomópont áthelyezésével kell minimalizálni.
-N legfeljebb 1000, ezért minden lehetséges (mozgatandó csomópont, új főnök)
-pár kipróbálható. Az új főnök nem lehet a mozgatott csomópont részfájában, és
-nem lépheti túl a K közvetlen beosztottat.
+Egyetlen bandatagot kell áthelyezni úgy, hogy a fa magassága (a legmélyebb tag
+mélysége) minél kisebb legyen. N legfeljebb 1000, ezért minden lehetséges
+(áthelyezendő x, új főnök y) párt kipróbálunk. Az y nem lehet x részfájában, és
+y-nak még legalább egy szabad helye kell legyen (kevesebb mint K beosztottja van).
 
-Ha egy x csomópontot áthelyezünk egy y csomópont alá, akkor az x részfájának
-minden csomópontja ugyanazzal az eltolással kerül mélyebbre vagy sekélyebbre.
-Ezért az új magasság:
+Ha x-et y alá helyezzük, akkor x részfájának minden tagja ugyanannyival kerül
+mélyebbre vagy sekélyebbre. Az új magasság ezért:
   max(az x részfáján kívüli legnagyobb mélység,
       depth[y] + 1 + subtreeHeight[x])
 ahol subtreeHeight[x] az x alatti részfa magassága x-hez képest.
+Ha a legjobb pár sem csökkenti az eredeti magasságot, nincs áthelyezendő tag, és a válasz 0 0.
 
-Az x részfáján kívüli legnagyobb mélységet Euler-túrával és szegmensfával gyorsan
-lekérdezhetjük. Ez O(N^2 log N) megoldást ad, ami N <= 1000 mellett bőven elég.
-
+Az x részfáján kívüli legnagyobb mélységet Euler-sorrendben egy szegmensfával
+gyorsan lekérdezzük. Így O(N^2 log N) időben megkapjuk a választ.
+*/
+/*
 Hint 1: || Egy mozgatás csak egy részfát érint, így a többi csomópont mélysége nem változik. ||
 Hint 2: || Az új magasság két részből áll: a mozgatott részfa legmélyebb pontjából és minden más csomópontból. ||
 Hint 3: || Euler-sorrendben a részfa egy intervallum, ezért a részfán kívüli maximumot gyorsan ki lehet szedni egy RMQ/segment tree szerkezettel. ||
@@ -111,7 +112,7 @@ int main() {
             int movedHeight = depth[y] + 1 + subtreeHeight[x];
             int newHeight = max(outsideMax, movedHeight);
 
-            if (newHeight < bestHeight || (newHeight == bestHeight && (bestMove == 0 || x < bestMove || (x == bestMove && y < bestBoss)))) {
+            if (newHeight < bestHeight || (newHeight == bestHeight && bestMove != 0 && (x < bestMove || (x == bestMove && y < bestBoss)))) {
                 bestHeight = newHeight;
                 bestMove = x;
                 bestBoss = y;

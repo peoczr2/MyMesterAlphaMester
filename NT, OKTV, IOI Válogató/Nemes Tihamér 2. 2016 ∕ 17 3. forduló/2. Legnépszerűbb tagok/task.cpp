@@ -1,12 +1,14 @@
+/*
+Megoldás lényege:
+Mindenki pontosan egy másik tagot tart a legismertebbnek, így minden csúcsból egyetlen él indul: a gráf funkcionális gráf, amelyben a körök egymástól függetlenek. Ha egy csúcsba nem vezet bejövő él, rajta biztosan nincs kör, ezért ezeket sorban eltávolítjuk, és közben a kivezető él célcsúcsának bejövő fokszámát csökkentjük. A megmaradó csúcsok mind körön vannak, és mindegyikből egyetlen kimenő él vezet a maradékban, így minden kör egyszer bejárható. A köröket bejárjuk, és a leghosszabbat írjuk ki; az időigény O(N), mert minden csúcs legfeljebb egyszer kerül a sorba.
+*/
+/*
+Hint 1: || Ha egy tagra senki nem mutat, akkor rajta nem lehet népszerűségi kör. Ilyen tagokat nyugodtan elhagyhatsz, a körök csak a maradékban lehetnek. ||
+Hint 2: || Egy elhagyott tag kivezető élének célcsúcsától levonsz egyet a bejövő élek számából; ha ez nullára csökken, az a csúcs is elhagyható. Egy sor (queue) segítségével ezt sorban megteheted. ||
+Hint 3: || A maradékban minden tagnak pontosan egy kimenő éle van, így egy tagból indulva a legismertebb tagokat követve előbb-utóbb visszaérsz a kiindulóhoz. Jelöld a bejárt tagokat, hogy minden kört egyszer számolj, és a leghosszabbat tartsd meg. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A népszerűségi kör egy irányított gráf ciklusa. A legrövidebb útvonalakat
-    nem kell keresni: elég az összes csúcsból eltávolítani a cikluson kívüli,
-    bejövő él nélküli elemeket, majd a maradék ciklusok közül a leghosszabbat
-    kiválasztani.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

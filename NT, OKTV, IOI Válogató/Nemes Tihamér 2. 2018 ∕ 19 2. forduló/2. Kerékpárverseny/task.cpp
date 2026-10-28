@@ -1,12 +1,17 @@
+/*
+Megoldás lényege:
+A lépések csak jobbra vagy lefelé mutatnak, ezért a rács körmentes (DAG), és a dinamikát a jobb alsó sarokból visszafelé számoljuk.
+Minden kereszteződés dp értéke az onnan induló leghosszabb megengedett út hossza, és eltároljuk a hozzá vezető lépést is.
+Egy lépés csak akkor megengedett, ha a két szomszédos kereszteződés magasságkülönbsége legfeljebb K.
+A legnagyobb dp értékű kezdőmezőből a tárolt lépések alapján visszaépítjük az útvonalat.
+Az időigény és a tárolási igény is O(N·M), ami a korlátok mellett bőven elfér.
+*/
+/*
+Hint 1: || Mivel a lépések csak jobbra vagy lefelé mutatnak, a mezők legjobb útját a jobb alsó sarokból kiindulva, visszafelé érdemes kiszámolni. ||
+Hint 2: || Legyen dp[i][j] az (i,j) mezőből induló leghosszabb út hossza. Ez a jobbra és a lefelé szomszéd dp értékénél 1-gyel nagyobb érték közül a nagyobbik, de csak ha a lépés megengedett; ha egyik sem az, az érték 0. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A jobb- és lefelé lépésekkel irányított rács egy DAG, ezért visszafelé
-    dinamikát számolunk: minden mezőből a leghosszabb megengedett út hossza.
-    Utána a legjobb induló mezőt kiválasztjuk, és a tárolt döntésekből
-    visszaépítjük az útvonalat.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

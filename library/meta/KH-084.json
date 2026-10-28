@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/9. Egy törzs adott évszázadba eső háborúi összeideje *",
+    "method": "Háborúnként a századba eső évek metszetének hosszát összegezzük, az S törzs háborúira.",
+    "category": "Intervallumok: metszet, összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "metszet", "összegzés"],
+    "note": "A szöveg „N sorban” része K sort jelent (a minta be2 szerint K=623 háborús sor). A háborús évek zárt intervallumként, mindkét szélső évvel együtt számítanak; XIX. = 1801–1900. Mért futásidő a legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,3 mp. Évenkénti brute-force összevetés 400 véletlen kis teszten egyezett.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

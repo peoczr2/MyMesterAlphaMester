@@ -1,18 +1,21 @@
 /*
 Megoldási ötlet:
-Bal felülről indulunk, és csak jobbra vagy lefelé léphetünk, ezért minden mezőre függetlenül meghatározható,
-hogy legfeljebb hány kincs vihető oda. Ha egy mezőn van kincs, akkor az értéke az északi vagy nyugati szomszéd
-jobbik értéke plusz egy.
+A szánkó csak jobbra vagy lefelé mozoghat, ezért minden mezőre meghatározható, hogy legfeljebb hány kincs
+gyűjthető be odáig. Mivel a szánkó egy gyűjtőponton megáll, gyűjtőponton át nem lehet továbbhaladni: egy
+gyűjtőpont csak célként számít, a rajta keresztül vezető útvonalakat nem folytatjuk.
 
-Elkészítünk egy teljes rács-DP-t: dp[i][j] a maximális összegyűjthető kincsek száma az (i,j) mezőig. Ezután a
-gyűjtőpontok közül kiválasztjuk azt, amelyhez a dp-érték maximális.
+Rács-DP-t készítünk: dp[i][j] az (i,j) mezőig összegyűjthető legtöbb kincs, feltéve hogy útközben nem álltunk
+meg gyűjtőponton. Egy mező értéke a felső és a bal szomszédja közül a nem gyűjtőpont szomszédok jobbik értéke
+plusz az ott levő kincsek száma. A végén a gyűjtőpontok közül azt választjuk, amelyikhez a dp-érték maximális.
+Az időigény O(N·M).
 */
 /*
 Hint 1: || A megengedett lépések miatt egy mezőre csak felülről vagy balról érkezhetsz. ||
-Hint 2: || Ha tudod a két elődmező legjobb értékét, akkor az aktuális mező DP-je egyetlen képlettel számolható. ||
-Hint 3: || Nem kell minden kincs-gyűjtőpont párt külön vizsgálni: elég egyszer kitölteni az egész rácsot. ||
+Hint 2: || Egy mező értéke a két elődje közül a nagyobbik plusz az ott levő kincsek száma, de csak olyan elődről léphetsz tovább, amely nem gyűjtőpont. ||
+Hint 3: || Egy gyűjtőponton a szánkó megáll, ezért a gyűjtőpontot csak célként értékeld, és a DP-t ne terjeszd tovább rajta keresztül. ||
 */
 
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -35,15 +38,22 @@ int main() {
     vector<pair<int, int>> goals(g);
     for (int i = 0; i < g; ++i) cin >> goals[i].first >> goals[i].second;
 
-    vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
+    vector<vector<bool>> isGoal(n + 1, vector<bool>(m + 1, false));
+    for (const auto& goal : goals) isGoal[goal.first][goal.second] = true;
+
+    // dp = -1: a mező nem érhető el úgy, hogy közben gyűjtőponton ne álltunk volna meg
+    vector<vector<int>> dp(n + 1, vector<int>(m + 1, -1));
     for (int i = 1; i <= n; ++i) {
         for (int j = 1; j <= m; ++j) {
-            dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + treasure[i][j];
+            int incoming = (i == 1 && j == 1) ? 0 : -1;
+            if (dp[i - 1][j] >= 0 && !isGoal[i - 1][j]) incoming = max(incoming, dp[i - 1][j]);
+            if (dp[i][j - 1] >= 0 && !isGoal[i][j - 1]) incoming = max(incoming, dp[i][j - 1]);
+            if (incoming >= 0) dp[i][j] = incoming + treasure[i][j];
         }
     }
 
     pair<int, int> bestGoal = goals[0];
-    int bestValue = dp[bestGoal.first][bestGoal.second];
+    int bestValue = -1;
     for (const auto& goal : goals) {
         int current = dp[goal.first][goal.second];
         if (current > bestValue) {

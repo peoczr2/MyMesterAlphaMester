@@ -1,6 +1,10 @@
 /*
- * N! prímfaktorizálása Legendre-képlettel.
- 
+ * N! prímtényezős felbontásának kiszámításához Legendre-képletet használunk: egy p prím kitevője N!-ban
+ * N/p + N/p^2 + N/p^3 + ... (egész osztásokkal), vagyis az 1..N számok közül a p, p^2, p^3, ... többszöröseinek darabszáma.
+ * A prímeket a sieve_primes függvénnyel gyűjtjük ki 1..N között, és mindegyikre ezt a sorozatot összegezzük.
+ * Így a prímek növekvő sorrendben kerülnek a kimenetbe, az időigény pedig O(N log log N).
+ */
+/*
 Hint 1: || Egy prímszám kitevője az `N!`-ben nem úgy jön ki, hogy felszorzod a faktoriálist, hanem Legendre-képlettel. ||
 Hint 2: || Minden prímre add össze `N/p + N/p^2 + N/p^3 + ...` egészrészeit, ez adja a kitevőt a felbontásban. ||
 */

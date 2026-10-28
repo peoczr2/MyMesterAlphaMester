@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/21. Ládapakolás ***",
+    "method": "A leghosszabb egyhegyű, különböző méretű szakaszt vágjuk le balról, mohón.",
+    "category": "Mohó, szakaszokra bontás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mohó",
+      "szakaszokra bontás",
+      "egyhegyű sorozat"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/22. Ládapakolás egymásba **",
+    "method": "Értékben és pozícióban is szomszédos halmok egyesítése mohó törléssel, láncolt listákkal.",
+    "category": "Láncolt lista, mohó törlés",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mohó",
+      "láncolt lista",
+      "permutáció"
+    ],
+    "note": "A minta.zip ki1.txt (bemenet 5 1 3 4 2) „0 0” kimenete ellentmond a feladat példájának: a 3 4 / 5 4 / 2 4 / 4 1 sorozat érvényes (szimulációval ellenőrizve), ezért a helyes válasz nem „0 0”. A ki2.txt (N=50) egyezik a megoldással. Az érvényességet független szimulátor és kis N-re brute-force igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/23. Lefedés ***",
+    "method": "Rések mohó elvágása a legnagyobb pozitív nettó nyereségűnél, lusta kupaccal.",
+    "category": "Mohó, intervallumok lefedése",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mohó",
+      "intervallum",
+      "kupac"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/24. Legnagyobb hasznú munkák ***",
+    "method": "Határidő szerinti mohó kiválasztás minimum-kupaccal, majd napok DSU-val történő hozzárendelése.",
+    "category": "Ütemezés határidőkkel",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mohó",
+      "kupac",
+      "dsu"
+    ],
+    "note": "Több helyes sorrend van: a ki2.txt sorrendje más, mint a megoldásé, de mindkettő optimális (összhaszon 22893) és a határidőket betartja. A kézi igazolás független ellenőrző programmal történt (összhaszon és sorrend érvényessége).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/25. Legtöbb vírus ***",
+    "method": "Különbségi tömb: minden vírushoz a kedvező kezdőidők szakasza, prefixösszeggel végigjárva.",
+    "category": "Különbségi tömb, intervallumok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "különbségi tömb",
+      "intervallum",
+      "prefixösszeg"
+    ],
+    "note": "A minta.zip ki1.txt üres, a feladat példája szerint a helyes kimenet 4 és 2; a megoldás ezt adja. Független, közvetlen O(N·H) ellenőrzés (brute-force, a három feltétel szerint) igazolja a számlálót és a legkorábbi T-t.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/26. Lift-menetek ***",
+    "method": "Szintközönkénti terhelés különbségi tömbbel, irányonként ceil(terhelés/K) menet, a maximum.",
+    "category": "Különbségi tömb, alsó korlát",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "különbségi tömb",
+      "alsó korlát",
+      "intervallum"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

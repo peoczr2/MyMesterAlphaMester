@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/93. Székek",
+    "method": "Rosszul ülők száma plusz a legalább kétszékes körök száma",
+    "category": "Megszámolás: ciklusok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["permutáció", "ciklus", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/94. Áruszállítás",
+    "method": "Különbségtömb a szakaszok lefedettségére, nulla értékű szakaszok számlálása",
+    "category": "Prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["különbségtömb", "prefixösszeg", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/95. Egykorúak",
+    "method": "Dátumok napsorszámra alakítása, összevetés 365 nappal",
+    "category": "Dátumszámítás, naptár",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["dátum", "naptár", "szökőév"],
+    "note": "A feladat csak Peti születési évére (1950-2050) ad korlátot és a szökőévet is ehhez köti; a többi táborozó évszámára a naptári (100-zal és 400-zal osztható) szabályt használtam, ami ebben a tartományban megegyezik a 4-gyel osztható szabállyal.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/96. Tükörtojás",
+    "method": "Prefixfordítás: a szomszédos eltérések számlálása",
+    "category": "Megszámolás: szakaszhatárok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["paritás", "prefix", "különbség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

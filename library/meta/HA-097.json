@@ -1,0 +1,36 @@
+[
+  {
+    "path": "Haladó/Sorozatok/104. Blokk elimináció",
+    "method": "Páratlan futamszám: a középső G vagy két G-távolság ≤ k; páros: két részre bontás",
+    "category": "Mohó, invariáns",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "futamok",
+      "invariáns",
+      "mohó",
+      "sztring"
+    ],
+    "note": "A régi O(M³) megoldás fix méretű tömböt használt, és M>2000-nél kilépett; az új O(N), tömb nélkül. Minden 0/1 sorozat N≤12-ig és 1500 véletlen eset (N≤22) egyezett egy független szimulációval.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
+  },
+  {
+    "path": "Haladó/Sorozatok/79. Vasúti kocsik kitérő vágányon",
+    "method": "Verem-rendezés: a kiválasztott kocsik részhalmazának maximuma, bitmaszkos keresés",
+    "category": "Verem, rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "verem",
+      "permutáció",
+      "rendezés"
+    ],
+    "note": "Megjegyzés: a ki1 és ki2 fájl K sornyi kocsi-címke párt tartalmaz a végső szám előtt (ki1: 6 pár + 5; ki2: 100000 pár + 100000), a feladat viszont csak egy számot kér. A számok egyeznek a feladattal (a példa 5, a be2 teljes permutációja veremmel rendezhető, így 100000 a helyes), de a validátor a formátum miatt hibásnak jelzi. Nagy K-ra nincs gyors algoritmus; a kód K>22 esetén kilép.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

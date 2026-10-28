@@ -1,11 +1,12 @@
 /*
-Feladat: A települések közül a lehető legtöbbet kell kiválasztani úgy, hogy bármely két tűzijáték legalább T távolságra legyen, és a cég telephelye biztosan benne legyen.
-Ötlet: A telephelytől balra és jobbra külön-külön mohón terjeszkedünk: mindig a lehető legközelebbi még választható települést vesszük, amely még tartja a T távolságot.
+Megoldás lényege:
+A telephely mindenképpen benne van, így a többi tűzijáték a telephelytől balra és jobbra külön-külön választható ki. Mindkét irányban mohón haladunk: mindig a telephelyhez legközelebbi olyan települést vesszük, amely még legalább T távolságra van az utoljára kiválasztottól. A két oldal egymástól független, a határon lévő két választás távolsága a telephely miatt legalább 2T, így a T-korlát ott is teljesül. A legközelebbi lehetséges választás hagyja a legtöbb helyet a további települések számára, ezért a mohó megoldás optimális. Az időigény O(N).
+*/
+/*
 Hint 1: || A bal oldali és a jobb oldali választás egymástól független. ||
 Hint 2: || Balra a legközelebbi, még engedett települést, jobbra pedig ugyanígy a legközelebbit érdemes választani. ||
 Hint 3: || A telephely sorszáma kötelező, ezért innen indulj mindkét irányban. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

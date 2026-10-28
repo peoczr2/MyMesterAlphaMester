@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/57. Ütemezés ***",
+    "method": "Moore–Hodgson: határidő szerint haladva, max-kupaccal a leghosszabb esemény kiejtése",
+    "category": "Ütemezés, határidő",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "ütemezés",
+      "kupac",
+      "határidő"
+    ],
+    "note": "Több helyes beosztás van (a feladat szerint bármelyik megadható); K egyezik a mintával, minden esemény a határidejére belefér, nincs átfedés. Ellenőrző: library/.work/R-040/check/chk.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/58. Múzeum ***",
+    "method": "Két független intervallum-hozzárendelés (sor és oszlop), mohó, jobb végpont szerinti kupaccal",
+    "category": "Intervallum-hozzárendelés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "permutáció",
+      "kupac"
+    ],
+    "note": "A be2 kimenete más, de érvényes elhelyezés (oszlop- és sorpermutáció, minden őr a saját téglalapjában); az ellenőrző mindkettőt igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/59. Konténer pakolás ***",
+    "method": "Jobbról balra mohó torony-számlálás, méretenként és szabad helyenként nyilvántartva",
+    "category": "Mohó: torony-számlálás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "torony",
+      "mohó",
+      "számlálás"
+    ],
+    "note": "A minta.zip nem tartalmaz be/ki párokat (tanórai PDF-ek és egy kódcsomag van benne), ezért nincs futtatható minta. A példán (7) és állapottér-kereséssel (n<=10) ellenőriztem. A korábbi megoldás a példán 5-öt adott, ezt javítottam.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/6. Bíróság büntetéssel ***",
+    "method": "Határidő szerinti bejárás min-kupaccal; a legkisebb díjú ügy kiesik, DSU a szabad napra",
+    "category": "Határidő, min-kupac",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "határidő",
+      "kupac",
+      "dsu"
+    ],
+    "note": "A díjösszeg (50, illetve 1075) egyezik a mintával; a sorrend más, de optimális és érvényes (az ellenőrző újraszámolja a díjat).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/60. Konténer átpakolás ***",
+    "method": "Jobbról balra mohó toronyválasztás, a mozgatások fa-bejárással sorrendezve",
+    "category": "Konténer-mozgatás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "torony",
+      "mozgatás",
+      "fa"
+    ],
+    "note": "Több mozgatássorozat is jó. A be1 mintája 5 szabad helyet ad, de 6 is elérhető: az állapottér-keresés (n=10) ezt igazolja, és a mi 8 lépéses sorozatunk szimulációval 6-ot ad. be2-nél a minta 49990, a mienk 49997 szabad helyet ad; mindkét kimenet érvényes szimulációval.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/61. Asztalok **",
+    "method": "Távozás szerinti mohó: közös időpontos asztal, legfeljebb K vendéggel",
+    "category": "Intervallum-csoportosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "csoportosítás",
+      "kupac"
+    ],
+    "note": "Több optimális asztalbeosztás lehet; a táblák száma (3, illetve 33334) egyezik a mintával, az ellenőrző minden táblára igazolja a közös időpontot és a kapacitást.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

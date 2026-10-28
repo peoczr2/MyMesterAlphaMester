@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/28. Nyaralások **",
+    "method": "Tanulónkénti helylisták rendezése, helyek számlálása, azonos listák egy csoportba",
+    "category": "Halmazok, csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "csoportosítás", "rendezés"],
+    "note": "Időlimit 0.1 mp; a legnagyobb bemeneten (T=100 000, Ny=200 000) mért futásidő kb. 0.065 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/29. Idegen nyelv",
+    "method": "Dolgozónkénti nyelvlisták rendezése, nyelvek számlálása, azonos listák egy csoportba",
+    "category": "Halmazok, csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "csoportosítás", "rendezés"],
+    "note": "Időlimit 0.1 mp; a legnagyobb bemeneten (N=100 000, M=200 000) mért futásidő kb. 0.065 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/3. Földbirtok",
+    "method": "Különbségtömbbel napi létszám, majd egy bejárásos kiértékelés",
+    "category": "Különbségtömb, prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["különbségtömb", "prefixösszeg", "intervallum"],
+    "note": "Időlimit 0.1 mp; a legnagyobb bemeneten (M=1000) a futásidő néhány ezredmásodperc. A 2. részfeladatban a legtöbbet kereső a teljes bér (napok száma × napi bér) szerint értendő; a 2. minta ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/30. Hentesek **",
+    "method": "Fajtánkénti számlálás, hentesek fajtalistáinak összevetése, azonos fajtalisták egy nagykereskedőtől",
+    "category": "Halmazok, csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "csoportosítás", "számlálás"],
+    "note": "Időlimit 0.1 mp; a legnagyobb bemeneten (N=100 000, A=200 000) mért futásidő kb. 0.056 mp. A 2. részfeladatban (több megoldás esetén) a bemenetben először előforduló egyedül árult húsfélét írjuk ki; ez egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

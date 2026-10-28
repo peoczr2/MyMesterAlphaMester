@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/31. Legkevesebb végpont **",
+    "method": "Erősen összefüggő komponensek (Tarjan), majd a nyelő komponensekből egy-egy pont.",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "irányított gráf", "erősen összefüggő komponens"],
+    "note": "A minta.zip csak a feladat.pdf-et tartalmazza, ezért „nincs minta” állapot. A PDF példáján (9 12) a kimenet 2 / 3 6, ez érvényes (a PDF-ben 6 3 szerepel, a sorrend tetszőleges). 1500 véletlen kis gráfon brute force-szal ellenőriztem a minimumot és a lefedést. A legnagyobb bemeneten (N=10000, M=200000) 0,02 s, az időlimit 0,1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/32. Biztonság ***",
+    "method": "Blokkok és vágópontok Hopcroft–Tarjan-bejárással; az A–B út blokkjainak pontjai, A és B nélkül.",
+    "category": "Gráf: blokkok és vágópontok",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "blokk", "vágópont"],
+    "note": "A validátor „eltérő kimenet”-et ad, mert a kereszteződések sorrendje tetszőleges (a feladat szerint), a minta más sorrendben adja ugyanazt a halmazt. A be1 (ki1) és a be2 (ki2) kimenetének halmaza egyezik a miénkkel (4, illetve 19998 elem). 1123 véletlen kis gráfon brute force-szal ellenőriztem az összes egyszerű A–B út bejárásával. A legnagyobb bemeneten (N=100000, M=500000) 0,15 s, az időlimit 0,8 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/33. Mindenhova legyen út ***",
+    "method": "Forrás komponensek száma eggyel kevesebb új él, láncba fűzve egy r pontból.",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "irányított gráf", "erősen összefüggő komponens"],
+    "note": "A validátor be1-en tér el: a PDF példájának (9 11) kimenete 2 / 8 / 8 1 / 1 6, a miénk 2 / 8 / 8 6 / 6 1, mindkettő érvényes (K és r azonos). A be2 kimenete szóról szóra egyezik a ki2-vel (K = 106). 700 véletlen kis gráfon brute force-szal ellenőriztem a minimumot és r elérhetőségét. A legnagyobb bemeneten (N=10000, M=200000) 0,03 s, az időlimit 0,1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/34. Mindenhova vezessen út **",
+    "method": "Nyelő komponensek száma eggyel kevesebb új él, láncba fűzve egy R pont felé.",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "irányított gráf", "erősen összefüggő komponens"],
+    "note": "A minta.zip csak bemeneti fájlokat tartalmaz (be1, be2), ezért „nincs minta” állapot. A PDF példáján (9 11) a kimenet 1 / 6 / 3 6, ez érvényes (a PDF-ben R = 7 és 3 7 szerepel, szintén érvényes). A be1 (K = 126) és be2 (K = 3332) kimenetének minimumát és elérhetőségét független Kosaraju-számítással igazoltam, 700 véletlen kis gráfon brute force-szal is. A legnagyobb bemeneten (N=100000, M=200000) 0,04 s, az időlimit 0,1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

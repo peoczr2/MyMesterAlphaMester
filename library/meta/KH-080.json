@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/35. Legrövidebb béke *",
+    "method": "Kezdés szerint rendezés, az eddigi legkésőbbi befejezés követése, legrövidebb pozitív rés.",
+    "category": "Intervallumok: rések",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "rendezés", "maximum"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 0 ms, időlimit 0,3 mp, memória kb. 3,5 MB. A béke a háborúk vége és a következő kezdete közötti pozitív rés; a nulla hosszú rést (egymást érintő háborúk) nem tekintjük békének. A minták ezt nem döntik el, mert a be2-ben nincs ilyen eset. A feladatszöveg „N sorban” kifejezése K sort jelent (a minta szerint K=623).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/36. Legrövidebb háború *",
+    "method": "Egyetlen bejárás, a legrövidebb háború kiválasztása hossz, majd kezdő év szerint.",
+    "category": "Intervallumok: minimum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "minimum", "keresés"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 0 ms, időlimit 0,3 mp, memória kb. 3,5 MB. Egyenlő hossznál a korábban kezdődő háború kerül ki, a feladat szerint. A feladatszöveg „N sorban” kifejezése K sort jelent (a minta szerint K sor).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/37. Legrövidebb, 10 évnél hosszabb háború *",
+    "method": "Háborúk szűrése 10 évnél hosszabbakra, majd a legrövidebb kiválasztása egy bejárásban.",
+    "category": "Intervallumok: szűrés, minimum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "szűrés", "minimum"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 0 ms, időlimit 0,3 mp, memória kb. 3,5 MB. A „10 évnél hosszabb” feltétel szigorú: a 11 éves háború már megfelel (a be2 minta szerint 1637–1648). Ha nincs ilyen háború, a program 0 0-t ír ki, ezt a feladatszöveg nem említi. A feladatszöveg „N sorban” kifejezése K sort jelent.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/38. Legtöbb ellenfél *",
+    "method": "Törzsenként halmazba gyűjtjük az ellenfeleket, a legnagyobb halmazú törzset keressük.",
+    "category": "Halmaz: különböző ellenfelek száma",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "keresés", "maximum"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 0 ms, időlimit 0,3 mp, memória kb. 3,7 MB. A „legtöbb törzzsel” kifejezést a különböző ellenfelek számaként értelmeztük: a be1 mintán az 1-es törzsnek 5 különböző ellenfele van, a háborúk száma 6 volna, így a minta a különböző ellenfelek számát igazolja. Egyenlőségnél a kisebb sorszám marad. A feladatszöveg „N sorban” kifejezése K sort jelent.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

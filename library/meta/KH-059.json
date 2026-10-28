@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/28. Dolgozat - 2011. október",
+    "method": "Pontszám százalékká alakítása, küszöbök szerinti jegy, összegzés és félértéknél felfelé kerekített átlag",
+    "category": "Elágazás, átlag",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["elágazás", "átlag", "kerekítés"],
+    "note": "Az átlag félértéknél felfelé kerekített; a mintában nincs félérték-eset, így ez a szabály nem igazolt mintából.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/29. Születésnap paradoxon - 2012. május",
+    "method": "Tuple-rendezés évszerint, majd hónap-nap párok számlálása map-pel",
+    "category": "Rendezés, gyakoriság",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "map", "számlálás"],
+    "note": "A születésnap hónap és nap alapján értendő: a mintában 1989 és 1995 március 17. is azonos születésnap. Nincs többször szereplő születésnap esetén a -1 kiírása a mintában is szerepel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/3. Tankolás - 2005. október",
+    "method": "Teli tank hatótávolsága egész osztással, összevetés az út hosszával",
+    "category": "Arány, egész számok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["egész szám", "arány", "feltétel"],
+    "note": "Az indulás teli tankkal történik; ez a mintából következik (350 km, 12 l, 3 l/100 km esetén nincs tankolás). Az egyenlő hosszú út még nem igényel tankolást.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/30. Szavazás - 2012. október",
+    "method": "Érvényes szavazatok számlálása, egész kerekített százalékok, rendezés szavazatszám és sorszám szerint",
+    "category": "Számlálás, rendezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "rendezés", "kerekítés"],
+    "note": "A 0 a szavazatok végjelző, nem érvénytelen szavazat. A százalékok félértéknél felfelé kerekítettek; a mintában nincs félérték-eset, így ez a szabály nem igazolt mintából.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

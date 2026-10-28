@@ -1,6 +1,11 @@
 /*
 Megoldás lényege:
-A megadott feltételeknek megfelelő síkbeli konstrukciót kell előállítani. A megoldás a geometriai összefüggésekből visszafejtett szerkesztésre épül.
+Az origóból nézve egy (x, y, dx, dy) téglalap a [y/(x+dx), (y+dy)/x] meredekség-intervallumú szögtartományt takarja: a legkisebb szög az alsó-jobb sarok (x+dx, y), a legnagyobb a felső-bal sarok (x, y+dy) irányához tartozik. Két épület között takarás van, ha a szögtartományaik átfedik egymást, vagy legalább egy sugáron érintkeznek (a közös sugárra eső két sarok közül az egyik takarja a másikat). Így a feladat a legtöbb olyan intervallum kiválasztása, amelyek közül bármely kettő diszjunkt (érintkezés nélkül). Ezt mohó módszerrel oldjuk meg: a jobb végpont szerint rendezünk, és mindig azt az intervallumot vesszük, amelyik a már kiválasztott utolsó végpont után kezdődik. Az összehasonlítások egész szorzatokkal történnek, így nincs kerekítési hiba. Idő: O(N log N)
+*/
+/*
+Hint 1: || Az origóból nézve egy téglalap szögtartományát az alsó-jobb sarok (x+dx, y) és a felső-bal sarok (x, y+dy) iránya határolja. Két épület pontosan akkor nem takar egymásra, ha ezek a szögtartományok nem metszik egymást. ||
+Hint 2: || Ez intervallum-kiválasztás: a legtöbb egymással nem átfedő intervallumot keresed. Erre a klasszikus mohó módszer működik: a végpontok szerint növekvő sorrendben haladj, és mindig vedd azt, amelyik a már választott utolsó végpont után kezdődik. ||
+Hint 3: || A meredekségeket ne törtként hasonlítsd össze, hanem keresztbe szorozva (egész számokkal). A szorzatok elérhetik a 10^12 nagyságrendet, ezért érdemes __int128 típust használni. Az egyenlő végpontú intervallumokat rendezd úgy, hogy a rövidebb induljon elöl. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

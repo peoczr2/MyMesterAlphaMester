@@ -1,19 +1,18 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
-Megoldási ötlet:
-Minden folyó legfeljebb egy másikba folyik bele, ezért a rendszer egy irányított
-erdei fa. Az F folyóba beérkező összes víz forrásai pontosan azok a csúcsok,
-amelyekből az ellentétes irányú gráfban elérhető F.
-
-A F-ből induló szennyezés pedig a folyásirány szerinti utódokat éri el. A két
-halmazt két egyszerű DFS/BFS bejárással megkapjuk, majd növekvő sorrendben kiírjuk.
-
+Megoldás lényege:
+Minden folyó legfeljebb egy másikba folyik bele, ezért a folyók irányított erdőt
+alkotnak. Az F folyóba beérkező víz forrásai pontosan azok a csúcsok, amelyekből a
+fordított irányú élek mentén el lehet jutni F-be. Az F-ből induló szennyezés az
+eredeti irányú élek mentén érintett folyókat éri el. A két halmazt két egyszerű
+DFS/BFS bejárással kapjuk meg, majd növekvő sorrendben kiírjuk. Az időigény O(N + M).
+*/
+/*
 Hint 1: || A folyók be- és kifolyási kapcsolatai két külön bejárással kezelhetők. ||
 Hint 2: || Az egyik bejárás a fordított éleken halad, a másik az eredeti éleken. ||
 Hint 3: || Mivel minden folyó legfeljebb egy másikba folyik bele, az eredeti gráf nagyon egyszerű. ||
 */
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

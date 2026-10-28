@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/62. Munkagépek",
+    "method": "Gépszám: a határidő-prefixek alsó korlátjainak maximuma.",
+    "category": "Prefixösszeg-korlát",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mohó", "prefixösszeg", "ütemezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/63. Csapatépítés",
+    "method": "Balról jobbra mohó lefedés max-kupaccal, ugrással a fedhetetlen pontoknál.",
+    "category": "Intervallumlefedés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["intervallum", "lefedés", "kupac"],
+    "note": "Több helyes kimenet: a be2 mintában a 13618. és a 64005. ajánlat intervalluma azonos (471–516), így a minta és a kimenet is 999 napot fed le 24 ajánlattal; a kimenet érvényességét library/.work/R-041/ellenoriz.py igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/64. Tanúk",
+    "method": "Pontfedés: időrendi bejárás, a legtovább maradó vendég választása max-kupaccal.",
+    "category": "Pontfedés intervallumokkal",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "intervallum", "kupac"],
+    "note": "Több megoldás esetén bármelyik megadható (feladatszöveg); a be2 mintában több ponton más vendég szerepel (pl. 1418 helyett 1428), ugyanannyi, 104 tanúval, és a kimenet érvényességét library/.work/R-041/ellenoriz.py igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/65. Filmgyártás",
+    "method": "Maximális lefedés, azon belül minimális filmesszám: időrendi pontfedés max-kupaccal.",
+    "category": "Pontfedés, kettős célfüggvény",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "intervallum", "pontfedés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/66. Kereskedő",
+    "method": "Rögzített x-hez prefixmaximum a B[y]-Ky értékekre, majd tie-breakkel a legjobb pár.",
+    "category": "Prefixmaximum, tie-break",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixmaximum", "tömb", "tie-break"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/67. Határidős ütemezés",
+    "method": "Határidő szerint haladva a leghosszabb munka kiejtése max-kupaccal (Moore–Hodgson).",
+    "category": "Határidős ütemezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "ütemezés", "kupac"],
+    "note": "Több megoldás esetén bármelyik megadható (feladatszöveg); a be2 mintában a 11. munka helyett a 899. szerepel, mindkettő t=461, a két 444 munkás halmaz egyaránt megvalósítható; a kimenet érvényességét library/.work/R-041/ellenoriz.py igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,6 +1,10 @@
 /*
-   Sorrend: a tilos helyzetek a közvetlenül egymás után álló i, i+1 párok.
-   Inklúzió-exklúzióval számoljuk a megfelelő permutációk számát.
+Megoldás lényege:
+Inklúzió-exklúzióval számolunk: a tiltott helyzetek a közvetlenül egymás után álló (i, i+1) párok. Ezek láncot alkotnak, ezért bármely részhalmazuk egyszerre teljesíthető; ha j darab tiltott párt kiválasztunk és előírjuk őket, a párok blokkokba fognak össze, így N-j blokk marad, amelyek (N-j)!-féleképpen állhatnak. A j elemű párhalmazok száma C(N-1, j), az előjel a j paritásától függ, így a válasz összege (-1)^j * C(N-1, j) * (N-j)! lesz j = 0 .. N-1 között. A binomiálisokat Pascal-háromszöggel számoljuk, a munka O(N^2). N<=30 esetén a szorzatokat 128 bites egészben képezzük, így a MOD 10^12 mellett sem csordul túl a számítás.
+*/
+/*
+Hint 1: || Számoljuk a rossz sorrendeket inklúzió-exklúzióval: válasszunk ki j darab tiltott (i, i+1) párt, és nézzük meg, hányféle sorrend teljesíti mindet. ||
+Hint 2: || A kiválasztott párokat összevonva N-j blokk marad; ezek sorrendje (N-j)!-féle, a párok kiválasztása C(N-1, j)-féleképpen történhet, az előjel pedig j paritásától függ. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

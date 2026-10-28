@@ -1,6 +1,7 @@
 /*
-Feladat: Meg kell találni az első fát, amelyen Bagoly úgy ülhet, hogy a látótávolságán belül nincs magasabb fa.
-Ötlet: Minden fa esetén megvizsgáljuk a bal és jobb oldali K-es környezet maximumát. Ha mindkettő kisebb, mint a fa magassága, akkor az adott fa megfelelő.
+Megoldás lényege: Az i-edik fa akkor jó, ha a tőle legfeljebb K távolságra lévő fák egyike sem magasabb nála. Ehhez minden i-re kiszámoljuk a bal oldali [i-K, i-1] és a jobb oldali [i+1, i+K] intervallum maximumát egy-egy monoton (csúszóablakos) deque-val. Az első olyan i a válasz, amelynél a saját magasság mindkét maximumnál nem kisebb; ha nincs ilyen, -1. Az egyenlő magasságú fák nem számítanak magasabbnak. Az időigény O(N).
+*/
+/*
 Hint 1: || A kérdés valójában egy mozgó ablakos maximumvizsgálat. ||
 Hint 2: || Egy fa akkor megfelelő, ha a tőle legfeljebb K távolságra lévő összes fa alacsonyabb nála. ||
 Hint 3: || Ezt két irányú csúszóablakos maximumokkal gyorsan meg lehet nézni. ||

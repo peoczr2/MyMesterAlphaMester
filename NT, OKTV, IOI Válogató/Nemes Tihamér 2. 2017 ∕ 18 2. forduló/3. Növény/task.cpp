@@ -1,12 +1,14 @@
+/*
+Megoldás lényege:
+Az s. évben kikelt növény az s+M−1. évtől K évig hoz magot, így a magokból az s+M. … s+M+K−1. évben kelnek új növények. A t. évi kikelések száma ezért a t−M−K+1 … t−M években kikelt növények összege, amit egy prefixösszeg-tömbből O(1) időben kapunk meg. Az élő növények száma az utolsó N év kikeléseinek összege, amit futó összeggel tartunk karban: az N évnél régebbi kikeléseket kivonjuk. Minden értéket a 20180113 szerinti maradékkal számolunk, a negatív különbségeket korrigálva. Az időigény O(X).
+*/
+/*
+Hint 1: || Az évi kikelések egy fix hosszúságú ablakban lévő korábbi kikelések összegei: egy év kikelését nem az összes múltbeli év, hanem csak a néhány évvel korábbi kikelések határozzák meg. ||
+Hint 2: || Építs prefixösszeg-tömböt a kikelésekből, így egy ablak összege két tömbelemmel kiszámítható. Ügyelj, hogy az ablak eleje ne menjen az 1. év elé. ||
+Hint 3: || Az élő növények száma az utolsó N év kikeléseinek összege; amikor egy kikelés N évnél régebbi lesz, a futó összegből vond ki. Minden lépésben vedd a 20180113 szerinti maradékot, és a negatív eredményhez add hozzá a modulust. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Az új növények száma egy csúszóösszeges lineáris rekurzió. A born[1..X]
-    tömbben tároljuk az évi új növényeket, majd prefixösszeggel számoljuk a
-    következő évben kikelők számát. Az összes élő növényhez az elhalásokat is
-    kivonjuk N év után.
-*/
 
 static const long long MOD = 20180113;
 

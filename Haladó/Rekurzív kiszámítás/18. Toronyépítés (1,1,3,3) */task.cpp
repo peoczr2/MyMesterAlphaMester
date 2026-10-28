@@ -1,13 +1,11 @@
 /*
 Megoldás lényege:
-Az 1 magas elemekből kettő, a 3 magas elemekből szintén kettő van. Így T(n)=2T(n-1)+2T(n-3).
-
+A torony legfelső eleme vagy egy 1 magas elem (piros vagy zöld), vagy egy 3 magas elem (fehér vagy sárga). Így T(n)=2T(n-1)+2T(n-3), ahol T(k) a k magasságú tornyok száma. A T(0)=1, T(1)=2 és T(2)=4 kezdőértékekből a sorozatot egy tömbben, 20210108-cal vett maradékkal számoljuk. Az időigény O(N), a memóriaigény szintén O(N).
 */
-
-// Hint 1: || Az 1 magas és a 3 magas elemek között most két-két szín közül választhatsz. ||
-// Hint 2: || Az első három értéket kézzel is fel lehet írni, ebből indul a rekurzió. ||
-// Hint 3: || Az eredményt 20210108-cal kell venni modulo. ||
-
+/*
+Hint 1: || Mindkét magasságból (1 és 3) két-két szín közül választhatsz. ||
+Hint 2: || Az első három értéket kézzel is fel lehet írni, ebből indul a rekurzió. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

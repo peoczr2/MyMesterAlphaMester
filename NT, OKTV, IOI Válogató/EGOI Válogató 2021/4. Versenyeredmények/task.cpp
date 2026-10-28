@@ -5,6 +5,11 @@ megnevezett leghosszabb kozos prefixet nezni. Egy azonositohoz a szukseges
 elotag hossza: max(LCP balra, LCP jobbra) + 1.
 H kis, ezert stabil radix rendezesre epitjuk az O(NH) megoldast.
 */
+/*
+Hint 1: || Egy azonosító rövidített alakja akkor egyértelmű, ha egyetlen másik azonosító sem kezdődik ugyanezzel az előtaggal. Ezért minden azonosítóra azt kell megnézni, mekkora a leghosszabb közös előtagja egy másik azonosítóval. ||
+Hint 2: || Rendezd az azonosítókat lexikografikusan. Ekkor a leghosszabb közös előtag minden azonosítónál a sorban közvetlenül szomszédos azonosítóval alakul ki, így elég a két szomszédot vizsgálni. ||
+Hint 3: || A rendezést stabil számlálórendezéssel (radix rendezéssel) végezd el: előbb az utolsó betű szerint, majd visszafelé az első betűig. Ezután a szomszédos párok közös előtagjából számítsd az egyes azonosítók szükséges előtaghosszát (a maximum plusz egy), és ennek megfelelően írd ki a neveket. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

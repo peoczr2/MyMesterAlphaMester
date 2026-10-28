@@ -1,10 +1,12 @@
 /*
- * A duplakeverés a permutáció négyzetre emelése. Mivel N páratlan, a megfelelő
- * kitevő inverze létezik modulo N, így visszaemeljük az eredeti permutációt.
- 
-Hint 1: || A duplakeverés valójában a permutáció önmagával vett kompozíciója, vagyis négyzetre emelése. ||
-Hint 2: || Ha S-szer négyzetre emelt permutációt kaptál, akkor modulo a ciklushosszak szerint vissza kell emelned az eredeti permutációt. ||
-Hint 3: || A ciklusokban minden elem külön-külön mozog, ezért elég minden ciklusra kiszámolni, hány lépéssel kell visszaforgatni a keverést. ||
+ * A duplakeverés a permutáció önmagával vett kompozíciója: egy lépés után az új állás új[i] = régi[régi[i]],
+ * vagyis x -> x∘x. Éva sorrendje miatt az x állás egyetlen N hosszú ciklus, így x^N az identitás. S lépés után
+ * p = x^(2^S); mivel N páratlan, a 2^S mod N-nek van inverze (d), és p^d = x. A hatványozás O(N log N) időben fut.
+*/
+/*
+Hint 1: || A duplakeverés valójában a permutáció önmagával vett kompozíciója: új[i] = régi[régi[i]], vagyis egy lépés a négyzetre emelés. ||
+Hint 2: || S lépés után a kapott állás x^(2^S). Mivel N páratlan, a 2^S kitevőnek létezik inverze modulo N; ezzel a kitevővel kell hatványoznod a kapott permutációt. ||
+Hint 3: || Az x állás egyetlen N hosszú ciklus, így a kitevőt elég modulo N venni. A permutáció hatványát gyors hatványozással (négyzetre emeléssel) számold ki. ||
 */
 
 #include "../common.hpp"

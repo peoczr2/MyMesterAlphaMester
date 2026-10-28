@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/28. Szempont, ahol a kiesők nélküli átlagpontszám a legalacsonyabb volt *",
+    "method": "Kiesők szűrése, szempontonként a bent maradók pontösszegének összehasonlítása, legkisebb összeg",
+    "category": "Szűrés és átlagszámítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szűrés", "átlag", "minimum"],
+    "note": "Bizonytalan pont: a kiesés globális, vagyis a kiesett kutya minden szempontban kimarad az átlagból, nem csak abban, ahol az alsó határ alatt maradt (a feladat 'Ha minden kutya kiesett' szabálya is ezt a fogalmat használja). A 28. PDF-példa és a minta.zip mindkét párja mindkét értelmezéssel egyezik, a 29. feladat PDF-példája (kimenet 3) csak a globális kieséssel; lásd ott. Ha nincs bent maradó kutya, a kimenet 0.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/29. Szempont, ahol a kiesők nélküli átlagpontszám a legmagasabb volt *",
+    "method": "Kiesők szűrése, szempontonként a bent maradók pontösszegének összehasonlítása, legnagyobb összeg",
+    "category": "Szűrés és átlagszámítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szűrés", "átlag", "maximum"],
+    "note": "Bizonytalan pont: a kiesés globális, vagyis a kiesett kutya minden szempontban kimarad az átlagból. A PDF-példa kimenete 3, ami csak így adódik (a 3. szempont átlaga 7,5, az 1. szemponté 7,25 a bent maradók között); szempontonkénti kiesésnél az 1. szempont lenne a maximum. Figyelem: a 15. feladat PDF-je ugyanezzel a példa-bemenettel és ugyanezzel a kérdéssel 1-et ír, és nincs benne a 'Ha minden kutya kiesett' szabály; ez az eltérés a forrásban van, a megoldás a 29. PDF-et és a globális kiesést követi. A minta.zip mindkét párja mindkét értelmezéssel egyezik. Ha nincs bent maradó kutya, a kimenet 0.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/3. Egy szempont szerint sem nyertek, de mindenhol elérték a minimális pontszámot *",
+    "method": "Szempontonként a legnagyobb értékelhető pontot elérők nyernek; a bent maradó, nem nyertes kutyák kiválogatása",
+    "category": "Győztesek és szűrés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szűrés", "győztes", "holtverseny"],
+    "note": "Bizonytalan pont: a 'nyert' szempontonként értendő, vagyis az adott szempontban az alsó határt elérő kutyák közül a legnagyobb pontot elérők nyernek, holtverseny is győzelem (ezt a be2 minta igazolja). A minták nem döntik el, hogy a más szempontból kieső, de az adott szempontban értékelhető kutyák versenyezzenek-e; a megoldás szerint igen (ahogy a 2. feladat konvencióját követem). Ha csak a bent maradók versenyeznek, a kimenet változhat. A minták és a PDF-példa egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/30. Szempont, ahol a legkevesebb kieső volt *",
+    "method": "Szempontonként megszámoljuk a ponthatár alatti pontokat, és a legkevesebbet keressük",
+    "category": "Számlálás szempontonként",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "minimum"],
+    "note": "Bizonytalan pont: egy kutya több szempontban is kieshet (a be2 minta 5. kutyája a 6. és a 8. szempontban is alsó határ alatt van), és a számlálás minden ilyen szempontot külön növeli. Az első kieső szempont szerinti olvasat ugyanazt a sorszámot adja a mintákra és a PDF-példára, így a minták ezt nem döntik el. Egyenlőség esetén a kisebb sorszám.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

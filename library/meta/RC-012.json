@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/55. Középpontos sokszögszámok",
+    "method": "Zárt képlet, a háromszögszám-jellegű részt szorzás előtt modulózzuk.",
+    "category": "Számelmélet: képletek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["képlet", "moduláris", "túlcsordulás"],
+    "note": "A korábbi kód nagy i-nél (i ~ 10^8) túlcsordult, ezért a be2 minta nem stimmelt; a javított képlet után minta 2/2.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/56. K-osztható párok",
+    "method": "Maradékosztályok számlálása, párosítás r és K-r között.",
+    "category": "Maradékosztályok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maradékosztály", "párosítás", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/57. Térfogat",
+    "method": "Osztóhármasok végigpróbálása, a legkisebb különbségű kiválasztása.",
+    "category": "Osztók, faktorizálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["osztók", "faktorizálás", "szélsőérték"],
+    "note": "A feladat nem mondja meg döntetlen esetén a hármast (pl. 360: 9 8 5 és 10 6 6 is 4-es különbségű); a program az a-ban, majd b-ben legkisebb hármast írja ki. Minta 2/2.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/58. Számjegy keverés",
+    "method": "Mohó csökkentés a legnagyobb számjeggyel; a kölcsönzések alsó korlátja L(L-1)/2.",
+    "category": "Mohó stratégia, számjegyek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["számjegyek", "mohó", "bizonyítás"],
+    "note": "A lépésszám S + 9*J, ahol S a számjegyösszeg, J a kölcsönzött nullák száma; J alsó korlátja L(L-1)/2, plusz L-1 ha d*10^(L-1) alakú (d>=2). Brute force 1..3000 és 300 db 6 jegyű számra egyezik; minta 3/3.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

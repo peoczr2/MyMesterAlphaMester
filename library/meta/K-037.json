@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/7. Egyszerre nagy mennyiségben megvett teák *",
+    "method": "Egy bejárás, az egyes vásárlások külön vizsgálata, a nagy tételek cégneveinek gyűjtése.",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "feltétel", "szöveg"],
+    "note": "Az „egyszerre” egyetlen vásárlást jelent, a cégek tételeit nem összegezzük: a mintában a Lipton 600-as és 800-as tétele külön találat, a 200-as nem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/8. Elrendelt szmogriadók *",
+    "method": "Egy bejárás állapotgéppel: riadó kezdődik 100 fölé emelkedéskor, és 100 alá csökkenéskor ér véget.",
+    "category": "Állapotkövetés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["állapot", "tömb", "feltétel"],
+    "note": "Az 1. nap nincs előző méréshez kötve: a mintában az 1. napi 256-os érték nem számít elrendelésnek (csak állapotot rögzít), ezt a 2. mintából következtettem. A pontosan 100-as érték riadó közben nem szünteti meg a riadót (a szöveg „100% alatt” szerint); a mintában ilyen érték nincs.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/9. Első osztályú futók *",
+    "method": "Egy bejárás, az eredmények összevetése a szinthatárral, a megfelelők sorszámának gyűjtése.",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "Az irány a szövegből nem derül ki: a minták szerint az eredmény legyen legalább H (H=100 mellett a 100-as bekerül, a 98-as nem).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

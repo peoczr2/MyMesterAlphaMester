@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/1. Kígyózó szavak",
+    "method": "Kígyózó szavak fája, előrendes bejárás részfaméretekkel",
+    "category": "Fa: sorszám szerinti keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "lexikografikus sorrend",
+      "részfaméret"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/10. Jancsi és Juliska kitalálós játéka",
+    "method": "Intervallum-DP minimax költséggel, levágással",
+    "category": "Dinamikus programozás: intervallum",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "intervallum",
+      "minimax"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/11. Útépítés",
+    "method": "Maximális párosítás a kereszteződések páros gráfjában (Hopcroft-Karp)",
+    "category": "Gráf: párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "párosítás",
+      "bipartit gráf"
+    ],
+    "note": "Több helyes kimenet: a be2 mintán a darabszám (13750) egyezik, de a kiválasztott utak más halmaz, mint a mintakimenet, és a feladat szerint bármelyik megfelelő kiírható. Érvényességét library/.work/NT-007/t11/check11.py ellenőrzi (be1 pontosan egyezik a mintával).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/12. Tornyok",
+    "method": "Monoton verem intervallumai, szakaszfa tartomány-növeléssel, offline lekérdezés",
+    "category": "Szakaszfa: offline lekérdezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szakaszfa",
+      "monoton verem",
+      "offline"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/4. Adria",
+    "method": "Szélességi bejárás minden kezdőpontból, a szomszédok keresése szegmensfával.",
+    "category": "Gráf: BFS, szegmensfa",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bfs",
+      "szegmensfa"
+    ],
+    "note": "Megjegyzés: a megoldás minden bemenetre helyes (a távolság 3-nál nagyobb is lehet, az 1. mintában 4), de O(N^2 log N) időigénye miatt a 2 mp-es időlimitet nagy N-re (N ≤ 250 000) nem tartja; gyorsabb algoritmus kell.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/5. Játéktábla",
+    "method": "Bitenkénti sorszám; minimum a h szintre felmenő, vízszintesen lépő utak költségén.",
+    "category": "Bináris fa: legrövidebb út",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "bitek",
+      "távolság"
+    ],
+    "note": "Mindhárom minta egyezik; a sorszámok átvitele szavanként történik, így a legrosszabb eset O(n^2/64) (n ≤ 100 000).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

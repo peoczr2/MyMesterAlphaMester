@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/9. Összes utas száma a villamoson *",
+    "method": "Lineáris bejárás, a felszállók számának összegzése egyetlen változóban.",
+    "category": "Összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "összegzés", "felszállás"],
+    "note": "A mintákban a felszállók és a leszállók összege megegyezik (10, illetve 1399), ezért a minták nem döntik el, melyik oszlop a helyes; a megoldás a felszállók összegét használja, mert minden utas egyszer száll fel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

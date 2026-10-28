@@ -1,14 +1,10 @@
 /*
-Az állapotot a mező típusa és a koordinátái adják meg. Az oktagonok az egész rácspontokon
-helyezkednek el, a négyzetek pedig a köztük levő egységnégyzetek. Oktagonból a négy
-kardinális irány oktagonba vezet, a négy átlós irány pedig a megfelelő négyzetbe.
-Négyzetből csak az átlós irányok használhatók, ezek a négy sarkon álló oktagonokba visznek.
-Így egyszerű szimulációval követhető az út, közben számlálva a négyzetre érkezéseket és azt is,
-hogy hány különböző mezőt érintett a hangya legalább kétszer.
+Az állapot a mező típusából (nyolcszög vagy négyzet) és a koordinátákból áll. A négyzetet a bal alsó csúcsában álló nyolcszög koordinátáival azonosítjuk, így az átlós lépések egyszerű koordinátaváltozást jelentenek. Az utat lépésenként szimuláljuk: a négyzetekre érkezéseket egy halmazba gyűjtjük, így a különböző érintett négyzetek száma a halmaz mérete lesz. A mezők látogatásait egy map-ben számoljuk (a kezdőpozíciót is beleértve), és a legalább kétszer érintett mezőket összeszámoljuk. A lépések száma L, egy lépés O(log L) map-műveletet igényel, így az összes idő O(L log L).
 */
 /*
-Hint 1: || A mező típusa a lépés szabályát is meghatározza, ezért a négyzetet és a nyolcszöget külön kezeld. ||
-Hint 2: || A többször érintett mezők száma egy egyszerű látogatásszámlálással megkapható. ||
+Hint 1: || A nyolcszögek és a négyzetek külön mezőtípusok: az állapotot (típus, x, y) hármasként tárold, és a lépés szabálya a típustól függ. ||
+Hint 2: || Egy négyzetet a bal alsó sarkában álló nyolcszög koordinátáival azonosíthatsz, így az átlós lépések egyszerű koordinátaváltozást adnak. ||
+Hint 3: || A különböző négyzetek számához ne az érkezéseket számold, hanem egy halmazban tárold a már érintett négyzeteket. ||
 */
 
 #include <bits/stdc++.h>
@@ -25,10 +21,6 @@ struct State {
     }
 };
 
-static bool isDiagonal(const string& d) {
-    return d.size() == 2;
-}
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -40,7 +32,7 @@ int main() {
     map<State, int> cnt;
     cnt[cur] = 1;
 
-    long long squareVisits = 0;
+    set<pair<int, int>> squares;
 
     string dir;
     while (cin >> dir) {
@@ -83,7 +75,7 @@ int main() {
         }
 
         if (cur.type == 1) {
-            ++squareVisits;
+            squares.insert({cur.x, cur.y});
         }
         ++cnt[cur];
     }
@@ -93,7 +85,7 @@ int main() {
         if (value >= 2) ++repeated;
     }
 
-    cout << squareVisits << '\n';
+    cout << squares.size() << '\n';
     cout << cur.x << ' ' << cur.y << '\n';
     cout << repeated << '\n';
     return 0;

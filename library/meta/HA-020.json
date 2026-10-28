@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/42. Hálózati biztonság **",
+    "method": "Fokszám-alapú hámozás: a K-nál kisebb fokú csúcsok törlése sorban, amíg lehet",
+    "category": "Gráfok: K-mag",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "fokszám", "sor"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/43. Két csoport ***",
+    "method": "Lokális javítás: aki csoportjában legalább két nem kedvelt társ van, átvált a másik csoportba",
+    "category": "Gráfok: kétszínezés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "kétszínezés", "lokális keresés"],
+    "note": "Több helyes csoport is elfogadható, ezért a mintakimenet csak egy lehetséges válasz; a kimenet érvényességét külön ellenőrző program igazolta. A be2 minta aszimmetrikus (pl. 1 listázza az 5-öt, az 5 nem az 1-et), ezért a megoldás a nemkedvelések kölcsönös lezárásával dolgozik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/44. Átvágás",
+    "method": "Bambusz: levelek száma − 2; csillag: N−1 mínusz legnagyobb fok",
+    "category": "Fák: fokszámok",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "fokszám", "bizonyítás"],
+    "note": "Az átvágást úgy értelmeztem, hogy az élnek egyik végpontja megmarad; az általános élcserével az első minta 1 lépés lenne, a minta 2-t ad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/45. Túra",
+    "method": "Fa DP: legkisebb összegű, legalább két csúcsú út gyökerezett bejárással",
+    "category": "Fák: legkisebb összegű út",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["fa", "dinamikus programozás", "út"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

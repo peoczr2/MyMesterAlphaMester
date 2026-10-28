@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/29. Az összes lehetséges speciális sorrend",
+    "method": "Visszalépés: minden elem marad vagy szomszédjával cserél; a darabszámot Fibonacci-rekurzió adja.",
+    "category": "Visszalépés: permutációk",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "visszalépés",
+      "rekurzió"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/3. Konferencia *",
+    "method": "Témák darabszám szerint csökkenő rendezése, első illeszkedő szekcióba tesszük, visszalépéssel és zsákutca-memóriával.",
+    "category": "Visszalépés: csoportosítás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "csoportosítás",
+      "memoizálás"
+    ],
+    "note": "A kimenet érvényes beosztás (ellenőrizve), de nem egyezik a be2 mintával. Három próbálkozás: (1) stabil rendezés és első illeszkedő szekció (a jelenlegi kód), (2) rendezési variánsok (nem stabil std::sort, név szerinti döntetlen-feloldás, bemeneti sorrend), (3) szekciónként részhalmaz-keresés; egyik sem adja a mintát. A szöveg nem mondja ki, hogy bármelyik jó beosztás elfogadott, ezért kézi jelölés nem indokolt, döntés kell.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/30. Körmérkőzés új párosítása",
+    "method": "Visszalépés a legkisebb párosítatlan csapatra, bitmaszk követi a párosított csapatokat.",
+    "category": "Párosítás: visszalépés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "párosítás",
+      "bitmask",
+      "visszalépés"
+    ],
+    "note": "A minta egyezik. A szöveg szerint bármely jó párosítás megadható (megad egy), és a kiírás sorrendje tetszőleges, ezért kézi (ellenőrző: library/.work/R-079/check_r079.py match).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/31. Svájci rendszerű körmérkőzés",
+    "method": "Bitmaskos DP: a legkisebb párosítatlan csapat partnerét a minimális pontkülönbség-összeg szerint választjuk.",
+    "category": "Bitmaskos DP: párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "párosítás",
+      "bitmask",
+      "dp"
+    ],
+    "note": "Kézi: a minta ki1.txt és ki2.txt nem tartalmazza az első sort (minimális pontkülönbség-összeg), pedig a feladat szerint kötelező; a PDF-minta is ezt hagyja ki. A be2.txt N=6 mellett csak 5 csapatsort tartalmaz. A saját kimenet összege (1) és párosítása független brute force DP-vel igazolva (check_r079.py swiss). A kiírás sorrendje a szöveg szerint tetszőleges.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/32. Banda szétválasztása",
+    "method": "Az első sor 2^N kapcsolási mintáját próbáljuk, a többi sor kényszerítve adódik.",
+    "category": "Visszalépés: rácsos kapcsolás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rács",
+      "bitmask",
+      "kényszerítés"
+    ],
+    "note": "Adatprobléma, döntés kell: a feladat.pdf „Lámpák” (Lights Out) feladat, a mappanév és a minta.zip viszont a „Banda szétválasztása” gráfos feladat adatai. A megoldás a PDF szerint helyes (a PDF mintájával egyezik, a minimum GF(2) ellenőrzővel igazolva: library/.work/R-079/check_r079.py lights), de a minta.zip nem ehhez a feladathoz tartozik, ezért nem jelöltem kézi-nek.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/33. Fesztivál",
+    "method": "Mindig a legkevesebb szabad helyű embert osztjuk be, zsákutcánál visszalépünk.",
+    "category": "Visszalépés: konfliktusos beosztás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "visszalépés",
+      "konfliktus",
+      "heurisztika"
+    ],
+    "note": "A minta egyezik. A szöveg szerint egy tetszőleges beosztás megadható (megad egy beosztást), ezért kézi (ellenőrző: library/.work/R-079/check_r079.py fest).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

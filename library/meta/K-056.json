@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/75. Morze *",
+    "method": "Öt karakteres blokkokra bontás, minden blokk összevetése a számjegyek kódtáblázatával",
+    "category": "Morze-kód dekódolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["karakterlánc", "kódolás", "tömb"],
+    "note": "A kimenetben a vezető nullák is megmaradnak (számjegyenkénti kiírás); a feladatszöveg ezt nem rendezi, a minták erre nem térnek ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/76. Kövek **",
+    "method": "Átlagtól való eltérések prefixösszege, a nem nulla prefixek számlálása",
+    "category": "Prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "átlag", "mozgatás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/77. Kerítés",
+    "method": "Léckénként az utolsó festés színének nyilvántartása, az utolsó két festés összevetése",
+    "category": "Megszámolás: állapotgép",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["állapotgép", "tömb", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/78. Versenypárok kialakítása",
+    "method": "Két független párfajta (zöld–piros és piros–zöld) külön min-értéke, ezek összege",
+    "category": "Párok számlálása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["párosítás", "minimum", "számlálás"],
+    "note": "A minta.zip első bemenete (be1: agfa / bfafafafa) nem p/z betűkből áll, a kimenete 0; a megoldás a p/z-n kívüli karaktereket figyelmen kívül hagyja, így ez a minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

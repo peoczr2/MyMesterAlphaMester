@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/1. Adott élen átmenő utak ***",
+    "method": "Kétszeri szélességi bejárás minden kezdőpontból: a teljes gráfban és az uv él nélkül",
+    "category": "Gráf: élen átmenő utak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "élek"],
+    "note": "A minta.zip nem illeszkedik a feladatra: csak be1/be2 fájl van, ki nincs, és a tartalmuk nem a megadott formátumú gráf. A pár-sorrend tetszőleges, ezért minta kézi; az eredményt a PDF-példa (7 pár) és egy független, minden egyszerű utat bejáró ellenőrző igazolta 300 véletlen kis esetben. Mért idő: 0,02 mp N=500, M=10000 esetén.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/10. Repülőút ***",
+    "method": "Dijkstra a legkorábbi érkezési időkkel, a járatok napi ciklusát mod 1440 számolva",
+    "category": "Gráf: menetrend szerinti út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "menetrend"],
+    "note": "A minta.zip-ben nincs ki fájl. Több megoldás esetén bármelyik útvonal elfogadott, ezért minta kézi; az időt és az útvonal érvényességét független Bellman-Ford típusú ellenőrzővel igazoltam 400 kis véletlen esetben és egy 300 csúcsú, 3000 járatú esetben. Mért idő: 0,03 mp a be2 mintán (7000 csúcs, 100000 járat), 0,05 mp N=10000, M=200000 saját teszten.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/11. Szállítás *",
+    "method": "Maximális feszítőerdő: utak csökkenő sorrendben, DSU, majd szélességi bejárás az erdőben",
+    "category": "Gráf: legszélesebb út",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "unió-kereső", "bejárás"],
+    "note": "A minta.zip-ben nincs ki fájl. Több megoldás esetén bármelyik útvonal elfogadott, ezért minta kézi; a tehersúlyt és az útvonal érvényességét független max-min Floyd-ellenőrzővel igazoltam 400 kis véletlen esetben. A be2 mintán A és B nincs összekötve, ilyenkor 0-t írunk ki (a feladat nem definiálja). Mért idő: 0,2 mp N=100000, M=1000000 saját teszten (időlimit 0,7 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/12. Szállítás kétféle szempont *",
+    "method": "Legnagyobb szűk keresztmetszet unió-kereséssel, majd legkevesebb élű út szélességi bejárással",
+    "category": "Gráf: két szempontos út",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "unió-kereső", "bejárás"],
+    "note": "A be1.txt ISO-8859-1 kódolású, 0xA0 elválasztókkal, ezért a beolvasás getchar-alapú: a nem-számjegy bájtokat elválasztónak veszi (cin helyett). Mindkét minta egyezik. Mért idő: 0,02 mp a be2 mintán (9000 csúcs, 200000 él) és egy saját N=10000, M=200000 teszten.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

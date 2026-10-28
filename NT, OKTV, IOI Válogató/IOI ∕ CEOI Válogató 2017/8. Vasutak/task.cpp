@@ -12,7 +12,11 @@ Ezért az algoritmus két részből áll:
 
 Az eredmény a kiválasztott élek listája és ezek összköltsége.
 */
-
+/*
+Hint 1: || Az első lépés a főváros és a legnépesebb város közötti legolcsóbb út, amelyet Dijkstra-algoritmussal kapsz meg; az út minden csúcsa elért városnak számít. ||
+Hint 2: || Ezután minden lépésben a már elért városokból a még nem elért városokba vezető élek közül a legolcsóbbat választjuk. Ezt prioritási sorral (kupaccal) lehet hatékonyan kezelni, a már elért végpontú elemeket kihagyva. ||
+Hint 3: || Addig építünk, amíg legalább K másik várost el nem érünk; az útról kapott városokat is beleszámoljuk. A kiírt élek a megépítés sorrendjében következnek. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

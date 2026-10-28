@@ -1,9 +1,10 @@
 /*
-Hungarian megoldás: a Lights Out feladatot az első sor összes lehetséges
-kapcsolási mintájának kipróbálásával oldjuk meg.
-
+Megoldás lényege:
+Lights Out: ha az első sor kapcsolásai adottak, a többi sor kapcsolása egyértelműen kényszerített, mert az előző sor lámpái határozzák meg, hogy az alatta lévő sorban kell-e kapcsolni. Ezért az első sor mind 2^N kapcsolási mintáját kipróbáljuk, mindegyikre végigvezetjük a kapcsolásokat, és ellenőrizzük, hogy az utolsó sor sötét lett-e. Az érvényes megoldások közül a legkevesebb kapcsolásút választjuk. A kapcsolások sorrendje közömbös, mert a kapcsolás művelete (XOR) kommutatív. Időigény feladványonként O(2^N · N^2), N = 15 esetén néhány 10^7 egyszerű művelet.
+*/
+/*
 Hint 1: || Ha az első sor kapcsolásai adottak, a többi sor már kényszerített. ||
-Hint 2: || A legkevesebb kapcsolású megoldást kell kiválasztani. ||
+Hint 2: || Az első sor összes 2^N mintáját kipróbálva, a kész megoldások közül a legkevesebb kapcsolásút kell kiválasztani. ||
 */
 
 #include <bits/stdc++.h>

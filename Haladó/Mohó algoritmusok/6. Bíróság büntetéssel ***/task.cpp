@@ -1,9 +1,11 @@
 /*
-Feladat: A bírságok összegét minimalizáljuk úgy, hogy minden ügyet a napok valamelyikére beosztjuk.
-Ötlet: Határidő szerint haladva mindig a már kiválasztott, legkisebb bírságú ügyet dobjuk ki, ha túl sok lenne az on-time feladat. Ez a klasszikus deadline + min-heap stratégia.
-Hint 1: || Ha egy napra több ügy jutna, abból az on-time részhalmaznak a legnagyobb bírságúakat érdemes megtartani. ||
-Hint 2: || A végleges on-time halmazt utólag a legkésőbbi szabad napokra lehet bepakolni. ||
-Hint 3: || A kiesők mennek a napok végére, tetszőleges sorrendben. ||
+Megoldás lényege:
+Az ügyeket határidő szerint haladva egy min-kupacba tesszük, és ha a kupac mérete meghaladja az aktuális határidőt, a legkisebb díjú ügyet kiejtjük. Így a kiesett ügyek díjösszege minimális lesz. A megmaradt ügyeket a határidejükhöz legközelebbi szabad napra ütemezzük (DSU segít megtalálni a szabad napot), a kiesőket pedig a maradék napokra tesszük. Az időigény O(N log N), ahol N az ügyek száma.
+*/
+/*
+Hint 1: || Ha egy napra több ügy jutna, az on-time részhalmazban a nagyobb díjú ügyeket érdemes megtartani. ||
+Hint 2: || A megtartott ügyeket a határidejükhöz legközelebbi szabad napra érdemes rakni, így a többi ügy is elférhet. ||
+Hint 3: || A kiesett ügyeket a maradék szabad napokra tesszük; ezek díja adja a végső összeget. ||
 */
 
 #include <bits/stdc++.h>

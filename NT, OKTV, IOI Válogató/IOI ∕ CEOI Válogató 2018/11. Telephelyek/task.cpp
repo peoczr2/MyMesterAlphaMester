@@ -10,7 +10,11 @@ A vállalatok száma nagy lehet, de az N kicsi, ezért a 100 lehetséges közép
 a három rövid út újraépítése bőven belefér. A kiválasztott éleket egyedi azonosító
 szerint gyűjtjük és összköltségüket összeadjuk.
 */
-
+/*
+Hint 1: || Egy vállalat három telephelye akkor köthető össze a legolcsóbban, ha van egy közös csomópont (középpont), ahonnan a három telephelyre vezető utak együttes költsége minimális. ||
+Hint 2: || N legfeljebb 100, ezért minden csúcsból futtathatsz Dijkstra-algoritmust, és eltárolhatod a legrövidebb utak szülőit. ||
+Hint 3: || Minden lehetséges középpontra építsd fel a három útvonal uniójának élhalmazát (a közös éleket csak egyszer számold), és a legkisebb költségű változatot add meg. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

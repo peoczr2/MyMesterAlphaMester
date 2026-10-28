@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/9. Első villamosmegálló sok várakozási idővel *",
+    "method": "Egy bejárásban a várakozást számoljuk, az első K-nál nagyobb várakozásnál azonnal kilépünk.",
+    "category": "Keresés: első feltételes találat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "tömb"],
+    "note": "Mért futásidő N=100 mellett kb. 0,002 mp (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

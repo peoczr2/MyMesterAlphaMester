@@ -10,7 +10,11 @@ megoldás.
 
 Idő: O((N+M) log(N+M))
 */
-
+/*
+Hint 1: || Az autópálya egyenesének a két hálózat összes pontját (a rajta lévőket kivéve) egy oldalon kell hagynia. Milyen egyenesek felelnek meg ennek a két hálózat együttes pontjai szerint? ||
+Hint 2: || Ilyen egyenes a pontok konvex burkának egy határszakaszát tartalmazza. Ezért a határ mentén egymás utáni pontok között keress olyan párt, amelyben a két pont különböző színű. ||
+Hint 3: || Részletes menet: rendezd a pontokat x, majd y szerint, és monoton lánccal add meg a burkot úgy, hogy a határ egy egyenesre eső pontjait is megtartod. Az első különböző színű, egymás utáni határpont-pár adja a választ. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

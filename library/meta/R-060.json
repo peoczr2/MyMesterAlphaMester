@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Sorozatok/21. Konténer *",
+    "method": "Rossz helyen álló konténerek irányított multigráfja, Euler-körrel adja a mozgatási sorrendet",
+    "category": "Gráf: Euler-kör",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "euler-kör",
+      "rendezés"
+    ],
+    "note": "Több helyes mozgatássor van, a minta más sorrendet ad; a mozgatásokat szimulálva ellenőriztük, a lépésszám (rossz+1) kis N-re BFS-sel is igazolva.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/4. Átló *",
+    "method": "Páronkénti metszésteszt: a végpontok körben váltakozása, közös végpont nem metszés",
+    "category": "Geometria, metszés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "geometria",
+      "metszés",
+      "kör"
+    ],
+    "note": "Azonos átló ismételt húzását metszésnek vettük; a feladat nem zárja ki, a minta nem tartalmazza.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/45. Legtöbb közös nyelvet beszélő pár ***",
+    "method": "Nyelvek bitsetje emberenként, páronkénti metszet elemszáma",
+    "category": "Halmazok, bitset",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "halmaz",
+      "bitset",
+      "párok"
+    ],
+    "note": "Több azonos maximumú pár van, és a sorrend is szabad; a minta más sorrendet ír (Erika, Katalin), ezért ellenőrző programmal igazoltuk.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/46. Leíró nyelv **",
+    "method": "Verem: nyitó tag betétele, záró tag ellenőrzése a verem tetejével",
+    "category": "Verem, zárójelezés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "verem",
+      "zárójelezés",
+      "szöveg"
+    ],
+    "note": "A minta be1.txt két programjának sorrendje fordított a PDF-példához képest (ki1 a PDF bemenetéhez illik); a megoldás mindkét esetben helyes, referencia-programmal igazolva. A CRLF sorvégek miatt a '*' sort nem ismerte fel; ezt javítottuk.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/51. Kódok",
+    "method": "Háromas blokkok dinamikus programozása, a blokk utolsó bitje az állapot",
+    "category": "Dinamikus programozás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "bináris kód",
+      "súly"
+    ],
+    "note": "Több helyes műveletsor van (a ki1 első művelete más); a megoldást független ellenőrzővel igazoltuk minden N≤6 kódra és véletlen nagyobb esetekre.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/55. Konténerhelyek",
+    "method": "Szeparálható szakaszokra mohó bontás, a 2413/3142 minta zárását visszafelé ellenőrizve",
+    "category": "Permutáció, szeparálhatóság",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "permutáció",
+      "mohó",
+      "szeparálható"
+    ],
+    "note": "A minta be2/ki2 hibás: 2 nem lehet a maximum, mert az egymás melletti párok összevonásával legalább 50000 hely szabadul; a 82838 független DP-vel igazolva. Legrosszabb eset O(N²): szeparálható N=10^5 bemeneten kb. 8 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/35. Robotvezérlés - 2015. október",
+    "method": "Koordinátás bejárás: irányváltások száma és a legnagyobb négyzetes távolság.",
+    "category": "Szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "koordináták", "maximum"],
+    "note": "A minta nem dönti el a távolság értelmezését (bejárt pontok maximuma vagy végpont, euklideszi vagy Manhattan); itt az euklideszi, a bejárt pontok maximuma szerint dolgoztam.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/36. Titanic - 2016. május",
+    "method": "Egy menetes összesítés, részsztring-keresés és egész aritmetikás arányszámítás.",
+    "category": "Összesítés, szövegkeresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "szövegkeresés", "arány"],
+    "note": "A minta.zip-ben a kulcsszó és a K egy sorban áll, a feladatlapon külön sorban; a beolvasás szóközre tagolt, így mindkettőt kezeli.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/37. Számsorozat - 2016. október",
+    "method": "Egy menetes összegzés, páratlan szűrés és a leghosszabb növekvő szakasz nyilvántartása.",
+    "category": "Sorozatfeldolgozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "részsorozat", "átlag"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/38. Helsinki 1952 - 2017. május",
+    "method": "Helyezésből pont és érem származtatása, számlálók, majd második bejárás a legnagyobb létszámhoz.",
+    "category": "Számlálás, kiválasztás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "maximum"],
+    "note": "Érem csapatonként egy: a példában a 4 fős csapat bronza egyként szerepel (2 0 1).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

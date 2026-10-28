@@ -1,15 +1,12 @@
 /*
 Megoldás lényege:
-A variációk a megadott multihalmaz rész-multihalmazainak permutációi,
-lexikografikus sorrendben.
-
-A sorrend a prefixfa preorder bejárásának felel meg. Ezért a következő szót
-úgy kapjuk meg, hogy először a legkisebb lehetséges bővítést próbáljuk, és ha
-elfogyott a teljes multihalmaz, akkor a jobb szélső növelhető prefixet keressük.
-
-A megelőző szót hasonlóan kapjuk meg: ha a szó a szülő legkisebb gyermeke,
-akkor a szülő az előző; különben a jobb szélső csökkenthető helyen lépünk vissza,
-és utána a lehető legnagyobb befejezést választjuk.
+A variációk lexikografikus sorrendje ugyanaz a prefixfa-bejárás, mint a lerakásoknál: a következő variáció vagy a jelenlegi szó bővítése a legkisebb fel nem használt elemmel, vagy a jobb végétől visszalépve az első olyan pozícióban a nála nagyobb legkisebb elérhető elem. Az előző variáció hasonlóan kapható: ha az utolsó elem a pozíciójában a legkisebb elérhető érték, akkor a szó eggyel rövidebb lesz; ha ez az egyetlen, legkisebb elem, akkor a ciklikus miatt a teljes multihalmaz csökkenő sorrendje az előző. Különben az utolsó elemet a nála kisebb legnagyobb elérhető értékre cseréljük, és a maradék elemeket csökkenő sorrendbe tesszük a végére, mert ez adja a legnagyobb, még kisebb variációt.
+A prefixenkénti darabszámok tömbje miatt az időigény O(N²), ami N ≤ 1000 mellett bőven belefér.
+*/
+/*
+Hint 1: || Ugyanaz a prefixfa-szemlélet működik, mint az előző feladatnál: a következő variáció vagy a jelenlegi bővítése, vagy egy hosszabb prefix utáni nagyobb elem. Az előző variációnál azt vizsgáld, az utolsó elem helyettesíthető-e egy kisebb elérhető elemmel. ||
+Hint 2: || Számold meg értékenként az összes példányt, és a prefixekben a felhasznált példányokat. Így minden pozícióban lineáris bejárással megkapod a legkisebb vagy a legnagyobb még elérhető értéket. ||
+Hint 3: || Az előző variációnál, ha az utolsó elem a pozícióban elérhető legkisebb érték, a rövidebb prefix a válasz (egyelemű legkisebb elem esetén a teljes multihalmaz csökkenő sorrendje). Különben az utolsó elemet a nála kisebb legnagyobb elérhető értékre cseréld, és a maradékot csökkenő sorrendben fűzd a végére. ||
 */
 
 #include <bits/stdc++.h>
@@ -88,7 +85,7 @@ int main() {
 next_ready:
 
     vector<int> prv;
-    if (m == 1) {
+    if (m == 1 && cur[0] == values[0]) {
         prv = appendDescending(values, total);
     } else {
         int lastSmallest = smallestAvailable(m - 1);

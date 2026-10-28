@@ -1,0 +1,63 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/35. Latin tanc - 2015. majus",
+    "method": "Párok egy bejárása, a személyek szerepléseit szótárral (map) számoljuk.",
+    "category": "Számlálás, asszociatív tömb",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szótár",
+      "számlálás",
+      "keresés"
+    ],
+    "note": "Az 5. és 6. részfeladatban a nevek tetszőleges sorrendben is megadhatók; a megoldás ABC (ASCII) szerinti sorrendben ír, ez egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/36. Fej vagy írás - 2015. október",
+    "method": "Egyetlen bejárással a fejfutamokat és az FFF-ablakok utáni dobást számoljuk.",
+    "category": "Sorozat: futamok, ablakok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "sorozat",
+      "futam",
+      "számlálás"
+    ],
+    "note": "Minta-eltérés: a ki1.txt és ki2.txt nem tartalmaz a részfeladatok előtti # sorokat, pedig a feladatszöveg és a PDF példa szerint minden részfeladat elé kell, ezért a validátor 0/2-t jelez. A ki1/ki2 értékei (58, 1, 3 5, 0 1 és 51, 64, 12 95, 71 61) a # sorok nélkül pontosan egyeznek a megoldás kimenetével, és 3000 véletlen bemenetes független brute-force ellenőrzés is ugyanezt adja. A 4. részfeladatban az átfedő FFF-ablakok számítanak (a ki2 71 értéke így adódik, átfedés nélkül 40 lenne). Az 1. részfeladatban a .5-ös esetet felfelé kerekítjük, ez a mintában nem fordul elő.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/37. kidolgozás alatt",
+    "method": "",
+    "category": "",
+    "difficulty": 3,
+    "goal": "",
+    "tags": [],
+    "note": "BLOKKOLT: a feladat.pdf csak a 'Kidolgozás alatt' helyőrzőt tartalmazza (sem szöveg, sem kép), minta.zip sincs. A feladat nem oldható meg, task.cpp nem készült. A nehézség (3) és a többi üres mező helyőrző, nem becslés.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/38. Otszaz - 2016. majus",
+    "method": "Vásárlásonként tételeket gyűjtünk, az árat termékenként, a darabszámtól függő lépcsőkkel (500/450/400) számoljuk.",
+    "category": "Feltételes árazás, csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "csoportosítás",
+      "szótár",
+      "árképzés"
+    ],
+    "note": "A 6. részfeladatban a termékek sorrendje tetszőleges; a megoldás a bemeneti megjelenési sorrendben ír, ez egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

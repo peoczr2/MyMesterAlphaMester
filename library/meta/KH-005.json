@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/24. Minden nap meleg települések",
+    "method": "Soronként egy bejárás, logikai jelző a nem pozitív érték kizárására",
+    "category": "Feltétel minden elemre",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "sor", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/25. Másnál melegebb nap",
+    "method": "Településenként hőmérséklet szerinti csoportosítás, napokra bitset-metszet",
+    "category": "Bitset: halmazmetszet",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bitset", "csoportosítás", "halmaz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/26. Nagy változású települések",
+    "method": "Soronként egy bejárás, az előző nappal való abszolút különbség vizsgálata",
+    "category": "Szomszédos elemek különbsége",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összehasonlítás", "sor", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/27. Sokáig hidegebbé váló települések",
+    "method": "Soronként egy bejárás, futó számláló az egymás utáni csökkenések hosszára",
+    "category": "Egymás utáni csökkenések",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "sor", "sorozat"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

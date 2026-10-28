@@ -12,7 +12,12 @@ Négy dinamikus táblát számolunk:
 - jobb alsó sarokból minden mezőbe.
 Az első két tábla prefixet, a második kettő suffixet ad a kiválasztott találkozó-
 mezőhöz. A legjobb mező és konfiguráció kiválasztása után a két útvonalat a parent
-mutatókból visszaépítjük.
+mutatókból visszaépítjük. Az időigény és a memóriaigény O(N·M).
+*/
+/*
+Hint 1: || Rögzíts egy belső találkozási mezőt (i, j). Ha a találkozás csak ezen a mezőn történik, a négy szomszéd közül Ádám két szomszédot, Éva a másik kettőt használja, és csak két elrendezés lehetséges: Ádám fentről le és Éva balról jobbra, vagy Ádám balról jobbra és Éva lentről fel. ||
+Hint 2: || Négy DP-táblát számolj. A tl tábla a bal felső sarokból, a bl tábla a bal alsó sarokból érkező legjobb összeget tárolja minden mezőre (prefix); a tr és br tábla a jobb felső, illetve a jobb alsó sarok felé vezető legjobb összeget (suffix). Mindegyik táblát a megfelelő irányú lépésekkel töltsd ki. ||
+Hint 3: || A találkozási mezőt nem számoljuk bele. Ha Ádám fentről le és Éva balról jobbra halad, az összeg tl[i-1][j] + br[i+1][j] + bl[i][j-1] + tr[i][j+1]; a másik elrendezésnél a megfelelő szomszédokkal számolj hasonlóan. Minden belső mezőre mindkét esetet számold ki, válaszd a legnagyobbat, és az útvonalakat a tárolt előző mezőkből vezesd vissza. ||
 */
 
 #include <bits/stdc++.h>

@@ -11,11 +11,13 @@ Középen átlépő [L..R] (L<=mid<R) esetén két eset van:
 
 Mindkét esetben az egyenlőtlenség egy "sum <= küszöb" alakú lekérdezéssé alakul, amit Fenwick-fával
 kezelünk (prefix maximum / prefix minimum index lekérdezés), így a középső rész O(szegmens*log szegmens).
-Teljesen: O(N log^2 N).
+Összesen: O(N log^2 N).
 */
-// Hint 1: || A hosszra nincs monotonitás, ezért sima bináris keresés nem jó. ||
-// Hint 2: || Oszd ketté a tömböt, és külön kezeld a középen átnyúló intervallumokat. ||
-// Hint 3: || A középső részben a feltétel "sum <= küszöb" lekérdezésekre redukálható Fenwick-fával. ||
+/*
+Hint 1: || A hosszra nincs monotonitás, ezért sima bináris keresés nem jó. ||
+Hint 2: || Oszd ketté a tömböt, és külön kezeld a középen átnyúló intervallumokat. ||
+Hint 3: || A középső részben a feltétel "sum <= küszöb" lekérdezésekre redukálható Fenwick-fával. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

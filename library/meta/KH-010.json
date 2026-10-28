@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/9. Legmelegebb települések",
+    "method": "Soronkénti maximum beolvasás közben, majd a globális maximummal egyező sorok gyűjtése",
+    "category": "Maximumkeresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "keresés"],
+    "note": "A minta.zip ki1.txt hibás: be1.txt-re „1 3” a kimenet, de a feladatszöveg Példa része (feladat.pdf) „2 2 3”-at ír ki (1. sor: 3 5, a 2. és 3. település sorának maximuma 20, az országos maximum). Ezt a ki2.txt (1000×1000) igazolja: a globális maximum értelmezésével a megoldás pontosan egyezik, a sormin- és az átlag-alapú értelmezés nem. A megoldás független cellánkénti brute-force ellenőrzőt (library/.work/KH-010/brute_check.py, 400 véletlen teszt) is átmegy. A validátor ezért a ki1.txt miatt hibás állapotot jelez, a minta kézi jelölésű.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

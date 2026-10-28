@@ -1,10 +1,18 @@
 /*
 Megoldás lényege:
-N legfeljebb 8, ezért az összes permutációt kipróbálhatjuk.
-Egy permutáció megmondja, hogy az I. ládába melyik üvegfajtát gyűjtjük.
-Az optimális megoldás az, ahol a helyben maradó üvegek száma maximális.
+Minden ládához pontosan egy üvegfajtát rendelünk, és a fajták különbözőek. Egy
+üveg akkor marad a helyén, ha a fajtája megegyezik a láda kiválasztott fajtájával,
+különben át kell rakni. A minimális átrakásszám ezért az összes üveg és a helyben
+maradók számának különbsége, vagyis a helyben maradók összegét kell maximalizálni.
+Mivel N legfeljebb 8, az összes permutációt (legfeljebb 8! = 40320) végigpróbáljuk,
+és mindegyiknél N összeadást végzünk. Azonos összegnél a lexikografikusan első
+permutációt írjuk ki.
+Időigény O(N!·N), ami a korlátok mellett bőven belefér.
 */
-
+/*
+Hint 1: || Tegyük fel, hogy minden ládába egy fajta üvegeit gyűjtjük, és a fajták mind különbözőek. Egy láda üvegei közül csak a kiválasztott fajtához tartozók maradnak a helyükön, a többit át kell rakni. Így a feladat a ládák és a fajták párosítása. ||
+Hint 2: || Mivel N legfeljebb 8, a fajták sorrendjének minden lehetősége végigpróbálható. Ha perm[i] az i. láda fajtája, a helyben maradó üvegek száma a[i][perm[i]-1] értékek összege; a legnagyobb összeget adó permutációból adódik a válasz. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

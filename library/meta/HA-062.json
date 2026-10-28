@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/82. Hegyi levegő",
+    "method": "Kruskal-rekonstrukciós fa és LCA a minimax útra",
+    "category": "Gráf: minimax út",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["minimax út", "dsu", "lca"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/83. Dinók",
+    "method": "Különbségi egyenlőtlenségek gráfja, erős komponensek és potenciálok",
+    "category": "Gráf: erős összefüggőség",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["erős összefüggőség", "egyenlőtlenségek", "tarjan"],
+    "note": "A feladat egy lehetséges időpontot kér, ezért több jó kimenet van. A validate.py a be1 mintán eltérést jelez; a kimenetet a library/.work/HA-062/83/check83.py ellenőrzi a feladat szabályai szerint.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/84. Testvérvárosok",
+    "method": "Centroid-felbontás, maradékok számlálása modulo K",
+    "category": "Fa: centroid-felbontás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "centroid", "maradék"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/9. Futár mindenhova *",
+    "method": "Mélységi fa visszaugró élekkel, bejárás visszalépésekkel és kijárat-számítással",
+    "category": "Gráf: mélységi bejárás",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["mélységi bejárás", "fa", "séta"],
+    "note": "A feladat egy alkalmas útvonalat kér, ezért több jó kimenet van. A minta.zip-ben nincs ki-fájl, a validate.py 'nincs minta' állapotot ad; a PDF-példát és a be1/be2 bemeneteket saját séta-ellenőrzővel (library/.work/HA-062/9/check9.py) igazoltam. A be2 kimenete 12,5 millió szám, futása kb. 0,14 s, ami az 0,1 s-os időlimit fölött van.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/20. Hálózat átmérője *",
+    "method": "Két szélességi bejárás a fában: a legtávolabbi csúcsból indítva kapjuk az átmérőt.",
+    "category": "Gráf: fa átmérője",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "szélességi bejárás", "fa"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/21. Hatszög ***",
+    "method": "Hatszög-koordináták (i,j,k) szerinti szélességi bejárás csak azonos magasságú mezőkön.",
+    "category": "Gráf: BFS koordinátákkal",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "koordináták"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/22. Kanyarodó villamos ***",
+    "method": "Állapot: (sor, oszlop, belépési oldal); szélességi bejárás az elemek összekötésein.",
+    "category": "Gráf: BFS állapotokon",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "állapottér"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/23. Karaván **",
+    "method": "Napról napra haladó bejárás: legkorábbi érkezés, legrövidebb időtartam és fordított legkésőbbi indulás.",
+    "category": "Gráf: időzített élek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "időzített élek", "dinamikus programozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

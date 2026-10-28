@@ -1,0 +1,38 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2005/4. Kritikus hálózati vonalak",
+    "method": "Hidak keresése low-link bejárással, részfánkénti A/B-számlálás",
+    "category": "Gráf: hidak (Tarjan)",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "híd", "mélységi keresés"],
+    "note": "A validátor az 1. mintán a kritikus vonalak és a végpontok sorrendje miatt tér el, a kiírt vonalhalmaz azonos. A feladatszöveg szerint: \"A kritikus hálózati vonalakat bármilyen sorrendben kiírhatod, és az egyes sorokban a végpontok sorszámai is tetszőleges sorrendben szerepelhetnek.\" Ellenőrző: library/.work/CE-002/f4_check.py (véletlen kis tesztekre teljes törlés-alapú ellenőrzés, nagy mintán független XOR-hash hídkeresés).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2005/5. Mozgó szerelők",
+    "method": "Pozíciópár-állapotú DP a kérések sorrendjében, visszakövetéssel",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "állapottér", "visszakövetés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2005/6. Jegyiroda",
+    "method": "Lagrange-büntetéses bináris keresés, lexikografikus DP és átfedő komponensek cseréje",
+    "category": "Dinamikus programozás: Lagrange",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["lagrange", "dinamikus programozás", "bináris keresés"],
+    "note": "A validátor az 1. és 2. mintán a megrendelések kiosztásának sorrendje miatt tér el; a kiírt bevétel és a darabszám mindkét mintával egyezik. A feladatszöveg szerint: \"Amennyiben több megoldás is létezik, a programodnak elegendő egyet megadnia, nem számít, hogy melyiket.\" Ellenőrző: library/.work/CE-002/f6_check.py (kis esetekre teljes keresés, közepes esetekre 2D DP referencia).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/71. Erőművek ****",
+    "method": "Hidak keresése, hídfa részfa-összegei, merge sort fával legközelebbi párkeresés",
+    "category": "Gráf: hidak, részfák",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "hidak", "részfa", "merge sort fa"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/72. Útépítés ****",
+    "method": "Rácspontok páros gráfja, maximális párosítás Hopcroft–Karp-pal",
+    "category": "Gráf: párosítás",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "párosítás", "páros gráf", "rács"],
+    "note": "A minta második tesztjénél más, de azonos darabszámú (13750) érvényes utat ad; ellenőrzés: library/.work/HA-059/72/check72.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/73. Kaktuszgráf **",
+    "method": "Mélységi bejárás, a visszaélek által lezárt körök hosszának maximuma",
+    "category": "Gráf: mélységi bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "mélységi bejárás", "kör", "kaktuszgráf"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/74. Elfogás ****",
+    "method": "Blokkfelbontás (Tarjan), U-ból mélységi fa, V-t tartalmazó blokkok alatti csúcsok",
+    "category": "Gráf: blokkok, vágópontok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "blokk", "artikulációs pont", "egyszerű út"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

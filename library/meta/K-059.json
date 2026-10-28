@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/86. Előállítások száma orgonasíp elrendezésben ***",
+    "method": "Balról jobbra haladva a K - x értékű korábbi elemek számának összegzése gyakorisági táblával",
+    "category": "Megszámolás: párok összege",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "párok", "számlálás"],
+    "note": "A feladatszöveg korlátja (Si ≤ K) ellentmond a példának (8 > K=7); a megoldás nem használja a korlátot, a példa válasza (6) egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/87. Különböző és ismétlődő értékek ***",
+    "method": "Két prefixösszeg-tömb (különböző értékek, összes húzás), ismétlődés: összes mínusz különböző",
+    "category": "Megszámolás: prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "tömb", "számlálás"],
+    "note": "A feladatszöveg magyarázata a 3. kimenetnél az (1,4,7) értékeket említi, de a bemenetben nincs 4-es; a kimenet (3 3) az 1, 3, 7 értékekkel és az ismétlődések definíciójával egyezik, ezt követi a megoldás.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/88. Pillanatnyilag helyezés **",
+    "method": "Korábbi, nála jobb és azonos pontszámok darabszámának lekérdezése Fenwick-fával",
+    "category": "Megszámolás: rangsorolás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rangsor", "fenwick-fa", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/89. Színezés **",
+    "method": "Szomszédos eltérő színű párok száma V; a válasz ceil(V/2), egy átszínezés után O(1) frissítés",
+    "category": "Megszámolás: szakaszhatárok",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["bináris", "tömb", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

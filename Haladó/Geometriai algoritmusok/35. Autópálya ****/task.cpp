@@ -9,7 +9,12 @@ Ha ilyen pár nincs, akkor nincs megoldás.
 Az Andrew-féle monotone chain algoritmust használjuk, és a határon fekvő kollineáris pontokat is megtartjuk,
 így egy él mentén minden lehetséges színváltás megmarad.
 */
-
+/*
+Hint 1: || Az egyenes akkor jó, ha minden csomópont (az egyenesen fekvőket kivéve) az egyik oldalán van. Ez azt jelenti, hogy az egyenes a két hálózat együttes konvex burkának egyik támaszegyenese. ||
+Hint 2: || Ha a támaszegyenesen piros és kék pont is van, akkor a burok határán van két egymás melletti, különböző színű csúcs. Ezért elég a burok határát bejárni, és keresni egy színváltást. ||
+Hint 3: || A konvex burkot Andrew-féle (monoton lánc) módszerrel építheted: a pontokat x, majd y szerint rendezed. A kollineáris pontokat tartsd meg, mert egy burokél mentén is lehet színváltás. ||
+Hint 4: || Az azonos koordinátájú pontokat csak egyszer vedd figyelembe, különben egy nullavektor elrontja a láncot. Ha a határon nincs színváltás, akkor nincs megoldás, és a 0 0 párt kell kiírni. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -78,7 +83,7 @@ int main() {
     points.reserve(800000);
 
     for (int i = 1; i <= n; ++i) {
-        long long x, y;
+        long long x = 0, y = 0;
         in.readInt(x);
         in.readInt(y);
         points.push_back({x, y, 0, i});
@@ -87,7 +92,7 @@ int main() {
     int m;
     in.readInt(m);
     for (int i = 1; i <= m; ++i) {
-        long long x, y;
+        long long x = 0, y = 0;
         in.readInt(x);
         in.readInt(y);
         points.push_back({x, y, 1, i});
@@ -99,6 +104,12 @@ int main() {
         if (a.color != b.color) return a.color < b.color;
         return a.idx < b.idx;
     });
+
+    // Az azonos koordinátájú pontok közül az elsőt tartjuk meg: a duplikált pont a kollineáris
+    // láncban nullavektort adna, ami elrontaná a konvex burok építését.
+    points.erase(unique(points.begin(), points.end(), [](const Point& a, const Point& b) {
+        return a.x == b.x && a.y == b.y;
+    }), points.end());
 
     vector<Point> lower, upper;
     lower.reserve(points.size());

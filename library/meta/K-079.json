@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/68. Dinnyeárusok",
+    "method": "Mohó párosítás: emberek balról jobbra, mindenkinek a legkisebb szabad elérhető árushely",
+    "category": "Mohó párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "kétmutatós",
+      "párosítás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/69. Macskák",
+    "method": "K-t végigpróbálva, két prefix-számlálóval számoljuk a rosszul besorolt macskákat; egyenlőségnél a nagyobb K marad",
+    "category": "Prefixösszeg, minimalizálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "minimalizálás",
+      "prefixösszeg",
+      "számlálás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/7. Leghosszabb intervallum mikor senki sem közlekedett *",
+    "method": "Szomszédos időpontok különbségének maximuma, egyetlen bejárással",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "maximum",
+      "időpont",
+      "különbség"
+    ],
+    "note": "A minta be2.txt (1000 sor) nincs időrendben, pedig a feladatszöveg szerint az adatok időpont szerint rendezettek. A várt kimenet (1 17 21 57) a bemeneti sorrend szerinti szomszédos különbségből adódik, ezért a megoldás nem rendez (rendezve 3 3 3 15 jönne ki). Ellenőrzendő: a rendezettségi feltétel szerinti helyes értelmezés.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/70. Speciális számok kódolása",
+    "method": "Prefixösszegekből az első számjegy legkisebb és legnagyobb megengedett értéke",
+    "category": "Prefixösszeg",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "prefixösszeg",
+      "karakterlánc",
+      "számjegy"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

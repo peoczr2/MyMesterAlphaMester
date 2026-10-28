@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/24. Legszennyezettebb nap *",
+    "method": "Egy menetes maximumkiválasztás a nap sorszámával, szigorú összehasonlítással.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "kiválasztás", "index"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/25. Legtöbb eső-egy-nap *",
+    "method": "Egy menetes maximumkiválasztás: az eddigi legnagyobb mennyiség és a nap sorszáma, szigorú összehasonlítással.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "kiválasztás", "index"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/26. Legtöbb megfigyelt jármű egy helyen *",
+    "method": "Helyenkénti számláló tömb, majd a legnagyobb számláló keresése, egyenlőségnél a kisebb sorszámmal.",
+    "category": "Számlálás: maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "számlálás", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/27. Legtöbbször lefényképezett terület műholdról *",
+    "method": "Imos-módszer: 2D különbségi tömb a téglalapok sarkaival, majd összegzés és a maximum keresése.",
+    "category": "Különbségi tömb: 2D",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kétdimenziós tömb", "különbségi tömb", "maximum"],
+    "note": "A feladat nem mondja ki, hogy a téglalap széle hozzátartozik-e a területhez. A be2/ki2 minta (138) csak a zárt, széleket is beleszámító értelmezéssel adódik (a félig nyitott értelmezés 136-ot adna), ezért a széleket beszámítjuk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

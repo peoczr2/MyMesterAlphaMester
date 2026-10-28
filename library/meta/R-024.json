@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/26. Épület színezések száma 3 **",
+    "method": "Három állapotú DP az utolsó szín szerint, a három érték mindig egyenlő.",
+    "category": "Dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "állapotgép",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/27. Ügyességi verseny **",
+    "method": "Eulerian-rekurzió a legnagyobb elem beszúrásával, az emelkedések számára.",
+    "category": "Eulerian számok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "eulerian-számok",
+      "permutáció",
+      "dinamikus programozás"
+    ],
+    "note": "Nincs minta.zip; a feladat példája (4 2 → 11) kézzel lefuttatva, és N ≤ 7 esetén brute force is egyezik.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/28. Permutáció kódolása ***",
+    "method": "Fenwick-fával számoljuk a prefixben a kisebb-egyenlő elemeket, O(N log N).",
+    "category": "Fenwick-fa, inverziók",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "fenwick-fa",
+      "permutáció",
+      "inverzió"
+    ],
+    "note": "Minta-eltérés, kézi ellenőrzés: be2.txt N=100000, de ki2.txt csak 20000 számot tartalmaz; a 3. elemnél a minta 2-t ír, a helyes érték 0, mert A_3=83533 nagyobb mindkét korábbi elemnél (34332, 662). A program kimenete visszafejtve (inverz kód) az eredeti permutációt adja, kis N-re brute force is egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/29. Sorrend",
+    "method": "Eulerian-szám középső értéke az emelkedés-rekurzióval, modulo 2017.",
+    "category": "Eulerian számok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "eulerian-számok",
+      "permutáció",
+      "dinamikus programozás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/3. Beosztás ***",
+    "method": "Kompozíciók rangja binomiális összegekkel, az előző és következő unrankeléssel.",
+    "category": "Kompozíciók, rangsorolás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "kompozíció",
+      "rangsorolás",
+      "binomiális"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/30. Idegen DNS",
+    "method": "Utolsó betű szerinti 5 állapotú DP, nagy egész összeadással.",
+    "category": "Dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "dinamikus programozás",
+      "állapot",
+      "nagy egész"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

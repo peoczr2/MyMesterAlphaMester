@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/28. Legtávolabb lévő közeli állomás a végállomástól *",
+    "method": "Távolságok prefixösszege, a végállomástól K-nál közelebbi legtávolabbi állomás keresése",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "prefixösszeg",
+      "távolság",
+      "keresés"
+    ],
+    "note": "A feladat.pdf példája szerint a helyes kimenet 2 1900; a minta ki1.txt (be1: 3 1900) és ki2.txt (be2: 100 3793, a számított 99 3793 helyett) mindkét esetben a sorszámot eggyel nagyobbnak adja. A megoldás a PDF példával és egy független Python-ellenőrzéssel egyezik; a minta-eltérés döntést igényel (PDF vagy minta a mérvadó), ezért nincs minta: kézi. Mért idő: kb. 2 ms N=100 bemenetre (limit 0,1 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/29. Legtávolabbi állomás közelebb az induló állomáshoz *",
+    "method": "Az eljutási idők összehasonlítása minden állomásra, a legnagyobb sorszámú találat megtartása",
+    "category": "Keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "keresés",
+      "idő",
+      "összehasonlítás"
+    ],
+    "note": "Az eljutási időt érkezéstől érkezésig mérjük (végállomás érkezési ideje mínusz az állomás érkezési ideje): ez egyezik a minta be2 eredményével (51 810 838), az indulási időből számolt 829 nem. Mért idő: kb. 2 ms N=100 bemenetre (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/3. Eddigieknél hosszabb menetidejű szakaszok *",
+    "method": "Futó maximum a szakaszidőkön, a szigorúan újabb rekordok sorszámainak gyűjtése",
+    "category": "Maximum",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "maximum",
+      "tömb",
+      "ciklus"
+    ],
+    "note": "Az első szakasz mindig felkerül, mert nincs korábbi szakasz, amivel összehasonlítható lenne. Mért idő: kb. 2 ms N=100 bemenetre (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/30. Legtöbb idő két villamosmegálló között *",
+    "method": "Futó maximum a szakaszidőkön, a leghosszabb szakasz két végpontjának nyilvántartása",
+    "category": "Maximum",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "maximum",
+      "tömb",
+      "szakasz"
+    ],
+    "note": "A 0. és az 1. állomás közötti szakasz is versenyez (a 3. feladat mintája ezt az értelmezést használja); egyenlőségnél a kisebb sorszámú szakasz marad. Mért idő: kb. 2 ms N=100 bemenetre (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

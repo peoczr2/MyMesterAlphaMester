@@ -12,6 +12,7 @@ Hint 2: || Az igazgató sorszáma fixen 1, tehát innen kell indulni. ||
 Hint 3: || Ha bejárás közben viszed a mélységet, külön bonyolult logika nélkül ki tudod gyűjteni a megfelelő csúcsokat. ||
 */
 
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -49,6 +50,7 @@ int main() {
         }
     }
 
+    sort(result.begin(), result.end());
     cout << result.size() << '\n';
     for (int i = 0; i < static_cast<int>(result.size()); ++i) {
         if (i > 0) {

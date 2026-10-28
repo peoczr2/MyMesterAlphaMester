@@ -1,71 +1,81 @@
 /*
-Feladat: A vendégekből a lehető legtöbb K fős csoportképet kell készíteni úgy, hogy minden vendég legfeljebb egy képen szerepeljen.
-Ötlet: Időpont-söprés közben aktív vendégeket tartunk, és mindig a leghamarabb távozó K vendéget fényképezzük le.
-Hint 1: || Egy csoport akkor készíthető, ha van K vendég, akik ugyanabban a pillanatban bent vannak. ||
-Hint 2: || A korán távozókat érdemes előbb felhasználni. ||
-Hint 3: || Eseményidőpontokban ismételd a „K darab legkisebb végidő kiválasztását”. ||
-*/
+Csoportképek
 
+Feladat: M vendég érkezési és távozási idejét ismerjük (érkezéskor már, távozáskor még fényképezhető).
+Csoportképeket készítünk: minden képen pontosan K vendég van, mindenki legfeljebb egy képen szerepel,
+egy időpontban több kép is készülhet. Adjuk meg a képek számát, és minden képhez az időpontját és
+a rajta szereplők sorszámát!
+
+Megoldás (távozási idő szerinti mohó): Egy kép időpontja mindig eltolható a rajta szereplők közül
+legkorábban távozó vendég távozási idejére. Ezért időrendben haladunk, és egy min-kupacban tartjuk
+a jelen lévő, még képre nem került vendégeket távozási idő szerint. A t időpontban először betesszük
+a most érkezőket. Ezután amíg a kupac tetején t-ben távozó vendég áll: ha legalább K vendég van bent,
+akkor a K legkorábban távozóból (köztük ő) képet készítünk t-ben; ha nincs K vendég, akkor ő már
+semmilyen képre nem kerülhet fel, kivesszük. A legkorábban távozók felhasználása a többieket a
+későbbi képekre hagyja.
+
+Időigény: O(M log M + maxIdő).
+
+Megjegyzés: K <= 2 esetén ez a mohó bizonyíthatóan optimális (K = 2 az intervallumgráf maximális
+párosítása). K >= 3-ra a feladat a diszjunkt K-klikkek pakolása intervallumgráfban, amire nem ismert
+egyszerű pontos módszer, és ez a mohó ott nem mindig optimális. Ellenpélda: K = 3, vendégek
+[1,1] [1,5] [1,10] [5,5] [5,5] [10,10] [10,10]: a mohó 1 képet ad, pedig 5-kor {2,4,5} és
+10-kor {3,6,7} két kép. A feladatlap példájának kimenete pontosan ezt a mohó stratégiát követi.
+*/
+/*
+Hint 1: || Egy kép időpontja eltolható a rajta lévők közül legkorábban távozó távozási idejére. ||
+Hint 2: || Időrendben haladva azt a vendéget nézd, aki éppen távozik: most kell képre kerülnie, vagy soha. ||
+Hint 3: || A távozó mellé a bent lévő, még szabad vendégek közül a legkorábban távozókat válaszd (min-kupac távozási idő szerint). ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-struct Guest { int l, r, id; };
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n, k;
-    cin >> n >> k;
-    vector<Guest> g(n);
-    vector<int> times;
-    times.reserve(2 * n);
-    for (int i = 0; i < n; ++i) {
-        cin >> g[i].l >> g[i].r;
-        g[i].id = i + 1;
-        times.push_back(g[i].l);
-        times.push_back(g[i].r);
-    }
-    sort(times.begin(), times.end());
-    times.erase(unique(times.begin(), times.end()), times.end());
-
-    vector<vector<int>> starts(times.size());
-    for (int i = 0; i < n; ++i) {
-        int pos = lower_bound(times.begin(), times.end(), g[i].l) - times.begin();
-        starts[pos].push_back(i);
+    // beolvasás
+    int m, k;
+    cin >> m >> k;
+    vector<int> erk(m), tav(m);
+    int maxIdo = 0;
+    for (int i = 0; i < m; i++) {
+        cin >> erk[i] >> tav[i];
+        maxIdo = max(maxIdo, tav[i]);
     }
 
-    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
-    vector<vector<int>> photos;
-    vector<int> photoTime;
+    // érkezők időpontonként
+    vector<vector<int>> erkezok(maxIdo + 1);
+    for (int i = 0; i < m; i++) erkezok[erk[i]].push_back(i);
 
-    for (int ti = 0; ti < (int)times.size(); ++ti) {
-        int t = times[ti];
-        for (int idx : starts[ti]) pq.push({g[idx].r, g[idx].id});
-        while (!pq.empty() && pq.top().first < t) pq.pop();
+    // bent lévő, még szabad vendégek: (távozási idő, sorszám), a legkorábban távozó van felül
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> bent;
+    vector<int> kepIdo;   // a képek időpontjai
+    vector<int> tagok;    // a képek szereplői, képenként K darab egymás után
 
-        while ((int)pq.size() >= k) {
-            vector<int> group;
-            group.reserve(k);
-            bool ok = true;
-            for (int i = 0; i < k; ++i) {
-                if (pq.empty() || pq.top().first < t) {
-                    ok = false;
-                    break;
+    for (int t = 1; t <= maxIdo; t++) {
+        for (int i : erkezok[t]) bent.push({tav[i], i});
+
+        // aki most távozik, az most kerül képre, vagy soha
+        while (!bent.empty() && bent.top().first == t) {
+            if ((int)bent.size() >= k) {
+                kepIdo.push_back(t);
+                for (int j = 0; j < k; j++) {
+                    tagok.push_back(bent.top().second + 1);
+                    bent.pop();
                 }
-                group.push_back(pq.top().second);
-                pq.pop();
+            } else {
+                bent.pop();   // nincs mellette elég ember, kimarad
             }
-            if (!ok) break;
-            photos.push_back(group);
-            photoTime.push_back(t);
         }
     }
 
-    cout << photos.size() << '\n';
-    for (int i = 0; i < (int)photos.size(); ++i) {
-        cout << photoTime[i];
-        for (int id : photos[i]) cout << ' ' << id;
+    // kiírás: képek száma, majd soronként időpont és szereplők
+    int f = kepIdo.size();
+    cout << f << '\n';
+    for (int p = 0; p < f; p++) {
+        cout << kepIdo[p];
+        for (int j = 0; j < k; j++) cout << ' ' << tagok[p * k + j];
         cout << '\n';
     }
     return 0;

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/13. Térkép *",
+    "method": "Dijkstra a rácson, indexelt bináris halommal és csökkentési kulccsal.",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "rács"],
+    "note": "Időmérés a legnagyobb mintán (1000×1000, be2): kb. 0,1 mp, az időlimit 0,4 mp; memória kb. 19 MB (limit 32 MiB). 150 véletlen kis térképen Bellman-Ford-szerű brute-force egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/14. Túra *",
+    "method": "Dijkstra, a belépő lépések betűit tárolva Q-ból visszafelé rakjuk ki az utat.",
+    "category": "Gráf: legrövidebb út, útvonal",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "útvonal"],
+    "note": "A minta ki2.txt második sora (1005 karakter) érvénytelen: a 2. lépésnél (106,259)→(106,260) a magasság 17→153, |dh|=136 > H=100, a 450. lépésnél pedig kilép a térképről. Az első sor (27098) egyezik a saját időnkkel, a saját útvonal (ugyanennyi idő, 1005 lépés) független ellenőrzővel igazolt: library/.work/HA-034/14/check14.py. Ki1 teljesen egyezik. Több optimális út van, a feladat szerint bármelyik megadható. Időmérés be2-n: kb. 0,1 mp (limit 0,4 mp), memória kb. 20 MB.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/15. Turista *",
+    "method": "Dijkstra (idő, szakaszszám) páros kulccsal, 64 bites csomagolással.",
+    "category": "Gráf: legrövidebb út, rács",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "rács"],
+    "note": "A be1 első sorában a második szám és K között 0xA0 (nem törő szóköz) karakter áll; a beolvasó a nem számjegyeket átugorja, így a minta kezelhető. Az útszakaszok száma a legkevesebb szakaszú, legrövidebb idejű út száma (ki2: 1220 szakasz egyezik). Időmérés 600×600-as be2-n: kb. 0,04 mp (limit 0,3 mp), memória kb. 12 MB. 200 véletlen kis rácson Bellman-Ford-szerű brute-force egyezik, köztük elérhetetlen esetekkel is.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/16. Út városok elkerülésével **",
+    "method": "Dijkstra csúcsköltséggel: elsődlegesen az elkerülendő városok, másodlagosan a városok száma.",
+    "category": "Gráf: legrövidebb út, csúcsköltség",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "csúcsköltség"],
+    "note": "Mindkét minta egyezik. 150 véletlen kis gráfon minden egyszerű utat végigpróbáló brute-force szerint az S és R minimális, az útvonalak érvényesek. Időmérés 10000 csúcsú, 200000 élű véletlen gráfon: kb. 0,01 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

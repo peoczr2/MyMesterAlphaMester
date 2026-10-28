@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/82. Freskó a sziklafalon",
+    "method": "Magasságonként a leghosszabb elég magas szakasz keresése, a szegélyek levonásával.",
+    "category": "Maximum, bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "tömb", "bejárás"],
+    "note": "A szegély mind a négy oldalon (alul is) 1 méter; a példa (6) és a 2. minta (432) ezzel egyezik, oldalon-csak értelmezés a példára 9-et adna.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/83. Legnagyobb szintkülönbség",
+    "method": "Balról jobbra haladva az eddigi minimum és a legnagyobb különbség nyilvántartása.",
+    "category": "Prefix minimum",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "tömb", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/84. Táncverseny",
+    "method": "Prioritási sorral szimulált párválasztás: a legjobb szabad fiú, egyenlőségnél a korábbi.",
+    "category": "Prioritási sor, szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prioritási sor", "szimuláció", "párosítás"],
+    "note": "Kézi: a ki-fájl első sora az optimális párok számát írja, és minden optimális párt kiír; a feladatszöveg egy sort ír elő, és több megoldás esetén bármelyik kiírható, a program ezt a formátumot adja. A be1 7. érkezőjének tudásszintje a mintában 6, a PDF-példában 3 (eltér). A kimenet naív szimulációval igazolva: a ki-fájl optimális párjai egyeznek a szimuláció optimális párjaival.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/85. Steak",
+    "method": "Rendezés csökkenő sorrendbe, a végső fok maximum A_j + j - 1 alakban.",
+    "category": "Rendezés, maximum",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["rendezés", "maximum", "szimuláció"],
+    "note": "A modell (egy lépésben egy gáz ki vagy be, két lépés között +1 a bekapcsolt húsoknak) a szövegből értelmezve; a mintákon kívül kisméretű teljes állapottér-kereséssel igazolva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

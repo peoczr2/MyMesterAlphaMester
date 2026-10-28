@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/26. P-ig nem osztott *",
+    "method": "Kínai maradéktétel: P·x ≡ 1 modulo lcm(2..P−1), x kiszámítása kiterjesztett euklideszi algoritmussal.",
+    "category": "Moduláris aritmetika",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["számelmélet", "moduláris aritmetika", "euklideszi algoritmus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/27. Prímtényezős faktoriális *",
+    "method": "Legendre-képlet: a p prím kitevője N!-ban N/p + N/p² + … egészrészeinek összege.",
+    "category": "Faktoriális prímtényezői",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számelmélet", "prímek", "legendre-képlet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/28. Prímtényezős felbontás *",
+    "method": "Próbaosztás növekvő d-vel √N-ig; a végén maradó 1-nél nagyobb szám is prímosztó.",
+    "category": "Prímtényezős felbontás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számelmélet", "próbaosztás", "prímtényező"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/29. Részosztó *",
+    "method": "Minden folytonos résztringet kipróbálunk, hossz szerint csökkenő, pozíció szerinti sorrendben.",
+    "category": "Résztringek és osztók",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["karakterlánc", "osztók", "keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/3. Armstrong számok *",
+    "method": "Számjegy-multihalmazok rekurzív felsorolása; a hatványösszeg számjegyei ugyanazt a multihalmazt adják-e.",
+    "category": "Rekurzív felsorolás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["rekurzió", "számjegyek", "hatványozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/30. Sajátszámok *",
+    "method": "Az M körüli ablakban jelöljük a generált számokat, és a legnagyobb jelöletlen számot keressük.",
+    "category": "Önszámok (self-numbers)",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számjegyösszeg", "keresés", "korlátozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

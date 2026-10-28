@@ -1,0 +1,68 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/5. Molekula szomszédok ***",
+    "method": "Lánc kétvégű bővítése veremmel, irányváltással, szomszédságtesztekkel",
+    "category": "Interaktív: lánc rekonstrukció",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szomszédság",
+      "lánc",
+      "lekérdezés",
+      "interaktív"
+    ],
+    "note": "Speciális (interaktív): A validátor „hibás” állapota várt: a muszer.h hiányzik a validátor fordításából. Saját zsűri-könyvtárral 9336 futáson, 7 válaszpolitikával (a mintasorrend is) ellenőriztem; a legrosszabb hívásszám 2N−2 (korlát 2N). A feladat szerint a tükörkép is elfogadott, ezért minta „kézi”.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/6. Számzár ***",
+    "method": "Prefixállapotok egyezése, rossz számjegy és nyelő-állapot tesztelése szavakkal",
+    "category": "Véges automata, interaktív keresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "automata",
+      "interaktív",
+      "prefix"
+    ],
+    "note": "Speciális (interaktív). Megjegyzés: A validátor „hibás” állapota várt: a zar.h hiányzik a validátor fordításából. Saját chip-szimulátorral 11 800 véletlen futás ment át (N = 1–100, több chip-típus). Időigény: N = 100-nál kb. 9,7 millió be-hívás, tömbös chipen ~50 ms, std::map-os chipen (mint a minta) ~160 ms, ez a 0,1 s határt túllépheti. A 0,1 mp-es időlimit túllépése kockázat, ezért nem kész.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/7. Új fiú ***",
+    "method": "Párosítás, nulla-párok négyesei, kis N-re hipotézis-felezés",
+    "category": "Interaktív: kitalálós feladat",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "párosítás",
+      "kitalálós"
+    ],
+    "note": "Speciális (interaktív): A validátor „hibás” állapota várt: a valasz.h hiányzik a validátor fordításából. Saját zsűrivel N = 5–12 minden eset (43 768 futás) ellenőrizve, véletlen és hegymászó tesztek N = 120-ig, valamint N = 10^5 és 10^6. A Barat-szám mindenhol ≤ 3N/2, tanulónként legfeljebb 5. N ≥ 15-re a korlát nem teljes kereséssel igazolt (legszűkebb 28/28 az N = 19-nél).",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/8. Csillag molekula központja ***",
+    "method": "Lánc növesztése a végekről, csatlakozási pont felezéses keresése",
+    "category": "Gráf: interaktív központkeresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "interaktív",
+      "lánc",
+      "keresés"
+    ],
+    "note": "Speciális (interaktív). Megjegyzés: A validátor „hibás” állapota várt: a muszer.h hiányzik a validátor fordításából. Saját zsűrivel (véletlen pókhálós fák N ≤ 1000, 12 válaszpolitika, kis N-re kimerítő ellenfélkeresés) ellenőrizve: mindig a központot adja, legrosszabb ~1,8N hívás a 2N+10 határon belül. Holtágak: pivot-séta és naiv láncnövesztés (4–7N). A gyakorló könyvtár (s8) nem konzisztens fával (Kozte(5,6)=5, Kozte(5,7)=6, Kozte(6,7)=5), ezért azon nem futtatható. A minta könyvtára nem illeszkedik egyetlen fára sem, ezt adatprobléma-ként kell eldönteni.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

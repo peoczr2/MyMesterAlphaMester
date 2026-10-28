@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/34. Leghosszabb intervallum kevés őrrel a múzeumban **",
+    "method": "Különbségtömbbel napi őrszám, majd a kettőnél kevesebb őrös napok leghosszabb szakaszának keresése.",
+    "category": "Intervallumok: különbségtömb",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "különbségtömb", "prefixösszeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/35. Leghosszabb intervallumban nem védett falak száma *",
+    "method": "Falankénti ellenőrzés a szomszédos őrhelypárokon, leghosszabb nem védett szakasz egy bejárásban.",
+    "category": "Leghosszabb folytonos szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "szakasz", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/36. Leghosszabb intervallumban nem őrzött falak száma *",
+    "method": "Falankénti ellenőrzés a szomszédos őrhelypárokon, leghosszabb nem őrzött szakasz egy bejárásban.",
+    "category": "Leghosszabb folytonos szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "szakasz", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/37. Leghosszabb ismétlődő szakasz ***",
+    "method": "Minden kezdőpárra közös előtag LCP-táblázattal, a nem átfedő hosszt min(LCP, távolság) adja.",
+    "category": "Szövegek: LCP-táblázat",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szöveg", "részsorozat", "lcp"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

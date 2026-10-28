@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/46. Találka2 *",
+    "method": "Két szélességi bejárás, esetszétválasztás és szülő-tömbös útvonal-visszaállítás",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "szélességi bejárás", "útvonal"],
+    "note": "A feladat egy találkahelyet kér, ezért több helyes válasz van. A minta.zip be1 párjában a minta (7 5, találkahely 4) és a feladat példája (5 3, találkahely 7) egyaránt érvényes, a kimenetem (3 4, találkahely 6) is az, ezért a validátor be1-et hibásnak jelzi. A kézi ellenőrző (library/.work/HA-073/check46.py) az esetet és az útvonalak érvényességét nézi, 400 véletlen gráfon is lefutott. A be2 minta (0 5) egyezik a kimenetemmel. Mért idő: 0.015 s (N=9000, M=90000), időlimit 0.1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/47. Tárcsás játék ***",
+    "method": "Szélességi bejárás az (mező, lépésszám mod 4) állapottéren, a tárcsák forgatásával",
+    "category": "Állapottér-keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "állapottér", "forgatás"],
+    "note": "Mért idő: 0.003 s (100x100 tábla), időlimit 0.1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/48. Tejeskanna ***",
+    "method": "Szélességi bejárás a két kanna mennyiségének állapotterén, A és B literes áttöltésekkel",
+    "category": "Állapottér-keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["állapottér", "szélességi bejárás", "visszafejtés"],
+    "note": "A feladat szerint több megoldás esetén bármelyik megadható. A minta.zip be1 párjában a minta sorrendje (2 1 2, 3 1 2, 1 2 5) eltér a kimenetemtől (1 2 5, 2 1 2, 3 1 2), mindkettő 3 lépéses érvényes megoldás, ezért a validátor be1-et hibásnak jelzi. A kézi ellenőrző (library/.work/HA-073/check48.py) a lépéssorozat érvényességét és a minimumot (független Python BFS) nézi, 250 véletlen esetre is lefutott. A be2 lépésszáma (75) egyezik a mintával. Mért idő: 0.005 s (be2), időlimit 0.1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/49. Tejkimérés négy kannával *",
+    "method": "Szélességi bejárás a három kanna állapottérén, a kényszerített öntési szabállyal",
+    "category": "Állapottér-keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["állapottér", "szélességi bejárás", "kimérés"],
+    "note": "A feladat egy legkevesebb lépésből álló sorozatot kér. A PDF példája (AC, CB, AC, AD) és a kimenetem (AC, AD, CA, DC) is 4 lépéses érvényes megoldás, a minta.zip mindkét párja pontosan egyezik a kimenetemmel. A kézi ellenőrző (library/.work/HA-073/check49.py) a minimumot (független Python BFS) és a sorozat érvényességét nézi, 250 véletlen esetre is lefutott. Mért idő: 0.008 s (A=100), időlimit 0.1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

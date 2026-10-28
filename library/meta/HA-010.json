@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/33. Repterek ***",
+    "method": "BFS a nem látott pontokon, szegmensfával a két negyedsík kereséséhez.",
+    "category": "Gráf: BFS, szegmensfa",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bfs", "szegmensfa", "geometria"],
+    "note": "A (0,0) kiindulópont a repülőterek közé is tartozhat; ekkor az azonos pont K ≥ 1 miatt elérhetőnek számít, így a válasz nem változik. N=100000 esetén kb. 0,05 s. A mintán kívül 400 kis és 25 közepes véletlen tesztet egy O(N²) brute-force BFS-sel igazoltam, eltérés nélkül.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

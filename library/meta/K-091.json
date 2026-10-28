@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/20. Magasugró verseny ***",
+    "method": "Magasságonként értékvektor, csökkenő magasság szerint lexikografikus rendezés.",
+    "category": "Rendezés: lexikografikus kulcs",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "lexikografikus", "holtverseny"],
+    "note": "Több helyes kimenet: a holtverseny-csoportok tartalma megegyezik a mintával (be1, be2), csak a csoporton belüli sorrend tér el, mert a feladat ezt nem rögzíti; a megoldás sorszám szerint növekvően ír. Értelmezés: a kihagyott magasság és a 3 sikertelen kísérlet egyformán nincs sikeres eredménynek számítva, csak a sikeres ugrások számítanak. Ellenőrző: library/.work/K-091/chk/check20.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/21. Olimpiára kijutó versenyzők ***",
+    "method": "Pontösszegzés, a K. helyezett pontszáma adja a kijutási határt.",
+    "category": "Rendezés: pontozás",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "pontozás", "holtverseny"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/22. Termékhasznok **",
+    "method": "Haszon számítása, csökkenő rendezés, az első K érték kiírása.",
+    "category": "Rendezés: legnagyobb értékek",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "tömb", "haszon"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/23. Tó körüli települések",
+    "method": "1-estől és legközelebbi településtől mért távolságokkal oldalakat határozunk meg, majd rendezünk.",
+    "category": "Kör: sorrend rekonstrukció",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["metrika", "kör", "rekonstrukció"],
+    "note": "Több helyes kimenet: a feladat bármely kezdőpontot és körüljárási irányt elfogad. A minta.zip be2 és in.15 tesztjében ugyanaz a körbejárás szerepel, csak más kezdőponttal (502, illetve 1477); a megoldás 1-től indul. Ellenőrző: library/.work/K-091/chk/check23.py, a véletlen kör-tesztek (library/.work/K-091/chk/gen23.py, gen23b.py) 700 esetben hibátlanok.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

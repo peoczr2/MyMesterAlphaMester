@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/63. Legkevesebb találkozás ****",
+    "method": "Különbségtömb az érkezési időpontokra, a találkozók számának prefixösszege, minimum keresése a legkorábbi x-nél.",
+    "category": "Különbségtömb, intervallumok",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "különbségtömb", "minimum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/64. Szigetek benépesítése **",
+    "method": "Balról és jobbról egy-egy bejárás, a szigetek közötti tengerszakasz hossza legfeljebb T.",
+    "category": "Lineáris bejárás, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["bejárás", "számlálás", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/65. Szólánc **",
+    "method": "A kezdőszó az, amelynek kezdőbetűjére nincs végződő szó; utána a végbetű szerint láncolunk.",
+    "category": "Láncolás, kezdőelem keresése",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["láncolás", "sztring", "keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/66. Teaforgalmazók száma *",
+    "method": "Halmazba gyűjtjük a cégneveket, a végén a halmaz mérete adja a választ.",
+    "category": "Halmaz, egyedi elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "számlálás", "sztring"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

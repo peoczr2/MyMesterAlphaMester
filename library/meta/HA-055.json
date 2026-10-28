@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/57. Félig összefüggő",
+    "method": "Bellman-Ford maximalizálással a -C élsúlyokon, előd-tömbbel az útvonal visszafejtésével.",
+    "category": "Leghosszabb út, Bellman-Ford",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "legrövidebb út",
+      "negatív élsúly",
+      "bellman-ford"
+    ],
+    "note": "A feladat.pdf (Autóbusz járatok) byte-azonos a Haladó/Gráfok, legrövidebb utak/22. Autóbusz mappa PDF-jével, a minta.zip viszont a Félig összefüggő feladathoz tartozik (IGEN/NEM, T tesztesetes bemenet). Emiatt a validátor hibás; a task.cpp a PDF szerint készült, a kimenete: haszon, T, útvonal. A PDF-példa (690) és a 22-es minta be1 egyezik; a 22-es minta be2 kimenete (-122) nem érvényes útvonal a gráfban, a független Bellman-Ford -48-at ad. Mért idő: 0,05 mp a legrosszabb N=1000, M=100000 bemeneten.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/58. Hálózat felezés",
+    "method": "Gyökerezett fa DP: a legfelső csúcsonként, méretenként a minimális határ-élszám, zsákprobléma-szerű összevonással.",
+    "category": "Fa DP, részfa-vágás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "dinamikus programozás",
+      "részfa"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/59. Kémek",
+    "method": "DFS low-értékekkel: a csúcs törlése utáni komponensszámot számoljuk, az artikulációs pontokat keressük.",
+    "category": "Artikulációs pontok, DFS",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "artikulációs pont",
+      "mélységi bejárás",
+      "összefüggőség"
+    ],
+    "note": "A minta.zip be2 bemenete M=900019 élt tartalmaz (a korlát 100 000), ezen 0,10 mp. A nem összefüggő gráf esetét a feladat nem részletezi: ott a G-v komponensszámát számoljuk, és az egyezést a mi kimenetünk véletlen gráfokon brute-force-szal igazolta.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/6. Elárasztás *",
+    "method": "Min-max Dijkstra a szegélyről, majd BFS a forrásból: a vízszint min(lefolyási szint, forrásszint).",
+    "category": "Min-max bejárás, vízgyűjtés",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prioritásos sor",
+      "min-max út",
+      "vízszint"
+    ],
+    "note": "Nincs ki-fájl a minta.zip-ben (csak be1, be2 és egy feladat.pdf másolat), ezért a validátor nincs minta állapotot ad; a kézi ellenőrzés: a PDF-példa (23, 1) egyezik. Véletlen kis rácsokon a naiv fixpontos számítással egyezik a kód, de a modell (csak a forrásból elérhető cellák, szint min(lefolyási szint, forrásszint)) egyetlen példából van igazolva. Mért idő 1000x1000 véletlen mátrixon 0,17 mp (cin-olvasás 0,05 mp), az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/8. Legolcsóbb almák *",
+    "method": "Napi szimuláció: aktuális árak tömbje, rendezés (ár, sorszám) szerint",
+    "category": "Rendezés, kiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "tömb", "szimuláció"],
+    "note": "A minta (be2/ki2) 149–157. és 520–544. napon (34 sor) a holtversenyes árusok közül a nagyobb sorszámút írja: pl. 149. nap: minta „52 65 93”, a feladat szerint „52 55 93”. Mindkét halmaz minimális árösszegű (196), a 55-ös és a 65-ös is 71-es áron árul. A feladat szerint a legkisebb sorszámúakat kell kiírni, a megoldás ezt követi. Független brute-force (minden K-kombináció vizsgálata) minden napon ezt igazolja, a mintától való eltérés tehát a minta hibája.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/9. Magasugró verseny **",
+    "method": "Versenyzőnként magasságonkénti eredményvektor, lexikografikus rendezés",
+    "category": "Egyedi rendezési kulcs",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "kulcs", "holtverseny"],
+    "note": "A minta (be2/ki2) 682–684. sorában a holtversenyes csoportok sorszámai nincsenek növekvő sorrendben (pl. „241 479 488 217 21 643 422”), a feladat szerint növekvőnek kellene lenniük. A csoportok tagjai és sorrendje a megoldással egyezik, az eltérés csak a csoporton belüli sorrend. Ellenőrzés: független Python-implementáció és 400 véletlen teszt. Bizonytalan pont: a szöveg nem dönti el, hogy a kiesett és a kihagyott magasság közül melyik a rosszabb; itt mindkettő „nem teljesített” értéket kap, a minta ezt nem cáfolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/2. Maximum felosztás ****",
+    "method": "Első B_i-előfordulás szerinti DP, a vágások tartományösszegei Fenwick-fával",
+    "category": "Kombinatorika, DP",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "fenwick-fa",
+      "felosztás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/3. Génsebész",
+    "method": "Implicit treap betűnkénti darabszámokkal, split és merge műveletekkel",
+    "category": "Adatszerkezet: treap",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "adatszerkezet",
+      "treap",
+      "intervallum"
+    ],
+    "note": "Zsűri/grader-alapú feladat: a feladat.cpp-ben nincs main, a task.cpp main() csak helyi próbafuttatás, az eredmények a hibacsatornára mennek. A mintán a fájlbeli ellenőrző értékek (pl. „Szamlal 1 1 C” fájlban 2) nem egyeznek a szöveg szerinti működéssel, ezért a helyességet véletlen tesztekkel egy brute-force szimulátor igazolta.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/4. Játék a síkon ****",
+    "method": "Maximális párosítás (Kuhn), majd alternáló bejárás a kihagyható pontokra",
+    "category": "Gráf: párosítás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "párosítás",
+      "játékelmélet"
+    ],
+    "note": "A kimenet sorrendje tetszőleges: az 1. minta egyezik, a 2. minta pontjainak halmaza egyezik (brute-force játékkereséssel és halmazösszevetéssel igazolva), csak a sorrend tér el a mintától.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/5. Növekvő Ödön és a Másoló Varázsló ****",
+    "method": "Megtartott elemek láncos DP, kétdimenziós lekérdezés kétszintű Fenwick-fával",
+    "category": "DP: monoton sorozat",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "fenwick-fa",
+      "sorozat"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

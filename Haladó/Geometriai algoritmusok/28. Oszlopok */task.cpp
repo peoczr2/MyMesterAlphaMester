@@ -7,6 +7,10 @@ A látható oszlopok száma tehát a különböző egyszerűsített irányvektor
 
 Idő: O(N log C)
 */
+/*
+Hint 1: || Két oszlop akkor takarja egymást az origóból nézve, ha ugyanabba az irányba esnek. Így az irányok számát kell megszámolni. ||
+Hint 2: || Az irányt a koordináták legnagyobb közös osztójával elosztva egyszerűsítheted, így az azonos irányú pontok ugyanazt a párt adják. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

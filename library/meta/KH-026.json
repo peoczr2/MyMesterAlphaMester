@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/20. Szójáték - 2011. május",
+    "method": "Betűszámlálás; belső szórészlet szerinti csoportosítás a szólétrákhoz.",
+    "category": "Sztringek, csoportosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szövegfeldolgozás",
+      "map",
+      "csoportosítás"
+    ],
+    "note": "Kézi: a 4. és 5. részfeladat sorrendje a feladatszöveg szerint tetszőleges, a minta sorrendje nem reprodukálható, ezért a validátor eltérést jelez; a tartalmat halmazként ellenőriztük (library/.work/KH-026/x/check_t1.py). A ki1.txt UTF-16 kódolású, a validátor UTF-8-ként olvassa, tartalma egyezik a kimenettel. Bizonytalan pont: az 5. részfeladatnál a fok hosszát a szöveg nem rögzíti, ezért minden hosszt figyelembe veszünk; a mintán ez 3 hosszú fokokkal egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/21. Rejtvény- 2011. május angol",
+    "method": "Mezőnkénti összevetés: torony-egyezés, hajószámlálás, szomszédsági és sor-oszlop ellenőrzés.",
+    "category": "Rácsos ellenőrzés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "mátrix",
+      "ellenőrzés",
+      "szimuláció"
+    ],
+    "note": "Kézi: a be2/ki2 párban a ki2.txt elején UTF-8 BOM van, ezért a validátor az első '#' jelet nem ismeri fel (be1 kész, be2 emiatt eltér); a kimenetünk a BOM nélkül tokenre egyezik a mintával (library/.work/KH-026/x/check_t2.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/22. Pitypang - 2011. október",
+    "method": "Különbségtömb a havi vendégéjszakákhoz, félnyílt éjszakaintervallumok átfedése a szabad szobákhoz.",
+    "category": "Intervallumok, összegzés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "különbségtömb",
+      "intervallum",
+      "összegzés"
+    ],
+    "note": "Kézi: a ki1.txt 1. részfeladat blokkjából hiányzik a 'Gal_Anna 30 3' sor, pedig a feladatszöveg példája szerint ez a helyes kimenet; a többi blokk egyezik, a be2/ki2 pár teljesen egyezik (library/.work/KH-026/x/check_t3.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/23. Futár - 2012. május",
+    "method": "Napi összesítés, első és utolsó út a (nap, sorszám) rendezett párral, díjkategória keresése.",
+    "category": "Tömbök, összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "tömb",
+      "rendezés",
+      "összegzés"
+    ],
+    "note": "Kézi: a be2 4. részfeladatánál a minta mind a 6 legtöbb fuvaros napot (1 2 4 5 6 7, mindegyik 40 fuvar) írja ki, a feladat szerint viszont bármelyik megadható; a kimenetünk a legkisebb ilyen napot (1) írja ki (library/.work/KH-026/x/check_t4.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

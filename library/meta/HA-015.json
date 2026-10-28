@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/24. Rémhír *",
+    "method": "Be- és kimenő élek számlálása irányított gráfon, duplikátumok szűrésével.",
+    "category": "Gráf: be- és kimenő fok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "fokszám", "irányított"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/25. Szállítás *",
+    "method": "Fokszámokból csúcstípusok (termelő, raktározó, árusító) meghatározása, majd szomszédság-ellenőrzés.",
+    "category": "Gráf: csúcstípusok fokszámból",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "fokszám", "feltételek"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/26. Telephely *",
+    "method": "Floyd-Warshall minden csúcspárra, majd a legkisebb excentricitású csúcs kiválasztása.",
+    "category": "Gráf: legrövidebb utak, excentricitás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "floyd-warshall", "excentricitás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/27. Város *",
+    "method": "Élek számlálása a háromszögekből: pontosan egy háromszögben szereplő él a határél.",
+    "category": "Geometria: háromszögelés, határél",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["geometria", "háromszög", "élszámlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/31. Számrendszer *",
+    "method": "Minden 2 és A+1 közötti alapban kiszámoljuk a számjegyösszeget, és kiírjuk a találatokat.",
+    "category": "Számrendszerek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számrendszer", "számjegyösszeg", "maradék"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/32. Szerencsés *",
+    "method": "Szita: minden lépésköz-adik megmaradt elemet töröljük, a lépésköz a következő megmaradt szám.",
+    "category": "Szita, szerencsés számok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["szita", "számelmélet", "törlés"],
+    "note": "Minta-hiba: a ki2.txt a 3210. számtól (32761 után) 1, 7, 25, … értékeket tartalmaz. Ezek a helyes 32769, 32775, 32793, … számok mod 32768-ai, így a minta nem szigorúan növekvő, és 45769-nél véget ér. Független Python-brute (N=78548, 7046 szám) igazolja a saját kimenetet. Időlimit 0,5 mp: N=300000 esetén kb. 0,12 s. A validátor a minta miatt továbbra is hibásat jelez.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/33. Tükörkép *",
+    "method": "Palindrom-feltétel: a számjegyek négyzetösszege legfeljebb 9; DP-táblázattal vezetett lexikografikus DFS.",
+    "category": "Számjegyes DP",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["palindrom", "dp", "visszalépés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/34. Zeckendorf *",
+    "method": "Mohó választás: mindig a legnagyobb, N-nél nem nagyobb Fibonacci-számot vesszük le.",
+    "category": "Zeckendorf-felbontás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["fibonacci", "mohó", "felbontás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/35. Oszthatóság *",
+    "method": "Karakterenkénti maradékszámítás 19, 29 és 551 szerint.",
+    "category": "Maradékszámítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["oszthatóság", "maradék", "moduláris"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/36. Nagy szám kis prímosztói **",
+    "method": "A 12 prím mindegyikére karakterenkénti maradékot számolunk a szövegként beolvasott számon.",
+    "category": "Prímosztók",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["prímszám", "oszthatóság", "maradék"],
+    "note": "Nincs minta.zip, ezért kézzel ellenőriztem: 551 esetén a kimenet 2 / 19 29, és a Python bigint-összevetés 3206 esetben (2…2999, véletlen számok, legfeljebb 3000 jegyű számok) egyezik. Időlimit 0,1 mp: a futás azonnali.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

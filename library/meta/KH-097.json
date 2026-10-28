@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Verseny/13. Legtöbb versenyben győztesek",
+    "method": "Versenyenként a legnagyobb pontot elérők győznek (döntetlennel együtt), a győzelmeket tanulónként számoljuk.",
+    "category": "Számlálás, maximum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "maximum", "holtverseny"],
+    "note": "Döntetlennél minden azonos legnagyobb pontot elérő résztvevő győztes. Az összetett versenyre vonatkozó szűrés nem alkalmazandó: a be2 minta ezt igazolja, a szűrt és az egy-győztes változat nem adná a várt eredményt. A legnagyobb bemeneten mért idő kb. 0,003 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/14. Mindenhol elérték a minimális pontszámot",
+    "method": "Versenyenként kiszűrjük, akik nem indultak vagy nem érték el a minimumot; ami marad, az megfelel.",
+    "category": "Szűrés, feltételek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "tömb", "feltétel"],
+    "note": "A legnagyobb bemeneten mért idő kb. 0,004 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/15. Minden versenyen kiestek",
+    "method": "Tanulónként megjegyezzük, hogy valahol elérte-e a minimumot; a többiek, a nem induló tanulók is, bekerülnek.",
+    "category": "Szűrés, feltételek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "tömb", "jelző"],
+    "note": "A versenyen nem induló tanuló is bekerül, mert sehol sem érte el a minimumot (a minta 4. tanulója). A legnagyobb bemeneten mért idő kb. 0,002 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/16. Minimális pont alatt nem voltak",
+    "method": "Indultak-e és volt-e minimum alatti eredményük: csak az indult és sosem maradt alatta.",
+    "category": "Szűrés, feltételek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szűrés", "tömb", "feltétel"],
+    "note": "Aki sehol sem indult, nem kerül be (a minta 4. tanulója). A legnagyobb bemeneten mért idő kb. 0,002 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

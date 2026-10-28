@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/85. Globális felmelegedés ***",
+    "method": "Éves összegek összehasonlítása, visszafelé bejárás a növekvő szakaszhoz, napi maximum számolás",
+    "category": "Maximumkiválasztás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szélsőérték", "összegzés", "mátrix"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/86. Piac ***",
+    "method": "Kereskedőnkénti összegzés, termékenkénti maximum és rendezés",
+    "category": "Összegzés, rendezés, maximum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["összegzés", "rendezés", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/87. Legtöbb hegycsúcs *",
+    "method": "Csúcsok előtagösszege, majd minden K hosszú ablak végigpróbálása",
+    "category": "Előtagösszeg, csúszóablak",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["előtagösszeg", "ablak", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/88. DNS vizsgálat **",
+    "method": "Bázisonként a leghosszabb hiányzó szakasz, plusz egy",
+    "category": "Szélsőérték, szöveg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szöveg", "szakasz", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

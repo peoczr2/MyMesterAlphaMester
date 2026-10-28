@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/17. Leghosszabb villamosmegállókból álló szakasz *",
+    "method": "Határok a nem megálló állomások, egy menetben összegzés és maximumkeresés.",
+    "category": "Maximális szakasz",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["szakasz", "maximum", "összegzés"],
+    "note": "Mért futásidő a legnagyobb mintán (N=100): kb. 2 ms, az időlimit 0,1 mp. A szakasz határai a 0. állomás, a végállomás és a nem megálló állomások; a két minta (0 2 2300 és 16 37 54089) igazolja, hogy a végpont maga is lehet nem megálló állomás.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/18. Legkevesebb idő két villamosmegálló között *",
+    "method": "Szomszédos állomáspárok idejének (érkezés mínusz előző indulás) minimumkeresése.",
+    "category": "Minimumkeresés: szomszédos pár",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "szomszédos", "idő"],
+    "note": "Mért futásidő a legnagyobb mintán (N=100): kb. 2 ms, az időlimit 0,1 mp. Nem szomszédos párra az idő nem kisebb a köztes szomszédos pár idejénél, így a szomszédos párok elegendők; egyenlőségnél a legkisebb sorszámú pár marad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/19. Legkevesebb idő megállás nélkül *",
+    "method": "Tényleges megállások közti időszakok minimuma; a nem megálló állomások nem szakítják meg az időszakot.",
+    "category": "Minimumkeresés: megállás nélküli idő",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "megállás", "időszak"],
+    "note": "Mért futásidő: 0.002 mp (N=100). Az időszakok határai a 0. állomás indulása, a tényleges megállások és a végállomás érkezése. A két minta a szomszédos párok és a megállások közti teljes időszak olvasatára is ugyanazt adja (5); a megállások közti időszak olvasatot választottam, mert a nem megálló állomáson való áthaladás nem szakítja meg a megállás nélküli időt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/2. Eddigieknél hosszabb állomasszakaszok *",
+    "method": "Az eddigi legnagyobb hosszhoz hasonlítunk, szigorúan nagyobb esetén a sorszámot gyűjtjük.",
+    "category": "Maximumkeresés: rekordok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "rekord", "feltétel"],
+    "note": "Mért futásidő a legnagyobb mintán (N=100): kb. 2 ms, az időlimit 0,1 mp. Az állomásszakasz az (i-1). és az i. állomás közötti T_i távolság; az első szakasz korábbi szakasz hiányában automatikusan bekerül (a 2 1 2 minta így kapja az 1-et). Az állomásonkénti összevonás (megállás nélküli szakaszok) olvasatot a második minta elveti (7 1 4 28 29 37 90 96).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

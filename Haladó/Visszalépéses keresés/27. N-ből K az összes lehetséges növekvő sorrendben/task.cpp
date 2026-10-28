@@ -1,7 +1,11 @@
 /*
-Hungarian megoldás: az összes növekvő K elemű kombinációt visszalépéssel,
-szigorúan emelkedő választással írjuk ki.
-
+Megoldás lényege: az összes növekvő K elemű kombinációt visszalépéses kereséssel állítjuk elő.
+A mélységi keresés minden szinten csak az előző elemnél nagyobb számok közül
+választ, így minden kombináció pontosan egyszer keletkezik. Mivel a kisebb
+számmal kezdődő sorozatokat hamarabb járjuk be, a kiírás már lexikografikus
+sorrendben történik. Az időigény O(C(N,K) * K), ahol C(N,K) a kombinációk száma.
+*/
+/*
 Hint 1: || A kombinációkban elég a következő választható legkisebb értéket nyilvántartani. ||
 Hint 2: || Mindig a kisebb számokkal kezdve kapjuk a lexikografikus sorrendet. ||
 */

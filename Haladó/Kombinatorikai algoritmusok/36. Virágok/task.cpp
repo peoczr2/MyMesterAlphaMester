@@ -1,7 +1,25 @@
 /*
 Megoldás lényege:
-Ugyanaz a növényes rekurzió, mint a 35. feladatban, csak most az X. évben
-élő növények számát kell kiírni.
+Az s. évben ültetett virág a s+M-1 és s+M+K-2 évek között minden évben egy magot
+hoz, a magból pedig a következő évben kel ki új virág. Így a t. évben kikelő
+virágok száma a t-M-K+1 és t-M évek között kikelt virágok összege, amit
+prefixösszegekkel csúszó ablakként számolunk.
+Az X. évben élő virágok azok, amelyek az X-N+1 és X közötti években keltek ki,
+ezért az élő darabszámot úgy frissítjük, hogy minden év kikelőit hozzáadjuk, és
+az N évvel korábban kikeltek számát kivonjuk. Minden lépésben 20180113-mal
+maradékoljuk a számokat, a negatív maradékot pedig javítjuk.
+Az algoritmus O(X) időben fut, a kiírt szám az X. évben élő virágok
+darabszámának 20180113-mal vett maradéka.
+*/
+/*
+Hint 1: || Az X. évben élő virágok azok, amelyek az X-N+1 és X közötti években
+keltek ki, így elég minden év kikelőit kiszámolni, és az utolsó N év összegét
+követni. Egy év kikelőinek száma egy csúszó ablakos összeg: a t-M-K+1 és t-M
+közötti évek kikelőinek összege. ||
+Hint 2: || A kikelőkhöz prefixösszeget tárolunk, így az ablak összege két
+prefixösszeg különbsége. Az élő darabszámot minden évben frissítjük: hozzáadjuk
+az új kikelőket, és kivonjuk az N évvel korábban kikelteket. Minden műveletet
+maradékban végzünk, és a negatív maradékot javítjuk. ||
 */
 
 #include <bits/stdc++.h>

@@ -1,9 +1,10 @@
 /*
-A két vágány közül mindig a legkorábban felszabadulót kell választani, különben könnyen rossz várakozási időt kapunk. Az érkezéseket és a felszabadulásokat ugyanabban az eseménylistában kell kezelni.
+Eseményvezérelt szimuláció, ahol a szakasz kapacitása a vágányok száma (1 vagy 2): a szakaszon egyszerre legfeljebb annyi vonat lehet, így elég számolni a rajta lévő vonatokat, a konkrét vágány nem számít. Szakaszonként prioritásos sor tartozik a készen álló vonatokhoz (kezdési idő, illetve érkezés plusz az állomási minimális várakozás). Ha van szabad vágány, a legkorábban kész vonat lép rá; egyenlő időpontnál a Kukutyinból induló, majd a kisebb sorszámú. Egy időpontban előbb az összes érkezést és felszabadulást feldolgozzuk, és csak utána indítunk új vonatot, végül az érkezési idő szerint rendezzük a kimenetet.
 */
 /*
-Hint 1: || A két vágány közül mindig azt használd, amelyiken a következő szabad időpont a legkorábbi. ||
-Hint 2: || Az érkezést és a felszabadulást ugyanabban az eseménysorban érdemes kezelni, különben a sorrend elcsúszik. ||
+Hint 1: || Nem kell vágányokat megkülönböztetni: elég számolni, hány vonat tartózkodik a szakaszon, és a kapacitás a vágányok száma. ||
+Hint 2: || Egy vonat csak akkor léphet a szakaszra, ha van szabad vágány és a sorában ő a legkorábban kész (készenléti idő, majd Kukutyinból indulás, majd sorszám). ||
+Hint 3: || Egy időpontban előbb dolgozd fel az összes érkezést és a szakaszfelszabadulást, és csak utána döntsd el, ki indul; így az egyenlő időpontú esetek sorrendje nem csúszik el. ||
 */
 
 #include <bits/stdc++.h>
@@ -18,7 +19,7 @@ struct Cand {
     long long time; int dir, train;
     bool operator>(const Cand &o) const {
         if (time != o.time) return time > o.time;
-        if (dir != o.dir) return dir < o.dir;
+        if (dir != o.dir) return dir > o.dir;
         return train > o.train;
     }
 };

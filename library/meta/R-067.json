@@ -1,0 +1,97 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/15. Hofstadter *",
+    "method": "Közvetlen szimuláció, jelölőtömbbel a legkisebb szabad szám keresésével.",
+    "category": "Szimuláció: sorozat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "szimuláció",
+      "sorozat",
+      "tömb"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/16. Kiszámolós játék **",
+    "method": "Vektoros Josephus-szimuláció, az index a kiesett elem helyén marad.",
+    "category": "Szimuláció: Josephus",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "szimuláció",
+      "lista",
+      "indexelés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/17. Közös prímosztók ***",
+    "method": "Próbaosztásos prímfaktorizáció, majd két mutatós összefésülés.",
+    "category": "Prímtényezős felbontás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "prímtényező",
+      "összefésülés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/18. Lkkt ***",
+    "method": "Prímenkénti kitevőszámlálás Π(2e+1) formulával, szitával.",
+    "category": "Prímtényezős számlálás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prímtényező",
+      "számlálás",
+      "szita"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/19. Lnko ***",
+    "method": "Gcd(2^N−1, 2^M−1)=2^gcd(N,M)−1 azonosság, nagy szám 10^9-es alapon.",
+    "category": "Legnagyobb közös osztó",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "lnko",
+      "nagyszám",
+      "azonosság"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/2. Abszolút prímek ***",
+    "method": "Prímszita, majd a jelölt permutációinak prímvizsgálata next_permutation-nel.",
+    "category": "Prímek, permutációk",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "prímek",
+      "permutáció",
+      "szita"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

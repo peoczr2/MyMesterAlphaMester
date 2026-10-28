@@ -3,7 +3,8 @@ Megoldas lenyege:
 Minden emberhez csak az általa beszélt nyelvek halmazára van szükségünk. Mivel
 legfeljebb 200 nyelv fordul elő, ezt bitsetként tárolhatjuk. Ezután minden emberpár
 közös nyelveinek számát a két bitset metszetének elemszámával kapjuk meg, és a
-legnagyobb értéket őrizzük meg.
+legnagyobb értéket őrizzük meg. Az időigény O(M + P^2), ahol P az emberek száma, mert
+egy bitset-metszet elemszámának kiszámítása néhány gépi szavas művelet.
 */
 /*
 Hint 1: || Egy embernél ugyanaz a nyelv többször is szerepelhet, de halmazként elég egyszer számolni. ||

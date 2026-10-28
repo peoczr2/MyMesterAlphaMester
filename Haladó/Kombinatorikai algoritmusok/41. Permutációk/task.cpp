@@ -1,7 +1,12 @@
 /*
-   Permutációk: a 3-1-2 minta-mentes permutációk a stack-sortolható
-   permutációk. Ezekhez egy Dyck-szó felel meg, és a lexikografikus sorrend
-   a Dyck-szavak sorrendjére vezethető vissza.
+Megoldás lényege:
+A 3-1-2 minta-mentes permutációk pontosan azok, amelyek az 1, 2, …, N sorozat verembe tolásával és onnan kivételével előállíthatók, ezért minden ilyen permutációhoz egyértelmű Dyck-szó tartozik (betolás = U, kivétel = D). A lexikografikus sorrend a Dyck-szavak sorrendjének felel meg, ahol a D kisebb az U-nál. Így a rákövetkező Dyck-szó úgy kapható, hogy megkeressük a legutolsó olyan D betűt, amelynek jobb oldalán van U, azt U-ra cseréljük, a maradék részt pedig a lehető legkisebb módon (előbb D-vel) töltjük ki.
+A kapott Dyck-szót a verem-szimulációval visszaalakítjuk permutációvá. Minden lépés O(N), ami N ≤ 10 000 mellett gyors.
+*/
+/*
+Hint 1: || Képzeld el a permutációt verem-műveletek sorozataként: a számokat 1-től sorban betolod a verembe, és amikor a kívánt szám következik, kiveszed. Így minden 3-1-2 minta-mentes permutációhoz egy zárójelezés (Dyck-szó) tartozik. ||
+Hint 2: || A lexikografikus sorrend a Dyck-szavak olyan sorrendje, ahol a kivétel (D) kisebb a betolásnál (U). Keresd meg a Dyck-szó legutolsó D betűjét, amelynek jobb oldalán van U; ezt U-ra cserélve, és a végét a lehető legkisebb módon kitöltve kapod a következőt. ||
+Hint 3: || A kapott Dyck-szót a verem-szimulációval visszaalakítod permutációvá: U esetén új számot tolsz be, D esetén kiveszed a verem tetejét. Ez egy végigmenéssel O(N) időben megoldható. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

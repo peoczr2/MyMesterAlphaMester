@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/1. Centrum ***",
+    "method": "Jelöltek végigkérdezése, nem összekötött párok alapján váltás; egy szomszéd esetén az a központ",
+    "category": "Interaktív: gráf központ",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "interaktív",
+      "gráf",
+      "lekérdezés"
+    ],
+    "note": "Speciális (interaktív): A validátor fordítási hibát jelez: a megoldás a tudakozo.h könyvtárat használja, amit a validátor nem kap meg, ezért nem lehet kész. A tudakozo.cpp könyvtárral N=3..10000 esetén helyes, a kérdésszám a könyvtár szerint mindig legfeljebb 2N. Egy eset (N=2) egyértelműtlen: egy él van, így C és K nem különböztethető meg, a könyvtár mégis csak C-t fogad el. Ellenőrző: library/.work/HA-085/ex1/test_centrum.py.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/10. Molekula ***",
+    "method": "Rögzített atommal kérdezés, a szomszédok láncolása, a jobb oldal lépésenként",
+    "category": "Interaktív: lánc rekonstrukció",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "lánc",
+      "sorrend"
+    ],
+    "note": "Speciális (interaktív): A validátor fordítási hibát jelez (muszer.h hiányzik), ezért nem lehet kész. A muszer.cpp könyvtárral N=2..10000 esetén helyes a sorrend, a Kozte-hívások száma legfeljebb 2N-3 (mock-kal 268 esetben ellenőrizve). A feladat szerint a tükörkép is elfogadott. Ellenőrző: library/.work/HA-085/ex10/test_molekula.py.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/11. Rajtszámok",
+    "method": "Bitenkénti felezés: a hiányzó szám alsó bitjeivel egyező versenyzők csoportja",
+    "category": "Interaktív: bitenkénti keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "interaktív",
+      "bitek",
+      "keresés"
+    ],
+    "note": "Speciális (interaktív): A validátor fordítási hibát jelez (valasz.h hiányzik), ezért nem lehet kész. A valasz.cpp könyvtárral N=2..69 minden hiányzó számmal és 400 véletlen N≤1024 esetén helyes, a kerdes-hívások száma legfeljebb 2N-2. Eltérés a szövegben: a PDF az induloszam értékét az indulók számának mondja, a minta.zip könyvtára viszont a rajtszámok számát (N) adja vissza; a megoldás a könyvtár szerint dolgozik. Ellenőrző: library/.work/HA-085/ex11/test_rajt.py.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/12. Csavarok",
+    "method": "Véletlen csavar köré szétválogatás; kis csoportnál lineáris párosítás",
+    "category": "Interaktív: párosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "interaktív",
+      "párosítás",
+      "rendezés"
+    ],
+    "note": "Speciális (interaktív). Megjegyzés: A validátor fordítási hibát jelez (csavarok.h hiányzik). A minta.zip be/ki párjai nem a feladat formátumát követik (nem n, csavarok és anyák sorai, a kimenet nem TRUE/FALSE), ezért a minta nem használható ellenőrzésre. Saját csavarok.h mockkal minden párosítás helyes, de a proba-hívások száma n≥3 esetén a legrosszabb futásokban meghaladja az n*n/4 határt (például n=8: 28 hívás, a határ 16), így a pontozási feltétel nem teljesül. Ellenőrző: library/.work/HA-085/ex12/test_csav2.py.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku",
+    "problematic": false
+  }
+]

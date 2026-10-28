@@ -1,0 +1,52 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2012/4. Autópálya tervezés",
+    "method": "Három azonos autópályás város keresése, majd párkérdések egy horgonyhoz.",
+    "category": "Interaktív lekérdezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "lekérdezés",
+      "logika"
+    ],
+    "note": "Grader-alapú feladat (office.h, office.cpp); a task.cpp csak a hivatalos GetN, isOnLine és Answer függvényeket használja, fallback nélkül. A validátor fordítása nem találja az office.h fejlécet, ezért hibás állapotot ad. Kézzel ellenőrzendő: office.h és office.cpp mellé fordítva, a minta.zip office.cpp-jével futtatva; a helyi teszt (library/.work/CE-004/ex4/harness4.py) 2842 esetet hiba nélkül futtatott. Megjegyzés: a 4 pontos határt (K ≤ N/2+2) nem tartja: N=40 esetén a kérdések száma elérheti az N/2+3-at.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2012/5. Hulladék-újrahasznosítás",
+    "method": "Az első L vagon három egymás utáni szakaszra bontása (a∪c, a∪b, b∪c típusokkal); mohó keresés bitsettel",
+    "category": "Mohó keresés, bitset",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "verem",
+      "mohó",
+      "bitset",
+      "keresőfa"
+    ],
+    "note": "A régi, állapotkereső megoldás nagy N-re exponenciális volt; az új gyors (4 ms a legnagyobb bemeneten). A minta.zip formátuma eltér a PDF-től, a PDF példája (11; 2 1 4) egyezik. Független szimulációval 800 véletlen eset egyezett.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2012/6. Kommunikációs hálózat",
+    "method": "Erős komponensek fája; új élek a belépési csúcsokból induló láncokhoz.",
+    "category": "Gráf: erős komponensek",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "komponens",
+      "láncok"
+    ],
+    "note": "A minta.zip in1.txt és in2.txt a feladat formátumát követi, de kimeneti fájl nincs, ezért a validátor „nincs minta” állapotot ad. A második rész több helyes élhalmazt enged: „Ha több megoldás van, akkor is csak egyet kell kiírni; mindegy, hogy melyiket!” Az ellenőrző: library/.work/CE-004/ex6/check6.py (és big6.py); a minimális K 1200 véletlen kis gráfon brute-force-szal egyezik, a nagy zip-bemeneteken mintavétellel ellenőrizve.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

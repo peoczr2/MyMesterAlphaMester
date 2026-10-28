@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/46. Utas nélküli állomásszakaszok száma *",
+    "method": "Utasok számának futó összege (felszállók mínusz leszállók), a nulla egyenlegű állomásközök számlálása.",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "számlálás", "szimuláció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/47. Védett falak száma *",
+    "method": "Lineáris bejárás: a két szomszédos őrhelyen is őrséget tartalmazó párok számlálása.",
+    "category": "Szomszédos párok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/48. Védett szakaszok száma a Kínai Nagy Falon **",
+    "method": "Lineáris bejárás: a védett falak közül azok számlálása, amelyek előtt nem áll védett fal.",
+    "category": "Összefüggő szakaszok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "szakasz", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/49. Végzettek születési dátumai évszakokra lebontva **",
+    "method": "Hónap alapján elágazással választjuk ki az évszakot, és a megfelelő számlálót növeljük.",
+    "category": "Feltételes számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "elágazás", "dátum"],
+    "note": "A feladatszöveg nem adja meg az évszakok hónap-határait; a hónapos beosztást (tavasz 3–5, nyár 6–8, ősz 9–11, tél 12, 1, 2) a minták igazolják (be1: 0 1 2 3, be2: 26 33 22 19), a napra pontos csillagászati határok nem (be2-n 33 28 15 24). A napot ezért nem használtam fel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

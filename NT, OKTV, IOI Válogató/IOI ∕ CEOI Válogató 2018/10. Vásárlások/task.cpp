@@ -1,6 +1,6 @@
 /*
 Megoldás lényege:
-K legfeljebb 9, ezért a megvásárolt termékek halmazát bitmaskkal lehet leírni.
+K legfeljebb 10, ezért a megvásárolt termékek halmazát bitmaskkal lehet leírni.
 Haladunk napokon, és dp[mask] azt jelenti, hogy az eddigi napokból a maskban lévő
 termékeket már megvettük, minimális költséggel. Egy napon vagy nem vásárolunk,
 vagy megvesszük az egyik még hiányzó terméket.
@@ -8,7 +8,11 @@ vagy megvesszük az egyik még hiányzó terméket.
 Mivel N legfeljebb 100, az O(N * 2^K * K) dinamikus programozás kényelmesen elég.
 A szülőmutatókból visszaállítjuk, melyik terméket melyik napon vettük meg.
 */
-
+/*
+Hint 1: || A napok sorrendje nem számít, csak az, hogy melyik napon melyik terméket vesszük. Mivel K kicsi, a már megvett termékek halmaza egy bitmaskkal leírható. ||
+Hint 2: || Haladj a napokon sorban: dp[nap][maszk] legyen a minimális költség, ha az eddigi napokon a maszkban lévő termékeket már megvettük. Egy napon vagy nem veszel semmit, vagy egy még hiányzó terméket. ||
+Hint 3: || Az állapotokhoz tárold el az előző maszkot és a megvett terméket, majd a végállapotból visszafelé haladva rekonstruáld, melyik terméket melyik napon vetted. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

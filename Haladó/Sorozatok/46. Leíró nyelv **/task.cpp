@@ -3,7 +3,8 @@ Megoldas lenyege:
 Minden program sorait végigolvassuk, és a tag-eket egy veremmel ellenőrizzük.
 Nyitó tag esetén a nevet betesszük a verembe, záró tag esetén pedig azt
 vizsgáljuk, hogy a verem tetején ugyanez a név áll-e. A program akkor helyes,
-ha a feldolgozás végére a verem üres, és közben nem történt eltérés.
+ha a feldolgozás végére a verem üres, és közben nem történt eltérés. Az időigény a
+bemenet hosszával arányos, mert minden karaktert legfeljebb egyszer nézünk meg.
 */
 /*
 Hint 1: || A tag-ek helyességét veremmel lehet ellenőrizni. ||
@@ -41,6 +42,7 @@ int main() {
         vector<string> st;
         bool ok = true;
         while (getline(cin, line)) {
+            if (!line.empty() && line.back() == '\r') line.pop_back();
             if (line == "*") break;
             processLine(line, st, ok);
         }

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/22. Negatív számrendszer **",
+    "method": "Ismételt osztás -10 alapra, negatív maradék korrigálásával; visszaváltás Horner-sémával.",
+    "category": "Számrendszer-átváltás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "számrendszer",
+      "maradékos osztás",
+      "negatív szám"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/23. Négyzetszám nem osztó *",
+    "method": "Négyzetszám többszöröseinek megjelölése prímekre szitálva az intervallumban; a megjelöletlen számok kiírása.",
+    "category": "Szitálás intervallumon",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "szita",
+      "négyzetmentes",
+      "oszthatóság"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/24. Összes prímosztó *",
+    "method": "Próbaosztásos faktorizálás, minden osztó prím egyszeri kiírásával.",
+    "category": "Faktorizálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "prímtényező",
+      "próbaosztás",
+      "oszthatóság"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/25. Pierce *",
+    "method": "Az összes p/q tört felsorolása, egész számos összehasonlítással rendezve.",
+    "category": "Törtek rendezése",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "tört",
+      "rendezés",
+      "egész aritmetika"
+    ],
+    "note": "Eltérés a feladatszövegtől: a szöveg szerint az első sor M, a második N (a nevezők N-ig), de a minta csak így egyezik: az első szám a nevezők felső határa (1-től), a második a törtek értékének zárt felső határa. Mindkét mintapár ezzel stimmel (2 3: 11 sor; 10 10: 560 sor). A korábbi változat (q < N, érték ≤ M+1) a 10 10 mintán 504 sort adott.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

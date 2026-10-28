@@ -1,7 +1,8 @@
 /*
- * Az A^k mod B maradékok ciklikusan ismétlődnek. Megkeressük az összes különböző
- * maradékot a szorzás ismételt alkalmazásával.
- 
+Megoldás lényege:
+Az A^k mod B sorozat legfeljebb B különböző értéket vehet fel, ezért egy idő után szükségszerűen ismétlődni kezd. A bejárást az 1 mod B értékből indítjuk (ez az A^0 maradéka, és a minta is tartalmazza), és minden lépésben A-val szorzunk modulo B. Amint egy maradék másodszor kerül elő, megállunk, mert ettől kezdve már csak korábban látott értékek jönnének. Az összegyűjtött, különböző maradékokat rendezve, szóközzel elválasztva írjuk ki. A bejárás legfeljebb B lépés, a rendezés miatt az összidő O(B log B), a memória O(B).
+*/
+/*
 Hint 1: || Az A hatványainak B szerinti maradékai előbb-utóbb ismétlődni kezdenek, mert csak B darab maradék létezik. ||
 Hint 2: || Indulj 1 mod B-ből, mindig szorozz A-val mod B szerint, és állj meg, amikor egy maradék másodszor is előjön. ||
 */

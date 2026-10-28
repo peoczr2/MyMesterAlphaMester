@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/13. Bővelkedő számok",
+    "method": "Valódi osztók összegét √n-ig gyűjtjük osztópárokkal, és összehasonlítjuk a számmal.",
+    "category": "Osztók összege",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["osztók", "számelmélet", "négyzetgyök"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/14. Dolgozat",
+    "method": "Öt számláló a jegyekre, majd a maximum keresése szigorú összehasonlítással (egyezésnél a kisebb marad).",
+    "category": "Megszámolás: gyakoriság",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/15. Számváltó",
+    "method": "Maradékos osztás 16-tal, a maradékok fordított sorrendű gyűjtése, a 0 külön kezelése.",
+    "category": "Számrendszerek",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számrendszer", "hexadecimális", "maradékos osztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/16. Palindrom szöveg",
+    "method": "Szóközök és nem betűk elhagyása, kisbetűsítés, majd két mutató páronkénti összevetése.",
+    "category": "Karakterlánc-feldolgozás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["palindrom", "karakterlánc", "két mutató"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

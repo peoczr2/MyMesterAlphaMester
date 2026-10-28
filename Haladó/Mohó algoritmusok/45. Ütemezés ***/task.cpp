@@ -1,6 +1,10 @@
 /*
-Feladat: A programok közül a lehető legtöbbet kell kiválasztani úgy, hogy a kiválasztottak mind határidőre befejezhetők legyenek.
-Ötlet: Határidő szerint rendezve tartunk egy aktuális halmazt; ha túlcsordulunk, a leghosszabb futásidejűt eldobjuk.
+Megoldás lényege: A programokat határidő szerint növekvő sorrendben dolgozzuk fel, és a kiválasztott programok összidejét követjük.
+Ha egy új program felvétele után az összidő meghaladja az aktuális határidőt, a kiválasztottak közül a leghosszabb futásidejűt dobjuk el, mert ez csökkenti legjobban az összidőt.
+Így az elfogadott halmaz mindig betartható marad, és az elem-csere miatt azonos elemszámú halmazok közül mindig a legkisebb összidejűt őrizzük meg, ezért a végén a lehető legtöbb program marad.
+A leghosszabb elem gyors megtalálásához prioritási sor (kupac) kell, így az egész algoritmus O(N log N) időben fut.
+*/
+/*
 Hint 1: || A határidők szerinti sorrendben mindig az eddigi legjobb részhalmazt érdemes fenntartani. ||
 Hint 2: || Túlcsorduláskor a leghosszabb feladat eldobása csökkenti legjobban az összidőt. ||
 Hint 3: || A végső halmazt határidő szerint kiírva az ütemezés érvényes lesz. ||

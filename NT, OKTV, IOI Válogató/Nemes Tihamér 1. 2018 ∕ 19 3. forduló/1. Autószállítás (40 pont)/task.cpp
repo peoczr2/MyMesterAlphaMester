@@ -1,12 +1,13 @@
+/*
+Megoldás lényege:
+Csúszó ablakkal (két mutatóval) keressük a legrövidebb szakaszt. A jobb mutató r minden napon egyet lép előre, és a [l..r] szakasz autóinak számát (sum) tartjuk nyilván. Ha sum eléri H-t, a bal mutatót l addig léptetjük jobbra, amíg az összeg H alá nem esne, így minden r-hez a legrövidebb, r-ben végződő, H-t elérő szakasz adódik. A napi darabszámok pozitívak, ezért a rövidebb szakasz mindig jobb; egyenlő hossznál a korábbi kezdést tartjuk meg. Mindkét mutató csak előre halad, így az időigény O(N).
+*/
+/*
+Hint 1: || Minden jobb végponthoz (r) keresd azt a legnagyobb bal végpontot (l), amelyre a [l..r] szakasz összege még legalább H: így az r-hez tartozó legrövidebb jó szakaszt kapod. ||
+Hint 2: || Az összeget egy változóban tartsd: új nap érkezésekor adj hozzá a napi darabszámot, majd a bal szélről vonj le, amíg az összeg a levonás után is legalább H marad. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Minden naphoz prefixösszeget képezünk. A legrövidebb időszakot kétmutatós
-    ablakkal keressük meg: amint az összeg eléri a hajó kapacitását, a bal oldalt
-    tovább tolva minimalizáljuk a hosszát. Egyenlőség esetén a korábbi kezdést
-    választjuk.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

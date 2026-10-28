@@ -1,7 +1,7 @@
 /*
 Itt a tárgy súlya maga a haszon is, ezért a feladat klasszikus 0/1 hátizsák: azt a legnagyobb elérhető összsúlyt kell
 megkeresni, ami nem haladja meg a kapacitást. Az egy dimenziós elérhetőségi DP mellett minden újonnan elért súlyhoz
-elmentjük, melyik korábbi súlyból és melyik tárggyal jutottunk oda, így a kiválasztott tárgyak halmaza is visszafejthető.
+elmentjük, melyik korábbi súlyból és melyik tárggyal jutottunk oda, így a kiválasztott tárgyak halmaza is visszafejthető. Az időigény O(N·K), a memóriaigény O(N + K).
 */
 /*
 Hint 1: || Mivel a súly az érték is, elég az elérhető összsúlyokat tárolni. ||

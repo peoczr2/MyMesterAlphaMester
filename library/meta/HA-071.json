@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/39. Solitaire **",
+    "method": "Szélességi bejárás a három korong rendezett hármasaiból álló állapottérben",
+    "category": "Állapottér: szélességi bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "állapottér"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/4. Ádám és Éva *",
+    "method": "Két szélességi bejárás (Ádámtól és Évától), majd a minimális távolságú város kiválasztása",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "szélességi bejárás", "irányított gráf"],
+    "note": "Több megoldás esetén bármelyik megadható, ezért kézi minta. A két minta egyezik; független ellenőrző (library/.work/HA-071/check_kezi.py) 500 véletlen teszten igazolta a városválasztást és az útvonalak érvényességét. Mért idő a maximális méreten: 0,03 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/40. Számítógépes hálózat ***",
+    "method": "0-1 szélességi bejárás a részhálózat-váltások költségével, szülőmutatókon visszafelé úttal",
+    "category": "Gráf: 0-1 szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "legrövidebb út", "0-1 bfs"],
+    "note": "Egy útvonalat kér, több optimális útvonal is lehet, ezért kézi minta. A két minta egyezik; független ellenőrző (library/.work/HA-071/check_kezi.py) 500 véletlen teszten igazolta a protokollváltások optimumát és az útvonal érvényességét. Mért idő a maximális méreten: 0,05 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/41. Sziget ***",
+    "method": "Szélről számolt kritikus szint (minimax út), vízszint-szimuláció szélességi bejárással",
+    "category": "Rács: vízszint-szimuláció",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["rács", "szélességi bejárás", "szimuláció"],
+    "note": "A szöveg nem mondja ki egyértelműen, mi történik zárt, tengerszint alatti medencével. A modell a két mintából lett kikövetkeztetve: süllyedéskor a medence víze az átfolyási szintjén marad, emelkedéskor a szélről vagy vizes négyzetekről elérhető alacsonyabb négyzetek elöntődnek. A 2. minta ezt a szabályt igényli (zárt medence elönt egy 3-as magasságú négyzetet 16-os szintnél). 300 véletlen teszten a C++ megoldás egyezik a referencia-modellel, de a rejtett tesztek eltérhetnek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

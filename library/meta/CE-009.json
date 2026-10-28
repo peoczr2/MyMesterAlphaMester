@@ -1,0 +1,38 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2017/4. Biztos fogadas",
+    "method": "Rendezett odd-ok prefixösszegei, a nyereség maximumát bináris kereséssel keressük.",
+    "category": "Bináris keresés, prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bináris keresés", "prefixösszeg", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2017/5. Egércsapda",
+    "method": "Gyökerezés T-ben, mellékágak költsége és bináris keresés a küszöbre.",
+    "category": "Fa, játékelmélet, bináris keresés",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "játékelmélet", "bináris keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2017/6. Egyirányú utak",
+    "method": "Hidak keresése DFS-sel, az irányítási kényszer útvonal-számlálással.",
+    "category": "Gráf: hidak, LCA",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "hidak", "lca"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

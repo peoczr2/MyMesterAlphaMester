@@ -1,0 +1,82 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/15. Egyszemélyes játék 2 - lehető legtöbb pont **",
+    "method": "DP a lépésszámra, nem átfedő H hosszú szakaszok maximális összege",
+    "category": "Nem átfedő szakaszok DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "részösszeg",
+      "visszafejtés"
+    ],
+    "note": "Több helyes lépéssor van: a lépések sorrendje tetszőleges, a szakaszok nem fedik egymást; a minta csökkenő sorrendet ad. Ellenőrző: library/.work/R-003/scripts/check15.py, a pontszám és a szakaszok érvényessége egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/16. Egyszemélyes számjáték **",
+    "method": "Intervallum-DP a játékos két lehetséges lépésére, visszafejtéssel",
+    "category": "Intervallum DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "intervallum",
+      "játék"
+    ],
+    "note": "Több optimális lépéssor van; a minta más sorrendet ad, a pontszám egyezik. Ellenőrző: library/.work/R-003/scripts/check16.py (szimulálja a játékot).",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/17. Előadások beosztása **",
+    "method": "Súlyozott intervallumütemezés, az utolsó kompatibilis előd bináris kereséssel",
+    "category": "Intervallumütemezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "bináris keresés",
+      "dinamikus programozás"
+    ],
+    "note": "Több optimális halmaz van (0 kihasználatlan hellyel), a minta más halmazt ad. Ellenőrző: library/.work/R-003/scripts/check17.py, a kompatibilitás és a kihasználatlan helyek száma egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/19. Fazekas kemence sor elejéről vagy végéről **",
+    "method": "Intervallum-DP, az első menet öt lehetséges alakjára",
+    "category": "Intervallum DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "intervallum",
+      "visszafejtés"
+    ],
+    "note": "Több optimális beosztás van, a minta más menetekre bontja; az összköltség egyezik. Ellenőrző: library/.work/R-003/scripts/check19.py (szimulálja a sor elejéről és végéről vételt).",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/21. Fazekas két kemencével **",
+    "method": "DP a menetekre, a menet ára a két kemence maximumának összege",
+    "category": "Blokkokra bontás DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "minimalizálás",
+      "visszafejtés"
+    ],
+    "note": "Javítva: a korábbi megoldás a menet árát a legnagyobb tárgyként számolta, így a mintákat nem adta ki. Most a legnagyobb tárgy az egyik kemencébe kerül, a másikba az s = max(1, L-K) legkisebb; a kiosztás többféle lehet, a minta más kiosztást ad. Ellenőrző: library/.work/R-003/scripts/check21.py.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

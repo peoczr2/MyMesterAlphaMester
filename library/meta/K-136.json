@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/70. Vitorlás verseny kezdő napja *",
+    "method": "Egy menetes bejárás futó számlálóval, az első K hosszú szakasz kezdete",
+    "category": "Keresés: összefüggő szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "szakasz", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/71. Drága beszerzések *",
+    "method": "Csökkenő ár szerinti prefixösszeg, az első felet elérő pozíció",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "keresés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/72. Győztes versenyzők *",
+    "method": "Logikai tömb jelöléssel: az 1-es helyezést elérő versenyzők",
+    "category": "Tömbbejárás, jelölés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "jelölés", "helyezés"],
+    "note": "A pontozási szabály a kérdéshez nem kell; a győztes az 1-es helyezett. A mintával egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/73. Hőségriadó ***",
+    "method": "Forró szakaszok egy menetben, a riadók közti legkisebb távolság",
+    "category": "Összefüggő szakaszok, távolság",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakasz", "távolság", "bejárás"],
+    "note": "Riadó E = a forró szakasz K-adik napja, U = a szakaszt követő első nem forró nap; az utolsó napig tartó szakasz nem ad teljes riadót. Ezt az értelmezést a minta igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

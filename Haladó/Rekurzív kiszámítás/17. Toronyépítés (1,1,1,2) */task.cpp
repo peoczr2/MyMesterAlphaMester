@@ -1,13 +1,11 @@
 /*
 Megoldás lényege:
-Háromféle 1 magas elem és egyféle 2 magas elem van. Ezért T(n)=3T(n-1)+T(n-2).
-
+A torony legfelső eleme vagy egy 1 magas elem, vagy egy 2 magas fehér tégla. Az 1 magas elemekből háromféle van (piros, sárga, zöld), ezért T(n)=3T(n-1)+T(n-2), ahol T(k) a k magasságú tornyok száma. A T(0)=1 és T(1)=3 kezdőértékekből a sorozatot egy tömbben, 20210108-cal vett maradékkal számoljuk. Az időigény O(N), a memóriaigény szintén O(N).
 */
-
-// Hint 1: || Az 1 magas réteget háromféle színnel választhatod. ||
-// Hint 2: || A 2 magas fehér elem csak egyetlen lehetőség, de két szintet fed le. ||
-// Hint 3: || A keresett szám mod 20210108. ||
-
+/*
+Hint 1: || Az 1 magas réteget háromféle színnel választhatod. ||
+Hint 2: || A 2 magas fehér elem csak egyetlen lehetőség, de két szintet fed le. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

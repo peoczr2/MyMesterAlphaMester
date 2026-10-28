@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/47. Töréspróba **",
+    "method": "Binomiális összeg Σ C(t,i) ≥ H, a legkisebb t bináris kereséssel.",
+    "category": "Rekurzió: binomiális összeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rekurzió",
+      "binomiális",
+      "bináris keresés"
+    ],
+    "note": "A minta hibás: be2 (3 100) kimenete 8, de a feladatszöveggel ellentmond. Független minimax-DP (jelöltek száma × minták száma) szerint 3 minta és H=100 esetén a legkevesebb töréspróba 9; Σ_{i≤3} C(8,i)=93 < 100. A be1 (4 200 → 9) egyezik a saját kimenetemmel.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/48. Tükörszó *",
+    "method": "Balról jobbra leghosszabb betűbontás, majd a betűk fordított sorrendű kiírása.",
+    "category": "Szövegfeldolgozás: tükörszó",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szövegfeldolgozás",
+      "tükörszó",
+      "mohó"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/49. Üvegválogató robot *",
+    "method": "Mindhárom fajtára a három legnagyobb láda, 27 kombináció kipróbálása.",
+    "category": "Szélsőérték: három különböző láda",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "szélsőérték",
+      "indexek",
+      "mohó"
+    ],
+    "note": "A be2 mintánál két optimális válasz van (a 19. és a 20. láda is zöldből 20 üveget tartalmaz), a saját kimenet érvényes; a feladat szerint bármelyik megadható.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

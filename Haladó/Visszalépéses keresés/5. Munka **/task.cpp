@@ -1,9 +1,14 @@
 /*
-Hungarian megoldás: a munkák és a munkások között minimális költségű bipartit
-párosítást keresünk.
-
-Hint 1: || Egy munkás legfeljebb egy munkát kaphat. ||
-Hint 2: || A megoldás min-költségű maximális folyamként írható fel. ||
+Megoldás lényege: hálózati folyamként modellezzük. A forrásból minden munkás 1 kapacitású, 0 költségű
+élen érkezik, a munkás minden vállalt munkájába az ajánlott árral költséges, 1 kapacitású él vezet, és
+minden munkából 1 kapacitású, 0 költségű él megy a nyelőbe. Minimális költségű, M egység értékű folyamot
+keresünk; ha ez nem érhető el, nincs megoldás (-1). A min-költségű folyam Dijkstra-algoritmussal
+(potenciálokkal) N ≤ 20 esetén is gyorsan kiszámítható.
+*/
+/*
+Hint 1: || Minden munkás legfeljebb egy munkát vállalhat, és minden munkát egy munkás végez; ez egy hozzárendelési (párosítási) feladat. ||
+Hint 2: || Építs hálózatot: forrás → munkás (kapacitás 1, költség 0), munkás → munka (kapacitás 1, költség az ajánlott ár), munka → nyelő (kapacitás 1, költség 0). ||
+Hint 3: || Keress M egység folyamot a legkisebb összköltséggel (minimális költségű folyam, növelő utakkal); ha nem telik be az M egység, a válasz -1. ||
 */
 
 #include "../common.hpp"

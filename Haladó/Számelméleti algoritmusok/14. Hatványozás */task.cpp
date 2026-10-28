@@ -1,8 +1,10 @@
 /*
- * Nagy egész hatványozás cpp_int-tel.
- 
+Megoldás lényege:
+A^N akár 8001 jegyű is lehet (a legnagyobb eset 10^8 ezredik hatványa), ezért nem fér bele a beépített egész típusba. A nagy számot 10^9 alapú számjegyek vektorában tároljuk, és N-szer megszorozzuk A-val. Egy szorzásnál végigmegyünk a számjegyeken, és minden számjeggyel a szorzatot az előző átvitellel együtt 64 bites egészben számoljuk, így az átvitel azonnal kezelhető. N = 0 esetén az eredmény 1, ezt a kezdőérték adja. Az időigény O(N · jegyek száma / 9), vagyis legfeljebb kb. 1000 · 900 lépés, a memória a jegyek számával arányos.
+*/
+/*
 Hint 1: || Az eredmény túl nagy lehet a beépített egész típusokhoz, ezért saját nagy szám vagy multiprecision kell. ||
-Hint 2: || Mivel csak egy egész számmal kell sokszor szorozni, elég egy egyszerű nagy egész reprezentáció is, nem kell teljes nagy szám aritmetika. ||
+Hint 2: || Tárold a számot 10^9 alapú számjegyekből álló vektorban, és minden lépésben szorozd meg A-val úgy, hogy az átvitelt a következő számjegy felé viszed. ||
 */
 
 #include "../common.hpp"

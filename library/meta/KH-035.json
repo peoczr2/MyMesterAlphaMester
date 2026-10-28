@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Madármegfigyelés/13. Legnagyobb ingadozással előforduló madárfaj *",
+    "method": "Oszloponként M·Σx² − (Σx)² egész értékek összehasonlítása, a legnagyobb kiválasztása.",
+    "category": "Szórás, maximumkeresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szórás", "maximum", "négyzetösszeg"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a PDF példáján (3) egyezik. A feladat szerint „az egyik” legnagyobb szórású faj adható, ezért a minta „kézi”: a független ellenőrző (library/.work/KH-035/check.py, pontos törtes szórásnégyzettel) igazolja, hogy a kiírt faj maximális szórású. A be1 (3) és be2 (105) bemenetben a maximum egyértelmű; több azonos maximum esetén az elsőt írja ki.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/14. Madárfaj alkalmi társfaja? *",
+    "method": "Helységenként a jelenlévő fajpárok bejelölése egy N×N-es logikai táblázatban.",
+    "category": "Mátrix: páronkénti együttelőfordulás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "páros", "együttelőfordulás"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a PDF példáján (0101 / 1001 / 0000 / 1100) és a független ellenőrzőn (library/.work/KH-035/check.py) egyezik. Értelmezés: két faj alkalmi társ, ha legalább egy helységben együtt fordultak elő; a faj önmagának nem társa (főátló 0).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/15. Madárfajok állandó társfajai *",
+    "method": "Páronként: minden olyan helységben, ahol j előfordul, k is jelen van-e; logikai táblázattal.",
+    "category": "Halmaz: állandó társak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "feltétel", "mátrix"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a PDF példáján (1 2 / 1 1 / 0 / 2 1 2) és a független ellenőrzőn egyezik. Bizonytalan pont: a sehol nem előforduló fajhoz 0-t írok (a feladat nem mondja ki; a be1 és be2 bemenetben nincs ilyen faj, így a minta nem dönti el).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/16. Madárfajok egyedei több mint 90%-ban egy helységben *",
+    "method": "Fajonként a legnagyobb egyedi darabszám és az összeg egész számokkal: 100·max > 90·összeg.",
+    "category": "Arány-feltétel, összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "arány", "maximum"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a PDF példáján (2 / 3 4) és a független ellenőrzőn egyezik. A „több mint 90%” szigorúan értendő (pontosan 90% nem találat). Ha nincs találat, csak a „0” sor kerül ki, mert a második sor csak találat esetén szerepel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

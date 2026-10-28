@@ -1,64 +1,112 @@
 /*
-A pincefúrás során a rendszer állapota lépésről lépésre változik, ezért minden döntést az aktuális helyzetből kell levezetni. A megoldás kulcsa annak követése, meddig juthatunk el az adott állapotból a következő szabály szerint.
+Megoldás lényege: a főágat a zárójelek nélkül, végig lefúrjuk, utána sorban jönnek az elágazások (mindegyik teljesen, majd annak saját leágazásai), mindig a leágazási pontból indulva. Minden fúrt cellát az ág azonosítójával jegyzünk egy 201x201-es rácsban. Új cella fúrásakor megnézzük mind a 8 szomszédját (oldal- és sarokszomszéd): ha ott másik ághoz tartozó cella áll, az ágak összeértek, és az aktuális karakter sorszámát írjuk ki. Kivétel a leágazási pont maga és a szülőág leágazás utáni első cellája, mert ezekkel a leágazás természetesen érintkezik. A zárójelpárokat veremmel előre kiszámoljuk. Időigény: O(n), memória O(1) méretű rács.
 */
 /*
-Hint 1: || A fúrást lépésenként vagy szakaszonként érdemes követni, mert a döntés mindig a jelenlegi állapottól függ. ||
-Hint 2: || Ha több lehetőség van, a következő elérhető mélység vagy pozíció határozza meg a továbblépést. ||
+Hint 1: || A zárójelek párját előre, egy veremmel határozd meg: így egy ág tartalmát és a folytatását is gyorsan megtalálod. ||
+Hint 2: || Az ágakat külön fúrd: először a főág karakterei a zárójelek kihagyásával, utána egyesével a leágazások, mindegyik a saját indulópontjából és a leágazáskori irányból. ||
+Hint 3: || Rácsban jegyezd, melyik ág fúrta az adott cellát. Új cella ellenőrzésénél a 8 szomszédját nézd, a sarkok is számítanak; a leágazási pontot és a szülőág folytatását ne tekintsd ütközésnek. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 
-struct State {
-    int x, y, dir;
+static const int DX[4] = {0, 1, 0, -1};
+static const int DY[4] = {1, 0, -1, 0};
+static const int OFF = 105;
+
+struct Ctx {
+    string s;
+    vector<int> match;
+    int owner[2 * OFF + 1][2 * OFF + 1];   // -1: üres
+    int fromX[2 * OFF + 1][2 * OFF + 1];   // az előző cella koordinátái (a fúrás útján)
+    int fromY[2 * OFF + 1][2 * OFF + 1];
+    int nextId = 0;
+    int answer = 0;
 };
+
+static bool drillPart(Ctx &c, int l, int r, int x, int y, int d, int id, int parentId) {
+    struct Sub {
+        int l, r, x, y, d;
+    };
+    vector<Sub> subs;
+    int rootX = x, rootY = y;
+    int steps = 0;  // ebben az ágban eddig fúrt cellák száma
+
+    int i = l;
+    while (i < r) {
+        char ch = c.s[i];
+        if (ch == '(') {
+            subs.push_back({i + 1, c.match[i], x, y, d});
+            i = c.match[i] + 1;
+            continue;
+        }
+        if (ch == 'J') {
+            d = (d + 1) % 4;
+        } else if (ch == 'B') {
+            d = (d + 3) % 4;
+        } else if (ch == 'E') {
+            int nx = x + DX[d], ny = y + DY[d];
+            bool bad = false;
+            for (int dx = -1; dx <= 1 && !bad; ++dx) {
+                for (int dy = -1; dy <= 1 && !bad; ++dy) {
+                    int qx = nx + dx, qy = ny + dy;
+                    int o = c.owner[qx + OFF][qy + OFF];
+                    if (o < 0 || o == id) continue;
+                    if (id != 0 && steps < 2 && qx == rootX && qy == rootY) continue;  // a leágazási pont maga
+                    if (id != 0 && steps < 1 && o == parentId && c.fromX[qx + OFF][qy + OFF] == rootX &&
+                        c.fromY[qx + OFF][qy + OFF] == rootY) {
+                        continue;  // a szülőág folytatása a leágazási pont után
+                    }
+                    bad = true;
+                }
+            }
+            if (bad) {
+                c.answer = i + 1;
+                return true;
+            }
+            c.owner[nx + OFF][ny + OFF] = id;
+            c.fromX[nx + OFF][ny + OFF] = x;
+            c.fromY[nx + OFF][ny + OFF] = y;
+            x = nx;
+            y = ny;
+            ++steps;
+        }
+        ++i;
+    }
+
+    for (const Sub &sb : subs) {
+        int nid = ++c.nextId;
+        if (drillPart(c, sb.l, sb.r, sb.x, sb.y, sb.d, nid, id)) return true;
+    }
+    return false;
+}
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    string s;
-    cin >> s;
+    static Ctx c;
+    cin >> c.s;
+    int n = (int)c.s.size();
 
-    set<pair<int,int>> used;
-    set<pair<pair<int,int>, pair<int,int>>> edges;
-    int x = 0, y = 0, dir = 0;
-    used.insert({0, 0});
-    vector<State> st;
-
-    auto step = [&](int &x, int &y, int dir) {
-        if (dir == 0) ++x;
-        else if (dir == 1) ++y;
-        else if (dir == 2) --x;
-        else --y;
-    };
-
-    for (int i = 0; i < (int)s.size(); ++i) {
-        char c = s[i];
-        if (c == '(') {
-            st.push_back({x, y, dir});
-            continue;
-        }
-        if (c == ')') {
-            auto z = st.back(); st.pop_back();
-            x = z.x; y = z.y; dir = z.dir;
-            continue;
-        }
-        if (c == 'J') dir = (dir + 3) % 4;
-        else if (c == 'B') dir = (dir + 1) % 4;
-        else if (c == 'E') {
-            int nx = x, ny = y;
-            step(nx, ny, dir);
-            pair<pair<int,int>, pair<int,int>> e = {min(make_pair(x, y), make_pair(nx, ny)), max(make_pair(x, y), make_pair(nx, ny))};
-            if (used.count({nx, ny}) || edges.count(e)) {
-                cout << i + 1 << '\n';
-                return 0;
-            }
-            used.insert({nx, ny});
-            edges.insert(e);
-            x = nx; y = ny;
+    c.match.assign(n, -1);
+    vector<int> stk;
+    for (int i = 0; i < n; ++i) {
+        if (c.s[i] == '(') {
+            stk.push_back(i);
+        } else if (c.s[i] == ')' && !stk.empty()) {
+            int open = stk.back();
+            stk.pop_back();
+            c.match[open] = i;
+            c.match[i] = open;
         }
     }
-    cout << 0 << '\n';
+
+    memset(c.owner, -1, sizeof(c.owner));
+    c.owner[OFF][OFF] = 0;
+    c.fromX[OFF][OFF] = INT_MIN;
+    c.fromY[OFF][OFF] = INT_MIN;
+    drillPart(c, 0, n, 0, 0, 0, 0, -1);
+
+    cout << c.answer << '\n';
     return 0;
 }

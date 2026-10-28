@@ -1,0 +1,38 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2018 ∕ 19 2. forduló/1. Időpontok",
+    "method": "Másodpercekre váltás, különbség és későbbi időpont visszaszámítása",
+    "category": "Időszámítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["időszámítás", "maradékos osztás", "egységváltás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2018 ∕ 19 2. forduló/2. Ajándék",
+    "method": "Kétmutatós csúszó ablak pozitív elemekkel, első találat adja a megoldást",
+    "category": "Kétmutatós technika",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["kétmutatós", "tömb", "összeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2018 ∕ 19 2. forduló/3. Terem",
+    "method": "Euklideszi osztási lépések számlálása, majd legnagyobb közös osztóval osztott négyzetek",
+    "category": "Mohó lefedés, Euklideszi-algoritmus",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "euklidész", "lnko"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

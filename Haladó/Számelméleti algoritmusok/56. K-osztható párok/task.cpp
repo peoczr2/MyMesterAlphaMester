@@ -1,6 +1,11 @@
 /*
- * Párok száma, melyek összege osztható K-val.
- 
+Megoldás lényege:
+Elég a maradékosztályok darabszámát összeszámolni: egy pár összege akkor osztható K-val,
+ha maradékaik r és K - r (mod K). Az r-es és a (K - r)-es osztályból cnt[r] * cnt[K - r]
+pár választható. A 0-s osztályon belül és (páros K esetén) a K/2-es osztályon belül
+az elemek egymással párosulnak, ezeknél n*(n-1)/2 párt számolunk. Az idő O(N + K).
+*/
+/*
 Hint 1: || Egy pár összege akkor osztható K-val, ha a két szám maradéka `r` és `K-r`. ||
 Hint 2: || Előbb számold meg, hány elem esik az egyes maradékosztályokba, aztán ezekből kombinatorikusan add össze a jó párok számát. ||
 Hint 3: || A `0` és `K/2` osztályok külön esetek, mert ott ugyanaz a maradék párosítható önmagával is. ||

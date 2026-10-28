@@ -1,9 +1,14 @@
 /*
-Hungarian megoldás: a vendégek és a székek között bipartit párosítás van, ahol
-egy vendég legfeljebb a megadott székek egyikét kaphatja meg.
-
-Hint 1: || Minden vendéghez legfeljebb négy szék tartozik, ezért egyszerű élkészítés elég. ||
-Hint 2: || A feladat egy telített bipartit párosításként írható fel. ||
+Megoldás lényege: a vendégek és az ülőhelyek között bipartit párosítást keresünk: minden vendég
+legfeljebb négy megadott ülőhely valamelyikét kaphatja meg, és egy ülőhelyet legfeljebb egy vendég
+foglalhat el. Ezt folyamhálózattal oldjuk meg: a forrásból a vendégekbe, onnan az igényelt
+ülőhelyekbe, végül a nyelőbe vezetünk éleket, mindegyik kapacitása 1. Ha a maximális folyam N,
+minden vendég kapott ülőhelyet, és a telített vendég-ülőhely élek adják a kiosztást. Az időigény
+N ≤ 20 és M ≤ 25 mellett elhanyagolható.
+*/
+/*
+Hint 1: || Keress olyan kiosztást, amelyben minden vendég pontosan egy, az igényei közül való ülőhelyet kap, és egy ülőhelyet legfeljebb egy vendég foglal el. ||
+Hint 2: || Építs hálózatot: forrás → vendég → igényelt ülőhely → nyelő, minden él kapacitása 1; ha a maximális folyam N, a telített vendég-ülőhely élek adják a kiosztást. ||
 */
 
 #include "../common.hpp"

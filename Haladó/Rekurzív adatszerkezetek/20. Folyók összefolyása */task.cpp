@@ -1,20 +1,19 @@
+/*
+Megoldás lényege:
+Minden folyó legfeljebb egy másikba folyik bele, ezért a folyók gyökerezett erdőt
+alkotnak, ahol a szülő a folyásirány szerinti következő folyó. Két folyó akkor folyik
+össze, ha a szülőláncaik első közös csúcsban találkoznak. Ez egy LCA-feladat: kiszámítjuk
+a két folyó mélységét, a mélyebbet a másik szintjére hozzuk, majd együtt lépkedünk
+felfelé az első közös csúcsig. A kiírt két szám az egyes folyók által az összefolyásig
+megtett lépések száma. Az időigény O(N), mert egy lekérdezés láncai legfeljebb N hosszúak.
+*/
+/*
+Hint 1: || A két folyó összefolyása a szülőláncaik első közös eleme. ||
+Hint 2: || Ha az egyik folyó mélyebben van, először azt kell felhozni a másik szintjére. ||
+Hint 3: || Azonos mélységtől mindkét láncot egy lépéssel emelve az első egyező csúcs lesz az összefolyás. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-Megoldási ötlet:
-Minden folyó legfeljebb egy másikba folyik bele, ezért a rendszer egy gyökerezett
-erdő, ahol a szülő a folyásirány szerinti következő folyó. Két folyó akkor
-összefolyó, ha a szülőláncaik találkoznak.
-
-A feladat tehát egy egyszerű LCA-szituáció egy olyan fában, ahol minden csúcsnak
-legfeljebb egy szülője van. Elég kiszámítani a két folyó mélységét, a mélyebbet
-felhozni, majd együtt lépkedni felfelé az első közös csúcsig.
-
-Hint 1: || A közös összefolyás a két folyó downstream szülőláncainak első közös eleme. ||
-Hint 2: || Ha az egyik folyó mélyebben van, először azt kell felhozni a másik szintjére. ||
-Hint 3: || Ha a két lánc mindig ugyanazon a szinten halad, az első egyező csúcs lesz a válasz. ||
-*/
 
 int main() {
     ios::sync_with_stdio(false);

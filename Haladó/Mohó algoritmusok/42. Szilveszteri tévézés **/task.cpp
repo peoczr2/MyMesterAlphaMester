@@ -1,8 +1,10 @@
 /*
-Feladat: A lehető legtöbb teljes filmet kell megnézni úgy, hogy egyszerre csak egy film mehet.
-Ötlet: Az intervallumokat befejezési idő szerint rendezzük, és mindig a legkorábban végződő, még nem ütköző filmet választjuk.
-Hint 1: || Csak teljes filmet nézünk, ezért az átfedés kizáró ok. ||
-Hint 2: || A korábban befejező filmek több későbbi filmet hagynak meg. ||
+Megoldás lényege:
+Mivel csak teljes filmeket nézünk, két film akkor fér össze, ha az egyik befejezése nem későbbi, mint a másik kezdése (az azonos időpont megengedett). A filmeket befejezési idő szerint rendezzük, és mindig azt a filmet vesszük, amely a már kiválasztott utolsó film után még elkezdhető, és a legkorábban ér véget. Ez optimális, mert a korábban befejeződő film legalább annyi későbbi filmnek hagy helyet, mint bármely más választás. A kezdő és befejező időpontokat percre váltjuk, az időigény O(N log N).
+*/
+/*
+Hint 1: || Csak teljes filmet nézünk, ezért két átfedő film nem választható ki egyszerre. ||
+Hint 2: || A korábban befejező filmek több később kezdődő filmnek hagynak helyet. ||
 Hint 3: || A kiválasztott filmek összideje csak a hosszok összege. ||
 */
 

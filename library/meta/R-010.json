@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/99. Menekülés **",
+    "method": "Távolságrétegenkénti DP a minimális sáros úthoz, elődmutatóval visszaépítve.",
+    "category": "Rács DP: távolságrétegek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rács", "dp", "útvonal"],
+    "note": "Több helyes kimenet van (a feladat szerint bármelyik útvonal kiírható): be1-re a minta NEEE-t, a program ENENN-t ad, mindkettő 1 sáros mezőt érint. be2-re a kimenet egyezik a mintával. Ellenőrzés: külön írt ellenőrző program igazolja a lépések távolodását és a kilépést, a sáros mezők számát független DP adja, 600 véletlen kis (N≤9) esetben pedig teljes kereséssel egyezik. Időlimit: N=999-re ~75 ms (0,1 mp), memória ~22 MB (32 MiB).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

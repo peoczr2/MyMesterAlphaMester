@@ -1,9 +1,10 @@
 /*
-Feladat: Meg kell találni azt a H hosszú intervallumot, amelyben a legtöbb vírus volt megfigyelhető.
-Ötlet: Minden vírushoz meghatározzuk, hogy a kezdőpontok mely tartományában ad hozzá egyet a fedett vírusok számához, majd különbségi tömbbel végigszámoljuk a 7000-ig tartó időtengelyt.
-Hint 1: || Egy vírus pontosan azokra a kezdőidőkre számít bele, amelyekre a [T, T+H) intervallummal metszik egymást. ||
-Hint 2: || Ez a kezdőidő-tartomány egy összefüggő szakasz. ||
-Hint 3: || Ha minden vírushoz hozzáadod ezt a szakaszt egy diff tömbben, a maximum helye is kijön. ||
+Megoldás lényege: a T kezdetű, H hosszú intervallumban pontosan azok a vírusok figyelhetők meg, amelyek [K, P) élettartama átfedi a [T, T+H) intervallumot, azaz K < T+H és P > T. Egy vírus így a kezdőidők egy összefüggő [K-H+1, P-1] szakaszán számít bele a számlálóba, a 1 <= T <= 7000-H korlátba vágva. Ezeket a szakaszokat különbségi tömbbel gyűjtjük össze, majd a prefixösszegekkel végigjárjuk T-t, és a legkorábbi maximumot írjuk ki; az időigény O(N + 7000).
+*/
+/*
+Hint 1: || Egy vírus pontosan akkor figyelhető meg, ha élettartama átfedi a vizsgált intervallumot: K < T+H és P > T. ||
+Hint 2: || Ez a T-kezdőpontok egy összefüggő szakasza: T a [K-H+1, P-1] tartományba esik, a [1, 7000-H] korlátba vágva. ||
+Hint 3: || Minden vírus szakaszát egy különbségi tömbben rögzítheted, így egy prefixösszeg-bejárással minden T számlálója megkapható. ||
 */
 
 #include <bits/stdc++.h>

@@ -3,10 +3,12 @@ Megoldás lényege:
 Az ülésrend egy permutáció, amely ciklusokra bontható. Egy nem helyén ülő ciklusban a diákok
 egy üres székkel körbe tudnak forogni, és egy k hosszú ciklus rendezéséhez pontosan k+1 lépés kell.
 
-Az összes minimális lépésszám ezért a nemtriviális ciklusok hosszának összege plusz a ciklusok száma.
+A minimális lépésszám ezért a nemtriviális ciklusok (k+1) értékeinek összege, azaz a nemtriviális ciklusok hosszának összege plusz a ciklusok száma.
 */
-// Hint 1: || A plusz üres szék miatt egy ciklus körbepörgethető, nem kell külön csere. ||
-// Hint 2: || Egy k hosszú rossz ciklushoz k+1 átülés kell. ||
+/*
+Hint 1: || A plusz üres szék miatt egy ciklus körbepörgethető, nem kell külön csere. ||
+Hint 2: || Egy k hosszú rossz ciklushoz k+1 átülés kell. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

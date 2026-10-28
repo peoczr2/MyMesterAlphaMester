@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/8. Vonat",
+    "method": "Egyetlen bejárás: áthaladás/megállás állapotok, futamok és az előző megálló időtartamával való összehasonlítás.",
+    "category": "Szimuláció, futamkeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "bejárás", "futam"],
+    "note": "A kezdőállomás (csak indulási idő) és a végállomás (csak érkezési idő) nem megállás, ezért előző megállónak sem számít; a be1/ki1 minta ezt igazolja (a 3. részfeladat válasza csak az 5. állomás).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/9. Könyvtár",
+    "method": "Évenkénti, könyvkódonkénti és témakódonkénti összegzés, majd szélsőérték- és hiányzóév-keresés.",
+    "category": "Összegzés, szélsőérték",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["összegzés", "szélsőérték", "map"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

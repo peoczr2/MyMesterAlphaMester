@@ -1,7 +1,11 @@
 /*
-   Színezés: 0-1 sorozatot kell előállítani úgy, hogy két szomszédos 1-es
-   ne legyen. DP-vel számoljuk a folytatások számát, majd unrankeléssel
-   kiválasztjuk a K-adik sorozatot.
+Megoldás lényege:
+A sorozatban két szomszédos 1-es nem állhat, ezért egy pozíció szabadsága csak az előző bit értékétől függ. A ways(pos, prev) függvény azt adja meg, hányféleképpen lehet a pos-tól kezdődő részt kitölteni, ha az előző bit prev; ezt memoizálva számoljuk, az állapotok száma O(N). A teljes szám a ways(0, 0). A K-adik sorozatot elemenként építjük: ha az előző bit 1, a következő 0 kötelező; különben megnézzük, hány folytatás van 0-val, és ha K ennyinél nem nagyobb, 0-t írunk, egyébként K-ból levonjuk ezt a számot és 1-et írunk. Mivel a 0 az ábécében az 1 előtt áll, ez a lépés a lexikografikus K-adik sorozatot adja, az összes munka O(N).
+*/
+/*
+Hint 1: || Az 1-esek nem állhatnak egymás mellett, ezért a következő bit lehetséges értékei az előző bittől függnek: ez DP-állapot, amelynek paraméterei a pozíció és az előző bit. ||
+Hint 2: || Jelölje ways(pos, prev) a pos-tól kezdődő kitöltések számát, ha az előző bit prev: ha a pos bit 0, a folytatás ways(pos+1, 0), ha 1, akkor ways(pos+1, 1), de ez csak akkor lehetséges, ha prev = 0. Memoizálással az összes állapot kiszámolható. ||
+Hint 3: || A K-adik sorozatot bitenként építsd: ha a 0-val kezdődő folytatások száma legalább K, a 0 következik, különben vond le K-ból ezt a számot és írj 1-et. Az 1 után mindig 0 jön. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

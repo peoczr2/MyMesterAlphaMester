@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/38. Sejtek ***",
+    "method": "Elpusztulási idő szerinti söprés, multisetben a K. legnagyobb keletkezési idő adja E-t.",
+    "category": "Intervallum-söprés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["söprés", "multiset", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/39. Strázsa ***",
+    "method": "Mohó láncolás: mindig a legtovább érő, már elkezdett jelentkezőt választjuk.",
+    "category": "Intervallum-lefedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "lefedés", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/40. Számok intervallumba ***",
+    "method": "Dinamikus programozás a szomszédos hézagokon: nem egymás melletti, maximális összegű vágáshalmaz.",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus", "intervallum", "hézag"],
+    "note": "Minta-eltérés: a be2 első sora \"100 10\" (a 10 a számsorba tartozna, N=100 mellett), és a ki2 11732 nem minimális: a be2 első 100 tokenjére (amit a program olvas) a minimum 10939, a 101 számra 10734, a 10 nélküli 100 számra 11707. A program kimenete (10939) független partíció-brute-force/DP ellenőrzéssel igazolt (library/.work/R-037/check_samples.py, verify.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/41. Szemtanúk ***",
+    "method": "Mohó stabbing: a legkorábbi lefedetlen eseményhez a legkésőbb távozó lefedő vendéget választjuk.",
+    "category": "Intervallum-stabbing",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "stabbing", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/42. Szilveszteri tévézés **",
+    "method": "Befejezési idő szerinti mohó kiválasztás: mindig a legkorábban végződő, még elkezdhető filmet vesszük.",
+    "category": "Intervallum-ütemezés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mohó", "ütemezés", "intervallum"],
+    "note": "Több helyes kimenet van (bármelyik maximális filmhalmaz megadható), ezért a kimenet eltér a mintától: a minta 8 filmet ad 1015 perccel, a program szintén 8 filmet, 803 perccel (mindkét halmaz érvényes). A darabszámot 400 véletlen kis esetben teljes kereséssel igazoltam (library/.work/R-037/verify.py), a mintán a program kiválasztását az érvényesség ellenőrizte (check_samples.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/43. Termek **",
+    "method": "Kezdési idő szerinti söprés, minimumkupac a termek szabadulási idejével; csak teli esetén nyitunk újat.",
+    "category": "Intervallumok színezése",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "kupac", "intervallum"],
+    "note": "Több helyes beosztás van (a feladat szerint bármelyik megadható), ezért a kimenet eltér a mintától: a minta 1 2 4 8 | 3 5 | 6 | 7, a program 2 4 8 1 | 3 7 | 5 | 6 beosztást ad. Mindkettő 4 terem, és a minimum a legtöbb egyidejű esemény száma (4); az érvényességet a check_samples.py és a 400 véletlen esetes verify.py ellenőrizte.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

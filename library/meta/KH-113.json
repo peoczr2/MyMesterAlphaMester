@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/46. Várakozási idők a villamosmegállókban *",
+    "method": "Egy bejárás: várakozás = indulási mínusz érkezési idő, az utolsó megálló kimarad.",
+    "category": "Összegzés: várakozási idő",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "összegzés",
+      "villamos",
+      "várakozás"
+    ],
+    "note": "A kimenet első száma N-1 (az útközbeni megállók száma), utána a várakozások sorrendben; a végállomás várakozása nem kerül ki. A két minta egyezik (2/2). Mért futásidő a legnagyobb mintán (N=100): kb. 2 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/47. Végponthoz közelebbi nem megálló *",
+    "method": "Távolságösszegzés, majd a legközelebbi nem megálló távolságának összehasonlítása az elejétől és a végétől.",
+    "category": "Keresés: legközelebbi nem megálló",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "keresés",
+      "távolság",
+      "feltétel"
+    ],
+    "note": "A végállomás nem számít megállónak: a be2 mintában a végállomás is nem megálló (Erk = Ind), de ha beszámítanánk, a válasz Vegehez lenne, a minta Elejehez. Egyenlő távolság vagy nincs nem megálló esetén Egyikhez sem. A két minta egyezik (2/2). Mért futásidő (N=100): kb. 2 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/48. Villamos várakozási ideje *",
+    "method": "Egy bejárás: az útközbeni megállók (indulási mínusz érkezési idő) összege.",
+    "category": "Összegzés: várakozási idő",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "összegzés",
+      "várakozás",
+      "idő"
+    ],
+    "note": "Megjegyzés: a minta hibás (kérdés a döntéshez). A be1 6. sorának érkezése (400 63 63: 63) korábbi az 5. sor érkezésénél (500 64 73: 64), a be2 utolsó sora (3793 1648 1648: 1648) pedig az utolsó előtti érkezésénél (1649) korábbi: az időrend ellentmondásos. A minta mindkét bemenetre 5-öt ad, a program 25-öt és 500-at, a feladat PDF-példája (16) pedig egyezik a programmal. A végállomás várakozását nem számoljuk. Kérdés: a minta javítandó-e? Mért futásidő (N=1000): kb. 2 ms.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/49. Villamos menetideje *",
+    "method": "Egy bejárás: a szakaszok ideje, mindegyik az előző indulástól az érkezésig tart.",
+    "category": "Összegzés: menetidő",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "összegzés",
+      "menetidő",
+      "szakasz"
+    ],
+    "note": "A menetidő a nem állással töltött idő: az összes szakasz (az előző indulás és a következő érkezés közötti idő) összege. A két minta egyezik (2/2). Mért futásidő (N=100): kb. 2 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

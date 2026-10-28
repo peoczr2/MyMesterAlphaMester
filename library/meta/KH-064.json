@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szigetek/1. A második felében alacsonyabb csúcs volt? *",
+    "method": "Egy bejárás: az eddigi csúcsok minimumának nyilvántartása, második felben kisebb csúcs keresése.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "tömb", "feltétel"],
+    "note": "Az „azelőtt csak magasabbakkal találkoztunk” feltételt a megoldás úgy értelmezi, hogy első csúcsnál (nincs korábbi csúcs) is teljesül. A második felet a 2p > N feltétel adja. A mintákban egyik sem számít: nincs olyan eset, ahol az első csúcs a második felben lenne, és a mintáknál N páros.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/10. Hegycsúcsok magasságai *",
+    "method": "Egy bejárás: a három egymást követő mérés feltételének szűrése, a csúcsok magasságainak kiírása.",
+    "category": "Feltételes szűrés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "feltétel", "szűrés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/11. Legelszigeteltebb sziget *",
+    "method": "Szigetenként a két oldali legközelebbi szárazföld távolságának minimuma, ennek maximuma.",
+    "category": "Maximumkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "tömb", "szomszéd"],
+    "note": "Azonos távolságnál a balról első sziget a válasz; a minta első párja (be1/ki1) ezt igazolja: két sziget is 2-es távolságú, a várt kimenet a bal oldali.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/12. Leginkább középen lévő sziget *",
+    "method": "Szigetenként a két part közül a kisebb távolság az óceán közepétől; ennek minimuma.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "tömb", "távolság"],
+    "note": "Az „óceán közepe” az első és utolsó tengeri (0) mérés közepeként értelmezve. A teljes út felezőpontja (N+1)/2 a nagy mintát nem adja ki; az N/2-es közép illeszkedne a mintákra, de a szöveg „óceán” szava miatt a tengeri középet választottam. Döntetlennél a balról első sziget a válasz.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

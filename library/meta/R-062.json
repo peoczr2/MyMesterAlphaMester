@@ -1,0 +1,99 @@
+[
+  {
+    "path": "Haladó/Szimuláció/1. Automata ***",
+    "method": "Parancsok sorrendi végigvitele, pozíció és irány frissítése.",
+    "category": "Állapotszimuláció",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "szimuláció",
+      "irány",
+      "koordináta"
+    ],
+    "note": "Az irányneveket a minta ékezet nélkül írja (eszak, kelet); a dél és nyugat alakja ebből követve: del, nyugat.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Szimuláció/10. Hangya tizenkétszögeken ***",
+    "method": "Állapotgépes bejárás tizenkétszög-rácson, lapok látogatásszámának hash-táblában tartásával.",
+    "category": "Geometriai szimuláció, rácsmodell",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szimuláció",
+      "rács",
+      "hash"
+    ],
+    "note": "Modell: a tizenkétszögek négyzetrácsot alkotnak, minden cella közepén egy négyzet és négy háromszög van; az ábra alapján, mindhárom minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Szimuláció/13. Metró *",
+    "method": "Utasok darabszámos időléptetéses szimulációja, K-val eltolt érkezési tömbbel.",
+    "category": "Sorok, eseményszimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "sorok",
+      "mozgólépcső",
+      "szimuláció"
+    ],
+    "note": "A 0 utasú metró is szerepel a kimenetben (mint a 14-es minta); túlcsordulásnál a szimuláció megáll.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Szimuláció/14. Metróállomás ***",
+    "method": "Két mozgólépcső és a metró darabszámos időléptetéses szimulációja.",
+    "category": "Többszereplős szimuláció, sorok",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "sorok",
+      "mozgólépcső",
+      "szimuláció"
+    ],
+    "note": "A váróterem kapacitásába a metróra várók és a felfelé sorban állók együtt számítanak; a mintából ez nem dönthető el, de a minta mindkét értelmezéssel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Szimuláció/16. Pincefúrás *",
+    "method": "Fúrt pontok tulajdonos ágának nyilvántartása, szomszédsági ütközésvizsgálat.",
+    "category": "Szimuláció, ütközésvizsgálat",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "verem",
+      "halmaz"
+    ],
+    "note": "Blokkolva: a szomszédsági szabály a feladatszöveg példáját (19) adja, de a két minta (19 és 5) eredményét nem; a találkozás pontos szabálya nem egyértelmű.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Haladó/Szimuláció/17. Vonatok szemben *",
+    "method": "Két vonat közös percenkénti szimulációja, szakaszfoglaltság követésével.",
+    "category": "Eseményszimuláció, találkozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "idővonal",
+      "találkozás"
+    ],
+    "note": "A minta a Piripócs nevet CP852 bájttal írja (ó = 0xA2); a kimenet ugyanezt a bájtot használja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

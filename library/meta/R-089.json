@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/6. Zárkód",
+    "method": "De Bruijn-gráf Euler-köre Hierholzer-algoritmussal, legrövidebb nyitó sorozat.",
+    "category": "Gráf: Euler-kör",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "euler-kör", "bejárás"],
+    "note": "Több helyes nyitó sorozat van, a feladat szerint bármelyik megadható; a minta (be1: 0102112200, be2) más, de érvényes kimenetet ad. Független ellenőrző: a hossz K^N+N-1, és minden N hosszú kód pontosan egyszer szerepel benne.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/7. Találkozó",
+    "method": "Négy sarokból számolt DP-tábla, két útvonal-elrendezés a találkozási mezőnél.",
+    "category": "Dinamikus programozás: rácsút",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "rács", "útvonal"],
+    "note": "Több optimális útvonalpár van, a feladat szerint bármelyik megadható. A 4x4-es minta (be1) más, de azonos, bruteforce-szal igazolt 54-es összegű útpárt ad, amelyben az utak csak a (3,3) mezőn érintkeznek; be2 egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/8. Permutációk",
+    "method": "Veremmel kiadható permutáció zárójelsorozata, Dyck-szó rákövetkezője.",
+    "category": "Kombinatorika: Dyck-szavak",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["permutáció", "zárójelezés", "lexikografikus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/9. Hálózat kettéosztás",
+    "method": "Csúcsonként paritás-egyenlet, GF(2) Gauss-elimináció bitekkel.",
+    "category": "Lineáris egyenletrendszer GF(2)",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gauss-elimináció", "paritás", "gráf"],
+    "note": "Több helyes kettéosztás van, a feladat szerint bármelyik megadható. A be2 mintán más, de érvényes felosztást ad: független ellenőrző szerint mindkét rész nem üres, és minden üzletnek páros a saját részbeli partnerszáma; be1 egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

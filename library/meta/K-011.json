@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok/24. Maja naptár",
+    "method": "Dátumok napsorszámra alakítása, majd visszaalakítás osztással és maradékképzéssel",
+    "category": "Dátumszámítás, naptárak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["naptár", "átváltás", "osztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/25. Órák",
+    "method": "Mutatók állása félfokos egységben, különbség és a kisebbik szög kiszámítása",
+    "category": "Idő, szögszámítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szög", "idő", "egész szám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/26. Kiegyensúlyozott keresőfa **",
+    "method": "Rekurzív felezés: a középső elem a gyökér, a részfákat ugyanígy építjük",
+    "category": "Bináris keresőfa, rekurzió",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["bináris fa", "rekurzió", "keresőfa"],
+    "note": "Több helyes kimenet is van; a program a minta kimenetét adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/27. Micimackó *",
+    "method": "Szakaszonkénti mézfogyás számítása, a negatív eredmény nullázással",
+    "category": "Szimuláció, feltételes",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["feltételes", "szimuláció", "egész szám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

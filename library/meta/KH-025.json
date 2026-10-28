@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/17. Helyjegy - 2010. majus",
+    "method": "Jegyenkénti összegzés, megállók halmaza, esemény-sweep a Táv pontig.",
+    "category": "Szimuláció: intervallumok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "intervallum", "kerekítés"],
+    "note": "Minta-eltérés: a minta.zip ki1.txt és ki2.txt nem tartalmazza a részfeladatok előtti # sorokat, pedig a feladatszöveg (Kimenet) és a PDF példa előírja őket. A megoldás a feladat szerint ír # sorokat, minden más érték egyezik a mintával. Független ellenőrzés: library/.work/KH-025/check/verify_h17_t18.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/18. Telek - 2010. május angol",
+    "method": "Pozíciók prefix-összeggel, szemben fekvő telkek metszete, sávos adó kerekítéssel.",
+    "category": "Geometria: intervallumok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["geometria", "intervallum", "kerekítés"],
+    "note": "Minta-eltérés: a minta.zip mindkét ki-fájljának 3. részfeladatából hiányzik a legnagyobb és a legkisebb telek közötti telkek száma. ki1: a PDF példa szerint 2 (a mintában 7 1 1000 400, a PDF szerint 2 7 1 1000 400). ki2: a számított 19 (a mintában 67 27 2622 24). A többi részfeladat egyezik a mintával. Nem igazolt döntések: a 100-as adókerekítés félértéknél (pl. 33150) felfelé kerekít, és azonos területű telkeknél az első előfordulást vesszük. Független ellenőrzés: library/.work/KH-025/check/verify_h17_t18.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/19. Anagramma- 2010. október",
+    "method": "Betűk ábécérendbe rendezése kulcsként, map-es csoportosítás hossz és kulcs szerint.",
+    "category": "Szövegfeldolgozás: anagrammák",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szöveg", "rendezés", "csoportosítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/2. Lotto - 2005. majus",
+    "method": "Gyakorisági tömb a húzásokra, rendezés és osztókeresés a prímekhez.",
+    "category": "Gyakoriság, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gyakoriság", "tömb", "prímszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

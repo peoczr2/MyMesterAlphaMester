@@ -1,7 +1,12 @@
 /*
- * A 2 és 40 közötti prímszámok közül kiválogatjuk azokat, amelyek osztják a
- * megadott hatalmas számot.
- 
+Megoldás lényege:
+A 2 és 40 közötti prímszámok száma kicsi (12 darab), ezért csak ezekre vizsgáljuk az oszthatóságot.
+A számot szövegként olvassuk be, mert akár 10^1000 nagyságú is lehet, így egész típusba nem fér bele.
+Minden jelölt prímre a számjegyeken balról jobbra haladva a maradékot r = (10·r + számjegy) mod p szerint számoljuk, és ha a végén 0, a prím osztója.
+A prímeket növekvő sorrendben vizsgáljuk, így a kiírt lista már rendezett.
+Az időigény a 12 prím és a számjegyek számának szorzata, azaz O(12 · L), ahol L a számjegyek száma.
+*/
+/*
 Hint 1: || Csak a 2 és 40 közötti prímszámokat kell vizsgálni, ez nagyon kevés jelölt. ||
 Hint 2: || A hatalmas számot ne alakítsd át beépített típussá; minden jelölt prímre külön számold ki a maradékát karakterenként. ||
 */

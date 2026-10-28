@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/24. Körséta **",
+    "method": "Egyetlen-úti fa, visszaélek egyszeri használata, fa-élek számolt ismétlésével Euler-körút.",
+    "category": "Gráf: Euler-körút",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "mélységi bejárás",
+      "euler-körút"
+    ],
+    "note": "A validátor „hibás” állapotot ad, mert a minta.zip ki1 és ki2 kimenetei más, de érvényes körsétát adnak; a feladat szerint bármelyik megoldás elfogadott, ezért a minta „kézi”. Ellenőrző program: library/.work/HA-046/check24.py (bemenet, kimenet): minden élt bejár, 1-ből indul és 1-be ér, a hossza legfeljebb M+N. A PDF-példán a kimenet 1 2 3 4 5 3 6 7 3 1 8 9 10 8 9 10 11 9 1 (18 él, M+N=27). A be1, be2, ki1, ki2 és 450 véletlen érvényes gráf is átmegy. Időigény: N=10000 láncon 0,01 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/25. Központ kialakítás ***",
+    "method": "Kosaraju-féle erős komponensek; a bejövő él nélküli komponensekbe egy-egy új él a központból.",
+    "category": "Gráf: erős komponensek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "erősen összefüggő",
+      "irányított gráf"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti (ki) fájl, ezért a validátor „nincs minta” állapotot ad. A feladat szerint bármelyik megoldás elfogadott, ezért a minta „kézi”. A PDF-példán a kimenet pontosan 2 / 7 1 / 7 8. A be2.txt fejléce N=7908, K=6793, de csak 6793 csúcssor van (N sor lenne), vagyis a formátum eltér a PDF-től; a hiányzó sorokat a program kimenő él nélküli csúcsnak veszi, így a be2 eredménye nem igazolható. Véletlen, kisméretű (N≤30) gráfokon 400 esetet ellenőriztem független, zárt-elérhetőség alapú ellenőrzővel (library/.work/HA-046/t25/gen25.py). Időigény be2-n 0,005 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/26. Központi raktár **",
+    "method": "A régi raktár törlése, erős komponensek, forrás-komponensek száma mínusz egy új út.",
+    "category": "Gráf: erős komponensek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "erősen összefüggő",
+      "irányított gráf"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl, ezért „nincs minta”. A feladat szerint bármelyik megoldás elfogadott, ezért a minta „kézi”. A PDF-példán a program 1 1 / 1 2 kimenetet ad: a 3-as csúcs törlése után 1-ből a 2-be vezető új éllel minden csúcs elérhető, és az új utak száma (1) minimális; a PDF 4 1 / 4 1 megoldása is helyes. A be2 (N=25711, M=11480) kimenetét független Python-ellenőrzés igazolta (16662 új út, minden csúcs elérhető). 300 véletlen kis gráfon is helyes. N=100000, M=1000000 méretnél 0,05 mp és 21 MB memória.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/27. Kritikus csomópontok ***",
+    "method": "Mélységi bejárás low-értékekkel, az A-B fa-úton a kritikus csúcsok gyűjtése.",
+    "category": "Gráf: artikulációs pont",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "mélységi bejárás",
+      "artikulációs pont"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl, ezért „nincs minta”. A PDF-példán (11 él) a kimenet pontosan 1 / 3. A be1.txt (9 csúcs, 10 él) különbözik a PDF-példától; kimenete 3 5 7, amit csúcstörléses kimerítő ellenőrzéssel igazoltam. A be2 (N=5999, M=30000) kimenetét független ellenőrzéssel igazoltam, 1500 véletlen kis gráfon a kimerítő ellenőrzés egyezik. Időigény be2-n 0,007 mp. A kritikus csúcsok sorrendje a feladat szerint tetszőleges, a program növekvő sorrendben ír.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

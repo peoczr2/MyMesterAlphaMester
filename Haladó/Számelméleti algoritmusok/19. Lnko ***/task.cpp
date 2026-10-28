@@ -1,12 +1,27 @@
 /*
- * gcd(2^N-1, 2^M-1) = 2^gcd(N,M)-1. A nagy értékeket saját base-1e9 big-integerrel
- * állítjuk elő.
- 
-Hint 1: || A kulcsazonosság itt az, hogy `gcd(2^N-1, 2^M-1) = 2^gcd(N,M)-1`. ||
-Hint 2: || Miután kiszámoltad `gcd(N,M)`-et, már csak a `2^g - 1` nagy szám alakját kell előállítani. ||
+Megoldás lényege: a kulcsazonosság gcd(2^N-1, 2^M-1) = 2^gcd(N,M)-1, így minden lekérdezésre elég a gcd(N,M)
+értéket meghatározni az Euklideszi algoritmussal. A 2^k-1 nagy számokat 10^9-es alapú egész számként tároljuk;
+a sorozat tagjai a 2^k-1 = 2*(2^(k-1)-1)+1 összefüggéssel egymásból kiszámolhatók. Mivel N, M <= 830, legfeljebb
+830 ilyen lépés kell, a válasz pedig a 2^g-1 szám kiírása.
+*/
+/*
+Hint 1: || A kulcsazonosság: gcd(2^N-1, 2^M-1) = 2^gcd(N,M)-1, így a feladat visszavezethető a gcd(N,M) kiszámolására. ||
+Hint 2: || Miután megvan a g = gcd(N,M), a 2^g-1 nagy számot kell előállítani; erre a 2^k-1 = 2*(2^(k-1)-1)+1 összefüggés és a 10^9-es alapú számábrázolás elég. ||
 */
 
-#include "../common.hpp"
+#include <bits/stdc++.h>
+using namespace std;
+
+using int64 = long long;
+
+int64 gcdll(int64 a, int64 b) {
+    while (b) {
+        int64 t = a % b;
+        a = b;
+        b = t;
+    }
+    return a >= 0 ? a : -a;
+}
 
 struct BigInt {
     static const int BASE = 1000000000;

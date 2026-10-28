@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/20. Majdnem tökéletes, de nem nyert kutyák *",
+    "method": "Kiesők szűrése, legnagyobb összpontszám a győztes, szempontonként 10·P ≥ 9·Max ellenőrzés",
+    "category": "Szűrés és összegzés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szűrés", "maximum", "összegzés"],
+    "note": "Bizonytalan pont: a 90%-os feltételnél csak az alsó határt elérő pontszám számít, mert az alsó határ alatti pontszám az adott szempontból nem értékelhető (ezt a feladatszöveg általánosan mondja ki). Ha az alsó határ alatti 90%-os pontszám is számítana, a kimenet változhatna; a minták ezt nem döntik el. A győztes a bent maradók közül a legnagyobb összpontszámú kutya (holtverseny esetén mindegyik).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/21. Másik kutyával holtversenyes kutyák *",
+    "method": "Szempontonként az értékelhető pontszám megegyezik-e másik kutyáéval",
+    "category": "Holtverseny-keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["holtverseny", "egyenlőség", "szűrés"],
+    "note": "Az alsó határ alatti pontszám nem értékelhető: két ilyen azonos pontszám nem számít holtversenynek. Ezt a be2 minta mutatja (az 1–2. kutya azonos, de mindkettő alsó határ alatti pontokat kapott, és nincs a kimenetben). A feladatszöveg ezt csak általánosan fogalmazza meg, a szabályt a mintákból következtettem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/22. Minden szempont szerint az utolsók *",
+    "method": "Szempontonként a legkisebb értékelhető pontszám, minden szempontban ezt elérő kutyák",
+    "category": "Minimum szempontonként",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "szempont", "eldöntés"],
+    "note": "A minta.zip be2.txt / ki2.txt párja hibás: a be2 minden kutyája az 1. szempontban 1 pontot kap (alsó határ 5), így egyik sem értékelhető ott, és egyik sem végezhetett ott utolsón. A helyes kimenet 0, a ki2 viszont „1 5”-öt (az 5. kutyát) ír. A be1 minta és a feladat példája egyezik (kimenet „1 3”). A library/.work/KH-014/brute.py független ellenőrzője 1500 véletlen teszten egyezik a megoldással.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/23. Minden szempont szerint győztes kutya *",
+    "method": "Szempontonként a legnagyobb értékelhető pontszám, és van-e mindenhol ezt elérő kutya",
+    "category": "Maximum szempontonként",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "szempont", "eldöntés"],
+    "note": "Az alsó határ alatti pontszám abban a szempontban nem értékelhető (a feladatszöveg szerint), ezért a szempont maximumát csak az értékelhető pontszámok közül vesszük. Holtverseny a győzelemben is számít: a példában több kutya is azonos maximumot ér el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

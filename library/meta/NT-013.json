@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 2. forduló/1. Legalább 2 bolygón volt élet",
+    "method": "Eseménypontok rendezése, futó számláló, összefüggő szakaszok egyesítése",
+    "category": "Intervallumok, eseménypontok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "rendezés",
+      "eseménypont"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 2. forduló/2. Gyémántok",
+    "method": "Hátizsák-típusú DP: különböző számok összege, minden szám legfeljebb egyszer.",
+    "category": "Dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "dinamikus programozás",
+      "hátizsák",
+      "partíció"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 2. forduló/3. Ügyfélkapu",
+    "method": "Percenkénti szimuláció prioritási sorral a legrövidebb ügy előre vételével.",
+    "category": "Szimuláció, prioritási sor",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "prioritási sor",
+      "rendezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 2. forduló/4. Konverzió",
+    "method": "Verem a posztfix kifejezésen, zárójelek az erősség alapján, minimálisan.",
+    "category": "Verem, kifejezések",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "verem",
+      "kifejezés",
+      "zárójelezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

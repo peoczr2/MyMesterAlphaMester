@@ -1,9 +1,12 @@
 /*
- * Két számra eldöntjük, hogy a query értékek előállíthatók-e nemnegatív
- * együtthatókkal.
- 
-Hint 1: || Ez ugyanaz az alapötlet, mint a diofantoszi feladatnál: `Z = A*x + B*y` nemnegatív megoldhatóságát kell eldönteni. ||
-Hint 2: || Előbb szűrj gcd-vel, utána egy moduláris feltételből ellenőrizd, hogy marad-e nemnegatív másik együttható is. ||
+ * Az A*x + B*y = Z egyenlet nemnegatív megoldhatóságát vizsgáljuk minden lekérdezésre. Legyen g = lnko(A,B):
+ * ha g nem osztja Z-t, nincs megoldás; különben A, B és Z értékét g-vel osztjuk. Legyen a a kisebb, b a nagyobb
+ * együttható: a b*y = z (mod a) kongruencia legkisebb nemnegatív y megoldását a b moduláris inverzével számoljuk ki
+ * (kiterjesztett euklideszi algoritmus). Nemnegatív megoldás akkor van, ha b*y <= z. Lekérdezésenként O(log(A+B)).
+*/
+/*
+Hint 1: || Ha lnko(A,B) nem osztja Z-t, a válasz biztosan „Nem”. Egyébként A, B és Z leosztása után relatív prím együtthatókkal dolgozhatsz. ||
+Hint 2: || Relatív prím A' és B' esetén a B'*y ≡ Z' (mod A') egyenlet legkisebb nemnegatív y megoldásából ellenőrizd, hogy B'*y <= Z'. ||
 */
 
 #include "../common.hpp"

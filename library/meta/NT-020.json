@@ -1,0 +1,26 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 3. forduló/5. Szigetek",
+    "method": "Fa-lineáris bővítések: N! osztva a részfa-méretek szorzatával, moduláris inverzzel",
+    "category": "Kombinatorika: gyökeres fa",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["fa", "kombinatorika", "moduláris aritmetika"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 3. forduló/6. Sípálya",
+    "method": "Alsó korlátos minimális folyam, szuperforrással, push-relabel maximális folyammal",
+    "category": "Gráf: minimális folyam",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "folyam", "alsó korlát"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

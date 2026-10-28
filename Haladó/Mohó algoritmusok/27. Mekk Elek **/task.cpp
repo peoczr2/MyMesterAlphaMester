@@ -1,8 +1,9 @@
 /*
-Feladat: A lehető legtöbb egynapos munkát kell határidőre elvégezni.
-Ötlet: A munkákat határidő szerint sorba rendezzük, és minden munkát a lehető legkésőbbi még szabad napra teszünk. Így a korai napokat megőrizzük a szorosabb határidejű feladatoknak.
+Megoldás lényege: A munkákat határidő szerint növekvő sorrendben dolgozzuk fel, és mindegyiket a határidejéig még szabad legkésőbbi napra tesszük, ha van ilyen; ha nincs, a munka kimarad. Így a korábbi napok a szorosabb határidejű munkáknak maradnak. Ez a mohó választás maximális darabszámot ad, mert egy munka felvételének egyetlen feltétele, hogy legyen szabad nap a határidejéig. A szabad napokat DSU tartja nyilván, az időigény O(N log N), ahol N a munkák száma.
+*/
+/*
 Hint 1: || Ha egy munka nem fér be a határidejéig, akkor a későbbi napokon sem javítható meg. ||
-Hint 2: || A legkésőbbi szabad napra helyezés miatt a kisebb határidejű munkák mindig elsőbbséget kapnak. ||
+Hint 2: || Feldolgozd a munkákat határidő szerint növekvően, és mindegyiknél keresd meg a legkésőbbi szabad napot a határidőig. ||
 Hint 3: || A kiválasztott munkák napra helyezéséhez DSU-t érdemes használni. ||
 */
 

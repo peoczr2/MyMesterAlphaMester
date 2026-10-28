@@ -47,7 +47,7 @@ int main() {
         for (int i = 0; i < n; ++i) {
             getline(cin, line);
         }
-        cout << 0 << '\n';
+        cout << 0 << ' ' << 0 << '\n';
         return 0;
     }
 
@@ -144,6 +144,6 @@ int main() {
         }
     }
 
-    cout << 0 << '\n';
+    cout << 0 << ' ' << 0 << '\n';
     return 0;
 }

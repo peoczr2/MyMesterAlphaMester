@@ -1,11 +1,12 @@
 /*
 Megoldás lényege:
-Az éppen egymás után álló feladatok között pontosan K alkalommal kell növekednie
-a nehézségnek. Ez az Euler-féle számokra vezető klasszikus Eulerian DP.
-
-A dp[n][k] azt jelenti, hogy az 1..n permutációi közül hányban pontosan k
-emelkedés van. A rekurzió:
-  dp[n][k] = (k+1) * dp[n-1][k] + (n-k) * dp[n-1][k-1].
+A feladatok sorrendje egy 1..N permutáció, a „nehezebb az előzőnél” pedig egy emelkedés, így a keresett szám az Eulerian-szám: az 1..N permutációi közül hányban van pontosan K emelkedés.
+A dp[n][k] az 1..n permutációi közül a k emelkedésűek számát adja. Az n legnagyobb elemét az (n−1)-es permutációba szúrjuk: a k emelkedésű permutációkba k+1 helyre szúrva marad k emelkedés, a k−1 emelkedésűekbe pedig n−k helyre szúrva lesz k, így dp[n][k] = (k+1)·dp[n−1][k] + (n−k)·dp[n−1][k−1].
+Elég az előző sort tárolni, az időigény O(N·K), és N ≤ 100 miatt ez bőven elég; a számolás modulo 20160322 történik.
+*/
+/*
+Hint 1: || Rekurzívan gondolkodj: az 1..N−1 permutációkból indulj ki, és az N-es (legnagyobb) elemet szúrd be, nézd meg, hogyan változik az emelkedések száma. ||
+Hint 2: || Ha egy k emelkedésű permutációba a legnagyobb elemet szúrod, k+1 hely megtartja az emelkedések számát; a k−1 emelkedésűekből n−k hely ad k emelkedést. Ebből írd fel a dp[n][k] rekurziót. ||
 */
 
 #include <bits/stdc++.h>

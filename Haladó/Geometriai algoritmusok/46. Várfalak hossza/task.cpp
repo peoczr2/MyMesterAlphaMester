@@ -12,7 +12,14 @@ A különböző időkben épített várfalak nem érintkeznek, így minden beker
 
 Idő: O(N α(N)) + rendezés.
 */
-
+/*
+Hint 1: || Az egy építéshez tartozó falak a közös végpontjaik szerint összefüggő komponenst alkotnak,
+így a komponensek száma adja az építések számát. Egy komponens hossza a benne lévő falak hosszának
+összege. ||
+Hint 2: || A „kívülről befelé” sorrendhez minden komponens területe kell: a zárt töröttvonal csúcsait
+a falakon végigjárva kapod meg, a területet pedig a shoelace-képlettel számolhatod ki. A nagyobb
+területű bekerítés kerül előre. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

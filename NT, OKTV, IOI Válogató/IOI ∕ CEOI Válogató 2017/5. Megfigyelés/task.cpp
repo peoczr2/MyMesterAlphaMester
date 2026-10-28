@@ -9,7 +9,11 @@ időpontot. Minden lépésben a legkisebb elemet toljuk előre a saját sorozat�
 és frissítjük a legjobb [A,B] intervallumot. Amint valamelyik sorozat elfogy,
 nem tudunk több teljes fedést alkotni.
 */
-
+/*
+Hint 1: || Minden bolygó észlelési időpontjai növekvő sorozatot alkotnak. Keresünk egy [A,B] intervallumot, amely minden sorozatból tartalmaz legalább egy időpontot. ||
+Hint 2: || Kezdetben minden sorozatból az első időpontot vegyük. Mindig a legkisebb kiválasztott időpontot lépjük előre a saját sorozatában, és közben nyilvántartjuk a legnagyobb kiválasztott időpontot. ||
+Hint 3: || Min-heapben tároljuk az aktuális időpontokat (érték és sorozatindex szerint). A legkisebb elem kivétele után a helyére az adott sorozat következő elemét tesszük, és minden lépésben frissítjük a legszűkebb intervallumot. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

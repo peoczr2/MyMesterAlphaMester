@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/24. Hirtelen áradó árvizek **",
+    "method": "Egy bejárás: 800 cm feletti sorozatok, a kezdő mérés 1000 cm feletti szűrése.",
+    "category": "Szakaszok, szűrés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["árvíz", "szakasz", "bejárás"],
+    "note": "A küszöbök szigorúak (800, 900, 1000 cm felett). PDF-példa és minta egyezik. Mért futásidő N=10000 bemeneten: kb. 0,004 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/25. Lassabban áradó, mint apadó árvizek ***",
+    "method": "Árvizenként a kezdő növekvő és záró csökkenő szakasz hosszának összehasonlítása.",
+    "category": "Szakaszok, monotonitás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "monotonitás", "szakasz"],
+    "note": "Értelmezés: az áradás és apadás hosszát mérések számában mérjük, a lépésszámmal ugyanaz az eredmény. PDF-példa és minta egyezik. Mért futásidő N=10000 bemeneten: kb. 0,004 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/26. Legalább másodfokú készültségű árvizek csúcsmagasságai ***",
+    "method": "Árvizenként a minimum 900 cm feletti ellenőrzése és a csúcs (első maximum) keresése.",
+    "category": "Szakaszok, szélsőérték",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "maximum", "feltétel"],
+    "note": "Értelmezés: a feltétel az árvíz egészére vonatkozik, minden mérése 900 cm felett kell legyen (a minta így ad eredményt). Csúcs: az első legnagyobb mérés. PDF-példa és minta egyezik. Mért futásidő N=10000 bemeneten: kb. 0,004 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/27. Legfeljebb másodfokú árvizek **",
+    "method": "Árvizenként az 1000 cm feletti mérés keresése; hibátlan árvizek kezdete és vége.",
+    "category": "Szakaszok, feltételes keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["árvíz", "szakasz", "feltétel"],
+    "note": "Értelmezés: a feltétel az árvíz egészére vonatkozik, egyik mérése sem lehet 1000 cm-nél magasabb. PDF-példa és minta egyezik. Mért futásidő N=10000 bemeneten: kb. 0,004 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

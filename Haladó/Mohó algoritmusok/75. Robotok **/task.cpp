@@ -1,11 +1,15 @@
 /*
-Feladat: K darab ponton lévő tárgyat kell begyűjteni. Egy robot útja (1,1)-től (N,M)-ig csak jobbra/lefelé mehet, tehát az általa érintett pontok koordinátái részben rendezettek. Minimalizálni kell a robotok számát.
-Ötlet: Egy robot által begyűjthető pontok láncot alkotnak a (sor, oszlop) rendezésben: ha sor szerint rendezzük a pontokat, akkor egy robot oszlopsorozata nemcsökkenő. Így a feladat minimális számú nemcsökkenő részsorozatra bontás az oszlopokból. Ennek mohó megoldása: minden oszlopot a legnagyobb <= tail értékű láncra teszünk, különben új lánc.
+Megoldás lényege:
+Egy robot útja olyan pontsorozat, amelyben a sor-oszlop rendezés szerint haladva az oszlopok nem csökkenhetnek, tehát egy láncot gyűjt be a részbenrendezésben.
+A legkevesebb robot száma ezért a legkisebb láncfedés, ami Dilworth-tétel szerint a legnagyobb antilánc méretével egyezik.
+A pontokat sor, azon belül oszlop szerint rendezve mohón haladunk: minden pontot arra a láncra fűzünk, amelynek utolsó oszlopa a legnagyobb, de még nem nagyobb a pont oszlopánál.
+Ha ilyen lánc nincs, új robotot indítunk. Az utolsó oszlopokat multiset tárolja. Időigény: O(K log K).
+*/
+/*
 Hint 1: || Sor szerint rendezd a pontokat, azon belül oszlop szerint. ||
 Hint 2: || Egy láncban az oszlopok nem csökkenhetnek. ||
 Hint 3: || Minimális láncszámhoz a „largest tail <= c” illesztést használd. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

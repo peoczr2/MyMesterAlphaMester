@@ -1,6 +1,8 @@
 /*
-Feladat: M sorszámozott ülőhelyre N darab [A,B] igény érkezik, minden igény legfeljebb egy helyet kap, minden hely legfeljebb egyszer adható ki. A kielégített igények számát kell maximalizálni.
-Ötlet: Jobb végpont szerint növekvő sorrendben dolgozunk. Minden igényhez a még szabad helyek közül a legkisebb, de legalább A indexű helyet adjuk (ha <=B). A szabad helyek követésére DSU „következő szabad” struktúrát használunk.
+Megoldás lényege:
+Az igényeket a jobb végpontjuk (B) szerint növekvő sorrendben dolgozzuk fel, és mindegyiknek a még szabad, A-nál nem kisebb legkisebb sorszámú helyet adjuk, ha az nem nagyobb B-nél. A szabad helyeket egy DSU „következő szabad hely” struktúra tartja nyilván: find(x) az x-től kezdve legkisebb szabad sorszámot adja, foglaláskor pedig x a következő helyre mutat. Ez a mohó választás optimális, mert a legkisebb szabad hely elfoglalása a későbbi, nagyobb jobb végpontú igényeknek is a legtöbb lehetőséget hagyja. A kiosztás egy megfelelő jegykiosztás, így bármelyik helyes kimenet elfogadható. Az időigény O(N log N + M log M), a DSU út-tömörítése miatt.
+*/
+/*
 Hint 1: || Ha egy igénynek szűk a jobb határa, azt később nehezebb lesz kielégíteni, ezért érdemes korábban kezelni. ||
 Hint 2: || Egy igényhez a legkisebb megfelelő helyet kiosztani jó mohó döntés: több nagyobb hely marad másoknak. ||
 Hint 3: || DSU-ban parent[x] lehet a következő még szabad index, foglaláskor union(x, x+1). ||

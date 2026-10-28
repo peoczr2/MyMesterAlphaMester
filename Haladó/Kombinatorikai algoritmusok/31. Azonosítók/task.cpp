@@ -1,10 +1,28 @@
 /*
 Megoldás lényege:
 Az N betűből álló, M hosszú, szigorúan növekvő azonosítók lexikografikus
-sorrendje megegyezik a kombinációk megszokott sorrendjével.
-
-Először megszámoljuk az adott azonosító sorszámát, majd ehhez hozzáadjuk K-t,
-és a kapott sorszámból visszaépítjük a célazonosítót.
+sorrendje megegyezik a kombinációk megszokott sorrendjével, ezért a feladat
+lényegében sorszámozási kérdés.
+Először kiszámoljuk az A azonosító sorszámát: pozíciónként összeadjuk azoknak a
+lehetséges, A-nál kisebb betűknek a binomiális együtthatóit, amelyekkel az adott
+pozíción kisebb azonosító állhatna, a hátralévő helyek száma szerint.
+Ehhez hozzáadjuk K-t, majd a kapott sorszámból balról jobbra haladva
+visszaépítjük a célazonosítót: minden pozícióban azt a legkisebb betűt
+választjuk, amelynek blokkja még tartalmazza a hátralévő sorszámot.
+A binomiális együtthatókat egy 27 x 27-es Pascal-háromszögben tároljuk, így az
+algoritmus O(N·M) időben fut, ami a 0,01 másodperces időlimithez is bőven elég.
+*/
+/*
+Hint 1: || Az azonosítókat nem kell felsorolni: a szigorúan növekvő
+betűsorozatok lexikografikus sorrendje ugyanaz, mint a 0-tól N-1-ig terjedő
+számok M-elemű kombinációinak sorrendje, így elég a sorszámokkal dolgozni. ||
+Hint 2: || Számoljuk meg, hány A előtti azonosító van. Ha egy pozíción a c betűt
+választjuk, a hátralévő helyeket a c utáni betűkből kell kitölteni, és ennek
+száma egy binomiális együttható. A teljes sorszám ezeknek az összege. ||
+Hint 3: || A célsorszám (A sorszáma + K) alapján balról jobbra haladva próbáljuk
+ki a betűket: a c betű blokkjának mérete a hátralévő helyek binomiális
+együtthatója. Ha ez kisebb vagy egyenlő a céllal, levonjuk és a következő betűt
+nézzük, különben a c betű következik. ||
 */
 
 #include <bits/stdc++.h>

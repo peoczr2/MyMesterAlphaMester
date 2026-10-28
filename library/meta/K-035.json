@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/35. Növekvő csapadékmennyiségű hetek **",
+    "method": "Hetek egyszerű bejárása: szigorú növekedés ellenőrzése, a megfelelő sorszámok gyűjtése.",
+    "category": "Kiválogatás, feltétel",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "kiválogatás",
+      "tömb",
+      "feltétel"
+    ],
+    "note": "A „folyamatosan nőtt” szigorú növekedést jelent; ezt a mintából állapítottam meg, mert a csupa 0 hét nincs a mintakimenetben.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/36. Pót zárthelyi *",
+    "method": "Feltételek egyszerű ellenőrzése soronként, a megfelelő sorszámok gyűjtése.",
+    "category": "Kiválogatás, feltétel",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "kiválogatás",
+      "feltétel",
+      "logika"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/37. Kazamata",
+    "method": "Határ-szimuláció futásonként, a megszerzett kulcsok fedési idejét Fenwick-fás minimummal követjük.",
+    "category": "Szimuláció, prefixum-minimum",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szimuláció",
+      "tömb",
+      "halmaz"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/38. Zsetonok",
+    "method": "Blokkonkénti játékérték alulról felfelé, a nyerő lépés és a lépéssorozat közvetlen meghatározása.",
+    "category": "Játékelmélet, Grundy-érték",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "játékelmélet",
+      "stratégia",
+      "tömb"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

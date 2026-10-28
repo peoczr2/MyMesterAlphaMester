@@ -1,6 +1,11 @@
 /*
 Megoldás lényege:
-A feladat távolságoptimalizálási jellegű: a pontok közti legfontosabb viszonyt kell meghatározni. A megoldás a legközelebbi pontpár vagy egy minimax típusú geometriai számítás köré épül.
+Két reptér között akkor van közvetlen járat, ha az egyik mindkét koordinátájában nem nagyobb a másiknál (vagy mindkettőben nem kisebb), vagyis a relációból irányítatlan gráf lesz. A (0,0) reptértől szélességi bejárást (BFS) végzünk, így a csúcsok távolsága a közvetlen repülések száma. Egy csúcs kiterjesztésekor a még nem látott szomszédokat a NE és SW negyedsíkból gyűjtjük ki egy 2D kd-fa segítségével, amelyből a már felfedezett pontokat töröljük, így minden reptér egyszer kerül a sorba. A K-nál messzebbi (vagy el nem érhető) repülőtereket írjuk ki. Legrosszabb esetben a negyedsík-lekérdezések miatt az idő O(N·√N).
+*/
+/*
+Hint 1: || Gondolj a repterekre gráfcsúcsokként: két reptér között akkor van él, ha az egyik mindkét koordinátájában nem nagyobb a másiknál, vagy mindkettőben nem kisebb. Ez a reláció szimmetrikus, így irányítatlan gráfot kapsz. ||
+Hint 2: || A kérdés a (0,0) reptértől mért legkisebb repülésszám, ezt szélességi bejárás (BFS) adja meg. Egy csúcs szomszédjai a még nem látott pontok közül azok, amelyek a csúcs NE vagy SW negyedsíkjában vannak. ||
+Hint 3: || A szomszédok gyors kigyűjtéséhez 2D kd-fát érdemes építeni, és a negyedsík-lekérdezésnél a már kigyűjtött pontokat töröld. Így minden reptér csak egyszer kerül a sorba, és a K-nál messzebbi csúcsokat nem kell tovább bővíteni. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

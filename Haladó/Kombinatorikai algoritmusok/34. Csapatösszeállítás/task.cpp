@@ -1,11 +1,28 @@
 /*
 Megoldás lényege:
-Az adott csapat lexikografikus következőjét és előzőjét kell megadni a
-választott M elemű kombinációk között.
-
-Az előbbihez a jobb szélső növelhető elemet, az utóbbihoz a jobb szélső
-csökkenthető elemet keressük meg. A sorrend ciklikus, ezért ha nincs ilyen
-elem, akkor az első vagy az utolsó kombinációra ugrunk.
+A csapatok lexikografikus sorrendben követik egymást, ezért a következő csapatot
+úgy kapjuk, hogy a jobb szélső olyan tagot keressük, amelyet még eggyel
+növelhetünk. Ezt megnöveljük, a mögötte lévő tagokat pedig szorosan egymás utáni
+számokkal töltjük ki.
+Az előző csapat ugyanilyen módon, fordított irányban adódik: a jobb szélső olyan
+tagot keressük, amelyet még eggyel csökkenthetünk, ezt csökkentjük, a mögötte
+lévő tagok pedig a lehető legnagyobb értékeket kapják.
+Ha nincs ilyen tag, a sorrend ciklikus: az utolsó csapat rákövetkezője az első,
+az első csapat megelőzője az utolsó. Mindkét keresés legfeljebb M pozíción
+végigmegy, így az időigény O(M).
+*/
+/*
+Hint 1: || Gondoljunk a számjegyes számok növelésére: a következő csapat a jobb
+szélső elem növelésével keletkezik, és ha ez nem lehetséges, a tőle balra lévő
+elemet próbáljuk növelni. Az előző csapat ugyanez csökkentéssel. ||
+Hint 2: || Az i-edik (0-tól számozott) tag legnagyobb megengedett értéke
+N-M+i+1. Keressük a jobb szélső olyan tagot, amely még nem érte el ezt: ezt
+eggyel növelve a mögötte lévő tagok közvetlenül egymás utáni számok lesznek. Ha
+nincs ilyen tag, az utolsó csapatról az elsőre ugrunk. ||
+Hint 3: || Az előző csapatnál a jobb szélső olyan tag keresendő, amely nagyobb a
+rá megengedett legkisebb értéknél (az előző tag + 1, az elsőnél 1). Ezt
+csökkentve a mögötte lévő tagok a legnagyobb lehetséges értéket kapják. Ha nincs
+ilyen tag, az első csapatról az utolsóra lépünk. ||
 */
 
 #include <bits/stdc++.h>

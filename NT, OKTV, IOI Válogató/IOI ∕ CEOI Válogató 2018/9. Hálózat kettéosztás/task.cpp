@@ -7,9 +7,14 @@ Ez a feltétel GF(2)-ben lineáris egyenletrendszerré alakítható:
   (A + D) x = deg mod 2,
 
 ahol A az illesztési mátrix, D a fokszámparitások átlós mátrixa. A teljes rendszerre
-Gauss-eliminációt végzünk bitműveletekkel. Mivel az összes 1-vektor a homogén
-egyenletrendszer megoldása, ha bármely megoldás triviális lenne, egy szabad változó
-egyenkénti beállításával megkeressük a nemtriviális megoldást.
+Gauss-eliminációt végzünk bitműveletekkel. Ha az alapmegoldás csak 0-kból vagy csak 1-esekből áll,
+egy szabad változót egyenként 1-re állítva keresünk nemtriviális megoldást, amely mindkét részt nem üresen hagyja.
+Az időigény O(N^3 / 64), ami N ≤ 200 mellett bőven elég.
+*/
+/*
+Hint 1: || Minden üzlethez egy 0/1 változót rendelünk: x_v = 1, ha az első részbe kerül. Egy üzlet saját részbeli partnereinek száma akkor páros, ha a szomszédaira összegezve az 1 + x_u + x_v értékek összege (mod 2) nulla. ||
+Hint 2: || Így minden üzletre GF(2)-beli lineáris egyenlet adódik: (A + D) x = d (mod 2), ahol A a szomszédsági mátrix, D a főátlóban az üzletek fokszámparitását tartalmazó diagonális mátrix, d pedig ugyanez a paritásvektor. Ezt a rendszert bitmaszkos Gauss-eliminációval oldd meg. ||
+Hint 3: || Ha az eredmény csak 0-kból vagy csak 1-esekből áll, nem jó, mert mindkét rész nem lehet üres. Ilyenkor a szabad változók egyenkénti 1-re állításával próbálkozz; a feladat garantálja, hogy legalább az egyik nemtriviális megoldást ad. ||
 */
 
 #include <bits/stdc++.h>

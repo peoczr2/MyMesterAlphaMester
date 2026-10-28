@@ -1,16 +1,16 @@
 /*
-Minden jaratot a kisebb sorszamu kikototol a nagyobb fele iranyitva egy kormentes grafot kapunk.
-Ket novekvo utat keresunk 1-bol ugyanabba a vegpontba ugy, hogy a ket ut belso csucsai ne fedjek
-egymast. Legyen dp[a][b] a legtobb eddig erintett varos szama olyan allapotban, amikor ket ilyen
-utunk van, a vegpontjaik a < b csucsok, es b a nagyobbik vegpont. Innen csak uj, b-nel nagyobb
-csucsra lephetunk tovabb, igy biztosan nem hasznalunk mar latott varost. Ha a ket aktualis
-vegpont kozott is van jarat, akkor az alacsonyabb vegpont utja befejezheto a magasabbikban, es
-megkapunk egy ervenyes korutat. A szulok mentesevel egy optimalis ket ut visszaepitheto.
+Minden járatot a kisebb sorszámú kikötőtől a nagyobb felé irányítva egy körmentes gráfot kapunk.
+Két növekvő utat keresünk 1-ből ugyanabba a végpontba úgy, hogy a két út belső csúcsai ne fedjék
+egymást. Legyen dp[a][b] a legtöbb eddig érintett város száma olyan állapotban, amikor két ilyen
+utunk van, a végpontjaik a < b csúcsok, és b a nagyobbik végpont. Innen csak b-nél nagyobb, új
+csúcsra léphetünk tovább, így biztosan nem használunk már látott várost. Ha a két aktuális
+végpont között is van járat, akkor az alacsonyabb végpont útja befejezhető a magasabbikban, és
+megkapunk egy érvényes körutat. A szülők eltárolásával egy optimális két út visszaépíthető.
 */
 /*
-Hint 1: || A kikotok folyasirany szerinti sorrendje miatt minden ervenyes reszut novekvo sorszamokkal irhato le. ||
-Hint 2: || Ket egyideju vegponttal erdemes DP-allapotot tartani: a ket reszut belso csucsai mar ekkor diszjunktak. ||
-Hint 3: || Ha az aktualis ket vegpont szomszedos, akkor a kisebbikbol bele lehet lepni a nagyobbikba, ez zarja a korutat. ||
+Hint 1: || A kikötők folyásirány szerinti sorrendje miatt minden érvényes útvonal csúcsai növekvő sorrendben követik egymást. ||
+Hint 2: || Két egyidejű végponttal érdemes DP-állapotot tartani: ekkor a két út belső csúcsai már diszjunktak. ||
+Hint 3: || Ha az aktuális két végpont szomszédos, akkor a kisebbikből be lehet lépni a nagyobbikba, ez zárja a körutat. ||
 */
 
 #include <algorithm>

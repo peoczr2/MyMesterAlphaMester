@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/39. Nem mindenhol megálló villamos *",
+    "method": "Egy bejárásban jelző: van-e olyan megálló, ahol az érkezési és az indulási idő egyenlő.",
+    "category": "Logikai jelző: nem megálló",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["logikai", "feltétel", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/4. Eddigieknél nagyobb várakozási idejű megállók *",
+    "method": "Egy bejárásban a várakozási idő futó maximumát tartjuk, szigorúan nagyobb esetén a sorszámot gyűjtjük.",
+    "category": "Maximumkeresés: várakozási rekord",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "rekord", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/40. Növekvő utazási idők *",
+    "method": "Szakaszidő: érkezési idő mínusz az előző indulási idő; minden szakaszt az előzőhöz hasonlítunk.",
+    "category": "Szomszédos szakaszidők",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["idő", "összehasonlítás", "szomszédos"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/41. Rakövetkező villamosmegálló közel van *",
+    "method": "Egy bejárásban az első olyan megálló sorszámát keressük, amelynek az előzőtől mért távolsága K-nál kisebb.",
+    "category": "Keresés: első találat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "távolság"],
+    "note": "A kiírt távolság a megálló és az előző megálló távolsága (a mintából visszafejtve, nem a következő megállóé).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

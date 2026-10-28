@@ -7,9 +7,11 @@ a B-ben pedig a t-nél nem nagyobb elemek aktívak.
 Az aktív pozíciók leghosszabb összefüggő szakaszát union-finddel követjük, és minden küszöbre
 összeszorozzuk az A és B oldali leghosszabb szakaszhosszt.
 */
-// Hint 1: || Egy jó téglalap feltétele: min(A a sorokban) >= max(B az oszlopokban). ||
-// Hint 2: || Fix küszöb mellett az aktív helyek leghosszabb összefüggő szakasza kell mindkét sorozatban. ||
-// Hint 3: || A küszöböket az értékek szerint rendezve lehet végigaktiválni. ||
+/*
+Hint 1: || Egy jó téglalap feltétele: min(A a sorokban) >= max(B az oszlopokban). ||
+Hint 2: || Fix küszöb mellett az aktív helyek leghosszabb összefüggő szakasza kell mindkét sorozatban. ||
+Hint 3: || A küszöböket az értékek szerint rendezve lehet végigaktiválni. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

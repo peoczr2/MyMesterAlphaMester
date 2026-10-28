@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/1. Hálózat ***",
+    "method": "Minimális feszítőerdő fenntartása; új élnél a körben a legdrágábbat cseréljük",
+    "category": "Online minimális feszítőerdő",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "feszítőerdő",
+      "gráf"
+    ],
+    "note": "Speciális (interaktív, grader-alapú feladat). A validate.py hibás, mert a halo.h és a halo.cpp nincs a validátor munkakönyvtárában; helyben a minta.zip modulján ellenőriztem: a PDF-példa és 300 véletlen teszt átmegy, minden ajánlat után az erdő minimális költségű.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/2. Ismerősök ***",
+    "method": "Feszítőerdő fa-éleinek és nem fa-éleinek nyilvántartása, törléskor csere",
+    "category": "Dinamikus összefüggőség",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "gráf",
+      "összefüggőség"
+    ],
+    "note": "Speciális (interaktív, grader-alapú feladat). A validate.py hibás, mert az ismer.h nincs a validátor munkakönyvtárában és az ismer.cpp nincs linkelve; helyben a minta modulján ellenőriztem: 400 véletlen teszt csoportszáma egyezik, 200 000 művelet 0,70 s.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/3. Legolcsóbb almák ***",
+    "method": "Rendezett halmaz a K legolcsóbb napról, a legdrágább kiszorítása",
+    "category": "Online K legkisebb kiválasztás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "interaktív",
+      "halmaz",
+      "kiválasztás"
+    ],
+    "note": "Speciális (interaktív, grader-alapú feladat). A validate.py hibás (alma.h hiányzik, alma.cpp nincs linkelve); helyben a minta modulján a PDF-példa és 300 véletlen, sok egyenlő árú teszt lexikografikusan legkisebb X-et ad. A minta üres, mert a feladat egyértelmű kimenetet ír elő.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/4. Összeadás ***",
+    "method": "Átvitel-előrejelzés: a 9-esek függőben maradnak, az első nem 9-es összeg dönt",
+    "category": "Átvitel balról jobbra",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "átvitel",
+      "számjegy"
+    ],
+    "note": "Speciális (interaktív, grader-alapú feladat). A validate.py hibás (osszead.h hiányzik, osszead.cpp nincs linkelve); helyben a minta modulján a PDF-példa, 520 véletlen teszt és egy 100 000 jegyes eset egyezik, a kiir-hívások a meghatározottság pillanatában történnek.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/13. Javított futóeredmények száma *",
+    "method": "Az időeredményt másodpercre váltjuk, és egy menetben számoljuk a javulások számát az előzőhöz képest.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "idő", "összehasonlítás"],
+    "note": "A be1 minta egyik sorában P=0 szerepel, pedig a feladat szerint 1≤P; a megoldás ettől nem függ, a kimenet egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/14. Jegyek *",
+    "method": "Darabszám-tömb: minden jegy értékéhez egy számlálót növelünk egy menetben.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "tömb", "gyakoriság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/15. Jelenlévők *",
+    "method": "Egy menetben minden vendégre ellenőrizzük, hogy a K. percben jelen van-e, és számoljuk.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "intervallum", "feltétel"],
+    "note": "A szöveg nem mondja meg a határesetet, a minták sem tartalmaznak egyenlőséget. A megoldás érkezés <= K < távozás szerint számol (az érkező jelen van, a távozó már nincs); ellenőrizendő, ha a tesztekben K egyezik valamelyik időponttal.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/16. Két évszám közötti események száma **",
+    "method": "Egy menetben beolvassuk az eseményeket, és számoljuk azokat, amelyek évszáma a két határ közé esik.",
+    "category": "Megszámolás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "intervallum", "bemenet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/82. Dinamikus rendezett minta",
+    "method": "Kulcs szerinti treap részfa-méretekkel: beszúrás, k-adik elem és rang logaritmikus időben",
+    "category": "Rendezett halmaz, treap",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "treap",
+      "rendezett halmaz",
+      "rang"
+    ],
+    "note": "Könyvtárfeladat (rendminta.h): a zipben lévő rendminta.cpp értékelő n=100000 művelettel Helyes eredményt ad; a validátor nem fordítja, ezért kézzel ellenőrizendő.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/83. Dinamikus rendezett minta törléssel",
+    "method": "Kulcs szerinti treap: Adat csak a hiányzó elemet szúrja be, törlés split-tel",
+    "category": "Rendezett halmaz, törlés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "treap",
+      "törlés",
+      "rang"
+    ],
+    "note": "Könyvtárfeladat (rendminta.h): a rendminta.cpp értékelő n=100000 művelettel Helyes eredményt ad; az Adat ismételt elemre (törlés utáni) értelmezését a „már korábban nem szerepelhetett” mondat miatt kézzel kell ellenőrizni.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/84. Művelatek sorozattal",
+    "method": "Implicit treap részfa-méretekkel; beszúrás és törlés split-merge műveletekkel",
+    "category": "Sorozat, implicit treap",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "implicit treap",
+      "sorozat",
+      "split-merge"
+    ],
+    "note": "Könyvtárfeladat (sorozat.h): a sorozat.cpp értékelő n=100000 művelettel Helyes eredményt ad; a validátor nem fordítja, ezért kézzel ellenőrizendő.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/85. Intervallumok",
+    "method": "Treap (l,r) szerint, részfánként legnagyobb jobb véggel a metszéskereséshez",
+    "category": "Intervallumok, metszéskeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "treap",
+      "metszéskeresés"
+    ],
+    "note": "Könyvtárfeladat (interval.h): a zip értékelője üres vázlat (nem olvas bemenetet és nem ír kimenetet), ezért a megoldás kézzel ellenőrizendő; saját véletlen tesztje szerint helyes.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/86. Pont a legtöbb intervallumban",
+    "method": "Események prefixösszege treapben, részfánként legnagyobb prefixösszeg és helye",
+    "category": "Lefedettség, prefixmaximum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "prefixösszeg",
+      "treap",
+      "intervallum"
+    ],
+    "note": "Könyvtárfeladat (maxipont.h): a maxipont.cpp értékelő n=1000 művelettel Helyes eredményt ad; nagyobb n-re az értékelő O(n²) ellenőrzése lassú, ezért kézzel ellenőrizendő.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/87. Génsebész",
+    "method": "Implicit treap karakterszámlálókkal: beszúrás, csere, kivágás és részszámlálás",
+    "category": "Implicit treap, DNS-sorozat",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "implicit treap",
+      "részszámlálás",
+      "dinamikus sorozat"
+    ],
+    "note": "Könyvtárfeladat (grader.h): a grader.cpp a zip két bemenetén (in.1, in.2) Helyes eredményt ad; a zip out.1 és out.2 fájljai üresek, ezért a helyesség kézzel ellenőrizendő.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/104. Blokk elimináció",
+    "method": "Páratlan futamszám: a középső G vagy két G-távolság ≤ k; páros: két részre bontás",
+    "category": "Mohó, invariáns",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "futamok",
+      "invariáns",
+      "mohó",
+      "sztring"
+    ],
+    "note": "A régi O(M³) megoldás fix méretű tömböt használt, és M>2000-nél kilépett; az új O(N), tömb nélkül. Minden 0/1 sorozat N≤12-ig és 1500 véletlen eset (N≤22) egyezett egy független szimulációval.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
+  },
+  {
+    "path": "Haladó/Sorozatok/79. Vasúti kocsik kitérő vágányon",
+    "method": "Bitmaszkos keresés K≤22 esetén, verem-szimulációval a kiengedhető részhalmazra",
+    "category": "Verem, részhalmaz",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "verem",
+      "bitmaszk",
+      "részsorozat"
+    ],
+    "note": "A minta ki1 és ki2 fájljai minden kocsihoz egy sort írnak a végső szám elé, a feladat szerint viszont csak egy számot kell kiírni, így a minta nem illeszkedik a feladathoz; a megoldás K>22 esetén kilép.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/5. Kamionok",
+    "method": "Határidőnkénti kapacitás adja a kamionszámot, körforgásos kiosztás a visszaéréshez",
+    "category": "Mohó kiosztás, prefixkorlát",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "prefixkorlát",
+      "ütemezés",
+      "mohó"
+    ],
+    "note": "A minta második sorának 1278 értéke nem minimum: a feladat szerint „A második sorba annak a napnak a sorszámát kell írni, amikorra az utolsó kamion leghamarabb vissza tud érni Kukutyinba!”, a 4 kamionos körforgásos beosztás 900-ra ér vissza, amit az ellenőrző program igazol.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/8. Vasutak",
+    "method": "Dijkstra az F–L úthoz, majd Prim-szerű bővítés a legolcsóbb új élekkel",
+    "category": "Legrövidebb út, Prim-bővítés",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "dijkstra",
+      "prim",
+      "gráf"
+    ],
+    "note": "A döntetlen legolcsóbb szakaszok miatt 150 véletlen döntetlen-feloldású futás 14841–14957 közötti költséget adott (minta: 14846, a program: 14877), így a minimum nem egyértelmű, kézzel ellenőrizendő.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/13. Csavarok",
+    "method": "Véletlen pivot-csavar párja, majd a többi csavar és anya kettéosztása rekurzióval",
+    "category": "Véletlen pivot, rekurzió",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "quicksort",
+      "véletlen pivot",
+      "párosítás"
+    ],
+    "note": "Könyvtárfeladat (csavarok.h): a könyvtárral a be2 (n=100 000) bemenet TRUE eredményt ad, de n=40–50 esetén a véletlen pivot kb. 1–6% eséllyel meghaladja az n²/4 proba-korlátot.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku",
+    "problematic": false
+  }
+]

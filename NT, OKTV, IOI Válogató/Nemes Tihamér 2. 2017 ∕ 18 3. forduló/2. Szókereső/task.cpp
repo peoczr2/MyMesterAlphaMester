@@ -1,10 +1,17 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
     A keresett szó legfeljebb 12 hosszú, a mátrix pedig 10x10-es lehet, ezért
     mélységi kereséssel végigpróbálhatjuk az összes kezdőhelyet és lépésirányt.
+    Az aktuális utat a látogatott cellák jelölésével védjük, és zsákutcánál
+    visszalépünk. Egy kezdőcellából legfeljebb 4·3^10 útvonalat járunk be,
+    ez az összes kezdőcellára is belefér az időkorlátba.
 */
+/*
+Hint 1: || Próbálj minden cellát kezdőpontnak: ha az első betű egyezik, a szó következő betűjét kell keresni a szomszédos cellákban (fel, balra, le vagy jobbra), és közben nem léphetsz olyan cellára, amelyet az aktuális úton már használtál. ||
+
+Hint 2: || A bejárt cellákat jelöld egy logikai tömbben, és a rekurzióból való visszatéréskor oldd fel a jelölést; a megtett lépések irányát egy karakterláncban (F, B, L, J) tárold, és visszalépéskor csökkentsd. ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 int n;
 vector<string> m;

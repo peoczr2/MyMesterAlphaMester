@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
 Megoldási ötlet:
 Az F-ekből álló leírásban egy csomópontot egy F-lánc és az ahhoz tartozó,
@@ -10,11 +7,14 @@ zárójelbe tett gyerekszubfák írnak le. Egy szubrészfa tehát egy vagy több
 Ebből rekurzívan ki tudjuk számolni:
 1. hány közvetlen gyerek van az adott csomópontnál;
 2. az egész részfában mekkora a maximális gyerek-szám.
-
+*/
+/*
 Hint 1: || A teljes fa egy F-láncból és az annak végén álló gyerek-szubfákból áll. ||
 Hint 2: || Minden zárójelpár pontosan egy közvetlen gyereket jelent. ||
 Hint 3: || A részfákon rekurzívan végighaladva egyszerre megkaphatod a helyi és a globális maximumot is. ||
 */
+#include <bits/stdc++.h>
+using namespace std;
 
 struct Res {
     int totalBranches = 0;

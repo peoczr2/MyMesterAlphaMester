@@ -1,7 +1,10 @@
 /*
-Feladat: A folyó menti településeken a lehető legkevesebb vízirendőrséget kell létrehozni úgy, hogy minden település elérhető legyen K órán belül.
-Ötlet: Az első még lefedetlen településhez a lehető legjobbra tett állomást választjuk a még elérhető települések közül. Ez maximalizálja az új állomás által lefedett jobb oldali tartományt.
-Hint 1: || Egy állomás a saját helyétől lefelé BK, felfelé AK kilométerig érhet el. ||
+Megoldás lényege: Az első még lefedetlen településhez azt az állomást választjuk, amely a még elérhető települések közül folyásirányban a legtávolabb esik, mert ez a legtovább lát előre.
+Egy állomás a folyásirányban A*K, a folyásiránnyal szemben B*K kilométerig éri el a településeket, így a lefedett szakasz az állomás helyéhez képest nem szimmetrikus.
+Az állomás által elért utolsó településnél folytatjuk a keresést, így az algoritmus egyetlen bejárással, O(N) időben fut.
+*/
+/*
+Hint 1: || Egy állomás a folyásirányban A*K, a folyásiránnyal szemben B*K kilométerig éri el a településeket. ||
 Hint 2: || Az első lefedetlen települést mindig a lehető legjobbra eső még választható állomással érdemes lefedni. ||
 Hint 3: || Ezután az új állomás által elért legutolsó település után kell folytatni. ||
 */

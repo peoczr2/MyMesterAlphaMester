@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/20. Melegebb napok a Balatonon *",
+    "method": "Lineáris bejárás, a K foknál melegebb napok sorszámainak gyűjtése vektorba",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "feltétel", "sorszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/21. Mindig jó helyezést elért vitorlások **",
+    "method": "Versenyzőnkénti számláló az első K helyeken, majd a futamszámmal egyező számlálók kiválogatása",
+    "category": "Számláló tömb",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "számláló", "tömb"],
+    "note": "A feladatszöveg nem rögzíti, hány szám van egy futam sorában; a mintákban mindig K darab van, a megoldás ezt feltételezi. A pontozás, az L és a holtversenyes szabályok a kérdésre nem hatnak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/22. Napok amikor fagy és olvadás is van *",
+    "method": "Lineáris bejárás, két feltétel (fagyás és olvadás) együttes vizsgálata naponként",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "feltétel", "sorszám"],
+    "note": "A feladatszöveg nem rögzíti a határesetet (0 fok). A feltételt a mintából döntöttem el: fagy = Min < 0, olvadás = Max >= 0. A feladat példájában a „0 10” nap nem, a „-5 0” nap igen; mindkét zip-minta (be1/ki1, be2/ki2) ezzel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/23. Nem verekedő madarak **",
+    "method": "Páronkénti vizsgálat: négyzetek átfedése a középpontok távolságával és a sugarak összegével",
+    "category": "Téglalap-átfedés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kiválogatás", "geometria", "páronkénti"],
+    "note": "A feladatszöveg nem dönti el, hogy az érintkező (csak szélen találkozó) területek átfedőnek számítanak-e. A 2. mintában (be2/ki2) ez az átfedőnek számítást igazolja: szigorú egyenlőtlenséggel 4 madárral több kerülne a kimenetbe, mint a várt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

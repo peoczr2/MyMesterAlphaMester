@@ -1,9 +1,14 @@
 /*
-A bábuk helyzetét és sebességét együtt kell kezelni, mert az ütközéskor csak a mozgásirány változik meg. Ezért mindig a következő ütközési időpontot kell keresni, majd az állapotot egyszerre frissíteni.
+Minden bábu helyzetét és irányvektorát (dx, dy) tároljuk, és az időt egyesével léptetjük K-ig.
+Egy lépésben minden bábu a saját irányában lép. Ha a tábla széléről kilépne, az érintett
+irány előjelét megfordítjuk, és az új irányba így is lépünk egyet. Ezután az új helyzeteket
+páronként összevetjük: ha két bábu ugyanarra a mezőre kerül, vagy egymás helyét cseréli fel,
+az aktuális időpont az első ütközés, és azonnal kiírjuk. Ha K lépésen belül nincs ütközés,
+a válasz -1. Mivel L <= 100 és K <= 1000, az összes párvizsgálat legfeljebb kb. 10^7 művelet.
 */
 /*
-Hint 1: || A bábu állapotát helyzet + sebességként kezeld, mert a visszapattanás csak az irányvektor előjelét változtatja. ||
-Hint 2: || Ha több bábu találkozhat, a következő ütközés időpontját kell mindig a legkorábban keresni. ||
+Hint 1: || Tartsd nyilván minden bábu helyzetét és irányvektorát; a falnál csak az érintett koordináta irányának előjele fordul meg, és a bábu ilyenkor is lép egyet. ||
+Hint 2: || K és L is kicsi (K <= 1000, L <= 100), ezért az időt egyesével léptetve, minden lépésben minden bábupárt ellenőrizhetsz. ||
 */
 
 #include <bits/stdc++.h>

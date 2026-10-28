@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/17. Foglalt napok száma **",
+    "method": "Foglalt napok összegzése termenként: a foglalás hossza U−E+1, tömbbe gyűjtve",
+    "category": "Sorozatszámítás: összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "összegzés", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/18. Heti eső mennyisége *",
+    "method": "Soronkénti összegzés belső ciklussal, a külső ciklus a heteken megy végig",
+    "category": "Sorozatszámítás: sorösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "összegzés", "sorösszeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/19. Olimpiai kvalifikáció összpontszáma ***",
+    "method": "Helyezésenkénti pontszám képlettel (2·(K−h)+1), versenyzőnként összegezve",
+    "category": "Sorozatszámítás: pontozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["sorozatszámítás", "pontozás", "mátrix"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/2. Horgászverseny - halfajták mennyisége *",
+    "method": "Oszloponkénti összegzés egy K hosszú tömbben, soronként beolvasva",
+    "category": "Sorozatszámítás: oszlopösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "összegzés", "mátrix"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

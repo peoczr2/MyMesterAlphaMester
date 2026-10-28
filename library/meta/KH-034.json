@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Madármegfigyelés/1. Ahol a madár se jár *",
+    "method": "Soronkénti bejárással keressük az első csupa nulla sor sorszámát.",
+    "category": "Keresés mátrix sorában",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "keresés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/10. Helységek minimális madárszámmal *",
+    "method": "Helységenkénti sorösszegek kiszámítása, majd a minimummal egyező összegű sorok kiválogatása.",
+    "category": "Összegzés, minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "minimum", "tömb"],
+    "note": "A minta.zip-ben csak bemenet (be1, be2) van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. A programot kézzel futtattam: a PDF példáján és a független Python-ellenőrzőn (library/.work/KH-034/check.py) egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/11. Helységek több mint 90%-ban egyféle madárral *",
+    "method": "Sorönként a legnagyobb darabszámot és az összeget egész számokkal hasonlítjuk össze: 100·max > 90·összeg.",
+    "category": "Arány-feltétel, összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "arány", "egész-aritmetika"],
+    "note": "A minta.zip-ben csak bemenet (be1, be2) van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. A programot kézzel futtattam: a PDF példáján és a független ellenőrzőn (library/.work/KH-034/check.py) egyezik. A „több mint 90%” szigorúan értendő (pontosan 90% nem találat). Ha nincs ilyen helység, csak a „0” sor kerül ki, mert a feladat szerint a második sor csak találat esetén szerepel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/12. Legegyenletesebben előforduló madárfaj *",
+    "method": "Fajonként a M·Σx² − (Σx)² értéket számoljuk egészekkel, és a legkisebbet keressük.",
+    "category": "Szórás, minimumkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["szórás", "minimum", "négyzetösszeg"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. A feladat „az egyik legegyenletesebben” megfogalmazása miatt több helyes válasz lehet: be1-ben a 2. és az 5. faj is minimális szórású, a program az elsőt írja ki. A kimenetet a library/.work/KH-034/check.py ellenőrzővel igazoltam.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

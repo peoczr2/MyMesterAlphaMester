@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/53. Két hivatal ***",
+    "method": "Szélességi bejárás szintjeinek paritása adja az A/B jelölést; izolált település esetén NEM.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bejárás", "paritás"],
+    "note": "Nincs minta.zip, ezért kézzel igazolva. A PDF-példa kimenete más (a 7. település N), de a saját telepítésünk (IGEN, A B A B A A A) érvényes: minden település zárt szomszédságában van A és B is. Izolált település esetén nincs megoldás (NEM). 400 véletlen kis gráfon (3^N bruteforce) a döntés és az érvényesség egyezett; N=2·10^5, M=5·10^5 esetén 0,03 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/54. Hálózat ***",
+    "method": "Hídélek keresése Tarjan-féle low-értékkel; R-ből bejárásban minden hídlánc végéhez egy visszazáró él.",
+    "category": "Gráf: hídélek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "híd", "mélységi"],
+    "note": "Teszt 1 (be1/ki1) pontosan egyezik a mintával. Teszt 2 mintája hibás: ki2 első sora 12000 számot tartalmaz, a kimeneti formátum szerint az első sor csak K. A 2. sortól K=5967 egyezik a mintával, az élek eltérnek, de érvényesek: független ellenőrző (check54) igazolja, hogy a kiegészített gráf blokkjai irányított körök, így bármely két csúcs között pontosan egy út van. 210 véletlen kis gráfon a minimum bruteforce-szal egyezett. Mért idő: 0,00 mp (N=12000, M=12069).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/55. Legyen minden pár között út ****",
+    "method": "Erősen összefüggő komponensek; forrás–nyelő párok összekötése, elérési halmazok bitsorozatban.",
+    "category": "Gráf: erős összefüggőség",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "komponens", "összefüggőség"],
+    "note": "A validátor 0/2, mert a feladat szerint több megoldás esetén bármelyik megadható (kézi). Teszt 1: a mi él 4→1, a mintában 6→1; mindkettő érvényes (4, 6, 7 ugyanabban a komponensben van), K=1. Teszt 2: a minta csak a K=1018-at adja, éleket nem; a mi K-nk 1018, és a kiegészített gráf erősen összefüggő (független ellenőrző). 768 kis gráfon bruteforce-minimummal, 298 közepes gráfon K=max(forrás, nyelő) összevetéssel igazolva. Mért idő: legrosszabb N=10^4, M=10^5 esetén kb. 0,17 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/56. Biztonság ***",
+    "method": "Az A–B virtuális élt tartalmazó kétszeresen összefüggő komponens csúcsai (élveremmel, Tarjan).",
+    "category": "Gráf: kétszeresen összefüggő",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "blokk", "mélységi"],
+    "note": "A validátor 0/2: csak a sorrend tér el, a feladat szerint a csúcsok tetszőleges sorrendben adhatók meg (kézi). Teszt 1: a mi sorunk \"2 3 4 10\", a mintáé \"3 4 10 2\"; K=4 és a halmaz egyezik, A és B nincs a listában. Teszt 2: a halmaz egyezik a mintával (K=19998). 259 véletlen kis gráfon, az összes egyszerű A–B út bejárásával igazolva. Mért idő: N=10^5, M=5·10^5 esetén 0,04 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

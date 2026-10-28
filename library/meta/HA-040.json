@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/35. Ciklikus rácsháló gráf",
+    "method": "Új él után minden csúcsból BFS, a legnagyobb távolság (átmérő) kiírása",
+    "category": "Gráf: BFS, átmérő",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "bfs", "rács"],
+    "note": "Mért idő a legnagyobb bemeneten (N·M=200, K=100): kb. 0,05 mp, az időlimit 0,5 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/36. Hálózati átvitel",
+    "method": "Legfeljebb h élen elérhető legnagyobb sebesség: lépésenkénti DP a szűk keresztmetszetre",
+    "category": "Gráf: szűk keresztmetszet",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dinamikus programozás", "szűk keresztmetszet"],
+    "note": "Mért idő a legnagyobb bemeneten (N=10 000, M=20 000, H=100): kb. 0,01 mp, az időlimit 0,25 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/4. Hálózat1 *",
+    "method": "Élek csökkenő sávszélesség szerinti összevonása DSU-val, A és B összekötésekor kiírás",
+    "category": "Gráf: legszélesebb út",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "dsu", "rendezés"],
+    "note": "Mért idő a legnagyobb bemeneten (N=10 000, M=100 000): kb. 0,03 mp, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/5. V-kódolás",
+    "method": "A karakter indexéből kiszámított sor szerinti gyűjtés, majd a sorok összefűzése",
+    "category": "Szöveg: V-alakú bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szöveg", "szimuláció", "indexelés"],
+    "note": "Mért idő a legnagyobb bemeneten (N=10 000, V=10): kb. 0,002 mp, az időlimit 0,5 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

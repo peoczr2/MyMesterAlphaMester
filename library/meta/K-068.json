@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/28. Legvastagabb jég a Balatonon *",
+    "method": "Egy menetes maximumkiválasztás a nap sorszámával, szigorú összehasonlítással.",
+    "category": "Maximumkiválasztás: sorszám",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "maximum",
+      "kiválasztás",
+      "sorszám"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/29. Leggyorsabb áradás ***",
+    "method": "Szakaszok gyűjtése kategóriánként, majd egy menetes legközelebbi pár keresés.",
+    "category": "Szakaszok: legközelebbi pár",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szakasz",
+      "bejárás",
+      "legközelebbi"
+    ],
+    "note": "Bizonytalan pontok: (1) a 'meghaladja' miatt a 800 cm-es mérés árvízmentes, az 1000 cm-es nem harmadfokú; az 1000-es határt a ki2 igazolja (a 51-61 harmadfokú szakasz nem a 50. méréstől indul). (2) A legközelebbi pár csak az árvízmentes-előtt-harmadfokú sorrendben számít: a ki2 szerint a 51-61 és 63-73 pár (távolság 2) nem a válasz. (3) Egyenlő távolságnál a kisebb sorszámú pár (ki2: 38-48/51-61 és 75-85/88-98, mindkettő 3). (4) Ha nincs árvízmentes-harmadfokú pár, a 7. sort nem írtam ki, mert a feladat nem mondja meg.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/3. Legdrágább lakás *",
+    "method": "Egy menetes maximumkiválasztás az árra, szigorú összehasonlítással.",
+    "category": "Maximumkiválasztás: sorszám",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "maximum",
+      "kiválasztás",
+      "sorszám"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/30. Maximális egyedszámú helységek *",
+    "method": "Fajonként külön maximumkiválasztás soronkénti beolvasással, a helység sorszámát tárolva.",
+    "category": "Maximumkiválasztás: sorszám",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "maximum",
+      "tömb",
+      "kiválasztás"
+    ],
+    "note": "A minta.zipben nincs ki-fájl (csak be1.txt és be2.txt), ezért a validátor 'nincs minta' állapotot ad. Kézi ellenőrzés: a be1 (a feladat példája) kimenete 3 2 1 2 3, a be2 kimenete egyezik egy független Python brute-force számítással.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

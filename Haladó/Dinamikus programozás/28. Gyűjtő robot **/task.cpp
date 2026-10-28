@@ -1,18 +1,17 @@
 /*
-Minden oszlopban csak a legfelső és a legalsó tárgy sora érdekes: ha a robot monoton halad egy oszlopban,
-akkor a köztük levő tárgyak automatikusan útba esnek. Egy közbülső oszlopból ezért csak kétféle optimális
-kilépést kell tárolni: a legfelső tárgy sorában vagy a legalsó tárgy sorában állunk. Az oszloponkénti DP ezekre
-az állapotokra számolja a minimális lépésszámot, a szülőtáblából pedig maga az optimális robotprogram is
-visszaépíthető.
+Megoldás lényege: a robot oszloponként halad. Egy oszlopban (mivel balra nem léphet, és közvetlenül nem fordulhat vissza)
+egyetlen, egy irányú függőleges szakaszt jár be: a belépő sortól a kilépő sorig. A szakasz akkor gyűjti be az oszlop
+összes tárgyát, ha lefedi a legfelső (lo) és a legalsó (hi) tárgy sorát, a közbülső tárgyakra nincs külön feltétel.
+Ezért dp[e] = a legkevesebb függőleges lépés, amellyel az aktuális oszlop e. sorában lépünk ki. Az átmenetet két
+előre kiszámolt minimummal (lefelé: p ≤ lo, e ≥ hi; felfelé: p ≥ hi, e ≤ lo) végezzük, így oszloponként O(N) munka van,
+összesen O(N²). A lépésszám M = (N−1) + a függőleges lépések száma; az utat a belépő sorok visszakövetésével építjük fel.
 */
 /*
-Hint 1: || Egy oszlopban a köztes tárgyak nem adnak új döntést, csak az oszlop két széle számít. ||
-Hint 2: || Ha egy oszlopot lefelé pásztázol végig, akkor balról csak a legfelső kötelező tárgy fölé vagy arra érkezhetsz. ||
-Hint 3: || Az utolsó oszlop különleges: ott már nem egy szélső tárgynál kell megállni, hanem le kell jutni az (N,N) mezőre. ||
+Hint 1: || Egy oszlopban elég tudni, hogy a bejárt függőleges szakasz lefedi-e a legfelső és a legalsó tárgyat. ||
+Hint 2: || Legyen dp[e] a legkevesebb függőleges lépés, amellyel az oszlop e. sorában lépünk ki. A belépő sor p akkor jó, ha p ≤ lo és e ≥ hi (lefelé megyünk), vagy p ≥ hi és e ≤ lo (felfelé megyünk). ||
+Hint 3: || A lefelé eset költsége e − p, a felfelé eseté p − e, ezért a p-re vonatkozó minimumot egyszer, előre kiszámolhatod, és minden e-hez O(1)-ben használhatod. Az optimális utat tárold a belépő sorral. ||
 */
-
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main() {
@@ -22,6 +21,7 @@ int main() {
     int n, k;
     cin >> n >> k;
 
+    // lo[c]: a c. oszlop legfelső, hi[c]: legalsó tárgyának sora
     vector<int> lo(n + 1, n + 1), hi(n + 1, 0);
     for (int i = 0; i < k; ++i) {
         int r, c;
@@ -30,86 +30,47 @@ int main() {
         hi[c] = max(hi[c], r);
     }
 
-    if (n == 1) {
-        cout << 0 << '\n' << '\n';
-        return 0;
-    }
-
     const int INF = 1e9;
-    vector<array<int, 2>> dp(n + 1, array<int, 2>{INF, INF});
-    vector<array<int, 2>> parent(n + 1, array<int, 2>{-1, -1});
+    // dp[e]: legkevesebb függőleges lépés, amellyel az aktuális oszlop e. sorában lépünk ki.
+    // kezdetben a bal felső sarokban (1. sor) állunk, ez az "0. oszlop" kilépése.
+    vector<int> dp(n + 1, INF), nxt(n + 1, INF);
+    dp[1] = 0;
+    // par[c][e]: a c. oszlopba a belépő sor, ha e-ben lépünk ki belőle
+    vector<vector<int>> par(n + 1, vector<int>(n + 1, 0));
 
-    auto row_of = [&](int col, int state) {
-        return state == 0 ? lo[col] : hi[col];
-    };
-
-    if (hi[1] == 1) {
-        dp[1][0] = 0;
-    }
-    dp[1][1] = hi[1] - 1;
-
-    for (int col = 2; col < n; ++col) {
-        for (int prev_state = 0; prev_state < 2; ++prev_state) {
-            if (dp[col - 1][prev_state] == INF) {
-                continue;
-            }
-
-            int prev_row = row_of(col - 1, prev_state);
-
-            if (prev_row >= hi[col]) {
-                int cand = dp[col - 1][prev_state] + 1 + (prev_row - lo[col]);
-                if (cand < dp[col][0]) {
-                    dp[col][0] = cand;
-                    parent[col][0] = prev_state;
-                }
-            }
-            if (prev_row <= lo[col]) {
-                int cand = dp[col - 1][prev_state] + 1 + (hi[col] - prev_row);
-                if (cand < dp[col][1]) {
-                    dp[col][1] = cand;
-                    parent[col][1] = prev_state;
-                }
-            }
+    for (int c = 1; c <= n; ++c) {
+        int top = min(lo[c], n), bot = min(hi[c], n);
+        // lefelé: p ≤ top belépésből e ≥ bot kilépésig, költség e − p = e + (dp[p] − p)
+        int bestDown = INF, argDown = 0;
+        for (int p = 1; p <= top; ++p) {
+            if (dp[p] < INF && dp[p] - p < bestDown) { bestDown = dp[p] - p; argDown = p; }
         }
+        // felfelé: p ≥ bot belépésből e ≤ top kilépésig, költség p − e = −e + (dp[p] + p)
+        int bestUp = INF, argUp = 0;
+        for (int p = bot; p <= n; ++p) {
+            if (dp[p] < INF && dp[p] + p < bestUp) { bestUp = dp[p] + p; argUp = p; }
+        }
+        fill(nxt.begin(), nxt.end(), INF);
+        for (int e = 1; e <= n; ++e) {
+            if (argDown && e >= bot) { nxt[e] = bestDown + e; par[c][e] = argDown; }
+            if (argUp && e <= top && bestUp - e < nxt[e]) { nxt[e] = bestUp - e; par[c][e] = argUp; }
+        }
+        swap(dp, nxt);
     }
 
-    int answer = INF;
-    int last_state = -1;
-    for (int prev_state = 0; prev_state < 2; ++prev_state) {
-        int prev_cost = dp[n - 1][prev_state];
-        if (prev_cost == INF) {
-            continue;
-        }
-        int prev_row = row_of(n - 1, prev_state);
-        if (prev_row > lo[n]) {
-            continue;
-        }
-        int cand = prev_cost + 1 + (n - prev_row);
-        if (cand < answer) {
-            answer = cand;
-            last_state = prev_state;
-        }
-    }
+    // a célba (N,N) az utolsó oszlopból a N. sorban lépünk ki; M = (N−1) J-lépés + a függőleges lépések
+    int answer = dp[n] + (n - 1);
 
-    vector<int> exit_row(n + 1, 0);
-    exit_row[n] = n;
-    int state = last_state;
-    for (int col = n - 1; col >= 1; --col) {
-        exit_row[col] = row_of(col, state);
-        if (col >= 2) {
-            state = parent[col][state];
-        }
-    }
+    // visszafejtés: ki[c] = a c. oszlopból kilépő sor, ki[0] = 1 (a start sora)
+    vector<int> ki(n + 1, 1);
+    ki[n] = n;
+    for (int c = n; c >= 1; --c) ki[c - 1] = par[c][ki[c]];
 
     string path;
-    path.append(exit_row[1] - 1, 'L');
-    for (int col = 2; col <= n; ++col) {
-        path.push_back('J');
-        if (exit_row[col] > exit_row[col - 1]) {
-            path.append(exit_row[col] - exit_row[col - 1], 'L');
-        } else if (exit_row[col] < exit_row[col - 1]) {
-            path.append(exit_row[col - 1] - exit_row[col], 'F');
-        }
+    for (int c = 1; c <= n; ++c) {
+        if (c > 1) path.push_back('J');
+        if (ki[c] > ki[c - 1]) path.append(ki[c] - ki[c - 1], 'L');
+        else path.append(ki[c - 1] - ki[c], 'F');
     }
 
     cout << answer << '\n' << path << '\n';

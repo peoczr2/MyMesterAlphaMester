@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/50. Zenekar **",
+    "method": "Határidő (u) szerinti rendezés, majd a legkorábbi szabad nap kiválasztása DSU-val.",
+    "category": "Intervallum-párosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "határidő",
+      "unió-keresés"
+    ],
+    "note": "Több helyes beosztás létezik: a be2 minta más, de azonos (50) hosszúságú és érvényes napkiosztást ad; ellenőrző program (független Kuhn-párosítás és érvényesség-ellenőrzés) igazolja a kimenetet.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/51. Alvállalkozó *",
+    "method": "Határidő szerinti bejárás: munkát vállalunk, ha a (k+1). napra még belefér.",
+    "category": "Ütemezés: határidők",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "mohó",
+      "határidő",
+      "ütemezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/52. Beruházás **",
+    "method": "Alsó korlát: K = max ceil(db(H≤d)/d), majd a határidő szerint sorban kiosztjuk a helyeket.",
+    "category": "Ütemezés: vállalkozók",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "határidő",
+      "korlát"
+    ],
+    "note": "A minta.zip ki1/ki2 fájljai a 51. feladat kimenetét tartalmazzák (ki1 első sora 4, a feladatszöveg példája szerint be1-re K=3), ezért a minta hibás. A saját kimenetet független, folyam-alapú ellenőrző program igazolja (érvényes beosztás, minimális K); több megoldás is megengedett.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/53. Hegymászó visszafelé is ****",
+    "method": "Felvétel a szabad hely szerint, a táborban K_{i-1} tartalékot hagyunk, szükség esetén a hátizsákból.",
+    "category": "Mohó szimuláció: visszaút",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mohó",
+      "szimuláció",
+      "visszaút"
+    ],
+    "note": "A feladatszöveg két példája is egyezik a kimenettel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/55. Hegymászó **",
+    "method": "Az oda-vissza utat egy sorozatba fűzzük, és mindig a legtávolabbi táborig megyünk pihenés nélkül.",
+    "category": "Mohó: minimum megállás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "szakaszfelosztás",
+      "pihenő"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/56. Minimális tankolás szám *",
+    "method": "Prioritási sor: ha nem érünk a következő kútig vagy a célig, a legnagyobb tankolást vesszük.",
+    "category": "Tankolás: prioritási sor",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "prioritási sor",
+      "tankolás"
+    ],
+    "note": "A minta.zip ki1 első sora 1, a feladatszöveg példája (ugyanez a bemenet) szerint a helyes válasz 2; az összes kút-részhalmazt bejáró ellenőrző program 2-t ad, így a minta hibás.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

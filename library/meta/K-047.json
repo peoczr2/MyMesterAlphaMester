@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/42. Tervbe nem tartozó falszakaszok száma égtájanként **",
+    "method": "Oldalankénti különbségtömbös lefedettség, majd a lefedetlen futamok számlálása.",
+    "category": "Lefedetlen szakaszok számlálása",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["megszámolás", "különbségtömb", "rács"],
+    "note": "Értelmezés a mintából: a koordináták cellák, a szoba a BFX..JAX × BFY..JAY zárt cellatartomány. A példa felső oldalának 0 értéke igazolja, hogy két szomszédos szoba közös határa nem számít résnek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/43. Több konzolt kiadó gyártó *",
+    "method": "Gyártónkénti összegzés tömbben, majd a két összeg összehasonlítása.",
+    "category": "Gyártónkénti összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "tömb", "összegzés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/44. Többször ugyanott rendezett környezetvédelmi világnapok **",
+    "method": "Darabszám-tömb a rendezvényekhez, a legalább kétszer előfordulók megszámlálása.",
+    "category": "Gyakorisági számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "tömb", "gyakoriság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/45. Ugró értékek *",
+    "method": "Szomszédos elemek különbségének egy bejárásban történő ellenőrzése.",
+    "category": "Szomszédos párok számlálása",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "szomszédság", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

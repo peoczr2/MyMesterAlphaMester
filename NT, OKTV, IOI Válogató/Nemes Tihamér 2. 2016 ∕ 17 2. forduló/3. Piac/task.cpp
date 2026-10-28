@@ -1,12 +1,19 @@
+/*
+    A bevételekhez összegezzük a mennyiség*ár értékeket, és az átlaggal
+    összehasonlítjuk. A K. legnagyobb össz-mennyiségű termékhez elég a
+    termékenkénti összmennyiséget kiszámolni és rendezni. A harmadik részben
+    termékenként megkeressük a legmagasabb eladási árat, majd kereskedőnként
+    megszámoljuk, hány termékénél egyezik az ő ára ezzel a maximummal. A legtöbb
+    ilyen termékkel rendelkező kereskedők közül a legkisebb sorszámút írjuk ki.
+    Időigény: O(N * F + M log M), ahol F legfeljebb 10.
+*/
+/*
+Hint 1: || Egy kereskedő bevétele az eladott termékek ár és mennyiség szorzatainak összege. Számold ki mindenki bevételét, majd az átlagot, és vesd össze velük. ||
+Hint 2: || Gyűjtsd termékenként az összmennyiséget egy tömbbe (a termék sorszáma az index), és rendezd csökkenő sorrendbe. A K-adik elem adja a második kérdés válaszát. ||
+Hint 3: || Termékenként tárold a legmagasabb eladási árat az összes kereskedő közül. Egy kereskedő annyi jó terméket birtokol, ahány terméknél az ő ára megegyezik ezzel a maximummal. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A bevételekhez összegezzük a mennyiség*ár értékeket. A K. legnagyobb össz-
-    mennyiségű termékhez elég a termékenkénti összmennyiséget, a harmadik részben
-    pedig termékenként megkeressük a maximális eladási árat és megszámoljuk,
-    mely kereskedőnél van ilyen termék.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

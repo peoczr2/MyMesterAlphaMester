@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/24. Legközelebbi villamosmegállók *",
+    "method": "Prefixösszeggel kapott állomáshelyek, a legkisebb távolságú másik megálló keresése.",
+    "category": "Legközelebbi elem keresése",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "legközelebbi elem",
+      "prefixösszeg",
+      "tömb"
+    ],
+    "note": "Blokkolt: a 2. minta (be2/ki2) 3 helyen nem egyezik a távolság szerinti legközelebbi megállóval. 1. állomás kimenete 0 (a 2. megálló 1598 m, a 0. 3175 m), 2. állomásé 3 (az 1. megálló 1598 m, a 3. 2434 m), 80. állomásé 78 (a 81. megálló 2416 m, a 78. 4587 m). A 2. megálló a 3. állomásnál elfogadott, az 1. állomásnál kizárt, így egyetlen megállóhalmaz sem adja ki a mintát. Próbált változatok: csak Erk≠Ind megállók (be1 4. állomás eltér), minden állomás jelöltként (be2 13 eltérés), idő- és indexalapú távolságok, eltolt pozíciók (egyik sem illeszkedik mindkét mintára). A végállomást megállónak vettem, mert be1 4. állomásának kimenete (5) csak így adódik. Kérdés: melyik megállószabály a helyes? Időlimit 0.1 mp, a mért futás N=100-nál kb. 3 ms.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/25. Legnagyobb menetidő két állomás között *",
+    "method": "Szomszédos állomások közti menetidő (érkezés mínusz előző indulás) maximumának lineáris keresése.",
+    "category": "Maximumkeresés szomszédos párok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "maximumkeresés",
+      "szomszédos elemek",
+      "menetidő"
+    ],
+    "note": "Időlimit 0.1 mp, a mért futás N=100-nál kb. 3 ms. Egyenlőség esetén a legkisebb sorszámú pár marad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/26. Legnagyobb sebesség két villamosmegálló között *",
+    "method": "Szakaszsebességek összehasonlítása kereszt-szorzással, egész számokkal, lineáris maximumkeresés.",
+    "category": "Maximumkeresés: sebesség",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "maximumkeresés",
+      "törtek",
+      "egész aritmetika"
+    ],
+    "note": "Időlimit 0.1 mp, a mért futás N=100-nál kb. 3 ms. Lebegőpontos osztás nélkül, a kereszt-szorzás nulla menetidőt is helyesen kezel; egyenlőség esetén a korábbi szakasz marad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/27. Legtávolabb lévő közeli állomás *",
+    "method": "Pozíciók összegzése, majd a K-nál közelebbi utolsó állomás lineáris kiválasztása.",
+    "category": "Prefixösszeg, feltételes keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "prefixösszeg",
+      "feltételes keresés",
+      "tömb"
+    ],
+    "note": "Időlimit 0.1 mp, a mért futás N=100-nál kb. 3 ms. Ha egyetlen állomás sincs K-nál közelebb, a válasz 0 0 (az induló állomás).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

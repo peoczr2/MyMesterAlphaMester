@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/17. Számok betűkkel *",
+    "method": "Helyiérték-bontás (tízes és egyes), szótárak a nevekhez, a 100 külön eset",
+    "category": "Szövegkezelés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szöveg", "elágazás", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/18. Szűkszámok ***",
+    "method": "Azonos jegyek futamai: a nagyobb jegy előtti futamot kivonjuk, egyébként összeadjuk",
+    "category": "Számrendszerek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["számrendszer", "karakterlánc", "összegzés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/19. Táblajáték szomszédok ***",
+    "method": "Eltolások bejárása; sarkos vagy oldalas távolság, körbeérés a C és D esetben",
+    "category": "Szomszédság a rácson",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "koordináta", "szomszédság"],
+    "note": "A minta-kimenet sorai pontosvesszővel zárulnak, a feladat példájában nincs záró pontosvessző; a mintát követtem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/2. Csokoládé automata **",
+    "method": "Fizetés 1, 2, majd 3 érmével sorban; az első találat a minimális érmeszám",
+    "category": "Összegzés, keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "összeg", "tömb"],
+    "note": "A kiírt érmék sorrendje nincs előírva; a minta „100 50”, a program és a példa „50 100” sorrendet ad ugyanarra a fizetésre, amit a library/.work/K-017/t4/check.py igazol (minimális érmeszám, helyes összeg).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,13 +1,15 @@
 /*
-Egy jobbra-lefelé haladó határvonal minden oszlophoz kijelöl egy r sort: az első r pixel a vonal jobb-felső oldalára,
-az alatta levők a bal-alsó oldalra kerülnek. Egy oszlop adott r választásának költsége ezért külön számolható a fekete
-prefixből és a fehér suffixből. Az oszloponkénti választásoknak csak annyit kell teljesíteniük, hogy a sorindex nem
-csökkenhet, így egy prefixminimumos DP megadja a minimális hibaszámot.
+Egy oszlopban a határvonal összefüggő függőleges szakaszt foglal el: a szakasz felett lévő pixelek a jobb-felső,
+az alatta lévők a bal-alsó oldalra esnek, a szakasz pixelei nem számítanak. Az oszlopok között a vonal az egyik
+oszlop alsó pontjából lép a következő oszlop felső pontjába, ezért a DP állapota az oszlop alsó sorának indexe.
+Egy oszlop költsége prefixösszegekből számolható (fekete a felső, fehér az alsó részen), az átmenetnél pedig az
+előző állapotok futó minimumát tartjuk. Így az egész DP O(N²) időben fut, a végső válasz az utolsó oszlop
+alsó sorának (N) értéke.
 */
 /*
-Hint 1: || Gondold végig, hogy egy oszlopban hol hagyja el a határvonal az oszlopot. ||
-Hint 2: || Ha egy oszlopban r sor fölött fut a vonal, akkor az első r pixel lesz fent, a többi lent. ||
-Hint 3: || A következő oszlopban a kilépési sor már nem lehet kisebb, mert a vonal nem mehet felfelé. ||
+Hint 1: || Egy oszlopban a vonal egy függőleges szakaszt foglal el: a szakasz felett a fekete, alatta a fehér pixelek számítanak. ||
+Hint 2: || A vonal egy oszlop alsó pontjából lép tovább, ezért a DP állapota az oszlop alsó sorának indexe legyen. ||
+Hint 3: || Egy új alsó ponthoz az összes olyan felső pont versenyez, amely nem nagyobb nála, ezért futó minimumot kell tartani. ||
 */
 
 #include <bits/stdc++.h>
@@ -28,28 +30,29 @@ int main() {
     }
 
     const int INF = 1e9;
-    vector<int> prev(n + 1, INF), curr(n + 1, INF), pref_min(n + 1, INF);
-    prev[0] = 0;
+    // leave[b]: az eddigi oszlopok minimális költsége, ha az utolsó feldolgozott oszlopot a vonal a b. sorban hagyja el
+    vector<int> leave(n + 1, INF);
+    leave[1] = 0;
 
     for (int col = 1; col <= n; ++col) {
-        vector<int> pref_black(n + 1, 0), pref_white(n + 1, 0);
+        vector<int> black(n + 1, 0), white(n + 1, 0);
         for (int row = 1; row <= n; ++row) {
-            pref_black[row] = pref_black[row - 1] + (a[row][col] == 0);
-            pref_white[row] = pref_white[row - 1] + (a[row][col] == 1);
+            black[row] = black[row - 1] + (a[row][col] == 0);
+            white[row] = white[row - 1] + (a[row][col] == 1);
         }
 
-        pref_min[0] = prev[0];
-        for (int row = 1; row <= n; ++row) {
-            pref_min[row] = min(pref_min[row - 1], prev[row]);
+        vector<int> next(n + 1, INF);
+        int prefix_best = INF;
+        for (int b = 1; b <= n; ++b) {
+            // az oszlop felső pontja t <= b: a t. sortól a b. sorig fut a vonal
+            if (leave[b] < INF) {
+                prefix_best = min(prefix_best, leave[b] + black[b - 1]);
+            }
+            next[b] = prefix_best + (white[n] - white[b]);
         }
-
-        for (int row = 0; row <= n; ++row) {
-            int cost = pref_black[row] + (pref_white[n] - pref_white[row]);
-            curr[row] = pref_min[row] + cost;
-        }
-        swap(prev, curr);
+        leave = next;
     }
 
-    cout << prev[n] << '\n';
+    cout << leave[n] << '\n';
     return 0;
 }

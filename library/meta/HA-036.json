@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/20. Egér és macska ***",
+    "method": "Dijkstra a macska idejeivel, majd az egér Dijkstrája csak olyan pontokon, ahol még nincs a macska.",
+    "category": "Gráf: legrövidebb utak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "legrövidebb út"
+    ],
+    "note": "Validátor: kész (2/2). Véletlen kis gráfokon brute-force ellenőrzéssel (2910 eset) egyezik a „van-e megoldás” kérdés és az út érvényessége. Mért idő a legnagyobb megengedett méreten (N=200, M=10 000) kb. 0,007 mp, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/21. Szállítás ***",
+    "method": "Uniós-kereső a legnagyobb súlyhoz, majd szélességi bejárás a legkevesebb városon át.",
+    "category": "Gráf: szűk keresztmetszet",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "uniós-kereső",
+      "szélességi bejárás"
+    ],
+    "note": "Validátor: kész (2/2). A minta be1 fejlécében N=5 áll, de az élek a 6. és 7. várost is használják (B=7); a megoldás a városok számát az élekből veszi, így a minta futtatható. Véletlen kis gráfokon brute-force ellenőrzéssel (1927 eset) egyezik. Mért idő N=10 000, M=100 000 esetén kb. 0,05 mp, időlimit 0,8 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/22. Autóbusz",
+    "method": "Negatív élekkel Bellman–Ford, a haszon a legkisebb összköltség ellentettje.",
+    "category": "Gráf: negatív élek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bellman-ford",
+      "negatív él"
+    ],
+    "note": "Validátor: hibás (0/2), a minta hibás, ezért kézi. A feladatszöveg és a PDF-példa szerint a második sor a települések száma (T), a minta.zip ki1/ki2 fájljaiból ez hiányzik. A be2 minta kimenete (−122) nem igaz: a ki2 útvonala a be2 gráfban nem létező járatokat használ (a 20 lépésből 18 nincs meg irányítva), a független Bellman–Ford szerint a legkisebb összköltség 48, azaz a haszon −48, ez a mi kimenetünk. Az eredmény független ellenőrzővel (Bellman–Ford és az útvonal érvényessége) igazolt mindkét mintán. Mért idő a legrosszabb érvényes bemeneten (N=1000, M=100 000, negatív lánc) kb. 0,11 mp, időlimit 1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/23. Vasutak",
+    "method": "Dijkstra az F–L úthoz, majd Prim-szerű bővítés költség szerint rendezve.",
+    "category": "Gráf: Prim-szerű bővítés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "prim"
+    ],
+    "note": "Blokkolt: a feladatszöveg nem mondja ki, hogy több azonos költségű ajánlat közül bármelyik elfogadott, ezért a minta sorrendjét kézi jelöléssel nem fogadtam el. A saját kiépítési sorrendünk ugyanazt az összköltséget adja (14846), de független DP szerint a minimum 14841 lehetne a minta bemenetén. Kérdés: a feladat minimumot kér-e, és a minta be2 helyes-e.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

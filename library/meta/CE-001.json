@@ -1,0 +1,50 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2005/1. Raktár-átrendezés",
+    "method": "Blokkonként egy példány marad, komponensek egyesítése, Euler-körös ciklusfeloldás",
+    "category": "Permutáció, ciklusok",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "permutáció",
+      "euler-kör",
+      "gráf"
+    ],
+    "note": "Kézi: a feladatszöveg („Írj programot, amely meghatároz egy átrendezést, melyhez minimális számú áthelyezés szükséges!”) szerint a célelrendezés szabad, ezért a lépéssorozat eltér a mintától; az S érték mindkét mintával egyezik. Ellenőrző: library/.work/CE-001/bf/check_moves.py, amely szimulálja a lépéseket, és ellenőrzi az S-t és a végső elrendezést.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2005/2. Elektromos kerítés",
+    "method": "",
+    "category": "Elektromos kerítés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "elektromos kerítés",
+      "grader"
+    ],
+    "note": "Blokkolt: a feladat.pdf a Raktár-átrendezés feladatának szövegét tartalmazza, nem az Elektromos kerítését; a minta.zip grader-alapú (lookup.h: Drift, GetN, Answer), ezért a helyes feladatszöveg nélkül nincs megoldás, a nehézség 3 helyőrző.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2005/3. Többkulcsos rendezés",
+    "method": "Csak az oszlopok utolsó előfordulása számít; láncolt listában gyűjtjük őket",
+    "category": "Rendezés, stabil sorrend",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rendezés",
+      "stabil rendezés",
+      "láncolt lista"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

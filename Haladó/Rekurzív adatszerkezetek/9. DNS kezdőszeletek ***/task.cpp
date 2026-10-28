@@ -1,33 +1,28 @@
+/*
+Megoldási ötlet:
+Minden szekvenciát beteszünk egy trie-ba, a karaktereket változatlanul kezelve. Egy szekvencia kezdőszeleteinek száma
+pontosan azoknak a trie-csomópontoknak a száma a gyökértől a szekvencia végpontjáig vezető úton, amelyek bemeneti
+szekvencia végét jelölik. Ezért minden szekvenciára végigmegyünk a trie-ban, és megszámoljuk ezeket a csomópontokat.
+Döntetlen esetén a nagyobb sorszámút tartjuk meg, ezt követeli meg a példa kimenete. Az idő a bemenet teljes hosszával arányos.
+*/
+/*
+Hint 1: || A kezdőszeletek kérdése trie-val természetesen modellezhető. ||
+Hint 2: || Egy szekvencia pontszáma a saját útján található végpontok száma. ||
+Hint 3: || Minden szekvenciánál járd végig a karaktereit a trie-ban, és minden olyan csúcsnál növeld a számlálót, ahol egy bemeneti szekvencia véget ér. ||
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-Megoldási ötlet:
-Minden szekvenciát beteszünk egy trie-ba. Egy szekvencia kezdőszeleteinek a száma
-pontosan azoknak a trie-csomópontoknak a száma a gyökértől a levélig vezető úton,
-amelyek végpontjai szerepelnek a bemenetben.
-
-Ezért minden szekvenciára végigmegyünk a trie-ban, és megszámoljuk, hány olyan
-csomópontot érünk el, amely egy bemeneti szekvencia végét jelöli. A maximumot keresve
-megkapjuk a kért szekvenciát.
-
-Hint 1: || A kezdőszeletek kérdése trie-val természetesen modellezhető. ||
-Hint 2: || Egy szekvencia pontszáma a saját útján található végpontok száma. ||
-Hint 3: || Tartsd meg az eredeti sorszámot és a lexikografikus sorrendet a holtverseny feloldásához. ||
-*/
-
 struct Node {
-    int next[4];
+    vector<pair<char, int>> next;
     bool terminal = false;
-    Node() { fill(begin(next), end(next), -1); }
+    int child(char c) const {
+        for (const auto& e : next)
+            if (e.first == c) return e.second;
+        return -1;
+    }
 };
-
-int id(char c) {
-    if (c == 'A') return 0;
-    if (c == 'C') return 1;
-    if (c == 'G') return 2;
-    return 3;
-}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -41,12 +36,13 @@ int main() {
         cin >> s[i];
         int u = 0;
         for (char c : s[i]) {
-            int t = id(c);
-            if (trie[u].next[t] == -1) {
-                trie[u].next[t] = trie.size();
+            int v = trie[u].child(c);
+            if (v == -1) {
+                v = trie.size();
+                trie[u].next.push_back({c, v});
                 trie.push_back(Node());
             }
-            u = trie[u].next[t];
+            u = v;
         }
         trie[u].terminal = true;
     }
@@ -55,10 +51,10 @@ int main() {
     for (int i = 1; i <= N; ++i) {
         int u = 0, cnt = 0;
         for (char c : s[i]) {
-            u = trie[u].next[id(c)];
+            u = trie[u].child(c);
             if (trie[u].terminal) ++cnt;
         }
-        if (cnt > bestCount || (cnt == bestCount && s[i] < s[bestIdx])) {
+        if (cnt >= bestCount) {
             bestCount = cnt;
             bestIdx = i;
         }

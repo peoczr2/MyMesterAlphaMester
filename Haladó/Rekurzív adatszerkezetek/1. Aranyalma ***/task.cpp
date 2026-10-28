@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
 Megoldási ötlet:
 A fa gyökerét mindig megtartjuk, és legfeljebb K csomópontot hagyhatunk meg a gyökér
@@ -17,11 +14,14 @@ együtt összefüggő részfát.
 Mivel minden csomópontnak legfeljebb két gyereke van, a dinamikus programozás minden
 csomópontnál két kis vektor összefésülésére korlátozódik. Ez elegendő az N <= 1000
 korlát mellett.
-
+*/
+/*
 Hint 1: || Gondold úgy, hogy a megtartott alakzat mindig egy gyökerezett részfa, ezért az aktuális csomópontot nem lehet kihagyni, ha a részfában bármit megtartunk alatta. ||
 Hint 2: || Egy gyerekágat vagy teljesen elvágsz, vagy a gyerekkel együtt egy összefüggő részfát tartasz meg; ez adja a kétállású kombinációt a dinamikában. ||
 Hint 3: || Az állapotod legyen a megtartott csomópontok száma, és a két gyereket külön-külön, kis vektorok összefésülésével vezesd be. ||
 */
+#include <bits/stdc++.h>
+using namespace std;
 
 static const long long NEG = -(1LL << 60);
 

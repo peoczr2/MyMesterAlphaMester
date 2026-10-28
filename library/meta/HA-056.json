@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/60. Séta",
+    "method": "Erősen összefüggő komponensek (Tarjan) és DP a komponensek DAG-ján",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "tarjan", "dinamikus programozás"],
+    "note": "Mért idő: 0,07 s a 100 000 csúcsú, 500 000 élű véletlen teszten (időlimit 0,2 s). Brute-force állapotgráf-ellenőrzéssel kis gráfokon egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/61. Sípálya",
+    "method": "Dilworth-tétel: antilánc a síkbeli rendben, felezőpontokkal, leghosszabb csökkenő részsorozat",
+    "category": "Gráf: Dilworth-tétel",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "dilworth", "mélységi bejárás"],
+    "note": "Mért idő: 0,00 s a mintán, 0,014 s 20 000 csúcsú rácson (időlimit 0,25 s). Síkbeli bemenetre érvényes (a feladat garantálja); véletlen síkbeli gráfokon folyam-alapú ellenőrzéssel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/62. Pálya ellenőrzés",
+    "method": "Dilworth-tétel: antilánc a síkbeli elérhetőségi rendben, két mélységi bejárással, leghosszabb csökkenő részsorozat",
+    "category": "Gráf: Dilworth-tétel",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "dilworth", "mélységi bejárás"],
+    "note": "Mért idő: 0,00 s a mintán, 0,007 s 20 000 csúcsú rácson (időlimit 0,05 s). Síkbeli bemenetre érvényes (a feladat garantálja); véletlen síkbeli gráfokon folyam-alapú ellenőrzéssel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/63. Programgráf",
+    "method": "Mélységi bejárás: visszamutató élek és kétkimenetű csúcsok száma",
+    "category": "Gráf: mélységi bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "mélységi bejárás", "ciklus"],
+    "note": "Mért idő: 0,00 s a nagy mintán (időlimit 0,2 s); a mintakimenettel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

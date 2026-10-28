@@ -1,0 +1,101 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/17. Iskolaválasztás",
+    "method": "Kapacitásos hozzárendelés: maximális folyam (Dinic) a tanulók és iskolák között.",
+    "category": "Folyam, kapacitásos hozzárendelés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "folyam",
+      "hozzárendelés",
+      "dinic"
+    ],
+    "note": "Több helyes kimenet: a feladat szerint bármelyik lehetséges jó beiskolázás megadható. A program kimenete mindkét mintában eltér a mintától, de független ellenőrző program (minden tanuló a megjelölt iskolába kerül, a férőhelyek nem fogynak el) mindkettőt érvényesnek igazolja. Ha nincs jó beiskolázás, a program -1-et ír; a feladat ezt nem említi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/19. Munkásfelvétel maximált árral",
+    "method": "Bitmaszk DP: a már betöltött állások halmazán a legolcsóbb kiosztás, visszakövetéssel.",
+    "category": "Bitmaszk DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "bitmaszk",
+      "dp",
+      "költség"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/2. Kirakó ***",
+    "method": "Mohó lépések: mindig a legnagyobb átfedésű elhelyezés, zsákutcánál visszalépés.",
+    "category": "Visszalépéses keresés, mohó",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "visszalépés",
+      "mohó",
+      "rács",
+      "szóelhelyezés"
+    ],
+    "note": "Több helyes kimenet: a feladat szerint bármelyik megadható. A program minden lépésben a lehetséges legnagyobb átfedést választja; független, brute-force ellenőrző igazolja mindkét mintát. A döntetlen-feloldás eltér a mintától: be2-ben a mintáé 26, a programé 22 összes átfedés. Ha a „kirakás végén is a legtöbb” kitételt globális maximumnak olvassuk, a megoldás nem felel meg; ezt az olvasatot nem tudtam ellenőrizni (a döntetlen-ágak teljes bejárása be2-n nem futott le időben).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/20. Munkásfelvétel: N állás – N jelentkező",
+    "method": "Minimális költségű teljes párosítás min-költségű folyammal (successive shortest path).",
+    "category": "Gráf: min-költségű folyam",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "párosítás",
+      "költség",
+      "folyam",
+      "gráf"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/21. Munkásfelvétel: N állás – N jelentkező – backtrack",
+    "method": "Munkásonként visszalépéses keresés, zsákutcák nyesése Kuhn-féle párosítás-ellenőrzéssel.",
+    "category": "Visszalépéses keresés, párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "párosítás",
+      "nyesés"
+    ],
+    "note": "A be2 mintában több teljes párosítás is van; a program munkásonként a lexikografikusan legkisebb megoldást adja, ez egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/22. Munkásfelvétel: N állás – N jelentkező, nem lehet mind felvenni",
+    "method": "Min-költségű folyam: a maximális párosítás, ezen belül a legolcsóbb.",
+    "category": "Gráf: min-költségű folyam",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "párosítás",
+      "költség",
+      "maximum",
+      "folyam"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

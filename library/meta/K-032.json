@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/24. Névnapok *",
+    "method": "Lineáris bejárás, a keresett névvel egyező napok sorszámainak gyűjtése",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/25. Névnapok 2 *",
+    "method": "Lineáris bejárás, vesszővel elválasztott nevek feldolgozása, napi egyszeri jelölés",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "sztring", "feltétel"],
+    "note": "Bizonytalan pont: a feladat nem mondja ki, hogy egy napon belül ugyanaz a keresett név kétszer szerepelhet-e. A megoldás ilyenkor is a napot csak egyszer írja ki, mert a kimenet a napok sorszáma.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/26. Növényevő állatok **",
+    "method": "Két halmaz: kizárjuk azokat az állatokat, akik olyan élőlényt esznek, amely maga is eszik",
+    "category": "Halmazos szűrés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kiválogatás", "halmaz", "szűrés"],
+    "note": "Bizonytalan pont: a feladatszöveg nem mondja meg a kiírandó állatok sorrendjét. A minta (D Q O N) nem ábécérendi, ezért a megoldás az állatokat a bemenetbeli első előfordulásuk sorrendjében írja ki, ami egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/27. Síelésre alkalmatlan sípályák *",
+    "method": "Lineáris bejárás, a nulla vastagságú pályák sorszámainak gyűjtése",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/13. Hírek *",
+    "method": "Tranzitív lezárás bitsetekkel (Warshall), majd párok és sorok számlálása.",
+    "category": "Gráf: elérhetőség",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "tranzitív lezárás",
+      "bitset"
+    ],
+    "note": "A két mintán és 200 véletlen kis teszten (brute-force) egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/14. Hírek visszaérése *",
+    "method": "Bejövő fok szerinti levágás (Kahn-szerűen); a megmaradt csúcsok a körökön vannak.",
+    "category": "Gráf: függvénygráf, körök",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "kör",
+      "bejövő fok"
+    ],
+    "note": "A két mintán és 200 véletlen kis teszten (brute-force) egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/15. Hírlánc *",
+    "method": "Topologikus sorrendben haladva minden ember a bejövő élek forrásainak egyedi többségi hírét fogadja el.",
+    "category": "Gráf: topologikus sorrend",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "topologikus sorrend",
+      "többségi szavazás"
+    ],
+    "note": "Megjegyzés: a be2/ki2 minta nem egyezik (88 sor tér el). A ki2 18. sora NDS, pedig a 18. egyetlen bejövő élű forrása, a 14. tanuló NINCS-et tart igaznak, így nem továbbít semmit. A be2 emellett sérti a korlátokat: az „X” hír kétszer szerepel, és kitalálónak van bejövő éle (pl. 2→4). A megoldás 200 érvényes véletlen teszten egyezik a feladat szerinti szimulációval. Kérdés: a be2/ki2 párt érvénytelennek tekintsük-e?",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/16. Ismerősök *",
+    "method": "Ismerőslisták bitsetben, páronként metszet és egyenlőség ellenőrzése.",
+    "category": "Gráf: közös ismerős",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "halmazok",
+      "bitset"
+    ],
+    "note": "A minta mindkét párja és 200 véletlen kis teszt (brute-force) egyezik; az A-ban az egymást ismerő pár is szerepel (mintából: 1 2).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

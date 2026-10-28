@@ -1,10 +1,13 @@
 /*
 Megoldás lényege:
-A keresett sorrendek az N elemű permutációk közül azok, amelyekben az emelkedő
-és a süllyedő szomszédpárok száma megegyezik. Ez pontosan az Eulerian szám
-középső eleme, mert N páratlan.
-
-Ugyanazt a DP-rekurziót használjuk, mint az előző feladatban.
+A szomszédpárok száma N−1, és mindegyik vagy emelkedő, vagy süllyedő. A feltétel szerint a két darabszám egyenlő, így mindkettő pontosan (N−1)/2; N páratlan, ezért ez egész szám.
+Tehát az N elemű permutációk közül azokat kell megszámolni, amelyekben pontosan (N−1)/2 emelkedés van; ez az Eulerian-szám A(N, (N−1)/2).
+Az Eulerian-számokat a dp[n][k] = (k+1)·dp[n−1][k] + (n−k)·dp[n−1][k−1] rekurzióval töltjük ki, és csak a k = (N−1)/2 értékig tartjuk nyilván, modulo 2017.
+Az időigény O(N²), N ≤ 99 esetén ez gyors.
+*/
+/*
+Hint 1: || A két egyenlő darabszám összege N−1 (a szomszédpárok száma), így mindkettő pontosan (N−1)/2: a kérdés egyetlen Eulerian-szám kiszámítása. ||
+Hint 2: || Az Eulerian-számok táblázatát a dp[n][k] rekurzióval töltsd ki, elég a k = (N−1)/2 értékig tartani, és minden lépésben modulo 2017 szerint számolj. ||
 */
 
 #include <bits/stdc++.h>

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/42. Raktár ***",
+    "method": "Mélységi bejárás, low-link hidak: jó csúcs, ha út minden éle híd",
+    "category": "Gráf: hidak, mélységi bejárás",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "mélységi bejárás", "hidak"],
+    "note": "A minta.zip-ben csak bemenet van (be1, be2), kimenet nincs, ezért nincs minta. A PDF-példa (be1) helyes: 2 / 2 6. 1500 kis véletlen gráfon az összes egyszerű út számolásával ellenőrizve, 150 közepes gráfon híd-ellenőrzéssel egyezik. Mért idő N=10 000, M=1 000 000 bemeneten: kb. 0,11 s, a limit 0,1 mp; a szűk rész a cin-es beolvasás (önmagában kb. 0,09 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/43. Tájékozódási verseny **",
+    "method": "Csúcsonkénti kihagyásos bejárás: elérhető-e a cél a csúcs nélkül",
+    "category": "Gráf: kikerülhetetlen pontok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "irányított gráf", "bejárás"],
+    "note": "A minta.zip-ben csak bemenet van (be1, be2), kimenet nincs, ezért nincs minta. A PDF-példa (be1) helyes: 4 / 1 4 5 6. 1500 kis véletlen esetben az összes egyszerű Start-Cél út metszetével egyezik. N=200, K=30000 esetén kb. 0,01 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/44. Út legfeljebb egy kritikus szakasszal *",
+    "method": "0-1 BFS: minden csúcsig a legkevesebb kritikus él, jó ha legfeljebb egy",
+    "category": "Gráf: 0-1 BFS",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "0-1 bfs", "legrövidebb út"],
+    "note": "A minta.zip-ben csak bemenet van (in1, in2) és egy Dijkstra.cpp, kimenet nincs, ezért nincs minta; a Dijkstra.cpp-t nem használtuk. A PDF-példa helyes: 5 / 1 2 3 6 7. 1500 kis esetben az összes egyszerű úttal ellenőrizve egyezik; in1/in2 és egy N=100 000, M=1 000 000 teszt egyezik független állapot-bejárás referenciával. Mért idő N=100 000, M=1 000 000 bemeneten: kb. 0,12 s, a limit 0,1 mp; a szűk rész a cin-es beolvasás (önmagában kb. 0,10 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/45. Út mindenhova két pontból ***",
+    "method": "Erősen összefüggő komponensek, minden forrásból egy kezdőpont",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "erősen összefüggő", "tarjan"],
+    "note": "A minta.zip csak a feladat.pdf-et tartalmazza, bemenet és kimenet nincs, ezért nincs minta. A PDF-példára a kimenetünk 2 9 (a mintában 2 8), ami szintén érvényes, mert bármely jó pár elfogadott. 1500 kis esetben a lefedést ellenőriztük, N=10 000, M=200 000 teszten érvényes, kb. 0,03 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

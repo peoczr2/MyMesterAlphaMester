@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/13. Kocka **",
+    "method": "Élek adjacencia-mátrixa, a bejárás szomszédos pároinak ellenőrzése",
+    "category": "Gráf: szomszédság",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "adjacencia", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/14. Morze *",
+    "method": "Kódtábla tömbben, betűnként kódolás, a szóközök kétszerezése",
+    "category": "Karakterkódolás, sztring",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["karakterek", "tömb", "kódolás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/15. Péntek 13 *",
+    "method": "Hónap 13. napja a január 1. utáni eltolással, hétnap maradékszámítással",
+    "category": "Dátumszámítás, maradék",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dátum", "szökőév", "maradék"],
+    "note": "A feladatszöveg példájában az első sor nem tartalmazza a hónapok számát, a minta-kimenetekben (ki1, ki2) viszont az első sor a darabszám (pl. 2015 csutortok: 3, majd februar marcius november). A megoldás a mintát követi; ha a bíráló a szövegbeli formátumot várja, az első sor (darabszám) elhagyandó.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/16. Rendezőpályaudvar **",
+    "method": "Két vágány nyilvántartása, érkező kocsinként döntés, a hosszabb szerelvény indítása",
+    "category": "Szimuláció: vágányok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "tömb", "feltétel"],
+    "note": "Értelmezés: új szerelvény csak akkor indul, ha az érkező kocsi sehova nem fér el (nincs nem tele, ugyanarra gyűjtő vágány és nincs üres vágány); ha a célállomás vágánya tele, de van üres vágány, a kocsi az üres vágányra kerül. Azonos hossznál mindenhol az 1. vágány élvez elsőbbséget. A szöveg 'ha egy vágány megtelt' kitétele nem dönti el egyértelműen, hogy a tele vágány a telítődéskor indul-e, vagy csak a következő, oda nem férő kocsinál; a megoldás az utóbbit követi. A mintákban (M=10) nincs tele vágány, így ez a mintákon nem tesztelt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

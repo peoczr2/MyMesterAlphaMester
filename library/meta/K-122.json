@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/2. Árból egyértelműen következtethető utazások *",
+    "method": "Árak előfordulásának számlálása map-ben, a pontosan egyszer előforduló árak megszámolása.",
+    "category": "Számlálás, gyakoriság",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "gyakoriság", "szótár"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/20. Könyvmásolatok eredeti szövege ***",
+    "method": "Pozíciónkénti karaktergyakoriság-számlálás, többségi szavazással; ha nincs többség, #.",
+    "category": "Többségi szavazás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "többség", "karakterlánc"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/21. Könyvmásolatok visszafejtése ****",
+    "method": "Mohó szülőkeresés: a legkevesebb változtatással járó érvényes előző szöveg, a megváltozott pozíciók nyilvántartásával.",
+    "category": "Mohó szülőkeresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["mohó", "láncolás", "feltétel"],
+    "note": "ki1.txt és ki2.txt minden szülőszám után egy extra 0-t tartalmaz (ki1: 1 0 2 0 3 0), a feladatszöveg és a PDF-példa viszont N-1 számot ír elő (PDF: 1 1 2). A minta páratlan helyű számai megegyeznek a saját kimenetemmel, és brute-force ellenőrzéssel (library/.work/K-122/ref/check21.py) be1 és be2 esetén ez az egyetlen érvényes szülő-hozzárendelés; a validátor ezért 0/2 mintát jelez.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/22. Különböző árú borok száma *",
+    "method": "Halmazba gyűjtött árak elemszámának meghatározása.",
+    "category": "Halmaz, különböző elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "egyedi", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

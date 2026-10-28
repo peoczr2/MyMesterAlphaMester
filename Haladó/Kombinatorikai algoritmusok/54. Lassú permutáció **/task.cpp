@@ -1,84 +1,94 @@
 /*
-   Lassú permutáció: a szomszédos karakterek azonosak vagy az ábécében
-   szomszédosak. Az előző és következő szó a prefixfán végzett rangsorolással
-   és unrankinggel adható meg.
+Megoldás lényege: a szavakat lexikografikus sorrendben tekintjük, ahol a prefix megelőzi
+a kiterjesztéseit. Nem kell rangot számolni (az nagy K-nál túlcsordulna), elég közvetlenül
+megkeresni a szomszédos szót. Rákövetkező szó: ha a bemenet lassú és még nem érte el a K
+hosszt, a szó végére a legkisebb megengedett betű kerül; egyébként a leghosszabb lassú
+prefix végétől visszafelé keressük azt a legkésőbbi pozíciót, ahol a betű az ábécében
+megnövelhető, és a prefixet ott vágjuk le. Előző szó: az ilyen pozíción csökkentett betű
+után a maradékot K hosszig a legnagyobb megengedett betűkkel töltjük ki; ha nincs ilyen
+pozíció, a leghosszabb lassú prefix lesz az előző szó. Az idő O(26 * K), a memória O(K).
+*/
+/*
+Hint 1: || A rákövetkező szó vagy a bemenet végére fűz egy betűt, vagy egy prefixében növel egy betűt. Nem kell a teljes sorrendet bejárni: elég a legkésőbbi jó pozíciót megtalálni. ||
+Hint 2: || Keresd meg a leghosszabb lassan változó prefixet. Csak ennek a pozícióin belül változtathatsz: a módosított betűnek a bal szomszédjához kell illeszkednie, és a jobb szélétől visszafelé keresd a legkésőbbi jó pozíciót. ||
+Hint 3: || Ha a szó egy pozíción változik, a hosszát K-ig a megengedett szélső betűkkel (a legnagyobbal az előzőhöz, a legkisebbel a következőhöz) töltheted ki. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
 
-static const long long LIM = 1000000001LL;
-
 static bool allowed(int a, int b) { return abs(a - b) <= 1; }
+
+static string toText(const vector<int>& w) {
+    string t;
+    for (int c : w) t.push_back(char('a' + c));
+    return t;
+}
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
     int K;
-    string s;
-    cin >> K >> s;
+    string text;
+    cin >> K >> text;
+    int n = text.size();
+    vector<int> s(n);
+    for (int i = 0; i < n; ++i) s[i] = text[i] - 'a';
 
-    vector<vector<long long>> ways(K + 1, vector<long long>(26, 0));
-    for (int c = 0; c < 26; ++c) ways[1][c] = 1;
-    for (int len = 2; len <= K; ++len) {
-        for (int c = 0; c < 26; ++c) {
-            long long val = 1;
-            if (c > 0) val += ways[len - 1][c - 1];
-            val += ways[len - 1][c];
-            if (c + 1 < 26) val += ways[len - 1][c + 1];
-            ways[len][c] = min(LIM, val);
+    if (n == 0) {
+        cout << "-\na\n";
+        return 0;
+    }
+
+    // p: a leghosszabb lassan változó prefix hossza
+    int p = 1;
+    while (p < n && allowed(s[p - 1], s[p])) ++p;
+
+    // Következő szó
+    vector<int> nxt;
+    bool hasNxt = false;
+    if (p == n && n < K) {
+        nxt = s;
+        nxt.push_back(max(0, s[n - 1] - 1));
+        hasNxt = true;
+    } else {
+        for (int j = min(p, n - 1); j >= 0 && !hasNxt; --j) {
+            for (int c = s[j] + 1; c < 26; ++c) {
+                if (j == 0 || allowed(c, s[j - 1])) {
+                    nxt.assign(s.begin(), s.begin() + j);
+                    nxt.push_back(c);
+                    hasNxt = true;
+                    break;
+                }
+            }
         }
     }
 
-    auto totalWords = [&]() -> long long {
-        long long sum = 0;
-        for (int c = 0; c < 26; ++c) sum = min(LIM, sum + ways[K][c]);
-        return sum;
-    };
-
-    auto rankOf = [&](const string& str) -> long long {
-        long long rank = str.size();
-        for (int i = 0; i < (int)str.size(); ++i) {
-            int cur = str[i] - 'a';
-            int prev = (i == 0 ? -1 : str[i - 1] - 'a');
-            for (int c = 0; c < cur; ++c) {
-                if (prev != -1 && !allowed(prev, c)) continue;
-                rank = min(LIM, rank + ways[K - i][c]);
-            }
-        }
-        return rank;
-    };
-
-    auto unrank = [&](long long k) {
-        string ans;
-        int rem = K;
-        int last = -1;
-        while (true) {
-            if (!ans.empty()) {
-                if (k == 1) return ans;
-                --k;
-            }
-            bool chosen = false;
-            for (int c = 0; c < 26; ++c) {
-                if (last != -1 && !allowed(last, c)) continue;
-                long long cnt = ways[rem][c];
-                if (k > cnt) {
-                    k -= cnt;
-                    continue;
-                }
-                ans.push_back(char('a' + c));
-                last = c;
-                --rem;
-                chosen = true;
+    // Előző szó
+    int M0 = min(p, n - 1);
+    int jStar = -1, cStar = -1;
+    for (int j = M0; j >= 0 && jStar < 0; --j) {
+        for (int c = s[j] - 1; c >= 0; --c) {
+            if (j == 0 || allowed(c, s[j - 1])) {
+                jStar = j;
+                cStar = c;
                 break;
             }
-            if (!chosen) return ans;
         }
-    };
+    }
+    vector<int> prv;
+    bool hasPrv = false;
+    if (jStar == M0 && jStar >= 0) {
+        prv.assign(s.begin(), s.begin() + jStar);
+        prv.push_back(cStar);
+        while ((int)prv.size() < K) prv.push_back(min(25, prv.back() + 1));
+        hasPrv = true;
+    } else if (M0 >= 1) {
+        prv.assign(s.begin(), s.begin() + M0);
+        hasPrv = true;
+    }
 
-    long long r = rankOf(s);
-    cout << (r == 1 ? string("-") : unrank(r - 1)) << '\n';
-    long long tot = totalWords();
-    cout << (r == tot ? string("-") : unrank(r + 1)) << '\n';
+    cout << (hasPrv ? toText(prv) : string("-")) << '\n';
+    cout << (hasNxt ? toText(nxt) : string("-")) << '\n';
     return 0;
 }

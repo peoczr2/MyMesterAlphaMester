@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/13. Másodfokú egyenlet - 2006. február",
+    "method": "Diszkrimináns előjelének vizsgálata, a=0 esetén elsőfokú eset külön kezelve.",
+    "category": "Elágazások: másodfokú egyenlet",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["elágazás", "egyenlet", "diszkrimináns"],
+    "note": "A minta 2. párja (be2/ki2) ellentmond a feladatszövegnek: a be2 2. sora (28433 375676 -755447) mintakimenete 0, a helyes érték 2 (D = b² − 4ac = 227050955180 > 0). A minta pontosan egyezik azzal, ha a D-t 32 bites egészben, túlcsordulva számoljuk (50000/50000 sor); a saját kimenetem egy független, tetszőleges pontosságú Python-ellenőrzővel egyezik (50000/50000 sor). A validátor ezért a 2. mintán 'hibás' állapotot ad, a megoldás szerint helyes.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/14. Lottóhúzás - 2006. február",
+    "method": "Megadott LCG-vel generált számok, ismétlés esetén újrasorsolás logikai tömbbel.",
+    "category": "Szimuláció: véletlen húzás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "véletlen", "tömb"],
+    "note": "A random(1, N) hívás (alsó = 1, felső = N) a feladatszövegből nem olvasható ki teljesen egyértelműen; mindkét minta (N = 90 és N = 10 000) igazolja, hogy a számok 1..N közöttiek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/15. Fej vagy írás - 2006. január",
+    "method": "Balról jobbra futamok bejárása, F- és I-futamok maximuma külön, szigorú összehasonlítással.",
+    "category": "Futamok: leghosszabb sorozat",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["sorozat", "bejárás", "szöveg"],
+    "note": "A kezdőpozíciók 1-alapúak; a feladat ezt nem mondja ki, az első minta (FFIIFFFII -> 3 5 / 2 3) igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/16. Kockahajtogatás - 2007. május",
+    "method": "Oldalak rendezése után a 3E és 4E feltételek egyszerű ellenőrzése.",
+    "category": "Feltételvizsgálat: hajtogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["elágazás", "rendezés", "geometria"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

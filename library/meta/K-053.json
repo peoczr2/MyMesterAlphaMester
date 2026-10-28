@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/64. Csoportképek",
+    "method": "Differenciatömb és prefixösszeg a létszámhoz, majd prefixösszeg a képes időpontokra.",
+    "category": "Differenciatömb, prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "prefixösszeg", "intervallum"],
+    "note": "A feladatszöveg nem mondja ki egyértelműen, készül-e kép olyan időpontban, amikor senki sincs jelen. A 2. minta (ki2 = 6) csak az 'legalább 1 jelenlévő és legfeljebb F' értelmezéssel igazolható, a megoldás ezt követi. A mappanévben nincs csillag; a PDF fejléce alapján ** (nehézség 2).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/65. Véletlenszám ellenőrzés ****",
+    "method": "Szomszédos előfordulási párok, értékenkénti prefixösszeg és M×M-es maximumtábla.",
+    "category": "Szomszédos előfordulások",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["megszámolás", "prefixösszeg", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/66. Pontozásos verseny ***",
+    "method": "Gyakorisági tömb 1–100 pontszámokra, sorban haladva az addig kisebb pontszámok összege.",
+    "category": "Gyakorisági tömb",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "gyakoriság", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/67. Szerencsés napok ****",
+    "method": "Szerencsés (+1) és szerencsétlen (−1) napok jelölése, prefixösszeg, végpontpárok kettős ciklusban.",
+    "category": "Intervallumok számlálása",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "prefixösszeg", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

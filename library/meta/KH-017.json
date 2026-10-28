@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/31. Szempont, ahol a legtöbb kieső volt *",
+    "method": "Szempontonkénti számlálás (P < alsó határ), a legnagyobb számláló keresése",
+    "category": "Számlálás és maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "maximum", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/32. Szempontok, ahol a résztvevök több mint fele kiesett *",
+    "method": "Szempontonkénti számlálás (P < alsó határ), a 2·db > N feltétel szerinti szűrés",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/33. Szempontok, ahol minden kutya kiesett *",
+    "method": "Szempontonkénti számlálás (P < alsó határ), a kiesők száma egyenlő N-nel",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "egyenlőség", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/34. Szempontok, ahol nem volt kieső kutya *",
+    "method": "Szempontonkénti számlálás (P < alsó határ), a nulla kieső szempontok kiválogatása",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "nulla", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

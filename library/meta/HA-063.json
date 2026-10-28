@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/1. 2x2-es robot ***",
+    "method": "Állapot a robot bal felső sarka; Dial-algoritmus (költség 1–3) a legrövidebb útra",
+    "category": "Gráf: súlyozott legrövidebb út",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "legrövidebb út"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/10. Bolha **",
+    "method": "Ugrási funkcionális gráf; szintenkénti összegek long path decomposition-nel, ciklusokon paritás",
+    "category": "Gráf: funkcionális gráf",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "ciklus", "szintenkénti összeg"],
+    "note": "A minta.zip csak be1/be2 fájlt tartalmaz, ki fájl nincs, ezért a validátor 'nincs minta' állapotot ad. Kézi ellenőrzés: a PDF példája (33) egyezik, be1 kimenete 242 és egyezik a brute-force szimulációval, továbbá ~1000 véletlen gráfon nincs eltérés.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/11. Csapat *",
+    "method": "Gráf kétszínezése szélességi bejárással (BFS)",
+    "category": "Gráf: kétszínezés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "kétszínezés", "szélességi bejárás"],
+    "note": "A minta.zip csak be1/be2 fájlt tartalmaz, ki fájl nincs, ezért a validátor 'nincs minta' állapotot ad; kézi ellenőrzés: a PDF példája érvényes felosztást ad, be2 is érvényes, kis véletlen gráfokon a -1 és a felosztás egyezik a kimerítő kereséssel. A kézi jelölést a feladat szövege indokolja: 'Több megoldás esetén bármelyik megadható'.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/12. Csatorna ***",
+    "method": "Élszűrés (A > R) után DSU komponensek; S komponensének élei és további komponensek száma",
+    "category": "Gráf: komponensek (DSU)",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "unió-find", "komponens"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

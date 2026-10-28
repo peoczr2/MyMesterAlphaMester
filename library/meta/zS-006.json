@@ -1,0 +1,19 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/46. Téglalap **",
+    "method": "Oldalpont-típusok szerinti esetszétválasztás, rekordlépcsők, prefix-minimum és bináris keresés.",
+    "category": "Geometria: üres téglalap",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "téglalap",
+      "rekord",
+      "bináris keresés"
+    ],
+    "note": "Gyorsítás: a régi, bal-jobb rekordpárokat próbáló változat négyzetes volt (N=10^5: 13,7 s, lépcsős/azonos sorú családokon 100 s alatt sem végzett). Az új kód az oldalpontok helye szerint esetet választ (felső/alsó oldalpont a bal x<=0 vagy a jobb x>0 oldalon): LL esetben T és B a bal pontból legfeljebb 2-2 jelölt, R a (B,T) sáv első jobb oldali találata (y szerinti prefix-minimum + bináris keresés); LR esetben T a bal pontból adott, a jobb oszlopok (x,B) opciói monoton B szerint rendezett listát adnak (bináris keresés), plusz az az eset, hogy R maga a sáv első találata; RR és RL az x illetve y tükrözése. Az egyenlőségeket számlálók szűrik, minden jelöltet rendezett oszlop/sor listákon végső ellenőrzés igazol. O(N log N). Időmérés (timeout 10, -O2): N=10^5 véletlen teszt 11-18 ms, a legrosszabb mért szerkezeti teszt (lépcsők négy negyedben ismétlődő pontokkal, hosszú oszlopok) 29 ms, memória kb. 12 MB. Ellenőrzés: teljes brute force (minden L,R,B,T) több százezer kis tesztre (véletlen, rácsos, lépcsős, épített; ismétlődő pontokkal is; rész-rutinonként is), kb. 7000 közepes teszt az eredeti megoldással egybevetve (a létezés egyezik, az új kimenet O(N) ellenőrzővel érvényes). Értelmezés: minden zárt oldalszakaszon pontosan egy pont, a sarokpont két oldalhoz számít, az ismétlődő pontok külön pontok. Több helyes kimenet lehet (a feladat szerint bármelyik jó), ezért kézi; az új kód a két mintát betűre ugyanúgy adja (validátor: kész 2/2), a minta.zip változatlan. Ellenőrzők: library/.work/zS-006/.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  }
+]

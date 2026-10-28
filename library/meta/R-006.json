@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/48. Koncertre két egymás melletti jegy *",
+    "method": "Dinamikus programozás a székek sorszáma szerint, az optimum visszafejtésével.",
+    "category": "Dinamikus programozás: intervallumok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["dinamikus programozás", "intervallum", "visszafejtés"],
+    "note": "A kimenet sorrendje tetszőleges, a minta.zip sorrendje ettől eltér. A második esetben más, de azonos bevételű igényhalmaz szerepel. Ellenőrző programmal mindkét eset érvényes: nincs átfedés és az összeg a várt bevétel.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/50. Kölcsönzés **",
+    "method": "Határidő szerinti rendezés, majd DP az elérhető napösszegekre, visszafejtéssel.",
+    "category": "Dinamikus programozás: ütemezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "határidő", "rendezés"],
+    "note": "A minta.zip 1. és 2. esetében a várt K (8, illetve 277) kisebb, mint a szöveg szerinti optimum (9, illetve 999): a 2. esetre a megoldás érvényes beosztást ad 999 nappal. A feladatszöveg példája (K = 9) egyezik. Ellenőrző programmal a kimenet érvényessége és az 1. eset optimalitása igazolt.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/51. Kötélhúzás **",
+    "method": "Részhalmaz-DP (darabszám, összeg) állapottal, a szülők eltárolásával visszafejtve.",
+    "category": "Dinamikus programozás: részhalmaz-összeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "részhalmaz", "összeg"],
+    "note": "A minta.zip 1. esetében a várt 88 nem minimális: a 22, 100 / 74, 84 felosztás 36-os különbséget ad, a megoldás 36-ot ír ki. Ellenőrző program igazolja. A 2. esetben a minta és a megoldás kimenete egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/52. Központ **",
+    "method": "Manhattan-távolság x+y és x-y transzformációja, a szélső értékek alapján.",
+    "category": "Geometria: Manhattan-távolság",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["geometria", "manhattan-távolság", "szélsőérték"],
+    "note": "A minta.zip kimenetében az átmérő áll az első sorban, a sorszám a másodikban; a feladatszöveg és a példa szerint a sorszám áll elöl, a megoldás a szöveg szerint ír. Az értékek mindkét esetben egyeznek.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/53. Labor **",
+    "method": "Részhalmaz-összegek K szerinti maradékai DP-vel; a 0 és a K külön feltétellel.",
+    "category": "Dinamikus programozás: maradékok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "maradékok", "részhalmaz"],
+    "note": "A kimenet sorrendje tetszőleges, a minta.zip sorrendje ettől eltér (a 0 a végén áll). Mindkét esetben a halmaz egyezik a megoldással; a kis esetekre a teljes állapottér-bejárás is ugyanezt adja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/54. Leghosszabb körút ***",
+    "method": "Két diszjunkt növekvő út párhuzamos DP-je, az utolsó két végpont állapotával.",
+    "category": "Gráf: két diszjunkt út",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus programozás", "gráf", "diszjunkt utak"],
+    "note": "Több helyes útpár van: a minta.zip másik párja ugyanannyi várost (3, illetve 472) érint, a megoldás kimenete ellenőrző programmal érvényes. A sorrend és az útvonalak eltérése ezért nem hiba.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

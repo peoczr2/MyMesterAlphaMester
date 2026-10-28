@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/82. Véletlenszámok ***",
+    "method": "Értékenkénti prefixösszeg, az intervallumban nulla előfordulású értékek számlálása",
+    "category": "Prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "előfordulás", "intervallum"],
+    "note": "Minta-eltérés: a minta.zip ki1.txt kimenete (2, 4, 1) a különböző előforduló értékek számát adja, a feladat példája (2, 0, 3) viszont a nem előforduló értékek számát. A minta minden sora M - a feladat szerinti helyes válasz (be1 és be2 is). A megoldást a feladat példa és brute-force ellenőrzés igazolja. Ezért minta: kézi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/83. Különböző értékek ***",
+    "method": "Előforduló értékek jelölése, prefixösszeg az értéktartományon",
+    "category": "Prefixösszeg",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "halmaz", "intervallum"],
+    "note": "A minta.zip nem illeszkedik a feladat.pdf-hez: a be1.txt és be2.txt-ben nincs a K kérdésszám és a kérdéssor, a ki1.txt (6) és a ki2.txt (25) kimenete a feladatszövegből nem származtatható. A feladat.pdf szövege és példája megegyezik a 84-es feladatéval (5 10 / 3 1 1 7 7 -> 2 1 0), a megoldást ez és brute-force ellenőrzés igazolja. Ellenőrizendő, hogy a mappában a helyes feladatszöveg és minta van-e. Ezért minta: kézi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/84. Különböző értékek",
+    "method": "Előforduló értékek jelölése, prefixösszeg az értéktartományon",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "halmaz", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/85. Pillanatnyilag megelőzöttek **",
+    "method": "Pontszámonkénti darabszámok tömbje, minden versenyzőnél a kisebb pontszámok összegzése",
+    "category": "Gyakorisági tömb",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "gyakoriság", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

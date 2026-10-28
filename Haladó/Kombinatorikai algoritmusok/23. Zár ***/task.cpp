@@ -1,16 +1,21 @@
 /*
 Megoldás lényege:
-Mindhárom tárcsa külön-külön körben áll. Egy lépésben bármelyik részhalmazt
-forgathatjuk egységgel egy irányba, ezért a három tárcsát egymástól függetlenül
-kezelhetjük annyiban, hogy egy pozitív irányú lépés több tárcsán egyszerre is
-dolgozhat.
-
-Ha egy tárcsát az 1-es állásba akarunk hozni, akkor kétféle irány közül válasz-
-thatunk: az óramutató járásával megegyezően vagy ellentétesen. Egy adott irány-
-párás választásnál a szükséges lépésszám a pozitív és negatív irányú lépések
-maximumának összege. Ezért a 2^3 lehetséges irányválasztást elég kipróbálni.
+Mindhárom tárcsát az 1-es állásba kell hozni. Egy tárcsa növekvő irányban d_+
+lépéssel, csökkenő irányban d_- lépéssel jut az 1-es állásba, ahol d_+ + d_- = N,
+ha a tárcsa nincs 1-en; ha már ott áll, mindkettő 0.
+Egy lépésben tetszőleges nem üres részhalmaz forgatható ugyanabba az irányba.
+Ezért a pozitív irányú lépésekből annyi kell, ahány a pozitív irányba forgatott
+tárcsák d_+ értékeinek maximuma: a t-edik pozitív lépésbe azok a tárcsák kerülnek,
+amelyeknek legalább t pozitív lépés kell. A negatív irányúak ugyanígy működnek.
+Egy irányválasztás költsége tehát a két maximum összege, a válasz a 2^3 = 8
+irányválasztás közül a legkisebb.
+Időigény O(8·3), konstans.
 */
-
+/*
+Hint 1: || Egy lépés egy nem üres részhalmaz tárcsáit forgatja ugyanabba az irányba. Egy tárcsánál tehát két irány közül lehet választani, és mindkét irányban meg kell nézni, hány lépés kell az 1-es állásba. ||
+Hint 2: || Ha már rögzítettük, melyik tárcsa melyik irányba forog, akkor a növekvő irányú tárcsák közül a legnagyobb szükséges lépésszám adja a növekvő irányú lépések számát, és ugyanígy a csökkenő irányúaké. Egy lépésbe mindig azok a tárcsák kerülhetnek, amelyeknek még van hátra lépésük. ||
+Hint 3: || Mivel csak három tárcsa van, a 2^3 = 8 irányválasztás bitmaszkkal végigpróbálható. Egy maszkra a válasz a két maximum összege, a végeredmény a 8 eset minimuma. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

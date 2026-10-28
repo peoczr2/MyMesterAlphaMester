@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív kiszámítás/15. Tornyok színes építőkockákból",
+    "method": "Utolsó elem szerinti lineáris rekurzió T(n)=2T(n-1)+T(n-2), iteratív DP modulo",
+    "category": "Kombinatorika: rekurzió",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "rekurzió",
+      "kombinatorika",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/16. Tornyok építőkockákból *",
+    "method": "Utolsó elem szerinti lineáris rekurzió T(n)=2T(n-1)+T(n-3), iteratív DP modulo",
+    "category": "Kombinatorika: rekurzió",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "rekurzió",
+      "kombinatorika",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/17. Toronyépítés (1,1,1,2) *",
+    "method": "Utolsó elem szerinti lineáris rekurzió T(n)=3T(n-1)+T(n-2), iteratív DP modulo",
+    "category": "Lineáris rekurzió",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "rekurzió",
+      "lineáris",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/18. Toronyépítés (1,1,3,3) *",
+    "method": "Utolsó elem szerinti lineáris rekurzió T(n)=2T(n-1)+2T(n-3), iteratív DP modulo",
+    "category": "Lineáris rekurzió",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "rekurzió",
+      "lineáris",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/19. Toronyépítés (2,2,3,3) *",
+    "method": "Utolsó elem szerinti lineáris rekurzió T(n)=2T(n-2)+2T(n-3), iteratív DP modulo",
+    "category": "Lineáris rekurzió",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "rekurzió",
+      "lineáris",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/2. Felbontás **",
+    "method": "Teljes keresés 3^8 jelkombinációra, előjeles összeg ellenőrzéssel",
+    "category": "Bruteforce: kifejezés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "bruteforce",
+      "kifejezés",
+      "összeg"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

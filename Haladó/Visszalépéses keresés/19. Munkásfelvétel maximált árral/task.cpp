@@ -1,9 +1,13 @@
 /*
-Hungarian megoldás: a munkás-felvételhez min-költségű tökéletes párosítást
-keresünk, majd ellenőrizzük a költségkeretet.
-
-Hint 1: || Minden munkás legfeljebb egy állást kaphat. ||
-Hint 2: || Elég a legolcsóbb teljes megoldás, és utána összevetjük a kerettel. ||
+Megoldás lényege: a jelentkezőket sorban (1-től N-ig) rendeljük az állásokhoz. A DP-tábla indexe egy
+bitmaszk: a maszk azokat az állásokat jelöli, amelyeket az eddigi jelentkezők már betöltöttek, értéke
+pedig a legkisebb összköltség. A teljes maszkhoz tartozó dp érték a legolcsóbb teljes kiosztás költsége;
+ha ez meghaladja X-et, a válasz NINCS. Visszakövetéssel állapítjuk meg, melyik állást melyik jelentkező
+kapta. Időigény: O(2^N * N^2), N ≤ 15 esetén ez gyors.
+*/
+/*
+Hint 1: || A jelentkezőket egymás után dolgozd fel, és jegyezd meg, mely állások már betöltöttek. ||
+Hint 2: || dp[maszk] legyen a legkisebb költség, amellyel az első popcount(maszk) jelentkező a maszkban lévő állásokat betölti. Az i-edik jelentkezőt egy szabad j állásra téve dp[maszk | (1 << j)] frissíthető cost[i][j] költséggel. ||
 */
 
 #include <bits/stdc++.h>
@@ -46,11 +50,12 @@ int main() {
         cout << "NINCS\n";
         return 0;
     }
+    // ans[j]: a j-edik állásra felvett jelentkező sorszáma
     vector<int> ans(n);
     int mask = full;
     for (int i = n - 1; i >= 0; --i) {
         int j = prevJob[mask];
-        ans[i] = j + 1;
+        ans[j] = i + 1;
         mask = prevMask[mask];
     }
     for (int i = 0; i < n; ++i) {

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 3. forduló/5. Határidős ütemezés (20 pont)",
+    "method": "Határidő szerinti rendezés, majd max-heap-pel a leghosszabb munka kivétele (Moore–Hodgson).",
+    "category": "Mohó ütemezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "rendezés",
+      "prioritásos sor"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 3. forduló/6. Vasútállomások (30 pont)",
+    "method": "Idő szerint haladó eseményfeldolgozás, állomásonként legjobb (díj, indulás) állapot.",
+    "category": "Időfüggő legrövidebb út",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "időfüggő",
+      "eseménysorozat"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 3. forduló/7. Vizsga (13 pont)",
+    "method": "Egyező és különböző válaszú kérdések számából lineáris összefüggés, x szélső értékei.",
+    "category": "Logika: korlátok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "logika",
+      "korlát",
+      "összefüggés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

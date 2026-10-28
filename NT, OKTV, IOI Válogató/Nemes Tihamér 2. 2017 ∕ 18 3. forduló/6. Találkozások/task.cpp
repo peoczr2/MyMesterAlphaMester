@@ -1,11 +1,19 @@
+/*
+    Két ember akkor találkozik, ha zárt intervallumaik metszik egymást. Egy E ember
+    találkozóinak száma: az összes olyan ember, akinek az érkezése nem későbbi E
+    távozásánál, mínusz azok, akik még E érkezése előtt távoztak, mínusz E maga.
+    Ezt rendezett kezdő- és végpontlistákon, bináris kereséssel számoljuk ki, így
+    az időigény O(N log N).
+*/
+/*
+Hint 1: || Két ember pontosan akkor találkozik, ha intervallumaik átfedik egymást, és az érintkezés is számít: ha az egyik ugyanabban az időpontban távozik, amikor a másik érkezik, akkor még találkoznak. ||
+
+Hint 2: || Egy E ember [x, y] intervallumához képest két csoport nem találkozik: akik még x előtt távoztak, és akik y után érkeztek. Minden más ember találkozik vele, E-t magát leszámítva. ||
+
+Hint 3: || Tárold külön rendezve az érkezési és a távozási időpontokat, és minden E emberre binárisan keresve számold meg a két nem találkozó csoport létszámát. A legtöbb találkozót adó E sorszámát és a találkozók számát kell kiírni. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Aki a legtöbb emberrel találkozott, az a legtöbb más intervallummal metsző
-    intervallummal rendelkezik. Két végpont sort és egy sweepet használunk,
-    hogy megszámoljuk az átfedéseket.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

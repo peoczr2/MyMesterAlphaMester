@@ -9,7 +9,11 @@ komponensétől a B komponenséig vezető leghosszabb súlyú út súlya. Az SCC
 Kosaraju-algoritmussal határozzuk meg, majd topologikus sorrendben dinamikus
 programozással számoljuk a maximumot.
 */
-
+/*
+Hint 1: || Egy erősen összefüggő komponensen belül bármelyik csúcsból bármelyik másikba el lehet jutni, így a komponens minden csúcsát érinthetjük. Ezért a csúcsokat érdemes komponensenként összevonni. ||
+Hint 2: || Az összevont gráf körmentes, és a komponensek súlya a bennük lévő csúcsok száma. A keresett érték az A-t tartalmazó komponensből a B-t tartalmazóba vezető leghosszabb súlyú út. ||
+Hint 3: || Az erős összefüggő komponensek Kosaraju-algoritmussal (két mélységi bejárással) határozhatók meg. Az összevont gráfon topologikus sorrendben dinamikus programozással számolható a maximum. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

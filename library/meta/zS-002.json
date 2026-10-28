@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/12. Hegy ***",
+    "method": "Láthatósági gráf BFS-e két szélső csúcs követésével, látótávolságok konvex burok érintőjével.",
+    "category": "Geometria: láthatósági gráf",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["láthatóság", "konvex burok", "legrövidebb út"],
+    "note": "A PDF-példában a 10. csúcs magassága 3, a minta.zip-ben 2; mindkettővel 4 a kimenet (a minta rendben van). A közvetítők a K. csúcs utáni csúcsok közül is kerülhetnek ki; a látóvonalon pontosan álló csúcs takar (a minták ezt nem döntik el). A módszert O(N^2) brute force BFS-sel vetettem össze több százezer véletlen teszten.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/14. Lámpák **",
+    "method": "Házanként a megvilágító lámpák intervalluma (érintő a konvex burokhoz), majd mohó szúrás.",
+    "category": "Geometria: látóvonal, intervallumszúrás",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["láthatóság", "mohó algoritmus", "intervallum", "konvex burok"],
+    "note": "Egy lámpa által megvilágított házak halmaza nem összefüggő, de egy házat megvilágító lámpák összefüggő intervallumot alkotnak, ezért elég az intervallumszúrás. A minta2-ben a rések felezőpontja nem mindig egész (2. és 3. ház között 5 a rés), ezért duplázott koordináták; a 1. ház magassága ott egyenlő K-val. A sarkot súroló sugár megvilágít (a minták ezt nem döntik el); N=1 esetén 0-t írunk. Részhalmaz-brute force-szal és O(N^3) ellenőrzővel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/94. Különböző katicák",
+    "method": "Paritásrögzítés és alulról felfelé intervallumszűkítés, majd felülről lefelé visszaépítés",
+    "category": "Fa: dinamikus programozás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "paritás", "intervallum"],
+    "note": "A be3 mintán a 2. sor eltér a ki3-tól, de a feladat szerint bármely megfelelő kiosztás elfogadható; az ellenőrző program (library/.work/R-052/tools/check_katica.py) mindkét kimenetet érvényesnek találja, a döntés (IGEN/NEM) pedig 1500 véletlen kis esetben egyezik a brute-force eredménnyel.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

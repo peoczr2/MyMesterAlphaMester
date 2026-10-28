@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/17. Első békés év *",
+    "method": "Eseménypont-bejárás rendezett map-pel: az első nulla számlálójú év",
+    "category": "Intervallumok: eseménypont-bejárás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "eseménypont", "számlálás"],
+    "note": "A feladatszöveg a háborúkra „N sorban” kifejezést használ, a helyes szám K (a háborúk száma), a minta is ezt mutatja; a program K sort olvas. Mért idő: 0,00 mp (N=1000, K=2000).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/18. Első év, amikor csak egy háború volt *",
+    "method": "Eseménypont-bejárás rendezett map-pel: az első egyes számlálójú év",
+    "category": "Intervallumok: eseménypont-bejárás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "eseménypont", "számlálás"],
+    "note": "A feladatszöveg a háborúkra „N sorban” kifejezést használ, a helyes szám K (a háborúk száma), a minta is ezt mutatja; a program K sort olvas. Mért idő: 0,00 mp (N=1000, K=2000).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/19. Gyakori háborúk *",
+    "method": "Háborúk számlálása évszázadonként a kezdő év alapján, majd összehasonlítás",
+    "category": "Számlálás, összehasonlítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "összehasonlítás"],
+    "note": "A háborúkat a kezdő évük százada szerint számoljuk. A be1 minta elején UTF-8 BOM van, a program átugorja. Mért idő: 0,00 mp (N=1000, K=2000).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/2. Békés évek *",
+    "method": "Eseménypont-bejárás rendezett map-pel: nulla számlálójú évek kiírása",
+    "category": "Intervallumok: eseménypont-bejárás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "eseménypont", "kiírás"],
+    "note": "A feladatszöveg a háborúkra „N sorban” kifejezést használ, a helyes szám K (a háborúk száma), a minta is ezt mutatja; a program K sort olvas. Mért idő: 0,00 mp (N=1000, K=2000).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

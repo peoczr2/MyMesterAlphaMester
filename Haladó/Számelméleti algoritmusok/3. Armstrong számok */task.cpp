@@ -1,8 +1,11 @@
 /*
- * N-jegyű Armstrong-számok keresése. Az összes N hosszúságú számjegy-multihalmazt
- * végigpróbáljuk, és ellenőrizzük, hogy a számjegyek N-edik hatványainak összege
- * visszaadja-e ugyanazt a számot.
- 
+Megoldás lényege:
+Az N-jegyű Armstrong-számok számjegyeinek multihalmazát, vagyis azt, hogy a 0..9 számjegyekből hányat használunk, rekurzívan végigpróbáljuk.
+Minden ilyen darabszám-vektorból kiszámoljuk a számjegyek N-edik hatványainak összegét, és ellenőrizzük, hogy az eredmény N-jegyű-e, és a számjegyei pontosan a vizsgált multihalmazt adják-e.
+N ≤ 8 esetén legfeljebb C(17, 9) = 24310 multihalmaz van, így a keresés gyors; minden Armstrong-szám pontosan egyszer kerül a listába, a rendezés után pedig növekvő sorrendben írjuk ki.
+Az N = 1 esetben a 0-t kihagyjuk, mert a természetes számok között keressük az Armstrong-számokat.
+*/
+/*
 Hint 1: || A számjegyek N-edik hatványait érdemes előre kiszámolni 0..9-re, mert sokszor kell majd őket összeadni. ||
 Hint 2: || Nem muszáj az összes N-jegyű számot végignézni: elég a számjegy-multihalmazokat vizsgálni, és megnézni, visszakapod-e ugyanazt a számjegyeloszlást. ||
 */
@@ -49,6 +52,10 @@ int main() {
     dfs(0, n);
     sort(answers.begin(), answers.end());
     answers.erase(unique(answers.begin(), answers.end()), answers.end());
-    for (long long x : answers) cout << x << '\n';
+    for (size_t i = 0; i < answers.size(); ++i) {
+        if (i) cout << ' ';
+        cout << answers[i];
+    }
+    cout << '\n';
     return 0;
 }

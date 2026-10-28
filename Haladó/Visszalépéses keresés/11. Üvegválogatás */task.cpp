@@ -1,38 +1,70 @@
 /*
-Hungarian megoldás: minden üvegtípushoz külön kiválasztjuk azt a ládát, ahol a
-legtöbb azonos típusú üveg már eleve benne van.
-
-Hint 1: || Egy üvegtípus átrakási költsége csak attól függ, melyik ládát jelöljük ki neki. ||
-Hint 2: || A típusok egymástól függetlenül optimalizálhatók. ||
+Megoldás lényege: minden üvegfajtához külön ládát jelölünk ki (K ≤ N), és azt keressük, hogy a
+kijelölt ládákban összesen hány üveg marad a helyén. A fajtákat sorban vesszük, és visszalépéssel
+kipróbáljuk az összes még szabad ládát; a legjobb összeget megjegyezzük. Ha a fajtákhoz már csak
+kevés hasznos hely maradhat, a fajtánkénti legnagyobb darabszámok összege alapján levágjuk az ágat.
+Az átrakások száma az összes üveg és a helyben maradók számának különbsége. N ≤ 10 esetén a
+visszalépéses keresés belefér az időkorlátba.
+*/
+/*
+Hint 1: || A kijelölt ládában már meglévő darabszám az, amit nem kell átrakni: az összes üvegből ezt kell levonni. ||
+Hint 2: || Különböző fajtákhoz különböző ládák tartoznak, ezért a fajtákat sorban véve visszalépéssel próbáld végig a még szabad ládákat. ||
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
+int n, k;
+vector<vector<int>> a;
+vector<long long> ub;
+vector<int> cur, best;
+vector<char> used;
+long long bestKept = -1;
+
+void dfs(int j, long long kept) {
+    if (j == k) {
+        if (kept > bestKept) {
+            bestKept = kept;
+            best = cur;
+        }
+        return;
+    }
+    if (kept + ub[j] <= bestKept) return;
+    for (int c = 0; c < n; ++c) {
+        if (used[c]) continue;
+        used[c] = 1;
+        cur[j] = c;
+        dfs(j + 1, kept + a[c][j]);
+        used[c] = 0;
+    }
+}
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n, k;
     cin >> n >> k;
-    vector<vector<int>> a(n, vector<int>(k));
+    a.assign(n, vector<int>(k));
+    long long total = 0;
     for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < k; ++j) cin >> a[i][j];
+        for (int j = 0; j < k; ++j) {
+            cin >> a[i][j];
+            total += a[i][j];
+        }
     }
-    vector<long long> ossz(k);
-    for (int j = 0; j < k; ++j) for (int i = 0; i < n; ++i) ossz[j] += a[i][j];
-    long long moves = 0;
-    vector<int> valaszt(k);
-    for (int j = 0; j < k; ++j) {
-        int best = 0;
-        for (int i = 1; i < n; ++i) if (a[i][j] > a[best][j]) best = i;
-        valaszt[j] = best + 1;
-        moves += ossz[j] - a[best][j];
+    ub.assign(k + 1, 0);
+    for (int j = k - 1; j >= 0; --j) {
+        int mx = 0;
+        for (int i = 0; i < n; ++i) mx = max(mx, a[i][j]);
+        ub[j] = ub[j + 1] + mx;
     }
-    cout << moves << '\n';
+    cur.assign(k, 0);
+    used.assign(n, 0);
+    dfs(0, 0);
+    cout << total - bestKept << '\n';
     for (int j = 0; j < k; ++j) {
         if (j) cout << ' ';
-        cout << valaszt[j];
+        cout << best[j] + 1;
     }
     cout << '\n';
     return 0;

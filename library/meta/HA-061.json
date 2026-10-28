@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/79. Logisztikai központ",
+    "method": "Átmérő két végpontjából mért távolságok; excentricitás = max(d_a, d_b), minimum keresése.",
+    "category": "Gráf: fa, átmérő",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["fa", "átmérő", "távolság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/8. Erősen összefüggővé alakítás ***",
+    "method": "Erős komponensek Kosaraju-val; a nyelő- és a forráskomponens közé húzott él zárja a kört.",
+    "category": "Gráf: erős komponensek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["irányított gráf", "erős összefüggőség", "komponens"],
+    "note": "Több megoldás esetén bármelyik megadható, ezért kézi. A minta.zip csak a feladat.pdf-et tartalmazza, be/ki pár nincs, ezért a validate.py „nincs minta”-t jelez. A PDF példája (7 2) és 300 véletlen félig összefüggő gráf a library/.work/HA-061/check8.py ellenőrzővel egyezik; a legnagyobb (N=10 000) teszten 0,05 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/80. Hálózatjavítás",
+    "method": "Egyetlen erős komponens; DFS-visszaél vagy fabeli él, topologikus rendezés, vágásszámlálás.",
+    "category": "Gráf: körök, DFS",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["irányított gráf", "körök", "dfs"],
+    "note": "A vonalak kiírási sorrendje tetszőleges, ezért kézi. A validate.py sorrendeltérést jelez (a kiírt halmaz mindkét mintával egyezik), a helyességet a library/.work/HA-061/check80.py brute force ellenőrzi: több mint 400 véletlen és 100 láncos, körös teszten egyezett. A legnagyobb (N=10 000, M≈3·10^5) teszten 0,05 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/81. Városok",
+    "method": "Minimális élefedés sor–oszlop páros gráfban: csúcsok száma − maximális párosítás.",
+    "category": "Párosítás, élefedés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["párosítás", "kétoldalú gráf", "lefedés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

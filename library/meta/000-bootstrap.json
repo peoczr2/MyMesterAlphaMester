@@ -1,0 +1,4338 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/1. Ádám és Éva ismét játszik ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/2. Ádám és Éva játszik ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/3. Ádám és Éva megint játszik *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/5. Bábuk **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/6. Bélyeg *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/9. Csapdák kikerülése *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/10. Csomagküldő szolgálat 2 kamionnal **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/13. Egyenletes pakolás **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/14. Egyszemélyes játek - lehető legtöbb pont **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/18. Fazekas darabszám korláttal **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/20. Fazekas kemence súlykorláttal **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/22. Fehér és fekete korongok *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/23. Gépek **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/24. Gyongy csapdával, jobbra és lefelé lépve *",
+    "method": "klasszikus jobbra-lefelé rács-DP (felülről vagy balról), irány tárolásával visszafejtett úttal; elérhetetlen célra -1",
+    "category": "DP, rács",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/25. Gyöngy és csapda, jobbra,lefelé és felfelé lépve **",
+    "method": "oszloponkénti rács-DP egy lefelé és egy felfelé söpréssel, a belépési sorokból visszafejtett úttal; elérhetetlen célra -1",
+    "category": "DP, rács",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/26. Gyöngy, jobbra és felfelé lépve *",
+    "method": "két mező akkor van egy úton, ha a második jobbra-lefelé van: a[q] + bal felső téglalap prefix-maximuma (q nélkül), majd jobbra–le–jobbra–le út p-n és q-n át",
+    "category": "DP, rács",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/29. Háromszög játek ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/30. Hegymászó **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/34. Intervallum lefedés költsége **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/37. Kemence darabszám és határidő korláttal **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/38. Kemence darabszám korláttal **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/41. Kerítésfestés **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/43. Két raktár *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/44. Kirandulas *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/45. Kitalálós játék kérdésenként fizetve ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/46. Kitalálós játék nem-válasz korláttal ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/49. Konténer pakolás egymás mellé **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/56. Legmagasabb torony ***",
+    "method": "rendezés (oldal, súly) után súlyozott LIS: dp[i] = oldal[i] + max dp[j] a ráhelyezhető j-kre, visszafejtéssel; az első sor a kockaszám (szöveg és ki fájlok szerint)",
+    "category": "DP, rendezés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/57. Legtöbb csomag 2 kamionnal *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/59. Licit **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/61. Malacpersely legkisebb értékre *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/62. Malacpersely legnagyobb értéke **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/64. Mindent begyujto robot *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/67. Munkák kezdő- és véghatáridővel *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/68. Négyzetekre darabolás ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/69. Nem kifizethető címlet *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/72. Poharak **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/73. Postabélyegek **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/74. Raktár K helyre rendezése ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/75. Raktár pakolás a sor két végéről **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/76. Rendezvény - ülőhelyek kiosztása ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/78. Robot **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/79. Robot, kincs, ado **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/80. Rúd felvágása **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/81. Szállítás **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/82. Szállítás - minimális kegkevésbé terhelt kamionnal **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/84. Számösszegzés **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/87. Szovegkirako **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/89. Táblás játék legkevesebb büntető mezővel *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/91. Tukorszavakra bontas **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/92. Túlélőverseny **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/94. Tükörszó kezdőszelete betűk törlésével **",
+    "method": "törlés-intervallum-DP hossz szerint töltve, a dp[0][r] értékekből a válasz; három gördülő sor (O(N²) idő, O(N) memória)",
+    "category": "DP, sztringek",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/95. Utazás vonattal **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/98. Hegymászó ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/100. Hátizsák probléma – sok azonos súlyú tárgy",
+    "method": "0/1 hátizsák 1-D DP-vel (súly szerint visszafelé), visszafejtés N·K-s bittáblából",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/101. Hátizsák probléma – sok azonos súlyú tárgy",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/102. Tornyok kiegyenlítése",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/103. Függőhíd",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/104. Kincsek az épületben",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/106. Vizitúra",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/109. Szóátalakítás",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/111. Találkozó",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/113. Konténer pakolás",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/114. Kerékpárverseny",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/115. Vásár",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/116. Pontgyűjtő verseny",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/117. Jelek",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/120. Videójáték",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/121. Keveset dolgozó vállalkozó",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/122. Benzinkút üzemeltetés **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/123. Múzeumi őrök **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/126. Jancsi és Juliska kitalálós játéka **",
+    "method": "minimax intervallum-DP háromágú [a,b] kérdésekkel (a semmitmondó [l,r] kérdés kizárva), O(N⁴/24) vágással",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/127. Telek eladás *",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/128. Könnyű túra **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/129. Könnyű túra",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/130. Játéktábla **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/131. Játéktábla teleporttal ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/132. Dinamit ***",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/133. Befektetés **",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/134. Növekvő Ödön és a Másoló Varázsló ****",
+    "method": "eredetik maximalizálása CDQ + Fenwick dominancia-DP-vel",
+    "category": "DP, rendezés",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/135. Az óvodai lét elviselhetetlen könnyűsége #2 ****",
+    "method": "fordított BFS intervallumos DSU-bejárással",
+    "category": "DP, gráfok",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/136. Energiatakarékos ellenőrzés ****",
+    "method": "részfa-DP két lámpastratégiával",
+    "category": "DP, fák",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/137. Ládapakolás robottal***",
+    "method": "két nyitott láda töltéseire végzett O(N*S) DP",
+    "category": "DP, állapottér",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/138. Hűtőház",
+    "method": "prefix-DP érkezési csúszással és batch-határokkal",
+    "category": "DP, ütemezés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/139. Adószedő",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/140. Táblatörés",
+    "method": "task.cpp megvan, minta- és fejlécaudit hátra",
+    "category": "DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/143. Repülők indulása és érkezése",
+    "method": "prefix-DP minimális költséggel és legkorábbi utolsó idővel",
+    "category": "DP, ütemezés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/144. Mutációk",
+    "method": "gördülő soros DP olcsó széltörléssel és korlátozott átírásokkal",
+    "category": "DP, szerkesztési távolság",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/145. Repülők indulása és érkezése korlátokkal",
+    "method": "induló/érkező prefix-DP várakozásállapottal",
+    "category": "DP, ütemezés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/146. Misztikus táblázat",
+    "method": "inklúzió-kizárás a szomszédos sorpárokra, derangement szorzóval",
+    "category": "DP, kombinatorika",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/147. Majomház",
+    "method": "lambda-büntetéses exact DP monotón elődjelöltekkel",
+    "category": "DP, szakaszfelosztás",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/148. Regex",
+    "method": "blokkos DP prefixmaximumokkal a közös és alternációs részekre",
+    "category": "DP, sztringek",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/4. Asztalok ***",
+    "method": "időbeli söprés + távozás szerinti min-kupac: a legkorábban távozó vendég távozásakor új asztal a legkorábban távozó legfeljebb K jelenlévővel",
+    "category": "Intervallumok, mohó",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/5. Autó *",
+    "method": "a tesztek szerinti értelmezés: tankolások a megadott sorrendben, legrövidebb elég előtag (elakadáskor a következő tankolás bevonása)",
+    "category": "Szimuláció, mohó",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/10. Fényképész a rendezvényen ***",
+    "method": "legkésőbbi fotó (min U-1 a hátralévőkre), kihívásonként T hosszú ablak és legfeljebb D kép; hátulról minimum + prefix összeg",
+    "category": "Intervallumok, mohó",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/54. Csoportképek ***",
+    "method": "időbeli söprés + távozás szerinti min-kupac: a távozó vendég a K legkorábban távozó jelenlévővel kerül képre (K<=2-re optimális, K>=3-ra a szerzői mohó, nem mindig optimális)",
+    "category": "Intervallumok, mohó",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/80. Tejeskocsik",
+    "method": "mindig a leghosszabb jó szakasz (összeg <= K, időtáv <= T); azonos idejű párnál a nagyobb beférő tétel marad a kocsiban",
+    "category": "Sorozat darabolása, mohó",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/2. Árvízvédelem ***",
+    "method": "2N-1 szakaszra bontott bináris fa komponensekre vágása",
+    "category": "Rendezett fa, mohó",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/17. Favágás ***",
+    "method": "exact K vágásos fa-DP, részfák összefésülése",
+    "category": "Bináris fa, DP",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/29. Kieséses csapatverseny *",
+    "method": "kieséses erdő, fokszámok és részfaméretek",
+    "category": "Erdő, részfák",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/30. Kieséses verseny *",
+    "method": "kieséses erdő, győzelemszámok és részfaméretek",
+    "category": "Erdő, részfák",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/31. Lovak ***",
+    "method": "topologikus útszám-DP az ősökre és teljes utakra",
+    "category": "DAG, útszámlálás",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/32. Őrhangyák ***",
+    "method": "legmélyebb őrizetlen élhez a K-adik ős választása",
+    "category": "Fa, mohó",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/33. Raktár *",
+    "method": "raktárba gyökerezett fa, élkapacitással korlátos részfa-hozzájárulás",
+    "category": "Fa, részfaösszeg",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/34. Sereg **",
+    "method": "éves belépések mellett mélység-, levél- és fokszámkarbantartás",
+    "category": "Fa, inkrementális statisztika",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/35. Szállítás **",
+    "method": "nettó részfatöbblet és újrahasznosítható kamionok száma",
+    "category": "Fa, DP",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/36. Titkos társaság **",
+    "method": "legmélyebb elég nagy tökéletes bináris részfa keresése",
+    "category": "Bináris fa, DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/37. Titkos társaság 1 *",
+    "method": "üres A/B helyek számlálása részfánként",
+    "category": "Bináris fa, részfák",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/39. Titkos társaság 3 **",
+    "method": "részfaméret, ős-leszármazott reláció és távolság",
+    "category": "Fa, LCA",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/40. Titkos társaság 4 **",
+    "method": "részfaméret, csúcstávolság és két BFS-es átmérő",
+    "category": "Fa, átmérő",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/41. Trópusi fa ***",
+    "method": "normál és tükrözött részfaazonosítók összehasonlítása",
+    "category": "Bináris fa, kanonizálás",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/42. Túra *",
+    "method": "közös downstream pont keresése és láncpozíció-jelölés",
+    "category": "Erdő, szülőlánc",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/43. Újság *",
+    "method": "részfaméret, mélység és legmélyebb közös ős",
+    "category": "Fa, részfák",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/44. Ügynökök lecserélése **",
+    "method": "részfa-lefedéses fa-knapsack legalább fél szervezetre",
+    "category": "Fa, DP",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/45. Üzenetek *",
+    "method": "zárójeles fa egyszeri parzolása fokszámra, mélységre, levelekre",
+    "category": "Fa-parszolás, string",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/48. Vállalat – üzenet az igazgatónak *",
+    "method": "K távolságra levő csúcsok kigyűjtése szülőlistából",
+    "category": "Fa, mélység",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/49. Vasút ***",
+    "method": "leghosszabb lefelé induló egygyerekes szakasz keresése",
+    "category": "Fa, láncok",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/50. Titkos társaság alcsoport ***",
+    "method": "legmélyebb elég nagy tökéletes bináris részfa keresése",
+    "category": "Bináris fa, DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/51. Bináris fa magassága és szélessége ***",
+    "method": "zárójeles bináris fa magassága és szintszélessége",
+    "category": "Bináris fa, parszolás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/52. Fa magassága és szélessége ***",
+    "method": "általános zárójeles fa magassága és szintszélessége",
+    "category": "Fa, parszolás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/54. Körök",
+    "method": "Kahn-levágás + reverse DFS a cikluskomponensekre",
+    "category": "Funkcionális gráf, ciklusok",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/55. Titkos küldemény",
+    "method": "ősök lánca + részfánkénti mélységszámlálás Euler-idővel",
+    "category": "Fa, mélység",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/56. Konverzió",
+    "method": "veremmel épített fa + minimális zárójelezés precedencia szerint",
+    "category": "String, parszolás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/57. Banda",
+    "method": "maximum független halmaz dp0/dp1-gyel, rekurzió nélkül (S[i] < i: i = N..1 sorrend), visszaépítés szigorú dp1 > dp0 szabállyal (= hivatalos kimenet)",
+    "category": "Fa-DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/58. DNS",
+    "method": "Aho-Corasick + intervallumfedés greedy",
+    "category": "String, automata, mohó",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/59. Családfa",
+    "method": "mélységszámítás a gyökértől, legmélyebb leszármazottak kigyűjtése",
+    "category": "Fa, BFS",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/61. Vizitúra",
+    "method": "két bejárásos fa-átmérő súlyozott éleken",
+    "category": "Fa, átmérő",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/62. Szigetek",
+    "method": "részfák sorrendjeinek számlálása multinomialis DP-vel",
+    "category": "Fa, kombinatorika",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/63. Közös ősök",
+    "method": "legközelebbi közös ős lekérdezések",
+    "category": "LCA, bináris emelés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/64. Közös ősök száma",
+    "method": "LCA mélységéből közös ősök száma",
+    "category": "LCA, bináris emelés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/66. Szótár",
+    "method": "beszúrási sorrend szerinti prefixösszegzés",
+    "category": "Trie, prefixszámolás",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/67. Átfedő intervallumok",
+    "method": "10-es ciklusú szegmensfa forgatással",
+    "category": "Szegmensfa, lazy",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/70. Találós kérdések",
+    "method": "címkefrekvencia a kérdésfán",
+    "category": "Fa, DFS",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/71. Csővezetés",
+    "method": "célcsapok ősútjainak uniója",
+    "category": "Fa, részfa",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/72. Csapok zárása",
+    "method": "célmentes maximális részfák lezárása",
+    "category": "Fa, részfa",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/77. Tornyok ****",
+    "method": "jobb oldali láthatósági intervallumok offline fedése",
+    "category": "Szegmensfa, intervallum",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/81. Útadó",
+    "method": "élhasználati számok szerinti adóoptimalizálás",
+    "category": "Fa, súlyozás",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/90. Kulcsember",
+    "method": "centroid keresés maximális komponens minimalizálásával",
+    "category": "Fa, centroid",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/92. Titkos tömb",
+    "method": "next greater tömb visszaállítása preorderrel",
+    "category": "Permutáció, stack",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/93. Legtávolabbi leszármazott",
+    "method": "DFS mélységmaximum",
+    "category": "Fa, mélység",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/3. Árvízmentes folyószakaszok átlagos hossza *",
+    "method": "800 cm alatti maximalis szakaszok gyűjtése és pontos tudományos formátumú átlagkiírás",
+    "category": "Sorozatszámítás, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/5. Azonos csoportok *",
+    "method": "Diákhalmazok kódolása és azonos csoportok összeszámolása rendezett map-pel",
+    "category": "Halmazok, Szűrés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/7. Csoportok *",
+    "method": "Nyelvhalmazok zártsági ellenőrzése sporthalmazokkal bitsetekkel",
+    "category": "Bitset, Halmazzártság",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/8. Duplavermes vasút *",
+    "method": "Konfliktusgraf bipartit ellenőrzése a két oldalsín közti szétosztáshoz",
+    "category": "Gráf, Két színezés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/12. Futóverseny *",
+    "method": "Csapathoz tartozó érkezési helyek összegzése, teljes csapatok és győztes kiválasztása",
+    "category": "Fokszám, Rangsorolás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/13. Halak **",
+    "method": "Tilalmi intervallumok rendezése, egyesítése és a szabad szakaszok kiírása",
+    "category": "Intervallumok, Összefésülés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/15. Ismételgető *",
+    "method": "Minden legalább kétszer előforduló részsztring megszámlálása és lexikografikus rendezése",
+    "category": "Sztringek, Részsztringek",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/16. Játékosok nem szerencsés napjai *",
+    "method": "Napi jelenlét diff-tömbbel, majd a kétszemélyes napok azonos párokká összefűzése",
+    "category": "Szimuláció, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/18. Kiállítás *",
+    "method": "Kezdőpont szerint rendezett zárt intervallumok egyesítése",
+    "category": "Intervallumok, Összefésülés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/19. Kirándulás az első E helyezettnek *",
+    "method": "Minden verseny első E helyezettjének halmazuniója",
+    "category": "Halmazok, Rangsorolás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/20. Kirándulás legfeljebb K versenyzőnek ***",
+    "method": "E kipróbálása, a top-E unió méretének ellenőrzése és a legnagyobb jó E kiválasztása",
+    "category": "Halmazok, Keresés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/22. Könyvtári pakolás *",
+    "method": "A permutáció ciklusfelbontásából a minimális csere-szám meghatározása",
+    "category": "Permutáció, Ciklusok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/23. Közös árak **",
+    "method": "Két árhalmaz metszetének legkisebb és legnagyobb elemének megkeresése",
+    "category": "Halmazok, Metszet",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/24. Közös nyaralás **",
+    "method": "Két szabad intervallumhalmaz metszetének összefűzése és rendezése",
+    "category": "Intervallumok, Metszet",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/25. Maratoni futóverseny **",
+    "method": "Az összes megjelenő országkód egyedi összegyűjtése és rendezett kiírása",
+    "category": "Halmazok, Rendezés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/26. Maximális vásárlás **",
+    "method": "Két rendezett árulista összefésülése max- és összegszámítással",
+    "category": "Rendezett összefésülés, Halmazok",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/27. Mindenhol legolcsóbb áru **",
+    "method": "Két üzlet közös cikkeit kiszűrő, X alatti árküszöbös szűrés",
+    "category": "Map, Halmazmetszet",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/28. Mindenhol van adás ***",
+    "method": "Minden adó közös fogható időszakainak iteratív metszése",
+    "category": "Intervallumok, Közös metszet",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/29. Mondat *",
+    "method": "A mondat szavainak feldarabolása és négy különböző újrarendezése",
+    "category": "Sztringek, Átalakítások",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/30. Párosít *",
+    "method": "Balról jobbra haladva a hiányzó párt egy cserével a következő helyre húzzuk",
+    "category": "Mohó, Cserék",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/31. Pártok *",
+    "method": "Két ország választási időszakainak közös, azonos jellegű szakaszai",
+    "category": "Dátumok, Intervallumok",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/32. Rádióadók **",
+    "method": "Két időrendben adott adássorozat első átfedő párjának megkeresése",
+    "category": "Intervallumok, Kétmutatós",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/33. Rendszergazda *",
+    "method": "Napi diff-tömbös sweep a biztonságos és veszélyes napokra",
+    "category": "Szimuláció, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/34. Televízióadók *",
+    "method": "Óránkénti lefedettség maximuma és a leghosszabb nulla-szakasz keresése",
+    "category": "Intervallumok, Sweep",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/35. Utazó *",
+    "method": "Közös városlátogatások név szerinti metszése időrendben",
+    "category": "Intervallumok, Kétmutatós",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/36. Valahol olcsóbb áru **",
+    "method": "Az X alatti árak kódjainak uniója a két üzletből",
+    "category": "Map, Unió",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/37. Vásárlás **",
+    "method": "Közös áruk min-készlete és kizárólagos áruk készleteinek kiválasztása",
+    "category": "Rendezett összefésülés, Halmazok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/38. Veremautomata *",
+    "method": "A bemeneti permutációból a legnagyobb 1..M prefix stack-szimulációja",
+    "category": "Verem, Prefix",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/39. Veremsoros vasút *",
+    "method": "Queue- és stack-szerű oldalsínekhez rendelt monotón részszekvenciák DP-je",
+    "category": "Intervallumok, Két szerkezet",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/40. Vitorlás verseny egy futamán indultak **",
+    "method": "Futamonkénti indulók gyakoriságának összegyűjtése és az egyszer szereplők kiírása",
+    "category": "Számlálás, Halmazok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/41. Vitorlás verseny minden futamán indultak **",
+    "method": "Futamok indulóinak halmazmetszete",
+    "category": "Számlálás, Metszet",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/42. Erőpróba **",
+    "method": "Pontosan két próbán szereplők kiválogatása gyakoriságszámlálással",
+    "category": "Számlálás, Halmazok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/43. Titkos ügynökök **",
+    "method": "Két idősor közös fedésének összhossza",
+    "category": "Intervallumok, Kétmutatós",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/44. Mintakeresés ****",
+    "method": "Olyan négyes keresése, ahol a 3. a legnagyobb, a 4. a legkisebb",
+    "category": "Fenwick-fa, Mintázat",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/47. Vasúti menetrend ***",
+    "method": "Szakaszok lefedettségének vizsgálata kétirányú menetrendek között",
+    "category": "Intervallumok, Kétmutatós",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/48. Ranglista",
+    "method": "A top L vagyon kiválasztása országonkénti számlálással",
+    "category": "K-way merge, Prioritási sor",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/49. Tolerancia",
+    "method": "Leghosszabb max-min <= t részsorozat keresése",
+    "category": "Csúszóablak, Deque",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/50. Dobozok",
+    "method": "Kezdeti és célbeli lánc-élek száma mínusz a közös levélprefixekből megőrizhető élek",
+    "category": "Láncok, Szülőmutatók",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/52. Megfigyelés",
+    "method": "Minden listából egy elemet tartó minimum-rés keresés kupaccal",
+    "category": "Heap, K-way merge",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/53. Csak egy bolygón volt élet",
+    "method": "Félig nyitott intervallumos sweep a pontosan egy aktív bolygós szakaszokra",
+    "category": "Sweep, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/54. Legalább 2 bolygón volt élet",
+    "method": "Félig nyitott intervallumos sweep a legalább két aktív bolygós szakaszokra",
+    "category": "Sweep, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/56. k-homogén sorozat",
+    "method": "Leghosszabb ablak, ahol az ablakhossz mínusz a pontos maximum-gyakoriság legfeljebb K",
+    "category": "Csúszóablak, Gyakoriság",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/57. Kereskedők",
+    "method": "Rendezett névlisták szimmetrikus differenciája duplikátum-összevonással",
+    "category": "Kétmutatós, Halmazkülönbség",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/58. Fal",
+    "method": "A legnagyobb histogram-teglalap területének meghatározása monoton veremmel",
+    "category": "Verem, Histogram",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/59. Virágárusok",
+    "method": "Két arus hianyossaganak kulon merge-es kiszamitasa es a jobb valasztasa",
+    "category": "Rendezett összefésülés, Minimum",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/60. Állatkereskedők",
+    "method": "Két tenyésztő hiányosságának merge-es kiszámítása és a jobb választása",
+    "category": "Rendezett összefésülés, Minimum",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/61. Legyőzött és legyőző versenyző",
+    "method": "Bal oldali legközelebbi kisebb és jobb oldali legközelebbi nagyobb index keresése",
+    "category": "Monoton verem, Szomszédkeresés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/62. Legyőzött és legyőző versenyzők",
+    "method": "Előző és következő kisebb/nagyobb indexek négy monotón veremmel",
+    "category": "Monoton verem, Szomszédkeresés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/63. Nyelvek programozási versenyen",
+    "method": "Illegális választások, üresen maradt nyelvek és választottsági darabszámok kigyűjtése",
+    "category": "Map, Számlálás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/64. Sorozatok fésűs egyesítésből",
+    "method": "Két nemcsökkenő részsorozatba sorolás legszorosabb farokhoz illesztéssel",
+    "category": "Mohó, Két sorozat",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/65. Sűrű részsorozat",
+    "method": "Minimum megengedett maximumérték keresése és legjobboldalibb M-lefedő kiválasztás",
+    "category": "Mohó, Bináris keresés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/67. Ajándék",
+    "method": "Pozitív számos pontos összegű résztömb legbaloldalibb kétmutatós keresése",
+    "category": "Két mutató, Prefixösszeg",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/68. Időjárási csúcsok",
+    "method": "Globális meleg/hideg jelölés, prefixpárok számlálása hash map-pel: (W[l-1], C[l-1]) = (W[r]-K, C[r]-L)",
+    "category": "Prefixösszeg, Hash map",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/69. Téglalapok asztalon",
+    "method": "Az aktív téglalapmagasságok maximumának minimuma eseménysöpréssel",
+    "category": "Sweep, Multiset",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/71. Autószállítás",
+    "method": "Pozitív darabszámú legrövidebb legalább H összegű időszak keresése",
+    "category": "Két mutató, Minimumablak",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/73. Nyaralások",
+    "method": "Rendezett árakon legnagyobb F alatti hármas keresése",
+    "category": "Két mutató, Három összeg",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/74. Keresősorozatok",
+    "method": "Keresési útvonal érvényességének ellenőrzése szűkülő értékintervallummal",
+    "category": "BST, Intervallumok",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/75. Vizsga",
+    "method": "Azonos es kulonbozo valaszhelyekbol felirt minimalis es maximalis pontszam",
+    "category": "Logika, Esetszétválasztás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/76. Színhalmazok",
+    "method": "Kedvencszin-halmazok paronkenti reszhalmazvizsgalata rendezett listakkal",
+    "category": "Halmazok, Részhalmaz",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/77. Vasúti kocsik mellékvágányokon",
+    "method": "Leghosszabb olyan prefix, ahol minden inverzio ugyanazon ertekhataron ivel at",
+    "category": "Permutáció, Inverziók",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/79. Vasúti kocsik kitérő vágányon",
+    "method": "A PDF es a helyi mintaarchivum elter, a pontos feladatmodell megallapitasa meg folyamatban",
+    "category": "Konstrukció, Permutáció",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi",
+    "blocked": false,
+    "minta": "kézi"
+  },
+  {
+    "path": "Haladó/Sorozatok/80. Dinnyeárusok",
+    "method": "Rendezett lakhelyek es arusitohelyek mohó maximum parositasa",
+    "category": "Két mutató, Párosítás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/81. Háziorvosok",
+    "method": "Varosindexek tavolsagga alakitasa utan maximum parositas rendezett sorozatokon",
+    "category": "Két mutató, Párosítás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/82. Nyaralás",
+    "method": "K hosszu ablakok minimumanak maximalizalasa csuszo minimumokkal",
+    "category": "Monoton deque, Csúszóablak",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/83. Közös nyaralások",
+    "method": "Ket rendezett diszjunkt intervallumlista linearis metszete",
+    "category": "Intervallumok, Metszet",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/84. Háziorvosok",
+    "method": "Ugyanaz a maximum parositas mint a 81. feladatban, masik peldanyban",
+    "category": "Két mutató, Párosítás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/85. Egyenletes",
+    "method": "K hosszu szakaszokon max-min minimalizalasa ket deque-val",
+    "category": "Monoton deque, Csúszóablak",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/86. Sebességmérő autók",
+    "method": "Ket rendezett intervallumlista uniojanak osszefesulese",
+    "category": "Intervallumok, Unió",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/87. Posta ***",
+    "method": "Minden listabol egy napot lefedo legrövidebb intervallum keresese",
+    "category": "Heap, K-way merge",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/88. Kézbesítők ***",
+    "method": "Naponkenti lefedettseggel legrovidebb ablak, ami minden kezbesitot eltalal",
+    "category": "Csúszóablak, Intervallumok",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/89. Bank **",
+    "method": "Napi ketbites jelenleti maszkbol a nem teljes napok kigyujtese",
+    "category": "Bitmaszk, Számlálás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/90. Leghosszabb sorozat hossza **",
+    "method": "K alatti Collatz-lancok memoizalt hosszaibol maximumkereses",
+    "category": "DP, Számelmélet",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/91. Ádám Éva nélkül ***",
+    "method": "Felzart intervallumok esemenysopresevel Adam \\ Eva kulonbseg",
+    "category": "Sweep, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/92. Bizonyítékraktár **",
+    "method": "Harom bites napi jelenleti maszk es a reszleges napok kiirasa",
+    "category": "Bitmaszk, Számlálás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/93. Leghosszabb sorozat ***",
+    "method": "A leghosszabb K alatti Collatz-lanc memoizalt keresese es visszaepitese",
+    "category": "DP, Rekonstrukció",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/94. Ádám vagy Éva egyedül ***",
+    "method": "Felzart intervallumok szimmetrikus differenciaja esemenysopressel",
+    "category": "Sweep, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/95. Váltakozó ***",
+    "method": "Lexikografikusan legkisebb valtakozo anagramma greedy betuvalasztassal",
+    "category": "Mohó, Gyakoriság",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/96. Ádám és Éva együtt ***",
+    "method": "Felzart intervallumok metszete esemenysopressel",
+    "category": "Sweep, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/97. Ádám és Éva közül legalább az egyik ***",
+    "method": "Felzart intervallumok unioja esemenysopressel",
+    "category": "Sweep, Intervallumok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/98. Felezős",
+    "method": "Felezesfaban a legsekelyebb egyszinu blokk megkeresese",
+    "category": "Rekurzió, Oszd meg és uralkodj",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/99. Táblajáték háromfelé",
+    "method": "Hármas szamrendszeru pozicioszimulacio sajat nagyegesszel",
+    "category": "Szimuláció, Nagy egész",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/104. Blokk elimináció",
+    "method": "Páratlan futamszám: a középső G vagy két G-távolság ≤ k; páros: két részre bontás",
+    "category": "Mohó, invariáns",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "futamok",
+      "invariáns",
+      "mohó",
+      "sztring"
+    ],
+    "note": "A régi O(M³) megoldás fix méretű tömböt használt, és M>2000-nél kilépett; az új O(N), tömb nélkül. Minden 0/1 sorozat N≤12-ig és 1500 véletlen eset (N≤22) egyezett egy független szimulációval.",
+    "solved_by": "opus",
+    "blocked": false,
+    "problematic": false,
+    "minta": ""
+  },
+  {
+    "path": "Haladó/Sorozatok/106. Találkozás - 2",
+    "method": "A vegpontokat elero lehetseges prefix-jobbralepes tartomanyok metszese",
+    "category": "Intervallumok, Konstrukció",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Sorozatok/110. Találkozás - 3",
+    "method": "Haromiranyu lepesosszegekhez tartozo prefix-tartomanyok metszese",
+    "category": "Intervallumok, Konstrukció",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/2. Autómentés ***",
+    "method": "Időalapú útszakasz-szimuláció és elérhetőségi vizsgálat",
+    "category": "Forgalmi szimuláció, Sorok",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/3. Autóút járdával **",
+    "method": "Időlépéses útszakasz-szimuláció lámpafázissal és ütközéskorláttal",
+    "category": "Forgalmi szimuláció, Időbeli események",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/4. Bábuk ütközése 1 *",
+    "method": "Egydimenziós mozgás és szélső visszafordulás lépésenként",
+    "category": "Szimuláció, Mozgás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/5. Bábuk ütközése 2 *",
+    "method": "Kétbábus ütközés kezelése előző állapotból",
+    "category": "Szimuláció, Ütközés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/6. Bábuk ütközése 3 *",
+    "method": "Kétdimenziós mozgás visszapattanással és állapotfrissítéssel",
+    "category": "Szimuláció, Vektormozgás",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/7. Életjáték *",
+    "method": "Generációnkénti tábla-másolás és szomszédszámlálás",
+    "category": "Celluláris automata, Rácsszimuláció",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/8. Hangya az egységkockán ***",
+    "method": "Állapotalapú léptetés térbeli orientációval és látogatásszámlálással",
+    "category": "Rácsmodell, Állapotgép",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/11. Huszár *",
+    "method": "Huszár-lépések állapotgépes követése",
+    "category": "Tábla, Bejárás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/12. Huszár lépésszám *",
+    "method": "Huszárlépések számának szélességi bejárása",
+    "category": "Gráf, BFS",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/15. Őrök *",
+    "method": "Őrhatókörök időbeli követése és lefedettségvizsgálat",
+    "category": "Intervallumok, Szimuláció",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/18. Benzinkút ***",
+    "method": "Sorhossz alapú tankolási/feltöltési szimuláció",
+    "category": "Sorok, Terheléselosztás",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/19. Körforgalom",
+    "method": "Körforgalmi belépés/kilépés külön leképezésekkel és időzített áthaladással",
+    "category": "Közlekedési szimuláció, Diszkrét esemény",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/21. Várólista",
+    "method": "Egyszerű várólista-szimuláció érkezési sorrenddel",
+    "category": "Sor, FIFO",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/25. Ütemezés azonos futási idővel",
+    "method": "Körkörös feladatfeldolgozás azonos futási időkre",
+    "category": "Ütemezés, Körbeforgó sor",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Szimuláció/27. Ütemezés különböző futási idővel",
+    "method": "Legrövidebb hátralévő idejű feladat kiválasztása prioritási sorral",
+    "category": "Ütemezés, Prioritási sor",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/4. Barátságos számok *",
+    "method": "Sajátosztó-összegek előszámítása és kölcsönös párkeresés",
+    "category": "Osztók, párok",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/5. Bitművelet *",
+    "method": "Átlós felsorolású pársorozat visszafejtése, majd AND/OR kiértékelés",
+    "category": "Sorozatok, bitek",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/6. Boldog számok *",
+    "method": "Számjegy-négyzetösszeg iteráció és ciklusdetektálás",
+    "category": "Számjegyek, ciklusok",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/7. Diofantoszi egyenlet ***",
+    "method": "gcd-szűrés és moduláris feltétel nemnegatív megoldhatóságra",
+    "category": "Diofantoszi, kongruenciák",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/8. Egyes számok *",
+    "method": "Digitális gyök karakterizáció mod 9 alapján",
+    "category": "Digitális gyök",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/9. Egységtört **",
+    "method": "Egyiptomi törtbontás a klasszikus mohó kivonással",
+    "category": "Törtek, mohó",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/37. Irányítószámok ***",
+    "method": "Fano-sík alapú közös prímosztós családépítés",
+    "category": "Konstrukció, kombinatorika",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/38. Kártyakeverés ***",
+    "method": "Permutáció-négyzetre emelés visszafejtése ciklusfelbontással",
+    "category": "Permutációk, ciklusok",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/39. Számok ***",
+    "method": "Nemnegatív lineáris kombináció eldöntése gcd és maradék alapján",
+    "category": "Diofantoszi, lekérdezések",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/40. Euler",
+    "method": "Prímosztók szerinti phi-számítás",
+    "category": "Euler-függvény",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/41. Faktoriális vége",
+    "method": "Az 5-ös prímtényezők összegzése a végző nullákhoz",
+    "category": "Faktoriális, oszthatóság",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/42. Nem négyzetmentes számok",
+    "method": "Squarefree-komplement keresése oszthatósági ellenőrzéssel",
+    "category": "Négyzetmentesség",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/43. Számok előállítása",
+    "method": "Residue-graph Dijkstra a legkisebb reprezentálható értékekhez",
+    "category": "Maradékosztályok, Dijkstra",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/44. Ritka szám",
+    "method": "Fibonacci-számlálás a szomszédos 1-eseket tiltó bináris számokra",
+    "category": "Bináris DP",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/45. Páratlan számok",
+    "method": "Popcount-paritás szerinti sorozatgenerálás",
+    "category": "Bitek, paritás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/46. Számok előállítása",
+    "method": "Több lekérdezéses coin-semigroup minimum residue-graph alapon",
+    "category": "Maradékosztályok, Dijkstra",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/47. Kastély",
+    "method": "Méretek közös osztójának maximalizálása teljes gcd-vel",
+    "category": "LNKO alkalmazás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/48. Börtön",
+    "method": "Tökéletes négyzet karakterizáció a kapcsolások paritásából",
+    "category": "Osztók, megfigyelés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/49. Páros számok",
+    "method": "Popcount-paritás szerinti sorozatgenerálás",
+    "category": "Bitek, paritás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/50. Számok összege",
+    "method": "Rendezett sorozaton kétmutatós háromszám-összeg keresés",
+    "category": "Két mutató, 3SUM",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/51. Szám előállítási lehetőségei",
+    "method": "Háromszám-összegek számlálása rendezett sorozatban",
+    "category": "Két mutató, számlálás",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/52. Lineáris kombináció",
+    "method": "Legkisebb elérhető `X >= C` szám keresése residue-alapon",
+    "category": "Maradékosztályok",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/53. Sokszögszámok",
+    "method": "N-szögszám zárt alakjának kiértékelése mod `1 000 000`",
+    "category": "Képletek",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/54. Terem",
+    "method": "Négyzetes lefedés és darabszám gcd-alapú leírással",
+    "category": "LNKO, mohó",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/55. Középpontos sokszögszámok",
+    "method": "Középpontos N-szögszám zárt alakja mod `1 000 000`",
+    "category": "Képletek",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/56. K-osztható párok",
+    "method": "Maradékosztályok számlálása és párok összerakása",
+    "category": "Maradékok, kombinatorika",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/57. Térfogat",
+    "method": "Tényezőhármasok vizsgálata a legkiegyensúlyozottabb felbontásért",
+    "category": "Osztók, optimalizálás",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/58. Számjegy keverés",
+    "method": "Legkisebb érvényes számjegy-permutáció ismételt használata",
+    "category": "Számjegyek, mohó",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/59. Házszámok",
+    "method": "Helyiértékes digit count és bináris keresés a legnagyobb megépíthető házszámra",
+    "category": "Bináris keresés, számjegyszámlálás",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/1. Csoki ***",
+    "method": "Q elemű részhalmazok keresése típus- és páronkénti számlálókkal",
+    "category": "Kombinatorika, visszalépés, design",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/2. Kirakó ***",
+    "method": "Maximalizált átfedésű szóelhelyezés sorban, visszalépéssel",
+    "category": "Visszalépés, keresés, átfedés",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/3. Konferencia *",
+    "method": "Témák szekciókra osztása kapacitásos DFS-sel",
+    "category": "Particionálás, visszalépés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi",
+    "blocked": false,
+    "minta": "kézi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/4. Megye ***",
+    "method": "DSATUR-szerű megyeszínezés 4 színnel",
+    "category": "Gráf, színezés, visszalépés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/5. Munka **",
+    "method": "Min-költségű bipartit párosítás",
+    "category": "Párosítás, költség, flow",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/6. Ritmus **",
+    "method": "Soronkénti mintabontás dinamikus programozással",
+    "category": "DP, sztring, visszalépés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/7. Sudoku 1 *",
+    "method": "4x4 sudoku teljes felsorolásból választás",
+    "category": "Sudoku, keresés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/8. Sudoku 2 *",
+    "method": "4x4 sudoku teljes megoldáshalmazának megszámolása",
+    "category": "Sudoku, számlálás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/9. Szoborpark **",
+    "method": "Egyszerű utak DFS-es megszámlálása",
+    "category": "Gráf, bejárás, visszalépés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/10. Ültetés **",
+    "method": "Kapacitásos bipartit párosítás vendég-szék között",
+    "category": "Matching, flow",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/11. Üvegválogatás *",
+    "method": "Típusonként független legjobb ládaválasztás",
+    "category": "Greedy, kombinatorika",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/12. Üzletek *",
+    "method": "Kapacitásos boltpékség hozzárendelés DFS-sel",
+    "category": "Visszalépés, kapacitás",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/13. Tehenészet",
+    "method": "Üzemenkénti részhalmaz-DP: dp[üzem][beosztott tehenészetek maszkja], részmaszk-felsorolás O(M·3^N)",
+    "category": "Bitmask DP, hozzárendelés kapacitással",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/14. Hátizsák probléma – sok kicsi tárgy",
+    "method": "0/1 hátizsák 1-D DP-vel (súly szerint visszafelé), visszafejtés N·K-s bittáblából",
+    "category": "DP, rekonstrukció",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/15. Biztonságos leszállás",
+    "method": "Sorrendpróbálás és legkisebb távolság bináris keresése",
+    "category": "Keresés, bináris keresés",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/16. Szókereső",
+    "method": "Szókeresés négyirányú visszalépéssel",
+    "category": "DFS, rács",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/17. Iskolaválasztás",
+    "method": "Kapacitásos iskolabeosztás bipartit hálózaton",
+    "category": "Matching, flow",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/18. L üzlet K pékség",
+    "method": "Pékségenkénti részhalmaz-DP: dp[pékség][kiszolgált üzletek maszkja], részmaszk-felsorolás O(K·3^L)",
+    "category": "Bitmask DP, hozzárendelés kapacitással",
+    "difficulty": null,
+    "goal": "Mélyebb megértés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/19. Munkásfelvétel maximált árral",
+    "method": "Bitmaskos minimálköltségű tökéletes párosítás költségkerettel",
+    "category": "DP, bitmask",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/20. Munkásfelvétel: N állás – N jelentkező",
+    "method": "Min-költségű tökéletes párosítás",
+    "category": "Matching, költség",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/21. Munkásfelvétel: N állás – N jelentkező – backtrack",
+    "method": "Feasible bipartit párosítás találása",
+    "category": "Matching, keresés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/22. Munkásfelvétel: N állás – N jelentkező, nem lehet mind felvenni",
+    "method": "Maximum kardinalitású, utána minimum költségű párosítás",
+    "category": "Matching, költség",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/23. N bástya",
+    "method": "Az összes permutáció kiírása",
+    "category": "Permutáció, visszalépés",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/24. N vezér (összes megoldás)",
+    "method": "Teljes N-vezér felsorolás soronként",
+    "category": "Visszalépés, sakk",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/25. N vezér (egy megoldás)",
+    "method": "Első N-vezér megoldás megállással",
+    "category": "Visszalépés, sakk",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/26. N-ből K az összes lehetséges sorrendben",
+    "method": "K hosszú permutációk generálása",
+    "category": "Permutáció",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/27. N-ből K az összes lehetséges növekvő sorrendben",
+    "method": "Lexikografikus kombinációgenerálás",
+    "category": "Kombináció",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/28. Szóösszeadó fejtörő",
+    "method": "SEND + MORE = MONEY brute force megfejtése",
+    "category": "Visszalépés, számjáték",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/29. Az összes lehetséges speciális sorrend",
+    "method": "Szomszédos csere mintázatok rekurzív generálása",
+    "category": "Rekurzió, kombinatorika",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/30. Körmérkőzés új párosítása",
+    "method": "Tiltott élek nélküli tökéletes párosítás",
+    "category": "Párosítás, gráf",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/31. Svájci rendszerű körmérkőzés",
+    "method": "Minimum összpontkülönbségű párválasztás bitmask DP-vel",
+    "category": "Párosítás, DP",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/32. Banda szétválasztása",
+    "method": "Első sor maszkos kipróbálása és soronkénti kényszerítés",
+    "category": "Brute force, Lights Out",
+    "difficulty": null,
+    "goal": "Magyarázat",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/33. Fesztivál",
+    "method": "Érkezési sorrend szerinti helyszínbeosztás",
+    "category": "Visszalépés, csoportosítás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/34. Kirándulás",
+    "method": "Buszos beosztás korlátozásokkal",
+    "category": "Visszalépés, csoportosítás",
+    "difficulty": null,
+    "goal": "Bevezetés",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/1. A legkvesebb gyerek *",
+    "method": "Gyerekszámláló tömb, minimum keresés",
+    "category": "Szülők / tömbök",
+    "difficulty": null,
+    "goal": "Alapszintű tömb-feldolgozás",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/2. A legkevesebb testvér",
+    "method": "Szülőnként gyereklista, jelölő tömbös testvérszámlálás",
+    "category": "Szülők / listák",
+    "difficulty": null,
+    "goal": "Kapcsolatok gyűjtése és összesítése",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/3. A legtöbb féltestvér *",
+    "method": "Kétirányú szülő-gyerek listák, közös szülők számolása",
+    "category": "Szülők / listák",
+    "difficulty": null,
+    "goal": "Féltestvér fogalom gyakorlása, gyakori kapcsolatok kezelése",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/4. A legtöbb gyerek *",
+    "method": "Gyerekszámláló tömb, maximum keresés",
+    "category": "Szülők / tömbök",
+    "difficulty": null,
+    "goal": "Egyszerű számlálás és maximum kiválasztás",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/5. A legtöbb testvér",
+    "method": "Szülőnként gyereklista, jelölő tömbös testvérszámlálás",
+    "category": "Szülők / listák",
+    "difficulty": null,
+    "goal": "Kapcsolatok összegyűjtése és testvérszám meghatározása",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/6. Ismeretlen szülők *",
+    "method": "Ismert szülő jelölése, végigszkennelés",
+    "category": "Szülők / tömbök",
+    "difficulty": null,
+    "goal": "Hiányzó szülői információk kiszűrése",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/7. Közös gyerek *",
+    "method": "Gyerekek és szülők listái, jelölő tömbös keresés",
+    "category": "Szülők / listák",
+    "difficulty": null,
+    "goal": "Közös gyermekhez tartozó másik szülő megkeresése",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/8. Szülők *",
+    "method": "Szülőként szereplők jelölése, növekvő sorrendű kilistázás",
+    "category": "Szülők / tömbök",
+    "difficulty": null,
+    "goal": "Egyszerű jelölő tömbös feldolgozás",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "Középhaladó/Szülők/9. Testvéreim szülei *",
+    "method": "Y testvéreinek összegyűjtése, majd a testvérek szüleinek jelölése",
+    "category": "Szülők / listák",
+    "difficulty": null,
+    "goal": "Testvér- és szülőkapcsolatok együttes kezelése",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 2. forduló/1. Maja naptár",
+    "method": "Abszolút napindex-képzés és átszámítás a 18980 napos közös ciklusban",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 2. forduló/2. Globális felmelegedés",
+    "method": "Éves összeg szerinti rangsorolás és oszloponkénti szélsőérték-ellenőrzés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 2. forduló/3. Ajándékozás",
+    "method": "Partíciós DP korlátozott legnagyobb résszel",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 3. forduló/1. Napszámosok",
+    "method": "Ledolgozott napok szorzása a napi bérrel, összegzés és maximumkeresés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 3. forduló/3. Páratlan számok",
+    "method": "Egyszerű számlálás popcount-paritással",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 2. forduló/1. Órák",
+    "method": "Mutatók szögének kiszámítása tizedfokos átskálázással",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 2. forduló/2. Osztályzatok",
+    "method": "Ponthatár szerinti osztályozás és osztályzatonkénti maximum",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 2. forduló/3. Legtöbb hegycsúcs",
+    "method": "Csúcsjelölés + prefixösszeges csúszóablak",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 3. forduló/1. Kastély",
+    "method": "Több terem oldalhosszainak gcd-je",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 3. forduló/2. Hónapok első napjai",
+    "method": "Naptári hónapkezdések szimulációja szökőév-kezeléssel",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 3. forduló/3. Távoli bolygó",
+    "method": "K-hosszú blokkok kódolása 26-os alapú számlálással",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 3. forduló/4. Kereskedők",
+    "method": "Halmazok szimmetrikus különbsége",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/1. Hideg és meleg napok",
+    "method": "Hideg/meleg jelölés + prefixösszeges intervallumszámlálás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/2. Középső életkorú",
+    "method": "Gyakorisági tömbös mediánkeresés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/3. Színhalmazok",
+    "method": "Halmazokon végzett globális gyakoriságvizsgálat",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/4. Ügyelet",
+    "method": "Pozitív napok összefüggő szakaszainak keresése",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 2. forduló/1. Bástya a sakktáblán",
+    "method": "Sor- és oszlopszakaszokra bontott BFS",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 2. forduló/2. Ellenőrzés",
+    "method": "Előre kiszámított értékpáros prefixösszegek",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 2. forduló/3. Két csoportra osztás",
+    "method": "Rendezett pontszámok közti legnagyobb rés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 2. forduló/4. Közeli elrendezés",
+    "method": "Jobb szélső fix pont átcserélése",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/1. Körmérkőzés",
+    "method": "Bitmaskos visszalépéses párosítás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/2. Pontozásos verseny",
+    "method": "Prefixes számlálás az eddigi kisebb pontszámokra",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/3. Rövid földrengések",
+    "method": "Egyedi időpontok rendezése és legnagyobb rés keresése",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/4. Szomszédok",
+    "method": "K legközelebbi település kiválasztása kétpontos bővítéssel",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/1. Vasúti kocsik mellékvágányokon",
+    "method": "Leghosszabb rendezhető prefix meghatározása",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/2. Túra",
+    "method": "Előre greedy majd visszafelé szükséglet-DP",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/3. Ismétlődés",
+    "method": "Funkcionális gráf ciklusainak keresése",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/4. Fényképezés",
+    "method": "Lefedési intervallumok differencia-tömbbel",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/1. Dinnyeárusok",
+    "method": "Kétpontos maximális egyeztetés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/2. Kerítés",
+    "method": "5-állapotú lécszimuláció",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/3. Versenypárok kialakítása",
+    "method": "Színbeli darabszámok minimálisa",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/4. Macskák",
+    "method": "Küszöbkeresés minimalizált téves besorolással",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/1. Csak egy bolygón volt élet",
+    "method": "Intervallumok szimmetrikus különbsége sweep line-nal",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/2. Ritka szám",
+    "method": "Bináris unrankelés Fibonacci-szerű számolással",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/3. Piac",
+    "method": "Bevétel-, mennyiség- és árrangok összegzése",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/4. Várólista",
+    "method": "FIFO szimuláció és várakozási intervallum sweep",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/5. Függőhíd",
+    "method": "2xN gráfon futtatott Dijkstra útvisszaállítással",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/1. Banda",
+    "method": "Fa-független halmaz DP rekurzió nélkül (i = N..1 sorrend), visszaépítés szigorú dp1 > dp0 szabállyal (= hivatalos kimenet)",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/2. Legnépszerűbb tagok",
+    "method": "Funkcionális gráf leghosszabb ciklusa",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/3. Autópálya",
+    "method": "Leggyorsabb szakaszok nyilvántartása megfigyelésekből",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/4. Tanúk",
+    "method": "Intervallumfedés mohó kiválasztással",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/5. Körutak",
+    "method": "2-mag / fokszám-lekoptatás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/1. Azonosítók",
+    "method": "Kombinatorikus rangolás és unrankelés binomiális együtthatókkal",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/2. Csapatépítés",
+    "method": "Diffsöprés + mohó intervallumfedés a lefedhető napokra",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/3. DNS",
+    "method": "Aho-Corasick + intervallumfedés greedy",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/4. Kémek",
+    "method": "DFS lowlink, artikulációs pontok",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/5. Megfigyelés",
+    "method": "K-utas heap, minimum lefedő intervallum",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/6. Számok előállítása",
+    "method": "GCD-redukció + Dijkstra maradékosztályokon",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/7. Kódok",
+    "method": "3 bites blokk-DP, runok maximalizálása",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/8. Vasutak",
+    "method": "Dijkstra + Prim-szerű bővítés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi",
+    "blocked": true,
+    "problematic": true
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/9. Hálózat felezés",
+    "method": "Connected-subtree DP, minimális határral",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/10. Dobozok",
+    "method": "Szülőváltozások összegzése",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/11. Biztonságos leszállás",
+    "method": "Permutációs ellenőrzés + bináris keresés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/12. Akadálypálya",
+    "method": "Csúcsvágás max-flow node splittinggel",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/13. Poligon",
+    "method": "A–B egyeneshez képest kétoldali rendezés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi",
+    "blocked": false,
+    "minta": "kézi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/14. Rajtszámok",
+    "method": "Interaktív rekonstrukció 10 bites lekérdezéssel",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/15. Séta",
+    "method": "SCC kondenzáció + leghosszabb út DAG-on",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/16. Akadálypálya tervezés",
+    "method": "Rétegenkénti bipartit él-fedés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/1. Fizetős utak",
+    "method": "0-1 BFS + útvisszaállítás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/2. Futárszolgálat",
+    "method": "Steiner-fa + átmérő menti bejárás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/3. Szuperhuszár",
+    "method": "Irányvektorok konvex burok/nyílásszög tesztje",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/4. Leggyorsabb szállítás",
+    "method": "Lexikografikus Dijkstra (táv, bottleneck)",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/5. Sűrű részsorozat",
+    "method": "Csúszóablak-minimum + greedy fedés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/6. Zárkód",
+    "method": "de Bruijn-sorozat Hierholzerrel",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/7. Találkozó",
+    "method": "Négy sarok-DP + útvisszaállítás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/8. Permutációk",
+    "method": "3-1-2 mentes permutáció és Dyck-szó next",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/9. Hálózat kettéosztás",
+    "method": "GF(2) lineáris rendszer",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/10. Vásárlások",
+    "method": "Bitmask DP napokra bontva",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/11. Telephelyek",
+    "method": "All-pairs Dijkstra + 3-csúcs Steiner",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/12. Konténer pakolás",
+    "method": "Dinamikus LIS kompresszált értékszegmensfával",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/13. Párhuzamos kiszámítás",
+    "method": "Műveletszám + kritikus út hossza",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/14. Táblás játék",
+    "method": "Minimum-split rekurzió + rook DP",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/15. Átfedő intervallumok",
+    "method": "10-ciklusú lazy szegmensfa",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/1. Hideg és meleg napok",
+    "method": "Előjel-jelölés + O(N^2) intervallumszámlálás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/2. Középső életkorú",
+    "method": "Gyakorisági tömb + mediánkeresés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/3. Színhalmazok",
+    "method": "Halmazbeágyazás vizsgálata rendezett listákon",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/4. Ügyelet",
+    "method": "Folyamatos pozitív szakasz keresése",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 2. forduló/1. Bástya a sakktáblán",
+    "method": "BFS sor- és oszlopszakaszokkal",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 2. forduló/2. Ellenőrzés",
+    "method": "Prefix-összegek értékenként, intervallummaximum",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 2. forduló/3. Két csoportra osztás",
+    "method": "Rendezett különbségek maximuma gyakorisági tömbön",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 2. forduló/4. Közeli elrendezés",
+    "method": "Rekurzív lexikografikus következő közeli permutáció",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/1. Körmérkőzés",
+    "method": "Bitmaskos párosítás-keresés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/2. Pontozásos verseny",
+    "method": "Gyakorisági tömbös online rangszámítás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/3. Rövid földrengések",
+    "method": "Rendezés + résközök maximuma",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/4. Szomszédok",
+    "method": "K-közeli települések kétpontos kiválasztása",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/1. Vasúti kocsik mellékvágányokon",
+    "method": "Inverziós határ és prefix-rendezhetőség",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/2. Túra",
+    "method": "Előre greedys + visszafelé minimális készlet-DP",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/3. Ismétlődés",
+    "method": "Funkcionális gráf legrövidebb ciklusa",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/4. Fényképezés",
+    "method": "Rögzített hosszúságú intervallum + sávszélesség",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/1. Dinnyeárusok",
+    "method": "Kétpontos intervallumpárosítás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/2. Kerítés",
+    "method": "5-állapotú szimuláció lécekre",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/3. Versenypárok kialakítása",
+    "method": "Színbesorolás és két minimum",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/4. Macskák",
+    "method": "Küszöbkeresés két rendezett sorozaton",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/1. Szélsőséges időjárás",
+    "method": "Két deque-vel csúszóablak minimum és maximum",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/2. Tippek",
+    "method": "Bináris keresés a rendezett sorozaton",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/3. Könnyű túra",
+    "method": "DAG leghosszabb út DP-vel rácson",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/4. Hegymászó",
+    "method": "Topologikus út-számlálás modulo 721",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/5. Kamionok",
+    "method": "Greedy kiosztás prioritási sorral",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/6. Résztömb",
+    "method": "Előjel/paritás szerinti minimális szorzatú részhalmaz",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/1. Családfa",
+    "method": "Mélységalapú legmesszebb eső leszármazott-keresés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/2. Kihalt állatok",
+    "method": "Normalizált intervallumok differencia-söprése",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/3. Növény",
+    "method": "Rekurziós növekedésszámítás és összegzés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/4. Ponthatárok",
+    "method": "Küszöbök helyi gyakorisága és szélsőértékek",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/5. Zsákfalvak",
+    "method": "Levélről induló lánchosszak vizsgálata",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/2. Szókereső",
+    "method": "DFS alapú betűlánc-keresés a táblán",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/3. DNS vizsgálat",
+    "method": "Legjobb hiányzó szakasz keresése csúszóablakkal",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/4. Cső vásárlás",
+    "method": "Unbounded knapsack rekonstrukcióval",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/5. Vizitúra",
+    "method": "Fafúrási átmérő két bejárással",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/6. Találkozások",
+    "method": "Intervallumátfedések rendezett számlálása",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/1. Időjárási csúcsok",
+    "method": "Globális meleg/hideg jelölés, prefixpárok (W, C) számlálása map-pel, az N. nappal végződő időszakokkal együtt",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/2. Kerékpárverseny",
+    "method": "Jobbra/lefelé DAG leghosszabb útja",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/3. Programgráf",
+    "method": "SCC-alapú ciklus- és elágazásszámlálás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/4. Központ",
+    "method": "Maximin Floyd-Warshall bottleneck-kel",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/5. Téglalapok asztalon",
+    "method": "Sweep line aktív magasságokkal",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/1. Maximális növekedés (25 pont)",
+    "method": "Következő kisebb elem + szegmensfa maximum",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/2. Pontgyűjtő (25 poont)",
+    "method": "Jobbról balra haladó háromirányú DP",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/3. Találós kérdés (25 pont)",
+    "method": "DFS a döntési fán és levélszámlálás",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/4. Jelek (25 pont)",
+    "method": "O(N^2) hosszú közös prefix DP",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/5. Körmérközés (25 pont)",
+    "method": "Beszúrásos Hamilton-útépítés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/6. Nyaralás (25 pont)",
+    "method": "Kétmutatós háromösszeg-keresés",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/1. Vonatok",
+    "method": "Peron- és vágány-sorok eseményvezérelt szimulációja",
+    "category": "",
+    "difficulty": null,
+    "goal": "",
+    "tags": [],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "korábbi"
+  }
+]

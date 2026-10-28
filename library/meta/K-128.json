@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/41. Legjobb kilátó ****",
+    "method": "Minden szárazföldi pontból két irányban számoljuk a látható pontokat, meredekség-prefixmaximummal.",
+    "category": "Maximumkeresés: láthatóság",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "láthatóság",
+      "meredekség",
+      "maximum"
+    ],
+    "note": "Bizonytalan pont: az egyenes a köztes pont csúcsát érintve (egyenlőség) még látszódik-e; itt igen. Döntetlennél a kisebb sorszám a válasz, a feladat ezt nem mondja ki. Brute-force egyezés 1500 kis véletlen eseten.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/42. Legkedvezőbb málnavásárlás ***",
+    "method": "Olcsóbbtól drágábbig rendezett termelők, napi kapacitásra töltve, a költség napi engedménnyel számolva.",
+    "category": "Mohó algoritmus: rendezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "rendezés",
+      "kapacitás"
+    ],
+    "note": "A minta eltérés nélkül teljesül (ASAP-értelmezés: minden nap teljes kapacitás adja a 144000-et); ha a napok átrendezése is szabad lenne, a minimum 140000 volna.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/43. Legkevesebb idő megállás nélkül **",
+    "method": "Határpontok (0. perc, valódi megállások, végállomás) közti állómentes szakaszok minimuma egy bejárásban.",
+    "category": "Minimum: szakaszok hossza",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "intervallum",
+      "idő",
+      "minimum"
+    ],
+    "note": "Bizonytalan pont: a feladat nem mondja ki, hogy a végállomás érkezése (arr = dep) határpont-e, és hogy a 0. perc kezdőpont-e. A minta 5-öt csak úgy ad, ha a 63-as végállomási érkezés határpont. A távolságadatok a számításban nem szerepelnek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/44. Legkevesebb lyukasórájú tanár ***",
+    "method": "Tanáronként és naponként a legkisebb és legnagyobb óra közti üres órák összege, minimum kiválasztása.",
+    "category": "Számlálás: lyukas órák",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "számlálás",
+      "minimum",
+      "táblázat"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

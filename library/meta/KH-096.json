@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Verseny/1. Átlagosnál erősebb versenyek",
+    "method": "Verseny-átlagok összehasonlítása a globális átlaggal, egész számos szorzással.",
+    "category": "Átlagok összehasonlítása",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["átlag", "összesítés", "egészszám"],
+    "note": "Az összes pont átlaga a bejegyzések pontjainak átlaga; a mintán a versenyátlagok átlagával számolva is ugyanez jön ki. A legnagyobb bemeneten mért idő kb. 0,004 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/10. Legnépesebb versenyek",
+    "method": "Versenyenként a minimumot elérők megszámolása, majd a maximumot elérő versenyek kiválasztása.",
+    "category": "Számlálás, maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "maximum", "tömb"],
+    "note": "A legnagyobb bemeneten mért idő kb. 0,004 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/11. Legszorosabb versenyek",
+    "method": "Versenyenként a minimumot elértek pontjainak max-min különbsége, majd a legkisebb különbség kiválasztása.",
+    "category": "Minimum és maximum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "maximum", "szűrés"],
+    "note": "Ha egyetlen versenyben sincs legalább két minimumot elérő résztvevő, a kimenet 0 (a feladat ezt nem említi). A legnagyobb bemeneten mért idő kb. 0,004 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/12. Legtöbb holtverseny",
+    "method": "Versenyenként rendezés után az azonos pontszámú csoportok méretének összege.",
+    "category": "Rendezés, csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "holtverseny", "csoportosítás"],
+    "note": "Holtversenyes az a versenyző, akinek a pontszáma megegyezik valaki más pontszámával ugyanabban a versenyben (a feladat nem definiálja pontosan). Ha nincs holtverseny, egyetlen 0 a kimenet. A legnagyobb bemeneten mért idő kb. 0,004 mp (limit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

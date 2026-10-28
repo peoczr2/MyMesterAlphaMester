@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/102. Négyzetek összerakása *",
+    "method": "Mohó: mindig a legnagyobb kirakható négyzet, a maradékra ismételve.",
+    "category": "Mohó algoritmus",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mohó", "négyzet", "gyökvonás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/103. Legnépszerűbb és legnépszerűtlenebb programozási nyelvek *",
+    "method": "Nyelvenként map-ban tárolt létszámok összevetése, a közös nyelvek összesített létszámának min/max keresése.",
+    "category": "Asszociatív tömb",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["map", "keresés", "összegzés"],
+    "note": "Ellenőrizendő értelmezés: a „legkevesebben/legtöbben” a két évi létszám összegére vonatkozik. A minta nem dönti el, hogy az összeg vagy az évenkénti összevetés a helyes, de mindkettő ugyanazt az eredményt adja a mintán. A nyelvneveket pontos (kis-nagybetű érzékeny) egyezéssel párosítom.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/104. Villamos statisztika ***",
+    "method": "Utasszám-állapot végigkövetése állomásonként, a feltételek ellenőrzésével.",
+    "category": "Állapotkövetés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "állapot", "ellenőrzés"],
+    "note": "Ellenőrizendő értelmezés (C. kérdés): azokat az állomásokat sorolom fel, ahol leszállt utas és utána nincs utas a villamoson. Ha ugyanott valaki felszáll, az állomás nem kerül a listába; a minta ezt nem dönti el. Az üres villamos állomásai (ahol senki nem száll le) sem kerülnek bele.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/105. Titkos karaván ****",
+    "method": "Oázisonkénti fix eltolás, a tiltott indulási napok jelölése egy tömbben.",
+    "category": "Jelölőtömb, eltolás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["tömb", "eltolás", "jelölés"],
+    "note": "Az éjszakák modellje (a j-edik oázis éjszakája = az előző oázis éjszakája + 1 + Idő_j, az első oázis előtt a d-edik nap) a minta-magyarázat 4., 7., 12. éjszakáival egyezik. Legnagyobb bemeneten (N=100, 10000 foglalt nap/oázis) a futási idő kb. 0,06 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

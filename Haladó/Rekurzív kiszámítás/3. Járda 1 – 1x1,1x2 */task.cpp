@@ -4,13 +4,11 @@ Az N hosszú járdát az utolsó lap típusa szerint bontjuk fel. Az utolsó lap
 1-es, vagy egy 2-es, ezért a klasszikus Fibonacci-rekurzió adódik.
 
 */
-
-// Hint 1: || Az utolsó lépés mindig egy 1 hosszú vagy egy 2 hosszú lapból áll. ||
-// Hint 2: || Az üres szakaszra 1 módon lehet lefedni a „semmit”: ez a rekurzió alapja. ||
-// Hint 3: || A szám gyorsan nő, ezért a biztonság kedvéért nagy egész típussal dolgozz. ||
-
+/*
+Hint 1: || Az utolsó lépés mindig egy 1 hosszú vagy egy 2 hosszú lapból áll. ||
+Hint 2: || Az üres szakaszra 1 módon lehet lefedni a „semmit”: ez a rekurzió alapja. ||
+*/
 #include <bits/stdc++.h>
-#include "../bigint.hpp"
 using namespace std;
 
 int main() {
@@ -20,7 +18,7 @@ int main() {
     int N;
     if (!(cin >> N)) return 0;
 
-    vector<BigInt> dp(max(2, N + 1));
+    vector<long long> dp(max(2, N + 1));  // N<=80: a legnagyobb érték (F(81)) belefér 64 bitbe
     dp[0] = 1;
     if (N >= 1) dp[1] = 1;
     for (int i = 2; i <= N; ++i) dp[i] = dp[i - 1] + dp[i - 2];

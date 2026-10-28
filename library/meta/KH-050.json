@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/42. Körök - 2013. május",
+    "method": "Síknegyed-ellenőrzés, körpárok távolsága és metszése egész számokkal.",
+    "category": "Geometria: körök",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["geometria", "körök", "távolság"],
+    "note": "A be2.txt minta 2. része (177817.29) a be2.txt 95. sorát (68 -63 82) is beleszámolja, pedig ennek a körnek nincs pontja a második síknegyedben: a második síknegyed legközelebbi pontja, az origó, 92,70 távolságra van, a sugár 82. A feladatszöveg szerinti helyes összeg 156693.22, amelyet független mintavételezéses ellenőrzés is igazolt, ezért a minta-eltérést kézi jelöléssel fogadom el. Az 1., 3. és 4. részfeladat egyezik a mintával. A 4. részfeladatnál a körpár akkor metsző, ha mindkét kör teljesen az x-tengely felett van (az x-tengelyt felülről érintheti), és a körvonalak két pontban metszik egymást.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/43. Amőba - 2013. október",
+    "method": "Lépésszámok alapján a soron következő játékos, soronkénti leghosszabb vízszintes szakasz egy végigmenéssel.",
+    "category": "Mátrix: sorok bejárása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "szimuláció", "sorfeldolgozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/44. Torpedó - 2014. május",
+    "method": "Táblázat kiírása, megsebesített hajómezők számolása, hajók kódolása sorfolytonos bejárással.",
+    "category": "Mátrix: hajók felismerése",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mátrix", "szimuláció", "kódolás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/45. Gazdaság - 2015. május",
+    "method": "Mezőszámlálás, BFS-sel a legelők komponensei: terület, szélesség, távolság.",
+    "category": "Rács: összefüggő területek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rács", "bfs", "összefüggőség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

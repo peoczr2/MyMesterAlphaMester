@@ -1,9 +1,9 @@
 /*
-A sejtautomata minden lépésben az előző tábla alapján frissül, ezért a következő állapotot másolatból kell számolni. A cellák sorsa a szomszédok számától függ, nem az éppen frissített soroktól.
+A sejtautomata minden lépésben az előző tábla alapján frissül, ezért a következő állapotot egy külön tömbbe számoljuk. Egy cella sorsát az 5 hosszú környezete mintázata dönti el: ezt egy 5 bites számmá alakítjuk, és a 32 elemű szabálytáblában nézzük meg, hogy zöld lesz-e. A szélső 2-2 cella mindig fehér marad. Egy lépés O(N) munka, így az összes lépés O(N·K).
 */
 /*
 Hint 1: || A szabály minden cellára ugyanaz, ezért a következő állapotot az előző tábla másolatából számold. ||
-Hint 2: || A szomszédok száma alapján dől el, hogy a cella élve marad, születik vagy eltűnik. ||
+Hint 2: || A cella új állapotát a balra és jobbra legfeljebb 2-2 sejt együttes mintázata dönti el, nem csak a zöldek száma: ezt egy 5 bites számmal kódolhatod. ||
 */
 
 #include <bits/stdc++.h>

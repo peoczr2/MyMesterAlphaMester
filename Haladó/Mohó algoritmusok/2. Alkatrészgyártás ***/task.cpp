@@ -1,6 +1,8 @@
 /*
-Feladat: Az alkatrészeket az előkészítő gépen úgy kell sorrendbe tenni, hogy a teljes befejezési idő minimális legyen.
-Ötlet: A gyártási idők szerint csökkenő sorrendbe rendezzük az alkatrészeket. Ha egy alkatrész nagyobb gyártási időt igényel, érdemes előrébb előkészíteni, mert a teljes idő az előkészítési prefixösszeg és a gyártási idő összege.
+Megoldás lényege:
+Az előkészítő gép sorban dolgozik, így az i-edik előkészített alkatrész legyártása a prefixösszeg (az addig előkészített darabok előkészítési idejének összege) és a saját gyártási idejének összegénél fejeződik be; a teljes idő ezek maximuma. A gyártási idő szerint csökkenő sorrend optimális: két szomszédos darab felcserélésével látható, hogy a nagyobb gyártási idejű darab előrehozása sosem rontja a maximumot. Ezért az alkatrészeket gyártási idő szerint csökkenően rendezzük, majd végigszámoljuk a prefixösszegeket. Az időigény O(N log N).
+*/
+/*
 Hint 1: || A teljes befejezési idő egy alkatrésznél az addigi előkészítési idők összege + a saját gyártási ideje. ||
 Hint 2: || Az a jó, ha a nagyobb gyártási idejű darabok minél korábban kerülnek sorra. ||
 Hint 3: || Elég a darabokat a gyártási idő szerint csökkenően rendezni, majd végigszámolni a prefixösszegeket. ||

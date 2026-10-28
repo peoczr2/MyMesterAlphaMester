@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/1. Ábra **",
+    "method": "Befoglaló téglalap és a négy tükörkép többségi szavazása pontonként.",
+    "category": "Tömb: szimmetria, szavazás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "szimmetria", "szavazás"],
+    "note": "A p/z/k szabály a szövegből és a mintából következik (3:1 többség esetén p vagy z, 2:2 esetén k). A szimmetria-középpontot a sérült kép fehér pontjainak befoglaló téglalapjából számolom.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/10. Játéktábla 3. ***",
+    "method": "A legrövidebb út a célsor mélysége; a célcsúcs indexének jegyeit tömb tárolja.",
+    "category": "Tömb: hármas számrendszer",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "számrendszer", "legrövidebb út"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/11. Keresztrejtvény **",
+    "method": "Sorfolytonos bejárás számlálóval, a szókezdő kockák listákba gyűjtése.",
+    "category": "Tömb: rácsbejárás, számozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "rács", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/12. Kiszámoló **",
+    "method": "Tömbös szimuláció: a K-adik gyerek indexe maradékos számítással, törléssel.",
+    "category": "Tömb: körszimuláció",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "szimuláció", "törlés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

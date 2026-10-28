@@ -5,8 +5,8 @@ majd az induló allapot visszazarasa miatt N-1 darab nullaval kiegeszitve. Ekkor
 kodszo pontosan egyszer szerepel az utolso N karakteres ablakok kozott.
 
 Az osszes (N-1) hosszu szo egy csucs, es minden csucsbol K elet vezetunk a hozzafuzott uj
-szamjegyekkel. Az eredmeny az Euler-kor karakterei. Hierholzer-algoritmussal linearis idoben
-eloallithato, mert az elek szama K^N.
+szamjegyekkel: ez a de Bruijn-graf, amelynek Euler-kore adja a sorozatot. A kort az ismert
+Lyndon-szavas (FKM) rekurzioval allitjuk elo, amelynek futasideje a kimenet hosszaval aranyos.
 */
 /*
 Hint 1: || Minden N hosszu kod pontosan egyszer kell, hogy ablakent szerepeljen. ||

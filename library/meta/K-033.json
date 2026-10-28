@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/28. Sikertelen napok *",
+    "method": "Egy bejárás, feltétel szerinti kiválogatás és a sorszámok gyűjtése vektorba.",
+    "category": "Kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/29. Születési évek **",
+    "method": "Egy bejárás, a Y-99 és Y közötti születési évek halmazba gyűjtése.",
+    "category": "Kiválogatás, halmaz",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kiválogatás", "halmaz", "évszám"],
+    "note": "A minta-2 (N=700, mai dátum 2013.01.10) szerint az 1913-as évek kimaradnak, vagyis a tartomány Y-99..Y (az alsó határ kizárt). A felső határ (a mai év) beleszámítása nincs mintában, ez az értelmezésem a szöveg alapján.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/3. Arányokban drága utazások *",
+    "method": "Egy bejárás, az ár és a 100-szoros távolság egész összehasonlítása.",
+    "category": "Kiválogatás, arány",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "arány", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/30. Települések Piripócshoz közel Kukutyintól távol *",
+    "method": "Egy bejárás, két távolságfeltétel együttes vizsgálata a sorszámokkal.",
+    "category": "Kiválogatás, feltételek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "feltétel", "sorszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

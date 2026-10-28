@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/1. Aranyalma ***",
+    "method": "Fa-DP részfánként, a megtartott csomópontok számával indexelve, összefésüléssel.",
+    "category": "Fa: dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "dp",
+      "részfa"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/10. DNS legtöbbször előforduló kezdőszelet ***",
+    "method": "Hash-tábla: az első K karakter előfordulásainak számlálása, a legnagyobb kiválasztása.",
+    "category": "Gyakoriság számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "hash",
+      "számlálás",
+      "sztring"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/11. Fa elágazásai *",
+    "method": "Rekurzív leírás-feldolgozás: zárójelpárok számolása, közben a gyerekszám maximuma.",
+    "category": "Fa: rekurzív feldolgozás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "rekurzió",
+      "zárójelezés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/12. Fa magassága *",
+    "method": "Rekurzív bejárás: a magasság a lánchossz és a legmagasabb gyermek összege, a leghosszabb lánc külön.",
+    "category": "Fa: rekurzív feldolgozás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "rekurzió",
+      "magasság"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/13. Fa zárójelezéssel *",
+    "method": "Rekurzív elemzés: magasság, tömeg és elágazásszám egy bejárásban, bináris szerkezettel.",
+    "category": "Bináris fa: rekurzív elemzés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "rekurzió",
+      "zárójelezés"
+    ],
+    "note": "A minta be1.txt elején UTF-8 BOM van; a program csak az F, ( és ) karaktereket veszi figyelembe, így ez nem okoz eltérést.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/14. Faágak letörése ***",
+    "method": "Postorder bejárás: részfánként a nagyobb oldal letörése, amíg az egyensúly helyreáll.",
+    "category": "Fa: alulról felfelé bejárás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "bejárás",
+      "szimuláció"
+    ],
+    "note": "A ki1.txt csak a 2-t tartalmazza, a második sor (a feladat szerint a megmaradt csomópontok száma, itt 3) hiányzik. A 2 és 3 független szimulációval igazolva; a be2/ki2 minta (386, 18) egyezik. A be1.txt elején BOM van, a program kiszűri.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

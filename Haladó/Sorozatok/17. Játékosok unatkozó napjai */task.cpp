@@ -1,9 +1,10 @@
 /*
-Megoldas lenyege:
-A jatekosok reszvetelet napokra bontjuk differencia-tombokkal, majd naprol napra meghatarozzuk,
-hogy melyik jatekosok vannak jelen. Ha pontosan egy jatekos van jelen, az az adott nap az o
-unatkozo szakaszaba tartozik. Az azonos jatekoshoz tartozo egymas utani napokat intervallummá
-fuzzuk.
+Megoldás lényege:
+A játékosok részvételi szakaszait különbségi tömbbel visszük be: a [s, s+h-1] szakaszhoz +1-et írunk
+a diff[s] helyre és -1-et a diff[s+h] helyre, így a prefixösszegek adják a napi részvételt.
+Napról napra megnézzük, hányan vannak jelen; ha pontosan egy játékos van, a nap az ő unatkozó
+napjai közé tartozik. Az azonos játékoshoz tartozó egymást követő unatkozó napokat egy intervallumba
+vonjuk össze. Az időigény O(N).
 */
 /*
 Hint 1: || Először napokra bontsd a játékosok részvételi szakaszait. ||
@@ -31,17 +32,17 @@ int main() {
     auto readPlayer = [&](vector<int> &diff) {
         do {
             getline(cin, line);
-        } while (line.empty() && cin);
+        } while (cin && line.find_first_not_of(" \t\r") == string::npos);
 
+        // A sor első száma a szakaszok száma (M), utána M számpár áll: kezdőnap és hossz.
+        // A 0 hosszúságú szakasz üres, nem ad napot; a sor további számait nem vesszük figyelembe.
         stringstream ss(line);
         int m;
-        while (ss >> m) {
-            for (int i = 0; i < m; ++i) {
-                int start, len;
-                ss >> start >> len;
-                if (len == 0) addInterval(diff, start, start);
-                else addInterval(diff, start, start + len - 1);
-            }
+        ss >> m;
+        for (int i = 0; i < m; ++i) {
+            int start, len;
+            ss >> start >> len;
+            if (len > 0) addInterval(diff, start, start + len - 1);
         }
     };
 

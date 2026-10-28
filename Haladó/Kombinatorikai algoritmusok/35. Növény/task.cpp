@@ -1,9 +1,26 @@
 /*
 Megoldás lényege:
-Az új növények száma egy csúszóösszeges lineáris rekurzió. A born[1..X]
-tömbben tároljuk az évi új növényeket, majd prefixösszeggel számoljuk a
-következő évben kikelők számát. Az összes élő növényhez az elhalásokat is
-visszaszámoljuk N év után.
+Az s. évben ültetett növény a s+M-1 és s+M+K-2 évek között minden évben egy
+magot hoz, a magból pedig a következő évben kel ki új növény. Így a t. évben
+kikelő növények száma a t-M-K+1 és t-M évek között kikelt növények összege, amit
+prefixösszegekkel csúszó ablakként számolunk.
+Az élő növények számát úgy frissítjük, hogy minden év kikelőit hozzáadjuk az
+összeshez, és az N évvel korábban kikeltek számát, akik ebben az évben
+elpusztulnak, kivonjuk belőle. Minden lépésben 20180113-mal maradékoljuk a
+számokat, a negatív maradékot pedig javítjuk.
+Az algoritmus O(X) időben fut, ami X ≤ 100 000 mellett bőven az időlimiten belül
+van; a kiírt két szám az X. évi kikelő, illetve az X. évben élő növények
+maradéka.
+*/
+/*
+Hint 1: || Egy év kikelőinek száma a t-M-K+1 és t-M közötti évek kikelőinek
+összege: ezek a növények adnak magot a t-1. évben. Az ablak két határát M és K
+adja meg. ||
+Hint 2: || Tároljuk az évenkénti kikelők prefixösszegét, így egy ablak összege
+két prefixösszeg különbsége, O(1) idő alatt. Az élő növények számát az előző
+évhez képest frissítjük: hozzáadjuk az újonnan kikelőket, és kivonjuk az N évvel
+korábban kikelteket. A műveleteket minden lépésben a 20180113 szerinti
+maradékban végezzük. ||
 */
 
 #include <bits/stdc++.h>

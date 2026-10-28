@@ -1,8 +1,15 @@
 /*
-   Következő közeli elrendezés: az i és i+1 helyeken álló számok felcserélhetők,
-   és a permutáció pontosan az egymást nem fedő cserék halmaza. Ezért a feladat
-   egy 0/1 sorozat lexikografikus következőjére vezethető vissza, ahol az 1 azt
-   jelenti, hogy az adott szomszédos pár fel van cserélve.
+   Következő közeli elrendezés: a közeli permutációk pontosan azok, amelyek egymást nem fedő, szomszédos
+   cserékből állnak. Minden i-hez tartozzon egy bit: 1, ha az i-edik és (i+1)-edik elem fel van cserélve,
+   különben 0; két szomszédos 1-es nem állhat. A bitsorozat lexikografikus sorrendje megegyezik a
+   permutációk sorrendjével, így a következő közeli permutáció a következő ilyen bitsorozat. Ezt úgy
+   kapjuk, hogy a jobbról első olyan 0-t 1-re állítjuk, amelynek bal szomszédja 0, a jobb oldalát pedig
+   nullázzuk; ha ilyen nincs, az identitás (1 2 … N) következik. Az időigény O(N).
+*/
+/*
+Hint 1: || Ne magukat a permutációkat vizsgáld, hanem azt, mely szomszédos párok vannak felcserélve. Ezek a cserék nem fedhetik egymást, így minden közeli permutáció egy 0/1 sorozattal írható le. ||
+Hint 2: || Olvasd a 0/1 sorozatot bináris számnak (az első pozíció a legnagyobb helyiértékű). Ekkor a lexikografikus sorrend a számok sorrendje lesz, így a következő közeli permutáció a következő olyan szám, amelyben nincs két egymás melletti 1-es. ||
+Hint 3: || Keresd meg a jobbról első olyan 0-t, amelynek bal szomszédja is 0: ezt 1-re állítva, a mögötte álló biteket nullázva megkapod a következő sorozatot. Ha nincs ilyen, az identitáshoz térsz vissza. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

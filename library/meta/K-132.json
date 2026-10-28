@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/56. Legtöbbször ismétlődő szakasz ****",
+    "method": "Összes legalább 3 hosszú részszó nem átfedő előfordulásainak számlálása, legjobb kiválasztása",
+    "category": "Karakterlánc: ismétlődés",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["karakterlánc", "számlálás", "részszó"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/57. Legvölgyesebb sziget ***",
+    "method": "Szigetenként a völgyfutamok egyetlen bejárásos számlálása, a legtöbb völgyes sziget kiválasztása",
+    "category": "Tömb: szigetek és völgyek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "bejárás", "feltétel"],
+    "note": "Völgy: egyenlő magasságú futam, amelynek bal és jobb szomszédja magasabb. Döntetlen esetén a balról első sziget a válasz; a minta ezt nem igazolja, mert benne nincs döntetlen.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/58. Nagy mennyiségben készített legdrágább bor *",
+    "method": "Egy bejárás, feltételes maximumkeresés a nagy termésű években",
+    "category": "Maximumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "feltétel", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/59. Növénytáblák száma ****",
+    "method": "Maximális egyneműen kitöltött téglalapok számlálása, futamhosszakkal ellenőrizve",
+    "category": "Mátrix: téglalapok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["mátrix", "téglalap", "számlálás"],
+    "note": "A táblák átfedhetnek: az összes maximális, egyneműen kitöltött téglalapot számoljuk. A két minta (4 és 60) ezzel egyezik; a sorfolytonos, átfedés nélküli lefedés a 60-as mintánál 59-et adna.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

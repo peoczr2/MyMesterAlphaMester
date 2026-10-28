@@ -1,16 +1,17 @@
 /*
-Ha kivalasztunk nehany kemcsovet, es ezek folyadekat egymasba ontjuk, akkor minden tele csove
-valas utan ujabb K egysegnyi mennyiseget "levagunk", ezert egy reszhalmazbol eloallithato nem
-tele mennyiseget csak a reszhalmaz osszegenek K szerinti maradeka hatarozza meg. Emiatt eleg
-dinamikus programozassal nyilvantartani, hogy mely maradekok allithatok elo reszhalmazosszegkent.
-Ezen felul a 0 akkor es csak akkor allithato elo, ha az osszes folyadek elfer legfeljebb N-1
-kemcsoben, vagyis az osszmennyiseg legfeljebb (N-1)*K. A K mennyiseg pedig akkor allithato elo,
-ha legalabb K egysegnyi folyadek van osszesen.
+Ha kiválasztunk néhány kémcsövet, és a folyadékukat egymásba öntjük, akkor minden alkalommal,
+amikor egy cső megtelik, K egységnyi mennyiség "kiesik" a folyamatból. Ezért egy részhalmazból
+előállítható, nem tele mennyiséget csak a részhalmaz összegének K szerinti maradéka határozza
+meg. Emiatt elég dinamikus programozással nyilvántartani, hogy mely maradékok állíthatók elő
+részhalmaz-összegként.
+Ezen felül a 0 akkor és csak akkor állítható elő, ha az összes folyadék elfér legfeljebb N-1
+kémcsőben, vagyis az összmennyiség legfeljebb (N-1)*K. A K mennyiség pedig akkor állítható elő,
+ha legalább K egységnyi folyadék van összesen.
 */
 /*
-Hint 1: || Egy reszhalmaz tartalmanal a teljes K-k csak megtoltott kemcsoveket adnak, a maradek lesz az erdekes. ||
-Hint 2: || Ezert 0..K-1 kozott eleg azt tarolni, milyen maradekok erhetok el reszhalmazosszegkent. ||
-Hint 3: || A 0 es a K specialis: ezekre kulon, az osszmennyisegbol kovetkezo feltetel adodik. ||
+Hint 1: || Egy részhalmaz összegének K-val osztható része csak teli kémcsöveket ad, a maradék lesz az érdekes. ||
+Hint 2: || Ezért 0 és K-1 között elég azt tárolni, hogy mely maradékok érhetők el részhalmaz-összegként. ||
+Hint 3: || A 0 és a K speciális: ezekre külön, az összmennyiségből következő feltétel adódik. ||
 */
 
 #include <iostream>

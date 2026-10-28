@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/57. Villamosmegállók száma ahol sokat várt *",
+    "method": "Egy ciklus, minden megálló várakozási idejének (indulás - érkezés) összevetése K-val.",
+    "category": "Számlálás: várakozási idő",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "számlálás",
+      "feltétel",
+      "várakozás"
+    ],
+    "note": "Validátor: kész, minta 2/2. Mért idő: N=100 bemenet kb. 1,5 ms (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/6. Egymáshoz közel lévő villamosmegállók *",
+    "method": "Lineáris bejárás: a K-nál rövidebb szakaszok sorszámainak gyűjtése vektorba.",
+    "category": "Kiválogatás: rövid szakaszok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "kiválogatás",
+      "tömb",
+      "távolság"
+    ],
+    "note": "Validátor: kész, minta 2/2. Mért idő: N=100 bemenet kb. 1,5 ms (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/7. Egymastól távol lévő villamosmegállók *",
+    "method": "Lineáris bejárás: a K-nál hosszabb szakaszok sorszámainak gyűjtése vektorba.",
+    "category": "Kiválogatás: hosszú szakaszok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "kiválogatás",
+      "tömb",
+      "távolság"
+    ],
+    "note": "Validátor: hibás, minta 0/2. A minta.zip ki1.txt („2 3”) és ki2.txt (91 sorszám) nem tartalmazza az elöl álló darabszámot, pedig a feladatszöveg és a példa („1 2” K=1000-re) szerint kell. A task.cpp a szöveget követi (be1, K=500: „2 2 3”). Mért idő: kb. 1,3 ms (időlimit 0,1 s). Kérdés: a minta.zip-et kell javítani, vagy a kimenet formátuma más?",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/8. Első állomás adott időn kívül *",
+    "method": "Lineáris keresés az első olyan megállóra, ahová az érkezési idő meghaladja K-t.",
+    "category": "Keresés: első találat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "keresés",
+      "tömb",
+      "idő"
+    ],
+    "note": "Validátor: kész, minta 2/2. Mért idő: N=100 bemenet kb. 1,8 ms (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

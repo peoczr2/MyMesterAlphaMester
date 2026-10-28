@@ -1,7 +1,11 @@
 /*
-   Kirándulás sorrend: először legrövidebb utakat számolunk a városok között,
-   majd bitmaskos TSP-dinamikával megkeressük a legolcsóbb körutat, amely a
-   lakóhelyről indul, minden más várost pontosan egyszer érint, és visszatér.
+Megoldás lényege:
+A bejárás sorrendjének meghatározása előtt az összes várospár legrövidebb utazási idejét ki kell számolni, mert átszállásokkal két város között gyorsabban is el lehet jutni, mint egy közvetlen járattal. Ezt a Floyd–Warshall-algoritmus adja meg. Ezután a lakóhelyről induló, minden kiránduláshelyet pontosan egyszer érintő és visszatérő legrövidebb körutat bitmaszkos dinamikus programozással keressük: dp[maszk][utolsó] az a legkisebb idő, amellyel a maszkban lévő városokat bejártuk és az utolsó városban vagyunk. A végén a visszaút költségét hozzáadva választjuk ki a legjobb utolsó várost, a sorrendet pedig az eltárolt előző városok visszafelé követésével kapjuk meg. Mivel N legfeljebb 10, az állapotok száma kicsi, így az idő bőven belefér az időlimitbe.
+*/
+/*
+Hint 1: || Egy busz menetideje nem feltétlenül a legrövidebb út: két város között átszállással gyorsabban is lehet utazni, ezért először minden várospárra érdemes kiszámolni a legrövidebb időt. ||
+Hint 2: || Egy állapot legyen az, hogy mely kiránduláshelyeket jártátok már be (bitmaszk), és épp melyik városban vagytok. Egy állapotból egy még nem bejárt várost hozzávéve kapod a következő állapotot. ||
+Hint 3: || A lakóhelyet nem kell a maszkban nyilvántartani: a végén a visszaút költségét az utolsó városból a lakóhelyre vezető legrövidebb idő adja. Az optimális sorrendet úgy kapod meg, hogy minden állapotnál eltárolod az előző várost, és a végén visszafelé olvasod ki. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

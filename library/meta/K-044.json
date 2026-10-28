@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/31. Őrzött szakaszok száma a Kínai Nagy Falon *",
+    "method": "Lineáris bejárás a falakon: az őrzött szakaszok kezdeteinek számlálása.",
+    "category": "Összefüggő szakaszok számlálása",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "szakasz", "szomszédság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/32. Összes játékkonzol száma **",
+    "method": "Generációnkénti számláló, majd a 2·db ≥ N feltétel ellenőrzése.",
+    "category": "Gyakorisági számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "tömb", "feltétel"],
+    "note": "Páratlan N-nél a „legalább fele” a 2·db ≥ N feltétellel értendő (N=5-nél legalább 3 gyártó); a minta (N=5, kimenet 0) ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/33. Összes műholddal lefényképezett terület **",
+    "method": "Kétdimenziós differencia-tömb, prefixösszeg és a lefedett rácspontok számlálása.",
+    "category": "Téglalapok lefedése",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["megszámolás", "rács", "differencia-tömb"],
+    "note": "Értelmezés a mintából: a sarkok koordinátái is beleszámítanak (egész rácspontok, egy téglalap (jax-bfx+1)·(jay-bfy+1) pontot fed le); a folytonos területtel a példa 541 lenne, a minta 600. Mindkét minta stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/34. Romló légszennyeződési értékek *",
+    "method": "Szomszédos napok összehasonlítása egy bejárásban, két feltétel ÉS-kapcsolatával.",
+    "category": "Szomszédos párok számlálása",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "szomszédság", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

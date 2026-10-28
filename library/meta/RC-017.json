@@ -1,0 +1,69 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/2. Kirakó ***",
+    "method": "Mohó lépések: mindig a legnagyobb átfedésű elhelyezés; zsákutcánál visszalépés.",
+    "category": "Visszalépéses keresés, mohó",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "visszalépés",
+      "mohó",
+      "rács",
+      "szóelhelyezés"
+    ],
+    "note": "Több helyes kimenet (a feladat szerint bármelyik megadható): a program minden lépésben a lehetséges legnagyobb átfedést adja, ezt ellenőrző program igazolja; a minta más döntetlen-feloldást mutat (be2: a minta összes átfedése 26, a programé 22).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/20. Munkásfelvétel: N állás – N jelentkező",
+    "method": "Min-költségű folyam: forrás–munkás–állás–nyelő hálózat, a successive shortest path adja a minimális teljes párosítást.",
+    "category": "Gráf: min-költségű folyam",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "párosítás",
+      "költség",
+      "folyam",
+      "gráf"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/21. Munkásfelvétel: N állás – N jelentkező – backtrack",
+    "method": "Munkásonként visszalépéses keresés, ágak nyesése Kuhn-féle teljes párosítás-ellenőrzéssel.",
+    "category": "Visszalépéses keresés, párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "párosítás",
+      "nyesés"
+    ],
+    "note": "A be2 mintában 50 teljes párosítás van; a program munkásonként a lexikografikusan legkisebb megoldást adja, ami egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/22. Munkásfelvétel: N állás – N jelentkező, nem lehet mind felvenni",
+    "method": "Min-költségű folyam: maximális párosítás, ezen belül a legolcsóbb.",
+    "category": "Gráf: min-költségű folyam",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "párosítás",
+      "költség",
+      "maximum",
+      "folyam"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

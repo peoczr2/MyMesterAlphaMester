@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/4. Szabálysértők - 2005. október",
+    "method": "Sorban olvasás 0-ig, az első |S| ≥ 100 elem sorszámának megkeresése.",
+    "category": "Lineáris keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "beolvasás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/5. ABC- 2006. május",
+    "method": "Névpárok rendezése vezetéknév, majd keresztnév szerint, sorszámozott kiírás.",
+    "category": "Rendezés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "pár", "sztring"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/6. Tőzsde- 2006. oktober",
+    "method": "Első és utolsó napi árfolyam különbségének maximuma, majd a maximumot elérő cégek kiírása.",
+    "category": "Maximumkeresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/7. Armstrong szám- 2006. október",
+    "method": "Számjegyek n-edik hatványainak összege, összehasonlítás az eredeti számmal.",
+    "category": "Számjegyek, hatvány",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számjegyek", "hatvány", "túlcsordulás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

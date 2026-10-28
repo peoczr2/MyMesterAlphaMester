@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok/4. Húsvét **",
+    "method": "Holdtölték félnapos léptetése, a következő vasárnap keresése maradékos osztással, pünkösd +49 nap",
+    "category": "Dátumszámítás, naptár",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["húsvét", "naptár", "holdtölte"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/5. Idő *",
+    "method": "Mindkét időpont és az időtávolság századmásodpercre váltása, összeadás és kivonás maradékképzéssel",
+    "category": "Időszámítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["idő", "maradékképzés", "egységváltás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/6. Japán naptár *",
+    "method": "Évszám 60-as maradéka 1984-hez képest; a párok sorszámának 5-tel vett maradéka adja a színt",
+    "category": "Ciklikus maradék",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maradékképzés", "ciklus", "naptár"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/7. Lebegőpontos egész **",
+    "method": "Kitevők közös szintre hozása (legfeljebb kétszeri tízzel szorzás), majd normalizálás nullák levágásával",
+    "category": "Nagy számok, lebegőpontos alak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["lebegőpontos", "kitevő", "normalizálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/39. Legtöbb törzs *",
+    "method": "Kezdő- és befejező események rendezett bejárása, a legalább Y aktív háborús évek összegzése.",
+    "category": "Intervallumok: átfedés számolása",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "esemény", "map", "megszámolás"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,3 mp. A „legalább Y törzs” kifejezést a háborúk számaként értelmeztük: a be1 (21) és a be2 (290) minta ezt igazolja. Egy év akkor számít, ha a háborúk száma legalább Y, a kezdő és befejező év beleszámít. A „N sorban” kifejezés K sort jelent (a minta szerint K=623).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/4. Békés törzsek *",
+    "method": "Jelölő tömb a háborúban részt vevő törzsekről, a jelöletlen sorszámok kiírása.",
+    "category": "Jelölő tömb: érintetlen elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "jelölés", "szűrés"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 2 ms, időlimit 0,1 mp. A feladatszöveg „N sorban” kifejezése K sort jelent (a minta szerint K=623). Ha nincs békés törzs, a program 0-t ír az első sorba és üres második sort.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/40. Mindenkivel ellenséges törzs *",
+    "method": "Törzsenként halmaz az ellenfelekről, az első olyan törzs keresése, amelynek N-1 ellenfele van.",
+    "category": "Halmaz: különböző partnerek",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "keresés", "feltétel"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,3 mp. Az időpont nem számít, csak az, hogy két törzs valamikor háborúzott-e; a többszörös háborúk a halmazban egyszer szerepelnek. Ha nincs ilyen törzs, a válasz 0. A feladatszöveg „N sorban” kifejezése K sort jelent (a minta szerint K=623).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/41. Nem békés törzsek *",
+    "method": "Jelölő tömb a háborúban részt vevő törzsekről, a megjelölt sorszámok kiírása.",
+    "category": "Jelölő tömb: érintett elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "jelölés", "kiírás"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 2 ms, időlimit 0,1 mp. A feladatszöveg „N sorban” kifejezése K sort jelent (a minta szerint K=623). A darabszámot a sorszámok kiírása előtt számoljuk meg, így az első sor a második sor hosszát is megadja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

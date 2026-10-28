@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/6. Egy napon helyettesíteni tudó tanárok ***",
+    "method": "Tanár óráinak gyűjtése, minden órához legkisebb szabad szakos tanár keresése a foglaltsági táblában",
+    "category": "Táblázat, keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["táblázat", "keresés", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/60. Összekevert sorrend **",
+    "method": "Szomszédpárok gyűjtése a két szalag darabjaiból, majd a lánc bejárása a kezdőelemtől",
+    "category": "Láncépítés, permutáció",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["permutáció", "lánc", "szomszédság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/61. Pontozásos verseny végeredménye **",
+    "method": "Pontszámok rendezése, a legkisebb és legnagyobb elhagyása, pontszám szerinti rendezés holtverseny-helyezéssel",
+    "category": "Rendezés, összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "összegzés", "holtverseny"],
+    "note": "A minta ki2.txt 5–9. sorában a 52 pontos holtversenyben a versenyzők nem sorszám szerinti sorrendben állnak (42, 72, 85, 89, 38), a feladatszöveg szerint viszont sorszám szerint kell (38, 42, 72, 85, 89); a helyezések és pontszámok egyeznek a mintával, a kimenet a feladatszöveg szerint készült, független ellenőrzővel igazolva.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/62. Résztvevők száma kategóriánként a kihíváson *",
+    "method": "Lélekszám szerinti kategória meghatározása, és a részvevők összegzése kategóriánként",
+    "category": "Számlálás, kategorizálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltételes", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

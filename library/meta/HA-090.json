@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/3. Fizetős játék ***",
+    "method": "Minimax-DP intervallumokon: f(a,b) = min_x P(x) + max(f(a,x), f(x+1,b)).",
+    "category": "Interaktív: minimax",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "minimax",
+      "intervallum",
+      "interaktív"
+    ],
+    "note": "Speciális (interaktív): Interaktív (eva modul). A validátor a task.cpp-t eva.h nélkül fordítja, ezért hibás állapotot ad, nem a megoldás hibája. Saját harnesszel (library/.work/HA-090/test_ha090.py) minden Éva-válaszágat végigjártam 36 esetben: a legrosszabb költség egyezik a bitmaszkos brute-force értékkel, és nincs judge-hiba.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/4. Két játékos egy bábuval ***",
+    "method": "Visszafelé számolt minimax-DP két táblázattal, a bábu helye szerint.",
+    "category": "Játékelmélet: rácsos minimax",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "játékelmélet",
+      "rács",
+      "interaktív"
+    ],
+    "note": "Speciális (interaktív): Interaktív (gep modul). A validátor nem tudja lefordítani (gep.h hiányzik a munkakönyvtárból), ezért hibás állapot. Saját harnesszel minden második játékos-válaszágat végigjártam 24 esetben: a megszerzett pontok minimuma egyezik a brute-force minimax értékkel. n=1000 esetén kb. 0,09 s.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/5. Kitalálós játék fizetéssel ***",
+    "method": "Intervallum-DP a biztos sikerhez szükséges zsetonszámra, a minimumot adó kérdéssel.",
+    "category": "Interaktív: zsetonos keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "intervallum",
+      "erőforrás",
+      "interaktív"
+    ],
+    "note": "Speciális (interaktív). Megjegyzés: Interaktív (eva modul). A validátor nem tudja lefordítani (eva.h hiányzik), ezért hibás állapot. Saját harnesszel 82 esetben ellenőriztem: a játék pontosan akkor sikeres, ha K >= need(1,N), és ez egyezik a brute-force küszöbbel. A végső zsetonszám maximalizálását nem vizsgáltam; a program a szám biztos megtalálását garantálja.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/6. Kitalálós játék hibakorláttal ***",
+    "method": "Kérdésszám-korlát binomiális összegből (S(q,t) = sum C(q,i)2^i), intervallum-felosztással.",
+    "category": "Interaktív: keresés hibákkal",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "kombinatorika",
+      "hibakorlát",
+      "interaktív"
+    ],
+    "note": "Speciális (interaktív): Interaktív (eva modul). A validátor nem tudja lefordítani (eva.h hiányzik), ezért hibás állapot. Saját harnesszel 48 esetben (n<=12, H<=4) ellenőriztem: a legrosszabb kérdésszám egyezik a brute-force minimummal. N=4000000, H=1 esetén 2000000 kérdés, 0,07 s.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

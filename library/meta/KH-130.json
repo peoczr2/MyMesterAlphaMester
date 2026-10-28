@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/1. Sportnap",
+    "method": "Tanulónként sportághalmaz, sportáganként számlálás, sportágpárok közös tanulójának vizsgálata.",
+    "category": "Számlálás, halmazok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "számlálás",
+      "halmaz",
+      "sportágpár"
+    ],
+    "note": "A minta.zip (be1/ki1, be2/ki2) a 12. Sportnap feladat kimenete: ki1 első blokkja a 'Etelka' név, pedig az 1. rész szerint Andor nevezéseinek száma (2) kellene. A feladat példája (PDF) a megoldás kimenetével egyezik, kivéve a 3. rész döntetlenét (Andor a Bea helyett), amit a feladat tetszőlegesnek mond. Ellenőrzés: 500 véletlen teszt független Python-ellenőrzővel. Mért futásidő 0,002 mp (korlát 0,1 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/10. Tőzsde",
+    "method": "Napi és részvényenkénti összegzés, maximum- és minimumkeresés, napi összeg előjelének vizsgálata.",
+    "category": "Összegzés, maximumkeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "összegzés",
+      "maximum",
+      "napi bontás"
+    ],
+    "note": "Mért futásidő 0,003 mp (korlát 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/11. Sportnap",
+    "method": "Nevezéstábla, többszörös nevezés jelölése, sportágpárok közös tanulójának vizsgálata.",
+    "category": "Mátrix, párvizsgálat",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "mátrix",
+      "számlálás",
+      "sportágpár"
+    ],
+    "note": "Üres sportágat is párként kezelünk, mert a feladat nem zárja ki őket (a mintában nincs üres sportág). Mért futásidő 0,005 mp (korlát 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/12. Sportnap",
+    "method": "Tanulónkénti sportághalmaz, tanulópárok közös sportágának vizsgálata, számlálás.",
+    "category": "Halmazok, párvizsgálat",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "halmaz",
+      "párvizsgálat",
+      "tanulópár"
+    ],
+    "note": "Az 5. részfeladat sorrendje nincs kikötve, a minta két különböző sorrendet használ: be1/ki1 bemeneti sorrendben (a feladat példája), be2/ki2 ábécé-sorrendben. A megoldás a bemeneti sorrendet adja, ezért be2-n csak az 5. rész sorrendje tér el, a sorok halmaza egyezik. Kérdés: elfogadható-e bármely sorrend? Mért futásidő 0,006 mp (korlát 0,1 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

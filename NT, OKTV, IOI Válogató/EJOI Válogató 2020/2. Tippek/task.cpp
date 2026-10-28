@@ -3,7 +3,10 @@ Megoldas: a sorozat rendezett, ezert minden tipphez binaris keresessel megkeress
 a legkozelebbi elemet. Ha a ket szomszedos elem egyforma tavolsagra van, a kisebbet
 valasztjuk.
 */
-
+/*
+Hint 1: || A sorozat növekvő, ezért minden tippre bináris kereséssel meg lehet találni, hogy a tipp hol helyezkedne el a sorozatban. ||
+Hint 2: || A talált pozíció bal és jobb oldali szomszédját hasonlítsd össze a tippel; egyenlő távolságnál a kisebb értéket írd ki. Ha a tipp a sorozat elé vagy mögé esik, a szélső elem a válasz. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

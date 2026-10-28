@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/17. Átváltás - 2009. május",
+    "method": "Irány szerinti elágazás, szorzás vagy osztás 2,54-gyel, két tizedesjegyre kerekítve.",
+    "category": "Mértékegység-átváltás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["átváltás", "lebegőpontos", "kerekítés"],
+    "note": "Kézi ellenőrzés: a minta ki-fájljai a C++ alapértelmezett, 6 értékes jegyű kiírását követik, ezért 10 000 feletti értékeknél eltérnek a feladatszöveg két tizedesjegyétől (pl. be2.txt 2. sora: 1 4059, minta 10309.9, pontos 10309.86). A program a feladat szerint két tizedesjegyre kerekít; független ellenőrzés (library/.work/KH-056/17/check.py) minden sort igazol.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/18. Fagy - 2009. május",
+    "method": "Egy végigmenés a 7 napon: számlálás és a fagyos napok neveinek kiírása.",
+    "category": "Tömb, feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "feltétel", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/19. Számrendszerek - 2009. október",
+    "method": "Négy 4 bites csoport külön értékelése, hexadecimális jegyekre képezve.",
+    "category": "Számrendszer-átváltás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számrendszer", "bináris", "hexadecimális"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/2. Hőingadozás - 2005. május",
+    "method": "Két változóban az eddigi legnagyobb és legkisebb érték nyilvántartása.",
+    "category": "Szélsőértékek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "minimum", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

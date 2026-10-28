@@ -1,7 +1,14 @@
 /*
-   Inverzió: a legnagyobb távolságú inverziót kell megadni. Jobbról balra
-   haladva egy Fenwick-fa tárolja, hogy egy kisebb értékhez mekkora jobb oldali
-   pozíció tartozik a legjobban.
+Megoldás lényege: egy i indexhez a legtávolabbi inverzió-társ a legnagyobb j > i index,
+amelyre S_j < S_i. Az indexeket jobbról balra járjuk be, és egy Fenwick-fában (prefix
+maximum) az értékekhez tároljuk a hozzájuk tartozó legnagyobb indexet: így S_i-nél kisebb
+értékek közül a legnagyobb index egy lekérdezéssel megkapható. Minden i-re ezt számoljuk,
+és a legnagyobb j - i távolságot választjuk. Az idő O(N log N), a memória O(N).
+*/
+/*
+Hint 1: || Rögzíts egy i indexet: melyik j > i jöhet szóba, hogy inverzió legyen? Az, amelyre S_j < S_i. Keresd a legnagyobb ilyen j-t. ||
+Hint 2: || Jobbról balra haladva minden értékhez eltárolhatod a hozzá tartozó indexet, és a „kisebb értékek” maximumát prefix-lekérdezéssel kaphatod meg. ||
+Hint 3: || Egy Fenwick-fa (bináris indexelt fa) prefix-maximumot tud frissíteni és lekérdezni O(log N) időben, ezzel minden i-re egy lekérdezés elég. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

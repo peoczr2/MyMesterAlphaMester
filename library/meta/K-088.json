@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/1. Felvételi *",
+    "method": "Ponthatárok iteratív emelése, ha a szak megsérti a keretfeltételt",
+    "category": "Iteratív ponthatár-keresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "iteráció",
+      "ponthatár",
+      "kiosztás"
+    ],
+    "note": "A 110%-os szabályt a mintából értelmeztem: ha a ponthatárt pontosan elérő felvettek (e) nélkül a létszám kisebb a keretnél, legfeljebb floor(1,1·K) fő vehető fel. A „azonos pontszám: mindkettő vagy egyik sem” szabályt szó szerint a hivatalos ki2 sem tartja be (az előbb választott szakok miatt 5144 ellentmondás), ezért a megoldás a ponthatár-döntés pontszám szerinti egységességét érvényesíti.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/10. Mozgat *",
+    "method": "Szakaszlista: a szöveget összefüggő sortartományokkal tároljuk",
+    "category": "Szakaszlista, szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szakaszlista",
+      "tömb",
+      "szimuláció"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/11. OKTV *",
+    "method": "Többkulcsos rendezés a fordulók sorrendjében",
+    "category": "Többkulcsos rendezés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "rendezés",
+      "többkulcsos",
+      "holtverseny"
+    ],
+    "note": "Minta-eltérés: a minta.zip be/ki fájljai más formátumúak, mint a feladatszöveg (be1: „5 4”, utána „215 1J 3J …” típusú tokenes sorok; ki1: holtversenyes helyezés soronként), a feladatszöveg szerinti bemenetre nem futtatható. A feladatszöveg saját példáján (5 3 / 7 3 3 9 7 / 2 7 7 0 1 / 0 3 2 0 8) a megoldás 4 1 5 2 3 eredményt ad, ami egyezik. Kérdés: melyik feladatváltozathoz tartozik a minta.zip?",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/12. Olimpia *",
+    "method": "Érmek számlálása, majd többkulcsos rendezés",
+    "category": "Számlálás, rendezés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "rendezés",
+      "számlálás",
+      "többkulcsos"
+    ],
+    "note": "A hivatalos ki2 négy azonos érmezésű országpárja fordított sorrendben szerepel (ki2 64–65: 101 és 52; 95–96: 115 és 16; 106–107: 128 és 98; 129–130: 137 és 12), ami ellentmond a feladatszöveg „kisebb sorszámú legyen előbb” szabályának. A megoldás a szabály szerint rendez; a független ellenőrző (library/.work/K-088/check_olimpia.py) a be2-re is OK-t ad, a be1/ki1 minta egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

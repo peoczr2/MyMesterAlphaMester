@@ -6,7 +6,7 @@ beosztottja.
 
 Ezért elegendő minden csúcsra kiszámítani a részfájának levélszámát. Törléskor a komponensek levélszáma a gyerekek
 részfáinak levélszámaiból és a felső komponens levélszámából áll össze. Olyan csúcsot keresünk, ahol legalább K
-komponens van, és ezek minimuma a lehető legnagyobb.
+komponens van, és ezek minimuma a lehető legnagyobb. Az algoritmus O(N) idejű.
 */
 /*
 Hint 1: || A gyerek-részfák levélszáma törléskor nem változik. ||
@@ -59,12 +59,12 @@ int main() {
     for (int node = 1; node <= n; ++node) {
         int components = static_cast<int>(children[node].size()) + (node == 1 ? 0 : 1);
         if (components < k) continue;
-        int upperLeaves = 0;
+        int minLeaves = n + 1;
         if (node != 1) {
-            upperLeaves = leafCount[1] - leafCount[node];
+            int upperLeaves = leafCount[1] - leafCount[node];
             if (static_cast<int>(children[parent[node]].size()) == 1) ++upperLeaves;
+            minLeaves = upperLeaves;
         }
-        int minLeaves = upperLeaves;
         for (int child : children[node]) minLeaves = min(minLeaves, leafCount[child]);
         if (bestValue < minLeaves) {
             bestValue = minLeaves;

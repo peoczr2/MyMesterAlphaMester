@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/39. Legtöbb árvízvédelmi készültség csökkenést tartalmazó árviz ***",
+    "method": "Árvizek egy bejárásban, az árvíz közben a szintcsökkenések számlálásával",
+    "category": "Futamok keresése",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "futam", "csökkenés"],
+    "note": "N = 10 000 bemeneten mért futásidő kb. 4 ms (időlimit 0,1 mp). Csökkenésnek a két egymás utáni mérés közötti kisebb szintet számoltam. Ha egyik árvízben sincs csökkenés, a negyedik sorba 0 kerül (a 'ha pedig egy sincs' értelmezése). A határokat szigorúan értelmeztem (800 cm még 0-s szint).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/4. A két legkozelebbi árvízmentes folyószakasz ***",
+    "method": "Árvízmentes szakaszok egy bejárásban, a szomszédos szakaszok távolságának minimuma",
+    "category": "Szakaszok, távolság",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "szakaszok", "távolság"],
+    "note": "N = 10 000 bemeneten mért futásidő kb. 4 ms (időlimit 0,1 mp). A távolság a következő szakasz kezdete mínusz az előző szakasz vége; a mintakimenet 2, 2 értékei ezt igazolják. K < 2 esetén a 3. és 4. sor nem íródik ki. A határokat szigorúan értelmeztem (800 cm még 0-s szint).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/40. Legtöbb elsőfokú készültségű folyószakaszt tartalmazó árviz ***",
+    "method": "Árvizek egy bejárásban, az árvízen belüli elsőfokú szintű sorozatok számlálásával",
+    "category": "Futamok, számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "futam", "számlálás"],
+    "note": "N = 10 000 bemeneten mért futásidő kb. 4 ms (időlimit 0,1 mp). Elsőfokú folyószakasz: az 1-es szintű mérések egy árvízen belüli maximális sorozata. Ha egyik árvízben sincs elsőfokú szakasz, a negyedik sorba 0 kerül (a 'ha pedig egy sincs' értelmezése). A határokat szigorúan értelmeztem (900 cm még 1-es szint).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/41. Legtöbb harmadfokú készültségű folyószakaszt tartalmazó árviz ***",
+    "method": "Árvizek egy bejárásban, az árvízen belüli harmadfokú szintű sorozatok számlálásával",
+    "category": "Futamok, számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "futam", "számlálás"],
+    "note": "N = 10 000 bemeneten mért futásidő kb. 4 ms (időlimit 0,1 mp). Harmadfokú folyószakasz: a 3-as szintű mérések egy árvízen belüli maximális sorozata. Ha egyik árvízben sincs harmadfokú szakasz, a negyedik sorba 0 kerül (a 'ha pedig egy sincs' értelmezése). A határokat szigorúan értelmeztem (1000 cm még 2-es szint).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/17. Legalább 2 kutya ért el maximális pontszámot *",
+    "method": "Szempontonként számoljuk, hány kutya éri el a maximumot, egyetlen bejárással",
+    "category": "Szempontonkénti számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/18. Legalább két kutya maradt versenyben *",
+    "method": "Szempontonként számoljuk, hány kutya éri el az alsó ponthatárt",
+    "category": "Szűrt számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "küszöb"],
+    "note": "A kiesés szempontonként értendő: a ponthatár alatti pont csak abban a szempontban zárja ki a kutyát. A be2/ki2 minta ezt igazolja: globális kiesés mellett 0 szempont lenne, a minta 7-et ad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/19. Legjobban megközelítették valamely maximális pontot *",
+    "method": "Szempontonként a legnagyobb pontot keressük, és a holtversenyes győzteseket jelöljük",
+    "category": "Maximumkeresés szempontonként",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "tömb", "holtverseny"],
+    "note": "Bizonytalan pont: egy szempontban győztes az a kutya, aki a legnagyobb pontot kapta (holtverseny is), és csak akkor, ha ez a pont eléri az alsó ponthatárt; a kiesés szempontonként értendő. A be2 mintában az 1–4. szempont legnagyobb pontja az alsó határ alatt van; ez a kimenetet nem befolyásolja, mert az 5. szempontban minden kutya győztes. A példa és mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/2. Egy szempont szerint győztes, más szempont szerint nem nyert *",
+    "method": "Szempontonként a győztes kutyákat jelöljük, majd kutyánként számoljuk a győzelmeket",
+    "category": "Győzelmek számlálása",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "maximum", "holtverseny"],
+    "note": "A győztes a szempont legjobb pontját elérő kutya (holtverseny is győztes), a legjobb pont legalább az alsó ponthatár legyen; a kiesés szempontonként értendő. A példa és mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

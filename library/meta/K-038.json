@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/1. Állatértékesítés *",
+    "method": "Kumulált bevétel növekedéseinek számlálása, az előző érték kezdetben 0.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "összegzés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/10. Idősebb emberek száma *",
+    "method": "Életkor számítása a születésnap figyelembevételével, majd feltételes számlálás.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "dátum", "feltétel"],
+    "note": "Értelmezés a mintából: a szöveg „X évnél idősebb” kifejezését az életkor >= X feltétellel oldottam meg, mert a 2. minta (309) csak így adódik; szigorú > X esetén 297 lenne. A szöveggel ellentétes, ezért ellenőrizendő.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/11. Ismétlődők **",
+    "method": "Pozíciónként ellenőrizzük, van-e egyező elem a következő K elemben, és azt számoljuk.",
+    "category": "Megszámolás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "tömb", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/12. Járművek száma adott időintervallumban *",
+    "method": "Egyetlen menetben számoljuk azokat a megfigyeléseket, amelyek órája X és Y közé esik.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

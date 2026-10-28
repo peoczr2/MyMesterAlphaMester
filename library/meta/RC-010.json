@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/48. Börtön",
+    "method": "Osztók paritása: pontosan a tökéletes négyzetek maradnak nyitva; ezeket sorban kiírjuk.",
+    "category": "Számelmélet: osztók",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számelmélet", "osztók", "négyzetszám"],
+    "note": "Minta-hiba (kézi): a be2 (N=999999) mintájának ki2.txt fájlja a nem négyzetszámokat sorolja (2 3 5 6 7 8 10 …, 999 000 szám), vagyis a helyes kimenet pontos fordítottja; ellentmond a feladatszövegnek és a be1/ki1 mintának (N=10 esetén 1 4 9). Független szimulációval (a k-adik körben a k többszöröseinek kapcsolása) a helyes kimenet a 999 tökéletes négyzet; a megoldás ezzel egyezik N≤300 és N=999999 esetén is. A validátor a minta-hiba miatt továbbra is hibásnak jelzi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/49. Páros számok",
+    "method": "Sorban végigmegyünk a számokon, és a popcount paritása alapján számolunk.",
+    "category": "Bitműveletek: popcount",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["bitművelet", "popcount", "paritás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/5. Bitművelet *",
+    "method": "Átlós felsorolás visszafejtése, majd az AND és OR értékek bináris kiírása.",
+    "category": "Sorozatok, bitek",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["bitművelet", "háromszögszám", "sorozat"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/50. Számok összege",
+    "method": "Rendezett sorozatban rögzített elem mellett kétmutatós keresés a maradék párra.",
+    "category": "Kétmutatós módszer",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kétmutatós", "rendezett", "összeg"],
+    "note": "A mintában két megfelelő hármas van (4 6 15 és 4 9 12); a program a sorrendben első, 4 6 15 hármast adja, ami a mintával egyezik. A feladatszöveg nem mondja ki, hogy bármelyik megfelelő hármas elfogadott.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

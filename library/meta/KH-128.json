@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/46. Több, nem szomszédos csúcsmagasságot tartalmazó árvizek ***",
+    "method": "Árvizek gyűjtése, csúcsmagasság első és utolsó előfordulása, sorszámtávolság ellenőrzése",
+    "category": "Szakaszok: maximum és helye",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "csúcsmagasság",
+      "maximum",
+      "tömb"
+    ],
+    "note": "Csúcsmagasság: az árvíz legnagyobb vízmagassága, helye az első előfordulás. Több nem szomszédos csúcs: első és utolsó előfordulás legalább 2 sorszámmal tér el. Mért idő: kb. 4 ms N=10000-en (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/5. A két legtávolabbi szomszédos árvízmentes folyószakasz ***",
+    "method": "Árvízmentes szakaszok gyűjtése, szomszédos távolságok, maximumkeresés",
+    "category": "Szakaszok: távolság és maximum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "folyószakasz",
+      "maximum",
+      "tömb"
+    ],
+    "note": "Mért idő: kb. 4 ms N=10000-en (időlimit 0,1 mp). Távolság: a következő szakasz kezdete mínusz az előző vége; döntetlennél az első pár.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/6. Árvizek áradása vagy apadása gyorsabb ***",
+    "method": "Árvizek gyűjtése, kezdő növekvő és záró csökkenő szakasz hosszának összevetése",
+    "category": "Szakaszok: monotonitás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "monotonitás",
+      "tömb",
+      "szakasz"
+    ],
+    "note": "Áradás: a kezdő szigorúan növekvő, apadás: a záró szigorúan csökkenő szakasz hossza; egyenlőségnél 0. Mért idő: kb. 4 ms N=10000-en (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/7. Árvizek csúcsmagassága egyre alacsonyabb-e? ***",
+    "method": "Árvizek csúcsmagasságainak gyűjtése, szigorú csökkenés ellenőrzése szomszédos párokon",
+    "category": "Szakaszok: monotonitás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "monotonitás",
+      "csúcs",
+      "tömb"
+    ],
+    "note": "Egy árvíz esetén a válasz IGEN (üres összevetés). Mért idő: kb. 4 ms N=10000-en (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív kiszámítás/20. Különböző szélességű és magasságú lépcsők",
+    "method": "Prefixpozíciók és magasságok, DP az elérhető lépcsőkre (O(N^2))",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "prefixösszeg",
+      "korlát"
+    ],
+    "note": "Javítva: a vízszintes pozíció az első lépcsőt 1 távolságra veszi; a régi változat a 21. feladat (egységmagas) mintájára 8-at adott 10 helyett.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/21. Különböző szélességű lépcsők",
+    "method": "Prefixpozíciók a szélességekből, összegző DP egységmagas lépcsőkre",
+    "category": "Dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "dinamikus programozás",
+      "prefixösszeg",
+      "lépcső"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/22. Fájlrendszer",
+    "method": "Alulról felfelé összegzett fix/korlát alakok, stars-and-bars a szabad levelekre",
+    "category": "Fák, kombinatorika",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "kombinatorika",
+      "rekurzió"
+    ],
+    "note": "A rekurzív bejárás 10^5 mély láncon veremtúlcsordulást okozott; iteratívra cserélve. Kis véletlen fákon bruteforce-szal ellenőrizve.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/23. Társasjáték",
+    "method": "Hátulról előre DP az előrelépések DAG-ján, a kisebb távolság választásával",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "dinamikus programozás",
+      "legrövidebb út"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/24. Társasjáték visszalépéssel",
+    "method": "BFS egységsúlyú gráfon: a következő mező és az ugrómező a szomszédok",
+    "category": "Gráf: BFS",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bfs",
+      "legrövidebb út"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/3. Járda 1 – 1x1,1x2 *",
+    "method": "Utolsó lap szerinti rekurzió, Fibonacci-sor 64 bites egészekkel",
+    "category": "Rekurzió: Fibonacci",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "rekurzió",
+      "fibonacci",
+      "dinamikus programozás"
+    ],
+    "note": "A régi változat egy hiányzó külső fájlra (../bigint.hpp) hivatkozott, ezért nem fordult; 64 bites egészre cserélve (N<=80 esetén belefér).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

@@ -1,9 +1,13 @@
 /*
-Hungarian megoldás: a megyeszínezést visszalépéssel, mindig a legkisebb
-használható szín kipróbálásával keressük.
-
-Hint 1: || Legfeljebb 4 szín van, ezért a színek végigpróbálhatók. ||
-Hint 2: || A legszűkebb megyét érdemes előre választani. ||
+Megoldás lényege: visszalépéses keresés, amely mindig a még színezetlen megyék közül azt választja,
+amelynek a legkevesebb szabad színe van (ez korán kiszűri a zsákutcákat), és a szabad színeket sorban
+kipróbálja. Ha valamelyik megyének nincs szabad színe, visszalépünk. Legfeljebb 20 megye és 4 szín
+esetén ez gyorsan lefut; ha nincs megfelelő színezés, a kimenet -1.
+*/
+/*
+Hint 1: || Legfeljebb 4 szín van, ezért egy megye színét végigpróbálhatod az összes színen, és zsákutcában visszalépsz. ||
+Hint 2: || Mindig azt a színezetlen megyét érdemes következőnek választani, amelynek a legkevesebb még szabad színe van. ||
+Hint 3: || Egy lépésben számold meg minden színezetlen megyére, hány szín jöhet még szóba (a már színezett szomszédok színeit kizárva); válaszd a legkevesebb lehetőségű megyét, próbáld ki a rá engedélyezett színeket, és ha egyik sem vezet megoldásra, lépj vissza az előző lépéshez. ||
 */
 
 #include <bits/stdc++.h>

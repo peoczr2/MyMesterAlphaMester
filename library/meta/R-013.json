@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/1. Árnyék **",
+    "method": "Fény irányában bejárva a g = h - k·x értékek prefixmaximumához hasonlítjuk a szakaszokat.",
+    "category": "Geometria: sweep, prefixmaximum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "sweep",
+      "prefixmaximum"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/10. Háromszög kerítés ***",
+    "method": "Szögek szerinti 2D dominanciaszámlálás Fenwick-fával, a csemetét tartalmazó háromszögekre.",
+    "category": "Geometria: dominanciaszámlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "fenwick-fa",
+      "dominancia"
+    ],
+    "note": "A minta.zip be2 (2. eset) ellentmond a feladatszövegnek: a csemete (-5,-9) y-koordinátája -9, de az A=(-10,5), B=(3,-7) fák és a többi fa y-koordinátája legalább -8, így a csemete egyik háromszög belsejébe sem kerülhet. A helyes válasz 0, a mintában 8 áll. Ellenőrzés: független, O(N²) brute-force (háromszög-tartalmazás, a fák számának minimalizálása) be1-re 3-at, be2-re 0-t ad; a megoldás mindkettőre és több ezer véletlen esetre egyezik vele.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/11. Házak **",
+    "method": "Balról jobbra haladva a jobb felső sarkok tengelymetszeteinek prefixmaximuma, egész számokkal összevetve.",
+    "category": "Geometria: sugarak tengelymetszete",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "maximum",
+      "egész aritmetika"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/13. Kerítés ***",
+    "method": "Két DSU a H feletti és alatti határláncokra, a metszéspontok párosítása x szerint.",
+    "category": "Geometria: összefüggő részek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "unió-keresés",
+      "poligon"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

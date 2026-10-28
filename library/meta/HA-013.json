@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/17. Ismerősök2 *",
+    "method": "Szomszédsági bitsetek metszete, illetve azonos szomszédsági halmaz ellenőrzése párokra.",
+    "category": "Gráf: közös ismerős",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "bitset", "halmazművelet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/18. Kockavilág *",
+    "method": "Sorban építjük a tornyot: a rajta lévő kockákat felülről lebontjuk, majd az i. kockát ráhelyezzük.",
+    "category": "Szimuláció: kockatorony",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "verem", "mohó"],
+    "note": "A lépéssorrend a mintakimenettel azonos; a minimum BFS-sel is igazolt N ≤ 6 esetén.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/19. Konténer rendezés *",
+    "method": "Rossz pozíciók száma plusz a színgráf összefüggő komponenseinek száma (DSU).",
+    "category": "Gráf: komponensek, rendezés",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "dsu", "rendezés"],
+    "note": "A képlet BFS-sel igazolt minden N ≤ 7 színszámosságra.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/2. Bandák *",
+    "method": "Komponensek bejárása; tagonként a kihagyással újraszámolt komponensek, fokszámok és teljes gráf ellenőrzése.",
+    "category": "Gráf: bandák, komponensek",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "komponens", "bejárás"],
+    "note": "F-ben a 2 tagú banda letartóztatás után magányossá válik, ezért nem biztonságos; G-ben a 2 tagú bandák is csillagok.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,7 +1,17 @@
 /*
    Osztály részhalmazai: az N bites számok növekvő sorrendje. A K elemű
    csoport M-edik elemét a legnagyobb bit felől haladva, binomiális
-   számolással állítjuk elő.
+   számolással állítjuk elő. A már eldöntött felső bitek mellett a bit 0
+   értékű csoportok mind kisebbek a bit 1 értékűeknél, számuk pedig C(bit, K),
+   mert a K elemet a bit alatti bitekből választjuk. Ezért M <= C(bit, K)
+   esetén a bit nincs a csoportban; különben benne van, M-ből levonjuk a
+   C(bit, K) értéket, és K-t csökkentjük. A binomiális táblázat (N <= 40)
+   egyszer épül fel O(N^2) időben, egy lekérdezés pedig O(N) időben fut.
+*/
+/*
+Hint 1: || A csoportok sorrendje ugyanaz, mint a bináris számoké: a legnagyobb helyiértékű bit (az N-1-es tanuló) dönt elsőnek. Számold meg, hány K tagú csoport nincs benne a legnagyobb sorszámú tanulóban, és ez alapján döntsd el, hogy benne van-e. ||
+Hint 2: || Ha a tanuló nincs a csoportban, akkor a K tagot a tőle kisebb sorszámú tanulókból kell választani: ez C(bit, K) lehetőség, ahol C a binomiális együttható. ||
+Hint 3: || Építs Pascal-háromszöget a binomiális együtthatókhoz (40-ig az ull típus elég). Bitenként a legnagyobbtól haladj: ha M nagyobb C(bit, K)-nál, a bit benne van a csoportban, M-ből vond le C(bit, K)-t, és K-t csökkentsd; különben a bit kimarad. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

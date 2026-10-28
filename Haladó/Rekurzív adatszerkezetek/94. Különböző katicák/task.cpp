@@ -1,12 +1,13 @@
 /*
-Megoldási ötlet:
+Megoldás lényege:
 Az élek mentén a pöttyök száma mindig pontosan 1-gyel változik, tehát a fa két szomszédos szintjén a paritás
 automatikusan váltakozik. Ezért egy rögzített gyökérparitás mellett minden csúcs lehetséges értéke egy azonos paritású
 intervallum.
 
 Alulról felfelé számoljuk ki minden csúcsra azt az intervallumot, amelyben az értéke még összeegyeztethető a részfával.
 Egy gyermek intervalluma a szülőnél ±1-gyel tolódik, majd a szülő saját korlátaival metsződik. Ha a gyökérnél van nem
-üres intervallum, akkor egy tetszőleges értékkel vissza is tudjuk építeni a teljes kiosztást.
+üres intervallum, akkor egy tetszőleges értékkel vissza is tudjuk építeni a teljes kiosztást. Az időigény O(N), mert
+mindkét gyökérparitást egyszer, csúcsonként állandó munkával számoljuk végig.
 */
 /*
 Hint 1: || Minden él mentén a pöttyök száma pontosan 1-gyel változik, tehát a paritás váltakozik. ||

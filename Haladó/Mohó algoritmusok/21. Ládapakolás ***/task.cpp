@@ -1,23 +1,14 @@
 /*
-Feladat: Egy ládasor elemeiből a lehető legkevesebb tornyot kell létrehozni úgy, hogy a tornyokban a ládák egymásba pakolási szabály szerint összevonhatók legyenek.
-Ötlet: A prefixek packolhatósága a ládák egymásba pakolásának rekurzív modellje szerint vizsgálható: egy blokk akkor jó, ha a benne lévő sorozatot a szélekről egyre kisebb jó blokkokra bontva végül egyetlen elemre jutunk. Ez prefix-closed, ezért a teljes sorozatot mindig a leghosszabb még jó prefixekre vágjuk; a toronyszám ezeknek a blokkoknak a száma.
-Hint 1: || A jó blokk definíciója rekurzív, és a végén egyetlen ládára kell visszavezethetőnek lennie. ||
-Hint 2: || Prefix-closed tulajdonság esetén elég a leghosszabb jó prefixet keresni. ||
-Hint 3: || A válasz a kivágott jó blokkok száma. ||
+Megoldás lényege: a torony alja mindig a legnagyobb láda, a rá kerülő ládák méretei időben szigorúan csökkennek, ezért egy szakasz pontosan akkor pakolható egyetlen toronyba, ha a méretei mind különbözők, és a sorozat előbb szigorúan nő, majd szigorúan csökken (hegyes alak). Ez a tulajdonság részszakaszokra is öröklődik, ezért a sorozatot balról mohón kell bontani: mindig a leghosszabb ilyen szakaszt vágjuk le, és a tornyok száma a szakaszok száma. A szakasz bővítésének ellenőrzése egy utolsó előfordulás tömbbel O(1), így az egész megoldás O(N) idejű.
+*/
+/*
+Hint 1: || Melyik láda lehet a torony alja, és a két oldalról milyen sorrendben kerülhetnek rá a többi ládák? ||
+Hint 2: || Egy szakasz akkor egyetlen torony, ha a méretei különbözők, és a sorozat előbb szigorúan nő, majd szigorúan csökken. ||
+Hint 3: || Ez részszakaszra is igaz, ezért balról indulva a leghosszabb jó szakaszt vágd le; az egyediséget egy utolsó előfordulás tömbbel ellenőrizd. ||
 */
 
 #include <bits/stdc++.h>
 using namespace std;
-
-static bool packable(const vector<int>& a, int l, int r) {
-    if (l >= r) return true;
-    int mn = a[l], mx = a[l];
-    for (int i = l; i <= r; ++i) {
-        mn = min(mn, a[i]);
-        mx = max(mx, a[i]);
-    }
-    return (a[l] == mn || a[l] == mx || a[r] == mn || a[r] == mx);
-}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -28,16 +19,31 @@ int main() {
     vector<int> a(N);
     for (int i = 0; i < N; ++i) cin >> a[i];
 
-    int towers = 0;
-    int i = 0;
-    while (i < N) {
-        int j = i;
-        while (j + 1 < N && packable(a, i, j + 1)) ++j;
-        ++towers;
-        i = j + 1;
+    int maxA = *max_element(a.begin(), a.end());
+    vector<int> last(maxA + 1, -1);  // az adott méret utolsó előfordulásának indexe
+
+    int towers = 1;   // N >= 2, ezért legalább egy torony van
+    int start = 0;    // az aktuális torony első indexe
+    bool up = true;   // a toronyban még tart-e a szigorúan növekvő szakasz
+    for (int j = 0; j < N; ++j) {
+        if (j > 0) {
+            bool fits = last[a[j]] < start;  // a toronyban még nincs ilyen méretű láda
+            if (fits) {
+                if (up) {
+                    if (a[j] < a[j - 1]) up = false;
+                } else if (a[j] > a[j - 1]) {
+                    fits = false;
+                }
+            }
+            if (!fits) {
+                ++towers;
+                start = j;
+                up = true;
+            }
+        }
+        last[a[j]] = j;
     }
 
     cout << towers << '\n';
     return 0;
 }
-

@@ -6,7 +6,7 @@ forrascsucs, a cel blokk szama a vegcsucs. Ezek a rossz kontenerek egy
 kiegyensulyozott, 3 csucsú irányitott multigráfot alkotnak, amelyben van
 Euler-korut. A korut edge-sorrendje pontosan megadja, milyen sorrendben kell a
 kontenereket a szabad helyre mozgatni, es a végén egy utolso lepes visszateszi a
-lyukat az N+1. helyre.
+lyukat az N+1. helyre. Az időigény O(N).
 */
 /*
 Hint 1: || Minden rossz helyen alló kontenerhez rendelj egy iranyitott éllel a jelenlegi szama és a cel blokk száma között. ||

@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/7. Ember *",
+    "method": "Gyerekek száma; unokák száma a gyermekek gyermekszámainak összegeként; egy bejárás.",
+    "category": "Gráf: fa, fokszámok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "fa", "fokszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/8. Falu *",
+    "method": "Fokszámok (zsákfalvak, maximum); minden csúcsból Dijkstra a legközelebbi nem szomszédos párhoz.",
+    "category": "Gráf: legrövidebb utak",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "fokszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/9. Falvak *",
+    "method": "Zsákfalutól az elágazásig tartó út összege; fokszám-maximum; a csúcsok legrövidebb élének maximuma.",
+    "category": "Gráf: fokszám, élsúlyok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "fokszám", "élsúly"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

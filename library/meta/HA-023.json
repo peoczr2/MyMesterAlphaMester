@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, feszítőfák/1. Csővezeték *",
+    "method": "Prim-algoritmus, a finomítók egy csomópontba vonva",
+    "category": "Minimális feszítőfa",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "feszítőfa", "prim"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, feszítőfák/10. Autóbusz ***",
+    "method": "Kruskal csoportonként, élek kizárása összefüggőség alapján",
+    "category": "Feszítőfa: kizárható élek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "feszítőfa", "unió-find"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, feszítőfák/11. Vasútépítés",
+    "method": "Steiner-pont három Dijkstra-futásból, legolcsóbb utak egyesítése",
+    "category": "Steiner-fa, legrövidebb utak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "steiner-fa"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, feszítőfák/2. Ellenséges Városok *",
+    "method": "Kruskal csökkenő sorrendben, unió-find, maximális feszítőfa",
+    "category": "Maximális feszítőfa",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "feszítőfa", "kruskal"],
+    "note": "A feladatszöveg szerint több megoldás is elfogadható (bármelyik megadható). A kiírt feszítőfa érvényes (N-1 különböző él, összefüggő, a legrövidebb éle 1000 = optimum), de a mintától eltér az élek sorrendje és a döntetlen élek választása; ellenőrző: library/.work/HA-023/chk/t2verify.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/31. Nem volt senki a vonaton *",
+    "method": "Futó létszám minden állomás után, az utolsó nem nulla létszámú állomás sorszáma plusz egy",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "tömb", "keresés"],
+    "note": "Időlimit: 0,1 mp; N=1000 bemeneten mért futási idő kb. 1 ms. Mindkét minta egyezik. Értelmezés: attól az állomástól kezdve végig üres a vonat, amelyik után már nincs utas; a minta az 'első nulla' értelmezéssel is egyezik, a megoldás a szigorúbbat követi. Feltétel: az utolsó állomás után a vonat kiürül.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/32. Nem volt senki a vonaton Budapesttől *",
+    "method": "Futó létszám, az első olyan állomás sorszáma, ahol a létszám nem nulla",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "tömb", "keresés"],
+    "note": "Időlimit: 0,1 mp; N=1000 bemeneten mért futási idő kb. 1 ms. Mindkét minta egyezik. Ha a létszám végig nulla marad, a megoldás az utolsó állomás sorszámát írja ki, ez a mintában nem fordul elő.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/33. Nem volt utasforgalom *",
+    "method": "Lineáris bejárás, az állomások számlálása, ahol a leszállók és a felszállók száma is nulla",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "tömb"],
+    "note": "Időlimit: 0,1 mp; N=1000 bemeneten mért futási idő kb. 1 ms. Mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/34. Nőtt a vonaton utazók száma *",
+    "method": "Lineáris bejárás, az állomások számlálása, ahol a felszállók száma nagyobb a leszállókénál",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "tömb"],
+    "note": "Időlimit: 0,1 mp; N=1000 bemeneten mért futási idő kb. 1 ms. Mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

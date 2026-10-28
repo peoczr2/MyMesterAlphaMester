@@ -1,14 +1,11 @@
 /*
 Megoldás lényege:
-Az előző feladat mintájára az utolsó elem vagy egy 1 magas kocka, vagy egy 3 magas fehér
-tégla. Ezért a rekurzió: T(n)=2T(n-1)+T(n-3).
-
+Az utolsó elem vagy egy 1 magas kocka (ebből kétféle szín van), vagy egy 3 magas fehér tégla. Ezért a T(n)=2T(n-1)+T(n-3) rekurzió adja a megoldást, ahol T(k) a k magasságú tornyok száma. A T(0)=1, T(1)=2 és T(2)=4 kezdőértékekből a sorozatot egy tömbben, 20 201 114-gyel vett maradékkal számoljuk. Az időigény O(M), a memóriaigény szintén O(M).
 */
-
-// Hint 1: || Az 1 magas elemekből most is kettőféle van. ||
-// Hint 2: || A 3 magas tégla egyetlen lépésben hozzáad 3 egységet a toronyhoz. ||
-// Hint 3: || A modulos számolás miatt elég egy sima lineáris DP. ||
-
+/*
+Hint 1: || Gondold végig, mi lehet a torony legfelső eleme: az 1 magas kockákból kétféle van, a 3 magas téglából egy. ||
+Hint 2: || A 3 magas tégla egyetlen lépésben hozzáad 3 egységet a toronyhoz. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

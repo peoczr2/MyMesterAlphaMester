@@ -1,83 +1,66 @@
 /*
-   Lassú szöveg: a szomszédos karakterek az ábécében szomszédosak.
-   A sorrend a prefixfán végzett bejárás, ezért rangsorolással és unrankinggel
-   megoldható az előző és a következő szó is.
+Megoldás lényege:
+A lassan változó szavak lexikografikus sorrendjében a szomszédok a szó végén dőlnek el. Az előző szót úgy kapjuk, hogy a szó utolsó betűjét a nála kisebb szomszédjára cseréljük (ha lehet), majd a szót a lehető legnagyobb szomszédos betűkkel K hosszúra egészítjük ki; ha a csere nem lehetséges, az előző szó a szó egy betűvel rövidebb prefixe. A következő szó: ha a szó rövidebb K-nál, a végére a legkisebb szomszédos betű kerül; különben a jobbról első olyan helyet keressük, ahol a betű nagyobb szomszédra cserélhető, a szót ott levágjuk, és a cserélt betűt írjuk a végére. Minden lépés O(K) munka, ezért nem kell a szavak sorszámát (rangját) kiszámolni, ami K = 10 000 esetén messze nem férne el egy 64 bites számban. A megoldás O(K) időben fut.
+*/
+/*
+Hint 1: || A szavak lexikografikus sorrendjében egy szó közvetlen szomszédja általában a szó végéhez közel áll, ezért először az utolsó betű lecserélését próbáld meg. ||
+Hint 2: || Az előző szónál a legutolsó betűt a nála kisebb szomszédjára cseréld (ha van ilyen), majd a szót a lehető legnagyobb szomszédos betűkkel K hosszúra egészítsd ki. Ha nincs ilyen csere, az előző szó a szó egy betűvel rövidebb prefixe. ||
+Hint 3: || A következő szónál: ha a szó rövidebb K-nál, a végére a legkisebb szomszédos betű kerül. Ha a szó már K hosszú, keresd meg a jobbról első olyan pozíciót, ahol a betű nagyobb szomszédra cserélhető: a szót ott levágva, a cserélt betűvel kapod a következő szót. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
 
-static const long long LIM = 1000000001LL;
+int K;
 
-static bool allowed(int a, int b) { return abs(a - b) == 1; }
+// A legnagyobb, legfeljebb K hosszú szó, amely a p prefixszel kezdődik (p érvényes).
+string largestWithPrefix(string p) {
+    while ((int)p.size() < K) {
+        int last = p.back() - 'a';
+        p.push_back(char('a' + (last < 25 ? last + 1 : last - 1)));
+    }
+    return p;
+}
+
+// Az előző szó (üres szót nem számolunk), vagy "-", ha nincs.
+string previousWord(const string& s) {
+    int n = (int)s.size();
+    if (n == 0) return "-";
+    int cur = s[n - 1] - 'a';
+    int prv = n >= 2 ? s[n - 2] - 'a' : -1;
+    for (int c = cur - 1; c >= 0; --c) {
+        if (prv == -1 || abs(c - prv) == 1) {
+            return largestWithPrefix(s.substr(0, n - 1) + char('a' + c));
+        }
+    }
+    return n >= 2 ? s.substr(0, n - 1) : "-";
+}
+
+// A következő szó, vagy "-", ha nincs.
+string nextWord(const string& s) {
+    int n = (int)s.size();
+    if (n == 0) return "a";
+    if (n < K) {
+        int last = s[n - 1] - 'a';
+        return s + char('a' + (last == 0 ? 1 : last - 1));
+    }
+    for (int j = n - 1; j >= 0; --j) {
+        int cur = s[j] - 'a';
+        int prv = j >= 1 ? s[j - 1] - 'a' : -1;
+        for (int c = cur + 1; c < 26; ++c) {
+            if (prv == -1 || abs(c - prv) == 1) {
+                return s.substr(0, j) + char('a' + c);
+            }
+        }
+    }
+    return "-";
+}
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int K;
     string s;
     cin >> K >> s;
-
-    vector<vector<long long>> ways(K + 1, vector<long long>(26, 0));
-    for (int c = 0; c < 26; ++c) ways[1][c] = 1;
-    for (int len = 2; len <= K; ++len) {
-        for (int c = 0; c < 26; ++c) {
-            long long val = 1;
-            if (c > 0) val += ways[len - 1][c - 1];
-            if (c + 1 < 26) val += ways[len - 1][c + 1];
-            ways[len][c] = min(LIM, val);
-        }
-    }
-
-    auto totalWords = [&]() -> long long {
-        long long sum = 0;
-        for (int c = 0; c < 26; ++c) sum = min(LIM, sum + ways[K][c]);
-        return sum;
-    };
-
-    auto rankOf = [&](const string& str) -> long long {
-        long long rank = str.size();
-        for (int i = 0; i < (int)str.size(); ++i) {
-            int cur = str[i] - 'a';
-            int prev = (i == 0 ? -1 : str[i - 1] - 'a');
-            for (int c = 0; c < cur; ++c) {
-                if (prev != -1 && !allowed(prev, c)) continue;
-                rank = min(LIM, rank + ways[K - i][c]);
-            }
-        }
-        return rank;
-    };
-
-    auto unrank = [&](long long k) {
-        string ans;
-        int rem = K;
-        int last = -1;
-        while (true) {
-            if (!ans.empty()) {
-                if (k == 1) return ans;
-                --k;
-            }
-            bool chosen = false;
-            for (int c = 0; c < 26; ++c) {
-                if (last != -1 && !allowed(last, c)) continue;
-                long long cnt = ways[rem][c];
-                if (k > cnt) {
-                    k -= cnt;
-                    continue;
-                }
-                ans.push_back(char('a' + c));
-                last = c;
-                --rem;
-                chosen = true;
-                break;
-            }
-            if (!chosen) return ans;
-        }
-    };
-
-    long long r = rankOf(s);
-    cout << (r == 1 ? string("-") : unrank(r - 1)) << '\n';
-    long long tot = totalWords();
-    cout << (r == tot ? string("-") : unrank(r + 1)) << '\n';
+    cout << previousWord(s) << '\n' << nextWord(s) << '\n';
     return 0;
 }

@@ -29,7 +29,7 @@ int main() {
         }
     }
 
-    static const char *names[] = {"észak", "kelet", "dél", "nyugat"};
+    static const char *names[] = {"eszak", "kelet", "del", "nyugat"};
     cout << x << ' ' << y << '\n' << names[dir] << '\n';
     return 0;
 }

@@ -1,11 +1,12 @@
 /*
-Feladat: A fák közül a lehető legkevesebbet kell kivágni, hogy mindegyik kidőljön, és meg kell adni azt a fát is, amelyik a legtöbb fát dönti le.
-Ötlet: Először minden fáról kiszámítjuk, meddig terjed a döntési lánc. Ezután a teljes sort a lehető leghosszabb lefedő intervallumokkal fedjük le balról jobbra.
-Hint 1: || Egy fa kidőlése a jobb oldali fák láncán keresztül tovább terjedhet. ||
-Hint 2: || Ha ismered egy fa legvégső elérését, a következő fa elérését is ebből tudod építeni. ||
-Hint 3: || A minimális kivágásszám ezután egy sima intervallumfedés. ||
+Megoldás lényege:
+Egy kidőlő fa a jobb oldalán a [x_i, x_i + h_i] szakaszt érinti, és minden ebbe eső (a szakasz végpontjára eső is) fa szintén kidől, így az i-edik fa láncreakciójának jobb végpontja (reach) egy balról jobbra haladó bejárással kiszámítható. A legtöbb fát kidöntő fa az, amelynek [x_i, reach_i] szakaszába a legtöbb fa esik. A minimális kivágásszám balról jobbra haladó mohó intervallumfedés: az első még álló fát kivágjuk, a kidőlt szakasz végét a láncreakciók alapján frissítjük, és az első nem kidőlt fánál folytatjuk. Az időigény O(N^2), ami N <= 1000 mellett bőven belefér az időlimitbe.
 */
-
+/*
+Hint 1: || Egy fa kidőlése a jobb oldali fák láncán keresztül tovább terjedhet. ||
+Hint 2: || Egy fa kidőlési végpontja x+h-val kezdődik, és minden olyan jobb oldali fával bővül, amelyik ebbe a szakaszba esik. ||
+Hint 3: || Balról haladva mindig az első még álló fát vágd ki, majd ugorj a kidőlt szakasz végéig; a lépések száma adja a minimális kivágásszámot. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

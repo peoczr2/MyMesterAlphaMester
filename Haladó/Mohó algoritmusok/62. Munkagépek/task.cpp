@@ -1,6 +1,8 @@
 /*
-Feladat: Egynapos munkák adott határidőkkel, mindet határidőre kell teljesíteni. Egy munkagép naponta egy munkát végez. A minimális gépszámot kell meghatározni.
-Ötlet: d napig legfeljebb G*d munkát tud elvégezni G gép. Ha prefix(d) a d-ig esedékes munkák száma, akkor szükséges G >= ceil(prefix(d)/d) minden d-re. A minimális G ezért ezen értékek maximuma.
+Megoldás lényege:
+Egy gép naponta egy munkát végez, így d napig legfeljebb G*d munka fér el. Ha pref(d) a d-ig esedékes munkák száma, akkor minden d-re G >= ceil(pref(d)/d) szükséges, és ezek a korlátok együtt elegendők is. A válasz ezért a korlátok maximuma. Az időigény O(N + H), ahol H a legnagyobb határidő, mert a határidők gyakorisági tömbjéből egy bejárással megkapjuk az összes prefixösszeget.
+*/
+/*
 Hint 1: || Írd fel a „d napig hány munka készülhet el” kapacitáskorlátot. ||
 Hint 2: || A szükséges gépszámot minden d-re alsó korlát adja: ceil(prefix(d)/d). ||
 Hint 3: || A válasz a korlátok maximuma. ||

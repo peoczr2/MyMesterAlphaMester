@@ -1,9 +1,10 @@
 /*
-Feladat: A robotoknak a rácson lévő 1-es mezőket a lehető legkevesebb, jobbra és lefelé haladó útvonalon kell begyűjteniük.
-Ötlet: A mezőket sorok szerint növekvő sorrendbe vesszük, és a második koordinátára bontjuk a sorozatot a lehető legkevesebb nemcsökkenő láncra. Ez adja a minimális robotok számát.
+Megoldás lényege: A robotok minimális száma a Dilworth-tétel szerint a legnagyobb antilánc mérete, a számítást mégis mohó láncfedéssel végezzük. Az 1-es mezőket sor, majd oszlop szerint rendezzük; egy robot útja olyan sorozat, amelyben az oszlopszám nemcsökkenő. Minden mezőt a legnagyobb olyan lánc végére teszünk, amelynek utolsó oszlopa nem nagyobb nála, különben új robot indul. Ez a legkevesebb láncot adja, az időigény O(P log P), ahol P az 1-es mezők száma (legfeljebb 10 000).
+*/
+/*
 Hint 1: || Egy robot útja mentén a sor- és oszlopszám is csak növekedhet. ||
 Hint 2: || Ha a rácspontokat soronként, azon belül oszlopsorrendben nézed, akkor egy robot egy nemcsökkenő oszlopsorozatot ad. ||
-Hint 3: || A válasz a lehető legkevesebb ilyen sorozat száma. ||
+Hint 3: || Mohón haladva egy mezőt ahhoz a már kezdett sorozathoz csatolj, amelynek utolsó oszlopa a legnagyobb, de még nem nagyobb a mező oszlopánál; ha nincs ilyen, nyiss új sorozatot. ||
 */
 
 #include <bits/stdc++.h>

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/5. Napok sorrendje - 2005. május",
+    "method": "Oszlopösszegek képzése, majd (összeg, napnév) párok rendezése; az átlag osztása elhagyható.",
+    "category": "Rendezés: oszlopösszegek",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "rendezés", "összegzés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/6. Legkisebb terület - 2005. május",
+    "method": "Minimum és maximum követése egy beolvasással; a terület a két tartomány szorzata.",
+    "category": "Geometria: lefedő téglalap",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["koordináta", "szélsőérték", "téglalap"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/7. Török szultán- 2006. május",
+    "method": "Szolgánkénti szimuláció; nyitva a végén a négyzetszámú ajtók maradnak.",
+    "category": "Szimuláció: ajtók állapota",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "osztó", "négyzetszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/8. Helyes kifejezés- 2006. május",
+    "method": "Három külön ellenőrzés: zárójel-darabszám, számlálós egymásba ágyazás, műveleti jelek szomszédai.",
+    "category": "Zárójelezés: szintaktikai ellenőrzés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["zárójel", "számláló", "szövegfeldolgozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

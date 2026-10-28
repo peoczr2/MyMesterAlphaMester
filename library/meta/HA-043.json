@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/13. Hálózat kezdőpont ***",
+    "method": "Erősen összefüggő komponensek (Tarjan), forráskomponensek száma, k−1 új él láncban.",
+    "category": "Gráf: erős komponensek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["erős összefüggőség", "irányított gráf", "elérhetőség"],
+    "note": "A minta.zip-ben csak be1 és be2 van, ki-fájl nincs, ezért a validátor nem futtatott mintát. A példa kimenete (9 / 2 / 9 1 / 1 5) pontosan egyezik, de több megoldás is elfogadott: független ellenőrzővel (verify.py: minimum és elérhetőség) és 400 véletlen kis esettel brute-force összevetéssel igazoltam. Időmérés: be2 0,004 s; N=500, M=20000 esetén 0,007 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/14. Hírek ***",
+    "method": "Erős komponensek, komponensenkénti elérési bitsorozatok, források párjainak uniója.",
+    "category": "Gráf: elérhetőség, bitsorozat",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["erős összefüggőség", "bitsorozat", "maximalizálás"],
+    "note": "A minta.zip-ben nincs ki-fájl, a validátor nem futtatott mintát. A példa M=10 értéke egyezik, a kiválasztott tanulók más párok is lehetnek (több megoldás elfogadott). Ellenőrzés: független Python-megoldás (verify.py) be1 és be2 bemenetre, 1000 véletlen kis eset brute-force összevetéssel. Időmérés: be2 (N=6997, K=1) 0,010 s; N=10000, K=2 véletlen gráf 0,023 s; DAG (kb. 1000 forrás) 0,076 s; mesterséges, kb. 4000 különböző elérési halmazú forrással 0,37 s, ez meghaladja a 0,1 s időkorlátot (a forráspárok vizsgálatának legrosszabb esete).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/15. Hírlánc ***",
+    "method": "Erős komponensek, a befutó élek nélküli komponensek száma; mindegyikbe egy tanuló.",
+    "category": "Gráf: erős komponensek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["erős összefüggőség", "irányított gráf", "forrás"],
+    "note": "A minta.zip-ben nincs ki-fájl, a validátor nem futtatott mintát. A példa (M=2, tanulók: 7 6) egyezik; más forrás-tanulók is jók lehetnek, ezért független ellenőrzővel (verify.py: minimum és lefedés) és 700 véletlen kis esettel brute-force összevetéssel igazoltam. Időmérés: N=10000 esetén 0,006 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/16. Járások *",
+    "method": "Központonként szélességi bejárás (BFS), minden település a legközelebbi központhoz kerül.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szélességi bejárás", "legrövidebb út", "többforrású keresés"],
+    "note": "A példa ábrája szerint az utak irány nélküliek; a példában K=10 szerepel, de csak 9 út van megadva (az ábrán is 9 él), a program a bemenet végénél megáll. A példa kimenete (5 1 2) egyezik. A minta.zip-ben nincs ki-fájl, a validátor nem futtatott mintát; be1 és be2 kimenetét független Python-BFS-sel igazoltam, 400 véletlen kis esettel brute-force összevetés is volt. Időmérés: be2 0,006 s; N=1000, M=1000, K=10000 esetén 0,034 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

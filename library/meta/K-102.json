@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/28. Szállítás",
+    "method": "Előtag-összegekkel O(1) bevétel minden központi raktárra, majd a maximum minimalizálása.",
+    "category": "Prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["sorozatszámítás", "prefixösszeg", "optimalizálás"],
+    "note": "A szélső cég a saját raktára áruját is viszi (i=1 és i=N beleszámít). A minta ezt nem dönti el (mindkét értelmezés 7-et és 16-ot ad); az 'összes áru' kitételből következtettem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/29. Több konzolt kiadó gyártó *",
+    "method": "Gyártónként konzolszámok összegzése, majd a két megadott gyártó összehasonlítása.",
+    "category": "Csoportonkénti összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "tömb", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/3. Horgászverseny - horgász halai *",
+    "method": "Soronkénti összegzés belső ciklussal, a külső ciklus a horgászokon megy.",
+    "category": "Sorozatszámítás: sorösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "összegzés", "mátrix"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/4. Lakosságszám *",
+    "method": "Megyénkénti összegzés map-pel, a megyék bemeneti megjelenési sorrendjét vektorban tartva.",
+    "category": "Csoportonkénti összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "csoportosítás", "szótár"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

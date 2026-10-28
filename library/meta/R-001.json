@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/105. Tábor",
+    "method": "Páros gráf színezése komponensenként, majd részösszeg-DP a színosztály-méretekre",
+    "category": "Gráf és részösszeg-DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "részösszeg", "visszafejtés"],
+    "note": "Több helyes bontás van (a feladat szerint bármelyik megadható), a minta más bontást ad; a kimenetet a library/.work/R-001/105/check.py ellenőrző igazolja: partíció, nincs belső él, a létszámkülönbség minimális.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/107. Kincsek a hegyoldalon",
+    "method": "Rács-DP felülről és balról, a gyűjtőpontokon nem terjesztjük tovább",
+    "category": "Rács-DP",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rács", "dp", "útvonal"],
+    "note": "A feladat szerint több gyűjtőpont is megadható, a ki2 minta pedig csak a 0 értéket írja gyűjtőpont-sor nélkül, és mindkét gyűjtőpont 0 kincset ad; a gyűjtőponton való átlépést tiltottuk, mert a szöveg szerint ott véget ér az út, a kimenetet a library/.work/R-001/gridcheck.py brute-force ellenőrzi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/108. Kövek a támaszpontra",
+    "method": "Rács-DP felülről és balról, a támaszpontokon nem terjesztjük tovább",
+    "category": "Rács-DP",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rács", "dp", "útvonal"],
+    "note": "A feladat szerint több támaszpont is megadható, a ki2 minta pedig csak a 0 értéket írja támaszpont-sor nélkül, és mindkét támaszpont 0 követ ad; a támaszponton való átlépést tiltottuk, mert a szöveg szerint az út ott véget ér, a kimenetet a library/.work/R-001/gridcheck.py brute-force ellenőrzi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/11. DNS **",
+    "method": "Szerkesztési-távolság DP (átírás 1, rés 2), visszafejtéssel a műveletsorokra",
+    "category": "Szerkesztési távolság",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szekvencia", "dp", "visszafejtés"],
+    "note": "A feladat szerint bármelyik optimális előállítás megadható, a minta más S-t és igazítást ad; a kimenetet a library/.work/R-001/11/check11.py igazolja: K a minimum, és mindkét műveletsor konzisztens az S-sel.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/110. Szóátalakítás lépéseivel",
+    "method": "Suffix-DP a költségekre, majd előrefelé haladva generáljuk a műveleteket",
+    "category": "Szerkesztési távolság",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szöveg", "dp", "visszafejtés"],
+    "note": "A feladat a minimális műveletszámot és egy átalakítás műveleteit kéri, a műveletsor nincs egyértelműen kikötve, a minta más sorrendet ad; a kimenetet a library/.work/R-001/110/check110.py szimulációval igazolja, a műveletszám a Levenshtein-távolság.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/112. Vásárlások",
+    "method": "Bitmaszkos DP a napokon végig, naponta legfeljebb egy vásárlással",
+    "category": "Bitmaszkos DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bitmaszk", "dp", "visszafejtés"],
+    "note": "A feladat szerint bármelyik megfelelő hozzárendelés kiírható, a minta-eltérés a 2. termék napja (2. nap a mintában, 8. nap a kimenetben, azonos áron); a kimenetet a library/.work/R-001/112/check112.py igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

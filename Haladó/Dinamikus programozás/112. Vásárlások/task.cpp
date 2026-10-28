@@ -1,8 +1,8 @@
 /*
 Megoldási ötlet:
 A termékek száma legfeljebb 9, ezért bitmaszkos dinamikus programozás használható. A napokat sorban dolgozzuk
-fel, és dp[nap][mask] azt jelenti, hogy az első nap nap feldolgozása után a mask által jelölt termékeket már
-megvettem, és ez a lehető legkisebb költség.
+fel, és dp[nap][mask] azt jelenti, hogy a nap feldolgozása után a mask által jelölt termékeket már megvettük,
+és ez a lehető legkisebb költség.
 
 Egy napon vagy nem vásárolunk semmit, vagy megvesszük valamelyik még hiányzó terméket. A végén a teljes maszkhoz
 tartozó minimális költséget választjuk, majd a mentett elődökből visszafejtjük, hogy melyik terméket melyik napon

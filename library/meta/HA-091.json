@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/7. Számok elvétele ***",
+    "method": "Hátulról számolt DP a maximális pontkülönbségre, az első lépés az optimális L.",
+    "category": "Játékelmélet: DP",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["játékelmélet", "dinamikus programozás", "interaktív"],
+    "note": "Speciális: a modul (ellenfel) hívásaival dolgozik; a validate.py csak a task.cpp-t fordítja, az ellenfel.h hiányában 'hibás'. Saját ellenőrzés (library/.work/HA-091): a nyerhető állásokon a minta-modullal és véletlen, illetve optimális ellenféllel minden futás 'helyes'. Szamit() üres kötelező hook (a C++ modul Meret-ből hívja, Tabla még nem használható); a C-s minta modul más linkelést vár rá. A mintában nincs be/ki pár.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/8. Mankala ***",
+    "method": "Teljes minimax-keresés a játékállapotokon, a kavics-szétosztás szimulálásával.",
+    "category": "Játékelmélet: minimax",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["játékelmélet", "rekurzió", "szimuláció"],
+    "note": "Speciális: a game modul hívásaival dolgozik; a validate.py csak a task.cpp-t fordítja, a game.h hiányában 'hibás'. Saját ellenőrzés (library/.work/HA-091): a 495 kezdőállásból a 213 nyerő mindegyike 'helyes' a C-s minta-modullal és 8 véletlen ellenféllel. A mintában nincs be/ki pár.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/9. Kincskereső játék ***",
+    "method": "Centroid-keresés: minden kérdés a részfa súlypontjára, így a jelöltek felezése.",
+    "category": "Interaktív: centroid-keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["interaktív", "fa", "centroid"],
+    "note": "Speciális: a kincs modul hívásaival dolgozik; a validate.py csak a task.cpp-t fordítja, a kincs.h hiányában 'hibás'. A fát a Szomszed-hívásokból építi fel, amelyekre a feladat nem ad korlátot. Saját ellenőrzés (library/.work/HA-091/sim9.cpp): véletlen fák (N<=10000, több alakzat) és több kincshely esetén minden futás 'HELYES', a kérdésszám mindig legfeljebb floor(log2 N). A mintában nincs be/ki pár.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/17. Vonatmenetrend - 2",
+    "method": "Táblázatbejárás: megállások, végállomások és menetidők szerint",
+    "category": "Táblázat-feldolgozás, menetrend",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "táblázat",
+      "bejárás",
+      "minimum"
+    ],
+    "note": "Az 5. rész a minta szerint állomássorszámokat ad (be2: 3 darab, 8 13 15), a feladatszöveg viszont 'ilyen vonatok sorszámait' kéri; a kérdés az állomásokról szól, ezért a mintát követem. Időlimit 0,1 mp, mért ~0,002 mp a legnagyobb (20×50) bemeneten.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/18. Vonatmenetrend - 1",
+    "method": "Táblázatbejárás: megállások és végállomások, minimum- és számlálás",
+    "category": "Táblázat-feldolgozás, menetrend",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "táblázat",
+      "bejárás",
+      "minimum"
+    ],
+    "note": "Időlimit 0,1 mp, mért ~0,002 mp a legnagyobb (20×50) bemeneten.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/19. Hajók a kikötőben",
+    "method": "Napi darabszám-tömb, érkezés nélküli és összefüggő szakaszok bejárása",
+    "category": "Intervallumok, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "tömb",
+      "számlálás",
+      "intervallum"
+    ],
+    "note": "A feladatszövegben nincs időlimit; mért ~0,002 mp a legnagyobb (N = M = 1000) bemeneten.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/2. Autókölcsönző",
+    "method": "Autónkénti összegzés, napi darabszám-tömb és egyszerű bejárás",
+    "category": "Számlálás, összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "tömb",
+      "számlálás",
+      "map"
+    ],
+    "note": "Megjegyzés: a megoldás a PDF-példát pontosan adja (56 / 2 / 2 / AAA111 / 4 sor), a minta viszont ellentmond a feladatszövegnek. A minta a rendszámot a 2. blokkba teszi (a feladat szerint a 4.), a be1 mintában a CCC123 1–9 és 7–13 kölcsönzése a 7–9. napon átfed (a feladat tiltja), és a legtöbbször kölcsönzött autónak DDD111-et ad, pedig a PDF-példa szerint a kölcsönzésszám a mérce (AAA111). Döntés kell: a feladatszöveg vagy a minta szerinti kimenet a helyes.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

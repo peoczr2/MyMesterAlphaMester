@@ -1,11 +1,15 @@
 /*
-Feladat: Fában (1 a gyökér) olyan városhalmazt kell választani, hogy egy kiválasztott városból a fővárosba vezető út ne menjen át másik kiválasztott városon (tehát ne legyen ős-leszármazott pár a kiválasztottak között). A kiválasztott tevék száma legyen maximális.
-Ötlet: Ez fa-DP: best[u] = max(teve[u], sum(best[gyerekek])). Vagy u-t választjuk (akkor a teljes leszármazotti rész tiltott), vagy u-t nem választjuk és gyerekenként függetlenül az optimumot vesszük. Utána visszaépítjük egy optimális halmazt.
+Megoldás lényege:
+Két kiválasztott város nem lehet ős és leszármazottja, mert a fővárosba vezető út nem mehet át másik kiválasztott városon.
+Fa-DP: best[u] = max(T_u, a gyerekek best értékeinek összege). Az első esetben u-t választjuk, és részfájának minden csúcsa tiltott; a másodikban a gyerek-részfákat függetlenül optimalizáljuk.
+A DP-t úgy számoljuk, hogy a gyerekek mindig a szülő előtt legyenek feldolgozva, a megoldást felülről lefelé rekonstruáljuk.
+Időigény: O(N).
+*/
+/*
 Hint 1: || A tiltás pontosan az ős-leszármazott párokra vonatkozik. ||
 Hint 2: || Egy csúcsnál két opció van: „csúcsot viszem” vagy „gyerek-részfákat optimalizálom”. ||
 Hint 3: || Posztorderben számolj DP-t, majd top-down rekonstruálj. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/9. Kincselosztás ***",
+    "method": "Partíciószámláló DP, unrankelés csoportonként, rangból következő és előző felosztás.",
+    "category": "Partíciók, rangsorolás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["partíció", "rangsorolás", "dinamikus programozás"],
+    "note": "Minta-eltérés: a be2.txt 2. sora (29 10 6 1 4) nem kincselosztás (X4=1 < X5=4), a ki2.txt 2. sora (29 10 6 1 3 1) pedig nem monoton nemnövekvő, ami a feladatszöveg szerint nem lehet, így erre a sorra nincs helyes program. Az 1. sor brute force-szal igazolt (N=50, I=16938), a 3. sor egyezik a mintával, a 2. sor a hibás bemenet miatt nem igazolható; a rendezett [29 10 6 4 1] bemenetre a program a helyes következőt (29 10 6 3 2) és előzőt (29 10 6 5) adja. Ellenőrzés: library/.work/R-031/test/brute.py (N ≤ 12 minden bemenetre és I-re, N=50 véletlen esetekre) és roundtrip.py (N=150, big-int rang-visszaellenőrzés).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

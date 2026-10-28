@@ -1,6 +1,8 @@
 /*
-Feladat: Adottak vendégek jelenléti intervallumai és esemény-időpontok. A lehető legtöbb eseményhez kell tanú, és ehhez minimális számú vendéget kell kiválasztani.
-Ötlet: Az eseményeket növekvő sorrendben járjuk. Az aktuális eseményhez betesszük az összes addig induló vendéget egy max-kupacba (távozási idő szerint), és kidobjuk, aki már nem ér rá. Ha van érvényes vendég, kiválasztjuk azt, amelyik legtovább marad; ez minimális tanúszámot ad az adott (maximális) lefedhető eseményhalmazra, mert a legmesszebbre nyúló intervallumot választjuk az első lefedetlen, de lefedhető pontnál.
+Megoldás lényege:
+Az eseményeket időrendben dolgozzuk fel, a vendégeket érkezésük szerint egy max-kupacba tesszük, távozási idő szerint rendezve. Az első olyan eseménynél, amelyhez van jelen lévő vendég, a legtovább maradó vendéget választjuk, és az általa lefedett összes következő eseményt kipipáljuk. A legtovább maradó vendég a lehető legtöbb következő eseményt fedi le, ezért a mohó választás csere-argumentummal minimális tanúszámot ad. Az időigény O((N + M) log N).
+*/
+/*
 Hint 1: || Először mindig a legkorábbi még kezeletlen eseményre koncentrálj. ||
 Hint 2: || Ha egy esemény lefedhető, a legtovább kitartó tanú választása mohó-optimum. ||
 Hint 3: || Az így választott tanúval egyszerre több következő eseményt is „le lehet söpörni”. ||

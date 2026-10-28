@@ -1,11 +1,15 @@
 /*
-Feladat: A hegymászó az 1. tábortól az N.-ig, majd vissza az 1.-ig megy. Legfeljebb M percet tud egyhuzamban menni, pihenést csak táborokban tarthat. Minimalizálni kell a pihenések számát és kiírni a táborokat.
-Ötlet: A teljes útvonal egy lineáris checkpointsorozat: 1,2,...,N,N-1,...,1. A szomszédos checkpointok közti menetidők is adottak. Klasszikus „minimum megállás” mohó: mindig a lehető legmesszebbi checkpointig megyünk, ami még belefér M-be. Ez optimális, mert minden pihenésnél maximalizálja az elért előrehaladást.
+Megoldás lényege: az oda-vissza utat egyetlen szakaszsorrá alakítjuk: a táborok sorrendje 1, 2, ..., N, N-1, ..., 1,
+közöttük a megfelelő menetidőkkel. Ebben a sorozatban mindig a lehető legtávolabbi táborig megyünk pihenés nélkül,
+amíg az eltelt idő még nem haladja meg M-et, és ott pihenünk. Ez a mohó felosztás optimális: minél hosszabb egy
+pihenés nélküli blokk, annál kevesebb blokk, azaz annál kevesebb pihenés kell. A pihenőhely sorszámát a sorozat
+indexéből határozzuk meg. Időigény: O(N).
+*/
+/*
 Hint 1: || Alakítsd át az oda-vissza utat egyetlen lineáris szakaszsorrá. ||
 Hint 2: || Egy pihenés után mindig a legtávolabbi elérhető táborig menj, ne állj meg korábban. ||
 Hint 3: || A pihenéshelyek a „checkpoint indexből” visszaalakíthatók táborsorszámra. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/31. Leghosszabb harmadfokú árvíz ***",
+    "method": "Balról jobbra bejárás: az 1000 cm-nél magasabb mérések maximális sorozatainak darabszáma, hossza és a leghosszabb.",
+    "category": "Maximális sorozatok",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["sorozat", "számlálás", "szakasz"],
+    "note": "A „10 métert” határ 1000 cm-nek felel meg; a példa ábrája és a minta mindkét párja ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/32. Leghosszabb, legalább másodfokú árvíz ***",
+    "method": "Balról jobbra bejárás: a 900 cm-nél magasabb mérések maximális sorozatainak darabszáma, hossza és a leghosszabb.",
+    "category": "Maximális sorozatok",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["sorozat", "feltétel", "szakasz"],
+    "note": "A „legalább másodfokú” szakasz a 900 cm-nél magasabb mérések maximális összefüggő része (másod- és harmadfokú együtt), nem a pontos szint szerinti szakasz; a példa 1. szakasza ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/33. Legközelebbi árvízi csúcsmagasságok ***",
+    "method": "Árvizek csúcsainak helye egy bejárásban, majd a szomszédos csúcsok közül a legkisebb sorszámkülönbségű pár.",
+    "category": "Szomszédos párok minimuma",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "minimum", "szomszédos"],
+    "note": "A „legközelebb” a csúcsok sorszámkülönbségére vonatkozik, nem a csúcsmagasságra; a minta 2. párja (24, 27) ezt igazolja. Egyenlőség esetén az első pár.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/34. Leglassabban apadó árvíz ***",
+    "method": "Két sorozatlista egy bejárásban, harmadfokú sorozat utáni első árvízmentes sorozat, majd a legnagyobb távolságú pár.",
+    "category": "Szakaszpárok: maximális távolság",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["sorozat", "maximum", "bejárás"],
+    "note": "A 0 darabszámú sorozatsor marad ki, a többi részfeladat sorai ettől függetlenül kiíródnak; a „legtávolabbi” pár a harmadfokú szakasz vége és a rákövetkező árvízmentes szakasz kezdete közötti különbség (a minta igazolja).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/3. Armstrong számok *",
+    "method": "Számjegy-multihalmazok rekurzív felsorolása, hatványösszeg ellenőrzése.",
+    "category": "Számjegyek hatványösszege",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "számelmélet",
+      "számjegyek",
+      "hatvány"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/30. Sajátszámok *",
+    "method": "Csak M körüli generátor-ablak vizsgálata, n + számjegyösszeg(n) előállítások jelölése.",
+    "category": "Számjegyösszeg, keresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "számelmélet",
+      "számjegyösszeg",
+      "korlát"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/31. Számrendszer *",
+    "method": "Minden 2..A+1 alap számjegyösszegét maradékos osztással kiszámítjuk.",
+    "category": "Számrendszerek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "számrendszer",
+      "számjegyösszeg",
+      "maradék"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/32. Szerencsés *",
+    "method": "Szita, ahol a lépésköz mindig a következő megmaradt szám (upper_bound).",
+    "category": "Szita, szerencsés számok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szita",
+      "számelmélet",
+      "törlés"
+    ],
+    "note": "Minta-hiba: a ki2.txt a 3210. számtól (32761 után) 1, 7, 25, … értékeket tartalmaz. Ezek a helyes 32769, 32775, 32793, … számok mod 32768-ai, így a minta nem szigorúan növekvő, és 45769-nél véget ér. Független Python-brute (N=78548, 7046 szám) igazolja a saját kimenetet. Időlimit 0,5 mp: N=300000 esetén kb. 0,12 s. A validátor a minta miatt továbbra is hibásat jelez.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

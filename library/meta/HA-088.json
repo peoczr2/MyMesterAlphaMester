@@ -1,0 +1,18 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/9. Barátok ***",
+    "method": "Szomszédos párok kérdezése, szakaszok besorolása egy-egy horgonykérdéssel",
+    "category": "Interaktív: baráti csoportok",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "csoportosítás",
+      "lekérdezés"
+    ],
+    "note": "Speciális: interaktív, a valasz modul hívásaival dolgozik; a validate.py csak a task.cpp-t fordítja modul nélkül, ezért link-hibával 'hibás' lett, nem a megoldás hibája. Saját zsűri-szimulátor (library/.work/HA-088) minden N<=8 címkézést és további ~9000 véletlen és nagy esetet ellenőrzött a kérdésszám- és fokszám-korlát betartásával. Minta-eltérés: a minta.zip valasz.h a Megoldas paramétereit referenciaként (int &) deklarálja, a PDF érték szerinti (int) formát ír elő; a megoldás a PDF-et követi.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

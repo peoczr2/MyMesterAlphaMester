@@ -1,0 +1,82 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/31. Pontok poligonban ****",
+    "method": "Sugaras (ray casting) pont-poligon teszt egész aritmetikával, kérdésenként O(N·K)",
+    "category": "Geometria: pont a poligonban",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "poligon",
+      "sugaras-módszer"
+    ],
+    "note": "Minta 2/2. Hint-blokk hozzáadva, a magyarázat pontosítva. A long double osztás helyett egész aritmetika és elágazásmentes ciklus készült: a 10^5 kérdéses, k=3-as esetre a futásidő ~0,99 s-ról ~0,72 s-re csökkent (időlimit 1,0 mp).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/32. Négyzetek ***",
+    "method": "Szögsöprés: a csúcsok szögei közti tartományok felezőpontjaiban a legközelebbi négyzet látszik",
+    "category": "Geometria: látható négyzetek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "négyzet",
+      "szögsöprés"
+    ],
+    "note": "Minta 2/2. A magyarázat és a Hint-blokk javítva, a kód változatlan. N=1000 véletlen esetén ~0,02 s.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/33. Repterek ****",
+    "method": "BFS a (0,0) reptértől; a szomszédok NE/SW negyedsíkból gyűjtése kd-fából törléssel",
+    "category": "Gráf: BFS, kd-fa",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "bfs",
+      "kd-fa"
+    ],
+    "note": "A mappában nincs feladat.pdf és minta.zip. A szöveget és a mintát a párhuzamos '33. Repterek ***' mappából vettem (a feladat.pdf fejlécében is '****' áll), a minta kézzel futtatva 2/2-ben egyezik. 300 véletlen kis esetben brute-force-szal egyezik; N=10^5 esetén ~0,07 s. A régi magyarázat nem illett a megoldáshoz, újraírva; hint-blokk hozzáadva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/34. Épület ***",
+    "method": "Az unió kerülete: x- és y-irányú sweep, szakaszfa a lefedett szakaszok számával",
+    "category": "Geometria: unió kerülete",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "unió",
+      "szakaszfa"
+    ],
+    "note": "A minta 2/2, de a régi kód hibás volt: a függőleges éleket a lefedett hossz változásából számolta, így két négyzet sarkon érintkezve 60-at adott 80 helyett. Javítva: vízszintes és függőleges sweep összege, rekurzió nélküli szakaszfa. N=10^5 esetén ~0,14 s, ~16 MB; 300 véletlen esetben brute-force-szal egyezik.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/35. Autópálya ****",
+    "method": "Konvex burok határán színváltó szomszédos pár adja az egyenest",
+    "category": "Geometria: konvex burok",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "konvex-burok",
+      "színváltás"
+    ],
+    "note": "Minta: be1 2/2. A be2 mintában M=2000, a ki2 kék indexe (22056) nincs a tartományban, így a mintafájl ellentmond a bemenetnek; a kimenetünket (264 1698) független ellenőrzővel igazoltam. Több helyes válasz van, ezért minta: kézi. Javítva: az azonos koordinátájú pontokat egyszer kell kezelni (régen nullavektor rontotta a láncot). Hint-blokk hozzáadva; 400 véletlen esetben brute-force-szal egyezik; N=M=4·10^5 ~0,10 s.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

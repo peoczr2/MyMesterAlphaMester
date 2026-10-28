@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/13. Zászló",
+    "method": "Két bináris kereséssel az első nem piros és az első zöld pozíció megkeresése",
+    "category": "Bináris keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "bináris keresés",
+      "interaktív",
+      "monotonitás"
+    ],
+    "note": "Interaktív, a zaszlo könyvtárat használja. A validate.py nem találja a zaszlo.h fejlécet, ezért hibás (fordítási hiba). Saját ellenőrzés a minta könyvtárral (zaszlo.cpp): be1 és be2 esetén TRUE. A kérdések száma legfeljebb 2·⌈log2 N⌉, ami a pontozási határon belül van. Speciális: interaktív feladat, a validátor nem futtatja.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/2. Csillag molekula *",
+    "method": "Atompárok szomszédságának vizsgálata, az első legalább 3 szomszédú atom a központ",
+    "category": "Gráf: szomszédság",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "interaktív",
+      "fa"
+    ],
+    "note": "Interaktív, a muszer könyvtárat használja. A validate.py nem találja a muszer.h fejlécet, ezért hibás. Helyesség: 10 véletlen csillag-fán, saját ellenőrzővel, helyes központot ad. A kérdések száma ~N²/2 (pl. N=936-nál kb. 420 000), a 2N+10 határ nem teljesül, így teljes pont nem jár; O(N)-es megoldást nem találtam. A minta muszer.cpp-vel nincs kimenet, mert az nem ad szomszédsági szerkezetet. Speciális. Megjegyzés: nem éri el a kérdésszám-határt, teljes pont nem jár.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/3. Kincskereső játék *",
+    "method": "Centroid-keresés a halmazon, a kincs szomszédja adja a következő halmazt",
+    "category": "Fa: centroid-felezés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "centroid",
+      "bináris keresés"
+    ],
+    "note": "Interaktív, a kincs könyvtárat használja. A validate.py nem találja a kincs.h fejlécet, ezért hibás. A minta kincs.cpp Ittvan-ja nem valódi kincs-keresés (mindig a szülőt adja), ezért saját ellenőrzővel teszteltem: 300 véletlen fán (láncokkal együtt) helyes, az Ittvan-hívások száma mindig legfeljebb log2 N. Speciális: interaktív feladat, a validátor nem futtatja.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kitalálós feladatok/4. Molekula szerkezete ***",
+    "method": "Egy rögzített atomból a felezőpontok bináris fájából kapjuk a távolságokat, testvérek sorrendje egy kérdéssel",
+    "category": "Bináris fa: felezőpontok",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "bináris fa",
+      "interaktív",
+      "távolság"
+    ],
+    "note": "Interaktív, a meter könyvtárat használja. A validate.py nem találja a meter.h fejlécet, ezért hibás. Saját ellenőrzővel (60 véletlen permutáció, N legfeljebb 100 000) helyes, a kozepen-hívások száma legfeljebb 1,5·N (5 pontos sáv). A tükörkép bármelyike elfogadott (feladatszöveg szerint). Speciális: interaktív feladat, a validátor nem futtatja.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

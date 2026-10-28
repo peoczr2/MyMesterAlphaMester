@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/2. Legnépszerűbb tagok",
+    "method": "Funkcionális gráf: bejövő él nélküli csúcsok eltávolítása, majd a leghosszabb kör bejárása",
+    "category": "Gráf: körkeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "kör", "fokszám"],
+    "note": "A feladatszöveg szerint: „Több megoldás esetén bármelyik kiírható”. A be1 és be2 mintára a program helyes kört ad, de más kezdőponttal (be1 esetén a minta 7 10 3 6, a program 3 6 7 10), ezért a validátor eltérést jelez. A kimenetet a library/.work/R-102/checkers/kor_ciklus_check.py ellenőrzi: a kör hossza a legnagyobb, és minden élnek léteznie kell.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/3. Autópálya",
+    "method": "Szakaszonként és irányonként minimális menetidő; döntetlennél a korábban induló autó",
+    "category": "Szélsőérték-keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["hash-tábla", "minimum", "szakasz"],
+    "note": "Döntetlen szakasznál az az autó nyer, amelynek útja korábban kezdődött (első megfigyelésének ideje kisebb); a minta hat ilyen döntetlenjét ez a szabály adja ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/4. Tanúk",
+    "method": "Mohó intervallumlefedés balról jobbra, a legkésőbb távozó vendég kiválasztásával",
+    "category": "Mohó: intervallumlefedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "intervallum", "lefedés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 3. forduló/5. Körutak",
+    "method": "Fokszám alapú hámozás: a 2-magon kívüli csúcsok sorban eltávolítása",
+    "category": "Gráf: 2-mag, körök",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "kör", "2-mag"],
+    "note": "A 2-magban maradó csúcsok csak a feladat tervezési feltétele mellett esnek mind valamely körre: a körön kívüli csúcsokon át két kör nincs összekötve.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

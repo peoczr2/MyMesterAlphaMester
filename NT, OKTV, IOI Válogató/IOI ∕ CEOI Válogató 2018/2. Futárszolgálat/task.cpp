@@ -11,7 +11,11 @@ a részfában. Egy él pontosan akkor része a szükséges részfának, ha a gye
 megtaláljuk az átmérőt, majd ezen az átmérőn vezetjük végig a sétát, a mellékágakat
 pedig visszaforduló bejárással járjuk be.
 */
-
+/*
+Hint 1: || A kézbesítendő városokat összekötő minimális részfának minden élét be kell járni. Egy él pontosan akkor kell a részfához, ha a gyermeke oldalán 1 és K-1 közötti kézbesítendő város van. ||
+Hint 2: || A részfa minden élét kétszer bejárva kapunk egy zárt sétát. Ha a séta kezdő- és végpontja a részfa átmérőjének két vége, akkor az átmérő mentén nem kell visszafordulni, így az összhossz 2 * összeg - átmérő. ||
+Hint 3: || Gyökeres bejárással számold meg minden csúcs részfájában a kézbesítendő városokat, majd két bejárással keresd meg az átmérőt. A mellékágakat visszaforduló bejárással írd ki az átmérő pontjai közé. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

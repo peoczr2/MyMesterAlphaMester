@@ -1,6 +1,7 @@
 /*
-Feladat: Minden vendég egy [Ei, Ti] (zárt) időintervallumban fotózható, egy vendég legfeljebb egy képen szerepelhet, egy időpontban pedig legfeljebb egy K fős csoportképet lehet készíteni. A cél a képek számának maximalizálása.
-Ötlet: Időben balról jobbra haladunk. Az éppen elérhető, még nem fotózott vendégeket lejárati idő (Ti) szerint minimum-kupacban tartjuk. Minden időpontban legfeljebb egy képet készíthetünk: ha legalább K aktív vendég van, akkor a K legkorábban lejárót fotózzuk le. Ez EDF-jellegű mohó döntés: a legszűkebb határidejűeket érdemes előre venni, különben könnyen elvesznek.
+Megoldás lényege: Időben balról jobbra haladunk, és minden időpontban a már érkezett, még nem fotózott vendégeket a távozási idejük (Ti) szerinti minimum-kupacban tartjuk. A lejárt vendégeket kidobjuk; ha legalább K fotózható vendég van, a fényképész kötelezően K darabot fotóz, és ehhez a legkorábban távozókat választjuk, mert a hosszabban maradó vendégek megmaradnak a későbbi képekhez. Így minden időpontban legfeljebb egy kép készül, és a képek száma maximális. Időigény: O(N log N + T), ahol T az időpontok száma (legfeljebb 10 000).
+*/
+/*
 Hint 1: || Egy időponthoz csak egy kép tartozhat, tehát időnként „slotokért” versenyeznek a vendégek. ||
 Hint 2: || Ha most tudsz fotózni, a legkorábban távozókat érdemes kiválasztani. ||
 Hint 3: || Használj min-kupacot a Ti értékekre, és minden időpontban előbb dobd ki a már lejárt vendégeket. ||

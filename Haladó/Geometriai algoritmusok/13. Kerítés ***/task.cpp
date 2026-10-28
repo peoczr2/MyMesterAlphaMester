@@ -1,6 +1,22 @@
 /*
 Megoldás lényege:
-A feladat a pontok minimális külső határának meghatározására vezethető vissza. Ehhez a konvex burok és a határpontok rendezése adja a kulcsot.
+Az építendő út az y = H vízszintes egyenes. A kerítés zárt, derékszögű töröttvonal, amelyet az egyenes szakaszokra vág:
+a H feletti és a H alatti csúcsok összefüggő láncokat alkotnak, a függőleges élek pedig metszik az egyenest.
+Az egyenes fölötti (illetve alatti) részekben a láncok darabjait és a metszéspontokat csomópontoknak tekintjük, és
+két unió-keresés (DSU) struktúrát használunk: egyet a fölötti, egyet az alsó oldalra. A szomszédos, azonos oldalon
+lévő csúcsokat és a függőleges élek metszéspontját a megfelelő oldalon összekötjük. A metszéspontokat x szerint
+rendezve egymás utáni párok között az egyenes belsejében lévő szakasz van, ezért ezeket mindkét oldalon összekötjük.
+A legelő részei a futó összefüggő komponensek; a gyökök számát adjuk meg a két oldalon.
+
+Idő: O(N log N) (a metszéspontok rendezése miatt).
+*/
+/*
+Hint 1: || A kérdés két részre bontható: az egyenes felett és alatt külön kell megszámolni az összefüggő legelőrészeket,
+és a határ ezen részeit kell összekötni. ||
+Hint 2: || Minden függőleges él, amely átmetszi az egyenest, a határt két részre vágja: a metszéspontot az él
+fölötti és alatti végpontjával külön-külön össze kell kötni a megfelelő oldalon. ||
+Hint 3: || Az egyenes mentén a belső szakaszok a metszéspontokat x szerint rendezve, egymást követő párokat alkotva
+vannak; ezeket mindkét oldalon egyesítsd, majd a különböző gyökök számát számold meg a fölötti és az alsó oldalon. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

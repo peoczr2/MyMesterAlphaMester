@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/71. Kerítés ***",
+    "method": "Lécenkénti szimuláció: darabszám és az utolsó két festés színe",
+    "category": "Megszámolás: festés-szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "szimuláció", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/72. Versenypárok kialakítása **",
+    "method": "Színenként számolás, két független párosítási típus minimumának összege",
+    "category": "Megszámolás: párosítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "párosítás", "minimum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/73. Falfestés ***",
+    "method": "Cellánkénti szimuláció rácson: darabszám és az utolsó két festés színe",
+    "category": "Megszámolás: rácsszimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "mátrix", "szimuláció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/74. Telekocsi **",
+    "method": "Célvárosonként a minimum: autók férőhelye és az utasok száma",
+    "category": "Megszámolás: csoportosítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "csoportosítás", "minimum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

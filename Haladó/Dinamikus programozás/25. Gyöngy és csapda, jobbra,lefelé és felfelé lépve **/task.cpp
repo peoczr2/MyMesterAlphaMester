@@ -1,113 +1,109 @@
 /*
-Mivel balra nem lehet lépni és mezőt sem szabad ismételni, minden oszlopban az útvonal csak monoton tud haladni:
-vagy egy belépési sorból lefelé, vagy onnan felfelé. Ezért oszloponként számolhatjuk a legjobb értéket két söpréssel:
-egy lefelé és egy felfelé menettel. Az optimális állapothoz eltároljuk, hogy az adott oszlopba melyik sorban léptünk be
-balról, ebből a teljes útvonal visszaépíthető.
+Gyöngy és csapda, jobbra, lefelé és felfelé lépve
+Feladat: a bal felső sarokból a jobb alsóba kell eljutni jobbra / lefelé / felfelé lépésekkel, csapdára
+és már érintett mezőre nem léphetünk. Ki kell írni a maximális gyöngyszámot és egy ilyen lépéssort (J/L/F).
+Ötlet: balra nem léphetünk, mezőt sem ismételhetünk, ezért egy oszlopon belül az út egyetlen függőleges
+szakasz: balról belépünk valamelyik sorba, egyenesen le- vagy felmegyünk, majd jobbra kilépünk.
+Oszloponként haladunk: legjobb[r] = a legtöbb gyöngy, ha az aktuális oszlop r. sorában állunk, és innen
+lépünk jobbra. Ezt az előző oszlopból egy lefelé és egy felfelé söpréssel kapjuk, és minden mezőre
+eltároljuk, melyik sorban léptünk be az oszlopba; ebből visszafejthető az út.
+A feladat nem garantálja, hogy a cél elérhető (a csapdák elzárhatják); ilyenkor -1-et írunk ki.
+Idő: O(N·M), memória: O(N·M).
 */
 /*
-Hint 1: || Balra nem léphetsz, ezért egy oszlopon belül nem fordulhatsz meg anélkül, hogy mezőt ismételnél. ||
-Hint 2: || Egy oszlop legjobb állapotait külön lefelé és külön felfelé söpréssel lehet kiszámolni. ||
-Hint 3: || Az út kiírásához azt tedd el, hogy az adott oszlopba melyik sorból érkeztél jobbról. ||
+Hint 1: || Balra nem léphetsz, és mezőre sem léphetsz kétszer. Mit csinálhat a bábu egy oszlopon belül? Megfordulhat-e benne? ||
+Hint 2: || Egy oszlopba balról lép be valamelyik sorban, onnan egyenesen lefelé vagy egyenesen felfelé megy, aztán jobbra kilép. Számolj oszloponként: best[r] = a legjobb érték, ha a bábu az aktuális oszlop r. sorában áll, és innen lép jobbra. ||
+Hint 3: || Oszloponként két söprés: lefelé down[r] = a[r][c] + max(prev[r], down[r−1]), felfelé up[r] = a[r][c] + max(prev[r], up[r+1]), majd best[r] = max(down[r], up[r]), csapdán −∞. Az út kiírásához tárold, melyik sorban lépett be a bábu az oszlopba. O(N·M). ||
 */
-
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int r, c;
-    cin >> r >> c;
-    vector<vector<long long>> a(r + 1, vector<long long>(c + 1));
-    for (int i = 1; i <= r; ++i) {
-        for (int j = 1; j <= c; ++j) {
-            cin >> a[i][j];
-        }
+    // beolvasás: n sor, m oszlop, -1 = csapda
+    int n, m;
+    cin >> n >> m;
+    vector<vector<int>> a(n, vector<int>(m));
+    for (auto& sor : a)
+        for (int& x : sor) cin >> x;
+
+    // -∞: ide nem lehet eljutni. long long kell: 10^6 mező · 10^4 gyöngy > 2^31
+    const long long NINCS = LLONG_MIN / 4;
+
+    // belep[c][r]: ha a c. oszlop r. sorában állunk, melyik sorban léptünk be ebbe az oszlopba
+    vector<vector<int>> belep(m, vector<int>(n, 0));
+    vector<long long> elozo(n), le(n), fel(n), legjobb(n);
+    vector<int> beLe(n), beFel(n);
+
+    // 1. oszlop: (0,0)-ból csak lefelé mehetünk, az első csapdáig
+    long long osszeg = 0;
+    for (int r = 0; r < n; r++) {
+        if (osszeg == NINCS || a[r][0] == -1) osszeg = NINCS;
+        else osszeg += a[r][0];
+        elozo[r] = osszeg;
     }
 
-    const long long NEG = -(1LL << 60);
-    vector<long long> prev(r + 1, NEG), best(r + 1, NEG), down(r + 1, NEG), up(r + 2, NEG);
-    vector<vector<int>> enter(r + 1, vector<int>(c + 1, -1));
-    vector<int> enter_down(r + 1, -1), enter_up(r + 2, -1);
-
-    long long sum = 0;
-    for (int i = 1; i <= r; ++i) {
-        if (a[i][1] == -1 || sum == NEG) {
-            sum = NEG;
-        } else {
-            sum += a[i][1];
-        }
-        prev[i] = sum;
-        if (sum != NEG) {
-            enter[i][1] = 1;
-        }
-    }
-
-    for (int col = 2; col <= c; ++col) {
-        for (int row = 1; row <= r; ++row) {
-            down[row] = NEG;
-            enter_down[row] = -1;
-            if (a[row][col] == -1) {
-                continue;
+    for (int c = 1; c < m; c++) {
+        // lefelé söprés: (r,c)-be vagy balról lépünk be, vagy a fölötte levő mezőről jövünk
+        for (int r = 0; r < n; r++) {
+            le[r] = NINCS;
+            if (a[r][c] == -1) continue;
+            if (elozo[r] != NINCS) {
+                le[r] = elozo[r] + a[r][c];
+                beLe[r] = r;
             }
-            if (prev[row] != NEG) {
-                down[row] = prev[row] + a[row][col];
-                enter_down[row] = row;
-            }
-            if (row > 1 && down[row - 1] != NEG && down[row - 1] + a[row][col] > down[row]) {
-                down[row] = down[row - 1] + a[row][col];
-                enter_down[row] = enter_down[row - 1];
+            if (r > 0 && le[r - 1] != NINCS && le[r - 1] + a[r][c] > le[r]) {
+                le[r] = le[r - 1] + a[r][c];
+                beLe[r] = beLe[r - 1];
             }
         }
-
-        for (int row = r; row >= 1; --row) {
-            up[row] = NEG;
-            enter_up[row] = -1;
-            if (a[row][col] == -1) {
-                continue;
+        // felfelé söprés: ugyanez, csak alulról jövünk
+        for (int r = n - 1; r >= 0; r--) {
+            fel[r] = NINCS;
+            if (a[r][c] == -1) continue;
+            if (elozo[r] != NINCS) {
+                fel[r] = elozo[r] + a[r][c];
+                beFel[r] = r;
             }
-            if (prev[row] != NEG) {
-                up[row] = prev[row] + a[row][col];
-                enter_up[row] = row;
-            }
-            if (row < r && up[row + 1] != NEG && up[row + 1] + a[row][col] > up[row]) {
-                up[row] = up[row + 1] + a[row][col];
-                enter_up[row] = enter_up[row + 1];
+            if (r < n - 1 && fel[r + 1] != NINCS && fel[r + 1] + a[r][c] > fel[r]) {
+                fel[r] = fel[r + 1] + a[r][c];
+                beFel[r] = beFel[r + 1];
             }
         }
-
-        for (int row = 1; row <= r; ++row) {
-            if (down[row] >= up[row]) {
-                best[row] = down[row];
-                enter[row][col] = enter_down[row];
+        // a két irány közül a jobbat tartjuk meg
+        for (int r = 0; r < n; r++) {
+            if (le[r] >= fel[r]) {
+                legjobb[r] = le[r];
+                belep[c][r] = beLe[r];
             } else {
-                best[row] = up[row];
-                enter[row][col] = enter_up[row];
+                legjobb[r] = fel[r];
+                belep[c][r] = beFel[r];
             }
         }
-        prev.swap(best);
+        swap(elozo, legjobb);
     }
 
-    cout << prev[r] << '\n';
-
-    vector<int> rows(c + 1, 1);
-    rows[c] = r;
-    for (int col = c; col >= 2; --col) {
-        rows[col - 1] = enter[rows[col]][col];
+    // a cél nem érhető el (a csapdák elzárják): -1
+    if (elozo[n - 1] == NINCS) {
+        cout << -1 << '\n';
+        return 0;
     }
 
-    string path;
-    path.append(rows[1] - 1, 'L');
-    for (int col = 2; col <= c; ++col) {
-        path.push_back('J');
-        if (rows[col] > rows[col - 1]) {
-            path.append(rows[col] - rows[col - 1], 'L');
-        } else if (rows[col] < rows[col - 1]) {
-            path.append(rows[col - 1] - rows[col], 'F');
-        }
+    // visszafejtés: kisor[c] = az a sor, ahol a c. oszlopot elhagyjuk (az utolsóban: a cél sora)
+    vector<int> kisor(m);
+    kisor[m - 1] = n - 1;
+    for (int c = m - 1; c >= 1; c--) kisor[c - 1] = belep[c][kisor[c]];
+
+    string ut(kisor[0], 'L');  // az 1. oszlopban lefelé a kilépési sorig
+    for (int c = 1; c < m; c++) {
+        ut += 'J';
+        int honnan = kisor[c - 1], hova = kisor[c];
+        if (hova > honnan) ut += string(hova - honnan, 'L');
+        else ut += string(honnan - hova, 'F');
     }
-    cout << path << '\n';
+
+    cout << elozo[n - 1] << '\n' << ut << '\n';
     return 0;
 }

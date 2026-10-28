@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/142. Mutáció",
+    "method": "Szerkesztési távolság DP körkörös csereárral, olcsó prefix- és suffix-törléssel.",
+    "category": "Szerkesztési távolság",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus programozás", "szerkesztési távolság", "sztring"],
+    "note": "ki2.txt 1. sora 262, de a be2.txt-re (M=1000, N=1009) a feladat szabályai szerint van 261 energiájú mutációsorozat (79 egylépéses csere, 50 beszúrás, 41 belső törlés, betűnként/résenként egyféle mutáció): független szimulátor betűről betűre végrehajtja, az eredmény a 2. kód, az energia 261 < 262. A 262-t semmilyen szövegszerű értelmezés nem adja (csak egy mesterséges, csak a következő-betűs cserére és szomszédos beszúrásra vonatkozó tilalom). A DP-t literális Dijkstra brute force (1050 kis teszt, ábécé 3, 4, 5 és 26 betű) és független teljes táblás DP is megerősíti; az 1. minta (6) stimmel, a legnagyobb bemenet 10 ms. Ellenőrzők: library/.work/zS-001/mut/.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/31. Hegység **",
+    "method": "Szigorúan emelkedő út rácson: dp magasság szerint csökkenő sorrendben, számláló rendezéssel.",
+    "category": "Rácsbeli DP: emelkedő út",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "rács", "rendezés"],
+    "note": "A minta.zip egy másik feladatverzióhoz tartozik: ki1.txt 1. sora 7 (2. sor: 1 1), de a be1.txt-ben a (10,1) mezőből 22 lépéses szigorúan emelkedő út van (magasságok 1, 2, …, 24); ki2.txt 1. sora 12 (2. sor: 552 1), de a be2.txt-ben 2972 lépéses út van (kezdet: 1 433). A független ellenőrző az utakat lépésenként igazolja; a mintafájlok első sora is csak N (négyzetes tábla), a szöveg N M-et ír. A PDF-példa (6 / 1 3) stimmel, a kimenet 2. sora több helyes is lehet. A korábbi megoldás 0.1 mp-es limitnél 0.08-0.10 mp volt, ezért új, gyors beolvasású változat készült (0.03 mp, 12 MB), kis esetekben brute force-szal egyeztetve. Ellenőrzők: library/.work/zS-001/heg/.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  }
+]

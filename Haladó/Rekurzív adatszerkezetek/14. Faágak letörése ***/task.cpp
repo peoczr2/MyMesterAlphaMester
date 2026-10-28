@@ -1,19 +1,19 @@
 /*
-Megoldasi otlet:
-A fa minden csomopontjanal megnezzuk, hogy a maradek bal es jobb oldali reszfa
-merete kozott mekkora az elteres. A letores mindig a gyokertol legtavolabbi
-egyensulytalan agaktol indul, ezert a szamolast alulrol felfele erdemes vegezni.
+Megoldási ötlet:
+A fa minden csomópontjánál megnézzük, hogy a maradék bal- és jobboldali részfa mérete
+között mekkora az eltérés. A letörés mindig a gyökértől legtávolabbi egyensúlytalan ágaktól
+indul, ezért a számolást alulról felfelé érdemes végezni.
 
-Egy csomopont eredmenye ket reszbol all: hany letores tortent az alatta levo
-reszfan belul, es hany csomopont maradt meg az adott reszfabol. Ha a ket oldal
-kozott az elteres nagyobb, mint E, akkor a nagyobb oldal teljes reszfatletorese
-megtortenik, es addig ismételjuk, amig az egyensuly helyre nem all.
-
-Hint 1: || A legmelyebb egyensulytalan agakat kell elobb levagni, ezert postorder bejaras kell. ||
-Hint 2: || Egy csomopontnal csak a maradek bal es jobb reszfa merete szamit a tovabbi donteshez. ||
-Hint 3: || Ha a kulonbseg tul nagy, mindig a nagyobb oldalt kell teljesen levagni, majd ujra ellenorizni. ||
+Egy csomópont eredménye két részből áll: hány letörés történt az alatta lévő részfán belül,
+és hány csomópont maradt meg az adott részfából. Ha a két oldal mérete közötti eltérés nagyobb,
+mint E, akkor a nagyobb oldal teljes részfáját letörjük (ez egy letörés), és ezt addig ismételjük,
+amíg az egyensúly helyre nem áll. A megmaradt csomópontok száma a gyökér eredményéből adódik.
 */
-
+/*
+Hint 1: || A legmélyebb egyensúlytalan ágakat kell előbb levágni, ezért posztorder bejárásra van szükség. ||
+Hint 2: || Egy csomópontnál a további döntéshez csak a maradék bal- és jobboldali részfa mérete számít. ||
+Hint 3: || Ha az eltérés túl nagy, mindig a nagyobb oldalt kell teljesen levágni, majd újra ellenőrizni. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -27,6 +27,7 @@ int main() {
     cin.tie(nullptr);
 
     int N, E, root;
+    while (cin.peek() != EOF && !isdigit(cin.peek())) cin.get();
     cin >> N >> E >> root;
 
     vector<int> leftChild(N + 1, 0), rightChild(N + 1, 0);

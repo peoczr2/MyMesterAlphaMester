@@ -1,0 +1,52 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/86. Szerviz **",
+    "method": "Min-költségű folyam csapatonkénti javítással; Dijkstra, idő szerinti felezés, lusta szegmensfa.",
+    "category": "Min-költségű folyam",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "folyam",
+      "dijkstra",
+      "szegmensfa",
+      "k-szerver"
+    ],
+    "note": "A minta hibás: be1-hez a ki1.txt első sora 488 (a kiírt hozzárendelés tényleg 488-ba kerül), de létezik 371 költségű hozzárendelés (2 1 3 3 1 1 2 1 3 2 2 1 2 3 1 1 1 3 2 2); az egzakt konfiguráció-DP (library/.work/zS-005/s86/harness.py, brute) is 371-et ad, a feladat PDF-példája (36) pontosan egyezik. A ki2.txt futási hibaüzenet (Runtime error 216), a be2.txt N=50000 > 5000, ezért ez a pár nem használható. Helyesség: több mint 10000 kis véletlen bemeneten egyezik a brute force-szal, N<=800 méretig két független referenciával (magyar módszer, Bellman-Ford alapú folyam) és az összköltség újraszámolásával. Futás N=5000, M=100, K=2000 véletlen tesztre ~0,55-0,7 s (korábbi O(M*N^2) megoldás ~4,9 s), 13 MB; a 0,4 mp-es limitet a legnagyobb tesztre így nem teljesen tartja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/12. Egyenletes felsorolás **",
+    "method": "Fajtákat maradékosztályokba soroljuk részösszeg-DP-vel, majd osztályonként kiírjuk.",
+    "category": "Részösszeg-DP",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "maradékosztály",
+      "részösszeg",
+      "dp"
+    ],
+    "note": "A feladat „több megoldás esetén bármelyik megadható”: be1/be2-re a ki1/ki2 más, de érvényes felsorolás. Független ellenőrző (library/.work/zS-005/s12/run12.py: darabszámok, az azonos fajták pontosan d távolságra) ~7500 véletlen, megoldható bemeneten hibátlan. A korlát a PDF szerint Db összege <= 1000, ezért a 2D DP (M*(N/3)^2 állapot) belefér: N=1000, M=100, d=3 esetén 0,02 s, 14 MB. A korábbi blokkolási ok (T>1800 esetén 32 MB fölé nő) a korlátot meghaladó méretre vonatkozott.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/16. Négyszög alakú terület **",
+    "method": "Háromszögelés (x,y) söpréssel; cserélhető él két háromszöge üres konvex négyszöget ad.",
+    "category": "Geometria: üres négyszög",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "háromszögelés",
+      "konvex négyszög",
+      "söprés"
+    ],
+    "note": "A feladat „több megoldás esetén bármelyik megadható”: be1-re a saját 5 2 3 6 (ki1: 5 1 4 2), be2-re 15 12 4 11 (ki2: 15 24 10 18); mindhárom érvényes (szigorúan konvex, óramutatóval ellentétes, üres), ellenőrző: library/.work/zS-005/s16/chk16.cpp. Az új megoldás teljes: ha a söpréssel épített háromszögelésben nincs cserélhető él, nincs üres konvex négyszög (az élcserék gráfja összefüggő); a „0 0 0 0” és a találat esetét is egyeztettük a brute force-szal ~24000 kis és degenerált (kollineáris, rácsos) halmazon, n<=32-ig. N=100000 esetén ~0,014 s. Az azonos koordinátájú pontok nem lehetnek csúcsok; ismétlődő pontokat tartalmazó, nagyon degenerált kis halmazon a „0 0 0 0” nem garantáltan pontos.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  }
+]

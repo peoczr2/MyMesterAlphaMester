@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/1. Körmérkőzés",
+    "method": "Bitmaskos visszalépéses keresés memoizálással, legkisebb szabad csapat párosítása",
+    "category": "Bitmask, visszalépéses keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bitmask", "visszalépés", "párosítás"],
+    "note": "Több helyes párosítás megadható (a feladat szerint „megad egy olyan párosítást”, a kiírás sorrendje tetszőleges), ezért a minta csak egy lehetséges kimenet; a megoldás mindkét mintán egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/2. Pontozásos verseny",
+    "method": "Gyakorisági tömb, az eddigi kisebb pontszámok összegzése",
+    "category": "Számlálás, gyakorisági tömb",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "gyakoriság", "összegzés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/3. Rövid földrengések",
+    "method": "Időpontok rendezése, a szomszédos események közötti szabad percek maximuma",
+    "category": "Rendezés, intervallumok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "intervallum", "határok"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 3. forduló/4. Szomszédok",
+    "method": "Kétmutatós bejárás a távolság szerint, egyenlőségnél a bal oldal",
+    "category": "Kétmutatós módszer",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["kétmutatós", "szomszédság", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

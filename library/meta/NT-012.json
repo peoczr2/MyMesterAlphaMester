@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/6. Az óvodai lét elviselhetetlen könnyűsége #2 ****",
+    "method": "f(n)=1+min f(K·⌊n/K⌋); minden K-ra a változások követése, gyakorisági tömb és bitset minimum",
+    "category": "Dinamikus programozás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus programozás", "bitset", "kiesés"],
+    "note": "Maximális csoportalakítás modellje: n mod K gyerek esik ki; a két minta ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/7. Nemzetközi Rántott Hús Fesztivál ****",
+    "method": "Egyensúly-prefixek, következő kisebb elem és prefix-korlátos M-választás szegmensfával",
+    "category": "Szimuláció: prefix-korlát",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["szimuláció", "prefixösszeg", "szegmensfa"],
+    "note": "Rántott hús köret nélkül lezárja a túra számolását; ezt a szabályt a két minta igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/8. Turista járatok ****",
+    "method": "Blokkok (2-összefüggő komponensek) mélységi bejárással, blokk-vágópont fa BFS-sel, VAGY-jelzéssel",
+    "category": "Gráf: blokkok, vágópontok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "blokk", "mélységi bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/9. Vázsony vonatjegyet vásárol ****",
+    "method": "Dijkstra B-ből, azonos távolságú csúcsok DSU-val, leghosszabb súlyozott lánc DP-vel",
+    "category": "Gráf: legrövidebb utak",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "dijkstra", "dsu"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

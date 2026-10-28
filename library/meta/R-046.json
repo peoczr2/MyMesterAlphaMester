@@ -1,0 +1,99 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/15. Fában leghosszabb út ***",
+    "method": "BFS-sel a fa átmérője; a kör hossza átmérő + 1.",
+    "category": "Fa: átmérő",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "bfs",
+      "átmérő"
+    ],
+    "note": "Több helyes kimenet van: a második sorban bármely leghosszabb út végpontpárja megadható. be1-ben a program 8 9-et ad a minta 9 8 helyett, be2-ben 4751 5427-et a 9500 5426 helyett. Független ellenőrző program (minden csúcspárra BFS, library/.work/R-046/bin/check15.cpp) mindkét mintára és a program kimenetére igazolja: a kör hossza az átmérő + 1, a pár távolsága pedig maga az átmérő.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/16. Farajz ***",
+    "method": "Részfák szintenkénti kontúrjainak egymás mellé illesztése, valós pozíciókkal.",
+    "category": "Fa: rajzolás, kontúr",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "rajzolás",
+      "rekurzió"
+    ],
+    "note": "Blokkolt: az első két mintát (7, 26) a program adja, a nagy (be2) mintán 735-öt ad 759 helyett. Elvetett próbálkozások: (1) a korábbi megoldás (levelek száma) 20-at és 700-at ad a két mintára; (2) egész pozíciós, nem fésülő elrendezés (páros távolságok) 27-et és 809-et ad; (3) valós pozíciós kontúr-illesztés, ezt tartja meg a task.cpp: 7, 26, 734,06 (felfelé kerekítve 735); (4) fésülő egész elrendezés pontos keresése kis fákon a helyes 7-et adja, de az első mintán 22-t talál, ami 26-nál kisebb, így ez a modell nem egyezhet a mintával; (5) nem fésülő egész elrendezés, nem szoros távolságokkal, véletlen keresés az első mintán is csak 27-et talál.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": true,
+    "problematic": true
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/18. Fenyőfa zárójelezéssel *",
+    "method": "Mélységenkénti darabszámok súlya 2^(H−d), nagy számok Horner-sémával.",
+    "category": "Fa: súlyozott összeg",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "zárójelezés",
+      "nagyszám"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/19. Folyók *",
+    "method": "Két bejárás: a fordított élek mentén a források, az eredetin a szennyezés.",
+    "category": "Gráf: bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "bejárás",
+      "dfs"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/20. Folyók összefolyása *",
+    "method": "Mélységek kiegyenlítése, majd együtt felfelé lépkedés az első közös csúcsig.",
+    "category": "Fa: közös ős",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "szülő",
+      "bejárás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/21. Harmadolás *",
+    "method": "A megtartott pénz nevezőjének kitevője mélységből és levélségből adódik.",
+    "category": "Fa: mélység, levelek",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "mélység",
+      "bejárás"
+    ],
+    "note": "A minta ki1.txt első bájtja UTF-8 BOM (EF BB BF), ezért a validátor a 3-as tokent \\ufeff3-nak olvassa és be1-re eltérést jelez. A program kimenete BOM nélkül pontosan egyezik a ki1.txt tartalmával, be2 pedig a mintával a validátorban is egyezik. A kézi jelölés tehát a minta fájl kódolási hibáját jelzi, nem a megoldás hibáját.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

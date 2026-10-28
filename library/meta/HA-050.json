@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/39. Oda-vissza független utak ***",
+    "method": "Tarjan-féle blokkbontás élveremmel: a gyökérnél záródó, legalább kétélű blokkok csúcsai.",
+    "category": "Gráf: blokkok, kétszeres összefüggőség",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "kétszeres összefüggőség", "mélységi bejárás"],
+    "note": "A minta.zip-ben nincs kimeneti fájl (validátor: nincs minta); a PDF-példa halmaza egyezik, a második sor tetszőleges sorrendű, ezért kézi. R a feladat szerint triviálisan benne van a halmazban, ezt a megoldás mindig kiírja, akkor is, ha R nincs körben. Ellenőrzés: 300 kis véletlen gráf brute-force úttal és Menger-alapú referenciával, plusz n<=14 gráfok. Időmérés: N=10000, M=300000 véletlen gráf ~0,07 s (limit 0,1 s).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/4. Csomópontok körökben **",
+    "method": "Hidak keresése, komponensfa, levelek DFS-sorrendben párosítva a minimális bővítéshez.",
+    "category": "Gráf: hidak, élösszefüggőség",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "híd", "élösszefüggőség"],
+    "note": "A minta.zip-ben nincs kimeneti fájl (validátor: nincs minta); a PDF-példa (3 / 5 6 7 / 1 / 5 7) egyezik, a K-lista sorrendje tetszőleges. Több helyes bővítés létezik, ezért kézi. Ellenőrzés: 300 kis véletlen gráfon a kimenet érvényessége, 40 közepes méretű fán és gráfon a minimális L brute-force-szal. Időmérés: N=1000, M=10000 ~0,003 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/40. Összefüggő egyirányú hálózat ***",
+    "method": "Erős komponensek Tarjan-algoritmussal, befok-kifok alapján a forrás és a nyelő összekötése.",
+    "category": "Gráf: erős összefüggőség",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "erős összefüggőség", "dag"],
+    "note": "A minta.zip-ben nincs kimeneti fájl (validátor: nincs minta); a PDF-példára a megoldás 7 5, a minta 8 5, mindkettő jó (a nyelő és a forrás bármely csúcsa megfelel). Bármelyik megoldás elfogadható, ezért kézi. Ellenőrzés: 300 véletlen, egy élt elvett erősen összefüggő gráfon a kimenet erős összefüggőségét BFS-sel igazoltam. A minta.zip be2 bemenete nem felel meg a feladat állításának (326 erős komponens, több forrás), ezért arra nem ellenőrizhető. Időmérés: N=4000 ~0,003 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/41. Park **",
+    "method": "Bármely feszítőfa Euler-bejárása: minden csúcs legfeljebb gyerekszám+1-szer szerepel.",
+    "category": "Gráf: mélységi bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "séta", "mélységi bejárás"],
+    "note": "A minta.zip-ben nincs kimeneti fájl (validátor: nincs minta); a PDF-példa séta érvényes (minden részleg legfeljebb háromszor). Több megoldás lehetséges, ezért kézi. Ellenőrzés: 300 véletlen, a fokszám-korlátot tartó gráfon a séta érvényességét ellenőriztem. A minta.zip be2 bemenete sérti a fokszám-korlátot (max. fok 20, ismétlődő élek), ezért arra nem ellenőrizhető. Időmérés: ~0,001 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

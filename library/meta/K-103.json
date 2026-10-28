@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/5. Legnagyobb térfogat *",
+    "method": "Lineáris bejárás, a kockák köbeinek összegzése.",
+    "category": "Sorozatszámítás: összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "összegzés", "köbszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/6. Menetrend *",
+    "method": "Oszloponkénti logikai ÉS: egy 1-es tömb, amelyet minden 0 elem nullára állít.",
+    "category": "Sorozatszámítás: logikai ÉS",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "logikai", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/7. Nyersanyagköltség *",
+    "method": "Egységárak tömbben, a receptsorok egységár·darabszám szorzatainak összegzése.",
+    "category": "Sorozatszámítás: szorzatösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "szorzat", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/8. Összes esőzés mennyisége *",
+    "method": "Lineáris bejárás, a napi mérések összegzése egyetlen változóban.",
+    "category": "Sorozatszámítás: összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "összegzés", "csapadék"],
+    "note": "A feladat nem mondja ki, hogy a napi mérések egész számok, de a minta és a kimenet (egész szám) ezt jelzi; ezért egész számként kezeltük.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

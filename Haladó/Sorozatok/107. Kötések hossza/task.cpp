@@ -6,9 +6,11 @@ keresztezés, és a távolságuk hozzáadható az összhosszhoz.
 
 Ez pontosan a minimális összhosszt adja.
 */
-// Hint 1: || A nem keresztező párosítás veremszerűen épül fel balról jobbra. ||
-// Hint 2: || Ha az aktuális LED színe eltér a verem tetejétől, akkor a kettőt összekötjük és kidobjuk a verem tetejét. ||
-// Hint 3: || A válasz a párok távolságainak összege. ||
+/*
+Hint 1: || A nem keresztező párosítás veremszerűen épül fel balról jobbra. ||
+Hint 2: || Ha az aktuális LED színe eltér a verem tetejétől, akkor a kettőt összekötjük és kidobjuk a verem tetejét. ||
+Hint 3: || A válasz a párok távolságainak összege. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

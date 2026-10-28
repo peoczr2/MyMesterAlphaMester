@@ -1,6 +1,8 @@
 /*
-Feladat: A konténerekből a lehető legtöbb helyet kell felszabadítani egymásra pakolással.
-Ötlet: A konténereket méret szerint növekvő láncokba rendezzük. Egy új konténer mindig a legnagyobb még nála kisebb láncvégre kerül, így a láncok száma minimális lesz.
+Megoldás lényege:
+A konténereket balról jobbra haladva szigorúan növekvő láncokba rendezzük: minden konténert a legnagyobb, nála kisebb láncvégre fűzünk, ha nincs ilyen, új láncot nyitunk. A láncok minimális száma a Dilworth-tétel szerint a leghosszabb nem növekvő részsorozat hossza, a felszabadítható helyek száma pedig N mínusz a láncok száma. A láncvégek multihalmazában a keresés és a módosítás O(log N), így az időigény O(N log N).
+*/
+/*
 Hint 1: || Egy láncban a méreteknek balról jobbra növekedniük kell. ||
 Hint 2: || Mindig a legnagyobb még kisebb láncvégre tedd az aktuális konténert. ||
 Hint 3: || A felszabadítható helyek száma a konténerek száma mínusz a láncok száma. ||

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/8. Szavak száma- 2006. október",
+    "method": "Szavanként olvasás a cin >> segítségével, a szavak számlálása.",
+    "category": "Szövegfeldolgozás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szöveg", "számlálás", "beolvasás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/9. Óra - 2007. május - közép",
+    "method": "Időpontok átváltása másodpercre, különbség, visszaalakítás maradékos osztással.",
+    "category": "Időszámítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["idő", "maradékos osztás", "formázás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

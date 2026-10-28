@@ -1,9 +1,15 @@
 /*
-Az átlósan mozgó bábuknál a két koordináta egyszerre változik, ezért a találkozást közös pozíció és azonos időpillanat alapján kell eldönteni. Ha ütköznek, az irányváltást egyszerre kell alkalmazni.
+Megoldás lényege:
+Minden bábu helyzetét és átlós irányvektorát (dx, dy) tároljuk, és az időt egyesével léptetjük K-ig.
+Ha egy bábu a tábla széléről lépne ki, mindkét iránykomponenst az ellenkezőjére változtatjuk, így
+visszafelé lép, ahonnan jött. Egy lépés után két esetben van ütközés: ha két bábu ugyanarra a mezőre
+lép, vagy ha egy bábu olyan mezőre lép, ahol az adott pillanatban másik bábu áll (ebbe a
+két bábu helyének felcserélése is beletartozik). Az első ilyen időpont az eredmény, különben -1.
+Mivel L <= 100 és K <= 1000, az összes párvizsgálat legfeljebb kb. 10^7 művelet.
 */
 /*
-Hint 1: || Az átlós mozgásnál a két koordináta együtt változik, ezért a találkozást közös pozícióként kell figyelni. ||
-Hint 2: || Ha két bábu ugyanarra a mezőre érkezik, egyszerre kell frissíteni az irányukat, különben rossz lesz az ütközés. ||
+Hint 1: || Tartsd nyilván minden bábu helyzetét és átlós irányvektorát; a tábla szélénél mindkét komponens előjele megfordul. ||
+Hint 2: || K és L is kicsi (K <= 1000, L <= 100), ezért az időt egyesével léptetve, minden lépésben minden bábupárt ellenőrizhetsz. ||
 */
 
 #include <bits/stdc++.h>
@@ -26,13 +32,20 @@ int main() {
         vector<pair<int,int>> pos(l);
         for (int i = 0; i < l; ++i) {
             int nx = p[i].x + p[i].dx, ny = p[i].y + p[i].dy;
-            if (nx < 1 || nx > n) { p[i].dx *= -1; nx = p[i].x + p[i].dx; }
-            if (ny < 1 || ny > m) { p[i].dy *= -1; ny = p[i].y + p[i].dy; }
+            if (nx < 1 || nx > n || ny < 1 || ny > m) {
+                p[i].dx *= -1;
+                p[i].dy *= -1;
+                nx = p[i].x + p[i].dx;
+                ny = p[i].y + p[i].dy;
+            }
             pos[i] = {nx, ny};
         }
         for (int i = 0; i < l; ++i) {
-            for (int j = i + 1; j < l; ++j) {
-                if (pos[i] == pos[j] || (pos[i].first == p[j].x && pos[i].second == p[j].y && pos[j].first == p[i].x && pos[j].second == p[i].y)) {
+            for (int j = 0; j < l; ++j) {
+                if (i == j) continue;
+                bool sameCell = (i < j) && pos[i] == pos[j];
+                bool onOccupied = pos[i] == make_pair(p[j].x, p[j].y);
+                if (sameCell || onOccupied) {
                     cout << t << '\n';
                     return 0;
                 }

@@ -4,7 +4,7 @@ Az intervallumok lefedettségét egy eseményfában tároljuk: [a,b] hozzáadás
 lefedettség így egy prefixösszeg, amelynek maximumát és helyét egy kiegyensúlyozott fában tudjuk karbantartani.
 
 Minden csúcsban tároljuk a részfa összegét, a legnagyobb prefixösszeget és azt a koordinátát, ahol ez a maximum először
-elérhető. Bovit és Torol csak két eseményt módosít.
+elérhető. Bovit és Torol csak két eseményt módosít, így ezek várhatóan O(log n) idejűek, a MaxiPont és a MaxiHany pedig O(1).
 */
 /*
 Hint 1: || Zárt intervallumoknál az [a,b] lefedését a +1@a és -1@(b+1) események adják. ||

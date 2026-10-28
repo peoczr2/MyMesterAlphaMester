@@ -2,13 +2,16 @@
 Megoldas: a graf aciklikus, mert minden él kisebb csucsbol nagyobba megy. Ezert
 topologikus DP-vel megszamoljuk, hany ut vezet minden csucsba a forrasoktol. A
 vonalak szama a sarkok kozotti osszes ut, vagyis a kilepo csucsokba eso darabok
-osszege modulo 721.
+osszege modulo 20200721.
 */
-
+/*
+Hint 1: || A táborok és szakaszok irányított körmentes gráfot alkotnak (Kezdi < Végi). A keresett szám a forrásokból (bejövő szakasz nélküli tábor) a nyelőkbe (kimenő szakasz nélküli tábor) vezető utak száma. ||
+Hint 2: || A táborokat sorszámuk szerint haladva számold, hány különböző út vezet mindegyikbe: a forrás értéke 1, más táboré a megelőző táborok értékeinek összege. A kiírt érték a nyelők értékeinek összege, a feladatban megadott számmal vett maradéka. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
-static const int MOD = 721;
+static const int MOD = 20200721;
 
 int main() {
     ios::sync_with_stdio(false);

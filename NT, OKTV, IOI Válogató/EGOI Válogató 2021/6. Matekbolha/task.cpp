@@ -1,274 +1,248 @@
 /*
-Megoldas: a zarojelek nesting-tree-jeben dolgozunk.
-Minden paros zarojel-intervalum egy ketterminalu gepesitett szakasz: a sajat bal/
-jobb vegpontja kozotti utat, illetve a belso komponensek elott/utani prefixeket
-szamoljuk. Egy komponens lehet sima atmeneti gap vagy egy belso zarojelpar.
-A bolha egy adott intervallumban csak ket iranyban mehet: a hatarvonal menten,
-vagy az adott intervallum sajat zarojel-elereset hasznalva a masik vegpont fele.
-Ezert az adott pozicio bal/jobb vegponttól mért legrövidebb és leghosszabb utja
-rekurzivan, alulról felfelé szamolhato. A ket x kozotti utat a legkisebb kozos
-zarojel-intervalumban ezután a hatarvonalas ut es a sajat zarojelegyuttesen
-atmeno ut kozul valasztjuk.
+Megoldás lényege: a kifejezés gráfjának élei a szomszédos karakterek között, és a zárójelpárok
+(nyitó és záró zárójel) között futnak. A minimumot BFS adja (O(N)). A maximumot a zárójelpárok
+beágyazási fájából számoljuk: minden zárójelpár egy kört alkot a közbeeső karakterekkel és a saját
+élével, a közvetlenül beágyazott párok pedig a körön belüli "kitérők", amelyeknek a leghosszabb
+útjait alulról felfelé összegezzük (prefixösszegek és bináris keresés segítségével). A két x
+legmélyebb közös zárójelpárjában dől el, hogy a bolha melyik irányban járja be a kört, és a körből
+kilépve a szülő kör másik oldalán haladhat tovább; ezt a "kerülő" hosszt fentről lefelé számoljuk.
+Az időigény O(N log N).
+*/
+/*
+Hint 1: || Először a minimumot gondold meg: a gráfban minden lépés egy él, így a legrövidebb út egy BFS-sel megkapható. A maximumhoz vedd észre, hogy minden zárójelpár egy kört zár be, és ezek a körök egymásba ágyazódnak. ||
+Hint 2: || Építs fát a zárójelpárokból: egy pár gyerekei a közvetlenül benne lévő párok. Egy pár két végpontja között a bolha vagy a pár két zárójele közötti egyetlen élen megy át, vagy a hosszú úton, a gyerek-párokat is bejárva; a hosszú út leghosszabb hosszát a gyerekek értékeiből alulról felfelé kapod meg. ||
+Hint 3: || Keresd meg a két x legmélyebb közös zárójelpárját (vagy a teljes kifejezést). Itt a két x által meghatározott végpontokból két irányba lehet indulni, és egy irány a szülő körének másik oldalán vezethet tovább. A tartományok összegzését prefixtömbbel és bináris kereséssel végezd. ||
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Node {
-    int l = 0, r = 0;
-    int parent = 0;
-    vector<int> child;
-    array<long long, 2> term{}; // [0]=min, [1]=max
-    array<vector<long long>, 2> compLen;
-    array<vector<long long>, 2> pref;
-};
+typedef long long ll;
+const ll NEG = LLONG_MIN / 4;
 
-struct Location {
-    int compIdx = 0;
-    int childIdx = -1;
-    bool inChild = false;
-};
+int n;
+vector<int> NL, NR, par;
+vector<vector<int>> ch, chL, chR;
+vector<vector<ll>> psz, pdd;
+vector<ll> D, XV;
+
+// Az [a,b] szakasz leghosszabb útja: a csomópont kör-íve a gyerek-párok maximális
+// útjaival (D), a gyerekek belsejét kihagyva.
+ll between(int y, int a, int b) {
+    int i = int(lower_bound(chL[y].begin(), chL[y].end(), a) - chL[y].begin());
+    int j = int(upper_bound(chR[y].begin(), chR[y].end(), b) - chR[y].begin());
+    ll sz = 0, dd = 0;
+    if (j > i) {
+        sz = psz[y][j] - psz[y][i];
+        dd = pdd[y][j] - pdd[y][i];
+    }
+    return (ll)(b - a) - sz + dd;
+}
+
+void prep(int y) {
+    chL[y].clear();
+    chR[y].clear();
+    psz[y].assign(1, 0);
+    pdd[y].assign(1, 0);
+    for (int c : ch[y]) {
+        chL[y].push_back(NL[c]);
+        chR[y].push_back(NR[c]);
+        psz[y].push_back(psz[y].back() + (NR[c] - NL[c]));
+        pdd[y].push_back(pdd[y].back() + D[c]);
+    }
+}
+
+// A v-t zártan tartalmazó csomópontok láncolata a gyökértől a legmélyebbig.
+vector<int> closedChain(int v) {
+    vector<int> chain{0};
+    int cur = 0;
+    while (true) {
+        int idx = int(upper_bound(chL[cur].begin(), chL[cur].end(), v) - chL[cur].begin()) - 1;
+        if (idx >= 0 && NR[ch[cur][idx]] >= v) {
+            cur = ch[cur][idx];
+            chain.push_back(cur);
+        } else {
+            break;
+        }
+    }
+    return chain;
+}
+
+// A cur csomópont azon gyereke, amely v-t nyíltan (belsőleg) tartalmazza; egyébként -1.
+int strictChild(int cur, int v) {
+    int idx = int(upper_bound(chL[cur].begin(), chL[cur].end(), v) - chL[cur].begin()) - 1;
+    if (idx >= 0) {
+        int c = ch[cur][idx];
+        if (NL[c] < v && v < NR[c]) return c;
+    }
+    return -1;
+}
+
+// v-ből a cs kör bal, illetve jobb végpontjába vezető leghosszabb út (PL, PR).
+pair<ll, ll> plPr(int v, int cs) {
+    vector<int> seq{cs};
+    while (true) {
+        int d = strictChild(seq.back(), v);
+        if (d < 0) break;
+        seq.push_back(d);
+    }
+    int y = seq.back();
+    ll PL = max(between(y, NL[y], v), between(y, v, NR[y]) + 1);
+    ll PR = max(between(y, v, NR[y]), between(y, NL[y], v) + 1);
+    for (int idx = (int)seq.size() - 2; idx >= 0; --idx) {
+        int Y = seq[idx], Z = seq[idx + 1];
+        ll nPL = max(PL + between(Y, NL[Y], NL[Z]), PR + between(Y, NR[Z], NR[Y]) + 1);
+        ll nPR = max(PR + between(Y, NR[Z], NR[Y]), PL + between(Y, NL[Y], NL[Z]) + 1);
+        PL = nPL;
+        PR = nPR;
+    }
+    return {PL, PR};
+}
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n;
-    cin >> n;
-    string s;
-    cin >> s;
+    int nIn;
+    string e;
+    cin >> nIn >> e;
+    n = (int)e.size();
 
-    vector<int> match(n + 1, -1);
-    vector<int> openStack;
-    openStack.reserve(n);
-    vector<int> posSmallestPair(n + 1, 0);
-    vector<int> xPos;
-
-    for (int i = 1; i <= n; ++i) {
-        char c = s[i - 1];
-        if (c == '(') {
-            openStack.push_back(i);
-        } else if (c == ')') {
-            int j = openStack.back();
-            openStack.pop_back();
-            match[i] = j;
-            match[j] = i;
+    vector<int> match(n, -1);
+    {
+        vector<int> st;
+        for (int i = 0; i < n; ++i) {
+            if (e[i] == '(') {
+                st.push_back(i);
+            } else if (e[i] == ')') {
+                int j = st.back();
+                st.pop_back();
+                match[i] = j;
+                match[j] = i;
+            }
         }
     }
 
-    vector<pair<int, int>> pairs;
-    pairs.reserve(n / 2);
-    vector<int> openToId(n + 1, 0);
-    vector<int> closeToId(n + 1, 0);
+    int s = -1, t = -1;
+    for (int i = 0; i < n; ++i) {
+        if (e[i] == 'x') {
+            if (s < 0) s = i;
+            else t = i;
+        }
+    }
 
-    openStack.clear();
-    for (int i = 1; i <= n; ++i) {
-        char c = s[i - 1];
-        if (c == '(') {
-            int id = (int)pairs.size() + 1;
-            openToId[i] = id;
-            openStack.push_back(id);
-            pairs.push_back({i, -1});
-            posSmallestPair[i] = id;
-        } else if (c == ')') {
-            int id = openStack.back();
-            openStack.pop_back();
-            pairs[id - 1].second = i;
-            closeToId[i] = id;
-            posSmallestPair[i] = id;
+    // Minimum: BFS a szomszédos karakterek és a zárójelpárok élein.
+    ll minAns;
+    {
+        vector<int> dist(n, -1);
+        queue<int> q;
+        dist[s] = 0;
+        q.push(s);
+        while (!q.empty()) {
+            int u = q.front();
+            q.pop();
+            auto relax = [&](int v) {
+                if (v >= 0 && v < n && dist[v] < 0) {
+                    dist[v] = dist[u] + 1;
+                    q.push(v);
+                }
+            };
+            relax(u - 1);
+            relax(u + 1);
+            relax(match[u]);
+        }
+        minAns = dist[t];
+    }
+
+    // A zárójelpárok fája: 0 a gyökér (a teljes kifejezés), k >= 1 a k-adik zárójelpár.
+    vector<int> L;
+    for (int i = 0; i < n; ++i)
+        if (e[i] == '(') L.push_back(i);
+    int m = (int)L.size();
+    NL.assign(m + 1, 0);
+    NR.assign(m + 1, 0);
+    NR[0] = n - 1;
+    for (int k = 1; k <= m; ++k) {
+        NL[k] = L[k - 1];
+        NR[k] = match[L[k - 1]];
+    }
+    par.assign(m + 1, -1);
+    ch.assign(m + 1, {});
+    {
+        vector<int> stk{0};
+        for (int k = 1; k <= m; ++k) {
+            while (stk.back() != 0 && NR[stk.back()] < NL[k]) stk.pop_back();
+            par[k] = stk.back();
+            ch[par[k]].push_back(k);
+            stk.push_back(k);
+        }
+    }
+
+    // D[k]: a k-adik pár bal és jobb végpontja közti leghosszabb út a saját körén belül.
+    chL.assign(m + 1, {});
+    chR.assign(m + 1, {});
+    psz.assign(m + 1, {});
+    pdd.assign(m + 1, {});
+    D.assign(m + 1, 0);
+    for (int k = m; k >= 1; --k) {
+        prep(k);
+        D[k] = between(k, NL[k], NR[k]);
+    }
+    prep(0);
+
+    // XV[k]: a k-adik kör bal és jobb végpontja közti leghosszabb "kiugró" út (a kör éle, vagy
+    // a szülő köréből kiinduló kerülő út). A gyökérnek nincs ilyen, ezért ott NEG.
+    vector<ll> OUT(m + 1, NEG);
+    for (int k = 1; k <= m; ++k) {
+        int q = par[k];
+        if (q != 0) {
+            ll Xq = max<ll>(1, OUT[q]);
+            OUT[k] = between(q, NL[q], NL[k]) + Xq + between(q, NR[k], NR[q]);
+        }
+    }
+    XV.assign(m + 1, NEG);
+    for (int k = 1; k <= m; ++k) XV[k] = max<ll>(1, OUT[k]);
+
+    vector<int> cs = closedChain(s), ct = closedChain(t);
+    int i = 0;
+    while (i + 1 < (int)cs.size() && i + 1 < (int)ct.size() && cs[i + 1] == ct[i + 1]) ++i;
+    int N = cs[i];
+    int l = NL[N], r = NR[N];
+    ll XN = XV[N];
+    int Cs = strictChild(N, s), Ct = strictChild(N, t);
+
+    ll best = NEG;
+    if (Cs < 0 && Ct < 0) {
+        best = max(best, between(N, s, t));
+        if (XN > NEG) best = max(best, between(N, l, s) + XN + between(N, t, r));
+    } else if (Cs < 0 || Ct < 0) {
+        int v = s, w = t, G = Cs;
+        if (Cs < 0) {
+            v = t;
+            w = s;
+            G = Ct;
+        }
+        auto [PL, PR] = plPr(v, G);
+        int lc = NL[G], rc = NR[G];
+        if (w > rc) {
+            best = max(best, PR + between(N, rc, w));
+            if (XN > NEG) best = max(best, PL + between(N, l, lc) + XN + between(N, w, r));
         } else {
-            posSmallestPair[i] = openStack.empty() ? 0 : openStack.back();
-            if (c == 'x') xPos.push_back(i);
+            best = max(best, PL + between(N, w, lc));
+            if (XN > NEG) best = max(best, PR + between(N, rc, r) + XN + between(N, l, w));
         }
+    } else {
+        int sv = s, tv = t, A = Cs, B = Ct;
+        if (NR[A] > NL[B]) {
+            swap(sv, tv);
+            swap(A, B);
+        }
+        auto [PLs, PRs] = plPr(sv, A);
+        auto [PLt, PRt] = plPr(tv, B);
+        best = max(best, PRs + between(N, NR[A], NL[B]) + PLt);
+        if (XN > NEG) best = max(best, PLs + between(N, l, NL[A]) + XN + between(N, NR[B], r) + PRt);
     }
 
-    int m = (int)pairs.size();
-    vector<Node> nodes(m + 1);
-    nodes[0].l = 1;
-    nodes[0].r = n;
-
-    for (int id = 1; id <= m; ++id) {
-        nodes[id].l = pairs[id - 1].first;
-        nodes[id].r = pairs[id - 1].second;
-    }
-
-    vector<int> parentPair(m + 1, 0);
-    openStack.clear();
-    for (int i = 1; i <= n; ++i) {
-        char c = s[i - 1];
-        if (c == '(') {
-            int id = openToId[i];
-            parentPair[id] = openStack.empty() ? 0 : openStack.back();
-            openStack.push_back(id);
-        } else if (c == ')') {
-            openStack.pop_back();
-        }
-    }
-
-    for (int id = 1; id <= m; ++id) {
-        nodes[id].parent = parentPair[id];
-        if (parentPair[id] == 0) nodes[0].child.push_back(id);
-        else nodes[parentPair[id]].child.push_back(id);
-    }
-    sort(nodes[0].child.begin(), nodes[0].child.end(), [&](int a, int b) { return nodes[a].l < nodes[b].l; });
-    for (int id = 1; id <= m; ++id) {
-        auto& ch = nodes[id].child;
-        sort(ch.begin(), ch.end(), [&](int a, int b) { return nodes[a].l < nodes[b].l; });
-    }
-
-    auto locate = [&](int nodeId, int pos) -> Location {
-        const auto& ch = nodes[nodeId].child;
-        int k = (int)(upper_bound(ch.begin(), ch.end(), pos, [&](int value, int childId) {
-            return value < nodes[childId].l;
-        }) - ch.begin());
-        int j = k - 1;
-        if (j >= 0 && pos <= nodes[ch[j]].r) {
-            return {2 * j + 1, j, true};
-        }
-        int mchild = (int)ch.size();
-        int gapIdx;
-        if (j < 0) gapIdx = 0;
-        else if (j == mchild - 1) gapIdx = 2 * mchild;
-        else gapIdx = 2 * j + 2;
-        return {gapIdx, j, false};
-    };
-
-    // Elore kiszamoljuk a komponensek hosszat mindket metrikara.
-    vector<int> order;
-    order.reserve(m);
-    for (int id = 1; id <= m; ++id) order.push_back(id);
-    sort(order.begin(), order.end(), [&](int a, int b) {
-        int la = nodes[a].r - nodes[a].l;
-        int lb = nodes[b].r - nodes[b].l;
-        if (la != lb) return la < lb;
-        return a < b;
-    });
-
-    for (int id : order) {
-        int childCount = (int)nodes[id].child.size();
-        for (int mode = 0; mode < 2; ++mode) {
-            auto& len = nodes[id].compLen[mode];
-            auto& pref = nodes[id].pref[mode];
-            len.clear();
-            len.reserve(2 * childCount + 1);
-            int prev = nodes[id].l;
-            for (int cid : nodes[id].child) {
-                len.push_back(nodes[cid].l - prev);
-                len.push_back(nodes[cid].term[mode]);
-                prev = nodes[cid].r;
-            }
-            len.push_back(nodes[id].r - prev);
-            pref.assign(len.size() + 1, 0);
-            for (int i = 0; i < (int)len.size(); ++i) pref[i + 1] = pref[i] + len[i];
-
-            long long boundaryLen = pref.back();
-            nodes[id].term[mode] = mode ? max(1LL, boundaryLen) : min(1LL, boundaryLen);
-        }
-    }
-
-    auto solveMode = [&](int mode) -> long long {
-        function<pair<long long, long long>(int, int)> fullEnds;
-        function<long long(int, int, int)> solveNode;
-
-        auto componentEnds = [&](int nodeId, const Location& loc, int pos) -> pair<long long, long long> {
-            const auto& nd = nodes[nodeId];
-            const auto& ch = nd.child;
-
-            if (!loc.inChild) {
-                int start;
-                if (ch.empty() || loc.compIdx == 0) start = nd.l;
-                else start = nodes[ch[loc.childIdx]].r;
-                int end;
-                if (ch.empty() || loc.compIdx == 2 * (int)ch.size()) end = nd.r;
-                else end = nodes[ch[loc.childIdx + 1]].l;
-                return {pos - start, end - pos};
-            }
-
-            int cid = ch[loc.childIdx];
-            return fullEnds(cid, pos);
-        };
-
-        fullEnds = [&](int nodeId, int pos) -> pair<long long, long long> {
-            if (nodeId == 0) return {0, 0};
-            if (pos == nodes[nodeId].l) return {0, nodes[nodeId].term[mode]};
-            if (pos == nodes[nodeId].r) return {nodes[nodeId].term[mode], 0};
-
-            Location loc = locate(nodeId, pos);
-            if (!loc.inChild) {
-                const auto& nd = nodes[nodeId];
-                const auto& ch = nd.child;
-                int start;
-                if (ch.empty() || loc.compIdx == 0) start = nd.l;
-                else start = nodes[ch[loc.childIdx]].r;
-                int end;
-                if (ch.empty() || loc.compIdx == 2 * (int)ch.size()) end = nd.r;
-                else end = nodes[ch[loc.childIdx + 1]].l;
-
-                long long left = pos - start;
-                long long right = end - pos;
-                if (mode) return {max(left, 1 + right), max(right, 1 + left)};
-                return {min(left, 1 + right), min(right, 1 + left)};
-            }
-
-            int cid = nodes[nodeId].child[loc.childIdx];
-            return fullEnds(cid, pos);
-        };
-
-        solveNode = [&](int nodeId, int u, int v) -> long long {
-            if (u == v) return 0;
-            Location lu = locate(nodeId, u);
-            Location lv = locate(nodeId, v);
-
-            if (lu.compIdx == lv.compIdx) {
-                if (!lu.inChild) return llabs((long long)v - u);
-                int cid = nodes[nodeId].child[lu.childIdx];
-                return solveNode(cid, u, v);
-            }
-
-            if (lu.compIdx > lv.compIdx) {
-                swap(u, v);
-                swap(lu, lv);
-            }
-
-            const auto& nd = nodes[nodeId];
-            const auto& pref = nd.pref[mode];
-            long long cycleLen = pref.back() + 1;
-
-            auto eu = componentEnds(nodeId, lu, u);
-            auto ev = componentEnds(nodeId, lv, v);
-
-            long long forward = pref[lv.compIdx + 1] - pref[lu.compIdx];
-            long long backward = cycleLen - forward;
-
-            long long cand1 = eu.first + forward + ev.second;
-            long long cand2 = eu.first + backward + ev.second;
-
-            return min(cand1, cand2);
-        };
-
-        int a = xPos[0], b = xPos[1];
-        if (a > b) swap(a, b);
-
-        int commonPair = 0;
-        int cur = posSmallestPair[a];
-        while (cur != 0) {
-            if (b >= nodes[cur].l && b <= nodes[cur].r) {
-                commonPair = cur;
-                break;
-            }
-            cur = nodes[cur].parent;
-        }
-
-        if (commonPair == 0) {
-            return llabs((long long)b - a);
-        }
-
-        return solveNode(commonPair, a, b);
-    };
-
-    long long ansMin = solveMode(0);
-    long long ansMax = solveMode(1);
-    cout << ansMin << '\n' << ansMax << '\n';
-
+    cout << minAns << '\n' << best << '\n';
     return 0;
 }

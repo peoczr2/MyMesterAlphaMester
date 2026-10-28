@@ -1,8 +1,11 @@
 /*
-   Kígyózó szavak: a legfeljebb H hosszú, szomszédosan egymás melletti
-   betűkből álló szavak közül a K-adikat kell megadni lexikografikus sorrendben.
-   A sorrend a prefixfán végzett bejárásnak felel meg, ezért rangsorolással
-   és unrankinggel megoldható.
+Megoldás lényege:
+A szótár ábécé szerinti sorrendje a betűkből épített prefixfa bejárásának felel meg: egy szó közvetlenül megelőzi a belőle hosszabbítással kapott szavakat, és a szavak az első eltérő betű szerint rendeződnek. Ezért a K-adik szót betűnként építjük fel. Dinamikus programozással kiszámoljuk, hányféle kígyózó szó kezdődik egy adott betűvel és legfeljebb adott hosszú (ways[hossz][betű]), és ezekkel a számokkal választjuk ki a következő betűt: a betűk blokkjait sorban átugorjuk, amíg a K-adik szó blokkja meg nem található. A prefix maga is szó, ezért ha a hátralévő k éppen 1, a prefix a válasz. A számlálókat 10^9 fölött levágjuk, mert K legfeljebb 10^9, így ez nem változtatja meg az eredményt. Egy kérdés O(H · 26) időben megválaszolható.
+*/
+/*
+Hint 1: || A szótár ábécé szerinti sorrendje olyan, mint egy prefixfa bejárása: minden szó közvetlenül megelőzi a belőle hosszabbítással kapott szavakat. ||
+Hint 2: || Számold meg dinamikus programozással, hány kígyózó szó kezdődik adott betűvel és legfeljebb adott hosszú (a következő betű csak az előző betű szomszédja lehet). A számlálókat 10^9 fölött levághatod, mert K legfeljebb 10^9. ||
+Hint 3: || Egy kérdésnél az aktuális prefix után a betűket ábécé szerint végigvéve a k-ból kivonod az egyes betűk blokkjainak méretét, amíg a k abba a blokkba nem esik, amelyben a keresett szó van. Ha a k éppen 1, a prefix maga a válasz. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

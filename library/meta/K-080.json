@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/71. Szomszédok",
+    "method": "Két egymás utáni A közötti szakaszok B-darabszámainak maximuma, A-nként egy bejárással",
+    "category": "Szomszédos elemek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "szomszédos", "számlálás"],
+    "note": "Ha nincs két egymás utáni A-előfordulás, a feladat nem ír választ; a megoldás 0-t ír. Sem a minta, sem a szöveg nem rögzíti ezt az esetet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/72. Kétértékű szelet",
+    "method": "Csúszó ablak legfeljebb két különböző értékkel, darabszám-tömbbel",
+    "category": "Csúszó ablak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "ablak", "kétmutatós"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/73. Számok kódolása",
+    "method": "Előtagösszeg minimuma és maximuma adja a kezdő számjegy érvényes tartományát",
+    "category": "Előtagösszeg, kódolás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["sztring", "előtagösszeg", "szélsőérték"],
+    "note": "A ROSSZ-ág és a kezdő számjegy legalább 1 feltétele a szövegből következik (N+1 jegyű szám); a minta nem fedi le. N<=5-ig teljes brute-force egyezés.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/74. Szomszédok",
+    "method": "Két egymás utáni A közötti szakasz darabszám-előtagösszege, B-nként maximum",
+    "category": "Szomszédos elemek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "szomszédos", "előtagösszeg"],
+    "note": "Ha nincs két egymás utáni A-előfordulás, a válasz 0; ez az eset sem a mintában, sem a szövegben nem szerepel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

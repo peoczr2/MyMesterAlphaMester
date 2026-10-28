@@ -1,7 +1,11 @@
 /*
-Hungarian megoldás: a 4x4-es sudoku összes szabályos kitöltését előállítjuk,
-majd ezek közül választjuk ki a bemenethez illeszkedő egyet.
-
+Megoldás lényege: a 4x4-es sudoku összes szabályos kitöltését (288 darab) visszalépéses
+kereséssel állítjuk elő: soronként a sor permutációit próbáljuk, és kizárjuk azokat, amelyek
+egy oszlopban vagy a 2x2-es részben már szereplő számot ismételnek. A generálás lexikografikus
+sorrendben történik, így az első, a bemenettel egyező tábla a lexikografikusan legkisebb kitöltés.
+A teljes felsorolás néhány száz táblát jelent, ezért az időigény elhanyagolható.
+*/
+/*
 Hint 1: || 4x4-es méretben az összes szabályos tábla száma kicsi, ezért teljes felsorolás is belefér. ||
 Hint 2: || Egy táblázat akkor jó, ha a megadott számokkal mindenhol egyezik. ||
 */
@@ -47,6 +51,7 @@ void gen() {
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+    if (cin.peek() == 0xEF) { cin.get(); cin.get(); cin.get(); }  // UTF-8 BOM átugrása (a minta-fájlok tartalmazhatják)
     for (int i = 0; i < 4; ++i) for (int j = 0; j < 4; ++j) cin >> a[i][j];
     gen();
     for (auto &b : boards) if (good(b)) {

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Madármegfigyelés/17. Magának való madárfaj *",
+    "method": "Fajonként az előforduló helységekben mért társaságszámok átlaga, minimum keresése keresztszorzással.",
+    "category": "Átlag: feltételes számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["átlag", "számlálás", "mátrix"],
+    "note": "Értelmezési bizonytalanság: az „átlagosan” az előfordulási helységekre értendő (ahol E > 0), és ott a többi jelen lévő fajok számát átlagolom. Ha minden helységre M-mel osztanánk (a nem előforduló helységek 0-val számítanak), a be2 eredménye 20 lenne a 111 helyett; a minta (be1 → 3) mindkét értelmezéssel egyezik, így a mintából nem dönthető el. A minta.zip-ben nincs ki-fájl, a validátor „nincs minta” állapotot ad; a megoldást kézzel futtattam: be1 → 3, be2 → 111 (független brute-force ellenőrzéssel egyezik), a PDF példa → 3. Soha nem észlelt faj a számításból kimarad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/18. Maximális egyedszámú helységek *",
+    "method": "Oszloponkénti maximumkeresés egy bejárással, egyenlőségnél a legkisebb sorszám marad.",
+    "category": "Szélsőérték: oszloponkénti maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szélsőérték", "maximum", "mátrix"],
+    "note": "A minta.zip-ben nincs ki-fájl, a validátor „nincs minta” állapotot ad; a megoldást kézzel futtattam: be1 → 3 2 1 2 3, be2 → független brute-force ellenőrzéssel egyezik, a PDF példa → 3 2 1 2 3. Egyenlő maximumnál (a példa 2. fajánál) a legkisebb sorszámot írja ki, ezt a PDF példa igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/19. Maximális madárszámú helység *",
+    "method": "Soronkénti összegzés, a legnagyobb összegű helység sorszámának megjegyzése.",
+    "category": "Összegzés: sorösszeg maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "maximum", "mátrix"],
+    "note": "A minta.zip-ben nincs ki-fájl, a validátor „nincs minta” állapotot ad; a megoldást kézzel futtattam: be1 → 3, be2 → 11 (független brute-force ellenőrzéssel egyezik), a PDF példa → 3. A mintákban nincs egyenlő maximum.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/2. Egy átlagosan legkedveltebb helység *",
+    "method": "Az átlagtól vett eltérések összege a sorösszegtől függ, ezért a legnagyobb sorösszeget keressük.",
+    "category": "Összegzés: eltérések összege",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["összegzés", "átlag", "eltérés"],
+    "note": "A minta.zip-ben nincs ki-fájl, a validátor „nincs minta” állapotot ad; a megoldást kézzel futtattam: be1 → 3, be2 → 24 (az eltéréseket fajonként átlagolva közvetlenül kiszámoló brute-force is 24-et ad), a PDF példa → 3. A mintákban nincs egyenlő maximum.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

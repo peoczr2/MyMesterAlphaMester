@@ -1,6 +1,8 @@
 /*
-Feladat: Balról jobbra haladva a ládákat egymásba rakhatjuk (csak kisebbet nagyobba), cél a végső csomagok számának minimalizálása, és egy konkrét csoportosítás kiírása.
-Ötlet: Minden csomaghoz az aktuális „belső” (legkisebb) méretet tartjuk. Új x ládát ahhoz a csomaghoz rakunk, amelynek belső mérete a legkisebb, de még > x. Ha nincs ilyen, új csomag indul.
+Megoldás lényege:
+Balról jobbra haladva minden csomagnak a legbelső (utoljára bele tett, így legkisebb) méretét tartjuk nyilván. Az új x ládát a legkisebb olyan csomagba tesszük, amelynek legbelső mérete x-nél nagyobb; ha nincs ilyen, új csomagot nyitunk. Így minden csomag szigorúan csökkenő méretű sorozat, és a csomagok minimális száma a leghosszabb nem csökkenő részsorozat hossza (Dilworth-tétel). A legbelső méretek multihalmazában a keresés és a módosítás O(log N), így az összidő O(N log N).
+*/
+/*
 Hint 1: || Ha x-et túl nagy belső méretű csomagba teszed, az rosszabb lehet a későbbiekre nézve. ||
 Hint 2: || A legkisebb még > x belső méret választása ugyanaz a mohó minta, mint „láncokra bontásnál”. ||
 Hint 3: || A csoportokba a ládák indexeit a bejárás sorrendjében gyűjtsd, ez lesz a kimenet soraiban. ||

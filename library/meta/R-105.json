@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/2. Kerékpárverseny",
+    "method": "Visszafelé dinamika a rácson, a leghosszabb megengedett út és a lépések tárolásával",
+    "category": "Dinamikus programozás, rács",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "rács", "útvonal"],
+    "note": "A feladat szerint „egy lehetséges induló hely” adható meg, így több kezdőpont is helyes; a validátor a minta pontos kimenetét reprodukálja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/3. Programgráf",
+    "method": "Mélységi bejárás visszaéleinek száma a ciklus; elágazás: kétkimenetű csúcsok és ciklusok különbsége",
+    "category": "Gráf: mélységi bejárás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "mélységi bejárás", "ciklus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/4. Központ",
+    "method": "Legszélesebb utak Floyd–Warshall-szerű táblázattal, majd a legnagyobb minimumú gép kiválasztása",
+    "category": "Gráf: legszélesebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "legszélesebb út", "floyd-warshall"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 2. forduló/5. Téglalapok asztalon",
+    "method": "Eseményseprés, aktív magasságok multihalmazával; a szakaszok maximumainak minimuma",
+    "category": "Seprővonal, multihalmaz",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["seprővonal", "multihalmaz", "események"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

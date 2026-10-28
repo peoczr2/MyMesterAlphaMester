@@ -13,8 +13,13 @@ Ezért minden lécet 5 állapot valamelyikében tartunk nyilván:
 - barna, utolsó festés zöld.
 Minden festési műveletet végigiterálunk az érintett szakaszon, és alkalmazzuk az
 állapotátmenetet. N legfeljebb 1000, M legfeljebb 100, ezért ez bőven elég.
+Az időigény O(N · M), ami legfeljebb 10^5 lépés.
 */
-
+/*
+Hint 1: || Nem kell a festések teljes történetét tárolni: elég minden léchez egy állapotot nyilvántartani, és minden festésnél ezt az állapotot frissíteni. ||
+Hint 2: || Öt állapot kell: fehér, tiszta piros, tiszta zöld, valamint a barna két fajtája aszerint, hogy az utolsó festés piros vagy zöld volt. Ha az utolsó két festés azonos színű, a léc tiszta színű lesz. ||
+Hint 3: || P festésnél a fehér, a piros és a barna (utolsó festés piros) lécek pirosak lesznek, a zöld és a barna (utolsó festés zöld) lécek barna (utolsó festés piros) állapotba kerülnek. Z festésnél a szerep szimmetrikusan cserélődik. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

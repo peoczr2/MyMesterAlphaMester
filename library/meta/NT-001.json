@@ -1,0 +1,26 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/17. Szótár",
+    "method": "Prefixfa, prefixenkénti számlálás, a szótárat sorrendben építve",
+    "category": "Stringek: trie",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["karakterlánc", "prefixfa", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/18. Pálya ellenőrzés",
+    "method": "Alsó korlátos minimális folyam: csúcsonként 1, Dinic-algoritmussal",
+    "category": "Gráf: folyam",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "folyam", "lefedés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

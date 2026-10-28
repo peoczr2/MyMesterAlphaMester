@@ -1,6 +1,8 @@
 /*
-Feladat: K darab faház van, minden foglalás pontosan M napos. A lehető legtöbb igényt kell elfogadni.
-Ötlet: Az igény egy [s, s+M) intervallum. Standard több-erőforrásos intervallum ütemezés: végidő szerint rendezünk, és mindig ahhoz a faházhoz tesszük az igényt, amelyik legkésőbb, de még időben felszabadult.
+Megoldás lényege:
+Minden foglalás azonos, M napos, ezért egy igény az [s, s+M) intervallum, a faházak állapota pedig elég a következő szabad napjukkal leírni. Az igényeket a befejezési idejük (s+M) szerint növekvő sorrendben dolgozzuk fel, így nem zárunk ki korábban befejeződő lehetőségeket. Minden igényt ahhoz a faházhoz rendelünk, amelyik a legkésőbb, de még s előtt szabadult fel: a szabad napokat multihalmazban tartjuk, és az utolsó, s-nél nem nagyobb elemet keressük. Ha nincs ilyen faház, az igény nem fogadható el. Az időigény O(N log N), a multihalmaz-műveletek miatt.
+*/
+/*
 Hint 1: || Mivel minden foglalás azonos hosszú, az intervallum ütközések kezelésére elég a kezdőnap és a felszabadulás ideje. ||
 Hint 2: || Végidő szerint választva nem zársz ki korán befejező lehetőségeket. ||
 Hint 3: || Multihalmazban tartsd a faházak „következő szabad napját”, és keresd az utolsó <= start elemet. ||

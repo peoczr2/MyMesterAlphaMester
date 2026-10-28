@@ -13,7 +13,19 @@ meredekség kisebb az aktuális minimumtól.
 
 Idő: O((összes módosítás) * log N).
 */
-
+/*
+Hint 1: || Egy szurikáta akkor látja a madarat, ha a (P − y_i) / x_i hányadosa szigorúan kisebb,
+mint a nála kisebb sorszámú (a fához közelebbi) szurikáták ugyanilyen hányadosai. Így az eredetileg
+látható szurikáták szigorúan csökkenő sorozatot alkotnak. ||
+Hint 2: || A kikukucskálás a szurikátát csak magasabbra emeli, vagyis csökkenti a hányadosát.
+Ha egy szurikáta nincs a lekérdezésben, a magassága nem változik, ezért eredetileg nem látható
+módosítatlan szurikáta a lekérdezés után sem lehet látható. Így csak az eredetileg látható és a
+módosított szurikáták jöhetnek szóba. ||
+Hint 3: || Egy lekérdezésben a módosított indexeket sorrendben dolgozd fel, és közben tartsd nyilván
+az eddigi legkisebb hányadost. Két módosított index között az eredetileg látható szurikáták egy
+összefüggő részlánca áll; ebben a jelenlegi minimumnál kisebb hányadosúak a lánc végén vannak,
+így a darabszámuk bináris kereséssel megkapható. A törtek összehasonlításához használj keresztszorzást. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,9 +1,10 @@
 /*
-Feladat: A rúdból levágandó darabok összköltségét kell minimalizálni.
-Ötlet: Mindig a két legkisebb még különálló darabot érdemes összevonni először, mert ezek többször vesznek részt a további vágásokban. Ez a Huffman-stratégia.
-Hint 1: || Egy vágás költsége mindig az éppen vágott darab hossza. ||
-Hint 2: || A kisebb darabokat érdemes előbb összevonni, hogy később kevesebbszer fizessük meg őket. ||
-Hint 3: || A vágási sorrendet egy min-heapből lehet felépíteni. ||
+Megoldás lényege:
+Egy vágás költsége a vágott darab hossza, és a teljes költség a fordított folyamatban (összeragasztás) pontosan a vágási fa belső csúcsainak hosszösszege. Ezért mindig a két legkisebb darabot érdemes összevonni (Huffman-stratégia): a kicsi darabok így kevesebbszer kerülnek bele a költségbe. Az összevonásokat min-heap segítségével végezzük, az időigény O(N log N). A vágási sorrendet a kialakult fából gyökértől indulva, preorder bejárással írjuk ki, így minden vágás olyan darabot vág, amely a korábbi lépésekből már létezik. Ha több optimális sorrend is van, bármelyik megadható.
+*/
+/*
+Hint 1: || Fordítsd meg a folyamatot: képzeld, hogy a darabokat ragasztod össze, és minden ragasztás költsége az új darab hossza. ||
+Hint 2: || Mindig a két legrövidebb darabot ragaszd össze; ezt min-heapből egyszerűen kiveheted, az összegüket pedig visszateszed a heapbe. ||
 */
 
 #include <bits/stdc++.h>

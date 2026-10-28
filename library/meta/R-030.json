@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/59. Ciklikusan szomszédos számok",
+    "method": "Lexikografikus szomszéd keresése fix jegyösszeggel: jobbról első megváltoztatható jegy, a maradék összeg szétosztása.",
+    "category": "Összegkötött számok sorrendje",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "számjegyek",
+      "lexikografikus",
+      "összeg"
+    ],
+    "note": "Javítva: a jegyek szóközzel elválasztott, akár M-ig terjedő egészek, a kimenet is szóközös; a hosszváltó esetek (L+1, L-1, körbezárás) helyesen kezelve; brute force-szal igazolva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/6. Fák száma ***",
+    "method": "Catalan-szám iteratív kiszámítása: C(k+1) = C(k)·2(2k+1)/(k+2).",
+    "category": "Catalan-számok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "catalan",
+      "rekurzió",
+      "fák"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/60. Következő szám azonos számú 1-es bittel",
+    "method": "Bitműveletes léptetés: a legalsó 1-es blokk fölötti 0 bit 1-re állítása, alatta újrarendezés.",
+    "category": "Bitműveletek: következő szám",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "bitek",
+      "bitműveletek",
+      "kettes számrendszer"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/61. Autókódolás",
+    "method": "Következő: 60-as bittrükk; előző: az alsó 1-esek fölötti 1 bit csökkentése.",
+    "category": "Bitműveletek: előző és következő",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "bitek",
+      "bitműveletek",
+      "kettes számrendszer"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/7. Halmazok sorrendje ***",
+    "method": "Legnagyobb elem szerinti csoportosítás, binomiális együtthatókkal N-től lefelé haladva.",
+    "category": "Binomiális rangsorolás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "binomiális",
+      "részhalmaz",
+      "rangsorolás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/8. Hibás lépcsők ***",
+    "method": "DP lépésszám és pozíció szerint; hibás fokon 0, az átmenet az előző K fokot összegzi.",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "dp",
+      "lépcső"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

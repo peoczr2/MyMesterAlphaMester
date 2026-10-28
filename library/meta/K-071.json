@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/39. Rendezvénysorozat legelfoglaltabb napja **",
+    "method": "Különbségi tömb a foglalások kezdő- és végnapjára, majd prefixösszeg-bejárás",
+    "category": "Maximumkiválasztás: prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "prefixösszeg", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/4. Legfiatalabban végzett hallgató *",
+    "method": "Diplomázáskori életkor (végzés éve − születési év) minimumának kiválasztása",
+    "category": "Maximumkiválasztás: életkor",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "dátum", "életkor"],
+    "note": "A diplomázás pontos napja nincs megadva, ezért az életkort a végzés éve és a születési év különbségeként számoltam; ezt a be2 mintán igazoltam (a születési dátum szerinti legkésőbbi értelmezés ott 1989 10 3-at adna, a minta 1988 9 7-et).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/40. Legnagyobb dobások *",
+    "method": "Soronkénti maximumkiválasztás, 0 kezdőértékkel a sikertelen dobások kiszűrésére",
+    "category": "Maximumkiválasztás: soronként",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "sorok"],
+    "note": "A PDF-példa bemenete eltér a minta.zip első bemenetétől (például 7200 helyett 7000, és egy -1 hiányzik a 4. sorból); a kimenet mindkettőnél ugyanaz, a validátor a minta.zip szerint kész.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/41. Üzemanyag tartály mérete *",
+    "method": "Egyszeri bejárás: fogyasztás levonása, tankolás hozzáadása, a legnagyobb szint követése",
+    "category": "Maximumkiválasztás: szint-követés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "szimuláció", "tankolás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

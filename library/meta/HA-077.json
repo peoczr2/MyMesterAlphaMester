@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/60. Labor ***",
+    "method": "Részlegesen töltött edények összege modulo K bitsettel; a 0 és a K feltétele külön.",
+    "category": "Részösszegek modulo K",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["részösszeg", "moduló", "invariáns"],
+    "note": "A be2 mintán a validátor hibát jelez: a ki2 első sora 100000, és a 0 hiányzik a listából, pedig N=10000 > ceil(S/K)=9996, így a robot legális öntésekkel üres kémcsövet tud előállítani (szimuláció: 4 üres, 9995 tele, 1 részleges kémcső); a be1 mintában a 0 is szerepel. Ezért kézi: a kimenetünk a ki2 minden értékét tartalmazza, plusz a 0-t. Ellenőrző: library/.work/HA-077/60/check60.py (2000 kis esetben a kimerítő keresés egyezik).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/61. Országok",
+    "method": "Évenkénti szélességi bejárás; ha egy szabad ország agresszív szomszédai különböző tulajdonosúak, örökre szabad marad.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bejárás", "szomszédság"],
+    "note": "A feladat szerint a felsorolás tetszőleges sorrendben is jó, ezért kézi. Értelmezés: a „más agresszív szomszéd” a más tulajdonosú agresszív szomszédot jelenti, ezt a be2 minta igazolja (a másik értelmezés 10 sorban tér el). Ellenőrző: library/.work/HA-077/61/check61.py (1500 véletlen gráfon a szó szerinti évenkénti szimulációval egyezik).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/62. Csatornák",
+    "method": "Csökkenő sorrendű diszjunkt halmazok adják a szélességet, majd BFS a küszöbön.",
+    "category": "Gráf: legszélesebb út",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["legszélesebb út", "diszjunkt halmaz", "bfs"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/63. DNS vizsgálat",
+    "method": "Levélnyesés a városmag megtalálására, majd többforrásos BFS a tanyák hozzárendelésére.",
+    "category": "Gráf: levélnyesés, BFS",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bfs", "levélnyesés"],
+    "note": "A feladatlap címe „Tanyák”, a mappa neve „DNS vizsgálat”; a feladat szövege és a minta egymással egyezik. Ellenőrző: library/.work/HA-077/63/check63.py (1500 véletlen szerkezeten egyezik).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,15 +1,17 @@
 /*
 Megoldás lényege:
-A lépcsőfokok frontjának koordinátáit prefixösszegekkel számoljuk ki. Egy fokra akkor
-tudunk lépni egy másikról, ha a vízszintes és függőleges különbség is belefér a korlátokba.
-Ez egy egyszerű DAG-dinamikát ad.
+A lépcsőfokok elejének vízszintes helyét és magasságát prefixösszegekkel számoljuk: a földszint
+0, az első lépcső eleje 1 távolságra van, és minden további lépcső eleje az előzőnél az előző
+lépcső szélességével arrébb van. Egy fokra akkor lehet lépni egy korábbi helyről (vagy a
+földszintről), ha a vízszintes és a függőleges különbség is belefér a korlátokba. Ez egy
+O(N^2) DAG-dinamika.
 
 */
-
-// Hint 1: || A lépcsőfokok frontjának helye prefix szélességből és prefix magasságból adódik. ||
-// Hint 2: || Minden lépcsőre az előző, még elérhető lépcsőkből gyűjtsd össze a számokat. ||
-// Hint 3: || N csak 1000, ezért az O(N^2) megoldás is bőven elég. ||
-
+/*
+Hint 1: || A lépcsőfokok frontjának helye prefix szélességből és prefix magasságból adódik. ||
+Hint 2: || Minden lépcsőre az előző, még elérhető lépcsőkből gyűjtsd össze a számokat. ||
+Hint 3: || N csak 1000, ezért az O(N^2) megoldás is bőven elég. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,11 +23,13 @@ int main() {
     if (!(cin >> N >> Hlim >> Tlim)) return 0;
 
     vector<long long> w(N + 1), h(N + 1), x(N + 1), y(N + 1);
+    w[0] = 1;  // a földszintről az első lépcső eleje 1 távolságra van
     for (int i = 1; i <= N; ++i) cin >> w[i];
     for (int i = 1; i <= N; ++i) cin >> h[i];
 
+    // x[i]: az i. lépcső elejének vízszintes helye (x[0] a földszint), y[i]: az i. lépcső magassága.
     for (int i = 1; i <= N; ++i) {
-        x[i] = x[i - 1] + w[i];
+        x[i] = x[i - 1] + w[i - 1];
         y[i] = y[i - 1] + h[i];
     }
 

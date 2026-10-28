@@ -1,11 +1,14 @@
+/*
+Megoldás lényege:
+Minden i naphoz meghatározzuk, meddig terjedhet a j nap úgy, hogy az i-edik nap eladása a [i, j] szakasz minimuma maradjon: ez a következő nála kisebb eladású napig tart, és monoton veremmel mind az N napra kiszámolható. Az így kapott tartományon egy szegmensfa adja a legnagyobb eladású napot (döntetlennél a kisebb sorszámút), így minden i-hez egy lekérdezés elég. A kapott különbségek közül a legnagyobbat tartjuk meg, döntetlennél a kisebb i, majd a kisebb j nyer. Az időigény O(N log N), a memóriaigény O(N).
+*/
+/*
+Hint 1: || Rögzíts egy i napot. A j nap csak addig lehet jobbra, amíg az i-edik nap eladása a [i, j] szakasz legkisebbje, vagyis a következő, nála kevesebbet eladó napig. Ezt a határt minden i-re monoton veremmel gyorsan megkapod. ||
+Hint 2: || Az [i+1, r] tartományon a legnagyobb eladású napot kell megtalálni. Azonos eladásnál a kisebb sorszám kell, ezért a szegmensfa csomópontjában érdemes (érték, -sorszám) párt tárolni. ||
+Hint 3: || Minden i-re számold ki a legjobb j különbségét, és ezek közül a legnagyobbat válaszd. Ha egyik i-hez sincs pozitív különbség, a válasz 1 1, mert az i = j pár 0 különbséget ad. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Minden naphoz megkeressük, meddig terjedhet úgy jobbra, hogy az adott nap
-    maradjon a legkisebb értékű. Ezen a tartományon belül a legnagyobb eladási
-    értéket kell kiválasztani, mert ez adja a legnagyobb növekedést.
-*/
 
 struct SegTree {
     int n;

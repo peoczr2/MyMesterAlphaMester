@@ -1,13 +1,14 @@
 /*
 Megoldási ötlet:
-A feladat az előző rendezett halmaz könyvtár bővítése törlésekkel. Ugyanaz a kulcs szerint rendezett treap elég,
-az egyetlen extra információval, hogy egy elem már szerepelt-e valaha Adat(x) hívásban.
+A feladat az előző rendezett halmaz könyvtár bővítése törlésekkel. Ugyanaz a kulcs szerint rendezett treap elég.
+Adat(x) csak akkor hat, ha x éppen nincs a halmazban, így törlés után az elem újra beszúrható. Ezt a kulcs
+szerinti keresés eldönti, külön nyilvántartásra nincs szükség.
 
 Az aktuális halmazból törölhetünk kulcs szerint és k-adik elem alapján is. A rang- és k-adik lekérdezés ugyanaz,
 mint a törlés nélküli változatban.
 */
 /*
-Hint 1: || A beszúrás továbbra is csak egyszer lehet hatásos egy értékre. ||
+Hint 1: || Adat(x) akkor hat, ha az x kulcs éppen nincs a fában; ezt kulcs szerinti kereséssel ellenőrizheted. ||
 Hint 2: || A törlésekhez a kulcsot és a k-adik elem keresését is támogatni kell. ||
 Hint 3: || Ha az összes művelethez fenntartod a részfaméretet, minden logaritmikus marad. ||
 */
@@ -15,7 +16,6 @@ Hint 3: || Ha az összes művelethez fenntartod a részfaméretet, minden logari
 #include "rendminta.h"
 #include <algorithm>
 #include <random>
-#include <unordered_set>
 
 using namespace std;
 
@@ -30,7 +30,6 @@ struct Node {
 
 static mt19937 rng(917331);
 static Node* root = nullptr;
-static unordered_set<int> seen;
 
 static int size(Node* node) { return node ? node->sz : 0; }
 static void pull(Node* node) { if (node) node->sz = 1 + size(node->left) + size(node->right); }
@@ -96,7 +95,7 @@ static int rankOf(Node* node, int key, int passed = 0) {
 }
 
 void Adat(int x) {
-    if (seen.insert(x).second) insertKey(x);
+    if (!contains(root, x)) insertKey(x);
 }
 
 int Elemszam() { return size(root); }

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 2. forduló/5. Hálózat tesztelés",
+    "method": "Fordított sorrendű DSU-egyesítés: a lekapcsolt vonalakat visszafelé adjuk vissza, az új komponensek tagjai adják a sort",
+    "category": "Gráf: unió-keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "unió-keresés", "összefüggőség"],
+    "note": "A kiírt csomópontok sorrendje a feladat szerint tetszőleges; a megoldás a minta sorrendjével egyezően ad kimenetet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

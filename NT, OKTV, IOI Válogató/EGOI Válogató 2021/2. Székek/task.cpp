@@ -3,6 +3,12 @@ Megoldas: ciklusbontas a szekek es a diakok permutaciojan.
 Az i. szekre a jelenlegi ott ulo diak helyett az a szek kerul, ahova neki kellene
 ulnie. Ezt a permutaciot ciklusokra bontva adodik a minimalis atlulesek szama:
 egy ures szeket tartalmazo ciklus hossza-1, a tobbi hibas ciklus hossza+1.
+Az idoigeny O(N), mert minden szek legfeljebb egyszer szerepel a ciklusokban.
+*/
+/*
+Hint 1: || Gondolj a székekre úgy, mint egy átrendezési feladatra: minden diáknak egy célszéke van (a sorszáma), és mindenkinek a célszékére kell ülnie. Ha a j. széken ülő diák sorszáma k, húzz egy nyilat a j-ből a k-ba; az üres széktől az (N+1). székbe mutasson a nyíl. ||
+Hint 2: || A nyilak ciklusokra bontják a székeket. Melyik ciklusban elég minden diáknak egy átülés, és melyikben kell egy plusz átülés? Ehhez nézd meg, hogy a ciklusban benne van-e az üres szék. ||
+Hint 3: || Ha a k hosszú ciklusban nincs üres szék, k+1 átülés kell: először egy diák átül az üres székre, így a ciklus többi tagja sorban a helyére ülhet, végül a korábbi üres szék újra üres lesz. Ha az üres szék a ciklusban van, k−1 átülés elég. Ezeket összegezd minden ciklusra; a fix pontokat hagyd ki. ||
 */
 
 #include <bits/stdc++.h>

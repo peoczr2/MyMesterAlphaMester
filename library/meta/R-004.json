@@ -1,0 +1,82 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/27. Gyöngy, jobbra, lefelé és felfelé **",
+    "method": "Oszloponkénti DP lefelé és felfelé söpréssel, visszafejtés a belépő sorokból.",
+    "category": "Rácsbeli útvonal-DP",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "rács",
+      "útvonal"
+    ],
+    "note": "Több helyes lépéssor van; a munkakönyvtár ellenőrző programjai (brute force és útellenőrzés) igazolják az optimális pontszámot és az utat. A betűk a mintának megfelelően szóköz nélkül íródnak.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/28. Gyűjtő robot **",
+    "method": "Oszloponkénti DP a kilépő sorra, prefix-minimumokkal; O(N²).",
+    "category": "Oszloponkénti DP",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "oszlopok",
+      "minimum"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/32. Igazságos osztozkodás ***",
+    "method": "Különbség-állapotú DP, a kiosztott összeg maximalizálásával.",
+    "category": "Részhalmaz-összeg DP",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "részhalmaz",
+      "különbség"
+    ],
+    "note": "Több igazságos osztozkodás létezik, a minta más kiosztást ad; a két oldal egyenlőségét és a közös maradék minimalitását ellenőrző program (3^N brute force) igazolja.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/33. Intervallum lefedés ***",
+    "method": "Dinamikus programozás a jobb végpont szerinti rendezéssel, láncos visszafejtéssel.",
+    "category": "Intervallumlefedés DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "intervallum",
+      "lefedés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/35. Járműkölcsönzés **",
+    "method": "Súlyozott intervallum-ütemezés DP és bináris keresés, O(N log N).",
+    "category": "Intervallum-ütemezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "intervallum",
+      "bináris keresés"
+    ],
+    "note": "A minta.zip a szám mellett a kiválasztott rendelések számát és sorszámait is tartalmazza, a szöveg szerint viszont csak a szám kell. A számot minden részhalmazt bejáró brute force egyezteti, a mintával az első sor egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

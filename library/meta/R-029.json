@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/53. Számlexikon ****",
+    "method": "Bináris keresés N-re, Q_{N,K} számlálása prefixek intervallumaival.",
+    "category": "Bináris keresés, lexikografikus rang",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["bináris keresés", "lexikografikus sorrend", "számjegyek"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/54. Lassú permutáció **",
+    "method": "Közvetlen szomszédkeresés: utolsó módosítható pozíció, a maradék szélső betűkkel.",
+    "category": "Sztring, lexikografikus sorrend",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["sztring", "lexikografikus sorrend", "mohó"],
+    "note": "Az eredeti rangszámítás K >= 18 esetén túlcsordult (a számlálók 10^9-nél vannak korlátozva), ezért közvetlen mohó keresésre lett átírva; K <= 6 esetén brute-force-szal, nagyobb K-ra referencia-megvalósítással ellenőrizve.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/55. Örökösök ***",
+    "method": "Különböző értékű K-elemű részhalmazok számolása hátizsák-DP-vel.",
+    "category": "Hátizsák-DP, részhalmazok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "részhalmaz", "számlálás"],
+    "note": "A minta ki2.txt (be2: 10 3 9, kimenet 5) ellentmond a feladatszövegnek: három különböző, 1..9 közötti szám 10-es összege csak 4 féleképpen adódik (1+2+7, 1+3+6, 1+4+5, 2+3+5), a független brute-force és a megoldás is 4-et ad; a be1/ki1 (10 3 5, kimenet 2) egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/56. Inverzió **",
+    "method": "Jobbról balra haladva Fenwick-fa prefix-maximummal a legtávolabbi kisebb társ.",
+    "category": "Fenwick-fa, inverziók",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["fenwick", "inverzió", "prefix-maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/57. Maximum felosztás ****",
+    "method": "Szakaszok az utolsó B_i-előfordulással; a DP-réteg intervallum-darabokként, prefixösszegekkel.",
+    "category": "DP, intervallumok, bináris keresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus programozás", "intervallum", "prefixösszeg"],
+    "note": "Az eredeti O(M*N) táblázatos DP N = M = 10^5 esetén becslés szerint 10^10 lépés (időtúllépés), ezért a rétegeket intervallum-darabokként, prefixösszeg és bináris keresés segítségével számoljuk; kis és közepes véletlen esetekre brute-force és független DP-ellenőrzés, a minta 2000x500 esete is egyezik, a 10^5-ös tesztek 0,1 másodperc alatt futnak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/58. Szomszédos számok",
+    "method": "Jobbról balra az első módosítható jegy, a maradék összeget a szélső jegyekkel töltjük ki.",
+    "category": "Számrendszer, lexikografikus rendezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["számrendszer", "számjegyek", "mohó"],
+    "note": "Az eredeti kód a jegyeket szóköz nélkül írta ki (a minta szóközzel tagolt), a bemenetből csak az első jegyet olvasta, és int-túlcsordulás volt; ezeket javítottam, és az összes N, M <= 6 érdekes számra brute-force-szal ellenőriztem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

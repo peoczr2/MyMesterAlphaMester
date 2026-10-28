@@ -1,9 +1,10 @@
 /*
-Az eseményeket időrendben kell feldolgozni, mert minden érkezés vagy indulás a pályaszakasz foglaltságát módosítja. A megfelelő sorrend megtartása dönti el, hogy egy vonat vár-e vagy továbbléphet.
+Eseményvezérelt szimulációt végzünk. Minden szakaszhoz prioritásos sor tartozik azokról a vonatokról, amelyek már készek az indulásra: a kezdési idejüknél, illetve egy állomásra érkezés után az érkezési idő plusz az állomási minimális várakozás. Amikor a szakasz szabad, a sorból a legkorábban kész vonat lép rá, egyenlő időpontnál a Kukutyinból induló, majd a kisebb sorszámú. A vonat a menetidő alatt foglalja a szakaszt, a végállomásra érkezés idejét pedig rögzítjük. A kimenetet az érkezési idő szerint rendezzük, egyenlő időpontnál a Piripócsra érkezők kerülnek előre; a korlátok mellett a futás gyors.
 */
 /*
-Hint 1: || Az eseményeket időrendbe kell tenni: érkezéskor a vonat vár, induláskor pedig a szakasz felszabadul. ||
-Hint 2: || Ha két esemény egy időben történik, a menetirány és a szakasz foglaltsága dönti el, melyik vonat léphet tovább. ||
+Hint 1: || Szakaszonként érdemes külön várakozó sort tartani, és a szakasz akkor foglalható le, ha szabad: a vonat áthaladása alatt a szakasz foglalt. ||
+Hint 2: || Egy vonat indulásra készen áll a kezdési idejében, illetve az állomásra érkezése után a várakozás végén, vagyis az érkezési idő plusz a minimális várakozás. ||
+Hint 3: || Egy időpontban előbb dolgozd fel az összes eseményt (szakasz felszabadulása, érkezés), és csak utána indíts el újabb vonatot; a kiválasztás sorrendje: készenlét ideje, majd Kukutyinból indulás, majd sorszám. ||
 */
 
 #include <bits/stdc++.h>
@@ -28,7 +29,7 @@ struct Cand {
     int dir, train;
     bool operator>(const Cand &other) const {
         if (time != other.time) return time > other.time;
-        if (dir != other.dir) return dir < other.dir; // dir 1 (Piripócs) later in heap
+        if (dir != other.dir) return dir > other.dir; // Kukutyinból induló (dir 0) az elsőbbségű
         return train > other.train;
     }
 };
@@ -64,7 +65,6 @@ int main() {
             Cand c = q[seg].top(); q[seg].pop();
             busy[seg] = 1;
             events.push({now + travel[seg], 1, seg, c.train});
-            // store direction in train index sign? recover from input
         }
     };
 

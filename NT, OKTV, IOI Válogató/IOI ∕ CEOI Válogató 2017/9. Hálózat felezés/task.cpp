@@ -12,7 +12,11 @@ vagy egyáltalán nem választunk onnan csúcsot (ekkor az u-v él vágás, +1 k
 vagy a gyermekből is választunk egy összefüggő részfát, amely tartalmazza a gyereket
 (ekkor a gyermek dp-je adja a költséget, és az u-v él belső él lesz).
 */
-
+/*
+Hint 1: || A kérdés: van-e olyan összefüggő, N/2 csúcsú részfa, amelynek a többi csúcshoz vezető éleinek száma a legkisebb. Gyökerezd a fát egy csúcsban; a részfa felső csúcsának szülőéle is határél lesz. ||
+Hint 2: || Fa-DP: dp[v][s] legyen a legkisebb határélszám, ha a v gyökerű részfából pontosan s csúcsot választunk úgy, hogy a kiválasztott rész tartalmazza v-t. Egy gyermeket vagy kihagyunk (ekkor az élére +1 jár), vagy beveszünk a gyermek dp-jéből. ||
+Hint 3: || A gyermekek összevonását a méretek szerint végezd: az összes összevonás költsége O(N²), ami N ≤ 4000 mellett elég. A válasz a dp[v][N/2] minimuma minden v-re, a v ≠ 1 csúcsoknál a szülőéllel együtt. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

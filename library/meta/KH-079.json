@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/31. Leghosszabb háború *",
+    "method": "Lineáris bejárás, az eddigi leghosszabb háború egy változóban, egyenlőségnél a korábbi kezdéssel.",
+    "category": "Keresés, maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "maximum", "keresés"],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,3 mp. A feladatszöveg a háborúsorokat N-nel jelöli, a mintából K sor következik; K sort olvasunk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/32. Legkevésbé ellenséges törzs *",
+    "method": "Törzsenkénti halmaz a különböző ellenségekről, minimum keresés a nem üres halmazok között.",
+    "category": "Halmaz, egyedi elemek",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "minimum", "törzs"],
+    "note": "Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,3 mp. Csak legalább egy háborúban részt vevő törzs számít; a békés törzsek kimaradnak. A feladatszöveg a háborúsorokat N-nel jelöli, a mintából K sor következik; K sort olvasunk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/33. Legkevesebbet háborúzó törzs *",
+    "method": "Számláló tömb törzsenként, minimum keresés a nem nulla értékek között.",
+    "category": "Megszámolás, minimum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "minimum"],
+    "note": "Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,3 mp. A békés (nulla háborús) törzsek kimaradnak. A feladatszöveg a háborúsorokat N-nel jelöli, a mintából K sor következik; K sort olvasunk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/34. Legnagyobb ellenségek *",
+    "method": "Párok számlálása map-pel, rendezett sorszámpárral, a legnagyobb darabszám keresése.",
+    "category": "Map, párok számlálása",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["map", "párok", "számlálás"],
+    "note": "Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,3 mp. Egyenlő darabszámnál a lexikografikusan első pár kerül a kimenetre. A feladatszöveg a háborúsorokat N-nel jelöli, a mintából K sor következik; K sort olvasunk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

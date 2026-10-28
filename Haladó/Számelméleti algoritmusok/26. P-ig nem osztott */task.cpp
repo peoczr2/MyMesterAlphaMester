@@ -1,7 +1,12 @@
 /*
- * A legkisebb N számot keressük, amely osztható P-vel, és minden kisebb, 1-től
- * különböző számmal osztva 1 maradékot ad. Ez a CRT alapján oldható meg.
- 
+ * Keressük a legkisebb pozitív N számot, amely osztható P-vel, és minden 2 <= d < P számmal osztva 1 maradékot ad.
+ * Az "1 maradék minden d-re" feltétel egyszerre azt jelenti, hogy N ≡ 1 (mod L), ahol L = lcm(2, 3, ..., P-1).
+ * Írjuk N-et N = P * x alakban. Ekkor P * x ≡ 1 (mod L), vagyis x a P modulo L szerinti inverze.
+ * Mivel P prím, és L-nek nincs P-s prímtényezője, az inverz létezik, és a kiterjesztett euklideszi algoritmussal kiszámítható.
+ * A legkisebb megoldás N = P * x, ahol x az [1, L] tartományba esik (P = 2 esetén L = 1, így N = 2).
+ * N legfeljebb kb. 9,4 * 10^18 lehet (P = 43), ezért biztonságosan __int128 típust használunk.
+ */
+/*
 Hint 1: || A feltétel azt mondja, hogy `N ≡ 1 (mod d)` minden `2 <= d < P` esetén, miközben `P | N`. ||
 Hint 2: || Ez kínai maradéktételes feladat: a `lcm(2,3,...,P-1)` moduluson kell az 1 maradékos feltételt összehangolni a `0 mod P` feltétellel. ||
 */
@@ -50,6 +55,7 @@ int main() {
     extgcd128(p, l, x, y);
     x %= l;
     if (x < 0) x += l;
+    if (x == 0) x = l;
     __int128 ans = p * x;
     cout << to_string_i128(ans) << '\n';
     return 0;

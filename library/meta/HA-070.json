@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/35. Randi *",
+    "method": "Szélességi bejárás az R találkahelyből, a járatok irányát megfordítva.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "szélességi bejárás", "útvonal"],
+    "note": "A feladat „egy-egy” legkevesebb átszállásos útvonalat kér, tehát több helyes kimenet is elfogadható; az útvonalak ellenőrzése: library/.work/HA-070/35/check35.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/36. Robotváros ***",
+    "method": "Állapotgráf szélességi bejárása, a fordulást szögek döntik el (J/B).",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "szélességi bejárás", "geometria"],
+    "note": "Két azonos hosszú parancssorozat is van (JJB és JBJ); a minta a JJB-t adja, a megoldás a J ágat előre véve keres. Ha a bejárás útja kétszer érintene kereszteződést, egyszerű utat keresünk iteratív mélyítéssel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/37. Robotverseny ***",
+    "method": "Időegységenkénti szélességi bejárás, a szomszédos robotok blokkolásával.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "szélességi bejárás", "szimuláció"],
+    "note": "A minta szomszédsági listái nem szimmetrikusak (4–5 és 7–10 csak az egyik sorban szerepel); a megoldás a széleket mindkét irányban használja. A szabálymodellt csak a két mintán ellenőriztem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/38. Senki nem ismer senkit *",
+    "method": "Legfeljebb öt nagy fokú csúcs összes részhalmaza, a többi csúcs utak és körök összegeként.",
+    "category": "Gráf: független halmaz",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "független halmaz", "részhalmaz"],
+    "note": "A minta be1 (16 12; az 1–2 él hiányzik) nem egyezik a feladat példájával (16 13 él, válasz 9). A ki1 (9) a feladat példájára jó, a be1-re a brute-force szerint 10 a helyes válasz (library/.work/HA-070/38/brute.py); ezért minta: kézi, a validátor 1/2-t mutat.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

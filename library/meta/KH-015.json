@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/24. Minden szempont szerint kiesett kutya *",
+    "method": "Soronkénti ellenőrzés: van-e kutya, amelynek minden szempontban pontja az alsó határ alatt van",
+    "category": "Feltételes eldöntés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "szűrés", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/25. Minden szempont szerint kiestek *",
+    "method": "Soronkénti ellenőrzés, a minden szempontban kiesett kutyák sorszámainak gyűjtése",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "sorszám", "szűrés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/26. Minden szempont szerint vagy győzött, vagy kiesett *",
+    "method": "Szempontonként az egyedüli legnagyobb értékelhető pont megkeresése, majd kutyánként ellenőrzés",
+    "category": "Győzelmek szempontonként",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "holtverseny", "szempont"],
+    "note": "Bizonytalan pont: a feladatszöveg nem mondja meg, hogy a holtverseny győzelemnek számít-e. Csak az egyedüli legjobb értékelhető pontot veszem győzelemnek, mert a példa (NINCS) így igazolható: a 4. kutya 8. szempontban holtversenyben 6 pontot ér el, ezért nem győz. Holtverseny-győzelemmel a példa VAN lenne; a két minta (be1 NINCS, be2 VAN) mindkét értelmezéssel egyezik. A 23. feladat (KH-014) holtverseny-győztest fogad el, és a 23. minta két párja egymásnak is ellentmond (be1 VAN, be2 NINCS), ezt érdemes kézzel ellenőrizni.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/27. Minden szempont szerint vagy kiestek, vagy az értékeltek közül az utolsók lettek *",
+    "method": "Szempontonként az egyedüli legkisebb értékelhető pont megkeresése, majd kutyánként ellenőrzés",
+    "category": "Utolsók szempontonként",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "holtverseny", "szempont"],
+    "note": "Bizonytalan pont: az „utolsó” szintén csak az egyedüli legkisebb értékelhető pontot jelenti, holtverseny nem számít. Ezt a be2 minta (ki2: 2 3 4) igazolja: holtverseny-utolsóval az 5. kutya is bekerülne (K=3), a minta ezt kizárja. A példa (0) és a be1 minta (0) mindkét értelmezéssel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

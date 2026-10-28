@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/28. Kiegyensúlyozott keresőfa **",
+    "method": "Méret szerinti rekurzív felezés, majd inorder bejárással az 1..N értékek kiosztása.",
+    "category": "Bináris keresőfa",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "keresőfa",
+      "rekurzió"
+    ],
+    "note": "Több helyes fa van (a feladat szerint bármelyik megadható), a minta kimenetétől eltér; a saját kimenet minden tesztben kiegyensúlyozott keresőfa (ellenőrző: library/.work/R-048/check1.py).",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/3. Banda átszervezése ***",
+    "method": "Összes (x, y) áthelyezés kipróbálása; új magasság Euler-sorrendű szegmensfával.",
+    "category": "Fa: részfa-áthelyezés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "részfa",
+      "szegmensfa"
+    ],
+    "note": "Több optimális áthelyezés van; a minta (354 1) és a saját kimenet (6 1) is a legkisebb magasságot (13) adja, brute force igazolta (library/.work/R-048/bf2.cpp). Nincs javító lépés esetén a válasz 0 0.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/38. Titkos társaság 2 *",
+    "method": "Szabad gyerekhelyek összegzése részfánként, a bejárás fordított sorrendjében.",
+    "category": "Fa: részfa-összegzés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "összegzés",
+      "részfa"
+    ],
+    "note": "A minta.zip ki-fájljaiban [tag,érték] nyomkövető sorok vannak (ki1.txt 2–6. és 9. sora, ki2.txt 9499 ilyen sor); a válaszsorok ezek nélkül egyeznek a saját kimenettel (ellenőrző: library/.work/R-048/check3.py).",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/4. Beépített ügynök *",
+    "method": "Legkisebb mélységű szabad helyű tag; holtversenyben a több leszármazottal rendelkező.",
+    "category": "Fa: mélység, részfa-méret",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "bejárás",
+      "mélység"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/46. Üzletek **",
+    "method": "Fa-DP gyökérből: egy részfát csak akkor kötünk be, ha hozzájárulása pozitív.",
+    "category": "Fa: dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "dp",
+      "részfa"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/47. Vállalat – utasítások K lépésben *",
+    "method": "Bejárás az igazgatótól, a K mélységben lévő munkatársak gyűjtése.",
+    "category": "Fa: mélységi bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "mélység",
+      "bejárás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

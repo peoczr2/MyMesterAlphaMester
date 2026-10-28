@@ -1,6 +1,8 @@
 /*
-Feladat: Rendezvény-napok adottak, filmesek elérhetőségi intervallumokkal. Maximum hány rendezvényről készülhet film, és ehhez minimum mennyi a költség (A fix + B*forgatott nap / filmes).
-Ötlet: Ha E rendezvényről készül film, a B*E rész fix. Így a költség minimalizálása ekvivalens a felvett filmesek számának minimalizálásával. Tehát a feladat: eseménypontok lefedése intervallumokkal úgy, hogy először a lefedett pontok száma maximális legyen, azon belül az intervallumok száma minimális. Ez ugyanaz a mohó, mint pontfedésnél: az első lefedhető, még fedetlen eseménynél a legtovább nyúló intervallumot választjuk.
+Megoldás lényege:
+A B*E tag csak a lefedett rendezvények számától függ, így a költség minimalizálása a maximális lefedés mellett a felvett filmesek számának minimalizálását jelenti. Ez pontfedés intervallumokkal: a rendezvényeket időrendben járjuk, és az első olyan rendezvénynél, amelyhez van elérhető filmes, a legtovább elérhető filmest választjuk. Ez a filmes a következő lefedhető rendezvényeket a legtöbb irányba fedi, ezért egyszerre ad maximális lefedést és minimális filmesszámot. Az időigény O((K + F) log F).
+*/
+/*
 Hint 1: || A B szorzós tag csak a lefedett rendezvények számától függ. ||
 Hint 2: || Max lefedés + min filmes = pontfedő intervallumok mohó választása. ||
 Hint 3: || Az első fedhető eseménynél a legnagyobb végpontú filmest válaszd. ||

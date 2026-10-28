@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/20. Leértékelés haszna ***",
+    "method": "Termékenként összegezzük a két hét bevételét és hasznát, majd kiírjuk a különbséget.",
+    "category": "Sorozatszámítás: összegzés",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["sorozatszámítás", "összegzés", "bevétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/21. Almaszállítás",
+    "method": "Kétmutatós csúszóablak: a pozitív súlyok miatt a legrövidebb K összegű szakasz egy menetben megtalálható.",
+    "category": "Kétmutatós módszer",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kétmutatós", "részsorozat", "összeg"],
+    "note": "A minta be2/ki2 ellentmondásos: a ki2.txt 2. sora (5) nem lehet helyes, mert a K=38 összegű 2 szakasz csak a 3–4. konténer (28+10), az 5–6. összsúlya 10+10=20. Független brute-force (library/.work/K-100/21/brute.py) szerint az egyetlen M=2 megoldás A=3, a saját kimenet (2 3) ezt igazolja, a validátor a minta miatt jelez hibát.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/22. Kerékpárverseny",
+    "method": "Kétmutatós csúszóablak: a pozitív távolságok miatt a legrövidebb K hosszúságú szakasz egy menetben megtalálható.",
+    "category": "Kétmutatós módszer",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kétmutatós", "részsorozat", "összeg"],
+    "note": "A szöveg az első város sorszámát kéri, de a minta (A=2: 12+28+10=50) csak úgy egyezik, ha A az első lezárt útszakasz sorszáma; ezt a mintából értelmeztem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/23. Középső életkorú",
+    "method": "Gyakoriság-tömb a korokra, majd a kumulált darabszámokból a (N+1)/2. elem megkeresése.",
+    "category": "Gyakoriság-tömb",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gyakoriság", "medián", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

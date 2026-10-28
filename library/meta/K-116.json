@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/139. Osztályok",
+    "method": "Előforduló értékek összefüggő szakaszai adják az osztályokat; a K-adik legnagyobb rés a válasz.",
+    "category": "Rendezés: összefüggő szakaszok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "összefüggő szakasz", "logikai tömb"],
+    "note": "A minta be2.txt fejlécében csak két szám van (N és M, K hiányzik), a feladat szerint három szám lenne. A 0 kimenet K-tól függetlenül helyes, mert a mintában az értékek 1..20 egy összefüggő osztályt alkotnak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/14. Legmelegebb település **",
+    "method": "Naponként az egyedül legmagasabb hőmérsékletű települést keressük, és a településenkénti nyerő napokat számoljuk.",
+    "category": "Maximumkeresés, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "számlálás", "mátrix"],
+    "note": "A K (20–50) korlát nem szerepel a feladat feltételében, ezért a program csak beolvassa. A két mintán a K-s szűrés (nyerő hőmérséklet > K vagy ≥ K) is ugyanazt adja, így a szöveg szerinti változatot írtam.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/140. Két szálloda",
+    "method": "Határindex-bejárás: minden elválasztásra a két csoport legjobb szállodája előtagösszegekkel, O(N²)-ben.",
+    "category": "Előtagösszeg, optimalizálás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["előtagösszeg", "optimalizálás", "szétválasztás"],
+    "note": "Több optimális második sor is lehet (a feladat szerint pl. 3 3 5 is elfogadható); a program a legkisebb indexű optimumot írja ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/141. Leghosszabb béke",
+    "method": "Különbségtömbbel jelöljük a háborús napokat, majd a békés napok leghosszabb futamát keressük.",
+    "category": "Intervallumok, különbségtömb",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "különbségtömb", "szakasz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,51 +1,55 @@
 /*
 Megoldás lényege:
-Az első i kocsi akkor rendezhető el a fő vágány és a kitérő között, ha létezik
-egy értékhatár t, amelynél a t-nél nem nagyobb kocsik és a t-nél nagyobb kocsik
-külön-külön növekvő sorrendben állnak az érkezési sorrendben. Ez pontosan azt
-jelenti, hogy az i-edik prefixben minden inverzió (nagyobb elem előzi a kisebbet)
-ugyanazon a határon átível: a kisebb végek legnagyobbja kisebb a nagyobb végek
-legkisebbjénél.
-
-Bejárjuk a permutációt balról jobbra. Fenntartjuk a már látott értékeket egy
-rendezett halmazban, hogy az aktuális elemnél megkapjuk a legkisebb korábbi
-nagyobb elemet. Ezzel frissítjük az inverziók kisebb és nagyobb oldalának
-globális határait. Amíg a két határ nem metszik egymást, a prefix még rendezhető;
-az első ütközés után több elem már nem javíthatja a helyzetet.
+A fő vágányon átmenő kocsi azonnal kimegy, a kitérő kocsijai pedig FIFO-sorként,
+tetszőleges időpontban engedhetők ki. A kimenetnek növekvőnek kell lennie, ezért
+a fő vágányra csak az a kocsi kerülhet, amelynél a később érkezők között nincs
+nála kisebb (jobbról balra minimum). A többi kocsi a kitérőre kerül, és a kitérőre
+került kocsiknak érkezési sorrendben növekvőnek kell lenniük. A jó prefixek halmaza
+lefelé zárt, így a legnagyobb jó m bináris kereséssel megtalálható. Egy m-re az
+ellenőrzés egy O(m) bejárás, az összidő tehát O(K log K).
+*/
+/*
+Hint 1: || Gondold végig, mi történik egy kocsival, ha a fő vágányon halad át: azonnal kimegy balra. Ezért ha egy kocsi a fő vágányon megy, minden nála kisebb sorszámú kocsinak már korábban meg kellett érkeznie. ||
+Hint 2: || Ebből következik, hogy a fő vágányra csak az a kocsi kerülhet, amelynél a később érkező kocsik között nincs kisebb. A többi kocsi a kitérőre kerül, és mivel a kitérő FIFO sor, ezeknek érkezési sorrendben növekvőknek kell lenniük. ||
+Hint 3: || Az első m kocsira tehát a jobbról balra minimumok mennek a fő vágányon, a többi kocsi érkezési sorrendjét kell ellenőrizni. Ha egy m hosszú prefix jó, akkor minden rövidebb is jó, ezért a legnagyobb jó m bináris kereséssel megtalálható; minden próbánál egy O(m) bejárás elég. ||
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
+// Igaz, ha az első m kocsi sorba rendezhető.
+bool rendezheto(const vector<int>& s, int m) {
+    vector<int> kitero;
+    int jobbMin = INT_MAX;
+    for (int j = m - 1; j >= 0; --j) {
+        if (s[j] < jobbMin) {
+            jobbMin = s[j];
+        } else {
+            kitero.push_back(s[j]);
+        }
+    }
+    reverse(kitero.begin(), kitero.end());
+    for (size_t j = 1; j < kitero.size(); ++j) {
+        if (kitero[j] < kitero[j - 1]) return false;
+    }
+    return true;
+}
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n;
-    cin >> n;
+    int k;
+    cin >> k;
+    vector<int> s(k);
+    for (int i = 0; i < k; ++i) cin >> s[i];
 
-    set<int> latott;
-    int alsoHatar = 0;
-    int felsoHatar = n + 1;
-    int valasz = n;
-
-    for (int i = 1; i <= n; ++i) {
-        int x;
-        cin >> x;
-
-        auto it = latott.upper_bound(x);
-        if (it != latott.end()) {
-            alsoHatar = max(alsoHatar, x);
-            felsoHatar = min(felsoHatar, *it);
-        }
-        latott.insert(x);
-
-        if (alsoHatar >= felsoHatar) {
-            valasz = i - 1;
-            break;
-        }
+    int lo = 0, hi = k;
+    while (lo < hi) {
+        int mid = (lo + hi + 1) / 2;
+        if (rendezheto(s, mid)) lo = mid;
+        else hi = mid - 1;
     }
-
-    cout << valasz << '\n';
+    cout << lo << '\n';
     return 0;
 }

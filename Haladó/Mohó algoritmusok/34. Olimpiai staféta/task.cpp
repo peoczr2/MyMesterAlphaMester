@@ -1,9 +1,11 @@
 /*
-Feladat: A lángot a lehető legkevesebb futóval kell a célba juttatni.
-Ötlet: Mindig az aktuálisan elérhető futók közül azt választjuk, aki a legtovább viszi a lángot. Ez ugyanaz a klasszikus intervallumfedési mohó stratégia.
+Megoldás lényege:
+A futók intervallumok (kezdet, vég), és a láng akkor adható át a következő futónak, ha annak kezdete a jelenlegi futó intervallumába esik. Mindig az aktuális pontig elérhető futók közül azt választjuk, aki a legtovább viszi a lángot: ez a klasszikus intervallumlefedési mohó stratégia. Azért helyes, mert a legtávolabbi elérhető végpont minden lépésben legalább olyan jó folytatás, mint bármelyik másik. A futókat kezdet szerint rendezzük, és egy prioritási sorban (végpont szerinti maximum-heap) tartjuk az elérhető futókat. Az időigény O(N log N).
+*/
+/*
 Hint 1: || Az aktuális pontig minden olyan futó szóba jöhet, akinek a kezdete nem nagyobb ennél. ||
 Hint 2: || Ezek közül mindig a legtovább érő intervallumot érdemes választani. ||
-Hint 3: || Ha nem tudsz továbblépni, akkor nincs megoldás. ||
+Hint 3: || Rendezd a futókat kezdet szerint, és egy prioritási sorban tartsd az elérhetőket végpont szerint; a már lejárt (vég ≤ aktuális pont) futókat dobd ki. ||
 */
 
 #include <bits/stdc++.h>

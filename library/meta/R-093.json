@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/1. Vasúti kocsik mellékvágányokon",
+    "method": "Jobbról balra minimumok a főágon, a többi kocsi FIFO-kitérőn, bináris kereséssel",
+    "category": "Bináris keresés, monotonitás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["bináris keresés", "sor", "monotonitás"],
+    "note": "A korábbi küszöb-alapú kód hibás volt (pl. 1 3 2 5 4 esetén 4-et adott 5 helyett); a kódot a kitérő FIFO-modellje szerint javítottuk, és brute force-szal ellenőriztük.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/2. Túra",
+    "method": "Előremenő ellenőrzés, majd visszafelé számolt minimális felvétel",
+    "category": "Mohó szimuláció, visszafelé számolás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "szimuláció", "készlet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/3. Ismétlődés",
+    "method": "Befokos törléssel a körökre szűkítünk, majd a legrövidebb kört írjuk ki",
+    "category": "Gráf: funkcionális gráf",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "kör", "befok"],
+    "note": "A kiírás a periódus bármely tagjától indulhat, ezért minta kézi; független ellenőrző program 400 véletlen függvényen igazolta a kimenetet.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 4. forduló/4. Fényképezés",
+    "method": "Intervallumfrissítés és prefixösszeg a kezdőidőkre, a legkésőbbi maximum",
+    "category": "Különbségi tömb, prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "intervallum", "különbségi tömb"],
+    "note": "A korábbi kód nem korlátozta a kezdést a legkorábbi érkezés és a legkésőbbi távozás - P + 1 közötti tartományra (pl. 1 10, P=3 esetén 8 a helyes kezdés); javítva és brute force-szal ellenőrizve.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

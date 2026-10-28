@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/17. Hallgató felező *",
+    "method": "Pontszámok csökkenő rendezése, a ceil(N/2)-edik elem kiválasztása",
+    "category": "Rendezés, kiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "tömb", "kiválasztás"],
+    "note": "N = 0 esetén a feltétel minden R-re igaz, a feladat nem adja meg a választ; a megoldás 20-at ír ki (a pontszámtartomány felső határa).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/18. Hallgatók sorrendje **",
+    "method": "Többkulcsos rendezés összehasonlító függvénnyel, végső kulcsnak a sorszám",
+    "category": "Többkulcsos rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "összehasonlítás", "stabil"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/19. Legnagyobb lakások *",
+    "method": "Alapterületek csökkenő rendezése, a K. értéknél nem kisebbek megszámlálása",
+    "category": "Rendezés, K. elem",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "tömb", "megszámlálás"],
+    "note": "A minta nem dönti el, hogy a K. legnagyobb alapterület ismétléssel vagy különböző értékekkel értendő; az ismétléses (a K. elem és az annál nem kisebbek) értelmezést választottam, a szöveg „egyébként ≥K” mondata ezt támasztja alá.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/2. Futók *",
+    "method": "Minden párra a találkozási idő kiszámítása, egész másodpercre kerekítve, halmazba gyűjtve",
+    "category": "Páronkénti összehasonlítás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["sebesség", "páros", "halmaz"],
+    "note": "A szabály egy része a mintából következik, a szöveg nem mondja ki: az időpontok egész másodpercek, a már célba ért futó nem előz, és ugyanabban a másodpercben történő előzések egy időpontnak számítanak. A mintafájlok (köztük a 214 időpontos) ezt igazolják.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/1. Géza csempézik - 2005. május",
+    "method": "Egész számokkal számolt szükséges terület (6·W·H/5), a lapok száma felfelé kerekítve.",
+    "category": "Aritmetika: felfelé kerekítés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["egészek", "kerekítés", "területszámítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/10. Zárójelek- 2006. október emelt",
+    "method": "Nyitott zárójelek számlálása: negatívvá válás vagy nem nulla végérték jelzi a hibát.",
+    "category": "Számlálás: zárójelek",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["zárójelek", "számláló", "szöveg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/11. FAT fájlrendszer- 2006. október",
+    "method": "Fájlméretek felfelé kerekítése clusterméretre, a clusterszámok összege szorozva N-nel.",
+    "category": "Kerekítés: fájlméret",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["kerekítés", "egészek", "fájlrendszer"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/12. Érettségi- 2006. október",
+    "method": "Szűrés a tárgy szerint, majd a teljes nevek string-vektorának rendezése és kiírása.",
+    "category": "Szűrés és rendezés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "rendezés", "vektor"],
+    "note": "A rendezés a nevek string-összehasonlítása (bájtsorrend); a mintákban csak ékezet nélküli nevek vannak, így a magyar ábécérend ékezetes betűkre (pl. Ö, Ü, Á) nincs ellenőrizve.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -9,7 +9,11 @@ legjobb (legrövidebb, és azon belül legnagyobb bottleneck) értéket. Relaxá
 az új bottleneck az előző és az él teherbírásának minimuma. A prioritási sor a
 legrövidebb távolságot, azon belül a nagyobb bottlenecket preferálja.
 */
-
+/*
+Hint 1: || Először a legrövidebb utak hosszát kell minimalizálni, és csak az egyenlő hosszú utak között kell a legnagyobb minimális teherbírást keresni. A két szempontot egyszerre, egy párként kezeld. ||
+Hint 2: || Dijkstrában minden csúcshoz a legjobb (távolság, teherbírás) párt tároljuk. Egy él bejárásakor az új teherbírás az eddigi és az él teherbírásának minimuma. ||
+Hint 3: || A prioritási sor olyan rendezését válaszd, hogy a kisebb távolság legyen előrébb, azonos távolságnál pedig a nagyobb teherbírás. Az útvonalat az elődök tárolásával állítsd vissza a célból. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

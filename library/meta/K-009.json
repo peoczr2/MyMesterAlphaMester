@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok/17. Szilveszter **",
+    "method": "Mezőnkénti kivonás kölcsönzéssel a január 1-i céldátumig.",
+    "category": "Dátumkülönbség",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dátum", "idő", "kivonás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/18. Tanév *",
+    "method": "Napsorszám szeptember 1-jétől, a szünetek hétfőkhöz igazítva, táblázatos hónaphosszakkal.",
+    "category": "Dátumszámítás, naptár",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["dátum", "naptár", "szimuláció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/19. Telefonáló robot **",
+    "method": "Rácskoordináták; szakaszonként annyi utasítás, ahány tengely változik.",
+    "category": "Rácsos mozgás, minimalizálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["koordináta", "minimalizálás", "rács"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/2. Bankbetét *",
+    "method": "Havi szimuláció: kamat a bankösszegből, prémium 1000 Ft felett, százasok átvitele.",
+    "category": "Szimuláció",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "kamat", "egész szám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

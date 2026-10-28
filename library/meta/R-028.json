@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/48. Előző és következő ülés sorrend",
+    "method": "Következő/előző kombináció: a jobbról első módosítható elem léptetése, a jobb oldali rész alaphelyzetbe állítása.",
+    "category": "Kombinációk lexikografikus sorrendje",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "kombináció",
+      "lexikografikus",
+      "léptetés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/49. Kirándulás sorrend",
+    "method": "Floyd–Warshall távolságok, majd bitmaszkos DP a városok sorrendjére, visszaút a lakóhelyre.",
+    "category": "Bitmaszkos DP, legrövidebb utak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "bitmaszk",
+      "útvonal",
+      "dinamikus programozás"
+    ],
+    "note": "Több helyes sorrend van (be1-ben a 2 3 4 5 6 7 és a 7 6 5 4 3 2 sorrend is 22), ezért a kimenet mindkét mintán eltér a mintától; a minimum egyezik, a sorrend érvényessége és optimalitása permutációs brute-force ellenőrzéssel igazolva.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/5. Dekódolás ***",
+    "method": "Jobbról balra: az i-edik szám a még szabad számok (i−b_i)-edik legkisebbje, Fenwick-fával.",
+    "category": "Inverziós kód, Fenwick-fa",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "inverzió",
+      "fenwick",
+      "permutáció"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/50. Kígyózó szavak ***",
+    "method": "Prefixfa bejárása: a betűnként számolt részfák méretével léptetünk a K-adik szóhoz.",
+    "category": "Rangsorolás, prefixfa",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "lexikografikus",
+      "számlálás",
+      "prefixfa"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/51. Lassú szöveg ***",
+    "method": "Utolsó betű szomszédos cseréje, majd az előző szónál maximális, a következőnél minimális folytatás.",
+    "category": "Lexikografikus szomszéd, prefixfa",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "lexikografikus",
+      "prefixfa",
+      "szomszéd"
+    ],
+    "note": "Az üres szót nem számolom szónak, így az 'a' előzője '-'.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/52. Örökség ***",
+    "method": "Partíciószámolás zsákprobléma-szerű DP-vel: K darab, 1 és M közötti részre bontás, összeg N.",
+    "category": "Partíciószám, DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "partíció",
+      "dinamikus programozás",
+      "számlálás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

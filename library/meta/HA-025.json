@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, feszítőfák/7. Malmokból szállítás *",
+    "method": "Kruskal a malmok összevonásával, szélességi bejárás a szülőkhöz",
+    "category": "Gráf: feszítőfa",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "feszítőfa",
+      "kruskal"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl (az in.0 régi, súlyok nélküli formátumú, ezt kihagytam), ezért a validátor 'nincs minta' állapotot ad. Kézzel ellenőriztem: a PDF-példa összhossza (45) egyezik, az in1.txt (60) egyértelmű, az in2.txt (902) független ellenőrzővel igazolva. A PDF-példa szülőtömbje eltér az enyémtől (a 4-es várost az 1-esen át érem el, a mintában közvetlenül a 3-asból), de mindkettő érvényes; a feladat szerint több megoldás esetén bármelyik megadható.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, feszítőfák/8. Terek közötti utak *",
+    "method": "Kruskal a meglévő utak előzetes összevonásával (DSU), számlálórendezéssel",
+    "category": "Gráf: feszítőfa",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "feszítőfa",
+      "kruskal"
+    ],
+    "note": "Megjegyzés: a be2 minta más, de azonos összköltségű útkészletet ad (a saját kimenet érvényes és minimális: összköltség 532606, 19993 új út). A feladatszöveg nem mondja ki, hogy bármelyik optimális halmaz elfogadott, ezért kézi jelöléssel nem fogadtam el. Kérdés: elfogadható-e bármelyik minimális útkészlet.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, feszítőfák/9. Villamosítás ***",
+    "method": "Kruskal súlyonként; él akkor jön szóba, ha végpontjai még nem összekötöttek",
+    "category": "Gráf: feszítőfa",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "feszítőfa",
+      "kruskal"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,12 +1,18 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
     A híd egy 2xN-es súlyozott gráf. Minden átmenetnél a következő mező súlyát
     kell kifizetni, ezért a feladat egy legrövidebb út keresése a két oldalon és
-    az oszlopok között. Dijkstra-val kiszámítjuk a minimumot, majd a szülőkből
-    visszaállítjuk a mozgássort.
+    az oszlopok között. Minden járdalap egy csúcs, a csúcsba lépés költsége a
+    járdalap veszélyességi mértéke. A két oldal kezdőcsúcsából és a híd utáni
+    célcsúcsból indulva Dijkstra-val kapjuk a minimumot, majd a szülőkből
+    visszaállítjuk a mozgássort. Időigény: O(N log N).
 */
+/*
+Hint 1: || Ábrázold a hidat gráfként: minden járdalap egy csúcs, és egy lépés a mezőre lépés (előre) vagy a másik sorba váltás ugyanabban az oszlopban. ||
+Hint 2: || Vegyél fel egy kezdőcsúcsot mindkét oldalra (0 költséggel) és egy célcsúcsot az utolsó oszlop után. A legkisebb összköltségű út ezen a gráfon Dijkstra-algoritmussal megkapható. ||
+Hint 3: || Minden csúcsnál tárold az előző csúcsot és az odavezető lépés betűjét (B, J vagy E). A kezdőcsúcstól a célig a betűk sorrendje adja a második sort. ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 struct Edge {
     int to;

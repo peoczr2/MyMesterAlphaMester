@@ -1,0 +1,97 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/31. Azonosítók",
+    "method": "Lexikografikus sorszámozás binomiális együtthatókkal, majd visszaépítés a célsorszámból.",
+    "category": "Kombinatorika: sorszámozás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "kombinatorika",
+      "binomiális együttható",
+      "lexikografikus sorrend"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/32. Ajándékozás",
+    "method": "Partíciók számolása DP-vel, a csomagméret szerinti külső ciklussal.",
+    "category": "Dinamikus programozás: partíció",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "partíció"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/33. Gyémántok",
+    "method": "Különböző részekre bontások számolása 0-1 hátizsák típusú DP-vel.",
+    "category": "Dinamikus programozás: partíció",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "partíció",
+      "hátizsák"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/34. Csapatösszeállítás",
+    "method": "Lexikografikus következő és előző kombináció keresése a jobb szélső elem módosításával.",
+    "category": "Kombinatorika: következő kombináció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "kombinatorika",
+      "lexikografikus sorrend",
+      "ciklikus"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/35. Növény",
+    "method": "Csúszóablakos rekurzió prefixösszegekkel, az élő darabszám inkrementális frissítése.",
+    "category": "Rekurzió: csúszóablak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "rekurzió",
+      "prefixösszeg",
+      "maradékszámítás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/36. Virágok",
+    "method": "Csúszóablakos rekurzió prefixösszegekkel, az X. évi élő darabszám frissítése.",
+    "category": "Rekurzió: csúszóablak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rekurzió",
+      "prefixösszeg",
+      "maradékszámítás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

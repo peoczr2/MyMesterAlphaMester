@@ -1,0 +1,74 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/1. Maximális növekedés (25 pont)",
+    "method": "Monoton verem a határokhoz, szegmensfa a maximumhoz",
+    "category": "Monoton verem, szegmensfa",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["verem", "szegmensfa", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/2. Pontgyűjtő (25 poont)",
+    "method": "Jobbról balra dinamika: minden mezőhöz a jobb szélig elérhető legnagyobb összeg",
+    "category": "Dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["dinamika", "rács", "útvonal"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/3. Találós kérdés (25 pont)",
+    "method": "Bináris fa bejárása veremmel, a levelekben a címkék gyakoriságának számlálása",
+    "category": "Bináris fa bejárása",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["fa", "dfs", "gyakoriság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/4. Jelek (25 pont)",
+    "method": "Kezdőpozíciók közös előtagjának dinamikus programozása, gördülő tömbökkel",
+    "category": "Leghosszabb ismétlődő rész",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dinamika", "részsorozat", "ismétlődés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/5. Körmérközés (25 pont)",
+    "method": "Beszúrásos rendezés a győzelmi relációval, majd a sorrend megfordítása",
+    "category": "Hamilton-út turnamentben",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "turnament", "rendezés"],
+    "note": "A feladatszöveg: „Több megoldás esetén bármelyik megadható.” A program a mintától eltérő, szintén helyes sorrendet ad (be1 esetén 3 4 2 1, a minta 3 2 1 4). Ellenőrző: library/.work/R-106/R106_check.py, amely megnézi, hogy a kimenet permutáció-e, és minden versenyző legyőzte-e a közvetlenül előtte állót; mindkét mintabemenetre a program kimenete és a mintakimenet is átmegy.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2018 ∕ 19 3. forduló/6. Nyaralás (25 pont)",
+    "method": "Rendezett árakra kétmutatós keresés minden első utazáshoz",
+    "category": "Kétmutatós technika",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["kétmutatós", "rendezés", "összeg"],
+    "note": "A feladatszöveg példája szerint („2 4 5 is jó megoldás”) több azonos összegű hármas is elfogadható; a program az első talált legjobb hármast írja ki, ami a mintával egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/38. Leghosszabb uralkodó dinasztia **",
+    "method": "Szakaszok bontása a folytonos apa–fiú trónöröklés mentén, a leghosszabb szakasz kiválasztása.",
+    "category": "Maximális szakasz keresése",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakasz", "halmaz", "maximum"],
+    "note": "Bizonytalan pont: a szabályt a mintákból is igazoltam. Az egyelemű szakasz is számít (2. minta: 1060 1100), és a folytonosság kötelező, mert a 2. mintában 1020 és 1025 között szünet van.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/39. Legidősebb végzett hallgatók kora évenként **",
+    "method": "Csoportosítás végzési év szerint, évenkénti minimum (legkisebb születési év).",
+    "category": "Csoportos minimumkeresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["map", "csoportosítás", "minimum"],
+    "note": "Bizonytalan pont: a pontos végzési nap nincs megadva, ezért a kor végzési év mínusz születési év; a hónap és a nap nem befolyásolja a kiírt értéket. A mintákkal (1. és 2.) egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/4. Egész héten helyettesíteni tudó tanár ****",
+    "method": "Foglaltsági halmazok: szabad helyettes keresése, a napok részhalmaz-feltételével.",
+    "category": "Halmazok, feltételes kiválasztás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["halmaz", "feltétel", "szűrés"],
+    "note": "Bizonytalan pont: (1) ha nincs olyan szabad helyettes, aki T minden tanítási napján tanít, a feltétel nélkül szabad legkisebb sorszámút írjuk ki; (2) a tantárgyak nem számítanak, mert a feladat példájában a 3. tanár nem tanítja az 1. tantárgyat, mégis ő a helyes válasz; (3) T önmagát nem veszi figyelembe. A mintákkal egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/40. Legjobb futóverseny helyezések száma *",
+    "method": "Lineáris bejárás, a minimum és a számlálás egy menetben.",
+    "category": "Minimum és számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "számlálás"],
+    "note": "A 2. minta bemenete túllépi a H ≤ 20 és P ≤ 50 korlátokat (H legfeljebb 50, P legfeljebb 99); a számítás ettől független, a minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

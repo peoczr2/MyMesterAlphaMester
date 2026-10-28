@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/35. Nagyon meleg település",
+    "method": "Minimum és maximum a beolvasás közben, majd páronkénti összevetés a többi településsel",
+    "category": "Minimum és maximum összevetése",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "maximum", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/36. Település valamikor minimális hőmérséklettel",
+    "method": "Napi minimumok meghatározása a mátrixból, majd a minimumot elérő települések jelölése",
+    "category": "Napi minimum kiválasztása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "mátrix", "jelölés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/37. Település valamikor maximális hőmérséklettel",
+    "method": "Napi maximumok meghatározása a mátrixból, majd a maximumot elérő települések jelölése",
+    "category": "Napi maximum kiválasztása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "mátrix", "jelölés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/4. Hamarabb kezdődik a felmelegedés",
+    "method": "Első csökkenés utáni első növekedés napja, egyedi legkorábbi kezdet keresése",
+    "category": "Szomszédos elemek összevetése",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["sor", "változás", "minimum"],
+    "note": "Bizonytalan értelmezés: a felmelegedés kezdete az első csökkenés utáni első növekedés napja (így készült). A közvetlenül csökkenést követő növekedés értelmezésével a mintán ugyanaz a kimenet adódik (1, 102), így a tesztek ezt nem döntik el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

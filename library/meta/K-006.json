@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: keresés/28. Legközelebbi szomszédok út mentén",
+    "method": "Bináris keresés a legkisebb költségű K+1 hosszú szakaszra.",
+    "category": "Legközelebbi szomszédok",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["keresés", "bináris keresés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/29. Közeli városok a tóparton",
+    "method": "Körkörös szakasz-keresés bináris kereséssel, a sorozat háromszoros kiterjesztésével.",
+    "category": "Körkörös szomszédkeresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["keresés", "körkörös", "bináris keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/3. Azonos pont egymás mellett *",
+    "method": "Lineáris bejárás a szomszédos elemek összehasonlításával.",
+    "category": "Lineáris keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "lineáris keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/30. Tippek **",
+    "method": "Bináris keresés (lower_bound) és a két szomszédos jelölt összehasonlítása.",
+    "category": "Bináris keresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["keresés", "bináris keresés", "rendezett sorozat"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

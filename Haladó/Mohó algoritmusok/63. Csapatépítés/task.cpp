@@ -1,6 +1,8 @@
 /*
-Feladat: Tréning-időszakokra szállásajánlatokból kell minimális számút választani úgy, hogy a lefedett tréningnapok száma maximális legyen.
-Ötlet: A tréning-intervallumok unióját (célhalmaz) fedjük ajánlat-intervallumokkal. Balról jobbra haladunk: az aktuális még fedetlen, de potenciálisan fedhető ponthoz az addig induló ajánlatok közül a legtovább nyúlót választjuk (max-end heap). Ha egy pont nem fedhető, ugrunk a következő ajánlat indulására. Ez adja a maximális lefedést, és azon belül minimális ajánlatszámot.
+Megoldás lényege:
+A tréningidőszakokat összevonjuk, így kapjuk a lefedendő napok halmazát. Az ajánlatokat kezdőnap szerint rendezve balról jobbra haladunk, és a még fedetlen, lefedhető napnál a már induló ajánlatok közül a legtovább érőt választjuk (max-kupac a végnapra). Csere-argumentummal látszik, hogy ez a lefedést a lehető legtöbb napra növeli, és azon belül a választott ajánlatok számát minimálisra szorítja. Ha egy nap nem fedhető, a következő ajánlat kezdőnapjára ugrunk. Az időigény O(N log N + C), ahol C = 100 000 a napok tartománya.
+*/
+/*
 Hint 1: || Először vond össze az átfedő tréningidőszakokat (célintervallumok). ||
 Hint 2: || A következő fedendő pontnál mindig a legnagyobb végpontú elérhető ajánlatot válaszd. ||
 Hint 3: || Ha pont nem fedhető, ugrás a következő ajánlat startjára megőrzi az optimalitást. ||

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/79. Kamionok",
+    "method": "Határidő szerinti rendezés és kör-alapú mohó kiosztás, a kamionok 2S napos ciklusban járnak",
+    "category": "Mohó ütemezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mohó",
+      "ütemezés",
+      "skatulyaelv"
+    ],
+    "note": "Minta-eltérés a minta.zip 2. esetében (be2): a kimenet 2. sorában 1278 áll, a feladatszöveg szerinti legkorábbi visszaérés viszont 900. A 4 kamionnal 200 szállítmányt a skatulyaelv szerint valamelyik kamion legalább 50-szer visz, 2S*50 = 900, és ez explicit beosztással elérhető (ellenőrizve). Az 1278 = 2S*71 a 'szabad kamion azonnal indul' mohó sorrend eredménye. Kis esetekre kimerítő keresés a képletet igazolja. Ha a zsűri más modellt ért, a 2. sor 1278 lesz.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/8. Legidősebb dolgozó *",
+    "method": "Lineáris maximumkiválasztás: egyenlő kornál a korábbi sorszám marad",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "maximum",
+      "tömb",
+      "lineáris"
+    ],
+    "note": "A minta.zip nem ehhez a feladathoz tartozik: a 'Legrövidebb útfelújítás' feladat mintáit és feladat.pdf-jét tartalmazza, ezért a validátor nem használható. A feladat.pdf példáján (6 sor, eredmény 80000) és kimerítő ellenőrzésen (300 véletlen eset) igazolva.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/80. Ablak az óceánra",
+    "method": "Legnagyobb téglalap hisztogramban monoton veremmel, magasság = mélység − 1",
+    "category": "Monoton verem",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "verem",
+      "téglalap",
+      "hisztogram"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/81. Csapatverseny",
+    "method": "Szimuláció prioritási sorral: a szabad csapatok közül a legjobb vezetőhöz csatlakozás",
+    "category": "Szimuláció prioritási sorral",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "prioritási sor",
+      "szimuláció",
+      "maximum"
+    ],
+    "note": "A minta.zip kimenetének első sorában egy extra '1' áll, amit a feladatszöveg nem említ (a példa kimenete egyetlen sor: '1 31'). A második sor (1 31 és 174 633) egyezik a megoldással, és a naiv szimulációval is (300 véletlen eset).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

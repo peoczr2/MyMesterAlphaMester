@@ -1,13 +1,13 @@
 /*
 Megoldas lenyege:
-Minden etel soraban felsoroljak az alapanyagkodokat es a mennyisegeket. Ezeket egy mapben
-osszegezzuk, mert a map automatikusan novekvo sorrendben tarolja a kulcsokat. A vegso valasz
-ennyi: azonos kodok mennyisegenek osszeadasa, majd a rendezett kiiras.
+Minden etel soraban alapanyagkodok es mennyisegek vannak. Az azonos kodu tetelek mennyiseget
+egy map-ben osszeadjuk, a map a kulcsokat automatikusan novekvo sorrendben tarolja.
+A 0 mennyisegu tetel nem jelent felhasznalast, ezert nem kerul a map-be.
 */
 /*
 Hint 1: || Ugyanaz az alapanyag több ételben is szerepelhet, ezért össze kell adni a mennyiségeket. ||
 Hint 2: || A kódok szerint növekvő sorrendhez elég egy rendezett asszociatív tároló. ||
-Hint 3: || Az első szám minden sorban csak azt mondja meg, hány (kód, mennyiség) pár következik. ||
+Hint 3: || A 0 mennyiségű tételek nem számítanak felhasználtnak, ezeket nem kell kiírni. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -26,7 +26,7 @@ int main() {
         for (int j = 0; j < m; ++j) {
             int code, amount;
             cin >> code >> amount;
-            total[code] += amount;
+            if (amount > 0) total[code] += amount;
         }
     }
 

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/13. Hosszú várakozási idejű villamosmegállók *",
+    "method": "Egy ciklusban a várakozás (indulás mínusz érkezés) K-val való összevetése, sorszámok kiválogatása.",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "feltétel", "kiválogatás"],
+    "note": "Mért futásidő: 0.002 mp (N=100).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/14. Két egymáshoz legközelebb lévő villamosmegálló *",
+    "method": "Szomszédos távolságok minimumkeresése; egyenlőségnél a legkisebb sorszám marad.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "szomszédos", "távolság"],
+    "note": "Mért futásidő: 0.002 mp (N=100).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/15. Két egymástól legmesszebb lévő villamosmegálló *",
+    "method": "Szomszédos távolságok maximumkeresése; egyenlőségnél a legkisebb sorszám marad.",
+    "category": "Maximumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "szomszédos", "távolság"],
+    "note": "Mért futásidő: 0.002 mp (N=100).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/16. Leghosszabb szakasz megállás nélkül *",
+    "method": "Szakaszok határolása megállókkal, távolságösszegzés, maximumkeresés a legkorábbi szakaszra.",
+    "category": "Maximális szakasz",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "szakasz", "összegzés"],
+    "note": "Szakaszhatár: a 0. állomás, a megállók és a végállomás (N). A két mintán a szélső szakaszok nem döntenek, ezért ez az értelmezés csak a feladatszövegből következik. Mért futásidő: 0.002 mp (N=100).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

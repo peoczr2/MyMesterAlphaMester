@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/53. Sikeres dobások száma *",
+    "method": "Versenyzőnként a hat dobás végigolvasása, a nem -1 értékek számlálása",
+    "category": "Megszámolás: feltétel",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "számláló"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/54. Személyi számok ***",
+    "method": "Születési dátumok tömbbe gyűjtése nemenként, a napok bejárásával a szökőnap figyelembevételével",
+    "category": "Megszámolás: dátum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "dátum", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/55. Világcsúcs beállítások száma *",
+    "method": "Egyszeri végigolvasás, a szomszédos azonos magasságok számlálása",
+    "category": "Szomszédos elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "szomszédos", "egyenlőség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/56. Világcsúcsok közötti legnagyobb időkülönbség *",
+    "method": "Egyszeri végigolvasás, a szomszédos évek különbségének maximuma",
+    "category": "Maximumkiválasztás: szomszédos elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "szomszédos", "különbség"],
+    "note": "A szomszédos világcsúcsok közé a beállításokat is beleszámoltam; a be1 mintán ez 19-et ad, a csak szigorúan új rekordokat figyelembe vevő értelmezés 32-t adna.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

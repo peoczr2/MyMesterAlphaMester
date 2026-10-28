@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/5. Duplán elérhető pontok *",
+    "method": "Tarjan-féle kétélű-összefüggő komponensek egy mélységi bejárással; a központ komponense a válasz.",
+    "category": "Gráf: hidak, kétélű összefüggőség",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "híd", "mélységi bejárás"],
+    "note": "A validátor kész (minta 2/2). A minta.zip ki-fájljai a szomszédokat fordított sorrendben bejáró DFS sorrendjét követik; a feladat szerint a sorrend tetszőleges, a PDF-példa kimenete (3 2 4 6 11) ugyanazt a halmazt adja más sorrendben. Ellenőrzés: 700 véletlen kis gráfon (N≤9, nem feltétlenül összefüggő) kimerítő módszerrel: minden egyedi él törlése után elérhető csúcsok halmaza egyezett. Időmérés: N=10^5, M=10^6 véletlen gráfon 0,067 mp (időlimit 0,1 mp); a bemenetet fread-del olvassuk, a cin ugyanezen a bemeneten 0,15 mp volt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/50. Ádám és Éva közös kirándulása ***",
+    "method": "Csúcsszétbontásos maximális folyam: két csúcsdiszjunkt út Évából Ádámig és a célig.",
+    "category": "Folyam: csúcsdiszjunkt utak",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "folyam", "egyszerű út"],
+    "note": "A minta.zip-ben nincs kimeneti (ki) fájl, ezért a validátor „nincs minta” állapotot ad. A feladat szerint bármelyik megfelelő útvonal elfogadott, ezért a minta „kézi”. A PDF-példa kimenete pontosan 9 7 2 1 3 5. A be1 és be2 kimenete érvényes egyszerű út (élek mentén halad, Ádámnál kezdődik, a kirándulási városnál végződik, és tartalmazza Éva városát). Ellenőrzés: 400 véletlen kis gráfon (N≤8) kimerítő egyszerű-út kereséssel egyezett a létezés és a nemlétezés döntése, és minden kapott útvonal érvényes volt. Időmérés: N=10^4, M=2·10^5 véletlen gráfon 0,05 mp (időlimit 0,1 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/51. Kritikus összekötések ****",
+    "method": "Hidak és kétélű komponensek Tarjan-algoritmussal; a komponensfa átmérőjének két végpontja a válasz.",
+    "category": "Gráf: hidak, fa átmérője",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "híd", "fa"],
+    "note": "A validátor „hibás”, mert a kimenet más, de egyformán optimális párt ad. A minta.zip ki2-je két sort tartalmaz (3998 3509 és 8 4), a feladat viszont egy sort kér; a második sor nem javít: a 8 4 párral a be2 mind a 12 híd megmarad, a program által adott 3509 3998 párral 8 marad. A be1-en a program 8 6 párt ad (5 hídból 1 marad), ami ugyanannyi, mint a ki1 8 7 párja. Ezért a minta „kézi”. Ellenőrzés: 300 véletlen kis összefüggő gráfon (N≤8, párhuzamos élekkel is) minden pár kipróbálásával: a program párja mindig elérte a minimumot. Időmérés: N=10^4, M=209556 véletlen gráfon 0,03 mp (időlimit 0,1 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/52. Közösségi háló ***",
+    "method": "Erős komponensek, komponensenkénti elérési bitsorozat VAGY-egyesítéssel; a legkisebb számú elérés keresése.",
+    "category": "Gráf: erős komponensek, bitsorozat",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "irányított gráf", "bitsorozat"],
+    "note": "A validátor kész (minta 2/2); a döntetlennél a legkisebb sorszámú tagot írjuk ki, ez egyezik a minta kimenetével. Ellenőrzés: 600 véletlen kis irányított gráfon (N≤9) BFS-sel számolt elérési számmal egyezett a P érték és a kiírt tag. Időmérés: N=10^4, M=5·10^5 véletlen, DAG és egy nagy körös gráfon 0,02–0,04 mp (időlimit 0,1 mp), a bitsorozatok memóriája kb. 12 MB (limit 32 MiB); a bemenetet fread-del olvassuk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/42. Vonaton utazók száma minden állomásra *",
+    "method": "Futó utasszám: minden állomáson levonni a leszállókat, majd hozzáadni a felszállókat",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "bejárás", "szimuláció"],
+    "note": "Mért idő N=1000-en: kb. 3 ms (időlimit 0,1 mp). A példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/5. Felszállók száma *",
+    "method": "Összegzés egy bejárásban: a felszállók számának összeadása",
+    "category": "Összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "bejárás"],
+    "note": "Mért idő N=1000-en: kb. 2 ms (időlimit 0,1 mp). A példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/6. Folyamatosan csökent az utasok száma *",
+    "method": "Visszafelé bejárás Székesfehérvártól, megállás az első nem csökkenő állomásnál",
+    "category": "Feltételes bejárás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["bejárás", "feltétel", "visszafelé"],
+    "note": "Mért idő N=1000-en: kb. 2 ms (időlimit 0,1 mp). A példa és a minta is stimmel. Ha Székesfehérváron nem csökken az utasszám, a program 0-t ír; a feladat ezt az esetet nem említi.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/7. Folyamatosan nőtt az utasok száma *",
+    "method": "Elölről bejárás, az első olyan állomásnál megállás, ahol a felszállók száma nem nagyobb a leszállókénál",
+    "category": "Feltételes bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["bejárás", "feltétel", "prefix"],
+    "note": "Mért idő N=1000-en: kb. 2 ms (időlimit 0,1 mp). A példa és a minta is stimmel. Ha már Budapesten sem nő az utasszám, a program 0-t ír; a feladat ezt az esetet nem említi.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

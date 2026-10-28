@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/1. Adott generációban kiadott konzolok *",
+    "method": "Lineáris bejárás, a 7. generációs feljegyzések gyártóneveinek kiválogatása sorszámon keresve",
+    "category": "Lineáris kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "sorszám"],
+    "note": "A kimenet gyártó-sorrendje a feljegyzések bemeneti sorrendje: a 2. mintából (G7, G17, G1) derül ki, a feladatszöveg nem rögzíti.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/10. Érettségi **",
+    "method": "Soronkénti szóbontás, a szabadon választható tárgyakhoz rendelt sorszámlisták map-pel",
+    "category": "Tárgy szerinti kiválogatás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kiválogatás", "map", "szövegfeldolgozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/11. Esemény nélküli kategória *",
+    "method": "Logikai jelölőtömb: az eseménnyel rendelkező kategóriák megjelölése, a jelöletlenek kiírása",
+    "category": "Jelölőtömb",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "kategória"],
+    "note": "Az év-intervallumot (0<Év1<Év2<2013) a mintákkal összhangban nem használja a megoldás: szűrésként alkalmazva a 2. minta K1 kategóriája üres lenne (az [1000,1111] intervallumban nincs esemény), a minta szerint mégsem az. A feladatszöveg nem mondja meg, mire kell az intervallum, ezt érdemes ellenőrizni.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/12. Fiatal dolgozók *",
+    "method": "Lineáris bejárás, a korfeltételnek megfelelő sorszámok gyűjtése vektorba",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "feltétel", "sorszám"],
+    "note": "A K évnél fiatalabb feltétel szigorú (kor < K): a 2. mintában a 30 éves dolgozók (47. és 55. sor) nem kerülnek a kimenetbe.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

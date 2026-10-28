@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/17. Szabadtéri állatkert ***",
+    "method": "Élszámok bitsorozatos DP topologikus sorrendben, a K-hoz legközelebbi úthossz",
+    "category": "Gráf: úthosszak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "körmentes", "bitset"],
+    "note": "Nincs kimeneti minta (a minta.zip csak be1, be2 fájlt tartalmaz), ezért kézzel ellenőrizve: a PDF-példa (9 14 2) kimenete egyezik (3 / 1 4 7 8 9), a be1 és be2 bemenetekre pedig független, halmaz-alapú ellenőrző program igazolja az L értéket és az útvonal érvényességét (be2: L = 491). Több útvonal is elfogadható.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/18. Építkezés kevés munkással ****",
+    "method": "Hu-algoritmus szintek szerint, a munkásszám bináris kereséssel",
+    "category": "Gráf: ütemezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "ütemezés", "bináris keresés"],
+    "note": "A minta.zip be2 párja (ki2 = \"8 10\") ellentmond a feladatnak: a be2 első sora három számot tartalmaz (90000 100 89900), és a 89900 élből álló gráfban van 26 munkából álló előfeltétel-lánc, így legalább 26 nap kell, a 8 nem lehet. Ha a harmadik szám az M, a helyes eredmény 26 4252, amit a számláló-alsó korlát (4252) és a szimuláció is megad, a be1 (PDF-példa) egyezik, és a program kimerítő kereséssel 284 véletlen kis esetben is egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/19. Akadálypálya",
+    "method": "Minimális csúcsvágás maximális folyammal, legfeljebb két csúcsig",
+    "category": "Gráf: csúcsvágás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "folyam", "csúcsvágás"],
+    "note": "Több megoldás is van: a be3 párnál a program 6770 3202-t ad, a minta 16945 6502-t, mindkét pár érvényes vágás (a két pont eltávolításával a cél nem érhető el), a feladat szerint pedig bármelyik megadható; ezt check ellenőrizte, be1 és be2 egyezik a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/2. Arany *",
+    "method": "Bejárás minden katalizátor-kizárással, a nélkülözhetetlen betűk gyűjtése",
+    "category": "Gráf: elérhetőség",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "elérhetőség", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

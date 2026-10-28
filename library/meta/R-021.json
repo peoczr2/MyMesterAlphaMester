@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/1. Azonosító kód ***",
+    "method": "Következő lexikografikus permutáció a std::next_permutation-nel, kódonként egy hívás.",
+    "category": "Permutáció: következő elem",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": [
+      "permutáció",
+      "lexikografikus",
+      "sorrend"
+    ],
+    "note": "Az eredeti task.cpp csak az első kódot olvasta be, a bemenet viszont N kódot tartalmaz; a főprogram javítva. A minta.zip ki1.txt 2. sora „Nincs” (kisbetűs), a feladatszöveg és a PDF-példa „NINCS”-et ír; a kimenet a feladatszöveget követi, ezért a minta-eltérés kézi jelölés. Ellenőrzés: be2/ki2 pár egyezik, 400 véletlen esetre brute-force (permutációk listázása) egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/10. Következő azonosító **",
+    "method": "Következő permutáció: jobbról az első növekedési pont, csere, majd megfordítás.",
+    "category": "Permutáció: lexikografikus sorrend",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "permutáció",
+      "szöveg",
+      "sorrend"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/11. Lépcsők **",
+    "method": "Összegző DP: dp[i] az i lépcsőre feljutási módok száma, dp[i] = dp[i-1]+…+dp[i-K].",
+    "category": "Dinamikus programozás: összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "dinamikus programozás",
+      "összegzés",
+      "számlálás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/12. Nyúl **",
+    "method": "Korosztályonkénti szimuláció: évente az újszülöttek száma, majd a korosztályok léptetése, MOD-dal.",
+    "category": "Szimuláció, moduláris aritmetika",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "tömb",
+      "moduláris aritmetika"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/13. Osztály részhalmazai ***",
+    "method": "Fordított rangsorolás: a legnagyobb bittől binomiális együtthatókkal döntünk a tagságról.",
+    "category": "Kombinatorika: rangsorolás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "binomiális együttható",
+      "bitek",
+      "rangsorolás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/14. Örökösök **",
+    "method": "Partíció-rekurzió: dp[n][k] = dp[n-1][k-1] + dp[n-k][k], a legkisebb tag szerint bontva.",
+    "category": "Partíciószám: pontosan K tag",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "partíció",
+      "dinamikus programozás",
+      "rekurzió"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

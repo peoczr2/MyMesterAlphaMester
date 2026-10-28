@@ -4,11 +4,11 @@ Az előző profil-DP-t kiegészítjük a T-alakú tetrominókkal is. A 2 soros t
 az elforgatások maradnak meg, amelyek beleférnek a 2×3-as sávba.
 
 */
-
-// Hint 1: || A T-lapnak a 2 soros táblán csak két érvényes orientációja van. ||
-// Hint 2: || A megoldás szerkezete ugyanaz, mint az L-es változatnál. ||
-// Hint 3: || Az eredményt 20200111-gyel kell modulo venni. ||
-
+/*
+Hint 1: || A T-lapnak a 2 soros táblán csak két érvényes orientációja van. ||
+Hint 2: || A megoldás szerkezete ugyanaz, mint az L-es változatnál. ||
+Hint 3: || Az eredményt 20200111-gyel kell modulo venni. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

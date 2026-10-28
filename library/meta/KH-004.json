@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/20. Minden településen melegebb van",
+    "method": "Egy bejárás, napokhoz tartozó igaz/hamis jelző, az előző napi értékkel való összevetés",
+    "category": "Szűrés napok között",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "összehasonlítás", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/21. Mindenhol meleg napok",
+    "method": "Egy bejárás, naponként logikai jelző, nem pozitív érték kizárja a napot",
+    "category": "Feltétel minden elemre",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "logikai", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/22. Mindig fagyos települések",
+    "method": "Soronként egy bejárás, egy nem negatív érték kizárja a települést",
+    "category": "Feltétel minden elemre",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "sor", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/23. Másnál melegebb település",
+    "method": "Naponkénti csoportosítás, bitsetek metszése az összes napra",
+    "category": "Bitset: halmazmetszet",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bitset", "csoportosítás", "halmaz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

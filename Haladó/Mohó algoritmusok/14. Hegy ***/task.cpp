@@ -1,6 +1,8 @@
 /*
 Feladat: M tábor között kell a csomagokat úgy elosztani, hogy minden tábor kapjon legalább X-et, és X maximális legyen. Egy hegymászó csak az 1..H_i táborok valamelyikébe rakhat.
 Ötlet: Fix X esetén a (i..M) táborok igénye (M-i+1)*X, ezt csak azok a csomagok tudják fedezni, amelyekhez H>=i. Emiatt minden i-re szükséges (és itt elégséges is), hogy suffixSupply[i] >= (M-i+1)*X. A maximum X tehát az összes ilyen hányados minimuma.
+*/
+/*
 Hint 1: || Gondolkodj nem prefixben, hanem suffixben: a magas sorszámú táborokhoz már kevesebb hegymászó fér hozzá. ||
 Hint 2: || Ha az i. tábortól felfelé nézed az igényt, azt csak H>=i hegymászók csomagjai tudják teljesíteni. ||
 Hint 3: || Minden i-re kapsz egy felső korlátot X-re; a válasz ezek minimuma. ||

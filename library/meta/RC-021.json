@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/34. Kirándulás",
+    "method": "Visszalépéses keresés, sikertelen állapotok memorizálása, üres buszok szimmetriája.",
+    "category": "Visszalépéses keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "memoizálás",
+      "keresés"
+    ],
+    "note": "Az eredeti, memorizálás nélküli változat időlimitet sértett (N=20, M=5 esetén akár 20 mp fölött, 0,2 mp limit). A mostani változat a legkisebb sorszámú beosztást adja (a feladat nem mondja ki, hogy bármely megoldás elfogadott), és a legrosszabb talált eset kb. 110 ms.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/4. Megye ***",
+    "method": "Visszalépéses színezés, mindig a legkevesebb szabad színű színezetlen megye következik.",
+    "category": "Gráf: színezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "gráf",
+      "színezés"
+    ],
+    "note": "Több megoldás esetén bármelyik megadható (feladatszöveg), ezért a minta eltérése nem hiba; a helyességet külön ellenőrző igazolta. A validátor szó szerinti egyezést nézne, ezért 'hibás' marad.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/5. Munka **",
+    "method": "Min-költségű maximális folyam a munkák és munkások hozzárendelésére.",
+    "category": "Hálózati folyam",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "folyam",
+      "hozzárendelés",
+      "minimum"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/6. Ritmus **",
+    "method": "Dinamikus programozás a sor prefixeire, visszakövetéssel a mintasorozat.",
+    "category": "Dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "dinamikus programozás",
+      "szöveg",
+      "visszakövetés"
+    ],
+    "note": "Több megoldás esetén bármelyik megadható (feladatszöveg), ezért a minta eltérése nem hiba; a helyességet külön ellenőrző igazolta. A validátor szó szerinti egyezést nézne, ezért 'hibás' marad.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/27. N-ből K az összes lehetséges növekvő sorrendben",
+    "method": "Visszalépéses keresés, szigorúan növekvő elemválasztással",
+    "category": "Kombinációk generálása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "kombináció",
+      "visszalépés",
+      "lexikografikus"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/28. Szóösszeadó fejtörő",
+    "method": "Permutációk nyers erővel végigpróbálása, összegellenőrzéssel",
+    "category": "Teljes keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "permutáció",
+      "fejtörő",
+      "teljes keresés"
+    ],
+    "note": "A feladat nem mondja ki, hogy a kezdőjegyek nem lehetnek 0; enélkül 25 megoldás lenne, a nem-nulla kezdőjegyek kikötésével pontosan a mintabeli megoldás marad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/29. Az összes lehetséges speciális sorrend",
+    "method": "Visszalépés: elem marad, vagy szomszédos pár cserél; tárolás nélküli kiírás",
+    "category": "Permutációk generálása",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "visszalépés",
+      "kiírás"
+    ],
+    "note": "A 32 MiB memórialimit miatt a sorozatokat nem tároljuk: előbb számlálás, majd pufferelt kiírás. N=30 esetén kb. 0,2 s és 4 MB memória.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/3. Konferencia *",
+    "method": "Visszalépés csökkenő sorrendben, zsákutcák memorizálásával",
+    "category": "Csoportosítás visszalépéssel",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "pakolás",
+      "memorizálás"
+    ],
+    "note": "A kimenet érvényes beosztás (ellenőrizve), a 2. minta viszont egy másik helyes beosztással tér el. A feladatszöveg nem mondja ki, hogy bármelyik helyes beosztás elfogadott, ezért nem kézi. Kérdés: elfogadott-e bármely érvényes beosztás? Időlimit 0,1 mp: véletlen tesztekben a legrosszabb futás kb. 3 ms.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

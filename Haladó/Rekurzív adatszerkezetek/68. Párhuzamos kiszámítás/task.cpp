@@ -1,16 +1,17 @@
 /*
 Megoldási ötlet:
 Egy levél kiszámítása 0 időt igényel, egy belső csúcs pedig akkor végezhető el, amikor mindkét gyereke elkészült.
-Ezért minden csúcsra kiszámítható az a szint, amelyikben dolgozni fogunk: a levél 0, a belső csúcs pedig a gyerekei
-közül a nagyobbik szintje + 1.
+A minimális idő a gyökér magassága, vagyis a legmélyebb levélig vezető műveletsor hossza.
 
-A teljes kifejezés minimális ideje a gyökér szintje. A szükséges minimális processzorszám pedig az egy időben végrehajtott
-csúcsok közül a legtöbb, vagyis az azonos szintű belső csúcsok maximális száma.
+A gyökértől d szinten lévő művelet legkésőbb a T - d időegységre készülhet el (T a minimális idő). Ha t időegység alatt
+legfeljebb t * P művelet fér el, ezért P legalább ceil(darab / t) kell legyen, ahol a darab azon műveletek száma,
+amelyeknek határideje legfeljebb t. A legnagyobb ilyen korlát a szükséges processzorszám, és a határidő szerinti
+ütemezéssel ez el is érhető.
 */
 /*
 Hint 1: || A gyerekek eredménye nélkül egy belső csúcsot nem lehet kiszámítani. ||
 Hint 2: || A szintje minden csúcsnak a legmélyebb lefelé vezető út hossza. ||
-Hint 3: || Ezután csak azt kell megszámolni, melyik szinten hány műveleti csúcs van. ||
+Hint 3: || A gyökértől mért mélység adja a határidőt: a d mélységű művelet legkésőbb T - d időpontra készülhet el, és ezeket a határidőket érdemes szűrni t szerint. ||
 */
 
 #include <algorithm>
@@ -72,16 +73,11 @@ int main() {
     }
 
     vector<int> height(n + 1, 0);
-    vector<int> ops(n + 1, 0);
     for (int node : order) {
-        if (tree[node].leaf) {
-            height[node] = 0;
-            ops[node] = 0;
-        } else {
+        if (!tree[node].leaf) {
             int left = tree[node].left;
             int right = tree[node].right;
             height[node] = max(height[left], height[right]) + 1;
-            ops[node] = ops[left] + ops[right] + 1;
         }
     }
 
@@ -90,8 +86,27 @@ int main() {
         return 0;
     }
 
+    vector<int> depth(n + 1, 0);
+    for (auto it = order.rbegin(); it != order.rend(); ++it) {
+        int node = *it;
+        if (!tree[node].leaf) {
+            depth[tree[node].left] = depth[node] + 1;
+            depth[tree[node].right] = depth[node] + 1;
+        }
+    }
+
     int time = height[1];
-    int processors = (ops[1] + time - 1) / time;
+    // suffix[k]: a gyökértől legalább k mélységben lévő műveletek száma
+    vector<int> suffix(time + 2, 0);
+    for (int node = 1; node <= n; ++node) {
+        if (!tree[node].leaf) ++suffix[depth[node]];
+    }
+    for (int k = time; k >= 0; --k) suffix[k] += suffix[k + 1];
+
+    int processors = 0;
+    for (int t = 1; t <= time; ++t) {
+        processors = max(processors, (suffix[time - t] + t - 1) / t);
+    }
     cout << time << '\n' << processors << '\n';
     return 0;
 }

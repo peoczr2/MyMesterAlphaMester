@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok/13. Sportverseny 1. *",
+    "method": "Két ciklussal végigpróbáljuk a csapatszám-párokat, és a legtöbb lefedett tanulót keressük.",
+    "category": "Felsorolás, maradékos összeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["felsorolás", "egész számok", "minimalizálás"],
+    "note": "Nincs kimeneti minta (csak be1/be2), ezért kézzel futtatva: 15 -> 0 2 1, 24 -> 4 0 0. Több helyes kimenet is lehet (pl. 42 tanuló), ezt a munkakönyvtári ellenőrző igazolta.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/14. Sportverseny 2. *",
+    "method": "Két ciklussal végigpróbáljuk a csapatszám-párokat, és a legkevesebb kimaradót keressük.",
+    "category": "Felsorolás, maradékos összeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["felsorolás", "egész számok", "minimalizálás"],
+    "note": "Több helyes kimenet is lehet (pl. 35 tanuló: 7 kosárlabda vagy 5 kézilabda csapat), ezt a munkakönyvtári ellenőrző igazolta; a két minta egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/15. Sportverseny 3. ***",
+    "method": "Kimaradót 0-tól növelve, kis 7- és 11-fős csapatszámokat próbálgatva, a legtöbb csapatot keressük.",
+    "category": "Lineáris kombináció, optimalizálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["felsorolás", "optimalizálás", "egész számok"],
+    "note": "Azonos csapatszámú megoldások is lehetnek (pl. 28 tanuló: 2 kosár + 1 kézi + 1 labdarúgó, vagy 4 kézi); a kiírt megoldás a több kosárlabdacsapatot tartalmazó, ez egyezik a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/16. Számintervallum **",
+    "method": "Intervallum-aritmetika: határok összege, különbsége és szorzata, törtekkel, egyszerűsítve.",
+    "category": "Intervallum-aritmetika",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["tört", "intervallum", "egyszerűsítés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

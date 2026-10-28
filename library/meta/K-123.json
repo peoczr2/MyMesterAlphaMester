@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/23. Különböző életkorú dolgozók száma *",
+    "method": "Életkorok halmazba gyűjtése, a halmaz elemszáma a válasz.",
+    "category": "Különböző elemek száma",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "számlálás", "egyedi"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/24. Lakások különböző alapterületeinek száma *",
+    "method": "Alapterületek halmazba gyűjtése, a halmaz elemszáma a válasz.",
+    "category": "Különböző elemek száma",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "számlálás", "egyedi"],
+    "note": "A PDF-ben az Időlimit és a Memórialimit értéke fel van cserélve (Időlimit: 32 MB, Memórialimit: 0.1 mp); a megoldás O(N log N) időt használ N ≤ 100 mellett, így mindkét értelmezést bőven tartja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/25. Lassú vonatok közt a leggyorsabb *",
+    "method": "Feltételes minimumkeresés egy menetben: a 120 percnél lassúbbak közül a legkisebb menetidő és sorszáma.",
+    "category": "Feltételes minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "feltétel", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/26. Legdrágább közeli utazás ára *",
+    "method": "Feltételes maximumkeresés egy menetben: az 1000 kilométernél közelebbi utak legnagyobb ára.",
+    "category": "Feltételes maximumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "feltétel", "tömb"],
+    "note": "A feladatszövegben a „nincs ilyen” kimenet „–1” (gondolatjellel) szerepel, a minta.zip ki fájljai ASCII „-1”-et tartalmaznak; a kód a mintát követi. A minta mindkét esete a „nincs ilyen” ág, a pozitív esetet a feladatszöveg példája igazolja (150000).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/1. Dominó ***",
+    "method": "Szakasz-állapot (i, j, bal és jobb szél) és memoizált minimax a büntetőpont-különbségre",
+    "category": "Játékelmélet: minimax",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["játékelmélet", "minimax", "dinamikus programozás"],
+    "note": "Interfész: a main() a jatek könyvtár Meret, D1, D2, EnLep(kód) és TeLep() műveletét hívja (jatek.h), a zsűri-modul a fordításkor linkelődik. Tesztelés: 71 nyerhető eset (N <= 100, köztük a feladatbeli minta) futott a minta.zip jatek-modulja ellen és 3 véletlen ellenfél-változat ellen, mind 'helyes'; a legnagyobb eset (N = 100) futása 0,01 s alatt van.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/10. Kavicsos játék ***",
+    "method": "Wythoff-játék: vesztes pozíciók (a_k, b_k) mex-konstrukcióval, lépés a legközelebbi vesztes pozícióba",
+    "category": "Játékelmélet: Wythoff-játék",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["játékelmélet", "wythoff", "vesztes pozíció"],
+    "note": "Interfész: a main() a KavicsokSzama(m,n), EnLepesem(k1,k2) és TeLepesed(k1,k2) műveletét hívja (Ellenfel.h). Tesztelés: 156 nem vesztes kezdőállás (m, n <= 10000) futott a minta.zip modulja (fix (1,1) ellenfél) és véletlen törvényes ellenfél-változat ellen, mind 'Nyertél!'; a legnagyobb eset (10000, 9999) teljes futása kb. 0,05 s.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/11. Grundy játék ***",
+    "method": "Grundy-értékek mex-szel, minden lépésben xor-nullázó felosztás táblázatból",
+    "category": "Játékelmélet: Sprague–Grundy",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["játékelmélet", "xor", "grundy-szám"],
+    "note": "Interfész: a Kezd(n), EnLepesem(m,k) és TeLepesed(m,k) függvényt készíti el, a main() a grundy.cpp zsűri-programé (nincs saját main). Tesztelés: 94 nyerhető N (3..10000) futott a zsűri-ellenfél és véletlen ellenfél ellen, mind 'Helyes'; N = 10000 teljes futása kb. 0,24 s (ebből Kezd(10000) kb. 0,08 s), a zsűri rekurzív Grundy-számítása 8 MB veremmel N ≈ 10000-nél összeomlik, ezért ulimit -s unlimited mellett futtattunk.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, kétszemélyes játékok/2. Egy kavicshalom ***",
+    "method": "Fibonacci-nim: a kavicsok Zeckendorf-felbontásának legkisebb tagját vesszük el",
+    "category": "Játékelmélet: Fibonacci-nim",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["játékelmélet", "fibonacci", "zeckendorf"],
+    "note": "Interfész: a main() a GetN() és Elvesz(x) műveletet hívja (ellenfel.h); tesztelés: 2983 nem Fibonacci N (4..3000) futott a minta.zip ellenfelével és két véletlen/maximális ellenfél-változat ellen, plus 65 nagy N (legfeljebb 10^6), mind 'helyes'; a legnagyobb eset (N = 10^6) kb. 0,07 s. A minta.zip ellenfel.cpp `exit h;` sora nem fordul, ezért a teszthez javított másolatot használtunk.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

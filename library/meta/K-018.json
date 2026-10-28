@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/20. Titkosított szó visszafejtése *",
+    "method": "Kétkarakteres párok feldolgozása, és táblázat-keresés a sor- és oszlopbetű alapján.",
+    "category": "Táblázatos kódolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "karakterlánc", "kódolás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/21. Hónapok első napjai",
+    "method": "A hónapok első napjának hétköznapját a hónap hosszával léptetve számoljuk végig.",
+    "category": "Dátumszámítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["dátum", "naptár", "szökőév"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/22. Bürokrácia **",
+    "method": "Fordított sorrendben haladunk: egy törvény aktív, ha későbbi aktív törvény nem vonta vissza.",
+    "category": "Fordított sorrendű bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "bejárás", "logika"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/23. Oszthatóság 17-tel **",
+    "method": "Az utolsó számjegy ötszörösét kivonjuk a maradék számból, amíg az nem lesz negatív.",
+    "category": "Oszthatósági szabály",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["oszthatóság", "számjegyek", "ciklus"],
+    "note": "A leállás: negatív köztes eredménynél nem íródik ki, a 0 viszont még kiíródik (51 példa). Az IGEN/NEM a bemenet közvetlen 17-es maradékából adódik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

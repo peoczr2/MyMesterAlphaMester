@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Verseny/5. Versenyek győztesei rangsora",
+    "method": "Versenyenként a maximumot keressük, győzelmeket számolunk, majd a győzteseket rendezzük.",
+    "category": "Maximumkiválasztás, rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "rendezés", "számlálás"],
+    "note": "Időlimit 0,1 mp; a legnagyobb mintán (be2) mért idő 3 ms. A győztes a versenyen legnagyobb pontot elérő tanuló (döntetlennél többen); a minimum csak az összetett versenyre vonatkozik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/6. Versenyek győztesei",
+    "method": "Versenyenként a maximumot keressük, és a maximumot elérő tanulókat egy jelölő tömbben megjelöljük.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "halmaz", "döntetlen"],
+    "note": "Időlimit 0,1 mp; a legnagyobb mintán (be2) mért idő 4 ms. A minimumok nem befolyásolják a győzteseket.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/7. Kieső győztesek",
+    "method": "Versenyenként a győzteseket meghatározzuk, majd minden győztesre ellenőrizzük, van-e másik, minimumot nem elérő verseny.",
+    "category": "Feltételes halmazszűrés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "feltétel", "versenyek"],
+    "note": "Időlimit 0,1 mp; a legnagyobb mintán (be2) mért idő 4 ms. A „másik verseny” a győzelem versenyétől különböző versenyt jelenti; a nem indulás (-1) nem számít alacsony pontszámnak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/8. Legalább egy versenyben elérték a minimális pontszámot",
+    "method": "Minden tanulóra és versenyre összevetjük a pontot a minimummal; elég egy találat.",
+    "category": "Feltételes szűrés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["feltétel", "szűrés", "minimum"],
+    "note": "Időlimit 0,1 mp; a legnagyobb mintán (be2) mért idő 2 ms.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

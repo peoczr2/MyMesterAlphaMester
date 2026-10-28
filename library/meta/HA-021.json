@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/46. Pletykálkodás",
+    "method": "C4-kör négy csúcsának négy hívása, a többi csúcs BFS-fa mentén (2N-4); C4 nélkül feszítőfa (2N-3).",
+    "category": "Gráf: feszítőfa",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "feszítőfa",
+      "kör"
+    ],
+    "note": "A feladat „egy megfelelő pletykálkodás sorozatot” kér, ezért a minta (be3) sorrendje csak egy a helyes kimenetek közül; K egyezik a mintával (1996). A sorozat érvényességét és a K minimalitását library/.work/HA-021/check46.py ellenőrzi: kis gráfokon (N≤5) kimerítő kereséssel, 400 véletlen gráfon a képlettel (2N-4 / 2N-3).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/47. Mágikus sorozat",
+    "method": "Balról jobbra: Z-szakasz másolása, különben a legkisebb nem tiltott érték.",
+    "category": "Z-függvény inverze",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "z-függvény",
+      "mohó",
+      "sztring"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/5. Csapatverseny *",
+    "method": "Irányított gráf: kölcsönös párok, befok 0 csúcsok, 3+ hosszú kör bejárással.",
+    "category": "Gráf: irányított kör",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "irányított",
+      "kör"
+    ],
+    "note": "A C részben a „közvetve” kört 3 vagy hosszabb körként értelmeztem (a 2 hosszú kör az A-rész); a két minta mindkét értelmezéssel ugyanazt adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/6. Csoportok *",
+    "method": "Legszimpatikusabb (pozitív maximum) él, unió-keresés; a komponensek a csoportok.",
+    "category": "Gráf: unió-keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "unió-keresés",
+      "komponens"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

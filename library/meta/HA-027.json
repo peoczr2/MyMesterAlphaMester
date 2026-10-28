@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/13. Síelő *",
+    "method": "Topologikus sorrendű DP: legrövidebb és leghosszabb pálya, holtverseny a kezdőponttal",
+    "category": "Gráf: körmentes, legrövidebb út",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "körmentes", "legrövidebb út"],
+    "note": "Holtverseny: a kisebb kezdőpontú, majd a kisebb végpontú pálya kerül a kimenetbe. Izolált csomópontot (se be-, se kimenő éllel) nem tekintek pályának.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/14. Túra **",
+    "method": "Kimenő élek láncolása, DP fordított topologikus sorrendben, holtverseny a kisebb kezdőponttal",
+    "category": "Gráf: elágazás nélküli szakasz",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "körmentes", "útvonal", "elágazás"],
+    "note": "A szakasz kezdőpontjának és köztes pontjainak pontosan egy kimenő éle van; a végpont bármennyi lehet. Holtverseny: a kisebb kezdőpont.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/15. Utak száma *",
+    "method": "Dinamikus programozás topologikus sorrendben, maradékkal (mod 100000007)",
+    "category": "Gráf: utak száma",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "körmentes", "dinamikus programozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/16. Építkezés **",
+    "method": "Előre és hátra bejárás A-ból, illetve B-ből; a metszet elemszáma A és B nélkül",
+    "category": "Gráf: topologikus rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "körmentes", "topologikus rendezés", "elérhetőség"],
+    "note": "Értelmezés a mintákból: a köztes napok száma az A és B közötti, mindenképpen közbeeső munkák száma (a mintákban 3 és 15). A leghosszabb A-B út élszáma a második mintán 12, ezért az nem a helyes értelmezés.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

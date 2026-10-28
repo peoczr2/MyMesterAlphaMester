@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/33. Tükörkép *",
+    "method": "Számjegyenként 0–2 értékek, négyzetösszeg legfeljebb 9, lexikografikus DFS zsákutca-táblázattal.",
+    "category": "Számjegyes DP",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "palindrom",
+      "dp",
+      "visszalépés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/34. Zeckendorf *",
+    "method": "Mohó választás a legnagyobb nem nagyobb Fibonacci-számmal, majd a tagok növekvő sorrendben való kiírása.",
+    "category": "Mohó algoritmus",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "fibonacci",
+      "mohó",
+      "felbontás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/35. Oszthatóság *",
+    "method": "Karakterenkénti maradékszámítás 19, 29 és 551 modulusra, az eredmények soronként gyűjtve.",
+    "category": "Maradékszámítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "oszthatóság",
+      "maradék",
+      "moduláris"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/36. Nagy szám kis prímosztói **",
+    "method": "Karakterenkénti maradékszámítás a 2 és 40 közötti 12 prímre, a találatok növekvő sorrendben.",
+    "category": "Prímosztók",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "prímszám",
+      "oszthatóság",
+      "maradék"
+    ],
+    "note": "Nincs minta.zip a mappában (csak feladat.pdf és task.cpp), ezért a validátor „nincs minta” állapotot ad. A feladat.pdf példáján (551 → 2 / 19 29) a program helyes kimenetet ad, és 306 esetben (véletlen, akár 300 jegyű számok és 10^100) egyezik a Python big-int ellenőrzéssel.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

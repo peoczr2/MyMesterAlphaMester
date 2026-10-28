@@ -4,7 +4,7 @@ A DNS-szekvencia dinamikus sztring, amelyen beszúrás, törlés, cserélés és
 felel meg, ahol a csomópontokban a részfa mérete és az A/C/G/T karakterek darabszáma is szerepel.
 
 A részszekvencia lekérdezéséhez kettéhasítjuk a treapot, a műveletet a középső részen végezzük el, majd visszaolvasztjuk.
-Az Eredmeny egy inorder bejárás.
+Az Eredmeny egy inorder bejárás. A műveletek várhatóan O(log n), az Eredmeny O(n) idejű.
 */
 /*
 Hint 1: || A pozíciók kezelése miatt implicit treap kell, nem kulcs szerinti. ||

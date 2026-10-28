@@ -1,9 +1,9 @@
 /*
-Itt a szabályt érdemes mintázat-transzformációként kezelni: a cellák új állapota mindig egy kis helyi környezetből olvasható ki. Ezért a megoldás a lokális minták gyors felismerésére épül.
+Egy cella új állapota a saját állapotától és a balra, jobbra legfeljebb L sejtnyi szomszédjától függ, ezért a szabályt a 2L+1 hosszú környezetek mintázataként kezeljük. Minden lépésben a régi tábláról készítünk új táblát, és minden belső cellánál a környezetét egy 2L+1 bites maszkká alakítjuk, amely a 2^(2L+1) méretű szabálytáblában megmutatja, lesz-e zöld. A szélső L-L cella mindig fehér marad. Egy lépés O(N·L), így az összes lépés O(N·K·L) munka.
 */
 /*
-Hint 1: || A gyorsabb megoldáshoz a szabályt mint mintázat-transzformációt érdemes kezelni, nem egyesével élő cellákat számolni. ||
-Hint 2: || A cellák új állapota mindig a helyi szomszédságból olvasható ki. ||
+Hint 1: || A cella új állapota csak a 2L+1 hosszú környezetétől függ, ezért minden lépésben a régi tábla alapján új táblát készíts. ||
+Hint 2: || A környezet bitjeit balról jobbra egy számba fűzve megkapod a szabálytábla indexét, így minden cellára egyetlen tömbelemet kell megnézni. ||
 */
 
 #include <bits/stdc++.h>

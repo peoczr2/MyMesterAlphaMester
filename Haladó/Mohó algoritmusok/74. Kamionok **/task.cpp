@@ -1,11 +1,16 @@
 /*
-Feladat: Minden igényt határidőre Bergengóciába kell vinni. Egy kamion indulásai között 2*S nap telik el, az indulás utáni S. napon ér célba. Minimalizálni kell a kamionok számát, majd ehhez az utolsó visszaérkezés idejét.
-Ötlet: Egy D napos határidőig egy kamion legfeljebb floor((D+S)/(2S)) szállítást tud célba juttatni. Ez prefix-kapacitáskorlátot ad, így a minimális kamionszám a max_i ceil(i / cap(Hi)). Ezután ezen kamionszámmal határidő szerint kiosztunk: mindig annak a kamionnak adjuk a következő igényt, amelyik a leghamarabb tud legközelebb célba érni. Így a második sorban kért visszaérkezési idő minimális.
-Hint 1: || Számold ki, egy kamion hány célba érkezést tud adni egy adott határidőig. ||
+Megoldás lényege:
+Egy kamion 2S napos ciklusban legfeljebb egy szállítmányt visz, így D határidőig legfeljebb floor((D+S)/(2S)) igény teljesíthető vele.
+A határidők szerint rendezett igények közül az i-edikre legalább ceil(i / cap(H_i)) kamion kell; ezek maximuma adja a minimális kamionszámot.
+Ezzel a kamionszámmal a sorban haladva mindig azt a kamiont indítjuk, amelyik a leghamarabb érkezhet Bergengóciába (min-heap).
+A legkorábbi szabad időpontokat használjuk fel, ezért az utolsó visszaérkezés is a lehető legkorábbi.
+Időigény: O(N log N).
+*/
+/*
+Hint 1: || Számold ki, hogy egy kamion egy adott határidőig hány célba érkezést tud adni. ||
 Hint 2: || A minimális darabszámot prefixenként vett ceil(i/cap) maximum adja. ||
 Hint 3: || Fix kamionszámnál min-heapen tartsd a kamionok következő érkezési napját. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

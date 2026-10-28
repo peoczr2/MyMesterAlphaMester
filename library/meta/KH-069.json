@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szigetek/28. Tengerszakaszok teljes hossza *",
+    "method": "Egy bejárás, a 0 magasságú mérések összeszámolása.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/3. Leghosszabb tengerszakasz hossza *",
+    "method": "Egy bejárás futó számlálóval, a leghosszabb egymás utáni 0-sorozat keresése.",
+    "category": "Maximumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "számláló"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/29. Van két egyforma szélességű sziget? *",
+    "method": "Szigetek szélességének (partok indexkülönbsége) halmazba gyűjtése, duplikáció keresése.",
+    "category": "Halmazos ellenőrzés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["sziget", "halmaz", "tömb"],
+    "note": "A kontinenshez érő szakasz (első vagy utolsó mérés) nem sziget. A szélesség a két part indexének különbsége; a +1 eltérés az egyezés eredményét nem változtatja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/4. Az első felében magasabb csúcs volt? *",
+    "method": "Csúcsok fordított bejárása, a későbbi csúcsok maximumának nyilvántartása.",
+    "category": "Suffix-maximum",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["csúcs", "maximum", "tömb"],
+    "note": "Az „azután csak alacsonyabbak” feltételt csúcsokra értelmezzük (a későbbi csúcsok legyenek alacsonyabbak), nem az összes későbbi mérésre: a be2 mintán az utóbbi olvasat 0-t adna, a minta 1. Az első felet 2p ≤ N adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,9 +1,11 @@
 /*
-Feladat: A vendégekből a lehető legtöbb párost kell képezni úgy, hogy egy pár tagjai egy időpontban együtt jelen legyenek, és mindenki legfeljebb egy képen szerepeljen.
-Ötlet: Eseményidőpontoknál aktív halmazt tartunk fenn, és amikor lehet, a leghamarabb távozó aktív vendégeket párosítjuk.
-Hint 1: || Egy érvényes párhoz elég, hogy a két intervallum metssze egymást. ||
-Hint 2: || A leghamarabb távozók párosítása először megakadályozza az elvesző lehetőségeket. ||
-Hint 3: || Az érkezési/távozási események szerinti sweep elég a maximumhoz. ||
+Megoldás lényege:
+Két vendég akkor szerepelhet együtt, ha a későbbi érkezés a korábbi távozás előtt van, vagyis jelenléti intervallumaik átfedik egymást. A feladat tehát intervallumok maximális párosítása. A vendégeket távozási idő szerint dolgozzuk fel, és egy halmazban tartjuk a párosítatlan, már feldolgozott vendégeket. Az aktuális vendéghez a halmazból azt a párosítatlan vendéget választjuk, aki még az érkezése után is bent van, és közülük a legkorábban távozót; így a később távozók megmaradnak a jövőbeli párosításokhoz. Ha nincs ilyen vendég, az aktuális vendég kerül a halmazba. Az időigény O(N log N).
+*/
+/*
+Hint 1: || Két vendég akkor lehet egy képen, ha jelenlétük időintervallumai átfedik egymást. ||
+Hint 2: || Távozási idő szerint haladj, és minden vendégnél keress egy korábban feldolgozott, még párosítatlan vendéget, akinek a távozása az aktuális érkezés után van. ||
+Hint 3: || Ha több ilyen van, a legkorábban távozót párosítsd: a később távozók több lehetőséget hagynak a jövőre. ||
 */
 
 #include <bits/stdc++.h>
@@ -18,36 +20,26 @@ int main() {
     int n;
     cin >> n;
     vector<Guest> g(n);
-    vector<int> times;
-    times.reserve(2 * n);
     for (int i = 0; i < n; ++i) {
         cin >> g[i].l >> g[i].r;
         g[i].id = i + 1;
-        times.push_back(g[i].l);
-        times.push_back(g[i].r);
     }
-    sort(times.begin(), times.end());
-    times.erase(unique(times.begin(), times.end()), times.end());
+    sort(g.begin(), g.end(), [](const Guest &x, const Guest &y) {
+        if (x.r != y.r) return x.r < y.r;
+        return x.id < y.id;
+    });
 
-    vector<vector<int>> starts(times.size());
-    for (int i = 0; i < n; ++i) {
-        int pos = lower_bound(times.begin(), times.end(), g[i].l) - times.begin();
-        starts[pos].push_back(i);
-    }
-
-    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
+    // párosítatlan, már feldolgozott vendégek: (távozás, sorszám)
+    set<pair<int,int>> freeSet;
     vector<pair<int,int>> ans;
-    for (int ti = 0; ti < (int)times.size(); ++ti) {
-        int t = times[ti];
-        for (int idx : starts[ti]) pq.push({g[idx].r, g[idx].id});
-        while (!pq.empty() && pq.top().first <= t) pq.pop();
-
-        while ((int)pq.size() >= 2) {
-            auto [r1, id1] = pq.top(); pq.pop();
-            if (r1 <= t) continue;
-            auto [r2, id2] = pq.top(); pq.pop();
-            if (r2 <= t) continue;
-            ans.push_back({id1, id2});
+    for (const auto &x : g) {
+        // a legkorábban távozó párosítatlan vendég, aki x érkezése után még bent van
+        auto it = freeSet.upper_bound({x.l, INT_MAX});
+        if (it != freeSet.end()) {
+            ans.push_back({it->second, x.id});
+            freeSet.erase(it);
+        } else {
+            freeSet.insert({x.r, x.id});
         }
     }
 

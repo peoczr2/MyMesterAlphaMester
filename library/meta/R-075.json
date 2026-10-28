@@ -1,0 +1,62 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/59. Házszámok",
+    "method": "Bináris keresés a válaszra, helyiértékenkénti számjegy-darabszámolás blokkokban",
+    "category": "Bináris keresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["számrendszer", "keresés", "számjegy"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/6. Boldog számok *",
+    "method": "A számjegynégyzet-összeg ismételt szimulálása, ciklus kiszűrése halmazzal",
+    "category": "Szimuláció, ciklusdetektálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "ciklus", "halmaz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/7. Diofantoszi egyenlet ***",
+    "method": "lnko-szűrés, majd moduláris inverzzel a legkisebb nemnegatív x kiszámítása",
+    "category": "Diofantoszi egyenlet",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["lnko", "moduláris", "euklidesz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/8. Egyes számok *",
+    "method": "Egyszeri számjegyösszeg-képzés, az eredmény 9-es maradéka dönt",
+    "category": "Digitális gyök",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számjegy", "maradék", "összeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/9. Egységtört **",
+    "method": "Mohó kivonás: a maradéknál nem nagyobb legnagyobb 1/d egységtört levonása",
+    "category": "Mohó algoritmus",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "tört", "egységtört"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

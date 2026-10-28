@@ -1,16 +1,18 @@
 /*
 Megoldás lényege:
-Ugyanazt a 2 soros profile DP-t használjuk, mint az előző feladatnál, csak most az
-1x3 lap miatt a profilnak három oszlopnyi „előretekintést” kell megőriznie.
-
+A két soros járda oszlopaira profil-DP-t használunk, de az 1×3 vízszintes lap miatt a profilnak
+három oszlopnyi előretekintést kell tartania. Egy állapot (6 bites maszk, 64 állapot) azt mutatja
+meg, mely cellák foglaltak már az aktuális és a következő két oszlopban. Mindig a bal szélső még
+üres cellát fedjük le egy 1×2 vagy 1×3 lappal (a függőleges 1×2 lap egy oszlop mindkét cellájét
+fedi), és ha az oszlop megtelt, az állapot egy oszloppal előrébb lép. A válasz a végén a teljesen
+üres állapotba vezető utak száma, ami N ≤ 50 esetén 64 bites egész alatt marad, így az időigény O(N).
+*/
+/*
+Hint 1: || A vízszintes 1×3 lap miatt a jelenlegi oszlopon túl még két oszlopot is figyelni kell. ||
+Hint 2: || Az állapotok száma kicsi (64), ezért minden állapotból a lehetséges lapelhelyezéseket egyszerűen végigpróbálhatjuk. ||
 */
 
-// Hint 1: || A horizontális 3-as lap miatt a jelenlegi oszlopon túl még két oszlopot is figyelj. ||
-// Hint 2: || Az állapotok száma kicsi, így a teljes átmenettábla előre kiszámolható. ||
-// Hint 3: || A végső válasz ismét a teljesen üres profilban van. ||
-
 #include <bits/stdc++.h>
-#include "../bigint.hpp"
 using namespace std;
 
 using Mask = int;
@@ -83,14 +85,14 @@ int main() {
     };
 
     auto trans = buildTransitions(shapes);
-    vector<BigInt> dp(64), ndp(64);
+    vector<unsigned long long> dp(64), ndp(64);
     dp[0] = 1;
 
     for (int col = 0; col < N; ++col) {
         fill(ndp.begin(), ndp.end(), 0);
         int rem = min(3, N - col);
         for (int s = 0; s < 64; ++s) {
-            if (dp[s].isZero()) continue;
+            if (dp[s] == 0) continue;
             map<int, long long> cnt;
             function<void(int)> dfs = [&](int cur) {
                 if ((cur & 3) == 3) {

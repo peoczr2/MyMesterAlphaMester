@@ -1,9 +1,16 @@
 /*
-Az orvosi rendelés tipikus eseményszimuláció: az érkezések és a rendelő felszabadulása ugyanabban az idővonalban jelenik meg. A válasz a várakozási idők és a lezárás idejének követéséből adódik.
+Megoldás lényege:
+A betegek érkezés szerint kerülnek sorra, ezért minden beteg kezelésének kezdete
+max(érkezés, az előző beteg befejezése), a befejezés pedig kezdés + kezelési idő.
+Ebből a várakozási idő közvetlenül adódik; a legnagyobb várakozású beteg közül a
+legkisebb sorszámút választjuk. Az egyidejűleg a rendelőben lévők maximumát az érkezési és a
+befejezési idők két rendezett sorozatának összefésülésével kapjuk: a befejezési idők
+is nőnek, így lineáris időben, egy mutatópárral számolható. Ha mindenki kezelése
+azonnal kezdődik, mindhárom kiírt szám 0.
 */
 /*
-Hint 1: || Az orvoshoz érkezők és a rendelő felszabadulása ugyanabban az eseménysorban kezelhető. ||
-Hint 2: || A legfontosabb kimenet a leghosszabb várakozás és a rendelés vége, ami a következő szabad időpontból számolható. ||
+Hint 1: || Mivel a betegek érkezés szerint sorra kerülnek, minden beteg kezdési ideje az előző beteg befejezési idejéből és a saját érkezéséből számolható. ||
+Hint 2: || Az egyidejű jelenlévők száma: érkezéskor +1, befejezéskor -1; ha az érkezési és befejezési idők nőnek, két mutatóval végig lehet menni rajtuk. ||
 */
 
 #include <bits/stdc++.h>
@@ -15,38 +22,41 @@ int main() {
 
     int n;
     cin >> n;
-    vector<int> arr(n), dur(n);
-    for (int i = 0; i < n; ++i) cin >> arr[i] >> dur[i];
-
-    queue<int> q;
-    int idx = 0;
-    int time = 0;
-    int current = -1, finish = INT_MAX;
-    int best_id = 0, best_wait = 0, max_waiting = 0;
-
-    while (idx < n || current != -1 || !q.empty()) {
-        int next_arrival = idx < n ? arr[idx] : INT_MAX;
-        if (current == -1 && q.empty() && idx < n && time < next_arrival) time = next_arrival;
-        else time = min(next_arrival, finish);
-
-        while (idx < n && arr[idx] == time) q.push(idx++);
-        if (current != -1 && finish == time) current = -1;
-
-        if (current == -1 && !q.empty()) {
-            current = q.front(); q.pop();
-            finish = time + dur[current];
-            int w = time - arr[current];
-            if (w > best_wait || (w == best_wait && (best_id == 0 || current + 1 < best_id))) {
-                best_wait = w;
-                best_id = current + 1;
-            }
-        }
-
-        max_waiting = max<int>(max_waiting, q.size());
-        if (current == -1 && q.empty()) finish = INT_MAX;
+    vector<long long> arr(n), fin(n), wait(n);
+    long long freeAt = 0;  // a rendelő szabaddá válásának ideje
+    for (int i = 0; i < n; ++i) {
+        long long k;
+        cin >> arr[i] >> k;
+        long long start = max(arr[i], freeAt);
+        wait[i] = start - arr[i];
+        fin[i] = start + k;
+        freeAt = fin[i];
     }
 
-    if (best_wait == 0) best_id = 0;
-    cout << best_id << ' ' << best_wait << '\n' << max_waiting << '\n';
+    int bestId = 0;
+    long long bestWait = 0;
+    for (int i = 0; i < n; ++i) {
+        if (wait[i] > bestWait) {  // szigorú >: a legkisebb sorszám marad
+            bestWait = wait[i];
+            bestId = i + 1;
+        }
+    }
+
+    // Egyidejű jelenlévők: érkezés +1, befejezés -1; azonos időpontban előbb a befejezés.
+    int cur = 0, mx = 0;
+    int a = 0, f = 0;
+    while (f < n) {
+        if (a < n && arr[a] < fin[f]) {
+            ++cur;
+            ++a;
+            mx = max(mx, cur);
+        } else {
+            --cur;
+            ++f;
+        }
+    }
+
+    if (bestWait == 0) mx = 0;
+    cout << bestId << ' ' << bestWait << '\n' << mx << '\n';
     return 0;
 }

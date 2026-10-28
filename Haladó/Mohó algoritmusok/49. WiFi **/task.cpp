@@ -1,6 +1,8 @@
 /*
-Feladat: A házakra a lehető legkevesebb WiFi eszközt kell tenni úgy, hogy minden ház lefedett legyen.
-Ötlet: Balról jobbra haladva az első még nem fedett ház környezetében mindig a legjobbra tehető házra telepítünk, majd onnan fedjük le a következő házakat. Ez a klasszikus intervallumfedési mohó.
+Megoldás lényege: Balról jobbra haladva az első még nem fedett házhoz a hatótávolságon belül legjobbra eső házra telepítünk, mert onnan lefedhetjük a legtöbb jobb oldali házat.
+Az így lefedett házak után az első még nem fedett házzal folytatjuk; ez a klasszikus intervallumfedési mohó, és O(N) időben fut.
+*/
+/*
 Hint 1: || Az első lefedetlen házhoz a hatótávolságon belüli legjobbra eső ház a legjobb telepítési pont. ||
 Hint 2: || Onnan minden legfeljebb H távolságra lévő ház lefedődik. ||
 Hint 3: || Ezután az első már nem fedett házzal folytasd. ||

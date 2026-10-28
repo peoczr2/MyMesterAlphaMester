@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/28. Nem volt érdemes megállni *",
+    "method": "Lineáris bejárás, az első köztes állomás, ahol le és fel is nulla",
+    "category": "Keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "feltétel"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa és a minta is stimmel; az első és utolsó állomás kizárva, mert ott a vonat mindenképpen megáll.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/29. Nem volt felszálló *",
+    "method": "Lineáris bejárás, az első állomás, ahol a felszállók száma nulla",
+    "category": "Keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "feltétel"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/3. Csökkent a vonaton utazók száma *",
+    "method": "Lineáris bejárás, állomásonként a le > fel feltétel számlálása",
+    "category": "Számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "feltétel"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/30. Nem volt leszálló *",
+    "method": "Lineáris bejárás, az utolsó állomás, ahol a leszállók száma nulla",
+    "category": "Keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "feltétel"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

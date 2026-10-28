@@ -1,9 +1,11 @@
 /*
-Feladat: A kiinduló és végállomás közé minél több megállót kell beiktatni úgy, hogy a megállók távolsága legalább K legyen.
-Ötlet: Mindig a legközelebbi még választható állomást vesszük fel, így marad a legtöbb hely a későbbi megállóknak.
-Hint 1: || Az első és az utolsó állomás kötelező. ||
-Hint 2: || A lehető legkorábbi következő állomást válaszd, amely még legalább K-re van. ||
-Hint 3: || A maximális megállószám a mohó bejárásból közvetlenül adódik. ||
+Megoldás lényege: Az első és az utolsó állomás kötelező, ezért a köztes megállókat a kiindulótól kezdve, sorban választjuk: mindig a legkorábbi olyan állomást vesszük fel, amely legalább K kilométerre van az előző megállótól.
+Az utolsó állomás előtti megálló csak olyan lehet, amely legalább K kilométerre van a végállomástól, ezért a köztes állomásokat csak a T(N)-K határig keressük; így a végállomás is teljesíti a K-s feltételt.
+A korai megálló a legtöbb helyet hagyja a további megállóknak, ezért a mohó választás optimális, és a megoldás O(N) időben fut.
+*/
+/*
+Hint 1: || Az első és az utolsó állomás kötelező, a köztes megállókat ezek között érdemes sorban, a kiindulótól haladva kiválasztani. ||
+Hint 2: || Az utolsó állomás előtti megálló csak olyan lehet, amely legalább K-ra van a végállomástól: a mohó bejárást erre a részre szűkítsd, és a végén mindenképpen írd ki az utolsó állomást. ||
 */
 
 #include <bits/stdc++.h>
@@ -20,12 +22,13 @@ int main() {
 
     vector<int> ans{1};
     int last = 1;
-    for (int i = 2; i <= n; ++i) {
-        if (t[i] - t[last] >= k) {
+    for (int i = 2; i < n; ++i) {
+        if (t[i] - t[last] >= k && t[n] - t[i] >= k) {
             ans.push_back(i);
             last = i;
         }
     }
+    ans.push_back(n);
 
     cout << ans.size() << '\n';
     for (int i = 0; i < (int)ans.size(); ++i) {

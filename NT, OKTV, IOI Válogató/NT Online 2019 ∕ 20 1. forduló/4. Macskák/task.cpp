@@ -6,8 +6,13 @@ nagyobbak rossz helyre kerülnek, a vadmacskák közül a K-nál kisebbek rossz 
 kerülnek. Mindkét szám monoton változik K függvényében, ezért végig tudjuk
 söpörni az összes lehetséges küszöböt, és kiválasztani a legkisebb maximális hiba
 mellett a lehető legnagyobb K-t.
+Az időigény O(H + V + legnagyobb méret), ami legfeljebb 10^5 körüli.
 */
-
+/*
+Hint 1: || Próbáld ki K minden lehetséges értékét 1-től a legnagyobb méretig, és K-nként számold ki a két hibaszámot. ||
+Hint 2: || A K-nál kisebb házimacskák és a K-nál kisebb vadmacskák száma K növelésével csak nőhet. Egy K-hoz a rossz házimacskák száma a házimacskák összes számának és a K-nál kisebbek számának különbsége, a rossz vadmacskák száma pedig a K-nál kisebb vadmacskák száma. ||
+Hint 3: || Két mutatóval, a K-nál kisebb házimacskák és vadmacskák számát követve, K-ról K-ra haladva minden K-ra O(1) munkával kiszámolható a két hiba. Egyenlő maximumnál a nagyobb K-t jegyezd meg. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

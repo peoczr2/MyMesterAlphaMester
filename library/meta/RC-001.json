@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/1. 6174 *",
+    "method": "Számjegyek csökkenő és növekvő rendezése, kivonás ismétlése; a legkisebb azonos lépésszámú szám keresése.",
+    "category": "Számjegyes iteráció, keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "szimuláció",
+      "számjegyek",
+      "rendezés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/10. Erősen összetett számok *",
+    "method": "Szita: minden szám osztószámának kiszámolása, majd a futó maximumot meghaladó számok kiírása.",
+    "category": "Osztók száma, szita",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szita",
+      "osztók",
+      "rekord"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/11. Erősen páratlan számok **",
+    "method": "Számjegyösszeg-lánc követése: egyjegyű páratlan végeredmény IGEN, az első páros összeg NEM.",
+    "category": "Számjegyösszeg-lánc",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "számjegyösszeg",
+      "rekurzió",
+      "karakterlánc"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/12. Faktoriális számrendszer *",
+    "method": "Átváltás maradékos osztással (2, 3, 4, ...), visszafelé a számjegyek (k+1)! súlyú összege.",
+    "category": "Számrendszer-átváltás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "számrendszer",
+      "faktoriális",
+      "maradék"
+    ],
+    "note": "A minta.zip fájljai UTF-16 (BOM) kódolásúak; a validátor most ezeket dekódolja. A megoldás a javított from_factorial változat (a régi a B középső számjegyeit rosszul kezelte).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

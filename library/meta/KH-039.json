@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Madármegfigyelés/3. Együtt előforduló madárfajok *",
+    "method": "Páronkénti ellenőrzés: minden helységben, ahol j előfordul, k is jelen van-e.",
+    "category": "Halmaz: állandó társak",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "feltétel", "mátrix"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a PDF példáján (1 2 / 1 1 / 0 / 2 1 2) és be2-n (M=50, N=200) egyezik a független ellenőrzővel (library/.work/KH-039/check.py). Bizonytalan pont: a sehol nem előforduló fajhoz 0-t írok, mert a feladat nem mondja ki, mit kell írni rá; a be1 és be2 bemenetben nincs ilyen faj, így a minta nem dönti el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/4. Elterjedt madárfajok száma *",
+    "method": "Fajonként a helységek számát egész aritmetikával hasonlítjuk a 90%-hoz: 10·h > 9·M.",
+    "category": "Arány-feltétel, számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "arány", "egész-aritmetika"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a PDF példáján (2) és be2-n (83) egyezik a független ellenőrzővel (library/.work/KH-039/check.py). A „több mint 90%” szigorúan értendő: pontosan 90% (be2-ben 45 a 50 helységből) nem találat; be2-ben 25 ilyen faj van, ezek nem számítanak bele.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/5. Gyakori madárfaj *",
+    "method": "Azt a fajt keressük, amelyik minden madarat tartalmazó helységben jelen volt; jelzőtömbbel szűrünk.",
+    "category": "Halmazmetszet: közös faj",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "szűrés", "tömb"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a PDF példáján (3) és be2-n (178) egyezik a független ellenőrzővel (library/.work/KH-039/check.py). A feladat „egy” madárfajt kér, ezért több megfelelő faj is lehet: ilyenkor a legkisebb sorszámot írom ki. A mintákban egyetlen jelölt van, így a kimenet ott egyértelmű. Ha egyik helységben sincs madár, minden faj megfelelőnek számít, és 1-et írok; ez a szélső eset a mintákban nincs.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/6. Helységek csupa máshol is előforduló madárfajjal *",
+    "method": "Fajonként a helységek számát megszámoljuk, majd helységenként ellenőrizzük a feltételt.",
+    "category": "Számlálás: máshol is előfordult",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "mátrix", "feltétel"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a PDF példáján (3 / 1 2 4) és be2-n (17 találat) egyezik a független ellenőrzővel (library/.work/KH-039/check.py). Bizonytalan pont: egy helység akkor találat, ha van benne madár; az üres helységet (ahol nem láttak madarat) nem írom ki. A mintákban nincs üres helység, így ez nem dönti el az eredményt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

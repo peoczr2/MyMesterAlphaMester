@@ -1,14 +1,16 @@
 /*
 Megoldás lényege:
-Az input egy quadtree-kódhalmaz: minden kód egy homogén négyzetet jelöl. A kód elején
-álló 1..4 számjegyek a negyedeket jelölik, a 0 utáni karakter pedig a színt. A teljes
-kép visszaállítása egyszerű rekurzív bejárással elvégezhető.
-
+Az input egy quadtree-kódhalmaz: minden kód egy homogén négyzetet jelöl. A kód elején álló
+1..4 számjegyek a negyedeket jelölik (1 bal felső, 2 jobb felső, 3 bal alsó, 4 jobb alsó), a 0
+utáni karakter pedig a színt. Mivel a kódok diszjunkt négyzeteket adnak meg, minden cella pontosan
+egy kódból kapja a színét, így elég minden kódhoz kitölteni a megfelelő tartományt. Egy kód
+feldolgozása legfeljebb log N lépés, a kitöltés összesen O(N²) cellát ír, így az időigény O(N² + M log N).
 */
-
-// Hint 1: || A kód eleje a négy rész egyikébe vezető út, a 0 utáni karakter pedig a szín. ||
-// Hint 2: || Egy kód csak egy négyzetet fed le, ezért elég a megfelelő tartományt kitölteni. ||
-// Hint 3: || A négy negyed koordinátáit mindig ugyanabban a sorrendben kezeld. ||
+/*
+Hint 1: || A kód eleje a négy rész egyikébe vezető út, a 0 utáni karakter pedig a szín. ||
+Hint 2: || Egy kód csak egy négyzetet fed le, ezért elég a megfelelő tartományt kitölteni. ||
+Hint 3: || Minden 1–4 jel a négyzet egy negyedét választja ki, így az oldalhossz minden lépésben felére csökken. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

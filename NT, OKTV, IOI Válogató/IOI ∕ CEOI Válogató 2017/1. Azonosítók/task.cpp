@@ -11,7 +11,11 @@ alapján visszaépítjük a célazonosítót.
 
 Mivel N legfeljebb 26, a binomiális együtthatókat előre ki lehet számolni.
 */
-
+/*
+Hint 1: || Számold meg, hány azonosító előzi meg a megadottat: pozíciónként haladj balról jobbra, és minden olyan kisebb karakternél add hozzá, hány azonosító kezdődhet ott. Ez binomiális együttható. ||
+Hint 2: || A kapott sorszámot növeld K-val, majd ugyanilyen pozíciónkénti bontással keresd meg a célazonosítót: mindig a legkisebb olyan karaktert válaszd, amelynél a hátralévő darabszám még nem fedi le a maradék sorszámot. ||
+Hint 3: || A C[n][k] binomiális táblázatot (n ≤ 26) egyszer töltsd fel előre, így a teljes számítás gyors marad. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

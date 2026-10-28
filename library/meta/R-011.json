@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/2. Átutalások *",
+    "method": "Nettó egyenlegek kiszámítása, majd az adósok és hitelezők mohó párosítása.",
+    "category": "Mohó párosítás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "egyenleg",
+      "mohó",
+      "párosítás"
+    ],
+    "note": "Csak a sorrend tér el: a minta be1 kimenete (3 2 25, majd 1 2 295) ugyanazt a két átutalást adja, mint a program (1 2 295, majd 3 2 25), de a feladat bármely optimális sorozatot elfogad. Ellenőrző program (library/.work/R-011/chk/atutalas_chk.py): a kimenet összege a pozitív egyenlegek összege, és az átutalások után mindenki egyenlege 0; mindkét mintára és 300 véletlen tesztre teljesül. A be2 kimenete szó szerint egyezik a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/20. Katonák *",
+    "method": "A két tengely független: rendezéssel kapjuk a célokat; előbb függőleges, utána vízszintes mozgatás.",
+    "category": "Rendezés, Manhattan-távolság",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "rendezés",
+      "mozgatás",
+      "permutáció"
+    ],
+    "note": "A minta más, de ugyanolyan idejű elhelyezkedést és parancssorozatot ad; a feladat 'egy lehetséges' elhelyezkedést és parancssorozatot kér. Az idő mindkét mintán egyezik (8 és 44). Ellenőrző program (library/.work/R-011/chk/katona_chk.py): szimulálja a parancsokat (nincs ütközés, nincs átlépés), a végállás permutáció, az idő a parancsok h-összege; N≤7-re a brute-force minimummal is egyezik; 250 véletlen teszten hibátlan.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/25. Kerekasztal **",
+    "method": "Minden körkörös eltolásra a permutáció ciklusait számoljuk; a csere N mínusz a ciklusok száma.",
+    "category": "Permutáció ciklusai",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "ciklus",
+      "csere"
+    ],
+    "note": "Javítva: a ciklusbejárás célhelyét rossz képlettel (pozíció + k) számolta, most (k + eltolás) mod N. Mindkét minta egyezik; 300 véletlen (N≤6) tesztet brute-force BFS-sel ellenőriztem. N=10000-re kb. 0,25 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/27. Körút **",
+    "method": "Duplázott prefixösszegek csúszóablakos minimuma; ha nincs körbejárás, monoton veremmel számolunk.",
+    "category": "Prefixösszeg, csúszóablak",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prefixösszeg",
+      "csúszóablak",
+      "verem"
+    ],
+    "note": "A minta kutjainak sorrendje nem rendezett (IGEN után: 4 6 5, illetve 1 20 18 15 14 4 2), a feladat sorrendet nem ír elő; a program növekvő sorrendben írja a kutakat. A halmaz mindkét mintán egyezik. Ellenőrző program (library/.work/R-011/chk/korut_chk.py): minden kezdőkútból szimulál; 400 véletlen kis teszten (IGEN és NEM) a halmaz, illetve a NEM-eset maximális kútszáma egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/34. Lineáris közelítés **",
+    "method": "Ismert pontok közötti interpoláció, a széleken az első, illetve utolsó szakasz folytatása.",
+    "category": "Lineáris interpoláció",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "interpoláció",
+      "tömb",
+      "egyenes"
+    ],
+    "note": "A be1.txt első sorából hiányzik a napok száma N (a PDF-példa is így hiányos), a program ilyen bemenetre összeomlik. N=9 elé írva a kimenet egyezik a ki1.txt-vel; a be2 kimenete egyezik a mintával. Törtértéknél a legközelebbi egészre kerekítünk (a mintákban nincs tört). Ellenőrző program (library/.work/R-011/chk/linear_chk.py): 300 véletlen teszten egyezik a törtekkel számoló referenciával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/35. LOGO optimalizálás **",
+    "method": "Balról jobbra, verem jellegű feldolgozással: minden új utasítás után ismételt szabályalkalmazás.",
+    "category": "Átírási szabályok, verem",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "verem",
+      "átírás",
+      "szimuláció"
+    ],
+    "note": "Minta-eltérés, a program nem hibás: (1) ki1 első sora -189, de a fordulatok összege -68-39-22 = -129 (a teknőcszimuláció is ezt adja). (2) ki2 nem alkalmazza a DOWN...DOWN és UP...UP (c, d) szabályt; a feladatszöveg szerint az átalakítás szabad, a program ezeket is alkalmazza, a ki2 a (c),(d) nélküli eljárás kimenete. Ellenőrző program (library/.work/R-011/chk/logo_chk.py): teknőcszimuláció szerint a kimenet ekvivalens a bemenettel (600 véletlen teszten), a ki1 nem.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

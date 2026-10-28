@@ -1,12 +1,21 @@
 /*
 Megoldás lényege:
-A napfény iránya adott, ezért a hegygerinc pontjait a fényirányra merőleges vetületben vizsgáljuk.
-Egy szakasz akkor árnyékos, ha teljes egészében egy korábban látott (nap felőli) pont mögé kerül;
-részben árnyékos, ha a szakasz egyik része a határ előtt, másik része mögötte van.
-A sweep iránya az alfa előjelétől függ: balról jobbra vagy jobbról balra haladunk, és folyamatosan
-vezetjük a maximális \"árnyékhatár\" értéket.
+A napsugarak párhuzamosak, ezért minden töréspontot egyetlen számmal jellemezhetünk: a g = h - k*x értékkel,
+ahol k a sugarak meredeksége (k = cos(alfa) / sin(alfa)). Egy pont akkor van árnyékban, ha a fény felőli oldalon
+van olyan töréspont, amelynek g-értéke nagyobb nála. A fény irányában haladva nyilvántartjuk az eddigi
+g-maximumot. Egy szakasz teljesen árnyékos, ha egyik végpontjának g-értéke sincs a maximum felett (a sugárral
+egy egyenesbe eső szakasz még megvilágított), részben árnyékos, ha a maximum a két végpont g-értéke közé esik.
+A kimeneti listákat növekvő sorrendbe rendezzük.
 
-Idő: O(M)
+Idő: O(M log M) (a rendezés miatt).
+*/
+/*
+Hint 1: || A sugarak párhuzamosak, ezért minden töréspontot egy szám jellemez: az a magasság, ahol a rajta átmenő
+sugár a tengelyt metszi (g = h - k*x). Egy pont pontosan akkor árnyékos, ha a fény felőli töréspontok közül
+valamelyiknek nagyobb a g-értéke. ||
+Hint 2: || Haladj végig a töréspontokon a fény irányában (alfa < 0: balról jobbra, alfa > 0: jobbról balra), és
+közben tartsd nyilván az eddigi legnagyobb g-értéket. Egy szakasz végpontjainak g-értékét ezzel a maximummal
+összevetve eldöntheted, hogy a szakasz teljesen vagy csak részben árnyékos-e. ||
 */
 
 #include <bits/stdc++.h>
@@ -86,11 +95,15 @@ int main() {
     }
 
     cout << "NEM\n";
+    // A megvilágítás irányából első árnyékos szakasz: az eredeti bejárási sorrend első eleme.
     if (!fullShadow.empty()) {
         cout << fullShadow.front() << "\n";
     } else {
         cout << "0\n";
     }
+    // Az alfa > 0 ágban a bejárás csökkenő, ezért a listákat ki írás előtt rendezzük.
+    sort(fullShadow.begin(), fullShadow.end());
+    sort(partialShadow.begin(), partialShadow.end());
 
     for (int idx : fullShadow) {
         cout << idx << ' ';

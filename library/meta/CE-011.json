@@ -1,0 +1,50 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2018/4. Fibonacci felbontások",
+    "method": "Zeckendorf-futamok rendezett blokkos listában, 2×2-es mátrixok szegmensfán.",
+    "category": "Zeckendorf-felbontás, mátrixszorzat",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fibonacci",
+      "zeckendorf",
+      "szegmensfa"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2018/5. Játékok",
+    "method": "Osztók szerinti szorzattá bontások visszalépéses bejárása, az összegek halmazba gyűjtése.",
+    "category": "Számelmélet, szorzattá bontás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "számelmélet",
+      "osztók",
+      "rekurzió"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2018/6. Háromszögek",
+    "method": "Szögrendezés az 1. pont körül, majd Graham-bejárás vagy nem konvex csúcsok törlése.",
+    "category": "Konvex burok, körüljárási lekérdezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "interaktív",
+      "körüljárás"
+    ],
+    "note": "Zsűri-specialitás: a megoldás a könyvtári trilib.h modult használja (get_n, is_clockwise, give_answer), stdin-ről nem olvas, ezért a validátor fordítása a hiányzó trilib.h miatt hibás. Kézzel ellenőrizendő: a hivatalos trilib.h-val fordítva a be1/be2 mintákon a válasz 4 és 5, és az is_clockwise-hívások száma 1 000 000 alatt marad (n = 40 000 esetén kb. 760 000). A munkakönyvtári próbamodullal (library/.work/CE-011/tri6_scratch/harness) a minták és 156 kis eset helyes.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/96. Ádám vagy Éva nyert többször? *",
+    "method": "Két számlálóval megszámoljuk az A és E karaktereket, és összevetjük őket",
+    "category": "Számlálás, többségi döntés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "szöveg", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/97. Nemzetközi vonat állomásai **",
+    "method": "Percekre váltott időtengely, modulo 1440 haladás; éjfélekre a megállás vagy szakasz vizsgálata",
+    "category": "Időszámítás, éjfél-vizsgálat",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["időszámítás", "modulo", "intervallum"],
+    "note": "Az éjfél a napok 0:00 pillanata; a megállás zárt, a haladás nyílt intervallumként szerepel. A második minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/98. Bűvös **",
+    "method": "Hibátlan sor összegéből kapott S alapján minden cellát kipróbálunk, és ellenőrizzük a sorokat, oszlopokat",
+    "category": "Mátrix: sor- és oszlopösszegek",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "összeg", "ellenőrzés"],
+    "note": "Bűvös négyzetnek csak a sor- és oszlopösszegeket tekintettem (az átlókat nem), ahogy a feladat szövege és a minta is ezt mutatja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/99. Időjárás előrejelzés **",
+    "method": "Három külön bejárás: futó számláló a fagyos napokra, szomszédos különbségek, 2N-szeres egész összevetés",
+    "category": "Tömbbejárás több kérdésben",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "szakasz", "összehasonlítás"],
+    "note": "Fagyos nap: a napi maximum 0 fok alatt van (a 0 fokos napot nem vettem fagyosnak). Szomszédos napok változása: a napi minimumok vagy maximumok különbségének nagyobbika; az átlagos hőmérséklettel számolt változás a 2. mintával nem egyezne. Mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

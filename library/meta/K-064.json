@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/13. Legkorábbi környezetvédelmi világnap *",
+    "method": "Egy menetes minimumkiválasztással az évszám szerint; az ország sorszámát tároljuk, 0 esetén kérdőjel.",
+    "category": "Minimumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "kiválasztás", "sorbeolvasás"],
+    "note": "A bemenet harmadik része (évintervallum) nem szűr az eredményre: a két mintában (ki1, ki2) a teljes adathalmaz legkorábbi eseménye a helyes válasz, ezért nem használjuk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/14. Legközelebbi események *",
+    "method": "Rendezett adatoknál a szomszédos évek különbségének minimumát keressük; egyenlőnél az első pár marad.",
+    "category": "Szomszédos különbségek minimuma",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "szomszédos elemek", "rendezettség"],
+    "note": "A kategóriák és az évintervallum nem szűrnek: a ki2 mintában a 46-48 pár (kívül esik az 1000-1111 intervallumon) a helyes válasz, ki1-ben pedig az 1453-1522 pár (kívül esik az 1000-1500 intervallumon). A rendezettséget a feladatszöveg (szigorú év szerinti sorrend) alapján vettük.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/15. Legmelegebb nap *",
+    "method": "Egy menetes maximumkeresés indexszel, szigorú összehasonlítással, így az első előfordulás marad.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "kiválasztás", "index"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/16. Legmesszebbi település Kukutyintól *",
+    "method": "Egy menetes maximumkeresés a Kukutyintól mért távolság szerint, szigorú összehasonlítással az első marad.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "kiválasztás", "döntetlen"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

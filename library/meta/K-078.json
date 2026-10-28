@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/64. Földrengésmentes időszak",
+    "method": "Intervallumok kezdőperc szerinti rendezése, majd a két intervallum közötti szabad percek maximuma.",
+    "category": "Intervallumok, rések maximuma",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "rendezés", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/65. Közeli legmelegebb nap",
+    "method": "Csúszóablak-maximum monoton deque-kel, indexekkel, O(N) időben.",
+    "category": "Csúszóablak, maximumkiválasztás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "deque", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/66. Völgy ***",
+    "method": "Csökkenő monoton verem, kivételkor völgy-párok képzése; a legnagyobb r-l a válasz.",
+    "category": "Monoton verem, völgyek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["verem", "monoton", "völgy"],
+    "note": "A „magasabb” szigorú értelmezést használtam (a közbülső pontok mindegyike kisebb a két szélső pont minimumánál). A minta ezt nem dönti el: a szigorú és a nem szigorú értelmezés mintán is ugyanazt adja (4 és 594).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/67. Gyros **",
+    "method": "Végigpróbáljuk a vegyes gyrosok számát; a többi típus ebből független, egyszerű képlettel adódik.",
+    "category": "Erőforrás-elosztás, maximum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "erőforrás", "végigpróbálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

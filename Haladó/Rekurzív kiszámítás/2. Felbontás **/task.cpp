@@ -1,15 +1,11 @@
 /*
 Megoldás lényege:
-Az 123456789 számjegyei közé csak + vagy - jelet tehetünk, ezért legfeljebb 2^8
-lehetőség van. Minden jelkombinációt végigpróbálunk, kiszámítjuk az összeget, és ha
-pontosan a keresett számot kapjuk, kiírjuk az adott felbontást.
-
+A 123456789 számjegyei közé mindenhova kerülhet + jel, - jel, vagy semmi (ekkor a számjegyek összefűződnek), így összesen 3^8 = 6561 kifejezés van. Ezeket mind végigpróbáljuk: minden kifejezés értékét az előjeles tagok összegeként számoljuk, és az első olyan kifejezést írjuk ki, amelynek értéke N. Ha egyik sem ad N-et, a válasz LEHETETLEN. Az időigény konstans, mert 6561 kifejezés van, mindegyik 8 lépéses.
 */
-
-// Hint 1: || Csak nyolc döntés van, ezért a teljes bejárás bőven belefér. ||
-// Hint 2: || A kifejezés mindig az 1 számmal indul, utána minden számjegy elé egy jel kerül. ||
-// Hint 3: || Ha megtaláltad a megfelelő maszkot, a konkrét kifejezés szövegét már könnyű összerakni. ||
-
+/*
+Hint 1: || Csak nyolc döntés van, ezért a teljes bejárás bőven belefér. ||
+Hint 2: || A kifejezés mindig az 1-essel indul, a többi számjegy elé + jel, - jel vagy semmi kerülhet. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

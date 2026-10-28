@@ -1,0 +1,14 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 2. forduló/5. Négyszög",
+    "method": "Átlók metszése: kis N-re összes négyes, nagy N-re dominál egyenes és két külső pont",
+    "category": "Geometria: konvex négyszög",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["geometria", "konvexitás", "egyenesek"],
+    "note": "Az N>=7 eset, ahol nincs N-2 pontos egyenes (VAN), csak rácson (8x8-ig) kimerítően és véletlen teszteken ellenőrzött, bizonyítása hiányzik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

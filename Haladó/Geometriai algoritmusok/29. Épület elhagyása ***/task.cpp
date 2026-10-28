@@ -1,6 +1,14 @@
 /*
 Megoldás lényege:
-Akadályok között kell érvényes, lehetőleg minimális útvonalat keresni. A geometriai korlátokat a szakaszok és téglalapok metszésvizsgálata adja.
+Két helyiség akkor járható át egymásból, ha közös falszakaszuk pozitív hosszú. Minden x és y koordinátájú egyenesen
+a falakat rendezés után kétmutatós összefésüléssel párosítjuk, és az átfedő szakaszok hosszát helyiségenként összegezzük.
+Egy helyiség akkor kijáratos, ha a kerületének nem minden hossza van szomszédos helyiséggel lefedve. Ezután szélességi
+bejárással (BFS) a H helyiségből a legközelebbi kijáratos helyiség távolságát adjuk meg. Idő: O(N log N).
+*/
+/*
+Hint 1: || Két helyiség között pontosan akkor van átjárás, ha közös falszakaszuk pozitív hosszú. Keresd meg az azonos x-, illetve y-koordinátájú falak átfedő szakaszpárjait. ||
+Hint 2: || Minden átfedő szakaszpárnál növeld mindkét helyiség „lefedett hossz” értékét az átfedés hosszával. Ha ez kisebb a helyiség kerületénél, a helyiség kijáratos. ||
+Hint 3: || A szomszédsági gráfban szélességi bejárás adja a legkisebb távolságot a H helyiségtől a legközelebbi kijáratos helyiségig. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -21,7 +29,7 @@ struct SideEvent {
 };
 
 static void processGroup(vector<IntervalSide>& first, vector<IntervalSide>& second,
-                         vector<vector<int>>& adj, vector<char>& boundary) {
+                         vector<vector<int>>& adj, vector<long long>& covered) {
     sort(first.begin(), first.end(), [](const IntervalSide& a, const IntervalSide& b) {
         if (a.l != b.l) return a.l < b.l;
         if (a.r != b.r) return a.r < b.r;
@@ -36,12 +44,13 @@ static void processGroup(vector<IntervalSide>& first, vector<IntervalSide>& seco
     int i = 0, j = 0;
     while (i < (int)first.size() && j < (int)second.size()) {
         if (first[i].r <= second[j].l) {
-            boundary[first[i].id] = 1;
             ++i;
         } else if (second[j].r <= first[i].l) {
-            boundary[second[j].id] = 1;
             ++j;
         } else {
+            long long len = (long long)min(first[i].r, second[j].r) - max(first[i].l, second[j].l);
+            covered[first[i].id] += len;
+            covered[second[j].id] += len;
             adj[first[i].id].push_back(second[j].id);
             adj[second[j].id].push_back(first[i].id);
             if (first[i].r < second[j].r) {
@@ -53,15 +62,6 @@ static void processGroup(vector<IntervalSide>& first, vector<IntervalSide>& seco
                 ++j;
             }
         }
-    }
-
-    while (i < (int)first.size()) {
-        boundary[first[i].id] = 1;
-        ++i;
-    }
-    while (j < (int)second.size()) {
-        boundary[second[j].id] = 1;
-        ++j;
     }
 }
 
@@ -92,6 +92,7 @@ int main() {
     }
 
     vector<vector<int>> adj(n + 1);
+    vector<long long> covered(n + 1, 0);
     vector<char> boundary(n + 1, 0);
 
     auto build = [&](vector<SideEvent> events) {
@@ -112,12 +113,17 @@ int main() {
                 else rightSides.push_back({events[pos].l, events[pos].r, events[pos].id});
                 ++pos;
             }
-            processGroup(leftSides, rightSides, adj, boundary);
+            processGroup(leftSides, rightSides, adj, covered);
         }
     };
 
     build(verticalEvents);
     build(horizontalEvents);
+
+    for (int i = 1; i <= n; ++i) {
+        long long perimeter = 2LL * ((long long)(rects[i].x2 - rects[i].x1) + (rects[i].y2 - rects[i].y1));
+        boundary[i] = covered[i] < perimeter;
+    }
 
     vector<int> dist(n + 1, -1);
     queue<int> q;

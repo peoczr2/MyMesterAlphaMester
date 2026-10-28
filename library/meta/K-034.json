@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/31. Utasszámlálás *",
+    "method": "Lineáris bejárás, két lista: a zsúfolt és az üres buszok sorszámainak gyűjtése",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/32. Helyből bukott *",
+    "method": "Lineáris bejárás, egy feltétel szerinti számlálás",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "számlálás", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/33. Nagy és olcsó lakások *",
+    "method": "Két menet: először az átlagár kiszámítása, utána a feltételnek megfelelő lakások kiválogatása",
+    "category": "Átlag és kiválogatás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["kiválogatás", "átlag", "tömb"],
+    "note": "Bizonytalan pont: az „átlagár” értelmezése nem egyértelmű. A megoldás a négyzetméterenkénti árak számtani közepét használja; az összár / összterület olvasat is átmegy a két mintán, de a véletlen teszteim közel 28%-ában más eredményt ad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/34. Nem érte meg a leértékelés *",
+    "method": "Lineáris bejárás, termékenként a két heti haszon összehasonlítása",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "haszon", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

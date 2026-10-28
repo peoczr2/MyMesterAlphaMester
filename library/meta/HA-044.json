@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/17. Kannák *",
+    "method": "Állapottér-bejárás (BFS) a három kanna tartalmán; a negyedik kanna a maradékot tartalmazza.",
+    "category": "Gráf: állapottér-keresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "állapottér"],
+    "note": "A minta.zip-ben csak bemeneti fájl van (be1, be2), kimeneti nincs, ezért a validátor „nincs minta” állapotot ad. A PDF példáján (13 11 5) a kimenet 4 9, ez egyezik. A be2 (18 30 39) futása 0,00 s, az időlimit 0,5 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/18. Képtár **",
+    "method": "Mélységi bejárás a szomszédok óramutató szerinti sorrendjében, a szülő után kezdve.",
+    "category": "Gráf: mélységi bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "mélységi bejárás", "bejárás"],
+    "note": "A minta.zip-ben csak bemeneti fájl van, ezért „nincs minta” állapot. A PDF példáján (5 terem) a kimenet pontosan 1 2 3 4 3 2 1 5 1, ez egyezik. A szomszédsági listák az óramutató járásával ellentétes sorrendben vannak; a szülő utáni elemtől indulva a bejárás minden falszakaszt pontosan egyszer ad (400 véletlen, szimmetrikus alaprajzon ellenőrizve; a sorszám szerinti sorrend ezt nem teljesíti). A be2 (881 terem) listái nem szimmetrikusak és önhurkokat is tartalmaznak, így nem érvényes alaprajz; a program ezen is lefut, 0,00 s, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/19. Két út ***",
+    "method": "Csúcsszétbontásos folyam: két csúcsdiszjunkt út 1-ből U-ba és V-be.",
+    "category": "Folyam: csúcsdiszjunkt utak",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "folyam", "irányított gráf"],
+    "note": "A minta.zip-ben csak bemeneti fájl van, ezért „nincs minta” állapot. Több helyes útpár lehet, a feladat szerint bármelyik megadható, ezért a minta „kézi”: 600 véletlen kis DAG-on ellenőriztem a kimenet érvényességét (élek, diszjunktság, végpontok) és a létezést kimerítő kereséssel. A PDF példáján a kimenet 5 3 / 1 2 4 7 9 / 1 3 5, ez érvényes (a PDF mintakimenete 4 4 / 1 3 6 9 / 1 2 4 5, szintén érvényes). A be2 (55 város) futása 0,00 s, az időlimit 3,5 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/2. Biztonsági szolgálat *",
+    "method": "Kétszeresen összefüggő blokkok (Tarjan) és az A–B út a blokk-vágópont fán.",
+    "category": "Gráf: kétszeresen összefüggő komponensek",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "mélységi bejárás", "vágópont"],
+    "note": "A minta.zip-ben csak bemeneti fájl van, ezért „nincs minta” állapot. A második sor tetszőleges sorrendben lehet, ezért a minta „kézi”: a csúcshalmazt 500 véletlen kis gráfon és 400 többélűs gráfon kimerítő úteléréssel ellenőriztem, eltérés nem volt. A PDF példáján a kimenet 4 / 2 3 4 10, ez egyezik. A be2 (N=90000, M=480000) futása 0,11 s, az időlimit 0,3 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

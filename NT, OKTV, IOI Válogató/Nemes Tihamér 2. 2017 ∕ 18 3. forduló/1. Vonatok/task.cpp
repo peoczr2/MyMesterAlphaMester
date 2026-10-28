@@ -1,12 +1,20 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
     Minden vágányhoz külön várakozási sor tartozik. A vonatok akkor kerülnek
     egy vágány sorába, amikor az adott szakaszra ténylegesen indulhatnának.
     A sor rendezési kulcsa az indulási idő, azon belül a Kukutyinból induló
     vonat élvez elsőbbséget, majd az eredeti input-sorrend dönt.
+    Eseményvezérelt szimulációt futtatunk: az eseményeket időrendben dolgozzuk
+    fel, így az időigény O(M·N·(log(M·N) + N)).
 */
+/*
+Hint 1: || Minden vonat útját szakaszonként követd: egy szakasz befejezése után a vonat csak a megállóban töltött minimális idő letelte után lesz készen a következő szakaszra. Mivel a rendszer csak az események pillanataiban változik, eseményenként haladj, nem percenként. ||
+
+Hint 2: || Szakaszonként tarts egy prioritási sort a várakozó vonatokról (a készenlét ideje, majd az irány, majd a sorszám szerint), és egy közös eseménysort (idő, típus, szakasz, vonat). Ha egy szakasz szabad, és a sor elején álló vonat már készen áll, azonnal indítsd el. ||
+
+Hint 3: || Egy időpontban előbb dolgozd fel a befejezéseket, utánuk tedd a készen álló vonatokat a megfelelő sorokba, és csak ezután próbáld minden szakaszon elindítani a sorok elejét. A végén az érkezéseket időrendbe rendezed, egyenlő időnél a Piripócsra érkező vonat kerül előre. ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 struct Train {
     int dir;         // 1 = Kukutyin -> Piripócs, 2 = fordítva

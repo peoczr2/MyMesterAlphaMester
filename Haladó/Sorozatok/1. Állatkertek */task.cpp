@@ -2,12 +2,12 @@
 Megoldas lenyege:
 Mindket allatkert nev-peldany parokat ad meg, ezert egy gyors nev->peldanyszam kereses
 eseten el tudjuk donteni, hogy az adott faj csere vagy ajandekozas szempontjabol jo-e.
-A sorrendhez nem kell rendezni: eleg az eredeti bemeneti sorrendben vegigmenni a fajokon,
-es csak a feltetelnek megfelelo neveket kiirni.
+A kimenet nevei abecerendben szerepelnek (a mintak is igy), ezert a harom listat kiiras elott rendezzuk.
+A fajok egy menetben vegigjarhatok, es a feltetelnek megfelelo neveket gyujtjuk ki.
 */
 /*
 Hint 1: || A fajok neve egyedi az adott allatkertben, ezert egy taroloban egyszeruen megkeresheto, hogy a masik allatkertben szerepel-e. ||
-Hint 2: || A kimeneti sorrend a bemeneti sorrendet koveti, tehat kulon rendezest nem kell vegezni. ||
+Hint 2: || A mintakimenetben a nevek abecerendben allnak, ezert a kiiras elott rendezd a harom listat. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -74,6 +74,10 @@ int main() {
             ajandekRatot.push_back(name);
         }
     }
+
+    sort(csere.begin(), csere.end());
+    sort(ajandekKukutyin.begin(), ajandekKukutyin.end());
+    sort(ajandekRatot.begin(), ajandekRatot.end());
 
     auto printLine = [](const vector<string> &names) {
         for (size_t i = 0; i < names.size(); ++i) {

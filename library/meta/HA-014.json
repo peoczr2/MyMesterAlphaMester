@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/20. Legelszigeteltebb falu *",
+    "method": "Minden faluhoz a rá illeszkedő utak minimumát tároljuk, majd a maximumot keressük.",
+    "category": "Gráf: legközelebbi szomszéd",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "minimum", "szomszédság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/21. Legnagyobb átviteli sebesség *",
+    "method": "Élek csökkenő sebesség szerinti Union-Find egyesítése; P és Q összekötésekor megvan az érték.",
+    "category": "Gráf: maximin út",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "feszítőfa", "unió-keresés"],
+    "note": "Több helyes útvonal létezik: az érték egyezik a mintával (30 és 84), az útvonalat az ellenőrző program igazolta. A be2 mintájában más, azonos értékű útvonal szerepel; a feladatszöveg szerint bármelyik megadható.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/22. Mikulás *",
+    "method": "Többszörösen célzott tanulók felesleges éleit átirányítjuk a senki által nem célzott tanulókhoz, ciklikus párosítással.",
+    "category": "Gráf: permutáció, módosítás",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "permutáció", "párosítás"],
+    "note": "Több helyes módosításkészlet létezik: be1-re 4 1, 5 6, 9 7 a mintáé (5 6, 6 1, 9 7) helyett, az ellenőrző program igazolta. A be2 minta ellentmondásos: a fejlécében 14243 áll, a fájlban csak 4474 módosítás van, és ezek alkalmazása után is 31493 tanuló marad ajándék nélkül. A saját K=32981 a senkitől nem kapó tanulók száma, ez alsó korlát, és a kimenet ennyi módosítással permutációt ad.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/23. Régiók *",
+    "method": "Szélességi bejárás a legfeljebb T távolságú települések között; a komponensek adják a régiókat.",
+    "category": "Gráf: komponensek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "komponens", "bfs"],
+    "note": "A be2 minta régiótagjai nincsenek növekvő sorrendben (például a 3. sor: 3 1752 3942 6486 262 5383), a feladatszöveg szerint pedig növekvő kell legyen. A régiók partíciója (K=2928) egyezik a mintával; az ellenőrző program igazolta a rendezett saját kimenetet.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

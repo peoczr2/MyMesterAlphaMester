@@ -1,13 +1,7 @@
 /*
-Feladat: M segélyadó ország van, az i-edik C_i csomagot küld, de csak az 1..E_i országokba. Osszuk el a csomagokat úgy, hogy a kapott csomagok maximuma és minimuma közti különbség minimális legyen.
-Ötlet: Bináris keresés a D különbségre. Egy fix D-re azt vizsgáljuk, létezik-e olyan L minimum, hogy minden ország [L, L+D] intervallumban kapjon.
-Prefix-korlát: jelölje P(t) az összes olyan donor csomagját, amelynek E_i <= t. Ezek a csomagok kötelezően az első t országba mennek, tehát S_t >= P(t), ahol S_t az első t ország összes kapott csomagja.
-Ha minden ország [L, L+D]-ben kap, akkor:
-  - S_t <= t*(L+D)
-  - S_t >= t*L
-  - S_t >= P(t)
-  - a suffix legalább L-et kapjon: C-P(t) >= (N-t)*L (t < N)
-Ezekből L-re alsó/felső korlátok adódnak; ha metszetük nem üres, D megvalósítható.
+Megoldás lényege: A legkisebb D különbséget bináris kereséssel keressük: egy fix D-re azt kell eldönteni, van-e olyan L, hogy minden ország [L, L+D] közé eső számú csomagot kapjon. Az E_i-ig szóló csomagok csak az első E_i országba mehetnek, ezért minden t-re a t-ig szóló csomagok összege (P(t)) alsó korlát az első t ország összes kapott csomagjára. Ezekből és a teljes C összegből L-re lineáris korlátok adódnak; D akkor megvalósítható, ha ezek metszete nem üres. A kiértékelés a donorok E_i értékei által meghatározott kandidátspontokon megy végig, így az időigény O(M log M + M log C).
+*/
+/*
 Hint 1: || A donorok prefix-korlátot adnak: az E_i-ig elérő csomagokat nem lehet későbbi országokba küldeni. ||
 Hint 2: || Fix D mellett az ismeretlen L-re írj fel minden szükséges korlátot. ||
 Hint 3: || A minimális D bináris kereséssel található meg. ||

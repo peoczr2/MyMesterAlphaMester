@@ -1,9 +1,12 @@
 /*
-Feladat: A robot csak balról jobbra szállíthat. Egy konténer nagyobbra vagy üres helyre tehető. A cél a lehető legtöbb felszabadított hely (minél kevesebb végső torony).
-Ötlet: Egy végső toronyhoz tartozó konténerek index szerint növekvő láncot adnak, és a méretüknek is szigorúan növekednie kell (kisebb mehet nagyobbra). Tehát a teljes sorozatot minimális számú szigorúan növekvő értékű részsorozatra kell bontani index-sorrendben. Ez standard mohó: minden új méretet arra a láncra tesszük, amelynek utolsó eleme a lehető legnagyobb, de még kisebb nála. A láncok száma minimális, így a szabad helyek száma maximális. A műveletekhez minden lánc elemeit a lánc utolsó pozíciójára pakoljuk jobbról balra haladó forrás-sorrendben.
-Hint 1: || Egy toronyba csak olyan konténerek kerülhetnek, amelyek indexe és mérete is növekvő láncot alkot. ||
-Hint 2: || Minimális láncszámhoz „best fit” kell: legnagyobb lehetséges kisebb farokra illesztés. ||
-Hint 3: || Kiírásnál egy láncon belül a forrásokat fordított indexsorrendben mozgasd ugyanarra a célhelyre. ||
+Megoldás lényege:
+A 59. feladat számlálásának döntéseit követjük, de most a mozgatásokat is rögzítjük. Minden konténer vagy a helyén marad (saját torony alja), vagy egy jobbra lévő, befogadó toronyba mozog, és így egy szabad hely keletkezik. A célpozíciókat jobbról balra haladva választjuk: saját torony esetén a méretnél nagyobb tornyok közül a következő még szabadot, szabad torony esetén az első olyan tornyot, amelyben az adott méret még nem szerepel. Egy torony alját csak akkor lehet betölteni, ha a korábbi tartalmát már kiürítettük, ezért a mozgatásokat fába rendezzük (a szülő a célpozíció), és a gyerekeket méret szerint csökkenő sorrendben, mélységi bejárással írjuk ki. Az időigény O(N log N).
+*/
+/*
+Hint 1: || A mozgatások mindig jobbra mennek, ezért minden konténer legfeljebb egyszer mozog, és a célhelye tőle jobbra van. ||
+Hint 2: || Egy toronyban a méretek felfelé egyre kisebbek; a jobbról balra haladó döntések így csak a méretek előfordulásától függenek. ||
+Hint 3: || Egy torony alját csak akkor lehet betölteni, ha a konténer korábban onnan kiment; ezért a szülő mozgatását a gyerekei előtt kell kiírni. ||
+Hint 4: || Egy torony gyerekeit méret szerint csökkenően kell kiírni, különben a tetejénél nagyobb elem rakódna rá. ||
 */
 
 #include <bits/stdc++.h>
@@ -13,52 +16,88 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int N;
-    int Kmax;
-    cin >> N >> Kmax;
-    (void)Kmax;
+    int n;
+    long long k;
+    cin >> n >> k;
+    vector<long long> a(n + 1);
+    for (int i = 1; i <= n; ++i) cin >> a[i];
 
-    vector<int> a(N + 1);
-    for (int i = 1; i <= N; ++i) cin >> a[i];
+    vector<long long> caps;          // saját tornyok alja (pozíció szerint), növekvő
+    vector<int> ownPos;              // a saját tornyok pozíciója
+    map<long long, int> jOwn;        // saját toronyba került azonos méretek száma
+    vector<int> freeList;            // nem üres szabad tornyok pozíciója
+    vector<int> emptyStack;          // felszabadult, még üres pozíciók
+    unordered_set<unsigned long long> inFree; // (szabad torony sorszáma, méret) párok
+    map<long long, int> ptrFree;     // szabad tornyok keresési mutatója méretenként
+    map<long long, int> cntFree;     // szabad toronyba került azonos méretek száma
+    vector<int> parent(n + 1, 0);    // a konténer célpozíciója
+    vector<char> vacated(n + 1, 0);
 
-    // tailValue -> chain ids ending with this value
-    map<int, vector<int>> tails;
-    vector<vector<int>> chains;
-
-    auto pop_chain_with_tail = [&](int tail) {
-        auto it = tails.find(tail);
-        int cid = it->second.back();
-        it->second.pop_back();
-        if (it->second.empty()) tails.erase(it);
-        return cid;
+    auto key = [](size_t idx, long long v) {
+        return ((unsigned long long)idx << 28) | (unsigned long long)v;
     };
 
-    for (int i = 1; i <= N; ++i) {
-        auto it = tails.lower_bound(a[i]);
-        int cid;
-        if (it == tails.begin()) {
-            cid = (int)chains.size();
-            chains.push_back({});
-        } else {
-            --it;
-            cid = pop_chain_with_tail(it->first);
+    for (int p = n; p >= 1; --p) {
+        long long v = a[p];
+        int greater = (int)(caps.end() - upper_bound(caps.begin(), caps.end(), v));
+        if (greater > jOwn[v]) {
+            // saját torony: a v-edik (0-tól) nagyobb alj következő még szabad tornyába
+            size_t idx = (size_t)(upper_bound(caps.begin(), caps.end(), v) - caps.begin()) + jOwn[v];
+            jOwn[v]++;
+            parent[p] = ownPos[idx];
+            vacated[p] = 1;
+            emptyStack.push_back(p);
+            continue;
         }
-        chains[cid].push_back(i);
-        tails[a[i]].push_back(cid);
+        if ((long long)freeList.size() > cntFree[v]) {
+            int &ptr = ptrFree[v];
+            size_t i = (size_t)ptr;
+            while (inFree.count(key(i, v))) ++i;
+            inFree.insert(key(i, v));
+            cntFree[v]++;
+            ptr = (int)i + 1;
+            parent[p] = freeList[i];
+            vacated[p] = 1;
+            emptyStack.push_back(p);
+            continue;
+        }
+        if (!emptyStack.empty()) {
+            int j = emptyStack.back();
+            emptyStack.pop_back();
+            freeList.push_back(j);
+            inFree.insert(key(freeList.size() - 1, v));
+            cntFree[v]++;
+            parent[p] = j;
+            vacated[p] = 1;
+            emptyStack.push_back(p);
+            continue;
+        }
+        caps.push_back(v);
+        ownPos.push_back(p);
     }
 
-    vector<pair<int,int>> ops;
-    for (const auto& ch : chains) {
-        if ((int)ch.size() <= 1) continue;
-        int base = ch.back();
-        for (int t = (int)ch.size() - 2; t >= 0; --t) {
-            ops.push_back({ch[t], base});
+    // a mozgatások fája: minden mozgó konténer szülője a célpozíció
+    vector<vector<int>> ch(n + 1);
+    for (int x = 1; x <= n; ++x) if (vacated[x]) ch[parent[x]].push_back(x);
+    for (auto &c : ch) sort(c.begin(), c.end(), [&](int x, int y) { return a[x] > a[y]; });
+
+    // bejárás: a célpozícióba érkezők méret szerint csökkenően, a szülő áthelyezése után
+    vector<pair<int,int>> out;
+    vector<pair<int,size_t>> st;
+    for (int r : ownPos) {
+        st.push_back({r, 0});
+        while (!st.empty()) {
+            int s = st.back().first;
+            size_t idx = st.back().second;
+            if (idx == ch[s].size()) { st.pop_back(); continue; }
+            st.back().second++;
+            int x = ch[s][idx];
+            out.push_back({x, s});
+            st.push_back({x, 0});
         }
     }
 
-    cout << ops.size() << '\n';
-    for (auto [i, j] : ops) {
-        cout << i << ' ' << j << '\n';
-    }
+    cout << out.size() << '\n';
+    for (auto [i, j] : out) cout << i << ' ' << j << '\n';
     return 0;
 }

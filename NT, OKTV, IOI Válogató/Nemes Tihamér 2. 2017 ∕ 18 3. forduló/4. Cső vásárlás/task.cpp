@@ -1,10 +1,17 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
     Teljesen kitöltött hosszt kell venni, ezért unbounded knapsack DP-t használunk
     minimális költséggel, és az elődmutatókból visszaállítjuk a vásárlást.
+    Az időigény O(N·M), ami a korlátok mellett bőven belefér.
 */
+/*
+Hint 1: || Mivel pontosan M hosszt kell megvásárolni, a részproblémák: dp[l] az l hosszú, pontosan kitöltött csővezeték minimális ára, ha elérhető. Kezdetben dp[0] = 0, a többi végtelen, és egy üzlet csöve tetszőleges számban vásárolható. ||
+
+Hint 2: || Üzletenként haladva a hosszakat növekvő sorrendben frissítsd: dp[l] frissíthető a dp[l-H_i] + A_i értékkel, így ugyanarról az üzletről több csövet is figyelembe veszel. Frissítéskor jegyezd fel az előző hosszt és az üzletet. ||
+
+Hint 3: || Ha dp[M] végtelen, a válasz 0. Különben M-ből kiindulva a feljegyzett előző hosszakat visszafelé követve eljutsz 0-ig, és minden lépésnél az adott üzletből egy darabbal többet számolsz. ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

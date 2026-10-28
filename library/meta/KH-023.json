@@ -1,0 +1,63 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/1. Személyazonositó jel - 2004. május",
+    "method": "Számjegyek szétbontása, súlyozott ellenőrző összeg 11-gyel, évek és sorszámok rendezett összehasonlítása.",
+    "category": "Karakterlánc-feldolgozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "karakterlánc",
+      "ellenőrző jegy",
+      "rendezés"
+    ],
+    "note": "Azonos születési dátum és sorszám esetén (a feladat ezt nem tárgyalja) az első személyt írjuk ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/10. Foci - 2007. november",
+    "method": "Egy bejárás: forduló szűrése, fordítás félidő-állással, gólösszegek és végeredmény-fajták gyűjtése rendezett párral.",
+    "category": "Gyűjtés és szűrés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szűrés",
+      "gyűjtés",
+      "map"
+    ],
+    "note": "DÖNTÉS KELL: a minta ki1.txt és ki2.txt nem tartalmazza a feladatszöveg szerinti '#' sorokat, ezért a validátor 'hibás' (minta 0/2). A task.cpp a feladatszöveg szerint írja a '#' sorokat. A '#' sorok nélkül a kimenet mindkét mintával tokenre megegyezik, ezt a független Python-ellenőrzés is igazolja (library/.work/KH-023/t10/check.py). A 3–4. részfeladatban a fordítást véghez vivő csapatok csapatonként egyszer szerepelnek (a 'csapatok száma' szerint); a minta ezt nem dönti el.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/11. SMS - 2008. május",
+    "method": "Egyszeri beolvasás, óránkénti törlés szimulációja, és telefonszám szerinti csoportosítás első előfordulás sorrendben.",
+    "category": "Szimuláció, csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "csoportosítás",
+      "map"
+    ],
+    "note": "Az 5. részfeladat értelmezését (törlés után az érkező üzenet újra tárolódik, a szolgáltatónál maradók számát mérjük) a be2 minta igazolja: 10-et ad. A 2–4. és 7. részfeladat az összes K üzenetre számol, a 6. a barátnő üzeneteire; ezt a minta igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/12. kidolgozás alatt",
+    "method": "",
+    "category": "",
+    "difficulty": 3,
+    "goal": "",
+    "tags": [],
+    "note": "BLOKKOLT: a feladat.pdf csak a 'Kidolgozás alatt' helyőrzőt tartalmazza, nincs feladatszöveg, és nincs minta.zip sem. A feladat nem oldható meg, task.cpp nem készült. A nehézség nincs megbecsülve (a 3 csak helyőrző).",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

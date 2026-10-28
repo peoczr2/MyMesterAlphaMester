@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/53. Villamosmegállók ahol nem állt meg *",
+    "method": "Egy bejárás: az érkezési és indulási idő egyenlőségét ellenőrizzük, a sorszámokat vektorba gyűjtjük.",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "feltétel", "sorszám"],
+    "note": "A végállomás (N.) kimarad: a PDF-példában az 5. állomás is érkezési = indulási idő, a kimenet mégis „1 2”. A minta 2/2, a PDF-példa egyezik. Mért futásidő (N=100): kb. 1 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/54. Villamosmegállók száma ahol keveset várt *",
+    "method": "Egy bejárás: a várakozás (indulás mínusz érkezés) legyen pozitív és K-nál kisebb.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "feltétel", "várakozás"],
+    "note": "A végállomás (N.) kimaradását a feladatszöveg nem mondja ki; a 52. és 55. feladat szövege szerint így értelmezzük. A minta nem dönti el: a végállomáson mindkét mintában Erki = Indi, így nem megálló. A minta 2/2, a PDF-példa (K=6, válasz 2) egyezik. Mért futásidő (N=100): kb. 1 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/55. Villamosmegállók száma ahol megáll *",
+    "method": "Egy bejárás: a megállók számlálása, ahol az indulási idő nagyobb az érkezésnél.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "megállás"],
+    "note": "A 0. és a végállomás (N.) kimarad a feladat szerint. A minta 2/2, a PDF-példa (3) egyezik. Mért futásidő (N=100): kb. 1 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/56. Villamosmegállók száma ahol nem áll meg *",
+    "method": "Egy bejárás: azon megállók számlálása, ahol az érkezési és indulási idő egyenlő.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "megállás"],
+    "note": "A végállomás (N.) kimarad: a PDF-példában az 5. állomás is érkezési = indulási idő, a kimenet mégis 1. A minta 2/2, a PDF-példa egyezik. Mért futásidő (N=100): kb. 1 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

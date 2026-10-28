@@ -1,0 +1,62 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/1. Családfa",
+    "method": "Gyerek-listák építése, szélességi bejárás az 1-es tagtól, maximális mélység",
+    "category": "Fák: szélességi bejárás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["fa", "bejárás", "mélység"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/2. Kihalt állatok",
+    "method": "Különbségtömbös intervallum-lefedés, prefixösszeg, maximum keresése",
+    "category": "Prefixösszeg: intervallumok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "prefixösszeg", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/3. Növény",
+    "method": "Csúszóablakos rekurzió, prefixösszeg-tömb, futó összeg maradékkal",
+    "category": "Rekurzió: prefixösszeg",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["rekurzió", "prefixösszeg", "maradékos"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/4. Ponthatárok",
+    "method": "Jelölőtömb, az egymást követő pontszámok blokkjának lefelé mérése",
+    "category": "Tömb: összefüggő szakaszok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "jelölés", "keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 2. forduló/5. Zsákfalvak",
+    "method": "Fokszám-1 csúcsokból indított láncbejárás, tömbös szomszédsági lista",
+    "category": "Gráf: fokszám, láncok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "fokszám", "lánc"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,236 +1,202 @@
 /*
-Megoldás: A pontok iránya szerint körbejárunk A körül. Minden élhez azt a szögintervallumot
-keressük meg, amelyből A-ból nézve metszi a sugár az élt; ez az a két végponti irány közül az,
-amelyik tartalmazza az él felezőirányát. A körsöprés alatt az aktív szakaszok sorrendje nem
-változik két esemény között, ezért mindig elegendő a legközelebbi metszést nyilvántartani. Egy
-csomópont csak akkor látható, ha a saját sugara mentén nincs nála közelebbi aktív él, és ugyanazon
-az irányon csak a legközelebbi csomópont lehet jelölt.
+Megoldás lényege:
+Az új csomópontból (A) körbejárjuk a csomópontok irányait. Egy csomópont akkor köthető A-hoz, ha
+az A-ból hozzá húzott szakasz nem tartalmaz más csomópontot, és nem metsz útszakaszt. Irányonként
+ezért csak a legközelebbi csomópont lehet jelölt, és azt kell ellenőrizni, hogy a sugár nála
+közelebb nem metsz útszakaszt.
+Az útszakaszok a sugárral való metszéspontjuk távolsága szerint rendezett halmazban vannak. Két
+esemény között ez a sorrend nem változik, mert az útszakaszok nem keresztezik egymást; a közös
+végpontból induló szakaszok sorrendjét a sugár kissé elforgatott helyzete dönti el. Az aktív
+szakaszok közül a legkisebb távolságút hasonlítjuk össze a jelölt csomóponttal.
+Idő: O(N log N).
 */
-
+/*
+Hint 1: || Az A-ból nézve minden csomópontnak van iránya. Ha egy irányban több csomópont is van,
+csak a legközelebbi köthető hozzá, a többi takarásban van. Ezért elég irányonként egy jelöltet
+vizsgálni. ||
+Hint 2: || Egy útszakasz az A-ból nézve egy 180°-nál kisebb szögtartományt fed le, amelyet a
+végpontjainak iránya határol. Ennek a két határirányát események jelölik: itt tesszük be a
+szakaszt a rendezett halmazba, illetve vesszük ki belőle. A 0° körül átforduló íveket két részre
+kell bontani. ||
+Hint 3: || Egy irányban a sugár az aktív szakaszokat a távolságuk szerint rendezi. Ha a legközelebbi
+aktív szakasz távolabb van, mint a jelölt csomópont, akkor az A és a csomópont közötti szakasz
+szabad. A távolság összehasonlításához elég a metszéspont paramétere, törtként, egész számokkal. ||
+Hint 4: || Két útszakasz csak közös csomópontban találkozhat, ezért a rendezés két esemény között
+nem változik. Ha több szakasz indul ugyanabból a csomópontból, a sorrendjüket a sugár kicsit
+elforgatott helyzetéből döntsd el. A törlésnél tárold el a beszúrás iterátorát, hogy ne kelljen
+hasonlítani. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
 struct Vec {
-	long long x, y;
+    long long x, y;
 };
 
-static inline long long cross(const Vec& a, const Vec& b) {
-	return a.x * b.y - a.y * b.x;
-}
-
-static inline long long dot(const Vec& a, const Vec& b) {
-	return a.x * b.x + a.y * b.y;
-}
+static inline long long cross(const Vec& a, const Vec& b) { return a.x * b.y - a.y * b.x; }
+static inline long long dot(const Vec& a, const Vec& b) { return a.x * b.x + a.y * b.y; }
 
 static inline int halfPlane(const Vec& a) {
-	return (a.y > 0 || (a.y == 0 && a.x > 0)) ? 0 : 1;
-}
-
-static inline bool sameAngle(const Vec& a, const Vec& b) {
-	return cross(a, b) == 0 && halfPlane(a) == halfPlane(b);
+    return (a.y > 0 || (a.y == 0 && a.x > 0)) ? 0 : 1;
 }
 
 static inline bool angleLess(const Vec& a, const Vec& b) {
-	int ha = halfPlane(a), hb = halfPlane(b);
-	if (ha != hb) return ha < hb;
-	return cross(a, b) > 0;
+    int ha = halfPlane(a), hb = halfPlane(b);
+    if (ha != hb) return ha < hb;
+    return cross(a, b) > 0;
 }
 
-static inline bool angleLE(const Vec& a, const Vec& b) {
-	return angleLess(a, b) || sameAngle(a, b);
-}
-
-static inline bool onCCWArc(const Vec& a, const Vec& b, const Vec& c) {
-	if (sameAngle(a, b)) return sameAngle(a, c);
-	if (angleLess(a, b)) return angleLE(a, c) && angleLE(c, b);
-	return angleLE(a, c) || angleLE(c, b);
+static inline bool sameAngle(const Vec& a, const Vec& b) {
+    return cross(a, b) == 0 && halfPlane(a) == halfPlane(b);
 }
 
 static inline Vec normalizeDir(Vec v) {
-	long long g = std::gcd(llabs(v.x), llabs(v.y));
-	if (g == 0) return {0, 0};
-	v.x /= g;
-	v.y /= g;
-	return v;
+    long long g = std::gcd(llabs(v.x), llabs(v.y));
+    if (g == 0) return {0, 0};
+    return {v.x / g, v.y / g};
 }
 
-struct Fraction {
-	__int128 num = 0;
-	__int128 den = 1;
-};
-
-static inline bool fracLess(const Fraction& a, const Fraction& b) {
-	return a.num * b.den < b.num * a.den;
-}
-
-struct Segment {
-	Vec p, q;
+struct Part {
+    Vec p, e;
 };
 
 static Vec curDir;
-static vector<Segment> segs;
+static vector<Part> parts;
 
-static Fraction pointKey(const Vec& p) {
-	Fraction f;
-	f.num = (__int128)dot(p, curDir);
-	f.den = (__int128)dot(curDir, curDir);
-	return f;
+struct Key {
+    __int128 num, den, dt;
+};
+
+static Key keyAt(const Part& s, const Vec& d) {
+    Key k;
+    k.num = cross(s.p, s.e);
+    k.den = cross(d, s.e);
+    k.dt = dot(d, s.e);
+    if (k.den < 0) {
+        k.num = -k.num;
+        k.den = -k.den;
+        k.dt = -k.dt;
+    }
+    return k;
 }
 
-static Fraction segKey(const Segment& s) {
-	Vec e{ s.q.x - s.p.x, s.q.y - s.p.y };
-	long long den = cross(curDir, e);
-	if (den == 0) {
-		long long a = dot(s.p, curDir);
-		long long b = dot(s.q, curDir);
-		Fraction f;
-		f.num = min(a, b);
-		f.den = (__int128)dot(curDir, curDir);
-		return f;
-	}
-
-	Fraction f;
-	f.num = cross(s.p, e);
-	f.den = den;
-	if (f.den < 0) {
-		f.num = -f.num;
-		f.den = -f.den;
-	}
-	return f;
-}
-
-struct SegCmp {
-	bool operator()(int a, int b) const {
-		if (a == b) return false;
-		Fraction ka = segKey(segs[a]);
-		Fraction kb = segKey(segs[b]);
-		if (fracLess(ka, kb)) return true;
-		if (fracLess(kb, ka)) return false;
-		return a < b;
-	}
+struct PartCmp {
+    bool operator()(int a, int b) const {
+        if (a == b) return false;
+        Key ka = keyAt(parts[a], curDir), kb = keyAt(parts[b], curDir);
+        __int128 lhs = ka.num * kb.den, rhs = kb.num * ka.den;
+        if (lhs != rhs) return lhs < rhs;
+        lhs = ka.dt * kb.den;
+        rhs = kb.dt * ka.den;
+        if (lhs != rhs) return lhs < rhs;
+        return a < b;
+    }
 };
 
 int main() {
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-	int N;
-	cin >> N;
+    int N;
+    cin >> N;
+    Vec A;
+    cin >> A.x >> A.y;
 
-	Vec A;
-	cin >> A.x >> A.y;
+    vector<Vec> rel(N + 1), dirRaw(N + 1);
+    for (int i = 1; i <= N; ++i) {
+        Vec p;
+        cin >> p.x >> p.y;
+        rel[i] = {p.x - A.x, p.y - A.y};
+        dirRaw[i] = normalizeDir(rel[i]);
+    }
 
-	vector<Vec> p(N + 1);
-	vector<Vec> rel(N + 1);
-	vector<Vec> dirsRaw;
-	dirsRaw.reserve(N);
+    vector<pair<int, int>> edges(N - 1);
+    for (int j = 0; j < N - 1; ++j) cin >> edges[j].first >> edges[j].second;
 
-	for (int i = 1; i <= N; ++i) {
-		cin >> p[i].x >> p[i].y;
-		rel[i] = {p[i].x - A.x, p[i].y - A.y};
-		dirsRaw.push_back(normalizeDir(rel[i]));
-	}
+    vector<Vec> dirs(dirRaw.begin() + 1, dirRaw.end());
+    sort(dirs.begin(), dirs.end(), angleLess);
+    dirs.erase(unique(dirs.begin(), dirs.end(), sameAngle), dirs.end());
+    const int K = (int)dirs.size();
 
-	segs.assign(N, {});
-	for (int i = 1; i <= N - 1; ++i) {
-		int u, v;
-		cin >> u >> v;
-		segs[i] = {rel[u], rel[v]};
-	}
+    auto dirIndex = [&](const Vec& d) {
+        return (int)(lower_bound(dirs.begin(), dirs.end(), d, angleLess) - dirs.begin());
+    };
 
-	vector<Vec> dirs = dirsRaw;
-	sort(dirs.begin(), dirs.end(), angleLess);
-	dirs.erase(unique(dirs.begin(), dirs.end(), sameAngle), dirs.end());
+    vector<int> gid(N + 1), nearest(K, 0);
+    vector<long long> nearestDist(K, LLONG_MAX);
+    for (int i = 1; i <= N; ++i) {
+        gid[i] = dirIndex(dirRaw[i]);
+        long long d2 = rel[i].x * rel[i].x + rel[i].y * rel[i].y;
+        if (d2 < nearestDist[gid[i]]) {
+            nearestDist[gid[i]] = d2;
+            nearest[gid[i]] = i;
+        }
+    }
 
-	map<pair<long long, long long>, int, function<bool(const pair<long long, long long>&, const pair<long long, long long>&)>> idOf(
-		[](const auto& a, const auto& b) {
-			Vec va{a.first, a.second}, vb{b.first, b.second};
-			return angleLess(va, vb);
-		}
-	);
-	for (int i = 0; i < (int)dirs.size(); ++i) {
-		idOf[{dirs[i].x, dirs[i].y}] = i;
-	}
+    vector<vector<int>> insAfter(K), remAt(K);
+    vector<int> insBefore0;
+    for (auto [u, v] : edges) {
+        int ia = gid[u], ib = gid[v];
+        if (ia == ib) continue;
+        long long cr = cross(rel[u], rel[v]);
+        if (cr == 0) continue;
+        Vec s = cr > 0 ? rel[u] : rel[v];
+        Vec t = cr > 0 ? rel[v] : rel[u];
+        int l = cr > 0 ? ia : ib;
+        int r = cr > 0 ? ib : ia;
+        Vec e{t.x - s.x, t.y - s.y};
+        if (l < r) {
+            int id = (int)parts.size();
+            parts.push_back({s, e});
+            insAfter[l].push_back(id);
+            remAt[r].push_back(id);
+        } else {
+            int idA = (int)parts.size();
+            parts.push_back({s, e});
+            insAfter[l].push_back(idA);
+            if (r > 0) {
+                int idB = (int)parts.size();
+                parts.push_back({s, e});
+                insBefore0.push_back(idB);
+                remAt[r].push_back(idB);
+            }
+        }
+    }
 
-	int K = (int)dirs.size();
-	vector<vector<int>> add(K), rem(K), verts(K);
+    using SetT = set<int, PartCmp>;
+    SetT active;
+    vector<SetT::iterator> its(parts.size());
+    vector<char> visible(N + 1, 0);
 
-	for (int i = 1; i <= N; ++i) {
-		int g = idOf[{dirsRaw[i - 1].x, dirsRaw[i - 1].y}];
-		verts[g].push_back(i);
-	}
+    for (int g = 0; g < K; ++g) {
+        curDir = dirs[g];
+        if (g == 0) {
+            for (int id : insBefore0) its[id] = active.insert(id).first;
+        }
+        for (int id : remAt[g]) active.erase(its[id]);
 
-	for (int i = 1; i <= N - 1; ++i) {
-		const Vec& a = segs[i].p;
-		const Vec& b = segs[i].q;
-		Vec da = normalizeDir(a), db = normalizeDir(b);
-		int ia = idOf[{da.x, da.y}];
-		int ib = idOf[{db.x, db.y}];
+        int v = nearest[g];
+        if (v != 0) {
+            if (active.empty()) {
+                visible[v] = 1;
+            } else {
+                Key ks = keyAt(parts[*active.begin()], curDir);
+                __int128 nv = dot(rel[v], curDir), dv = dot(curDir, curDir);
+                visible[v] = !(ks.num * dv < nv * ks.den);
+            }
+        }
+        for (int id : insAfter[g]) its[id] = active.insert(id).first;
+    }
 
-		Vec mid{a.x + b.x, a.y + b.y};
-		int l, r;
-		if (sameAngle(da, db)) {
-			l = r = ia;
-		} else if (onCCWArc(da, db, mid)) {
-			l = ia;
-			r = ib;
-		} else {
-			l = ib;
-			r = ia;
-		}
+    vector<int> ans;
+    for (int i = 1; i <= N; ++i)
+        if (visible[i]) ans.push_back(i);
 
-		if (l <= r) {
-			add[l].push_back(i);
-			rem[r].push_back(i);
-		} else {
-			add[l].push_back(i);
-			rem[K - 1].push_back(i);
-			add[0].push_back(i);
-			rem[r].push_back(i);
-		}
-	}
-
-	vector<char> visible(N + 1, false);
-	set<int, SegCmp> active;
-
-	for (int g = 0; g < K; ++g) {
-		curDir = dirs[g];
-
-		for (int id : add[g]) active.insert(id);
-
-		auto& bucket = verts[g];
-		sort(bucket.begin(), bucket.end(), [&](int i, int j) {
-			__int128 ai = dot(rel[i], curDir);
-			__int128 aj = dot(rel[j], curDir);
-			if (ai != aj) return ai < aj;
-			return i < j;
-		});
-
-		if (!bucket.empty()) {
-			int v = bucket[0];
-			Fraction pv = pointKey(rel[v]);
-			bool ok = true;
-			if (!active.empty()) {
-				int s = *active.begin();
-				Fraction ks = segKey(segs[s]);
-				ok = !fracLess(ks, pv);
-			}
-			visible[v] = ok;
-		}
-
-		for (int id : rem[g]) active.erase(id);
-	}
-
-	vector<int> ans;
-	for (int i = 1; i <= N; ++i) {
-		if (visible[i]) ans.push_back(i);
-	}
-
-	cout << ans.size() << '\n';
-	for (int i = 0; i < (int)ans.size(); ++i) {
-		if (i) cout << ' ';
-		cout << ans[i];
-	}
-	cout << '\n';
-	return 0;
+    cout << ans.size() << '\n';
+    for (size_t i = 0; i < ans.size(); ++i) {
+        if (i) cout << ' ';
+        cout << ans[i];
+    }
+    cout << '\n';
+    return 0;
 }

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/24. Tengerparti vízállás - 2010. október",
+    "method": "Napi különbségek összegzése, félértéknél felfelé kerekített átlag, majd lineáris keresés",
+    "category": "Keresés, átlag",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["átlag", "kerekítés", "keresés"],
+    "note": "Két részfeladat. Az átlag félértéknél felfelé kerekített; a mintában nincs félérték-eset, így a minta ezt nem igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/25. Kettes számrendszer - 2011. május",
+    "method": "Számjegyenkénti összeadás jobbról balra, átvitellel, karaktersorozaton",
+    "category": "Számrendszerek, összeadás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számrendszer", "átvitel", "karakterlánc"],
+    "note": "A két szám a mintában két sorban van; a program szóközzel vagy sortöréssel elválasztva is olvassa.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/26. Csillagvizsgáló - 2011. május",
+    "method": "Idő másodpercre váltása, rendezés, majd az (i+2)-edik elem ellenőrzése",
+    "category": "Rendezés, időpontok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "idő", "csúszóablak"],
+    "note": "A 3 másodperces határ beletartozik: a mintában a 2. észlelés (7:47) és a 4. (7:50) pontosan 3 másodperc. A sorszám a rendezett listában értendő.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/27. Barátságos számok - 2011. október",
+    "method": "Osztóösszegek előre kiszámolása rostamódszerrel, majd párok ellenőrzése",
+    "category": "Számelmélet: osztóösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["osztók", "rostamódszer", "előszámítás"],
+    "note": "X = Y esetén (tökéletes szám, pl. 6 6) a feladat szó szerinti feltétele teljesül, a program Igen-t ír; a minta ezt nem tartalmazza.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

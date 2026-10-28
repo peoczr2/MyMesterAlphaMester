@@ -1,10 +1,13 @@
 /*
-Hungarian megoldás: kis N miatt minden sorrendet kipróbálunk, és egy adott
-minimális távolságra ellenőrizzük, hogy az időpontok elhelyezhetők-e az
-intervallumokon belül.
-
-Hint 1: || Ha a sorrend adott, akkor mindig a lehető legkorábbi időpontot érdemes választani. ||
-Hint 2: || A legnagyobb biztonsági időt bináris kereséssel is meg lehet találni. ||
+Megoldás lényege: N ≤ 8, ezért az összes érkezési sorrendet végigpróbáljuk. Egy adott sorrendben
+a legnagyobb biztonsági idő min_{i<j} (b_j - a_i) / (j - i), ahol a_i és b_i az i-edik, illetve a
+j-edik járat intervallumának határai másodpercben. Ezt a törtet egész számlálóval és nevezővel
+tároljuk, így nincs lebegőpontos hiba; a végén a legjobb értéket a legközelebbi másodpercre
+kerekítjük. Időigény: O(N! * N^2), N ≤ 8 esetén ez bőven belefér az időlimitbe.
+*/
+/*
+Hint 1: || Egy adott sorrendben érdemes minden járatot a lehető legkorábbi, még megengedett időpontra tenni. ||
+Hint 2: || Ha az i-edik és j-edik járat között legalább dt másodperc a távolság, akkor (j - i) * dt <= b_j - a_i, vagyis dt legfeljebb (b_j - a_i) / (j - i) lehet. ||
 */
 
 #include <bits/stdc++.h>
@@ -16,31 +19,37 @@ int main() {
 
     int n;
     cin >> n;
-    vector<int> a(n), b(n);
-    for (int i = 0; i < n; ++i) cin >> a[i] >> b[i], a[i] *= 60, b[i] *= 60;
-
-    auto good = [&](int d) {
-        vector<int> p(n);
-        iota(p.begin(), p.end(), 0);
-        do {
-            int last = -1e9;
-            bool ok = true;
-            for (int id : p) {
-                int t = max(a[id], last + d);
-                if (t > b[id]) { ok = false; break; }
-                last = t;
-            }
-            if (ok) return true;
-        } while (next_permutation(p.begin(), p.end()));
-        return false;
-    };
-
-    int lo = 0, hi = 24 * 60 * 60, best = 0;
-    while (lo <= hi) {
-        int mid = (lo + hi) / 2;
-        if (good(mid)) best = mid, lo = mid + 1;
-        else hi = mid - 1;
+    vector<long long> a(n), b(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i] >> b[i];
+        a[i] *= 60;
+        b[i] *= 60;
     }
+
+    vector<int> p(n);
+    iota(p.begin(), p.end(), 0);
+    // a legjobb érték tört alakban: bestNum / bestDen, bestDen > 0
+    long long bestNum = -1, bestDen = 1;
+    do {
+        // az adott sorrend értéke: a páronkénti korlátok minimuma
+        long long curNum = 1000000000LL, curDen = 1;
+        for (int j = 1; j < n; ++j) {
+            for (int i = 0; i < j; ++i) {
+                long long num = b[p[j]] - a[p[i]], den = j - i;
+                if (num * curDen < curNum * den) {
+                    curNum = num;
+                    curDen = den;
+                }
+            }
+        }
+        if (curNum * bestDen > bestNum * curDen) {
+            bestNum = curNum;
+            bestDen = curDen;
+        }
+    } while (next_permutation(p.begin(), p.end()));
+
+    // legközelebbi másodpercre kerekítés (bestNum >= 0)
+    long long best = (2 * bestNum + bestDen) / (2 * bestDen);
     cout << best / 60 << ':' << setw(2) << setfill('0') << best % 60 << '\n';
     return 0;
 }

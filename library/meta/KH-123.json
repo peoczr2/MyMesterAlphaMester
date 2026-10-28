@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/28. Leghosszabb állandó vízmagasságot tartalmazó harmadfokú árvíz ***",
+    "method": "Szintekre bontás, szakaszok bejárása, futamok maximuma a harmadfokú szakaszokban",
+    "category": "Szakaszok: egyforma futamok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakaszok", "futam", "maximum", "tömb"],
+    "note": "Időlimit 0,1 mp; N=10000 esetén mért futásidő kb. 0,003 mp. Egyenlő hosszúságú futamoknál az első szakasz marad. Az ötödik sor a szakasz kezdetét és végét, valamint az állandó rész hosszát adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/29. Leghosszabb árvízmentes folyószakasz ***",
+    "method": "Szintekre bontás, a 0 szintű szakaszok bejárása, leghosszabb szakasz kiválasztása",
+    "category": "Szakaszok: leghosszabb kiválasztás",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["szakaszok", "tömb", "maximum"],
+    "note": "Időlimit 0,1 mp; N=10000 esetén mért futásidő kb. 0,003 mp. Egyenlő hosszúságú szakaszoknál az első marad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/3. A csúcsmagasságát leggyorsabban elérő árvíz meghatározása ***",
+    "method": "Árvizek bejárása, csúcs (első maximum) keresése, minimális kezdet–csúcs távolság kiválasztása",
+    "category": "Szakaszok: csúcskeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakaszok", "tömb", "csúcs", "maximum"],
+    "note": "Időlimit 0,1 mp; N=10000 esetén mért futásidő kb. 0,003 mp. A feladatszöveg zárójeles része („legtávolabb”) ellentmond a példának: a mintából a kezdet és a csúcs közötti legkisebb távolságú árvíz következik, ezt valósítja meg a megoldás. Egyenlőségnél az első marad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/30. Leghosszabb elsőfokú árvíz ***",
+    "method": "Szintekre bontás, az 1-es szintű maximális szakaszok bejárása, leghosszabb szakasz kiválasztása",
+    "category": "Szakaszok: leghosszabb kiválasztás",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["szakaszok", "tömb", "maximum"],
+    "note": "Időlimit 0,1 mp; N=10000 esetén mért futásidő kb. 0,003 mp. Egyenlő hosszúságú szakaszoknál az első marad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Madármegfigyelés/20. Mindenhol előforduló madárfajok *",
+    "method": "Fajonként nullaellenőrzés: egy nulla darabszám kizárja a fajt a jelöltek közül.",
+    "category": "Mátrix: minden sorban előfordul",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "feltétel", "szűrés"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. A PDF példáján (be1) a kimenet egyezik (2 / 2 4), a be2 bemenetet független Python-ellenőrző igazolja (library/.work/KH-037/checks/check20.py). A be2 M=300, N=100, ami meghaladja a feladat M≤50 korlátját; a megoldás ettől függetlenül 3 ms alatt lefut. Ha nincs ilyen faj, csak a „0” sor kerül ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/21. Mindenhol legalább annyi van az egyikből, mint a másikból? *",
+    "method": "Oszloppárok páronkénti összehasonlítása minden helységben, a főátló kihagyásával.",
+    "category": "Mátrix: oszloppárok összehasonlítása",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "páros", "összehasonlítás"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. A PDF példáján (be1) a kimenet egyezik (0001 / 1011 / 1101 / 0000), a be2 bemenetet független Python-ellenőrző igazolja (library/.work/KH-037/checks/check21.py). A főátló (j = k) a példa szerint mindig 0.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/22. Minimális madárfajszámú helység *",
+    "method": "Helységenként a nem nulla darabszámok megszámolása, majd a legkisebb számlálójú helység kiválasztása.",
+    "category": "Mátrix: sorok számlálása, minimum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "számlálás", "minimum"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. A feladat szerint „egy olyan” helység adható, és a PDF példájában a 2. és a 3. helység is minimális (2 fajjal), ezért a minta „kézi”: a független ellenőrző (library/.work/KH-037/checks/check22.py) igazolja, hogy a kiírt helység minimális fajszámú. A példában a kisebb sorszámút (2) írja ki; a be2 bemenetben egyetlen minimális helység van (16).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/23. Ritka madárfaj *",
+    "method": "Fajonként a helységek számának számlálása, majd az első pontosan 1-et kapó faj kiválasztása.",
+    "category": "Számlálás: egyedi előfordulás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "számlálás", "egyedi"],
+    "note": "A minta.zip-ben nincs kimenet (csak be1, be2), ezért a validátor „nincs minta” állapotot ad. A feladat szerint „egy” ilyen faj adható, a PDF példájában a 3. és a 4. faj is pontosan 1 helységben fordult elő, ezért a minta „kézi”: a független ellenőrző (library/.work/KH-037/checks/check23.py) igazolja a kiírt fajt, a példában az első (3) került ki. A be2 bemenetben nincs ilyen faj, a kimenet 0.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

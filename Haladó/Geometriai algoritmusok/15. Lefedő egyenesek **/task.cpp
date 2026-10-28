@@ -1,6 +1,11 @@
 /*
 Megoldás lényege:
-Az egyenesek lefedési vagy szeparációs szerepét vizsgáljuk geometriai rendezéssel. A döntés a pontok oldalviszonyain és a tartóegyeneseken alapul.
+Ha a pontok legfeljebb 3 egyenessel lefedhetők, és legalább 4 különböző pont van, akkor az első 4 pont közül legalább kettő ugyanarra a lefedő egyenesre esik (skatulyaelv). Ezért a 6 pár mindegyikére felvesszük a párt összekötő egyenest, és a maradék pontokra 2 egyenest keresünk: ugyanez a gondolat ott is működik a maradék első 3 pontjával. Az illeszkedést egész számú vektoriális szorzattal döntjük el, így nincs kerekítési hiba. A jelölt egyenesek száma konstans, ezért a teljes futás O(N).
+*/
+/*
+Hint 1: || Ha legalább 4 különböző pont van és 3 egyenes lefedi őket, akkor az első 4 pont közül legalább kettő ugyanarra az egyenesre esik. Ezért nem kell minden egyenest kipróbálni: elég az első 4 pont párjait venni egyenesnek. ||
+Hint 2: || Ha egy egyenest már rögzítettél, a maradék pontokat 2 egyenessel kell lefedni. Ehhez ugyanez a gondolat: a maradék első 3 pont közül kettő biztosan egy egyenesre esik, a többi pontnak pedig egyetlen egyenesen kell lennie. ||
+Hint 3: || Részletes menet: töröld a duplikált pontokat; ha legfeljebb 3 pont van, minden ponton át húzz egy egyenest. Különben az első 4 pont 6 párjára futtasd le a 2 egyenes ellenőrzését, az illeszkedést pedig a koordináták különbségeiből képzett vektoriális szorzattal számold. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

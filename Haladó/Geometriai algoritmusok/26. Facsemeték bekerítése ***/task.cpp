@@ -1,6 +1,16 @@
 /*
 Megoldás lényege:
-A pontokból olyan minimális kerítést kell választani, amely minden fát körbezár. Ehhez a konvex burok és a határpontok helyzete adja a megoldás alapját.
+A körbekerítő háromszögek belsejei nem fedhetik egymást, ezért a feladat a lehető legtöbb, egymást nem fedő háromszög
+kiválasztása. Ezt a maximumot egy teljes háromszögelés adja, amelynek 2N - h - 2 háromszöge van, ahol h a burok határán
+lévő pontok száma (az élekre eső pontokat is beleértve). A háromszögelést a konvex burok csúcsaiból induló legyezővel
+kezdjük, majd a többi pontot véletlen sorrendben szúrjuk be: a pontot tartalmazó háromszöget egy keresési DAG-ban
+keressük meg, belső pont esetén három, élre eső pont esetén a két szomszédos háromszöget osztjuk fel. Idő: átlagosan
+O(N log N).
+*/
+/*
+Hint 1: || Egymást nem fedő háromszögek maximális száma egy teljes háromszögelés háromszögeinek száma, ami 2N - h - 2, ahol h a burok határán lévő pontok száma (az élekre eső pontokat is beleértve). ||
+Hint 2: || Kezdd a konvex burok csúcsaiból induló legyezővel, majd minden további pontot szúrj be: keresd meg a pontot tartalmazó háromszöget, és azt három részre, ha a pont egy élre esik, akkor az élhez tartozó mindkét háromszöget két részre osztod. ||
+Hint 3: || A beszúrási sorrend legyen véletlen, így a keresési fa mélysége átlagosan logaritmikus. Az élekhez tartozó háromszögek listájából kell tudni, melyik két háromszög osztandó fel, ha a pont egy élen van. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

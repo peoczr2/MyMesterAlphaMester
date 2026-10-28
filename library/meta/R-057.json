@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Sorozatok/1. Állatkertek *",
+    "method": "Hash-tábla keresés a két állatkert fajai között, a feltételek egy menetes ellenőrzésével",
+    "category": "Keresés, halmazműveletek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "hash",
+      "halmaz",
+      "keresés"
+    ],
+    "note": "A feladat nem írja elő a névsorrendet; a minták ábécérendet használnak, a megoldás ábécérendben ír.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/10. Étterem **",
+    "method": "Kulcsonkénti összegzés map-pel, a kulcsok szerinti rendezett kiírás",
+    "category": "Asszociatív tároló, összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "map",
+      "összegzés",
+      "rendezés"
+    ],
+    "note": "A mintában 0 mennyiségű tételek szerepelnek (a feladat szerint M≥1); ezek nem számítanak felhasználtnak, kimaradnak a kimenetből.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/100. Sorozat",
+    "method": "Lépésenkénti szimuláció, tömbös gyakoriság és utolsó előfordulás alapján",
+    "category": "Szimuláció, gyakoriság",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "tömb",
+      "gyakoriság"
+    ],
+    "note": "A kezdőszám nem tagja a sorozatnak. A korábbi kód ezt elrontotta, de a minta ezt véletlenül elfedte.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/101. Táblajáték",
+    "method": "Sor- és bináris oszlopindex követése, minden lépés ezt módosítja",
+    "category": "Bináris reprezentáció, szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "bináris",
+      "szimuláció",
+      "indexelés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/102. Találkozás",
+    "method": "Prefixösszegekkel O(1) számolás fix hosszra, bináris keresés a hosszra",
+    "category": "Prefixösszeg, bináris keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prefixösszeg",
+      "intervallum",
+      "bináris"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/103. Rendezés",
+    "method": "Átfedő intervallumok komponensei, komponensenként rendezés, majd fixpontok számolása",
+    "category": "Intervallumok, rendezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "intervallum",
+      "rendezés",
+      "fixpont"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

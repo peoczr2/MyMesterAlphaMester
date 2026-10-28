@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/5. Előző napnál hűvösebb napok",
+    "method": "Napi hőmérsékletek balról jobbra összevetése az előző nappal, a csökkenő napok jelölése.",
+    "category": "Szomszédos elemek összevetése",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["összehasonlítás", "mátrix", "változás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/6. Leghűvösebb települések legmelegebb napjai",
+    "method": "Napi minimumok tömbben, majd a legnagyobb napi minimumot elérő napok kiválasztása.",
+    "category": "Napi minimumok maximuma",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "maximum", "mátrix"],
+    "note": "Bizonytalan értelmezés: a „leghűvösebb település” napi értelemben értendő (az adott napon a legalacsonyabb előrejelzés). Az összesen legalacsonyabb értékű vagy legkisebb átlagú település szerinti értelmezés a mintán „1 2” kimenetet adna, a minta „2 2 3” eredménye csak a napi értelmezéssel adódik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/7. Legkisebb ingadozású települések",
+    "method": "Soronkénti maximum és minimum, különbségük tömbben, majd a legkisebb különbség kiválasztása.",
+    "category": "Maximum–minimum különbség",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["különbség", "minimum", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/8. Legmelegebb napok",
+    "method": "Napi maximumok a beolvasás közben, majd a globális maximumot elérő napok kiírása.",
+    "category": "Globális maximum napjai",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "mátrix", "szélsőérték"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

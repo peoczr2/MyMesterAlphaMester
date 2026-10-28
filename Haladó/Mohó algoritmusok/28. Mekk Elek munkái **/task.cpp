@@ -1,6 +1,7 @@
 /*
-Feladat: A lehető legtöbb munkát kell kiválasztani úgy, hogy egyszerre csak egyen lehessen dolgozni.
-Ötlet: Klasszikus intervallum-ütemezés: a munkákat befejezési idő szerint rendezzük, és mindig a leghamarabb befejeződő, még vállalható munkát választjuk. Mivel a kezdés-befejezés napok zárt intervallumot jelentenek, két munka csak akkor fér meg egymás után, ha az új munka kezdése nagyobb, mint az előző kiválasztott befejezése.
+Megoldás lényege: Klasszikus intervallum-ütemezés: a munkákat befejezési idő szerint növekvően rendezzük, és mindig a legkorábban befejeződő, még elvállalható munkát vesszük. Mivel a kezdés és a befejezés napja zárt intervallumot ad, egy munka akkor fér be, ha kezdése nagyobb az utoljára kiválasztott munka befejezésénél. A korábban záródó munka mindig legalább annyi lehetőséget hagy a többinek, mint bármelyik másik választás (csereargumentum), ezért a mohó megoldás optimális. Időigény: O(N log N).
+*/
+/*
 Hint 1: || Ha minél több intervallumot akarsz kiválasztani, érdemes minél korábban „felszabadítani” az idővonalat. ||
 Hint 2: || Rendezd a munkákat befejezési idő szerint, és mohón válogass. ||
 Hint 3: || Zárt intervallumnál a feltétel: új_kezdés > utolsó_befejezés. ||

@@ -1,7 +1,8 @@
 /*
-Hungarian megoldás: a még nem találkozott csapatok között olyan tökéletes
-párosítást keresünk, amelynél a pontkülönbségek összege minimális.
-
+Megoldás lényege:
+A csapat pontszáma a győzelmeinek száma, a cél pedig egy olyan tökéletes párosítás a még nem játszott párokból, amelynek pontkülönbség-összege minimális. Bitmaskos DP-vel oldjuk meg: az állapot a már párosított csapatok halmaza (2^N), mindig a legkisebb nem párosított csapattal dolgozunk, és eltároljuk a hozzá választott legjobb partnert. A DP érték a hátralévő párok minimális összege, így az optimum és a párosítás is visszakereshető. A kimenet első sorába az optimális összeg kerül, utána a párok. Időigény O(2^N · N), N ≤ 16 esetén néhány millió művelet.
+*/
+/*
 Hint 1: || A csapatok száma legfeljebb 16, ezért a bitmaskos DP belefér. ||
 Hint 2: || A legkisebb szabad csapatot mindig érdemes először párosítani. ||
 */

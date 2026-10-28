@@ -1,6 +1,8 @@
 /*
 Feladat: Naponként külön-külön kiválasztjuk a maximális számú, egymást nem átfedő rendezvényt (mindegyik ugyanannyit fizet), majd eldöntjük, meddig és milyen előrefizetési blokkokkal érdemes folyamatosan dolgozni az 1. naptól.
 Ötlet: Minden nap profitja: (max kompatibilis rendezvényszám) * L, ezt klasszikus befejezési idő szerinti mohóval kapjuk. Utána DP-t futtatunk nap-határokon: egy előrefizetés egy [i+1..j] blokkra ugrás, költsége K+(j-i)*R, bevétele a blokk napi profitösszege. Ahol a pénz elég az előrefizetésre, ott átmenet engedett.
+*/
+/*
 Hint 1: || Először szedd szét a problémát napi profitokra: egy napot hogyan lehet maximálisan kitölteni átfedés nélküli munkákkal? ||
 Hint 2: || Az előrefizetés több napra egyszerre is történhet, ezért érdemes „blokkugrásokban” gondolkodni. ||
 Hint 3: || Állapot lehet: egy nap végén mennyi pénzed lehet legfeljebb; innen próbálj minden lehetséges következő fizetési blokkot. ||
@@ -9,22 +11,40 @@ Hint 3: || Állapot lehet: egy nap végén mennyi pénzed lehet legfeljebb; inne
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+static char ibuf[1 << 16];
+static size_t ipos = 0, ilen = 0;
 
-    int N, K, R, L;
-    cin >> N >> K >> R >> L;
+static int gc() {
+    if (ipos == ilen) {
+        ilen = fread(ibuf, 1, sizeof(ibuf), stdin);
+        ipos = 0;
+        if (ilen == 0) return -1;
+    }
+    return ibuf[ipos++];
+}
+
+static int readInt() {
+    int c = gc();
+    while (c != -1 && (c < '0' || c > '9')) c = gc();
+    int x = 0;
+    while (c >= '0' && c <= '9') {
+        x = x * 10 + (c - '0');
+        c = gc();
+    }
+    return x;
+}
+
+int main() {
+    int N = readInt(), K = readInt(), R = readInt(), L = readInt();
 
     vector<long long> profit(N + 1, 0);
     for (int day = 1; day <= N; ++day) {
-        int m;
-        cin >> m;
+        int m = readInt();
         int cnt = 0;
         int lastEnd = -1;
         for (int i = 0; i < m; ++i) {
-            int s, e;
-            cin >> s >> e;
+            int s = readInt();
+            int e = readInt();
             if (s >= lastEnd) {
                 ++cnt;
                 lastEnd = e;

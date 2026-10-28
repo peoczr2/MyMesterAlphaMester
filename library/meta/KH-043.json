@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/17. Lokális csúcsok - 2007. május",
+    "method": "Szomszédos elemek összehasonlítása egyetlen bejárásban.",
+    "category": "Tömb: lokális csúcs",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "szomszédok", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/18. Kockadobás - 2007. május",
+    "method": "Egy menetben követjük az aktuális nem növekvő szakasz kezdetét és hosszát.",
+    "category": "Tömb: monoton részsorozat",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "részsorozat", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/19. Inga - 2008. május - emelt",
+    "method": "Lengési idő a képletből, majd M / T egész része a teljes lengések száma.",
+    "category": "Lebegőpontos számítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["lebegőpontos", "képlet", "mértékegység"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/2. Átlagsebesség - 2005. május",
+    "method": "Pozitív és negatív sebességek külön összege és darabszáma, egész kerekítés.",
+    "category": "Összegzés: két irány",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "átlag", "kerekítés"],
+    "note": "A kerekítés módja nincs leírva: a .5-ös eseteket felfelé kerekítettem. A feladat példájában 25,5 → 26 szerepel, ez a felfelé és a páros felé kerekítéssel is egyezik, a minták között más .5-ös eset nincs. A be1 mintában a 155-ös sebesség a feladat -150..150 tartománya ellenére szerepel, és a mintakimenet szerint az átlagban is benne van.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

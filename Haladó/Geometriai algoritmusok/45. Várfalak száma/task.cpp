@@ -12,7 +12,14 @@ A komponensek száma lesz a keresett építésszám.
 
 Idő: O(N α(N))
 */
-
+/*
+Hint 1: || Két, különböző időpontban épített várfal nem érintkezik, ezért egy építési fázis falai
+egy összefüggő láncot alkotnak. Az építések száma így pontosan a falak végpontok szerinti
+összefüggő részeinek száma. ||
+Hint 2: || Minden végpontot azonosíts a koordinátái alapján (pl. (x, y) kulccsal), és gyűjtsd minden
+kulcshoz a rajta végződő falak sorszámát. A közös kulcsú falakat unió-find (DSU) segítségével
+egyesítsd, végül a gyökerek számát írd ki. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

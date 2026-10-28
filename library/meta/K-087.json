@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: másolás/5. V-kódolás **",
+    "method": "Minden karakter sorindexét a sorszám maradékából számoljuk, majd a sorokat egymás után fűzzük.",
+    "category": "Szövegátrendezés, maradékos osztás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szöveg", "indexelés", "titkosítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: másolás/6. V-kódolás és dekódolás ***",
+    "method": "A kódolás sorrendjéből egy permutációt építünk, és a dekódolást ennek fordítottjaként kapjuk.",
+    "category": "Szövegátrendezés, permutáció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szöveg", "permutáció", "titkosítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,9 +1,17 @@
 /*
-Hungarian megoldás: a témákat kapacitásuk szerint rendezve olyan csoportokra
-osztjuk, amelyek összege pontosan L.
-
-Hint 1: || Minden téma teljes egészében egyetlen szekcióba kerül. ||
-Hint 2: || A legnagyobb témákkal érdemes kezdeni. ||
+Megoldás lényege:
+A témákat visszalépéses kereséssel osztjuk szekciókba. Először az előadások
+száma szerint csökkenő sorrendbe rendezzük a témákat, majd sorban elhelyezzük
+őket: minden témát az első olyan szekcióba teszünk, ahová még elfér. Ha egy téma
+egyik szekcióba sem fér, visszalépünk. Azonos szabad hellyel rendelkező
+szekciók felcserélhetők, ezért közülük csak az elsőt próbáljuk ki. Egy téma
+előadásai így automatikusan egymás után, ugyanabban a szekcióban állnak. A
+kiíráskor a szekciókat sorban adjuk ki.
+*/
+/*
+Hint 1: || Minden téma teljes egészében egyetlen szekcióba kerül, így a feladat a témák szekciókba pakolása, ahol minden szekcióba pontosan L előadás jut. ||
+Hint 2: || Ha egy állapot (a még hátralévő témák és a szekciók szabad helyei) zsákutcának bizonyult, tároljuk el, és később ne számoljuk újra. ||
+Hint 3: || Ha két szekciónak ugyanannyi szabad helye van, a közöttük lévő választás nem számít, így csak az egyiket próbáld ki. ||
 */
 
 #include <bits/stdc++.h>
@@ -11,28 +19,34 @@ using namespace std;
 
 int k, l, n;
 vector<string> nev;
-vector<int> db, szekcio;
-vector<int> sorrend;
-vector<vector<int>> eredmeny;
+vector<int> db;
+vector<int> marad;
+vector<vector<int>> csoportok;
+unordered_set<long long> zsakutca;
 
-bool dfs(int idx, vector<int> marad, vector<vector<int>> &csoportok) {
+long long allapot_kulcs(int idx) {
+    vector<int> m = marad;
+    sort(m.begin(), m.end());
+    long long kod = 0;
+    for (int x : m) kod = kod * (l + 1) + x;
+    return kod * (n + 1) + idx;
+}
+
+bool dfs(int idx) {
     if (idx == n) return true;
-    int best = -1, bestCnt = 100;
-    for (int i = 0; i < n; ++i) if (szekcio[i] == -1) {
-        int cnt = 0;
-        for (int s = 0; s < k; ++s) if (marad[s] >= db[i]) ++cnt;
-        if (cnt < bestCnt) bestCnt = cnt, best = i;
-    }
-    if (best == -1) return false;
-    for (int s = 0; s < k; ++s) if (marad[s] >= db[best]) {
-        marad[s] -= db[best];
-        csoportok[s].push_back(best);
-        szekcio[best] = s + 1;
-        if (dfs(idx + 1, marad, csoportok)) return true;
+    long long kulcs = allapot_kulcs(idx);
+    if (zsakutca.count(kulcs)) return false;
+    bool probalt[11] = {};
+    for (int s = 0; s < k; ++s) {
+        if (marad[s] < db[idx] || probalt[marad[s]]) continue;
+        probalt[marad[s]] = true;
+        marad[s] -= db[idx];
+        csoportok[s].push_back(idx);
+        if (dfs(idx + 1)) return true;
         csoportok[s].pop_back();
-        szekcio[best] = -1;
-        marad[s] += db[best];
+        marad[s] += db[idx];
     }
+    zsakutca.insert(kulcs);
     return false;
 }
 
@@ -41,22 +55,31 @@ int main() {
     cin.tie(nullptr);
 
     cin >> k >> l >> n;
-    nev.resize(n); db.resize(n);
-    for (int i = 0; i < n; ++i) cin >> nev[i] >> db[i];
+    vector<string> be_nev(n);
+    vector<int> be_db(n);
+    for (int i = 0; i < n; ++i) cin >> be_nev[i] >> be_db[i];
+
     vector<int> ord(n);
     iota(ord.begin(), ord.end(), 0);
-    sort(ord.begin(), ord.end(), [&](int a, int b) { return db[a] > db[b]; });
-    vector<int> marad(k, l);
-    szekcio.assign(n, -1);
-    vector<vector<int>> csoportok(k);
-    dfs(0, marad, csoportok);
+    stable_sort(ord.begin(), ord.end(), [&](int a, int b) { return be_db[a] > be_db[b]; });
+    nev.resize(n);
+    db.resize(n);
+    for (int i = 0; i < n; ++i) {
+        nev[i] = be_nev[ord[i]];
+        db[i] = be_db[ord[i]];
+    }
+
+    marad.assign(k, l);
+    csoportok.assign(k, {});
+    dfs(0);
+
     for (int s = 0; s < k; ++s) {
-        bool first = true;
+        bool elso = true;
         for (int idx : csoportok[s]) {
             for (int rep = 0; rep < db[idx]; ++rep) {
-                if (!first) cout << ' ';
+                if (!elso) cout << ' ';
                 cout << nev[idx];
-                first = false;
+                elso = false;
             }
         }
         cout << '\n';

@@ -1,6 +1,8 @@
 /*
- * Nagyonprímek keresése DFS-sel. Minden prefixnek prímnek kell lennie.
- 
+Megoldás lényege:
+Egy szám akkor nagyon prím, ha minden kezdőszelete prím, ezért balról jobbra, egyesével számjegyet fűzve építhetjük fel. Az első számjegy 2, 3, 5 vagy 7 lehet, a további számjegyek csak 1, 3, 7 vagy 9 közül kerülhetnek ki, mert különben a kezdőszelet 2-vel vagy 5-tel osztható lenne. A DFS minden lépésben kipróbálja a négy számjegyet, és csak a prím kezdőszeletet bővíti tovább; a prímséget egyszer legyártott prímtáblázattal, osztásos ellenőrzéssel döntjük el. Mivel N legfeljebb 8, a keresési fa mérete és a prímellenőrzés (a 10^4-ig terjedő prímekkel való osztás) is gyors.
+*/
+/*
 Hint 1: || Nagyonprím számot balról jobbra lehet felépíteni, mert minden prefixnek is prímnek kell maradnia. ||
 Hint 2: || Indulj az egyjegyű prímekből, és DFS-sel csak olyan számjegyet fűzz mögéjük, amely után az új prefix is prím marad. ||
 */

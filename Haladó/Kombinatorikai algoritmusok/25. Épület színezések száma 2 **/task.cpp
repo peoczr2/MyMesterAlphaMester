@@ -1,13 +1,16 @@
 /*
 Megoldás lényege:
-Három szín áll rendelkezésre: F, P, Z. A megengedett átmenetek:
-- F után bármi jöhet,
-- P után csak F jöhet,
-- Z után nem jöhet Z.
-
-Ez egy 3 állapotú lineáris DP, amelyet modulo 20160109 számolunk.
+Az emeleteket alulról felfelé építjük, és a következő emelet megengedett színe csak
+az előző emelet színétől függ. Piros után csak fehér állhat, zöld után nem állhat
+zöld, fehér után bármi állhat. Ezért elég három számot nyilvántartani: hány
+megfelelő színezés végződik fehér, piros, illetve zöld emelettel. Egy új emelet
+értékei ezekből egy-egy összeadással számolhatók, a számokat MOD 20160109 szerint
+tartjuk. Időigény O(N), memória O(1).
 */
-
+/*
+Hint 1: || A következő emelet megengedett színe csak az utolsó emelet színétől függ. Ezért nem kell a teljes sorozatot tárolni, elég az utolsó szín szerinti darabszámokat követni. ||
+Hint 2: || Legyen f, p, z az i emeletes, megfelelő színezések száma, amelyek utolsó emelete fehér, piros, illetve zöld. Ekkor f' = f + p + z, p' = f + z, z' = f, kezdetben f = p = z = 1. A végén a három érték összege adja a választ mod 20160109. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

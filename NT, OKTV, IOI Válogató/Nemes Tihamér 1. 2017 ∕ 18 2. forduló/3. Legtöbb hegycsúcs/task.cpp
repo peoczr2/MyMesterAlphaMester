@@ -1,10 +1,14 @@
+/*
+Megoldás lényege:
+A csúcs definíciója a teljes mérési sorozatra vonatkozik, ezért először egy 0/1 tömbbel megjelöljük a csúcsokat (az első és az utolsó mérés biztosan nem csúcs). Ezután prefixösszeg-tömböt készítünk, így bármely [A, B] szakasz csúcsszáma egy kivonással kapható meg: pref[B] - pref[A-1], és a két végpont is beleszámít. Az összes A kezdőpontot végigpróbáljuk, B = A + K - 1 mellett, és a legtöbb csúcsot tartalmazó szakasz kezdetét tartjuk meg (szigorú összehasonlítással, így a legkisebb ilyen A marad). Ha nincs csúcs, a kimenet -1 -1. Az időigény O(N), a memóriaigény O(N).
+*/
+/*
+Hint 1: || Egy mérés csúcs-e, az csak a szomszédos mérésektől függ, ezért minden csúcsot egyszer, előre megjelölhetsz. Az első és az utolsó mérés nem lehet csúcs. ||
+Hint 2: || Készíts prefixösszeget a csúcsok 0/1 tömbjéből, így egy [A, B] szakaszban lévő csúcsok száma egy kivonással megkapható. Ügyelj arra, hogy a szakasz két végpontja is beleszámít. ||
+Hint 3: || Az A kezdőpontot 1-től N-K+1-ig végigpróbálva B = A + K - 1, és a csúcsszám pref[B] - pref[A-1]. Tartsd nyilván a legnagyobb értéket és a hozzá tartozó A-t; ha a maximum 0, a kimenet -1 -1. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Először megjelöljük a csúcsokat, majd egy hossz K-hoz tartozó prefixösszeg-
-    tömbbel minden lehetséges [A, A+K-1] szakasz csúcsszámát O(1)-ben kiolvassuk.
-*/
 
 int main() {
     ios::sync_with_stdio(false);
@@ -27,8 +31,7 @@ int main() {
     int kezd = -1;
     for (int a = 1; a + k - 1 <= n; ++a) {
         int veg = a + k - 1;
-        int darab = 0;
-        if (k >= 3) darab = pref[veg - 1] - pref[a];
+        int darab = pref[veg] - pref[a - 1];
         if (darab > legjobb) {
             legjobb = darab;
             kezd = a;

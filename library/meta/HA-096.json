@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/88. Legközelebbi közös anya és apa",
+    "method": "Anyai és apai ág felmenőinek metszete, BFS-sel legkisebb távolságú ősanya és ősapa",
+    "category": "Családfa: közös ős",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["családfa", "bfs", "metszet"],
+    "note": "A minta.zip ki1/ki2 sérült: a kimeneti számok nagyobbak N-nél (110, 111 és 1950, 1472), ezért a validátor hibásnak jelzi. A be2 ősanyája döntetlen (750 és 950 is 11 lépésre van), a feladat szerint bármelyik elfogadható; a kimenetet független brute force (library/.work/HA-096/check.py) igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/89. Legközelebbi közös ős",
+    "method": "Anyai és apai ág felmenőinek metszete, BFS-sel legközelebbi közös ős",
+    "category": "Családfa: közös ős",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["családfa", "bfs", "metszet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

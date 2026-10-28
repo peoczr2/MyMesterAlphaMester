@@ -1,6 +1,7 @@
 /*
-Feladat: Egy meneten belül legfeljebb K utast szállíthatunk, és a megállók között csak előre haladhatunk.
-Ötlet: Az intervallumokat a kezdő megálló szerint rendezzük, és amikor a jelenlegi megállónál a fedettség meghaladná K-t, a legtovább tartó utast el kell engedni. Ez a kapacitásos intervallum kiválasztás klasszikus mohója.
+Megoldás lényege: Az utas az U-tól V-ig tartó szakaszokon ül a buszon. Az utasokat kezdő megálló (U) szerint rendezzük, és egy aktív halmazban tartjuk a még utazó utasok célállomásának (V) sorszámát. Ha az új utas felvétele után több mint K utas lenne egy szakaszon, a legkésőbb célba érő utast elengedjük, mert az foglalná le a legtöbb további szakaszt. Így minden szakaszon legfeljebb K utas utazik, és a felvett utasok száma maximális. Időigény: O(M log M).
+*/
+/*
 Hint 1: || A busz egy adott szakaszon akkor túlterhelt, ha azon több mint K kiválasztott utas halad. ||
 Hint 2: || A legjobban a legkésőbb végző utast érdemes kihagyni, ha muszáj csökkenteni a fedést. ||
 Hint 3: || Előrehaladva egy aktív halmazt kell nyomon követni a kiválasztott utasok végpontjaival. ||

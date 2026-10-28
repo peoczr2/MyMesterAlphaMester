@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/28. Sokáig melegebbé váló települések",
+    "method": "Soronként egy bejárás, futó számláló az egymás utáni növekedések hosszára",
+    "category": "Egymás utáni növekedések",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "sor", "sorozat"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/29. Sokáig meleg települések",
+    "method": "Soronként egy bejárás, futó számláló a 30 fok feletti napok sorozatának hosszára",
+    "category": "Küszöb feletti sorozat",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "sor", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/3. Települések átlagosnál több melegebb nappal",
+    "method": "Településenként összeg, majd az átlag feletti és alatti napok megszámolása",
+    "category": "Átlaghoz viszonyítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["átlag", "összehasonlítás", "tömb"],
+    "note": "A minta.zip be2/ki2 párjában a ki2.txt T=586 értéke egyezik a helyes számmal, de a sorszámlista 1..586 folytonos sorozat, ezért 239 benne szereplő település (köztük a 3., 4., 6., 7.) nem felel meg a feladat szerinti feltételnek (pl. a 3.-nál 460 átlag feletti és 540 átlag alatti nap van). Független ellenőrzéssel (törtek nélküli, pontos összevetés; .work/KH-006/scripts/t3verify.py) a helyes lista 586 elem: 1, 2, 5, 8, 9, 10, 14, ...; a ki2.txt listarésze hibás, ezért kézi jelölés.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/30. Sok településen meleg napok",
+    "method": "Oszloponként számláló a 30 fokot elérő települések számára, majd 2·db ≥ N feltétel",
+    "category": "Oszlopok számlálása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

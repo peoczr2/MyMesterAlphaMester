@@ -1,12 +1,19 @@
+/*
+Megoldás lényege:
+Az értékek legfeljebb 100-félék (M legfeljebb 100), ezért minden b értékhez prefixösszeg
+tömböt építünk: pref[b][i] az első i elemben lévő b-k számát adja. Egy a érték két
+egymást követő előfordulása közötti szakasz b-darabszáma így egyetlen kivonással
+megkapható. Minden (a, b) párra előre kiszámoljuk a szomszédos előfordulási
+szakaszokon mért legnagyobb b-darabszámot, így a kérdésekre azonnal válaszolhatunk.
+Ha egy a értéknek kevesebb mint két előfordulása van, a válasz -1.
+*/
+/*
+Hint 1: || Egy a érték két szomszédos előfordulása között a b-k száma csak a köztük lévő elemektől függ. Ezért minden a értékre elég a szomszédos előfordulási párokat végignézni. ||
+Hint 2: || Mivel M legfeljebb 100, minden b értékre készíthetsz prefixösszeg tömböt: pref[b][i] az első i elemben lévő b-k száma. Így az l és r pozíciók közötti szakasz b-darabszáma pref[b][r-1] - pref[b][l] alakban adódik. ||
+Hint 3: || Az összes (a, b) párra előre számold ki a legnagyobb darabszámot: minden a értékhez végigmész az egymást követő előfordulási párokon, és minden b-re frissíted a maximumot. Ha egy a értéknek nincs két előfordulása, a hozzá tartozó válasz -1 marad. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Az értékek legfeljebb 100-félék lehetnek, ezért minden számhoz készítünk
-    prefixösszeg tömböt. Egy Ai érték minden két szomszédos előfordulása között
-    a Bi darabszáma így egyetlen kivonással megkapható. Minden (Ai, Bi) párra
-    előre kiszámítjuk a legnagyobb ilyen darabszámot.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

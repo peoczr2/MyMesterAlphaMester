@@ -1,6 +1,7 @@
 /*
-Feladat: Adott K kapacitású lift minden menetben felmegy a legfelső szintre, majd lejön. Minden utast el kell szállítani, a menetek számát minimalizáljuk.
-Ötlet: Egy fix menetnél az adott irányban minden él (szintek közti szakasz) legfeljebb K utast vihet át. Ezért az összes szükséges menet legalább annyi, mint bármelyik él terhelésének plafonja K-val osztva. Felfelé és lefelé külön kiszámítjuk az élek összterhelését különbségtömbbel, majd a válasz a két irányban kapott alsó korlát maximuma. Ez elérhető is, ezért optimális.
+Megoldás lényege: egy menetben minden szintköz felfelé és lefelé is legfeljebb K utast szállíthat, ezért ha egy szintközön az adott irányba utazók száma L, legalább ceil(L/K) menet kell; a két irány maximuma tehát alsó korlát. Az utasok útjai irányonként szintköz-intervallumok, ezek klikkszáma L, így az intervallumgráf L színnel színezhető úgy, hogy egy színen az utak nem fedik egymást; a színeket K-asával csoportosítva ceil(L/K) menet elég, tehát az alsó korlát elérhető. A szintközi terheléseket különbségi tömbbel számoljuk; az időigény a bemenet hosszával arányos.
+*/
+/*
 Hint 1: || Nézd meg, egy adott szintközön (i és i+1 között) összesen hány utasnak kell áthaladnia felfelé, illetve lefelé. ||
 Hint 2: || Egy menetben egy szintközön legfeljebb K utas mehet át, tehát erre az élre legalább ceil(terhelés / K) menet kell. ||
 Hint 3: || Külön számold a felfelé és lefelé menő igényeket, és vedd a két szükséges menetszám maximumát. ||
@@ -28,9 +29,9 @@ int main() {
                 diffUp[floor] += 1;
                 diffUp[to] -= 1;
             } else if (to < floor) {
-                // Lefelé: (to, floor] szintközökön halad át.
-                diffDown[to + 1] += 1;
-                diffDown[floor + 1] -= 1;
+                // Lefelé: [to, floor) szintközökön halad át (a szintközt az alsó szintjével indexeljük).
+                diffDown[to] += 1;
+                diffDown[floor] -= 1;
             }
         }
     }

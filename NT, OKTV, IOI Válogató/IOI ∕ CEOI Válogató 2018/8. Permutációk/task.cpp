@@ -1,17 +1,22 @@
 /*
 Megoldás lényege:
-A 3-1-2 minta-mentes permutációk pontosan a stack-sortolható permutációk egy
-szimmetrikus osztálya; ehhez egyértelműen hozzárendelhető egy Dyck-szó.
+A 3-1-2 minta-mentes permutációk pontosan azok, amelyek az 1,…,N sorozatból
+veremmel kiadhatók; ehhez egyértelműen hozzárendelhető egy Dyck-szó.
 Az input permutációból a szokásos push/pop szimulációval kapjuk meg a Dyck-szót:
 1,2,3,...,N elemeket tolunk a verembe, és amikor a következő kimenő elem a verem
-tetője, kipop-pintjuk.
+tetője, kipopoljuk.
 
 Ezen a Dyck-szón a lexikografikus sorrend (ahol a zárójel kisebb, mint a nyitójel)
 megegyezik a permutáció lexikografikus sorrendjével. Ezért elég a következő Dyck-
 szót kiszámítani: a jobb széltől visszafelé megkeressük a jobb oldalon még bővíthető
 legutolsó zárójelet, azt nyitóra cseréljük, majd a maradékot a lehető legkisebb
 érvényes Dyck-lexikográfiával töltjük fel. A kapott Dyck-szóból ismét stack-
-szimulációval visszaáll a permutáció.
+szimulációval visszaáll a permutáció. Az időigény O(N).
+*/
+/*
+Hint 1: || A 3-1-2 minta-mentes permutációk pontosan azok, amelyek az 1,…,N sorozatból veremmel kiadhatók. Ha a verembe tolást nyitó, a kivételt záró zárójellel jelöljük, zárójelsorozatot kapunk. Ha a záró zárójel a kisebb, ezeknek a zárójelsorozatoknak a lexikografikus rendje megegyezik a permutációk rendjével. ||
+Hint 2: || Jobbról balra haladva keresd meg az utolsó záró zárójelet, amely után még van nyitó zárójel. Ezt cseréld nyitóra, a mögötte lévő részt pedig töltsd ki a lehető legkisebb érvényes módon (lehetőleg záró zárójellel). Így megkapod a rákövetkező zárójelsorozatot. ||
+Hint 3: || A kapott zárójelsorozatot ugyanazzal a veremszimulációval dolgozd fel: nyitó = push, záró = pop. A kivett elemek sorrendje adja a rákövetkező permutációt. A futás O(N), így N ≤ 10 000 mellett gyors. ||
 */
 
 #include <bits/stdc++.h>

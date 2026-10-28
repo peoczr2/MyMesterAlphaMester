@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/8. Gazdaságos szomszédos állomáspárok *",
+    "method": "Futó utasszám egy bejárásban, szakaszonként a K·utasszám > M feltétel vizsgálata.",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "számlálás", "feltétel"],
+    "note": "A minta.zip be1/be2 fájljaiban nincs K és M sor, az állomások közvetlenül N után állnak. A validátor 0-át lát azért, mert a program az első állomás-sort K = 0, M = 200 értékként olvassa be, így a bevétel nulla; a feladat példáján (K = 100, M = 1000) a program 5-öt ad, ami egyezik a kiírással. Mért idő N = 1000-en: 0,00 mp (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/9. Gazdaságos üzemeltetés Budapesttől *",
+    "method": "Futó bevétel és az útvonal kiadásának (V·(k−1)) összevetése állomásonként.",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "keresés", "feltétel"],
+    "note": "Értelmezési kérdés: a veszteségesség nem az egyes szakaszokra, hanem a Budapesttől az adott állomásig tartó útra vonatkozik (bevétel ≥ V·(k−1)). Az egyes szakaszonkénti olvasat a minta.zip második tesztjén 6-ot adna, a minta 54-et vár, ezért a kumulatív olvasat igazolt. Ha nincs veszteséges állomás, a válasz N. Mért idő N = 1000-en: 0,00 mp (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

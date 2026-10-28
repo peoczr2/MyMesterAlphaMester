@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/17. Futár *",
+    "method": "Többforrású szélességi bejárás a kezdővárosokból, majd a távolságok K-val való összevetése.",
+    "category": "Gráf: többforrású BFS",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "szélességi bejárás", "többforrású bfs"],
+    "note": "A szöveg szerint a futár legfeljebb K várost érint, a minta viszont csak úgy egyezik, ha K élt jelent (a kezdővárost nem számoljuk; az 1. mintán a 6-os város 3 élnyire van, K=2). Mért idő: N=200 000, M=1 000 000 véletlen gráfon kb. 0,16 s (időlimit 0,3 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/18. Futó a sakktáblán **",
+    "method": "Szélességi bejárás a táblán: átlós csúszás az első bábuig, B részben az első bábu leütése.",
+    "category": "Gráf: BFS a sakktáblán",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "sakk"],
+    "note": "A B részben a leütött bábu a táblán marad; 4000 kis véletlen táblán ez azonos a bábu eltűnését figyelembe vevő modellel. A C++ megoldás 1500 véletlen esetben (a célmezőn álló bábuval is) egyezett a brute-force eredménnyel. Mért idő: N=200 üres táblán 0,03 s, 9999 bábuval 0,006 s (időlimit 0,3 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/19. Gráf színező verseny **",
+    "method": "Két FIFO sor szimulációja: a legrégebbi pont legkisebb festetlen szomszédja, egyezésnél fehér.",
+    "category": "Szimuláció, FIFO sorok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "sor", "gráf"],
+    "note": "Mindkét minta egyezik; az 1. mintán a 2. lépésben a 4-es pont fehér lesz, a 4. lépésben a piros kiürül, és a zöld egyedül folytatja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/2. 6x6-os solitaire **",
+    "method": "Szélességi bejárás a két korong rendezett állapotterén, visszafejtés szülőmutatókkal.",
+    "category": "Gráf: BFS állapottér",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "állapottér"],
+    "note": "Több megoldás esetén bármelyik elfogadott (a feladat szerint). A kimenet mindkét mintával megegyezik. Független ellenőrző: library/.work/HA-065/t2/check_solitaire.py; 300 véletlen kezdő- és végállásra érvényes és minimális lépésszámot adott.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

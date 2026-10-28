@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/27. Leghosszabb állomásszakasz ahol a vonat nem állt meg *",
+    "method": "Érkezés–indulás összehasonlítás, leghosszabb megálló nélküli szakasz keresése egy menetben.",
+    "category": "Leghosszabb folytonos szakasz",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szakasz", "maximum", "időpont"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/28. Leghosszabb bankban tartózkodás **",
+    "method": "Kártyaszámonként a belépési idő tárolása map-ban, kilépéskor különbség, a nap végén bent lévők 24:00-ig.",
+    "category": "Asszociatív tömb",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["map", "események", "időtartam"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/29. Leghosszabb egyszínű gyöngyökből álló szakasz **",
+    "method": "Minden kezdőponttól az azonos színű futás hosszának megszámolása körkörös indexeléssel, a maximum tárolása.",
+    "category": "Körkörös leghosszabb szakasz",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["körkörös", "szakasz", "modulo"],
+    "note": "Bizonytalan pont: döntetlennél (több azonos hosszú, különböző színű szakasz) a bemenetben korábban kezdődő kezdőgyöngyű szakaszt választom; a körbefutó szakasz kezdőgyöngye a szakasz eleje a körben. A feladatszöveg „az elsőt” kifejezése más értelmezést is megenged (pl. a 0. indexű gyöngyöt tartalmazó szakasz), ezt a minta nem teszteli.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/3. Átlag feletti légszennyezettségek *",
+    "method": "Esti értékek összege, az átlag egész szorzással (E * N > összeg) való összehasonlítása.",
+    "category": "Átlag feletti elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["átlag", "összegzés", "kiválogatás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

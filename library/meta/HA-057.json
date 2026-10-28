@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/64. Karavánok",
+    "method": "Mélységi bejárás utolsó gyökere mint jelölt, majd BFS-ek a gráfon és a fordított élekkel.",
+    "category": "Gráf: mélységi bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "mélységi bejárás",
+      "elérhetőség"
+    ],
+    "note": "A feladat.pdf és a minta.zip egyezik, mindkét minta kész. Időmérés: N=5000, M=100000 esetén kb. 0,02 s (időlimit 0,2 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/65. Hercegek házassága",
+    "method": "Tarjan-algoritmus a herceg-gráf erősen összefüggő komponenseire; kedvelt pár akkor marad, ha egy komponensben van.",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "párosítás",
+      "erősen összefüggő komponens",
+      "gráf"
+    ],
+    "note": "Eltérés a mappától: a 65. mappa feladat.pdf-je a Banda szétválasztása szöveget tartalmazza (IOI/CEOI 2019 5.), a Hercegek házassága szöveg a 67. mappa PDF-jében van. A minta.zip és a mappanév a Hercegek házassága feladatra illik, ezért a megoldás arra készült, és a mintán kész. Időmérés: N=2000, ΣK=200000 esetén kb. 0,01 s (időlimit 0,5 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/66. Úttisztítás",
+    "method": "Fa: részfa-méretekkel súlyozott élösszeg; körös: levéllehámozás és a kör két iránya.",
+    "category": "Gráf: összeszámlálás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "összeszámlálás",
+      "moduláris aritmetika"
+    ],
+    "note": "A feladat.pdf példája (436) és a minta.zip mindkét esete kész. Időmérés: N=100000, M=100000 esetén kb. 0,03 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/67. Keveset dolgozó vállalkozó",
+    "method": "Dinamikus programozás a bevételre levágva, minimális munkaidővel; visszakövetéssel a munkák.",
+    "category": "Dinamikus programozás: hátizsák",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "dinamikus programozás",
+      "hátizsák",
+      "visszakövetés"
+    ],
+    "note": "Eltérés a mappától: a 67. mappa feladat.pdf-je a Hercegek házassága szöveget tartalmazza, a Keveset dolgozó vállalkozó szöveget a NT, OKTV, IOI Válogató / IOI ∕ CEOI Válogató 2019 / 7. mappa PDF-jéből vettem. A minta.zip ennek felel meg, és a kimenet bitre egyezik a mintával. Időmérés: N=100, F=10000 esetén kb. 0,006 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

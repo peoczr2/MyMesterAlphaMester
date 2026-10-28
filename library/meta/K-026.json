@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: keresés/6. Gyorsabb vonat az előzőnél *",
+    "method": "Lineáris bejárás, szomszédos menetidők összehasonlítása",
+    "category": "Szomszédos elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "szomszédos"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/7. Képek *",
+    "method": "Négy irány független bejárása, oszlopok és sorok teljes egyezésének vizsgálatával",
+    "category": "Mátrix: eltérések keresése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["mátrix", "keresés", "összehasonlítás"],
+    "note": "A kimenet négy száma: bal, alsó, jobb, felső. A bal és jobb irányban oszlopok, az alsó és felső irányban sorok száma a válasz; ezt a minta (be1: 2 3 3 0) és a PDF-példa (1 1 3 2) igazolja. Ha a két kép teljesen azonos, a program minden irányban a teljes méretet írja (M N M N); a feladat ezt nem határozza meg.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/8. Két azonos figurájú lap *",
+    "method": "Lineáris bejárás, szomszédos lapok figuráinak összehasonlítása",
+    "category": "Szomszédos elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "szomszédos"],
+    "note": "„Egymás mellett” a sorrendben szomszédos lapokat jelenti; ezt a minta igazolja (be2: a 2. és a 4. lap azonos figurájú, a kimenet mégis 0).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/9. Két azonos színű lap *",
+    "method": "Lineáris bejárás, szomszédos lapok színeinek összehasonlítása",
+    "category": "Szomszédos elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "szomszédos"],
+    "note": "„Egymás mellett” a sorrendben szomszédos lapokat jelenti; ezt a minta igazolja (be2: az 1. és a 4. lap azonos színű, a kimenet mégis 6).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/15. Biztonságos leszállás",
+    "method": "Minden sorrend végigpróbálása; sorrendenként a páronkénti korlátok minimuma tört alakban, végül kerekítés másodpercre.",
+    "category": "Permutációk, ütemezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["permutáció", "intervallum", "optimalizálás"],
+    "note": "Δt tört is lehet (pl. 8 darab [0,1] perces intervallumnál 60/7 másodperc), ezért a legközelebbi másodpercre kerekítünk. Időlimit 0,1 mp: kb. 1,1 millió művelet N ≤ 8 esetén.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/16. Szókereső",
+    "method": "Visszalépéses DFS a rácson, a szó első betűjétől indulva; mezőnként legfeljebb egyszer lépünk.",
+    "category": "Rácsbeli DFS, visszalépés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["visszalépés", "rács", "mélységi keresés"],
+    "note": "Több helyes kimenet is lehet; az első megtalált illeszkedést írjuk ki. Időlimit 0,2 mp, a bejárás ezt bőven tartja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/17. Iskolaválasztás",
+    "method": "Kapacitásos hozzárendelés: maximális folyam (Dinic) a tanulók és az iskolák hálózatán.",
+    "category": "Hálózati folyam, hozzárendelés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["folyam", "hozzárendelés", "gráf"],
+    "note": "A feladat egy lehetséges jó beiskolázást kér, ezért a minta kimenete eltérhet. A két mintakimenet és a program kimenete független ellenőrzőprogrammal igazolva: minden tanuló választott iskolába kerül, egyik iskola sem lépi túl a férőhelyét. Nincs megoldás esetére a feladat nem ír kimenetet; a program -1-et ír.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/19. Munkásfelvétel maximált árral",
+    "method": "Bitmaszkos DP a betöltött állások maszkja szerint, legolcsóbb költség, visszakövetéssel a kiosztás.",
+    "category": "Bitmaszkos DP, hozzárendelés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bitmaszk", "dinamikus programozás", "hozzárendelés"],
+    "note": "A kimenet állásonként (1-től N-ig) a felvett jelentkező sorszáma. A minta2 (be2.txt) hibás: első sora 50 10000, holott N ≤ 15; a munkaszámok 0-tól indulnak, az Mi értékek nem egyeznek a sorok elemszámával, így a validátor átmenete ott nem igazolás. A megoldást 500 véletlen kis eseten független brute-force igazolta (döntés és minimális költség).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

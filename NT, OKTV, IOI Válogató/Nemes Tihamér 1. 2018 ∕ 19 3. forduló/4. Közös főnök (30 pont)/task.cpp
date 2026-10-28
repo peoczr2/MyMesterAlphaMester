@@ -1,11 +1,14 @@
+/*
+Megoldás lényege:
+A főnöki kapcsolatok gyökeres fát alkotnak, a gyökér a vállalat vezetője. Minden csúcs 2^k-adik ősét előre kiszámoljuk (bináris emelés), így két csúcs legközelebbi közös ősét (LCA) O(log N) lépésben kapjuk meg: a mélyebb csúcsot a mélységkülönbséggel felemeljük, majd mindkettőt együtt ugratjuk, amíg a szüleik még különböznek. Ha az LCA maga az A vagy a B, a keresett főnök az LCA közvetlen főnöke, egyébként maga az LCA. Az előfeldolgozás O(N log N), egy lekérdezés O(log N).
+*/
+/*
+Hint 1: || A főnöki lánc gyökeres fa, a két dolgozó legközelebbi közös főnöke a legmélyebb közös ős. Külön figyelj arra az esetre, amikor az egyik dolgozó a másik főnöke. ||
+Hint 2: || Számold ki minden csúcs mélységét és 2^k-adik ősét (bináris emelés), így a mélyebb csúcsot a mélységkülönbséggel fel tudod emelni a másik szintjére. ||
+Hint 3: || Ha a legközelebbi közös ős maga az egyik dolgozó (például A), akkor a keresett főnök annak közvetlen főnöke, tehát még egy lépéssel feljebb kell menni. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A főnöki lánc egy gyökerezett fa. Bináris emeléssel megkeressük a szokásos
-    legközelebbi közös ősöt, majd ha ez az egyik keresett dolgozó, akkor annak a
-    közvetlen főnökét kell visszaadni.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

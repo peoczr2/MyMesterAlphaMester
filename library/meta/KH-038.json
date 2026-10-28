@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Madármegfigyelés/24. Volt helység mindenféle madárral? *",
+    "method": "Soronkénti bejárás, nulla nélküli sor keresése, egy találat elég.",
+    "category": "Keresés, sorfeltétel",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "mátrix", "feltétel"],
+    "note": "A minta.zip-ben csak be1 és be2 van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a be1 (ez a PDF példája) kimenete 1, a be2-é 1; a független Python-ellenőrző (library/.work/KH-038/check.py) mindkettőt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/25. Volt maximális helység? *",
+    "method": "Oszloponkénti maximum, majd annak ellenőrzése, hogy egy sor minden eleme maximális-e.",
+    "category": "Maximumkeresés oszloponként",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "mátrix", "oszlop"],
+    "note": "A minta.zip-ben csak be1 és be2 van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a be1 (ez a PDF példája) kimenete 1, a be2-é 1; a független Python-ellenőrző mindkettőt igazolja. Értelmezés: a „legtöbb egyed” az összes helység közötti maximumot jelenti, és az egyenlőség megengedett.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/26. Volt maximális madárfaj? *",
+    "method": "Helységenként a leggyakoribb fajok halmaza; a halmazok metszete nem üres-e.",
+    "category": "Halmazmetszet, maximum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "maximum", "metszet"],
+    "note": "A minta.zip-ben csak be1 és be2 van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. Értelmezési pont: döntetlen esetén (egy helységben több faj is a legtöbb) mindegyik leggyakoribbnak számít, és a kérdés az, hogy van-e olyan faj, amely minden helységben a leggyakoribbak között van. A szöveg ezt nem mondja ki; a PDF példájában (be1) az 1. és 2. helységben a 2. és 3. faj, a 3. helységben az 1–3. faj a legtöbb, a közös 2. és 3. faj miatt a kimenet 1. A be2-ben a 17. faj minden helységben 1000, ez az értelmezést támasztja alá. Csupa nulla sort a kód nem szűr (nincs leggyakoribb faj), a mintákban ilyen sor nincs. Kézzel futtatva be1 és be2 kimenete 1; a Python-ellenőrző egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/27. Volt ritka madárfaj? *",
+    "method": "Fajonként a nullától különböző darabszámok számlálása; van-e pontosan 1-es.",
+    "category": "Számlálás fajonként",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "mátrix", "előfordulás"],
+    "note": "A minta.zip-ben csak be1 és be2 van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. Kézzel futtatva a be1 (ez a PDF példája) kimenete 1, a be2-é 0; a független Python-ellenőrző mindkettőt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

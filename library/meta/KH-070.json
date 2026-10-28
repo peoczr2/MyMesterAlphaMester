@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Szigetek/5. Csúcs nélküli sziget *",
+    "method": "Szigetek bejárása, belső elemek csúcs-ellenőrzése, első csúcsmentes sziget kiírása",
+    "category": "Tömb: szakaszok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "tömb",
+      "szigetek",
+      "csúcs"
+    ],
+    "note": "Több megoldás esetén az Európához legközelebbi csúcs nélküli sziget kiírását kéri, így a kimenet egyértelmű; a minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/6. Egymáshoz legközelebbi szigetpár *",
+    "method": "Szigetek gyűjtése, szomszédos szigetpárok távolságának minimuma, korábbi pár előnyben",
+    "category": "Tömb: minimumkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "tömb",
+      "minimum",
+      "szigetek"
+    ],
+    "note": "Több megoldás esetén az Európához legközelebbi pár kell, így a kimenet egyértelmű. A minta 1. bemenetének utolsó száma a fájlban 10, a feladatszövegben 1; ez az eredményt nem változtatja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/7. Egyre keskenyebb szigetek? *",
+    "method": "Szigetek hosszainak szomszédos összehasonlítása szigorú csökkenésre",
+    "category": "Tömb: monotonitás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "tömb",
+      "összehasonlítás",
+      "szigetek"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/8. Egyre magasabb szigetek? *",
+    "method": "Szigetek csúcsmagasságainak szomszédos összehasonlítása szigorú növekedésre",
+    "category": "Tömb: monotonitás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "tömb",
+      "maximum",
+      "szigetek"
+    ],
+    "note": "Az egyenlő csúcsot nem tekintjük magasabbnak (szigorú növekedés, mint a 7. feladatnál), a minta ezt nem teszteli.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

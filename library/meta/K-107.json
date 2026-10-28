@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/106. Nyereség ****",
+    "method": "Prefixösszegek, a korábbi prefixösszegek minimumának nyilvántartása egy menetben",
+    "category": "Maximális összegű szakasz",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "szakasz", "minimum"],
+    "note": "Bizonytalan: a 0 haszon -1-et ad (ezt a 2. minta mutatja). A döntetlen szakasznál (előbb a kisebb kezdő, majd a kisebb záró sorszám) a szövegből következtettem, a minta nem igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/107. Szabadnapok ****",
+    "method": "Rögzített kezdőnapra a legkisebb befejező nap, emberenként egy mutatóval, maximum-tömbbel",
+    "category": "Minimális lefedő intervallum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "minimum", "tömb"],
+    "note": "A hosszt b-a-ban mérem (a napok száma ettől eggyel több, a sorrend nem változik). Döntetlennél a kisebb kezdőnapot írom; ezt a 2. minta igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/108. Felhasználó azonosítás ****",
+    "method": "Rendezés után a szomszédok legnagyobb közös előtagja, plusz egy",
+    "category": "Rendezés, közös előtag",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["karakterlánc", "rendezés", "előtag"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/109. Fényképezés adott időtartam alatt ****",
+    "method": "Prefixösszegek: érkezések és távozások darabszámából minden kezdőpontra O(1) alatt",
+    "category": "Intervallum-metszés, prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "prefixösszeg", "maximum"],
+    "note": "Időmodell a mintából: a perc egész időpont, az ember [Érki..Távi], a fényképész [t..t+P-1] zárt tartományban van. A folytonos [t, t+P] modell t=4-re 5 embert adna, a minta (5. perc, 4 ember) ezt kizárja. A t tartománya: [legkorábbi érkezés, legkésőbbi távozás - P + 1].",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

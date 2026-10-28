@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2018 ∕ 19 3. forduló/1. Autószállítás (40 pont)",
+    "method": "Csúszó ablak (két mutató), a legrövidebb H-t elérő szakasz keresése",
+    "category": "Csúszó ablak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "keresés",
+      "csúszó ablak",
+      "tömb"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2018 ∕ 19 3. forduló/2. Műkincsgyüjtő (40 pont)",
+    "method": "Komplementer keresés egy menetben, az árak első előfordulásának tárolásával",
+    "category": "Párkeresés, komplementer",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "párkeresés",
+      "tömb",
+      "összeg"
+    ],
+    "note": "Kézi minta: a feladat szerint „két tetszőleges kép sorszámát kell írni, amelyek ára összesen P forint!”. A minta.zip be2 esetén a program 80385 113230 párt ad, a ki2 113230 80385 párt; mindkét pár ára 201902. A PDF-példa (2 5) és a be1 (ki1: 3 4) is helyes pár. Ellenőrzés: library/.work/R-100/check2.py (különbözőség, tartomány, összeg, -1 esetén pár nélküliség), a library/.work/R-100/stress2.py 400 véletlen esete szerint hibátlan. A validátor a sorrendet is összeveti, ezért a be2 eltérést jelez.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2018 ∕ 19 3. forduló/3. Kereskedő (40 pont)",
+    "method": "Prefix maximum a második vásárra, minden első vásári x-re O(1) keresés",
+    "category": "Prefix maximum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "prefix maximum",
+      "optimalizálás",
+      "tömb"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2018 ∕ 19 3. forduló/4. Közös főnök (30 pont)",
+    "method": "Legközelebbi közös ős bináris emeléssel, speciális eset: közvetlen főnök",
+    "category": "Fa: legközelebbi közös ős",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "lca",
+      "bináris emelés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

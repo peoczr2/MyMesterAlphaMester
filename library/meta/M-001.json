@@ -1,0 +1,242 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/1. Átfedő intervallumok *",
+    "method": "Bal végpont szerinti rendezés, K legnagyobb jobb végpont minimumkupaccal",
+    "category": "Intervallumok, kupac",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "intervallum",
+      "kupac",
+      "rendezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/19. Kapcsoló *",
+    "method": "Bekötött nyomtatók halmazát állapotként követő DP, 8 maszkon",
+    "category": "Dinamikus programozás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "bitmaszk",
+      "állapottér"
+    ],
+    "note": "A magyarázat O(1) memóriát említ, de a kód a teljes N hosszú bemeneti sztringet tárolja; a DP-tábla konstans méretű.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/21. Kavicsok *",
+    "method": "Bitmaszk-állapotok memoizált rekurzív keresése, a végállapotok minimuma",
+    "category": "Memoizált keresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "memoizálás",
+      "bitmaszk",
+      "rekurzió"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/22. Képben kép keresése *",
+    "method": "Kétdimenziós gördülő hash, egyezés után közvetlen ellenőrzés",
+    "category": "Mintaillesztés, hash",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mintaillesztés",
+      "hash",
+      "rács"
+    ],
+    "note": "Ha a nagy kép nem tartalmazza a kis képet, a kimenet 0 0 (a feladat szerint). A minta 2/2.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/23. Képtömörítés futammal *",
+    "method": "Soronkénti futamhossz-kódolás az azonos betűk összefüggő szakaszaival",
+    "category": "Futamhossz-kódolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "futamhossz",
+      "tömörítés",
+      "kép"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/24. Képtömörítés változással *",
+    "method": "Első sor futamhossz-kódolása, utána csak az előzőtől eltérő szakaszok",
+    "category": "Futamhossz-kódolás, változás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "futamhossz",
+      "tömörítés",
+      "összehasonlítás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/26. Kísérlet *",
+    "method": "Keletkezés szerint rendezés, K legnagyobb pusztulási idő kupaccal",
+    "category": "Intervallumok, kupac",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "intervallum",
+      "kupac",
+      "rendezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/28. Lámpagyújtogató *",
+    "method": "XOR-egyenletek: sor- és oszlopkapcsolók az első sor alapján, komplementerrel",
+    "category": "Bitműveletek, paritás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "paritás",
+      "xor",
+      "rács"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/29. Lapok *",
+    "method": "Hátulról festés DSU-val, majd komponensek számolása DSU-val",
+    "category": "Diszjunkt halmazok",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dsu",
+      "komponensek",
+      "rács"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/30. Lefedés két intervallummal *",
+    "method": "Bal végpont szerinti rendezés, szegmensfa a maximális jobb végponthoz",
+    "category": "Intervallumok, szegmensfa",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szegmensfa",
+      "intervallum",
+      "rendezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/31. Legnagyobb hasznú téglalap *",
+    "method": "Osztópárok szerinti téglalapméretek, 2D prefixösszeggel kiértékelve",
+    "category": "Prefixösszeg, téglalap",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "prefixösszeg",
+      "téglalap",
+      "osztó"
+    ],
+    "note": "A feladat nem zárja ki, hogy nincs elférő T területű téglalap; ekkor a kód hibás kimenetet ad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/32. Legrövidebb szakasz **",
+    "method": "Sajtárusok pozícióinak K-as csúszó ablaka, minimális különbség",
+    "category": "Csúszó ablak",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "csúszó ablak",
+      "tömb",
+      "szakasz"
+    ],
+    "note": "Nincs be/ki minta a minta.zip-ben; a PDF példája (6 9) kézzel igazolva, 400 véletlen esetben egyezik a brute-force eredménnyel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/33. Legsűrűbb fás terület *",
+    "method": "Sorpárok rögzítése, oszlopösszegek, sűrűség keresztszorzással",
+    "category": "Prefixösszeg, sűrűség",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "mátrix",
+      "prefixösszeg",
+      "törtek"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/4. Csillagtérkép *",
+    "method": "Alsó és felső sorpár rögzítése, leghosszabb csillagmentes oszlopszakasz",
+    "category": "Legnagyobb téglalap",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "téglalap",
+      "rács",
+      "bejárás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/5. Csoki *",
+    "method": "Prefixösszegek maradékai, minden maradékhoz az utolsó előfordulás",
+    "category": "Prefixösszeg, maradékok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "prefixösszeg",
+      "maradék",
+      "hasítótábla"
+    ],
+    "note": "A magyarázat szigorú növekedést említ; nulla dobozérték esetén a prefixösszeg csak nem csökken, a kód ettől függetlenül helyes.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

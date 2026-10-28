@@ -5,11 +5,11 @@ alapján, majd ezek szerint rendezzük a pontokat. A feladatban megadott első r
 pontsorrendje pontosan a standard Hilbert-orientáció.
 
 */
-
-// Hint 1: || Minden szintben csak azt kell eldönteni, melyik negyedbe esik a pont. ||
-// Hint 2: || A Hilbert-indexet bitenként, felülről lefelé is fel lehet építeni. ||
-// Hint 3: || A végén egyszerűen index szerint rendezd a pontokat. ||
-
+/*
+Hint 1: || Minden szintben csak azt kell eldönteni, melyik negyedbe esik a pont. ||
+Hint 2: || A Hilbert-indexet bitenként, felülről lefelé is fel lehet építeni. ||
+Hint 3: || A végén egyszerűen index szerint rendezd a pontokat. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

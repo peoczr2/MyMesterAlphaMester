@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/4. Lámpák",
+    "method": "Gauss-elimináció GF(2) felett, a szabad változók kombinációinak kipróbálásával a legkevesebb kapcsolás.",
+    "category": "Lineáris egyenletrendszer GF(2)",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["lineáris egyenletrendszer", "gauss-elimináció", "bitmaszk"],
+    "note": "Minta-eltérés: a be2.txt első esetében (N=4) a kapcsolások száma egyezik (5), de más optimális párok és sorrend szerepel; a feladat szerint bármelyik optimális megoldás elfogadható. A többi mintaeset egyezik. Érvényesség és minimalitás ellenőrzése: library/.work/NT-005/check_lamp.py (minták + véletlen kis esetek brute-force-szal).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/5. Banda szétválasztása",
+    "method": "Artikulációs pontok keresése mélységi bejárással (low-érték), a részek száma és legnagyobb mérete alapján.",
+    "category": "Gráf: artikulációs pontok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "artikulációs pont", "mélységi bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/6. Hercegek házassága",
+    "method": "Irányított gráf erősen összefüggő komponensei (Tarjan): a váltakozó körbe eső párok kiválasztása.",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["párosítás", "erősen összefüggő komponens", "gráf"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/7. Keveset dolgozó vállalkozó",
+    "method": "Dinamikus programozás a bevételre, minimális idővel; visszakövetéssel a kiválasztott munkák.",
+    "category": "Dinamikus programozás: hátizsák",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["dinamikus programozás", "hátizsák", "visszakövetés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

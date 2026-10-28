@@ -1,7 +1,15 @@
 /*
-   Hibás lépcsők: DP a lépésszámra és az elfoglalt fokra.
-   A hibás fokokra nem érkezhetünk meg, a válasz a legfeljebb L lépéses
-   bejutások száma.
+Megoldás lényege:
+DP a megtett lépések számára és a lépcsőfokra: dp[s][p] azt adja meg, hányféleképpen juthatunk a p-edik
+lépcsőfokra pontosan s lépésben. Hibás lépcsőfokra nem léphetünk, ezért ott az érték 0. Az átmenet az előző
+K lépcsőfok értékeit összegzi, a válasz pedig az N-edik lépcsőfokra érkező utak száma minden s<=L lépésszámra.
+Csak összeadás van, így a 64 bites túlcsordulás modulo 2^64 nem rontja el a végeredményt, amely a feladat
+szerint elfér 64 biten. Az időigény O(L*N*K), ami N, K, L legfeljebb 100 mellett 10^6 művelet.
+*/
+/*
+Hint 1: || Az állapot két dimenziós: hány lépés után és melyik lépcsőfokon állunk. Mivel legfeljebb L lépést számolunk, minden lépésszámra külön kell összegezni. ||
+Hint 2: || Egy lépcsőfokra az előző lépés előtt az előző K lépcsőfok valamelyikéről érkezhettünk. A hibás lépcsőfokokra az érték legyen 0, és ott ne számoljunk tovább. ||
+Hint 3: || A kiindulópont a 0-s lépcsőfok, és a válasz az N-edik lépcsőfokra érkező utak számainak összege minden lépésszámra, legfeljebb L-ig. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

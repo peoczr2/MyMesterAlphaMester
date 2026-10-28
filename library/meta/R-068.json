@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/20. Mókusok *",
+    "method": "Többszörösök számlálása minden ugráshosszra, majd a 0 és a maximális darabszámú kövek kiírása.",
+    "category": "Számlálás: többszörösök",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "többszörös", "tömb"],
+    "note": "Mért idő: 0,01 mp (N=20 000, M=100).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/21. Nagyonprímek *",
+    "method": "DFS a prímek balról jobbra építésével, minden kezdőszelet prímvizsgálatával.",
+    "category": "Visszalépéses keresés, prímek",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["prím", "visszalépés", "keresés"],
+    "note": "Mért idő: 0,00 mp (N=8).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/22. Negatív számrendszer **",
+    "method": "Ismételt maradékos osztás -10-zel, negatív maradék korrekcióval; visszaváltás Horner-sémával.",
+    "category": "Számrendszer-átváltás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számrendszer", "maradék", "horner"],
+    "note": "Mért idő: 0,00 mp (|X| = 10^20).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/23. Négyzetszám nem osztó *",
+    "method": "Szita az [A,B] intervallumban: a prímek négyzeteinek többszöröseit megjelöljük, a többit kiírjuk.",
+    "category": "Szita: négyzetmentes számok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["szita", "négyzetmentes", "prím"],
+    "note": "Mért idő: 0,00 mp (B-A = 10 000, B = 10^6).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/24. Összes prímosztó *",
+    "method": "Próbaosztás d²-ig, a talált prímosztókat teljesen kiosztjuk a számból.",
+    "category": "Prímtényezős felbontás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["prímtényező", "próbaosztás", "osztó"],
+    "note": "Mért idő: 0,00 mp (N=10^8).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/25. Pierce *",
+    "method": "Összes p/q tört felsorolása, rendezés egész szorzásos összehasonlítással.",
+    "category": "Törtek rendezése",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tört", "rendezés", "összehasonlítás"],
+    "note": "A feladatszöveg szerint az első sor M (az értékek felső korlátja, szigorúan kisebb), a második N (a nevezők felső korlátja); a minta ezt fordítva mutatja (`2 3`: nevezők legfeljebb 2, értékek legfeljebb 3, a határ zárt). A megoldás a mintát követi, mindkét minta stimmel. Mért idő: 0,01 mp (100 10).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

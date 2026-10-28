@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/22. Jelentés *",
+    "method": "BFS a gyökértől: minden dolgozó mélysége, a legmélyebb csúcs keresése a legkisebb sorszámmal.",
+    "category": "Gráf: BFS és mélység",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "bfs",
+      "mélység"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/23. Kamionok *",
+    "method": "Részfánként a termelés és a levelek számának hányadosa; a válasz ezek felfelé kerekített maximuma.",
+    "category": "Fa: részfák és levelek",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "részfa",
+      "kapacitás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/24. Kémek *",
+    "method": "Főnök: a felettes nélküli csúcs; legtöbb beosztott: fokszámlálás; legmesszebb: BFS a főnöktől.",
+    "category": "Fa: fokszám és mélység",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "fokszám",
+      "bfs"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/25. Kémszervezet **",
+    "method": "BFS-sel szintenként számoljuk a tagokat, a legtöbb tagú legkisebb szintet adjuk.",
+    "category": "Gráf: BFS szintek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "bfs",
+      "szint"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl (csak be1/be2). Kézzel lefuttatva: be1 -> 3, be2 -> 14; független napi szimulációval ugyanez.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/26. Képlet ***",
+    "method": "Veremmel felépített kifejezésfa; minden részre a legnagyobb és legkisebb elérhető érték (egy jelváltás).",
+    "category": "Kifejezésfa: DP",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "kifejezés",
+      "dp",
+      "fa"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/27. Képzés **",
+    "method": "Minimális csúcsfedés fán: kétállapotú DP (képzésen van / nincs), a gyökér is szabadon választható.",
+    "category": "Fa: DP, csúcsfedés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "dp",
+      "csúcsfedés"
+    ],
+    "note": "be2.txt/ki2.txt: a minta M=41565, de 40407 elemű lefedés is érvényes (ellenőrizve), és a DP szerint ez a minimum, így a minta nem minimális; be1 egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

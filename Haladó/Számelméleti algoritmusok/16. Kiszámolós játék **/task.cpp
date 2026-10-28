@@ -1,12 +1,16 @@
 /*
- * Josephus-jellegű kiszámolós játék. A kivált gyerekeket sorban kiírjuk, majd
- * a végén a megmaradt gyerek sorszámát.
- 
-Hint 1: || Ez a klasszikus Josephus-szimuláció: mindig az aktuális körben kell a K-adik gyereket kivenni. ||
-Hint 2: || Tarts egy listát vagy vektort az életben maradtakról, és az indexet léptesd `(idx+K-1) mod méret` szerint minden kiesésnél. ||
+Megoldás lényege: a gyerekeket egy vektorban tároljuk, és az aktuális kezdőpozícióból számolva minden kiesésnél
+a K-adik élő gyereket vesszük ki. A kiesett gyerek helyére a következő gyerek kerül, ezért a következő számolás
+ugyanarról az indexről indul, és a következő kiesett index mindig (idx + K - 1) mod méret. Az utolsó megmaradt
+gyerek sorszáma a végeredmény. A törlések miatt az időigény O(N^2), ami N <= 10 000 mellett bőven belefér.
+*/
+/*
+Hint 1: || Ez a klasszikus Josephus-szimuláció: mindig az aktuális körben a K-adik még bent lévő gyereket kell kivenni. ||
+Hint 2: || Tarts egy vektort az életben maradtakról, és az idx indexet a kiesett elem helyén hagyva a következő kiesőt az `(idx + K - 1) mod méret` képlettel számold. ||
 */
 
-#include "../common.hpp"
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív kiszámítás/4. Járda 1 – 1x1,1x2,1x3 *",
+    "method": "Háromtagú rekurzió: az utolsó lap 1, 2 vagy 3 hosszú, dp[n]=dp[n-1]+dp[n-2]+dp[n-3].",
+    "category": "Lineáris rekurzió",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "rekurzió",
+      "dinamikus programozás",
+      "számlálás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/5. Járda 2 – 1x1,1x2 *",
+    "method": "Oszloponkénti profil-DP két soros járdán, bitmaszk állapotokkal.",
+    "category": "Profil-DP: 2 soros járda",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "bitmaszk",
+      "számlálás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/6. Járda 2 – 1x2,1x3 *",
+    "method": "Profil-DP két soros járdán, az 1×3 lap miatt három oszlopnyi előretekintéssel.",
+    "category": "Profil-DP: 2 soros járda",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "bitmaszk",
+      "számlálás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/7. Kép dekódolása **",
+    "method": "Quadtree-kódok visszafejtése: a negyedek útját követve kitöltjük a négyzeteket.",
+    "category": "Quadtree: visszafejtés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "rekurzió",
+      "quadtree",
+      "kódolás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/8. Kép kódolása **",
+    "method": "Quadtree-kódolás: homogén négyzetekhez útvonal és szín, különben rekurzió a négy negyedre.",
+    "category": "Quadtree: kódolás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "rekurzió",
+      "quadtree",
+      "rendezés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/9. Robot **",
+    "method": "Monoton lánc leghosszabb részsorozata (2D LIS) Fenwick-fával, a lépésszám-korláttal szűrve.",
+    "category": "2D LIS, Fenwick-fa",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "fenwick",
+      "lis",
+      "rendezés"
+    ],
+    "note": "Több helyes útvonal lehet (a feladat szerint bármelyik megadható), ezért a validátor a mintakimenettel nem egyezik; a minta M-értéke (3, 98) egyezik, a kiírt útvonal érvényes. Ellenőrző program: library/.work/R-056/chk/check9.py (független rácsos DP és O(N²) referencia).",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

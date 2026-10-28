@@ -1,8 +1,8 @@
 /*
- * Minden lekérdezett Z-re eldöntjük, hogy felírható-e A és B nemnegatív
- * többszöröseinek összegeként. A gcd-szűrés után egyetlen moduláris megoldást
- * vizsgálunk.
- 
+Megoldás lényege:
+Ha g = gcd(A,B), akkor minden előállítható Z osztható g-vel, ezért először ezt ellenőrizzük. Ezután legyen a = A/g, b = B/g, z = Z/g, ekkor gcd(a,b) = 1, és az ax + by = z egyenletnek akkor van nemnegatív megoldása, ha a legkisebb nemnegatív x-re (ami x ≡ z·a^(-1) mod b) még a·x ≤ z. Ilyenkor y = (z − a·x)/b már egész és nemnegatív, különben nincs megoldás. A bővített euklideszi algoritmus adja az a inverzét, így egy lekérdezés O(log(max(A,B))) időben fut, és a legfeljebb 10 000 lekérdezés is gyorsan megvan.
+*/
+/*
 Hint 1: || Először nézd meg, hogy Z osztható-e gcd(A,B)-vel, mert ha nem, biztosan nem állítható elő. ||
 Hint 2: || A gcd-szűrés után egy moduláris egyenletet kell megoldanod, hogy legyen nemnegatív x és y is az Ax+By=Z felírásban. ||
 */

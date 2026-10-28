@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/18. Jelek *",
+    "method": "Az A-szavakat U a U b bontással, rekurzívan ellenőrizzük; a B-szavakat zárójel-egyensúllyal.",
+    "category": "Rekurzív felismerés, zárójelezés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["rekurzió", "zárójelezés", "nyelvtan"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/3. Betűfelismerés *",
+    "method": "Szegmentálás üres oszlopokkal, majd végpontok és elágazások száma és helye alapján osztályozás.",
+    "category": "Pixelgrafika, vonalelemzés",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["alakfelismerés", "pixelgrafika", "szomszédság"],
+    "note": "A szabályokat a szöveg leírásából és a két mintából vezettem le, más betűre nincs minta. L és V a szöveg szerint nem különböztethető meg, az L-t a program '-'-nek veszi. Két pontos csúcsú V és 3 széles N szintetikus rajzon hibázott, ezért ilyen alakokra bizonytalan.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/36. Mintakeresés **",
+    "method": "Prefixenként a legkésőbbi kezdőindexet tároljuk, így minden jobb végre a legrövidebb ablak adódik.",
+    "category": "Mintakeresés, minimális ablak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["részsorozat", "prefixum", "szövegfeldolgozás"],
+    "note": "A szöveg UTF-8 kódolású (az ő, á kétbájtos), ezért a karaktereket kódpontonként számoljuk; a mintán ez adja a 3 44 eredményt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/37. Munka **",
+    "method": "Kétmutatós technika: nemnegatív jövedelmek miatt a bal határ csak előre léphet.",
+    "category": "Kétmutatós módszer",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["kétmutatós", "tömb", "összeg"],
+    "note": "A minta.zip-ben nincs kimeneti fájl (csak be1, be2), ezért a validátor nem futtatott mintát. A megoldást kézzel futtattam: a feladat példáján (3 4) és 400 véletlen kis esetben brute-force ellenőrzővel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

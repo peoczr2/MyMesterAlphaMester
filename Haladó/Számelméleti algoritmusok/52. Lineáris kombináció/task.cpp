@@ -1,11 +1,12 @@
 /*
- * A két generátor által előállítható számok között keressük a legkisebb X >= C
- * értéket. A megoldás a maradékok ciklikus vizsgálatára és floor-sum számlálásra
- * épül.
- 
+Megoldás lényege:
+Először g = gcd(A, B) szerint osztunk, így az együtthatók relatív prímek, az X pedig csak g többszöröse lehet. A kérdés ekkor az, hogy mi a legkisebb C' = ceil(C / g) feletti vagy egyenlő szám, amely K*a + L*b alakban előáll (a = A / g, b = B / g). Ezt bináris kereséssel határozzuk meg: egy D eltolásra floor_sum-os számlálással (O(log) időben) eldöntjük, van-e előállítható szám a [C', C' + D] tartományban. A második kimeneti sorba a felbontás kerül: L a [0, a - 1] tartományba eső, egyértelmű együttható (a B-hez tartozik), K pedig (Y - L * b) / a. Az idő O(log^2(max(A, B))).
+*/
+/*
 Hint 1: || A kérdés nem az, hogy C előállítható-e, hanem hogy mi a legkisebb előállítható szám C fölött vagy egyenlő vele. ||
 Hint 2: || Érdemes a kisebb együttható szerinti maradékosztályokat vizsgálni, és ezekből meghatározni, mekkora a legkisebb elérhető felkerekítés. ||
 Hint 3: || Ha egy maradékosztályban tudod a legkisebb jó értéket, akkor minden nagyobb, ugyanolyan maradékú szám egyszerűen ennek egy többszörössel való eltolása. ||
+Hint 4: || A felbontáshoz L-et a kisebb együttható modulusában keresd: L ≡ Y · b^(-1) (mod a), ahol b^(-1) a b moduló-inverze a szerint; utána K = (Y - L · b) / a adódik maradék nélkül. ||
 */
 
 #include "../common.hpp"
@@ -43,6 +44,20 @@ static long long floor_sum(long long n, long long m, long long a, long long b) {
     return ans;
 }
 
+static long long modinv(long long a, long long m) {
+    long long r0 = a, r1 = m, s0 = 1, s1 = 0;
+    while (r1) {
+        long long q = r0 / r1;
+        long long t = r0 - q * r1;
+        r0 = r1;
+        r1 = t;
+        t = s0 - q * s1;
+        s0 = s1;
+        s1 = t;
+    }
+    return ((s0 % m) + m) % m;
+}
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -52,6 +67,7 @@ int main() {
     long long g = gcdll(a, b);
     a /= g;
     b /= g;
+    long long a0 = a, b0 = b;
     c = (c + g - 1) / g;
     if (a > b) swap(a, b);
 
@@ -72,6 +88,10 @@ int main() {
         if (exists_residue_le(mid)) hi = mid; else lo = mid + 1;
     }
     long long candidate = c + lo;
-    cout << g * min(high, candidate) << '\n';
+    long long Y = min(high, candidate);
+    cout << g * Y << '\n';
+    long long L = a0 > 1 ? (Y % a0) * modinv(b0 % a0, a0) % a0 : 0;
+    long long K = (Y - L * b0) / a0;
+    cout << K << ' ' << L << '\n';
     return 0;
 }

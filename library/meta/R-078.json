@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/23. N bástya",
+    "method": "Permutációk lexikografikus felsorolása std::next_permutation-nel",
+    "category": "Permutációk",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "permutáció",
+      "lexikografikus sorrend",
+      "visszalépés"
+    ],
+    "note": "Megjegyzés: a minta (ki2.txt, N=8) hibás. Csak 45 sor van a 40320-ból, és ezek közül a 3.–9. sor nem permutáció (pl. a 9. sor: 7 7 6 4 2 5 3 1). Próbálkozások: (1) a next_permutation-megoldás futtatása, minta 1/2; (2) a ki2 sorainak elemzése: nem-permutáció sorok nem egyeztethetők sorrend- vagy inverz-átalakítással sem; (3) brute-force összevetés N=1..8-ra, N=10 futásideje 0,11 mp. A kód a feladat szerint helyes. Döntés kell: a minta javítása, vagy kézi jelölés (a feladatszöveg nem mondja ki, hogy több kimenet elfogadott).",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/24. N vezér (összes megoldás)",
+    "method": "Soronkénti visszalépéses keresés oszlop- és átlójelölőkkel",
+    "category": "Visszalépéses keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "vezér",
+      "átló"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/25. N vezér (egy megoldás)",
+    "method": "Soronkénti visszalépéses keresés, az első megoldásnál azonnal leállva",
+    "category": "Visszalépéses keresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "vezér",
+      "korai leállás"
+    ],
+    "note": "Kézi: a feladat szerint egy tetszőleges megoldás adható meg (megad egy lehetséges módot, nagyon sok megoldás lehet). A minta (N=8: 4 6 8 2 7 1 3 5) érvényes elhelyezés, a program a lexikografikusan első megoldást adja (N=8: 1 5 8 6 3 7 2 4), ezért a validátor be2-nél minta-hibát jelez. Ellenőrzés: library/.work/R-078/check.py, N=1..10-re érvényes elhelyezés, -1 csak N=2 és N=3 esetén.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/26. N-ből K az összes lehetséges sorrendben",
+    "method": "Visszalépés használt-jelölővel, a számokat növekvő sorrendben próbálva",
+    "category": "Variációk",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "visszalépés",
+      "variáció",
+      "lexikografikus sorrend"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/27. N-ből K az összes lehetséges növekvő sorrendben",
+    "method": "Visszalépés, minden szinten csak a növekvő számokat választva",
+    "category": "Kombinációk",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "visszalépés",
+      "kombináció",
+      "lexikografikus sorrend"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/28. Szóösszeadó fejtörő",
+    "method": "Mind a 10! számjegy-kiosztás végigpróbálása next_permutation-nel",
+    "category": "Permutációk",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "permutáció",
+      "fejtörő",
+      "brute-force"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

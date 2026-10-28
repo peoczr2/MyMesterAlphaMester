@@ -1,9 +1,14 @@
 /*
-Hungarian megoldás: minden tanuló pontosan egy iskolába kerül, ezért a feladat
-kapacitásos bipartit párosítás.
-
-Hint 1: || A tanuló csak a megadott két iskola egyikébe mehet. ||
-Hint 2: || Az iskolák férőhelyei kapacitásként jelennek meg a hálózatban. ||
+Megoldás lényege: minden tanulót pontosan egy, általa megjelölt iskolába kell felvenni, az iskolák
+pedig legfeljebb a férőhelyeikig tölthetők. Ezt kapacitásos hozzárendelésnek tekintjük: a forrásból
+minden tanulóhoz 1 kapacitású él megy, a tanulóktól a megjelölt iskoláikba szintén 1 kapacitású élek
+vezetnek, az iskoláktól pedig a nyelőbe az iskola férőhelyeinek számával megegyező kapacitású él.
+Akkor és csak akkor van jó beiskolázás, ha a maximális folyam értéke N. A Dinic-algoritmus ezt gyorsan
+kiszámolja, a kis N és M miatt az időigény nem probléma.
+*/
+/*
+Hint 1: || Egy tanuló csak a jelentkezési lapján megjelölt (legfeljebb két) iskola valamelyikébe kerülhet. ||
+Hint 2: || Hálózatot építs: forrás, tanulók, iskolák, nyelő. A forrásból a tanulókba és a tanulóktól az iskolákba vezető élek kapacitása 1, az iskolából a nyelőbe vezető élé pedig az iskola férőhelyeinek száma. ||
 */
 
 #include "../common.hpp"

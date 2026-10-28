@@ -1,12 +1,8 @@
 /*
-Egy adott K idohatarnal minden termelore eldontheto, hogy csak az A hutohazba vihet, csak a B-be,
- vagy mindkettobe. Az adott K akkor megvalosithato, ha nincs olyan termelo, aki egyikbe sem er oda,
-es a kenyszeritett A-sok szama legfeljebb N1, a kenyszeritett B-sek szama pedig legfeljebb N2.
-Mivel N1 + N2 >= N, a rugalmas termelok mar mindig elhelyezhetok.
+Megoldás lényege:
+Egy adott K időkorlátnál minden termelőre eldönthető, hogy csak az A hűtőházba viheti, csak a B-be, vagy mindkettőbe. A K akkor megvalósítható, ha nincs olyan termelő, aki egyikbe sem ér oda, a kényszerített A-k száma legfeljebb N1, a kényszerített B-k száma pedig legfeljebb N2. Mivel N1 + N2 >= N, a rugalmas termelők mindig elhelyezhetők.
 
-Az optimumot binaris kereses adja K-ra. Utana meg egyszer vegigmegyunk, kulon vesszuk a kenyszer-
-es a rugalmas eseteket, majd annyi rugalmas termelot teszunk A-ba, amennyi a kapacitas kitoltesehez
-szukseges, a tobbit pedig B-be.
+Az optimumot K-ra bináris keresés adja: a keresett K az 1 és 10 000 közötti egész, így kb. 14 ellenőrzés fut le, mindegyik O(N) időben. Utána egyszer végigmegyünk a termelőkön: a kényszerítetteket a saját hűtőházukba tesszük, a rugalmasak közül pedig annyit viszünk A-ba, amennyi a kapacitás kitöltéséhez kell, a többit B-be. Az összes időigény O(N log C), ahol C a legnagyobb időérték (legfeljebb 10 000).
 */
 /*
 Hint 1: || Először csak azt döntsd el, hogy egy adott K időkorlát egyáltalán megvalósítható-e. ||

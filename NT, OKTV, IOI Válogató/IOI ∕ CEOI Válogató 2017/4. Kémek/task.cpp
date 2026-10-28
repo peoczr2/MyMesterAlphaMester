@@ -8,7 +8,11 @@ amelyre low[gyermek] >= tin[csúcs]. A gyökérnél a csoportszám egyszerűen a
 gyerekszáma. A teljes gráfban a legnagyobb szétesést okozó csúcsot kell kiválasztani;
 ha senki sem növeli a komponensek számát, 0-t írunk ki.
 */
-
+/*
+Hint 1: || Egy tag letartóztatása pontosan akkor növeli a csoportok számát, ha a gráfban artikulációs pont. Az ilyen csúcsokat kell megkeresni, és közülük a legnagyobb szétesést okozót választani. ||
+Hint 2: || Mélységi bejárással minden csúcsnak kiszámoljuk a belépési idejét (tin) és a visszafelé elérhető legkisebb belépési idejét (low). Egy nem gyökér csúcs gyermeke új csoportot alkot, ha low[gyermek] >= tin[csúcs]. ||
+Hint 3: || A gyökérnél a csoportok száma a DFS-fa gyermekeinek száma, ezért ott a szétesés eggyel kevesebb. Ha egyik csúcs sem bont szét, a válasz 0. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,12 +1,25 @@
 /*
-Megoldás: A pontok iránya szerint körbejárunk A körül. Minden élhez azt a szögintervallumot
-keressük meg, amelyből A-ból nézve metszi a sugár az élt; ez az a két végponti irány közül az,
+Megoldás: A pontok iránya szerint körbejárunk az origó körül. Minden élhez azt a szögintervallumot
+keressük meg, amelyből az origóból nézve metszi a sugár az élt; ez az a két végponti irány közül az,
 amelyik tartalmazza az él felezőirányát. A körsöprés alatt az aktív szakaszok sorrendje nem
 változik két esemény között, ezért mindig elegendő a legközelebbi metszést nyilvántartani. Egy
-csomópont csak akkor látható, ha a saját sugara mentén nincs nála közelebbi aktív él, és ugyanazon
-az irányon csak a legközelebbi csomópont lehet jelölt.
+ház csak akkor látszik, ha a saját sugara mentén nincs nála közelebbi aktív él, és ugyanazon
+az irányon csak a legközelebbi ház lehet jelölt.
 */
-
+/*
+Hint 1: || Egy ház pontja akkor látszik, ha a nézőpontból a sugárban ő a legközelebbi ház. Mivel a házak
+az első síknegyedben vannak, minden pozitív meredekségű sugár az origóból nézve a házak alsó vagy bal
+oldali élét metszi először, így elég ezekkel az élekkel foglalkozni. ||
+Hint 2: || Használj szögsöprést: a sugár irányát a t = y/x meredekség jellemzi, amit törtként, egész
+számokkal érdemes tárolni. Egy alsó él (y = y1, x ∈ [x1, x2]) a t ∈ [y1/x2, y1/x1] tartományban,
+egy bal oldali él (x = x1, y ∈ [y1, y2]) a t ∈ [y1/x1, y2/x1] tartományban metszi a sugarat. Az
+események ezeknek a tartományoknak a végpontjai. ||
+Hint 3: || Egy adott irányban a legközelebbi alsó él az, amelyiknek y1 koordinátája a legkisebb (a
+metszéspont x-koordinátája y1 / t), a legközelebbi bal oldali él pedig az, amelyiknek x1 a legkisebb.
+Tartsd karban az aktív éleket két prioritási sorban, törlésekkel együtt, és minden eseménynél
+hasonlítsd össze a két minimumot keresztszorzással. Mivel a házak nem érnek össze, két esemény között
+a legközelebbi él nem változik, így elég a minimumokat az események pontjaiban frissíteni. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

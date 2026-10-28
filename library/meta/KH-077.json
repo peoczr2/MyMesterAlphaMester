@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/24. Háborúzó törzsek *",
+    "method": "Századonként halmazba gyűjtjük a háborúk törzseit, ha kezdő- vagy befejező év esik a századba.",
+    "category": "Halmaz: egyedi elemek száma",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "halmaz",
+      "intervallum",
+      "számlálás"
+    ],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,1 mp. A szöveg „N sorban” része K sort jelent (a minta szerint K sor). A századba tartozást a minta szerint a kezdő- vagy befejező év dönti el (a teljesen átfogó háborúk nem számítanak): így mindhárom szám egyezik a mintával, az átfedés alapú számolás XVIII.-ra 575 törzset adna a minta 467 helyett. A feladatszöveg ezt nem definiálja, ezért érdemes megerősíteni.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/25. Három évszázad háborúi *",
+    "method": "Háborúnként, századonként egyszer ellenőrizzük a kezdő- vagy befejező évet, és számlálót növelünk.",
+    "category": "Számlálás: évszázadokra bontva",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "számlálás",
+      "intervallum",
+      "feltétel"
+    ],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,1 mp. A szöveg „N sorban” része K sort jelent (a minta szerint K sor). A századba tartozást a minta szerint a kezdő- vagy befejező év dönti el (a teljesen átfogó háborúk nem számítanak): az átfedés alapú számolás XVIII.-ra 495 háborút adna a minta 348 helyett. A feladat „a századot érintő háborúk” kifejezése átfedésre utalhat, ezért ez a minta szerinti értelmezés; érdemes megerősíteni.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/26. Kinek volt több háborúja *",
+    "method": "Minden törzs háborúit megszámoljuk, majd a két kérdezett törzs számát összehasonlítjuk.",
+    "category": "Számlálás, összehasonlítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "számlálás",
+      "tömb",
+      "összehasonlítás"
+    ],
+    "note": "Megjegyzés: a minta ellentmond a feladatnak. A be1 és be2 minta utolsó sora „8 6”, a várt kimenet „A”. A feladat példájában a „6 8” sor „A”-t ad, ami a számlálással egyezik (a 6-os törzsnek 2, a 8-asnak 1 háborúja van). A be1-ben a 6-os törzsnek 2, a 8-asnak 1 háborúja van, a be2-ben a 6-osnak 2, a 8-asnak 0; így a helyes kimenet „B”, amit a task.cpp ad. Sem a háborúk összes számával, sem a háborúzó, sem az ellenséges oszlopban számolva nincs olyan eset, amelyben a 8-asnak több háborúja lenne a 6-osnál. Kérdés: a minta „A” kimenete hibás-e? Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/27. Legellenségeseb törzs *",
+    "method": "Törzsenként halmazba gyűjtjük a különböző ellenségeket, majd a legnagyobb halmazú törzset keressük.",
+    "category": "Halmaz: különböző ellenségek száma",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "halmaz",
+      "keresés",
+      "maximum"
+    ],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,3 mp. A szöveg „N sorban” része K sort jelent (a minta szerint K sor). A „legtöbb törzzsel” kifejezést a különböző ellenséges törzsek számaként értelmeztük; a minták mindkét értelmezéssel ugyanazt adják (a be1-ben az 1-es és a 3-as törzs kétszer szerepel, de az 1-es mindkét szempontból nyer, a be2-ben nincs ismétlődő párosítás).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

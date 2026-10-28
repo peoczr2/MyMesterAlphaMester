@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/32. Munkák **",
+    "method": "Határidő szerinti rendezés, majd a kumulált idő és a határidő különbségének maximuma.",
+    "category": "Ütemezés: határidők",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["ütemezés", "határidő", "mohó"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/33. Olimpiai láng ***",
+    "method": "Mohó intervallumlefedés: mindig a legtávolabbra érő, elérhető futót választjuk.",
+    "category": "Intervallumlefedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "intervallum", "lefedés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/34. Olimpiai staféta",
+    "method": "Mohó intervallumlefedés prioritási sorral: az elérhető futók közül a legtovább érőt választjuk.",
+    "category": "Intervallumlefedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "prioritási sor", "intervallum"],
+    "note": "A be2 mintától eltérő, de azonos (11) hosszúságú és érvényes futósorrendet ad; ellenőrző program igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/35. Páros fotózás ***",
+    "method": "Távozás szerinti feldolgozás, párosítás a legkorábban távozó, még bent lévő párosítatlan vendéggel.",
+    "category": "Intervallum-párosítás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["párosítás", "intervallum", "rendezés"],
+    "note": "A be2 mintától eltérő, de azonos (25) számú és érvényes párosítást ad; ellenőrző program a párok közös időpontját és a maximális számot igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/36. Rendezvény **",
+    "method": "Befejezési idő szerinti mohó; a szabad terem közül a később felszabaduló kapja az előadást.",
+    "category": "Intervallumütemezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "ütemezés", "terem"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/37. Rúd darabolás *",
+    "method": "Huffman-stratégia: a két legkisebb darab összevonása min-heapben, a fa preorder bejárással kiírva.",
+    "category": "Huffman-fa",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mohó", "min-heap", "huffman"],
+    "note": "A be2 mintától eltérő, de azonos (312914) költségű érvényes vágássorozat; ellenőrző program igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

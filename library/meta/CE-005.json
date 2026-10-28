@@ -1,0 +1,51 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/1. Parkoló",
+    "method": "Soros-párhuzamos fán állapotos DP, a terminálok állapotával és unió-kereséses összevonással",
+    "category": "Gráf: soros-párhuzamos DP",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "dinamikus",
+      "rekurzió"
+    ],
+    "note": "A feladat szerint „Több megoldás esetén bármelyik megadható.”; a második sor eltér a mintától, de érvényes és optimális, az ellenőrző: library/.work/CE-005/pk/check.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/2. Villamos",
+    "method": "Foglalt sorok közötti sávok és részben foglalt sorok jelöltjei rendezett halmazban",
+    "category": "Szimuláció: rendezett halmaz",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "halmaz",
+      "távolság"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2013/3. Kincsek",
+    "method": "Bináris felosztás, a második fél kincsszámát kivonással kapjuk",
+    "category": "Interaktív: bináris felosztás",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "interaktív",
+      "bináris",
+      "lekérdezés"
+    ],
+    "note": "Speciális: könyvtári (get_n, count) grader-feladat, a zsűri modulja nincs a mappában. A task.cpp gyenge (weak) alapértelmezéseket tartalmaz, amelyek a minta.zip térképét stdinről olvassák, ezért a validátor a helyi helyettesítővel fut, nem a zsűri könyvtárával. A költség véletlen térképeken 0,35–0,73·N⁴, a teljes pontszám határa 7/16·N⁴, ezért sűrű térképeken csak részpont. Blokkolt: gyorsabb stratégia kell a teljes ponthoz.",
+    "minta": "speciális",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

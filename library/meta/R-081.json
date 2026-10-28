@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/9. Szoborpark **",
+    "method": "Egyszerű utak számlálása visszalépéses keresés (DFS) bitmaszkos látogatottsággal.",
+    "category": "Gráf: visszalépéses keresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["visszalépés", "gráf", "bitmaszk"],
+    "note": "Mindkét minta egyezik. A párhuzamos éleket külön útnak számoljuk; a feladatszöveg ezt nem mondja ki, és a minták nem tartalmaznak párhuzamos élt, így ez a rejtett tesztekben döntendő kérdés.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

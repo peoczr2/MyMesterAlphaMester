@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/39. Zsetonok kis csalással",
+    "method": "Futamokra bontás, jobbról balra nyerő/vesztő állapotok, majd a nyerő lépések szimulálása",
+    "category": "Játékelmélet, nyerő állás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["kiválogatás", "játékelmélet", "stratégia"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/4. Díjazottak *",
+    "method": "Soronkénti beolvasás, a pontszázalék egész aritmetikával való összevetése küszöbökkel",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "feltétel", "szövegfeldolgozás"],
+    "note": "A darabszám után álló pontosvesszőt és az üres csoport '0;' kimenetét a mintafájlból (ki2) vettem, a feladatszöveg ezt nem mondja ki explicit.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/5. Drága fenyőfák *",
+    "method": "Egyszeri bejárás, az ár és a K összevetésével gyűjtjük a sorszámokat",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/6. Drága lakások *",
+    "method": "Egyszeri bejárás, az ár és a K millió forint összehasonlításával gyűjtjük a sorszámokat",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

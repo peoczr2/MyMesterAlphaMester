@@ -1,7 +1,11 @@
 /*
-   Előző és következő ülés sorrend: az M hely kiválasztása az 1..N halmazból
-   szigorúan növekvő sorozatként. Ez a kombinációk lexikografikus előzője és
-   következője.
+Megoldás lényege:
+A kombinációk lexikografikus sorrendjében a következő sorozat úgy kapható, hogy a legjobbra álló, még növelhető elemet eggyel megnöveljük, a tőle jobbra álló elemeket pedig a lehető legkisebb, egymás utáni értékekre állítjuk. Az előző sorozatnál ugyanez tükrösen történik: a legjobbra álló, még csökkenthető elemet csökkentjük, a jobb oldali elemek pedig az N-ig tartó legnagyobb, egymás utáni számok lesznek. Ha nincs ilyen elem, a sorrend körbeér: a következő az 1 2 … M, az előző az N−M+1 … N. A lépés csak a sorozat jobb oldali részét írja át, így egy lépés O(M) időben elvégezhető.
+*/
+/*
+Hint 1: || Keresd meg a legjobbra álló olyan elemet, amelyet még lehet eggyel növelni úgy, hogy a sorozat szigorúan növekvő maradjon és az értéke ne haladja meg N-et. ||
+Hint 2: || A talált elem jobb oldalán álló elemeket állítsd vissza a lehető legkisebb, egymás utáni számokra. Az előző sorozatnál csökkenthető elemet keress, a jobb oldalt pedig az N-ig tartó egymás utáni számokkal töltsd fel. ||
+Hint 3: || Ha egyetlen elem sem léptethető, a sorrend körbeér: a következő sorozat 1 2 … M, az előző N−M+1 … N. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,15 +1,17 @@
 /*
 Megoldás lényege:
-A sorozat következő eleme csak az előzőből számítható, ezért elég végigszimulálni az N lépést.
+A sorozat következő eleme csak az előzőből számítható, ezért elég N lépést szimulálni. A kezdőszám nem tagja a sorozatnak, ezért mindig először lépünk, és csak utána rögzítjük az új elemet.
 Mivel M legfeljebb 3, az összes lehetséges érték legfeljebb 10^6, így egy tömbben meg tudjuk
 számolni az előfordulásokat és eltárolni az utolsó előfordulási helyet is.
 
 Az egymáshoz legközelebbi két egyforma elem távolságához elég az utolsó előfordulást figyelni,
 a K. legnagyobb elemhez pedig a gyakoriságokat végigszkenneljük nagyobbtól a kisebb felé.
 */
-// Hint 1: || A következő tagot mindig az előző szám középső 2M számjegye adja. ||
-// Hint 2: || M<=3 miatt a lehetséges értékek száma legfeljebb egymillió, ez tömbös megoldást enged. ||
-// Hint 3: || Az azonos elemek közti legkisebb távolságot az utolsó előfordulás alapján lehet frissíteni. ||
+/*
+Hint 1: || A következő tagot mindig az előző szám középső 2M számjegye adja. ||
+Hint 2: || M<=3 miatt a lehetséges értékek száma legfeljebb egymillió, ez tömbös megoldást enged. ||
+Hint 3: || Az azonos elemek közti legkisebb távolságot az utolsó előfordulás alapján lehet frissíteni. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -34,13 +36,13 @@ int main() {
     long long cur = X;
     int bestDist = N + 1;
     for (int i = 0; i < N; ++i) {
+        unsigned long long nxt = (unsigned long long)cur * (unsigned long long)A + (unsigned long long)B;
+        cur = (long long)((nxt / (unsigned long long)div) % (unsigned long long)mod);
+
         int val = (int)cur;
         ++freq[val];
         if (last[val] != -1) bestDist = min(bestDist, i - last[val]);
         last[val] = i;
-
-        unsigned long long nxt = (unsigned long long)cur * (unsigned long long)A + (unsigned long long)B;
-        cur = (long long)((nxt / (unsigned long long)div) % (unsigned long long)mod);
     }
 
     int need = K;

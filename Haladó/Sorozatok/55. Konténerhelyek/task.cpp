@@ -1,82 +1,39 @@
 /*
-Megoldas lenyege:
-Egy blokk akkor pakolhato egyetlen toronnyá, ha a blokkon belul ujra es ujra le lehet venni
-balrol vagy jobrol egy olyan kontenert, amely az aktualis blokk minimuma vagy maximuma.
-Ez a szeparalhato-permutacios rekurzio pontosan a megengedett szomszedos torony-osszevonasokat
-irja le.
-
-Legyen L[r] a legkorabbi kezdoindex, ahonnan az r-ben vegzodo blokk meg jo. A jo kezdoindexek
-mindig egy osszefuggo suffixet alkotnak. Egy uj jobb veg akkor tarthat meg egy korabbi jo blokkot,
-ha a jobb veg uj minimum vagy uj maximum az adott reszben. Ezen felul balra tovabb lehet nyujtani
-a blokkot minden olyan pozicion, amelynek eleme az aktualis jobb vegig minimum vagy maximum marad.
-Ezekbol egy O(N log N) megoldas adodik monoton veremmel szamolt elozo/kovetkezo kisebb-nagyobb
-poziciokkal es egy szegmensfaval.
+Megoldás lényege:
+Egy szakasz pontosan akkor pakolható egyetlen toronnyá, ha az értékei szerint nincs benne 2413 vagy 3142 alakú
+részsorozat (ezek a szeparálható sorozatok). A toronyban az elemek alulról felfelé csökkenő sorrendben állnak, és
+két szomszédos szakasz csak akkor olvasztható össze, ha az értékeik elkülönülnek. A jó szakaszok részszakaszai is
+jók, ezért a bal szélről mohón haladva mindig a leghosszabb jó szakaszt vágjuk le; a felszabadítható helyek száma
+N − (szakaszok száma). Egy e. elem mintát zár le, ha vannak i < j < k < e indexek, amelyekre v_k < v_i < v_e < v_j.
+Ezt visszafelé haladva ellenőrizzük; a 3142 esetet a számok előjelének megfordításával (w = −v) kezeljük.
+Az időigény legrosszabb esetben O(N^2).
 */
 /*
-Hint 1: || Egy blokk jo, ha vegig lebonthato ugy, hogy mindig valamelyik vegpont a jelenlegi minimum vagy maximum. ||
-Hint 2: || Fix jobb vegre a jo kezdoindexek egy suffixet alkotnak. ||
-Hint 3: || A balra hosszabbitast az donti el, meddig marad az adott bal veg minimum vagy maximum a blokkban. ||
+Hint 1: || Egy szakasz pontosan akkor pakolható egyetlen toronnyá, ha nincs benne 2413 vagy 3142 alakú részsorozat. ||
+Hint 2: || Jó szakasz minden részszakasza is jó, ezért a bal szélről mohón érdemes vágni: mindig a leghosszabb jó szakaszt vesszük. ||
+Hint 3: || Visszafelé haladva e elől: amikor e-nél nagyobb elemet találsz, jegyezd meg az e és közte lévő elemek minimumát. Ha később olyan i elem jön (v_i < v_e), amely nagyobb ennél a minimumnál, akkor minta van. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
 
-class SegmentTree {
-public:
-    explicit SegmentTree(const vector<int>& values) {
-        int n = (int)values.size();
-        size = 1;
-        while (size < n) size <<= 1;
-        tree.assign(2 * size, INT_MAX);
-        for (int i = 0; i < n; ++i) tree[size + i] = values[i];
-        for (int i = size - 1; i >= 1; --i) tree[i] = min(tree[2 * i], tree[2 * i + 1]);
-    }
-
-    explicit SegmentTree(int n) {
-        size = 1;
-        while (size < n) size <<= 1;
-        tree.assign(2 * size, INT_MAX);
-    }
-
-    void setValue(int index, int value) {
-        int node = index + size;
-        tree[node] = value;
-        for (node >>= 1; node >= 1; node >>= 1) {
-            tree[node] = min(tree[2 * node], tree[2 * node + 1]);
-            if (node == 1) break;
+// Igaz, ha az e. elem egy 2413 mintát zár le a [s..e] szakaszon, azaz van s <= i < j < k < e,
+// amelyre v[k] < v[i] < v[e] < v[j].
+static bool closesPattern(const vector<int>& v, int s, int e) {
+    int x = v[e];
+    bool seenBig = false;
+    int nbMin = INT_MAX;   // az i-től jobbra legközelebbi e-nél nagyobb elem és e közötti minimum
+    int runMin = INT_MAX;  // az i+1 .. e-1 elemek minimuma
+    for (int i = e - 1; i >= s; --i) {
+        if (v[i] > x) {
+            seenBig = true;
+            nbMin = runMin;
+        } else if (seenBig && nbMin < v[i]) {
+            return true;
         }
+        runMin = min(runMin, v[i]);
     }
-
-    int rangeMin(int queryLeft, int queryRight) const {
-        int left = queryLeft + size;
-        int right = queryRight + size;
-        int answer = INT_MAX;
-        while (left <= right) {
-            if (left & 1) answer = min(answer, tree[left++]);
-            if (!(right & 1)) answer = min(answer, tree[right--]);
-            left >>= 1;
-            right >>= 1;
-        }
-        return answer;
-    }
-
-    int findLastLessThan(int rightExclusive, int threshold) const {
-        return findLastLessThan(1, 0, size, rightExclusive, threshold);
-    }
-
-private:
-    int size;
-    vector<int> tree;
-
-    int findLastLessThan(int node, int left, int right, int rightExclusive, int threshold) const {
-        if (left >= rightExclusive || tree[node] >= threshold) return -1;
-        if (right - left == 1) return left;
-
-        int mid = (left + right) / 2;
-        int answer = findLastLessThan(2 * node + 1, mid, right, rightExclusive, threshold);
-        if (answer != -1) return answer;
-        return findLastLessThan(2 * node, left, mid, rightExclusive, threshold);
-    }
-};
+    return false;
+}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -84,65 +41,28 @@ int main() {
 
     int n;
     cin >> n;
-
-    vector<int> a(n);
-    for (int i = 0; i < n; ++i) cin >> a[i];
-
-    vector<int> prevSmaller(n, -1), prevGreater(n, -1), nextSmaller(n, n), nextGreater(n, n);
-    vector<int> st;
-
+    vector<int> v(n), w(n);
     for (int i = 0; i < n; ++i) {
-        while (!st.empty() && a[st.back()] > a[i]) st.pop_back();
-        prevSmaller[i] = st.empty() ? -1 : st.back();
-        st.push_back(i);
+        cin >> v[i];
+        w[i] = -v[i];  // a v-ben levő 3142 minták a w-ben 2413 minták
     }
 
-    st.clear();
-    for (int i = 0; i < n; ++i) {
-        while (!st.empty() && a[st.back()] < a[i]) st.pop_back();
-        prevGreater[i] = st.empty() ? -1 : st.back();
-        st.push_back(i);
+    int cuts = 0;
+    int s = 0;                                // az aktuális szakasz kezdete
+    int winMax = INT_MIN, winMin = INT_MAX;   // a [s..e-1] szakasz legnagyobb és legkisebb értéke
+    for (int e = 0; e < n; ++e) {
+        if (e > s && winMax > v[e] && winMin < v[e]) {
+            if (closesPattern(v, s, e) || closesPattern(w, s, e)) {
+                ++cuts;
+                s = e;
+                winMax = INT_MIN;
+                winMin = INT_MAX;
+            }
+        }
+        winMax = max(winMax, v[e]);
+        winMin = min(winMin, v[e]);
     }
 
-    st.clear();
-    for (int i = n - 1; i >= 0; --i) {
-        while (!st.empty() && a[st.back()] > a[i]) st.pop_back();
-        nextSmaller[i] = st.empty() ? n : st.back();
-        st.push_back(i);
-    }
-
-    st.clear();
-    for (int i = n - 1; i >= 0; --i) {
-        while (!st.empty() && a[st.back()] < a[i]) st.pop_back();
-        nextGreater[i] = st.empty() ? n : st.back();
-        st.push_back(i);
-    }
-
-    vector<int> reach(n);
-    for (int i = 0; i < n; ++i) {
-        reach[i] = max(nextSmaller[i], nextGreater[i]) - 1;
-    }
-
-    SegmentTree segTree(reach);
-    vector<int> leftmostGoodStart(n, 0);
-    leftmostGoodStart[0] = 0;
-    for (int right = 1; right < n; ++right) {
-        int keepAsMin = max(leftmostGoodStart[right - 1], prevSmaller[right] + 1);
-        int keepAsMax = max(leftmostGoodStart[right - 1], prevGreater[right] + 1);
-        int baseStart = min(keepAsMin, keepAsMax);
-        int lastBlocking = segTree.findLastLessThan(baseStart, right);
-        leftmostGoodStart[right] = lastBlocking + 1;
-    }
-
-    vector<int> dp(n + 1, INT_MAX / 2);
-    SegmentTree dpTree(n + 1);
-    dp[0] = 0;
-    dpTree.setValue(0, 0);
-    for (int right = 0; right < n; ++right) {
-        dp[right + 1] = dpTree.rangeMin(leftmostGoodStart[right], right) + 1;
-        dpTree.setValue(right + 1, dp[right + 1]);
-    }
-
-    cout << n - dp[n] << '\n';
+    cout << n - (cuts + 1) << '\n';
     return 0;
 }

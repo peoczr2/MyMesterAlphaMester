@@ -1,0 +1,18 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 2. forduló/5. Kincsek az épületben",
+    "method": "Szintenkénti DP a belépő lépcső oldala szerint, csak a legkisebb és legnagyobb kincs",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "bejárás",
+      "minimum"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

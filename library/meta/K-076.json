@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/57. Maximális növekedés",
+    "method": "Következő kisebb elem veremmel, a tartomány maximumának összevonásával",
+    "category": "Minimum-maximum keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["verem", "minimum", "maximum", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/58. Hideg és meleg napok",
+    "method": "Hideg -1, meleg +1 előjelezés, majd az egyenlegek gyakoriságának számlálása",
+    "category": "Prefixösszeg, számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "számlálás", "szomszédok", "egyenleg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/59. Ügyelet",
+    "method": "Napi gyakorisági tömb, majd egy bejárással a leghosszabb lefedett szakasz keresése",
+    "category": "Számlálás, leghosszabb szakasz",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "intervallum", "tömb", "maximumkiválasztás"],
+    "note": "Ha több azonos hosszúságú leghosszabb szakasz van, a feladat nem mondja meg, melyikről kell a napi maximum; a megoldás az összes ilyen szakasz maximumát veszi (a minták nem döntik el).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/6. Leghidegebb nap *",
+    "method": "Minimumkeresés egy bejárással, az első mérés kezdőértékkel",
+    "category": "Minimumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimumkiválasztás", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

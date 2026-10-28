@@ -1,0 +1,18 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/9. Egyengető ****",
+    "method": "Az {a_i} és {a_i-K} halmaz mediánja két kupaccal, költség részfa-összeges treappal",
+    "category": "Online median, konvex költség",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "medián",
+      "treap"
+    ],
+    "note": "Speciális (grader-alapú): a validate.py csak a task.cpp-t fordítja, a grader.h és grader.cpp nélkül 'hibás' (fordítási hiba), ez nem a megoldás hibája. Saját ellenőrzővel (library/.work/HA-094/check_grader.cpp) minden Solution-értéket igazoltam: a minta be1/be2 elvárt kimenete egyezik (5/5, 20/20), 300 kis és 150 közepes véletlen teszt brute force-szal hibátlan, N=200000 esetén legfeljebb 0,22 s és 11 MB. Eltérés a feladatszövegtől: a PDF szerint a kimenet ki1.txt/ki2.txt-ben van, a minta.zip-ben ezek nincsenek, az elvárt értékek a be1/be2 fájlok harmadik sorában állnak.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

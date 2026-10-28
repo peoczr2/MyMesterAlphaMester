@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/131. Háromszögek ****",
+    "method": "Háromszög-egyenlőtlenségek intervallumra alakítása, rendezés és két bináris keresés",
+    "category": "Rendezés és bináris keresés",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "bináris keresés", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/132. DNS **",
+    "method": "Prefixös mérleg (2·darab − hossz), első előfordulások tömbje, O(N) betűnként",
+    "category": "Prefixösszeg, első előfordulás",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["prefixösszeg", "részsorozat", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/133. Kert **",
+    "method": "Soronkénti rendezés, többségi szín ellenőrzése a futamhosszal, egymás melletti futamok számlálása",
+    "category": "Rendezés, többségi elem",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "számlálás", "többség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/134. Sivatag ***",
+    "method": "Kétdimenziós különbségi tömb a esőzésekhez, 2D prefixösszeg a K×K négyzetekhez, O(N·M + E)",
+    "category": "Kétdimenziós prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "különbségi tömb", "rács"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

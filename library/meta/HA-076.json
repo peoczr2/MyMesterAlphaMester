@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/57. Tiltott városok 3 **",
+    "method": "Két szélességi bejárás, majd a legkisebb max(dA, dE) értékű város kiválasztása",
+    "category": "Gráf: BFS",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "szélességi bejárás",
+      "minimum"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/58. Ügynök útja ***",
+    "method": "Fa átmérőjének két BFS-sel, majd zárt képlet a bejárható városokra",
+    "category": "Fa: átmérő",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "átmérő",
+      "szélességi bejárás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/59. Cukrászok ***",
+    "method": "Háromszögek keresése fokszám szerinti irányítással, a maximumok összegzése",
+    "category": "Gráf: háromszögek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "háromszög",
+      "összegzés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/6. Akadálypálya ***",
+    "method": "Súlyozott legrövidebb út (Dijkstra) a (cella, sínállás) állapotokon",
+    "category": "Gráf: súlyozott legrövidebb út",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "legrövidebb út",
+      "állapottér"
+    ],
+    "note": "A be1 (17) egyezik a PDF példájával, a modellt pontos állapotteres BFS igazolta kis pályákon. A minta be2.txt sorai szóköz nélküli számjegysorok (a feladat szóközös formátumot ír elő), a ki2.txt pedig Pascal-futási hibaszöveg, nem szám; az (1,1) cella be2-ben üres, így a helyes válasz -1 lenne. A validátor emiatt hibásnak jelöli, döntés kell a be2/ki2 javításáról.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/13. Legkevesebb leszálló *",
+    "method": "Lineáris bejárás, a legkisebb pozitív leszállószám keresése",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "minimum", "tömb"],
+    "note": "Időlimit: 0.1 mp; N = 1000 bemeneten mért futási idő kb. 3 ms.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/14. Legkevesebbel csökkent az utasok száma *",
+    "method": "Lineáris bejárás, a változás (le - fel) legkisebb pozitív értékének keresése",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "tömb"],
+    "note": "Időlimit: 0.1 mp; N = 1000 bemeneten mért futási idő kb. 3 ms.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/15. Legkevesebbel nőtt az utasok száma a vonaton *",
+    "method": "Lineáris bejárás, a változás (fel - le) legkisebb pozitív értékének keresése",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "tömb"],
+    "note": "Időlimit: 0.1 mp; N = 1000 bemeneten mért futási idő kb. 3 ms.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/16. Legmesszebb lévő állomások – nem volt utas *",
+    "method": "Futó utasszám egy bejárásban, a leghosszabb nulla utasszámú szakasz keresése",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "szakasz", "tömb"],
+    "note": "Időlimit: 0.1 mp; N = 1000 bemeneten mért futási idő kb. 3 ms. Az állomások közötti szakaszt jelenti; a minta (26 32) ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

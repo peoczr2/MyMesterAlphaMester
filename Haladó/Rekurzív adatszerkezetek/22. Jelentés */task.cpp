@@ -6,9 +6,10 @@ Megoldási ötlet:
 A jelentés útja a fában mindig a dolgozótól a gyökérig vezető út hossza.
 Ezért a legrosszabb esetben a legmélyebb csomópont jelentése tart a legtovább.
 
-Egy egyszerű DFS-sel minden dolgozónak megadjuk a mélységét és megkeressük a
+Egy egyszerű BFS-sel minden dolgozónak megadjuk a mélységét és megkeressük a
 legnagyobb mélységet. Holtversenyben a kisebb sorszámú dolgozót választjuk.
-
+*/
+/*
 Hint 1: || A jelentés minden nap pontosan egy szinttel közelebb kerül az igazgatóhoz. ||
 Hint 2: || A keresett napok száma a fa legnagyobb mélysége. ||
 Hint 3: || A második sorba egy olyan dolgozót kell írni, aki ezen a mélységen áll, tie-breakként a legkisebb sorszámmal. ||

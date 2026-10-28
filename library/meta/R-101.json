@@ -1,0 +1,62 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/1. Csak egy bolygón volt élet",
+    "method": "Esemény-alapú sweep line: a két bolygó szimmetrikus különbségének időszakai.",
+    "category": "Sweep line: intervallumok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "esemény", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/2. Ritka szám",
+    "method": "Rangsor-visszafejtés bitenként, előre kiszámolt darabszámok alapján.",
+    "category": "Számrendszerek, kombinatorika",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bináris", "kombinatorika", "rangsor"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/3. Piac",
+    "method": "Bevételek és termékösszegek számítása, rendezés, termékenkénti maximum.",
+    "category": "Összegzés, maximumkeresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "összegzés", "maximum"],
+    "note": "Értelmezési pont: a C kérdésnél a 0 darabos tételt is eladott ártételnek veszi a megoldás; a feladatszöveg és a minták ezt nem döntik el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/4. Várólista",
+    "method": "Érkezési és kezdési idők kiszámítása, várakozó intervallumok sweep line-nal.",
+    "category": "Sweep line: szimuláció",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "intervallum", "esemény"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2016 ∕ 17 2. forduló/5. Függőhíd",
+    "method": "Dijkstra a járdalapok gráfján, út visszaállítása a szülőkből.",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "visszakövetés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

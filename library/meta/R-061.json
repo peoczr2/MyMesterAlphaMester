@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Sorozatok/6. Barátok ***",
+    "method": "Befokszámlálás, kölcsönös párok ellenőrzése és unió-keresés (DSU) a csoportszámhoz.",
+    "category": "Gráf: összefüggő komponensek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "unió-keresés", "befokszám"],
+    "note": "Minta-eltérés: ki2 4. sora 2, a feladat szerinti érték 9 (gyenge komponensek száma), amit 360 véletlen gráfon végzett brute-force és a be2 BFS-es újraszámolása igazol; az 1–3. sor egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/66. Zárkód",
+    "method": "Lyndon-szavas (FKM) rekurzió: de Bruijn-sorozat, a végére N-1 nulla.",
+    "category": "Euler-kör, de Bruijn-sorozat",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["de bruijn", "euler-kör", "rekurzió"],
+    "note": "Több helyes sorozat van (a feladat szerint bármelyik megadható), ezért 63 (K,N) párra ellenőriztük a hosszt és a lefedettséget, a magyarázatot pedig az FKM-rekurzióhoz igazítottuk (a kód nem Hierholzer-algoritmust használ).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/70. Üres téglalap",
+    "method": "Felső határonként alulról felfelé törlünk, láncolt listában a legnagyobb rés O(1) frissítéssel.",
+    "category": "Legnagyobb üres téglalap",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["téglalap", "láncolt lista", "sávok"],
+    "note": "Időlimit miatt átírva: a régi set/multiset változat K=7000-nél ~14 s volt (limit 0,3 s), az új láncolt listás változat ~0,19 s és ugyanazt az eredményt adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/72. Műkincsgyüjtő",
+    "method": "Hash-táblában az eddigi árak első indexe, a kiegészítő ár keresése P-ből.",
+    "category": "Keresés: hash-tábla",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["hash", "kiegészítő pár", "keresés"],
+    "note": "A minta.zip egy másik feladat (Szavak) mintája, ezért a feladat szerint bármely megfelelő pár jó, a program kimenetét 400 véletlen brute-force teszten ellenőriztük.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/78. Szabadnapok",
+    "method": "Bitmaszk, és akkor jó az ember, ha halmaza nem részhalmaza egyetlen másiknak sem.",
+    "category": "Bitmaszk, részhalmaz",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bitmaszk", "részhalmaz", "halmazok"],
+    "note": "A minta.zip egy másik feladat (Legkevesebb találkozás) mintája, be1 pedig nem a feladat formátumát követi (20 > M=5), ezért a programot a példán (2) és 400 véletlen brute-force teszten ellenőriztük.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Sorozatok/9. Ekvivalens csoportok *",
+    "method": "Felhasználónként csoporttagsági bitmaszk, azonos maszkú felhasználók egy osztályt alkotnak.",
+    "category": "Halmazok: bitmaszk",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["bitmaszk", "hash", "csoportok"],
+    "note": "A feladat nem köti ki a csoportok sorrendjét, ezért a kimenetet halmazként ellenőriztük (a minta be1/be2 és egy 10^6 számú teszt egyezik, az utóbbi ~60 ms, limit 0,1 s).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

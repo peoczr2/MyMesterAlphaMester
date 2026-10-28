@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/5. Esős napok száma *",
+    "method": "Lineáris bejárás: a pozitív csapadékmérések napjainak számlálása.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/50. Viharos napok száma *",
+    "method": "Lineáris bejárás: a 100 km/óránál nagyobb szélsebességű napok számlálása.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/51. Olimpiai kvalifikáció indulók száma *",
+    "method": "Oszloponkénti számlálás: versenyenként egy számláló, a nem nulla helyezéseket növeljük.",
+    "category": "Oszloponkénti számlálás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "tömb", "oszlop"],
+    "note": "A bemenet második számát (K) a feladatszöveg nem magyarázza, a kimenet nem függ tőle: a két mintán (K=4 és K=40) az oszloponkénti nem nulla számlálás adja a megfelelő eredményt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/52. Lakás kategóriák **",
+    "method": "Kategóriaindex számítása (terület egész osztása tízzel, legfeljebb 19), majd a számlálótömb növelése.",
+    "category": "Intervallumok szerinti számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "tömb", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

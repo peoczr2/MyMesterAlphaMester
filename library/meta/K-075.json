@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/53. Sikeres sorozatok",
+    "method": "Egyszeri bejárás, futó maximum és futó sorozathossz.",
+    "category": "Futó maximum",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "sorozat", "egy menet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/54. Játékállások",
+    "method": "Pontszámtömb frissítése, minden játszma után maximumkeresés és kiírás.",
+    "category": "Pontszámok, maximum",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "szimuláció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/55. Fogadások",
+    "method": "Rendezett halmaz pénz szerint, pénzösszegek darabszámával.",
+    "category": "Maximum, rendezett halmaz",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "maximum", "rendezés"],
+    "note": "Több helyes kimenet van: a feladat szerint a sorszám bármely legtöbb pénzzel rendelkező ember lehet. A mintafájl (ki2.txt) más, de szintén helyes sorszámokat tartalmaz (például a 35. sorban a mintában 2232, a programban 3753, mindkettő 1 euróval rendelkezik és a legtöbb pénz). A validátor emiatt a be2.txt mintán eltérést jelez; a db értékek minden sorban egyeznek. Ellenőrzés: library/.work/K-075/55/check.py (minden sorra igazolja a db-t és hogy a sorszám maximális pénzű-e; a hivatalos ki2.txt is átmegy rajta) és library/.work/K-075/55/brute.py (300 véletlen kis eset, közvetlen számítással).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/56. Vizsga",
+    "method": "Befejezési időpontok ablakszámlálása, rések és összevont foglalt blokkok maximuma.",
+    "category": "Intervallumok, ablak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "ablak", "idő"],
+    "note": "Értelmezés: az ablak egy befejezési időponttal kezdődik és 60 percet fed (t és t+59 közötti befejezések számítanak). A mintákat mindkét értelmezés egyformán adja, de több azonos számú ablak esetén a mintából nem dönthető el a tie-break; a program a legkorábbit írja ki. A szünet és a foglalt blokk a vizsgák idejéből számolt, az egymást érintő vizsgák összevonva egy blokkot alkotnak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

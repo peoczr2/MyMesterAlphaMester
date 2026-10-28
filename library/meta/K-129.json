@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/45. Legmesszebb lévő állomások, amelyek között nem volt utas *",
+    "method": "Állomásonkénti utasszám-számolás, majd leghosszabb nulla futam keresése egy bejárással.",
+    "category": "Prefixösszeg, leghosszabb futam",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "futam", "keresés"],
+    "note": "Értelmezés: az i. és j. állomás között az i..j-1 szakaszokon nincs utas; a szöveg a határokat nem rögzíti egyértelműen, a be2 minta (26 32) ezt az értelmezést igazolja. A 0 0 kimenet akkor születik, ha nincs nulla futam.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/46. Legnagyobb különbség a min es max előrejelzések között *",
+    "method": "Soronkénti minimum és maximum követése egy bejárással, a legnagyobb különbségű sor kiválasztása.",
+    "category": "Minimum-maximum keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "maximum", "bejárás"],
+    "note": "A K hőmérsékletkorlát a kérdésben nem szerepel; a két minta (K=30, K=47) a max-min szabállyal egyezik, ezért K nem befolyásolja a megoldást.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/47. Legnagyobb tervbe betehető új szoba **",
+    "method": "Foglalt mezők különbségtömbbel, majd soronként legnagyobb téglalap veremmel a hisztogramon.",
+    "category": "Legnagyobb téglalap, hisztogram",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["hisztogram", "verem", "különbségtömb"],
+    "note": "Értelmezés a mintából: a koordináták mezőket jelölnek, a jobb alsó sarok mezője is a szobához tartozik; a legnagyobb üres téglalap maximuma automatikusan kielégíti az oldal-szomszédsági feltételt. Mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/48. Legolcsóbb drága fenyőfa *",
+    "method": "Egy menetben a K-nál nagyobb árak közül a legkisebb ár és sorszámának követése.",
+    "category": "Feltételes minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "feltétel", "keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

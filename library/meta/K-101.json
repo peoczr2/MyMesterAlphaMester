@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/24. Középső születésnapú",
+    "method": "Naponkénti gyakorisági tömb, halmozott összeg a középső pozícióig.",
+    "category": "Gyakorisági tömb, medián",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "medián", "tömb"],
+    "note": "A minta.zip nem követi a feladatszöveget: be1.txt első sora 10 (páros, a feladat szerint páratlan N), a második sorban 10 szám áll egy sorban (a feladat szerint N sor, soronként hónap és nap), ki1.txt 10 soros (a feladat szerint 2 sor). be2.txt és ki2.txt ugyanígy eltér (N=10000, egy sorban 10000 szám). A megoldást ezért a feladatszöveg példáján (7 ember: 5 15 / 2) és 400 véletlen esetben igazoltam, független brute force (rendezés) programmal.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/25. Gázvezeték",
+    "method": "Láncok bejárása a lelőhelyektől, a szakaszkapacitások minimuma a fogyasztóig.",
+    "category": "Gráf: láncok, minimum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "láncok", "minimum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/26. Áruszállítás",
+    "method": "Előtag-összegekkel minden k-ra O(1)-ben a két kamion terhelésének maximuma.",
+    "category": "Előtag-összeg, minimum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["előtag-összeg", "minimum", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/27. Vízvezeték",
+    "method": "Lánconként követjük a vizet: a szakasz kapacitása és a városok F-es levonása korlátoz.",
+    "category": "Gráf: láncok, szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "láncok", "szimuláció"],
+    "note": "A feladatszöveg szerint minden vezeték lelőhelytől indul, de a be2 mintában van 6 lelőhely nélküli zárt kör (16, 19, 23, 42, 48, 50). Ezekre a mintakimenet a bemenő szakasz kapacitását adja (pl. 16: 204, az 50→16 szakasz), ezt a szabályt a mintából vettem át, a feladatszöveg nem mondja ki. A minta mindkét párja egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

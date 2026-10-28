@@ -1,9 +1,13 @@
 /*
-Hungarian megoldás: a szavakat sorban helyezzük el a táblán, és minden lépésben
-csak a maximális átfedést adó elhelyezéseket engedjük tovább.
-
-Hint 1: || Az első szó helye adott, a többi szóhoz minden lehetséges pozíciót meg kell nézni. ||
-Hint 2: || Minden lépésben a most elérhető legnagyobb átfedésű helyezések közül választunk. ||
+Megoldás lényege: a szavakat sorban rakjuk le, és minden lépésben olyan elhelyezést választunk, amelyben az új szó a legtöbb már letett betűvel fedi át a táblát.
+Egy betű annyiszor számít átfedésnek, ahány szóban szerepel, mínusz egy, ezért egy új szó átfedése pontosan azt adja, hányszor esik már foglalt mezőre; így a lépésenkénti maximum a teljes átfedés növekedésének maximuma is.
+Minden (sor, oszlop, irány) helyzetet végigpróbálunk, a legnagyobb átfedésűek közül rendezési sorrendben választunk, és ha egy választás zsákutcába vezet, visszalépünk.
+A döntetlenek miatt több helyes megoldás is lehet, a feladat szerint bármelyik megadható.
+Időigény: egy szó lerakása O(N·M·hossz) próba, így a teljes futás O(DB·N·M·hossz) nagyságrendű, ami a korlátok mellett bőven belefér.
+*/
+/*
+Hint 1: || Az első szó helye adott; minden további szónál az összes kezdőpozíciót és irányt végig kell nézned, és csak a legnagyobb átfedésűek érdekesek. ||
+Hint 2: || Tárold a táblát két mátrixban: az egyikben a mezőn lévő betűt, a másikban azt, hány szó fedi le az adott mezőt; így az átfedés és az ütközés gyorsan ellenőrizhető. ||
 */
 
 #include <bits/stdc++.h>
@@ -62,7 +66,7 @@ bool dfs(int idx) {
         if (a.overlap != b.overlap) return a.overlap > b.overlap;
         if (a.r != b.r) return a.r < b.r;
         if (a.c != b.c) return a.c < b.c;
-        return a.d < b.d;
+        return a.d > b.d;
     });
     for (auto p : cand) {
         apply(words[idx], p.r, p.c, p.d, 1);

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/3. Bűnöző elfogása *",
+    "method": "Mélységi bejárás: minden utca oda-vissza, az ősökhöz vezető utcákat az ős oldaláról járja be.",
+    "category": "Gráf: mélységi bejárás, irányítás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "mélységi bejárás",
+      "irányított gráf"
+    ],
+    "note": "A minta.zip be2 kimenete pontosan egyezik. A be1 kimenete (12 sor) más sorrendű, de ugyanúgy érvényes bejárás: a feladat „egy olyan” bejárási sorozatot kér, ezért a minta „kézi”, és a validátor a be1-en eltérést jelez. Ellenőrzés: független szimulátor (a bejárás csak érvényes irányban halad, minden utca egyirányúsítva, nincs zsákutca, nincs kör a forgalmi gráfban, minden kereszteződésből eljut 1-be) elfogadta mindkét mintakimenetet, a saját kimenetet 400 véletlen kis (N≤8) és 60 nagy (N≤200) gráfon. A legnagyobb bemeneten (N=200, M=10000) a futás kb. 0,006 s, az időlimit 0,1 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/28. Kritikus ellenőrző pontok **",
+    "method": "Dominátorfa (Lengauer–Tarjan): B dominátorai, azaz a B-ből A-ig vezető idom-lánc csúcsai.",
+    "category": "Gráf: dominátorok",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "dominátor",
+      "irányított gráf"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl (a validátor „nincs minta”), ezért a PDF-példával és ellenőrzéssel igazoltam: a példa kimenete (2 / 7 6) egyezik. 500 véletlen kis irányított gráfon (N≤9) és 400 láncszerű közepes gráfon (N≤60) minden csúcs kihagyásával újraszámolt elérhetőséggel egyezett; a be2 (N=9142, M=25115) eredménye (1 csúcs: 3871) is egyezett. A kimenet sorrendje tetszőleges. Ha B nem érhető el A-ból, minden más csúcsot kritikusnak vesz (a definíció szerint). A legnagyobb bemeneten (N=10000, M=100000) a futás kb. 0,02 s, az időlimit 0,1 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/29. Kritikus pontok ***",
+    "method": "A-ból mélységi bejárás, low-értékek; a B-ig vezető fa-úton v kritikus, ha low[c] ≥ disc[v].",
+    "category": "Gráf: artikulációs pontok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "artikulációs pont",
+      "összefüggőség"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl (a validátor „nincs minta”), ezért a PDF-példával és ellenőrzéssel igazoltam: a példa kimenete (2 / 1 5) egyezik. 500 véletlen kis gráfon (N≤12, összesen 357 kritikus csúcs) és 40 közepes (N≤300) gráfon csúcs-kihagyásos brute force-szal egyezett; a be2 (N=1285, M=3327) eredménye (1 csúcs: 1222) is egyezett. A kimenet sorrendje tetszőleges. A legnagyobb bemeneten (N=5000, M=20000) a futás kb. 0,005 s, az időlimit 0,1 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/30. Ládák sorbarendezése **",
+    "method": "Rosszul álló ládák élek; komponensenként Euler-kör, minden k hosszú körre k+1 mozgatás.",
+    "category": "Gráf: Euler-kör, rendezés",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "euler-kör",
+      "rendezés",
+      "gráf"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl (a validátor „nincs minta”). A PDF-példa minimuma (9) egyezik, a mozgatási sorrend más, de érvényes; a feladat „egy lehetséges” sorrendet kér, ezért a minta „kézi”. A minimum képlete: rosszul álló ládák száma + komponensek száma. A minimumot BFS-sel igazoltam 500 véletlen kis esetben (N≤7, V≤4), a be1 (9) is egyezett; a kimenetet szimulátor minden lépésre ellenőrizte, a be2 (N=3867) és a legnagyobb bemenet (N=10000, V=200) is érvényes. A legnagyobb bemeneten a futás kb. 0,003 s, az időlimit 0,1 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

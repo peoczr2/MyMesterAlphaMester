@@ -1,11 +1,13 @@
+/*
+Megoldás lényege:
+Jobbról balra haladó dinamikával minden (i, j) mezőre kiszámoljuk a jobb szélig elérhető legnagyobb összeget: dp[i][j] = a[i][j] + max(dp[i-1][j+1], dp[i][j+1], dp[i+1][j+1]), ahol a táblán kívüli sorokat kihagyjuk. A bal szélső oszlop dp értékei közül a legnagyobbat keressük, döntetlennél a kisebb sorszámú sort választjuk. Az időigény és a memóriaigény O(N*M).
+*/
+/*
+Hint 1: || Ne a bal szélről indulva próbálkozz, hanem a jobb szélről visszafelé: a jobb szélső oszlop mezői önmagukban is elérhető pontszámok. ||
+Hint 2: || Egy (i, j) mezőből a következő oszlop i-1, i és i+1 sorában lévő mezők közül a legjobb már kiszámolt értéket kell hozzáadni a saját pontszámodhoz. A válasz a bal szélső oszlop legnagyobb értéke; döntetlennél a kisebb sor. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Dinamikával jobbról balra számoljuk ki minden mezőből a jobb szélre vezető
-    legnagyobb pontszámot. Az induló sor az a bal szélső mező, amelyhez a legjobb
-    összpontszám tartozik.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

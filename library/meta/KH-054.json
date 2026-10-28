@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/1. Körök - 2005. május",
+    "method": "Minden pontot minden körrel összevetünk a távolságnégyzet és a sugárnégyzet egész számú összehasonlításával.",
+    "category": "Geometria: pontok körökben",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["geometria", "kör", "ciklus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/10. Szakkör - 2007. május - közép",
+    "method": "Az egyik listát halmazba tesszük, és a másik listából kiválogatjuk a közös neveket.",
+    "category": "Halmazok: metszet",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "szöveg", "metszet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/11. Pénzváltó - 2007. október - közép",
+    "method": "Az árfolyamokat szótárban tároljuk, minden tranzakciónál kikeressük és megszorozzuk az összeggel.",
+    "category": "Asszociatív tömb",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szótár", "szöveg", "szorzás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/12. Autó - 2007. október - közép",
+    "method": "Az összes tankolt mennyiséget összegezzük, a megtett kilométer ennek K-szorosa.",
+    "category": "Összegzés és szorzás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "szorzás", "részfeladat"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

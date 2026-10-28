@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/28. Csatornák",
+    "method": "Bináris keresés a szélességen, kétállapotú BFS a kiszélesítés felhasználásával.",
+    "category": "Gráf: legszélesebb út",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "bináris keresés",
+      "bfs"
+    ],
+    "note": "Megjegyzés: a minta.zip nem a feladatszöveg formátumát követi. be1 és be2 első sorában csak három szám van (N M A, a B hiányzik), a ki-fájlokban pedig két sor (be1: 231 és 0; be2: 7323271498 és 0). A szélességek legfeljebb 10000, így 231 és 7323271498 nem lehet helyes válasz. A megoldás a feladatszöveg példáján (6) és 150 véletlen kis teszten egyezik egy független, élenként kiszélesítő ellenőrzővel. Kérdés: a minta-fájlok helyesek-e? Mért idő: N=10000, M=500000 véletlen teszten 0,13 s (időlimit 0,2 s).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/29. Séta minél biztonságosabban **",
+    "method": "Világos mezők bejelölése, majd 0-1 BFS a sötét mezők számával súlyozva.",
+    "category": "Rács: 0-1 BFS",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "rács",
+      "0-1 bfs",
+      "legrövidebb út"
+    ],
+    "note": "Megjegyzés: be1 kimenete (4) egyezik, de be2 ki2 szerint a válasz 6, a megoldás 11. Független Python-Dijkstra is 11-et ad. Más lámpasugár (r=2 helyett 1, 3, 4, 5) vagy koordinátacsere nem ad egyszerre 4-et be1-re és 6-ot be2-re. A feladatszöveg nem mondja ki, hogy több helyes kimenet lehet. Kérdés: a be2/ki2 helyes-e? Mért idő: a legnagyobb generált teszten (K=1000, H=99) 0,005 s (időlimit 0,1 s).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/3. Futár **",
+    "method": "Dijkstra a kezdő városból; a válasz a legnagyobb elérhető távolság.",
+    "category": "Gráf: Dijkstra",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "legrövidebb út"
+    ],
+    "note": "Nincs kimeneti minta a zipben (csak be1, be2), ezért kézzel ellenőriztük: a feladatszöveg példája (35) és be1 (154) egyezik Bellman-Ford számítással, 300 véletlen kis esetben is egyezik. Mért idő: be2 (N=50000, M=300000) 0,07 s, generált N=100000, M=1000000 teszten 0,25 s (időlimit 1,0 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/30. Tom és Jerry2 ****",
+    "method": "Blokkfelbontás a lyukból gyökerezve, vágópontok ellenőrzése Tom- és Jerry-távolsággal.",
+    "category": "Gráf: vágópontok, blokkok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "vágópont",
+      "blokk",
+      "bfs"
+    ],
+    "note": "Kézi minta: be2 ki2 4447. sorában a minta 4062-t (Tom kezdőpontja) ad, a megoldás 582-t. Mindkettő érvényes elkapó csomópont, a feladat szerint több megoldás esetén bármelyik megadható. Független C++ ellenőrző (library/.work/HA-038/py/brute30.cpp) minden Jerry-kezdőpontra igazolja, hogy a nem nulla válaszok érvényesek, és a nullák esetén nincs elkapó csomópont. Mért idő: be2 (N=10000, M=10599, DB=5039) 0,007 s; N=30000, M=100000, DB=20000 véletlen teszten 0,044 s; 30000 hosszú láncon 0,015 s (időlimit 0,44 s).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

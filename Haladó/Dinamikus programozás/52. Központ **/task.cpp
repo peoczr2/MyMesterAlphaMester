@@ -1,16 +1,15 @@
 /*
-Egy pont tavolsaganak maximuma Manhattan-metrikaban eleg a ket ismert transzformalt
-koordinataval leirhato: legyen A = x + y es B = x - y. Ekkor egy p pont legtavolabbi
-tavolsaga a halmaztol a negy szelso ertekhez mért maximum: max(maxA-Ap, Ap-minA,
-maxB-Bp, Bp-minB). Ezert eleg egyszer vegigmenni a pontokon, meghatarozni A es B minimumat
-es maximumat, majd ujra vegigmenni, es kivalasztani azt a kijelolt pontot, amelynel ez a
-maximum a legkisebb. A ket legtavolabbi pont Manhattan-tavolsaga pedig
-max(maxA-minA, maxB-minB).
+Manhattan-távolságban egy p pont távolsága a halmaz legtávolabbi pontjától leírható az
+A = x + y és B = x - y transzformált koordinátákkal: max(maxA - Ap, Ap - minA, maxB - Bp,
+Bp - minB). Ezért elég egyszer végigmenni a pontokon, meghatározni A és B minimumát és
+maximumát, majd újra végigmenni, és kiválasztani azt a pontot, amelynél ez a maximum a
+legkisebb (ha több ilyen van, a legkisebb sorszámút). A két legtávolabbi pont távolsága pedig
+max(maxA - minA, maxB - minB).
 */
 /*
-Hint 1: || Manhattan-tavolsagnal hasznos az x+y es x-y atalakitas. ||
-Hint 2: || Egy adott pont legtavolabbi partnere valamelyik szelso transzformalt ertekhez kotodik. ||
-Hint 3: || A diameter ugyanebben az atalakitasban egyszeruen a ket tartomanyhossz maximuma. ||
+Hint 1: || Manhattan-távolságnál hasznos az x+y és x-y átalakítás. ||
+Hint 2: || Egy adott pont legtávolabbi társa valamelyik szélső transzformált értékhez kötődik. ||
+Hint 3: || Az átmérő ugyanebben az átalakításban egyszerűen a két tartományhossz maximuma. ||
 */
 
 #include <algorithm>

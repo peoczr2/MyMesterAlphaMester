@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/14. Gyöngy *",
+    "method": "Csúszó ablak körkörösen: a piros és zöld számlálót lépésenként O(1)-gyel frissítjük.",
+    "category": "Csúszó ablak, körkörös tömb",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["csúszó-ablak", "körkörös", "tömb"],
+    "note": "Több helyes vágás is van; a program a K. gyöngytől indulva az első minimumot írja ki, ez egyezik a 2. minta 10-es válaszával. A „tőle balra” a vágott gyöngyet is magában foglalja, így az 1. mintán egyetlen optimum van (14).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/15. Helyesírás *",
+    "method": "Szomszédos karakterpárok osztályozása: a tiltó szabály felülírja a kötelezőt, egyébként a bemeneti szóköz-viszony marad.",
+    "category": "Sztring-átalakítás, szóközök",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sztring", "szabályok", "karakterek"],
+    "note": "A sor eleji és végi szóközt töröljük; a szó–szó határon az eredeti szóköz-viszonyt tartjuk meg (egy szóköz vagy semmi). A feladat ezt nem rögzíti, de mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/16. Intervallumok **",
+    "method": "Rendezés kezdőpont szerint, fordított sorrendben Fenwick-fával számoljuk a tartalmazott intervallumokat.",
+    "category": "Intervallum-tartalmazás, Fenwick-fa",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "fenwick", "rendezés"],
+    "note": "Több ember is lehet optimális; a program a legkisebb sorszámút írja (a mintákon egyetlen optimum van). Az egyforma intervallumok kölcsönösen tartalmazzák egymást, ezt a megoldás beszámolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/17. Jegyek *",
+    "method": "A négy legnagyobb hézag a különböző pontszámok között; a ponthatár a felső pontszám előtti egész.",
+    "category": "Hézagok, maximin kiválasztás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "maximin", "távolság"],
+    "note": "Azonos távolságú hézagoknál a balról elsőt választjuk (a 2. minta így egyezik). Ha kevesebb mint négy hézag ad egész ponthatárt, a kimenet 0.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

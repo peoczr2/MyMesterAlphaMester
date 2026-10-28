@@ -1,6 +1,8 @@
 /*
 Feladat: Az N munkát a lehető legkevesebb gépre kell ütemezni úgy, hogy minden munka a határidőig elkészüljön.
 Ötlet: Először kiszámoljuk, hogy egy géphez hány munka jutna adott határidőig; ebből a maximális napi terhelés adja a szükséges gépszámot. Ezután a munkákat határidő szerint sorba rendezve, napokra és gépekre osztjuk.
+*/
+/*
 Hint 1: || Az i. napig legfeljebb G*i munka fér el, ha G gépünk van. ||
 Hint 2: || A szükséges gépszám a prefixekre vett ceil(eddigi munkák száma / napok száma) maximuma. ||
 Hint 3: || Ha G ismert, a munkákat határidő szerint rendezve lehet a legkésőbbi szabad napra tenni. ||

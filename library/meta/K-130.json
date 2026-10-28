@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/49. Legrosszabb kettesnél jobb tanuló *",
+    "method": "Egymenetes minimumkeresés a legalább 3-as jegyek között, sorszámmal",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimumkeresés", "tömb", "sorszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/5. Egy melegebb település **",
+    "method": "Páronkénti összehasonlítás: van-e minden napon szigorúan hidegebb település",
+    "category": "Páronkénti összehasonlítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["összehasonlítás", "mátrix", "keresés"],
+    "note": "A K (20≤K≤50) korlát nem szerepel a kimenet feltételében; a szó szerinti értelmezés (minden napon szigorúan hidegebb) mindkét mintával és a példával egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/50. Legtöbb felhasználó a hálózatban *",
+    "method": "Időrendi bejárás, bent lévők számának követése, legtöbbet tartalmazó szakaszok",
+    "category": "Eseménysorozat, szakaszok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "esemény", "szakasz"],
+    "note": "Feltételezés: aki első eseménye KI, az előző naptól bent van és a nap elején bent számít; az eseményeket időpont szerint rendezem (a 2. minta sincs időrendben, rendezve egyezik a kimenettel); az azonos időpontú események együtt számítanak. Ha a nap végén még valaki bent van, a szakasz végét 24 0-nak vettem (a feladat nem szabályozza).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/51. Legtöbb megfigyelt jármű egy időben *",
+    "method": "Azonos időpontú egymás utáni megfigyelések futamának hosszát maximalizáljuk",
+    "category": "Gyakoriság számlálása",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "gyakoriság", "maximum"],
+    "note": "A 2. minta bemenete nincs időrendben (a feladat szerint lenne): ezért az egymás utáni azonos időpontú futamokat számolom, nem az időpont szerinti összesítést; így a minta kimenete (18 44) egyezik, az időpont szerinti összesítés 2 5-öt adna.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

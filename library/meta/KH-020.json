@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/42. Valamilyen szempont szerint tökéletes kutyák *",
+    "method": "Minden kutyánál ellenőrizzük, van-e olyan szempont, ahol pontja eléri a maximumot.",
+    "category": "Szempontonkénti maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "feltétel"],
+    "note": "A kiesés nem számít: a kiesett kutya is tökéletes, ha valamely szempontban eléri a maximumot, mert a feladat szerint más szempontból értékelhető. A minták ezt nem döntik el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/43. Valamilyen szempontból kiesett kutyák *",
+    "method": "Minden kutyánál ellenőrizzük, van-e olyan szempont, ahol pontja az alsó határ alatt marad.",
+    "category": "Kiesési szűrés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "tömb", "küszöb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/44. Van kutya, amely egy szempont szerint tökéletes *",
+    "method": "Keressük, van-e olyan kutya és szempont, ahol a pont eléri a szempont maximumát.",
+    "category": "Szempontonkénti maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "maximum", "tömb"],
+    "note": "A kimeneti leírás „minden szempont szerint győztes” szövege a mintából következően „valamely szempont szerint tökéletes” értelemben értendő: a be2 mintában csak az 5. szempontban van maximális pont, mégis VAN a kimenet. A kiesés itt sem számít (lásd a 42. feladatot).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/45. Van szempont, ahol holtversenyben győztek **",
+    "method": "Összpontszám szerinti győztesek; szempontonként, hogy legalább ketten érik-e el a legnagyobb értékelhető pontot.",
+    "category": "Összetett győztesek, holtverseny",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["holtverseny", "összegzés", "szűrés"],
+    "note": "A feladat nem rögzíti pontosan a holtverseny fogalmát, ezért a mintákból a következőt választottam: az összetett győztes a bentmaradók közül az összpontszámban legjobb (holtverseny esetén mindegyik); a szempont legnagyobb pontját az alsó határt elérő kutyák közül nézem, akár más szempontból kiesett kutyák is versenyeznek; holtverseny, ha legalább két összetett győztes éri el. A két minta ezzel egyezik, de ha a szempont legnagyobb pontját csak a bentmaradók közül nézzük, a kimenet változhat.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

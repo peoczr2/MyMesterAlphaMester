@@ -1,20 +1,19 @@
+/*
+Megoldás lényege:
+A bástya egy lépésben a sorában vagy oszlopában bármelyik mezőre eljut, amely
+ugyanabban a szabad szakaszban van. A szabad szakasz a bábuk között álló, összefüggő
+szabad mezők sora vagy oszlopa. Ezért a szakaszokat tekintjük csúcsoknak: két mező
+között akkor van él, ha ugyanabban a szakaszban vannak. A kezdőmezőből indított
+szélességi keresés (BFS) adja a minimális lépésszámot. Minden szakaszt csak egyszer
+terjesztünk ki, így a futás időigénye O(N^2).
+*/
+/*
+Hint 1: || Egy lépésben a bástya a sorának vagy oszlopának teljes szabad szakaszán bármelyik mezőre eljuthat. Ezért a lépésszám nem a megtett mezők számától függ, hanem attól, hány szakaszváltásra van szükség. ||
+Hint 2: || Modellezd a feladatot gráfként: a csúcsok a mezők, és két mező között akkor van él, ha ugyanabban a vízszintes vagy függőleges szabad szakaszban vannak. A legkevesebb lépés a kezdőmezőtől a célmezőig szélességi kereséssel (BFS) kapható meg. ||
+Hint 3: || Nem kell minden élet kiépíteni: elég minden szakaszt egyszer kiterjeszteni. Előre számold ki minden mezőhöz a vízszintes és a függőleges szakaszának azonosítóját, a BFS-ben pedig egy szakasz első feldolgozásakor állítsd be a benne lévő, még nem látott mezők távolságát. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A bástya egy lépésben a sorában vagy oszlopában bármelyik szabad mezőre
-    eljuthat. Ezért BFS-t futtatunk, és minden sort/oszlopot egyszer dolgozunk
-    fel, hogy a teljes nyílt szakaszt egyszerre terjesszük.
-*/
-
-#include <bits/stdc++.h>
-using namespace std;
-
-/*
-    A bástya egy lépésben a sorában vagy oszlopában bármelyik szabad mezőre
-    eljuthat. Ezért a szabad sor- és oszlopszakaszokat külön csúcsokként kezeljük,
-    és BFS-ben minden szakaszt csak egyszer terjesztünk ki.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

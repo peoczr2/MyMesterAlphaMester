@@ -1,7 +1,12 @@
 /*
- * A térfogatot három tényezőre bontjuk, és a legkiegyensúlyozottabb hármast
- * választjuk.
- 
+Megoldás lényege:
+A térfogat N = a * b * c, ahol a <= b <= c egész oldalak. Mivel a legkisebb tényező
+a <= N^(1/3) <= 216, az a-t a 1-től addig próbáljuk, amíg a^3 <= N, b-t pedig a-tól
+b^2 <= N / a feltételig. Minden (a, b, c) hármasra kiszámoljuk a legnagyobb és a
+legkisebb oldal különbségét, és a legkisebb különbségű hármast tartjuk meg, majd
+csökkenő sorrendben kiírjuk. Az idő legfeljebb néhány százezer lépés.
+*/
+/*
 Hint 1: || A három él szorzata adott, tehát valójában a számot kell három tényezőre bontanod. ||
 Hint 2: || Csak az osztóhármasokat érdemes vizsgálni, és azok közül azt választani, ahol a legnagyobb és a legkisebb él különbsége minimális. ||
 */

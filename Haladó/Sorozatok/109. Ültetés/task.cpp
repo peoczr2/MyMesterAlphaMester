@@ -5,9 +5,11 @@ Ez a permutáció ciklusokra bomlik. Egy k hosszú, nem triviális ciklus rendez
 székkel pontosan k+1 átülés kell, ezért a minimális lépésszám a nemtriviális ciklusokra összesítve
 Σ(k+1).
 */
-// Hint 1: || A feladat a diák -> jelenlegi szék permutáció ciklusfelbontására vezethető vissza. ||
-// Hint 2: || Egy k hosszú rossz ciklus rendezése az extra üres székkel k+1 lépés. ||
-// Hint 3: || Az 1 hosszú (helyes) ciklusokhoz 0 lépés tartozik. ||
+/*
+Hint 1: || A feladat a diák -> jelenlegi szék permutáció ciklusfelbontására vezethető vissza. ||
+Hint 2: || Egy k hosszú rossz ciklus rendezése az extra üres székkel k+1 lépés. ||
+Hint 3: || Az 1 hosszú (helyes) ciklusokhoz 0 lépés tartozik. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,13 +1,17 @@
 /*
- * Az lkktSzamlalo(n) értékek összege megegyezik azzal, hogy hány rendezett
- * párra teljesül lcm(a,b) <= N. Az egyes n-ek lcm-párszámát prímhatványos
- * faktorizálással számítjuk.
- 
-Hint 1: || Egy fix N-re a `lcm(a,b)=N` párok száma a prímtényezők kitevőiből külön-külön számolható. ||
-Hint 2: || Ha `N = p1^e1 * ... * pk^ek`, akkor minden prímtényezőre `(2*ei+1)` lehetőség adódik, és ezeket össze kell szorozni. ||
+Megoldás lényege: az lcm(a,b)=N feltétel prímenként külön teljesül: a és b kitevőinek maximuma pontosan az N
+kitevője. Egy p^e prímhatványra a (x,y) kitevőpárok száma, ahol max(x,y)=e, (e+1)^2 - e^2 = 2e+1, így
+lkktSzamlalo(N) a prímtényezős felbontás kitevőire Π(2e+1). Az 1..N számok felbontását legkisebb prímosztókat
+tartalmazó szitával kapjuk meg, az értékeket pedig összegezzük; az időigény O(N log log N).
+*/
+/*
+Hint 1: || Egy fix N-re az lcm(a,b)=N párok száma a prímtényezők kitevőiből külön-külön számolható. ||
+Hint 2: || Ha N = p1^e1 * ... * pk^ek, akkor egy prímtényezőre 2*ei+1 kitevőpár adódik, a teljes szám ezek szorzata. ||
+Hint 3: || Az 1..N számok prímtényezőit egy legkisebb prímosztókat tároló szitával gyorsan megkaphatod, így mindegyikre külön-külön kiszámolható az érték, majd összegezhető. ||
 */
 
-#include "../common.hpp"
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

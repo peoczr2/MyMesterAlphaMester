@@ -1,13 +1,18 @@
 /*
- * A Hofstadter R-S sorozatot a definíció alapján szimuláljuk. Mivel az S_n
- * értékek legfeljebb 2n-ig terjednek, elegendő 2N-ig nyilvántartani a felhasznált
- * számokat.
- 
+Megoldás lényege: a sorozatot közvetlenül szimuláljuk. Minden lépésben R_n = R_{n-1} + S_{n-1}, majd S_n a legkisebb
+pozitív egész, amely még nem szerepel a korábbi R- és S-értékek között. Az értékeket egy "felhasznált" jelölőtömbben
+tartjuk nyilván, így a szabad szám keresése egyszerű. S_n legfeljebb 2n lehet, mert az első n darab R- és az első
+n-1 darab S-érték 2n-1 különböző szám, ezért 2n+5-ig tartó tömb elegendő. A keresés az előző S-értéktől indul,
+így a teljes futás O(N) időigényű.
+*/
+/*
 Hint 1: || A sorozat definíciója közvetlenül szimulálható, csak gyorsan kell tudnod megkeresni a legkisebb még nem használt pozitív egészet. ||
 Hint 2: || Tarts fenn egy `used` tömböt, növeld R-et az előző S-sel, majd léptesd az új S jelöltjét addig, amíg szabad számot nem találsz. ||
+Hint 3: || Gondold meg, meddig kell a tömböt tartani: n darab R-érték és n-1 darab S-érték már 2n-1 különböző számot foglal el, így S_n nem lehet nagyobb 2n-nél. ||
 */
 
-#include "../common.hpp"
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

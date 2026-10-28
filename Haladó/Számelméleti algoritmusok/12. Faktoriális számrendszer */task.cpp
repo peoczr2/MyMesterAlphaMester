@@ -1,8 +1,15 @@
 /*
- * Átváltás tízes számrendszer és faktoriális számrendszer között.
- 
+Megoldás lényege:
+Tízesből faktoriálisba úgy váltunk, hogy a számot egymás után 2-vel, 3-mal, 4-gyel,
+... osztjuk, és a maradékok adják a számjegyeket; a jobb szélső számjegy alapja 2,
+a tőle balra lévőé 3, és így tovább. Fordítva a jobbról k-adik (nullától számolt)
+számjegy súlya (k+1)!, ezért a számjegyeket jobbról balra haladva a futó faktoriálist
+lépésenként növelve, a számjegyet súlyozva összegezzük. Mindkét irány a számjegyek
+számával arányos időt igényel, ami a feladat méreteinél elhanyagolható.
+*/
+/*
 Hint 1: || Tízesből faktoriálisba úgy tudsz váltani, hogy sorban osztasz 2-vel, 3-mal, 4-gyel és a maradékokat gyűjtöd. ||
-Hint 2: || Visszafelé a számjegyek súlyai 1!, 2!, 3!, ... , ezért balról jobbra egy vegyes alapú kiértékelést kell csinálni. ||
+Hint 2: || Visszafelé haladj jobbról balra, és minden lépésben szorozd a futó faktoriálist eggyel nagyobb számmal; így a számjegyek súlya 1!, 2!, 3!, ... lesz. ||
 */
 
 #include "../common.hpp"
@@ -21,10 +28,11 @@ static string to_factorial(int64 x) {
 
 static int64 from_factorial(const string& s) {
     int64 value = 0;
-    int base = 1;
-    for (char c : s) {
-        value = value * base + (c - '0');
-        ++base;
+    int64 fact = 1;
+    for (int k = 0; k < (int)s.size(); ++k) {
+        char c = s[s.size() - 1 - k];
+        fact *= (k + 1);
+        value += (c - '0') * fact;
     }
     return value;
 }

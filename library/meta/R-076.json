@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/1. Csoki ***",
+    "method": "Q elemű csoportok visszalépéses keresése típus- és páronkénti számlálókkal",
+    "category": "Kombinatorika: blokk-design",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["kombinatorika", "visszalépés", "design"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/10. Ültetés **",
+    "method": "Bipartit párosítás folyamhálózattal (Dinic-algoritmussal)",
+    "category": "Gráf: párosítás, folyam",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["párosítás", "folyam", "gráf"],
+    "note": "A be1 minta ki1 fájlja hibás: öt vendéghez öt számnak kellene tartoznia, a fájl viszont csak „0” és „4”. A feladatszöveg példája (5 4 1 3 7) és a saját kimenetem (5 4 3 1 7) is érvényes. A feladat szerint bármelyik megoldás megadható; a kimenetek érvényességét ellenőrző program igazolta. A be2 mintát pontosan egyezően adja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/11. Üvegválogatás *",
+    "method": "Visszalépés: fajtánként egy különböző láda, a helyben maradó üvegek maximalizálása",
+    "category": "Hozzárendelés, visszalépés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["visszalépés", "hozzárendelés", "maximalizálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/12. Üzletek *",
+    "method": "Visszalépés a legszűkebb üzlettel, Hall-féle részhalmaz-vágással",
+    "category": "Particionálás, visszalépés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["visszalépés", "hozzárendelés", "vágás"],
+    "note": "A be2 minta más kiosztást ad, de a feladat szerint bármelyik megadható; a saját kiosztás érvényes (minden üzlet megengedett pékségtől vesz, a kapacitások nem fogynak el), ezt az ellenőrző program igazolta. A vágás nélküli változat a nehéz, megoldás nélküli esetekben kb. 0,45 mp volt az 0,1 mp-es időlimit helyett, ezért került a kódba a Hall-féle vágás.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/15. Biztonságos leszállás",
+    "method": "Sorrendek végigpróbálása, a párokra vonatkozó korlátok minimuma tört alakban",
+    "category": "Permutáció, optimalizálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["permutáció", "intervallum", "optimalizálás"],
+    "note": "A ∆t kerekítése félmásodperc esetén felfelé történik; a feladat ezt nem rögzíti.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/16. Szókereső",
+    "method": "Mélységi keresés a kezdőbetűs mezőkből, visszalépéssel, irány-kódolással",
+    "category": "Rács, keresés, visszalépés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rács", "visszalépés", "keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

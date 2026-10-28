@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/20. Társasjáték ***",
+    "method": "DP a dobásszámra és a mezőre, a túllépés visszatükrözésével.",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "visszapattanás",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/21. Válogatás **",
+    "method": "Összes permutáció kipróbálása, a helyben maradó üvegek maximalizálásával.",
+    "category": "Permutáció: hozzárendelés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "permutáció",
+      "hozzárendelés",
+      "brute-force"
+    ],
+    "note": "Több optimális fajtasorrend esetén a lexikografikusan elsőt írja ki; a feladat ezt nem köti ki, a két minta ezt követi.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/22. Verseny *",
+    "method": "Különböző tagú felbontások számolása 0/1 hátizsák-DP-vel, BigInt-tel.",
+    "category": "Partíció: különböző tagok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "partíció",
+      "hátizsák",
+      "nagy számok"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/23. Zár ***",
+    "method": "Tárcsánként a két forgásirány távolsága, az irányok 2^3 kombinációja, maximumok összege.",
+    "category": "Körkörös tárcsák: minimális lépésszám",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "körkörös",
+      "bitmaszk",
+      "minimum"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/24. Akadályverseny ***",
+    "method": "Alternáló permutációk száma: 2·E_N, az Entringer-háromszöggel számolt Euler-féle zigzag-szám.",
+    "category": "Alternáló permutációk",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "permutáció",
+      "zigzag",
+      "entringer"
+    ],
+    "note": "A minta.zip-ben nincs ki-fájl (csak be1=4, be2=20), ezért a validátor nincs minta állapotot ad. Kézzel: 4 -> 10 (a feladat példája), 20 -> 740742376475050; N<=8-ra brute-force egyezik.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/25. Épület színezések száma 2 **",
+    "method": "Három állapotú lineáris DP az utolsó emelet színe szerint, modulo 20160109.",
+    "category": "Dinamikus programozás: állapotok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "dinamikus programozás",
+      "állapotgép",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

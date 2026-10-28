@@ -11,7 +11,11 @@ minden maradék minimális előállítható értékét. Egy B lekérdezésre a l
 előállítható C úgy adódik, hogy a megfelelő maradéknál a kapott minimális értéket
 felfelé kerekítjük A1 többszörösére.
 */
-
+/*
+Hint 1: || Az összes A_i közös osztójával érdemes egyszerűsíteni: ha g az A-k legnagyobb közös osztója, akkor az A_i-ket és a B_i-ket g-vel osztva (B_i-t felfelé kerekítve) ugyanazt a feladatot kapod, és a végén g-vel visszaszorzol. Ha az egyszerűsített legkisebb A 1, minden szám előállítható. ||
+Hint 2: || Ha x előállítható, akkor x + A_min is az, ahol A_min a legkisebb A-elem. Ezért minden r maradékra (mod A_min) elég a legkisebb, r-rel azonos maradékú előállítható számot ismerni. ||
+Hint 3: || Ezek a minimumok egy A_min csúcsú gráf legrövidebb útjai: r-ből az (r + A_i) mod A_min csúcsba A_i költséggel lehet lépni, ezt Dijkstra-algoritmussal számolhatod ki. Egy B_i-re minden maradékhoz a B_i-nél nem kisebb legkisebb értéket vesszük, és ezek minimuma a válasz. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/1. Állatkert **",
+    "method": "Fokszámok számlálása élenként; zsákutca az a csúcs, amelynek fokszáma 1.",
+    "category": "Gráfok: fokszámok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "fokszám",
+      "zsákutca"
+    ],
+    "note": "A minta.zip egy másik, 2015-ös olimpiai változat anyagát tartalmazza: a be-fájlok első sora három számot ad (N M K), és nincs hozzájuk ki-fájl. Ezért a validátor „nincs minta”-t ad. A feladat.pdf példáján a program „2 1” választ ad, és 400 véletlen gráfon egyezik a naiv számítással.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/10. Munkasorrend **",
+    "method": "Három vállalkozó blokkjainak permutációja, majd Kahn-rendezés a korábbi blokk előnyben részesítésével.",
+    "category": "Topologikus rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "topologikus rendezés",
+      "permutáció",
+      "kahn"
+    ],
+    "note": "A minta.zip csak a feladat.pdf-et tartalmazza, be/ki pár nincs. A PDF példa sorrendje (1 3 2 5 4 6 7 8) eltér a programétól (1 2 3 5 4 6 7 8), de mindkettő érvényes, a feladat szerint bármelyik megadható. Az érvényességet a munkakönyvtári ellenőrzővel igazoltam: 600 kis esetben egyezik a teljes permutációs kereséssel, a 10000 munkás nagy esetben érvényes és 0,03 mp alatt fut.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/11. Pontpárok közötti távolság *",
+    "method": "Gyökértől mért távolságok, a távolság a két csúcs távolságának és a közös ős kétszeresének különbsége.",
+    "category": "Fák: pontpárok távolsága",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "lca",
+      "bináris ugrás"
+    ],
+    "note": "A minta.zip be-fájljai a feladat formátumát követik, de nincs hozzájuk ki-fájl, ezért a validátor „nincs minta”-t ad. A feladat.pdf példája (22, 26, 16), a be1 és be2 kimenete, valamint 300 véletlen fa egyezik a kérdésenkénti bejárással (brute force).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/12. Repülőút *",
+    "method": "Átugrási ellenőrzés csúcsokra, vágásonkénti élszámlálás különbségi tömbbel.",
+    "category": "DAG: kikerülhetetlen pontok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "dag",
+      "vágás",
+      "különbségi tömb"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

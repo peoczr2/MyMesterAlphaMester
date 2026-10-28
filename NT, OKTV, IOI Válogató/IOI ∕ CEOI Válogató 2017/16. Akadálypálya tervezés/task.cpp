@@ -1,18 +1,22 @@
 /*
 Megoldás lényege:
-A feltételek miatt a pálya egy rétegzett irányított aciklikus gráfként fogható fel:
-van egy forrás (start) és egy nyelő (cél), és minden csúcs egy jól meghatározott
-szinten helyezkedik el a starttól mért út-hossz alapján. A 2. feltétel azt jelenti,
-hogy minden szomszédos réteg közti út ugyanannyi ellenőrző pontot tartalmaz, tehát
-az élek csak egymást követő szintek között mehetnek.
+A 2. feltétel miatt minden ellenőrző pont szintje egyértelmű: a starttól mért
+legrövidebb út hossza (BFS-szel számolható). Ebben a szintezésben az élek csak
+egymást követő szintek között mehetnek, és a megtartott s–t utak hossza megegyezik
+a terv legrövidebb s–t útjának hosszával, így a pálya rétegzett irányított aciklikus gráf.
 
-Minden két szomszédos réteg között egy bipartit gráfunk van. Olyan legkevesebb élt
-kell választani, hogy a bal oldali szint minden csúcsa rendelkezzen legalább egy
-kimenő éllel, és a jobb oldali szint minden csúcsa legalább egy bejövő éllel.
-Ez pontosan bipartit minimum él-fedés: maximum párosítást számolunk, majd a még
-nem fedett csúcsokat tetszőleges incident élekkel lefedjük.
+Két szomszédos szint között bipartit gráf van. Olyan legkevesebb élt kell választani,
+hogy az alsó szint minden csúcsából legyen kiválasztott kimenő él, és a felső szint
+minden csúcsába legyen kiválasztott bejövő él. Ez bipartit minimum él-fedés: az
+érintett két szint csúcsszámának összege mínusz a maximális párosítás. A maximális
+párosítást Hopcroft–Karp algoritmussal számoljuk, majd a még nem fedett csúcsokat
+tetszőleges incidens élekkel lefedjük.
 */
-
+/*
+Hint 1: || A 2. feltétel miatt minden ellenőrző pont fix szinten van: a starttól mért legrövidebb út hossza adja a szintet. Így a megtartott élek csak egymást követő szintek között futhatnak. ||
+Hint 2: || Két szomszédos szint között bipartit gráfot kapunk. A feladat: a lehető legkevesebb élt kiválasztani úgy, hogy az alsó szint minden csúcsából és a felső szint minden csúcsába legyen kiválasztott él. ||
+Hint 3: || Ez minimális élfedés: a kiválasztott élek száma a két szint csúcsszámának összege mínusz a maximális párosítás. A párosítást Hopcroft–Karp algoritmussal keressük, a nem párosított csúcsokat pedig tetszőleges incidens éllel fedjük le. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -106,24 +110,18 @@ int main() {
         if (outdeg[i] == 0) sink = i;
     }
 
-    vector<int> topo;
-    topo.reserve(n);
+    vector<int> level(n + 1, -1);
+    level[source] = 0;
     queue<int> q;
-    vector<int> deg = indeg;
-    for (int i = 1; i <= n; ++i) if (deg[i] == 0) q.push(i);
+    q.push(source);
     while (!q.empty()) {
         int v = q.front();
         q.pop();
-        topo.push_back(v);
-        for (int to : g[v]) if (--deg[to] == 0) q.push(to);
-    }
-
-    vector<int> level(n + 1, -1);
-    level[source] = 0;
-    for (int v : topo) {
-        if (level[v] == -1) continue;
         for (int to : g[v]) {
-            level[to] = max(level[to], level[v] + 1);
+            if (level[to] == -1) {
+                level[to] = level[v] + 1;
+                q.push(to);
+            }
         }
     }
 

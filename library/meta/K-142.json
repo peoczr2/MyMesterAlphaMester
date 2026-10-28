@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/92. Legtöbb csúcsot tartalmazó terület ****",
+    "method": "Csúcsok előre jelölése, 2D prefixösszeg, a K osztópárjaihoz tartozó téglalapok bejárása.",
+    "category": "2D prefixösszeg",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "kétdimenziós tömb", "téglalap"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/93. Legrövidebb szakasz ****",
+    "method": "Csúszóablak: a jobb végpontot léptetjük, a bal végpontot szűkítjük, 26 elemű számlálóval.",
+    "category": "Csúszóablak",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "szöveg", "kétmutatós"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/94. Mély pontok ****",
+    "method": "Mély pontok előre jelölése, 2D prefixösszeg, a K osztópárjaihoz tartozó téglalapok bejárása.",
+    "category": "2D prefixösszeg",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "kétdimenziós tömb", "téglalap"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/95. Hegycsúcsok **",
+    "method": "Csúcsok egy menetben való összegyűjtése, majd a szomszédos K-as csoportok távolságának minimuma.",
+    "category": "Lokális maximumok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["csúcs", "tömb", "szomszédos"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

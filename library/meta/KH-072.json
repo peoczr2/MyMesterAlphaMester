@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Középhaladó/Szülők/10. Van-e édestestvéred? **",
+    "method": "Szülőhalmazok közös elemeinek számolása, páronkénti összevetés",
+    "category": "Szülők / halmazok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szülők", "édestestvér", "halmaz"],
+    "note": "Édestestvér: a két embernek mindkét szülője közös. Mintán 2/2 kész. Legnagyobb bemeneten (N=1000, K=2000) mért futásidő kb. 2 ms, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szülők/11. Van-e féltestvéred? **",
+    "method": "Szülőhalmazok metszetének számolása, pontosan egy közös szülő keresése",
+    "category": "Szülők / halmazok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szülők", "féltestvér", "halmaz"],
+    "note": "Féltestvér: pontosan egy közös szülő, a másik szülő különböző. Mintán 2/2 kész. Legnagyobb bemeneten (N=1000, K=2000) mért futásidő kb. 2 ms, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

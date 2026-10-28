@@ -1,0 +1,82 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/15. Lefedő egyenesek **",
+    "method": "Az első 4 pont 6 párja egyenesként, a maradék pontokra 2 egyenes ellenőrzése",
+    "category": "Geometria: egyenesek lefedése",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "egyenes",
+      "skatulyaelv"
+    ],
+    "note": "Több helyes kimenet van: a három egyenes szabadon választható. Az 1. mintára a program más, de érvényes lefedést ad (2 3 2 5 / 4 2 6 4 / 4 7 6 6); a munkakönyvtári ellenőrző (library/.work/R-014/check15.py) igazolta, hogy minden pont fedett. A 2. minta (0 0 0 0) egyezik; 1500 véletlen kis esetre brute-force egyezés volt.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/17. Park *",
+    "method": "Teljes háromszögelés építése a burok átlóival és a belső pontok egyenkénti beszúrásával",
+    "category": "Geometria: háromszögelés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "háromszögelés",
+      "konvex burok",
+      "geometria"
+    ],
+    "note": "Nincs kimeneti minta a zipben (csak be1, be2), ezért kézzel: be1 → M=11, be2 → M=39978; a munkakönyvtári ellenőrző (library/.work/R-014/t17/check17.py) igazolta a teljes háromszögelést, M = 2N − b − 2 (b: a burok pontjai, az egy egyenesre eső élpontokat is beleértve). A régi kód a be2-n szegmentációs hibával állt le, és véletlen tesztben hibás volt: a csomópontra mutató referencia a vektor újraallokálásakor érvénytelenedett; index-alapú eléréssel javítottuk.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/18. Poligon **",
+    "method": "A pontok konvex burkának irányított élei, amelyeken nincs más pont",
+    "category": "Geometria: konvex burok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "konvex burok",
+      "geometria",
+      "monoton lánc"
+    ],
+    "note": "A kimenet sorrendje tetszőleges: a két mintánál a csúcspárok halmaza egyezik, csak a sorrend tér el (a validátor ezért jelzi eltérésnek). A régi kód csak a szigorú burok éleit írta ki, így az egy egyenesre eső határpontos éleket is; ezeket most kizárjuk. Véletlen és rácsos (sok egy egyenesre eső ponttal) tesztekre brute-force egyezett.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/19. Poligonok metszése ***",
+    "method": "Két lánc éleinek összefésülése x szerint, az átfedő élpárok metszésvizsgálatával",
+    "category": "Geometria: konvex sokszögek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "konvex sokszög",
+      "szakaszmetszés",
+      "összefésülés"
+    ],
+    "note": "A minta más, de érvényes élpárt ad: be1 → 1 4 (a minta 3 4), be2 → 1 1 (a minta 3 4); a munkakönyvtári ellenőrző (library/.work/R-014/t19/chk19.py) mindkettőt igazolta. A régi összefésülés egyenlő jobb végpontnál kihagyta az érintkező párokat (csúcs egy oldalon); ezt javítottuk, utána kb. 2500 véletlen, főleg érintkező tesztre brute-force egyezett.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/2. Autópálya ***",
+    "method": "A pontok burkának határán egymás melletti, különböző színű pontpár adja az egyenest",
+    "category": "Geometria: konvex burok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "konvex burok",
+      "tartóegyenes",
+      "monoton lánc"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

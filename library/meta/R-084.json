@@ -1,0 +1,98 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/1. Azonosítók",
+    "method": "Rangsorolás binomiális együtthatókkal, majd K-val eltolt sorszám visszaállítása.",
+    "category": "Kombinatorika: rangsorolás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "kombinatorika",
+      "binomiális",
+      "lexikografikus"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/10. Dobozok",
+    "method": "Dobozonkénti szülőváltozás összegzése, a közös szülőkapcsolat bontásának figyelembevételével.",
+    "category": "Láncok: lépésszám",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "láncok",
+      "állapotátmenet",
+      "összegzés"
+    ],
+    "note": "Az első változat (dobozonkénti összeg) a 2. mintán hibázott; a javított képlet a közös szülőkapcsolatok bontását is számolja. N≤5 teljes, N=6–7 véletlen állapottér-bejárással ellenőrizve.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/11. Biztonságos leszállás",
+    "method": "Bináris keresés a biztonsági időn; minden sorrendre mohó időpont-kiosztás ellenőrzése.",
+    "category": "Bináris keresés, permutáció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "keresés",
+      "permutáció",
+      "mohó"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/12. Akadálypálya",
+    "method": "Csúcsszétválasztással max-folyam legfeljebb 3 egységig; a min-vágás csúcsai adják a párt.",
+    "category": "Gráf: csúcsvágás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "csúcsvágás",
+      "folyam"
+    ],
+    "note": "Több helyes pár is elfogadható, ezért a minta kézi: a library/.work/R-084/12/check.py minden kimenetet igazolt, a \"0 0\" esetet véletlen kis gráfokon brute-force ellenőrizte.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/13. Poligon",
+    "method": "A két oldal pontjainak szögrendezése A és B körül; az összekötő szakasz irányának ellenőrzése.",
+    "category": "Geometria: szögrendezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "szögrendezés",
+      "törtvonal"
+    ],
+    "note": "Megjegyzés: a 2. minta (297 pont az AB egyenesen, több pont ugyanazon félegyenesen A-ból) érvénytelen törtvonalat ad, szakaszmetszéssel. Ha nincs három egy egyenesre eső pont, minden tesztelt eset érvényes; az 1. minta érvényes, de más sorrendű (kézi, library/.work/R-084/13/check.py). Ezért nem jelöltem kézi-nek: a kimenet a 2. mintán keresztezi önmagát, így nem érvényes.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/14. Rajtszámok",
+    "method": "Minden megjelent versenyző rajtszámának 10 bitjét lekérdezzük; a hiányzó az első nem látott szám.",
+    "category": "Interaktív: bitkérdezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "interaktív",
+      "bitek",
+      "kérdezés"
+    ],
+    "note": "Grader-alapú (valasz.h a minta.zip-ben): a validátor nem fordítja le, ezért speciális és nem kész. A minta-modullal lefordított program 127 véletlen esetben helyes volt, 10(N−1) kérdéssel (a legalacsonyabb, ≤10N-es pontozási sáv).",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

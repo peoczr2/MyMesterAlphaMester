@@ -1,11 +1,17 @@
+/*
+Megoldás lényege:
+A két naptár ugyanazt a 18980 napos ciklust írja le (52 haab év = 73 tzolkin év = 18980 nap), csak más
+hosszúságú években és más hónapszerkezettel. Ezért mindkét dátumot egy abszolút sorszámmá alakítjuk: a
+kezdőnaptól számolt napok száma (0-tól indexelve). A tzolkin évben 260, a haab évben 365 nap van, így az évet
+a sorszám osztásával, a hónapot és a napot a maradékkal kapjuk vissza. A haab év végi 5 napja a 360–364-es
+maradékot kapja, ezért ott a hónap 0. Az időigény és a memóriaigény O(1).
+*/
+/*
+Hint 1: || Mindkét naptár a kezdettől eltelt napok számával írható le, ha ugyanazon a napon indulunk. Ezután már csak azt kell eldöntened, hogyan kapod vissza az évet, a hónapot és a napot ebből a sorszámból. ||
+Hint 2: || Tzolkin dátumból: sorszám = (év-1)·260 + (hónap-1)·20 + (nap-1). Haab dátumból: sorszám = (év-1)·365 + (hónap-1)·20 + (nap-1), de ha HHO = 0 (az év végi 5 nap), akkor a hónap-tag helyett 360 áll. Visszafelé az évet a sorszám osztása adja, a maradékból a hónap és a nap számítható. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A két naptár ugyanazt a 18980 napos ciklust írja le, csak más hosszúságú
-    év- és hónapszerkezettel. Ezért mindkét dátumot egy abszolút sorszámmá
-    alakítjuk, majd a másik naptár szerkezetével bontjuk vissza.
-*/
 
 static pair<int, pair<int, int>> to_haab(long long sorszam) {
     int ev = sorszam / 365 + 1;

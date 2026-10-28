@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/35. Magasabb utazási idejű állomasok *",
+    "method": "Szakaszidő: érkezési idő mínusz az előző indulási idő; az előzőnél hosszabb szakaszok sorszámait gyűjtjük.",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "idő",
+      "tömb",
+      "összehasonlítás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/36. Még az induló állomáshoz közelebbi állomás *",
+    "method": "Távolságok prefixösszege, majd a legnagyobb sorszám, ahol a távolság kisebb a teljes hossz felénél.",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "prefixösszeg",
+      "távolság",
+      "keresés"
+    ],
+    "note": "A szöveg nem mondja meg a kimenetet, ha egyetlen megálló sincs az induló állomáshoz közelebb; ilyenkor a 0. (induló) állomást írjuk ki: 0 0 D.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/37. Menetidők a villamosmegállók között *",
+    "method": "Szakaszidő: érkezési idő mínusz az előző indulási idő, soronként egy vektorba.",
+    "category": "Egyszerű számítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "idő",
+      "tömb",
+      "különbség"
+    ],
+    "note": "Kérdés: a szöveg (a feladat.pdf és a minta.zip-ben lévő példány) szerint az első sor a szakaszok száma, a példa is „5 10 15 10 6 5”. A minta.zip kimenetei (ki1.txt, ki2.txt) viszont nem tartalmazzák a darabszámot, csak a menetidőket. A task.cpp a szöveget követi; a darabszám kiírásának elhagyásával a minta átmenne. Melyik a helyes?",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/38. Mindenhol megálló villamos *",
+    "method": "Logikai jelző: van-e olyan megálló, ahol az érkezési és indulási idő egyenlő.",
+    "category": "Logikai jelző",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "logikai",
+      "feltétel",
+      "tömb"
+    ],
+    "note": "Kérdés: a végállomás (N. megálló, érkezési = indulási idő) része-e a vizsgálatnak. A szöveg szerint igen, ekkor a minta.zip be2 példájára a válasz 0 lenne, a minta szerint 1. A task.cpp a szöveget követi; ha csak az 1..N-1. megállót vizsgáljuk, a minta mindkét bemenetre stimmel. Melyik a helyes?",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

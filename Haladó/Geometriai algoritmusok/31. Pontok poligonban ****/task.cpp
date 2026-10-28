@@ -1,6 +1,11 @@
 /*
 Megoldás lényege:
-Több pontra kell gyorsan eldönteni, hogy a sokszög belsejében vannak-e. Erre logaritmikus vagy lineáris point-in-polygon tesztet használunk.
+Minden kérdésnél a kiválasztott K pont alkotta sokszögre külön-külön eldöntjük, hogy a többi (kimaradt) pont benne van-e. A benne-van döntést sugaras (ray casting) módszerrel végezzük: a pontból vízszintes félegyenest húzunk jobbra, és megszámoljuk, hány sokszög-élt metsz. Páratlan metszésszám esetén a pont belül van. Az éleket féligzárt intervallum-szabállyal választjuk ki (a végpontok y-koordinátáját a ">" összehasonlítással vizsgáljuk), így egy csúcson átmenő sugár nem számolódik kétszer. Mivel nincs három egy egyenesre eső pont, pont sosem esik élre, a döntés egyértelmű. A metszés-vizsgálatot egész számokkal, osztás nélkül végezzük. Egy kérdés költsége O(N·K); a csúcsok összege a bemenetben legfeljebb 100 000, így az összes kérdés együtt nagyjából N·100 000 = 10^8 művelet.
+*/
+/*
+Hint 1: || Egy pont akkor van a sokszög belsejében, ha egy tetszőleges irányú félegyenes a sokszög éleit páratlan számszor metszi. Erre a vízszintes, jobbra induló félegyenes a legkényelmesebb. ||
+Hint 2: || Egy élt csak akkor kell figyelembe venni, ha végpontjai a pont y-koordinátájának ellentétes oldalán vannak. Ilyenkor a metszéspont x-koordinátáját kell összehasonlítani a pont x-koordinátájával. ||
+Hint 3: || A kimaradt pontokat úgy kezeld, hogy a kiválasztott pontokat előre megjelölöd, és csak a többi pontot vizsgálod. Az x-összehasonlítást osztás nélkül, egész számokkal végezd: a metszéspont-képletet szorozd át az él y-irányú különbségével, és figyelj ennek előjelére. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -15,11 +20,13 @@ static bool insidePolygon(const vector<Pt>& poly, const Pt& p) {
     for (int i = 0, j = n - 1; i < n; j = i++) {
         const Pt& a = poly[j];
         const Pt& b = poly[i];
+        // Az él metszi a vízszintes félegyenest, ha végpontjai a p.y különböző oldalán vannak.
         bool straddles = (a.y > p.y) != (b.y > p.y);
-        if (!straddles) continue;
-        long double xIntersect = (long double)a.x + (long double)(b.x - a.x) * (long double)(p.y - a.y) /
-                                 (long double)(b.y - a.y);
-        if (xIntersect > (long double)p.x) inside = !inside;
+        // A metszéspont x-koordinátája > p.x  <=>  num / dy > 0, egész számokkal (osztás és elágazás nélkül).
+        long long dy = b.y - a.y;
+        long long num = (a.x - p.x) * dy + (b.x - a.x) * (p.y - a.y);
+        bool crosses = ((num > 0) & (dy > 0)) | ((num < 0) & (dy < 0));
+        inside ^= (straddles & crosses);
     }
     return inside;
 }

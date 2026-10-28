@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/24. Fizetős utak",
+    "method": "0-1 szélességi bejárás deque-val, az előzők alapján visszafejtett úttal",
+    "category": "Gráf: legrövidebb utak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "legrövidebb út",
+      "szélességi bejárás"
+    ],
+    "note": "Mért idő a legnagyobb bemeneten (N=95 000, K=100 000): 0,02 mp; időlimit 0,1 mp. A feladatszöveg az élekre „N sorban”-t ír, de a példa és a minta K sort ad; K-t használtam.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/25. Leggyorsabb szállítás",
+    "method": "Dijkstra két kulccsal: a legrövidebb hossz, azon belül a legnagyobb szűk keresztmetszet",
+    "category": "Gráf: Dijkstra",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "legrövidebb út"
+    ],
+    "note": "Mért idő a legnagyobb bemeneten (N=10 000, M=100 000): 0,03 mp; időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/26. Vasútállomások",
+    "method": "Menetrendi csúcsokon Dijkstra, átszállási várakozólánccal, lexikografikus (költség, indulás) kulccsal",
+    "category": "Gráf: időfüggő utak",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "menetrend"
+    ],
+    "note": "Átszálláskor az indulásnak szigorúan későbbinek kell lennie az érkezésnél („később indul”); a minta be2 egyenlő időpontú átszállásai nem változtatják az eredményt. Mért idő a legnagyobb bemeneten (N=1000, kb. 200 000 menetrendi elem): 0,17 mp; időlimit 0,4 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/27. Lámpák",
+    "method": "Sebességküszöb csökkentése élenként, inkrementális Dijkstra a K összköltség-korláttal",
+    "category": "Gráf: szűk keresztmetszet",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "szűk keresztmetszet"
+    ],
+    "note": "Blokkolt: a mappanév („Lámpák”) és a minta.zip (más bemeneti formátumú, mátrixos feladat) nem a feladat.pdf-hez (Hálózati átvitel) tartozik. A PDF példájában K=120 mellett a 3. és 4. csúcs -1 lenne, a közölt 0 2 4 1 4 K=220 mellett (általában 220 és 334 közötti K-ra) jön ki, ezért a megoldás a szöveg szerinti összköltség-korlátot követi (brute-force-szal ellenőrizve). A K értékének és a helyes mintának a tisztázása szükséges. Mért idő a legnagyobb bemeneten (N=4000, M=50 000): 0,03 mp; időlimit 0,2 mp.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

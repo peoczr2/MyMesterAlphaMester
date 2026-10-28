@@ -4,11 +4,10 @@ Ez az előző feladat speciális esete, ahol minden lépcső egységmagas. Így 
 szélességek prefixösszegét kell figyelni, és ugyanaz a DAG-dinamikus összegzés működik.
 
 */
-
-// Hint 1: || A magasság most minden foknál 1, ezért a függőleges különbség egyszerűen a fokok száma. ||
-// Hint 2: || A vízszintes különbséget továbbra is prefix szélességekkel számoljuk. ||
-// Hint 3: || A legfelső fokra vezető utak száma egy sima összegezős DP. ||
-
+/*
+Hint 1: || A magasság most minden foknál 1, ezért a függőleges különbség egyszerűen a fokok száma. ||
+Hint 2: || A vízszintes különbséget továbbra is prefix szélességekkel számoljuk. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

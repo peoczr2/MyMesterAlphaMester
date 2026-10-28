@@ -10,7 +10,11 @@ legkorábbira tesszük, amely még belefér az adott intervallumba és legalább
 követi az előzőt. Bináris kereséssel megkapjuk a maximum d értéket, majd másodperc
 pontossággal kiírjuk perc:másodperc formában.
 */
-
+/*
+Hint 1: || Bináris keresést végezz a biztonsági idő (∆t, másodpercben) értékén: ha egy d érték megvalósítható, akkor minden kisebb is az, így a keresés helyes. ||
+Hint 2: || Egy adott d-hez és egy adott leszállási sorrendhez az időpontokat mohón a lehető legkorábbra tedd: a következő időpont max(az intervallum kezdete, az előző + d), és ellenőrizd, hogy nem lépi-e túl az intervallum végét. ||
+Hint 3: || Mivel N legfeljebb 8, az összes sorrend (legfeljebb 8! = 40320) végigpróbálható; elég, ha valamelyik sorrend működik. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

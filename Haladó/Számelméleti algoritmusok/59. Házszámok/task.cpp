@@ -1,7 +1,8 @@
 /*
- * Bináris keresés a legnagyobb házszámra, amelyhez az 1..x számok számjegy-
- * szükséglete belefér a megadott készletbe.
- 
+Megoldás lényege:
+Ha 1..X kirakható, akkor minden kisebb határ is kirakható, ezért a legnagyobb jó X bináris kereséssel megtalálható. Egy X ellenőrzéséhez minden számjegy darabszámát meg kell számolni az 1..X számokban, a vezető nullákat nem számolva. Ezt helyiértékenként, blokkokban végezzük: egy p = K^j helyiértéken a teljes, K·p hosszú blokkokban minden számjegy p-szer fordul elő, a maradék részt pedig az X ezen helyiértékű számjegye és az alsó maradék határozza meg. Egy ellenőrzés így O(K · log_K X) lépésben fut, a teljes algoritmus O(K · log_K X · log X), ami a legfeljebb 10^12-es készletekkel is gyors.
+*/
+/*
 Hint 1: || A válasz monotonnak tekinthető: ha 1..X még kirakható, akkor minden kisebb határ is kirakható. ||
 Hint 2: || Emiatt bináris keresést lehet használni X-re, és egy ellenőrzésnél helyiértékenként kell megszámolni, hogy 1..X-ig hány darab kell az egyes számjegyekből. ||
 Hint 3: || Az ellenőrző függvény legfontosabb része az, hogy a számjegyek darabszámát ne egyenként, hanem blokkosítva, a helyiértékek szerint számold. ||

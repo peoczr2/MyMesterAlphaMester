@@ -1,8 +1,8 @@
 /*
- * Minden mókus a saját ugráshosszának többszörösére lép. Megszámoljuk a
- * látogatásokat, majd kiírjuk a sosem látogatott és a legtöbbször látogatott
- * kövek sorszámát.
- 
+Megoldás lényege:
+Egy d ugrású mókus pontosan a d, 2d, 3d, ... köveken áll meg, ezért minden mókusra végigmegyünk a d többszörösein, és a rajtuk lévő számlálót növeljük. Ezután a 0 számlálójú köveket az első sorba, a legnagyobb számlálójú köveket a második sorba írjuk ki növekvő sorrendben. Ha nincs üres kő, az első sorba 0 kerül. Az időigény O(M · N), azaz legfeljebb 100 · 20 000 = 2 · 10^6 lépés, a memória O(N).
+*/
+/*
 Hint 1: || Egy d ugrású mókus pontosan a d többszöröseire lép, tehát a feladat valójában többszörösök számlálása. ||
 Hint 2: || Minden ugráshosszra menj végig a `d, 2d, 3d, ...` köveken, növeld a számlálót, majd a végén keresd a 0 darabos és a maximális darabos köveket. ||
 */

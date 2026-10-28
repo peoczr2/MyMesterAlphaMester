@@ -11,7 +11,11 @@ végződő legrövidebb tiltott minta hosszát. Egy sztringet balról jobbra olv
 ha egy végződő előfordulás bal széle még nem lefedett, akkor az aktuális jobb
 végpontra teszünk egy módosítást. Ez a klasszikus greedy intervallumfedés.
 */
-
+/*
+Hint 1: || Minden tiltott minta minden előfordulása a szekvencia egy részintervalluma. Ha egy pozíciót U-ra módosítunk, az ezt a pozíciót tartalmazó előfordulások megszűnnek, így a feladat az intervallumok minimális számú ponttal való lefedése. ||
+Hint 2: || Az előfordulások kereséséhez Aho–Corasick automata használható: a minták trie-jének minden csúcsához a bukóélek mentén kiszámoljuk a rajta végződő legrövidebb minta hosszát. ||
+Hint 3: || A szekvenciát balról jobbra olvasva, ha egy előfordulás bal széle még nincs lefedve, a jelenlegi (jobb oldali) pozíciót módosítjuk. Ez a mohó intervallumfedés, és a módosítások száma az eredmény. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,9 +1,18 @@
 /*
-A posta működése típusonkénti sorokra és az ablakok szabadságára épül. A helyes szimulációval kiolvasható a munkaidő vége és a legnagyobb várakozás is.
+Megoldás lényege:
+Az emberek egyetlen közös sorban állnak, és a sor elejéről csak akkor engedjük be az
+embert, ha az ő ügyének ügyintézője szabad. Ezért ha a sor elején álló embernek várnia
+kell, a mögötte állók is várnak, akkor is, ha az ő ügyintézőjük szabad. Az eseményeket
+időrendben dolgozzuk fel: a következő érkezés vagy a következő ügyintézés vége közül a
+korábbi időpontra ugrunk. Minden időpontban előbb a befejezett ügyintézőket szabadítjuk
+fel, utána az érkezőket soroljuk be, végül a sor elejéről addig engedünk be, amíg az
+első ember ügyintézője foglalt. A várakozási időt a beengedés pillanatában, a sor
+hosszát minden feldolgozás után mérjük. A befejezési idők prioritási sorban vannak,
+így az összes művelet logaritmikus, a teljes futás N log N.
 */
 /*
-Hint 1: || A típusonkénti sorok mellett a megfelelő ablak szabadságát is követni kell. ||
-Hint 2: || A munkaidő vége és a maximális várakozás ugyanabból az időléptetésből adódik. ||
+Hint 1: || Egyetlen közös sor van, és csak a sor elejét nézzük: ha annak az ügyintézője foglalt, a mögötte állók is várnak, akkor is, ha az ő ügyintézőjük szabad. ||
+Hint 2: || Eseményalapú léptetés: a következő érkezés vagy a következő ügyintézés vége közül a korábbi időpontra ugorva, minden időpontban a sor elejét próbáljuk beengedni. ||
 */
 
 #include <bits/stdc++.h>
@@ -12,7 +21,6 @@ using namespace std;
 struct Person {
     long long arrival;
     int type;
-    int id;
 };
 
 int main() {
@@ -21,56 +29,43 @@ int main() {
 
     int n, k;
     cin >> n >> k;
-    vector<int> service(k + 1);
+    vector<long long> service(k + 1);
     for (int i = 1; i <= k; ++i) cin >> service[i];
 
     vector<Person> people(n);
-    for (int i = 0; i < n; ++i) {
-        cin >> people[i].arrival >> people[i].type;
-        people[i].id = i + 1;
-    }
+    for (int i = 0; i < n; ++i) cin >> people[i].arrival >> people[i].type;
 
     queue<Person> waiting;
-    vector<int> free(k + 1, 1);
+    vector<bool> deskFree(k + 1, true);
     priority_queue<pair<long long,int>, vector<pair<long long,int>>, greater<pair<long long,int>>> busy;
 
-    vector<int> desk_of(n + 1, 0);
-    long long best_wait = 0;
-    long long max_queue = 0;
-    long long workday_end = 0;
+    long long bestWait = 0;
+    long long maxQueue = 0;
     int idx = 0;
     long long time = 0;
 
     while (idx < n || !waiting.empty() || !busy.empty()) {
-        long long next_arrival = idx < n ? people[idx].arrival : LLONG_MAX;
-        long long next_finish = busy.empty() ? LLONG_MAX : busy.top().first;
-        if (waiting.empty() && busy.empty() && idx < n && time < next_arrival) time = next_arrival;
-        else time = min(next_arrival, next_finish);
+        long long nextArrival = idx < n ? people[idx].arrival : LLONG_MAX;
+        long long nextFinish = busy.empty() ? LLONG_MAX : busy.top().first;
+        time = min(nextArrival, nextFinish);
 
         while (!busy.empty() && busy.top().first <= time) {
-            free[busy.top().second] = 1;
+            deskFree[busy.top().second] = true;
             busy.pop();
         }
-
         while (idx < n && people[idx].arrival <= time) waiting.push(people[idx++]);
 
         while (!waiting.empty()) {
-            const Person &p = waiting.front();
-            if (!free[p.type]) break;
+            Person p = waiting.front();
+            if (!deskFree[p.type]) break;
             waiting.pop();
-            desk_of[p.id] = p.type;
-            long long waited = time - p.arrival;
-            best_wait = max(best_wait, waited);
-            free[p.type] = 0;
-            long long finish = time + service[p.type];
-            workday_end = max(workday_end, finish);
-            busy.push({finish, p.type});
+            bestWait = max(bestWait, time - p.arrival);
+            deskFree[p.type] = false;
+            busy.push({time + service[p.type], p.type});
         }
-
-        max_queue = max<long long>(max_queue, waiting.size());
+        maxQueue = max(maxQueue, (long long)waiting.size());
     }
 
-    cout << workday_end << ' ' << best_wait << ' ' << max_queue << '\n';
-    for (int i = 1; i <= n; ++i) cout << desk_of[i] << '\n';
+    cout << bestWait << '\n' << maxQueue << '\n';
     return 0;
 }

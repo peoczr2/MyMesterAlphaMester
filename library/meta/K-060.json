@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/9. Idős és alacsony fizetésűek száma",
+    "method": "Egyetlen bejárás, két feltétel együttes teljesülésének számlálása.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/90. Vetélkedő ***",
+    "method": "Karakterenként rendezett azonosító kulcsként, map-ben előfordulások számolása, a páratlan darabszámú csapat kiválasztása.",
+    "category": "Megszámolás: csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "csoportosítás", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/91. Előállítások száma **",
+    "method": "Gyakorisági tömb: értékpárok számolása, az azonos értékek n(n-1)/2 párral.",
+    "category": "Megszámolás: párok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "gyakoriság", "párok"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/92. Málna",
+    "method": "Prefixösszegek paritása: páros párok számolása paritásonként egy bejárásban.",
+    "category": "Prefixösszeg: paritás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "paritás", "részszakasz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

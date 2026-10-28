@@ -1,6 +1,7 @@
 /*
-Feladat: A bemeneti dominókból a leghosszabb olyan sorrendet kell kiválasztani, ahol a domino végei egymásra illeszkednek, és az elemeket csak sorrendben használhatjuk.
-Ötlet: Mivel a számok 0..9 közé esnek, az aktuális láncvégeket egy 10x10-es dinamikus táblában tároljuk. Minden új dominó csak a régi láncok egyik végére illeszthető.
+Megoldás lényege: A dominókat sorban dolgozzuk fel, és egy 10x10-es táblában tároljuk, hogy az aktuális lánc bal és jobb végén milyen értékek állnak, és ezekhez mekkora a leghosszabb lánc. Minden új dominó vagy kimarad, vagy valamelyik oldalával a lánc bal vagy jobb végéhez illeszkedik, és ezzel a két vég egyike frissül. Az első dominó kötelezően a láncba kerül, a válasz a tábla maximuma. Mivel az állapotok száma legfeljebb 100, az időigény O(N * 100).
+*/
+/*
 Hint 1: || Egy állapotot az aktuális bal és jobb végpont száma ír le. ||
 Hint 2: || Az új dominóval az állapotok száma kicsi marad, ezért az összes átmenet végigpróbálható. ||
 Hint 3: || Az első dominó kötelező, utána már csak hosszabbíthatunk vagy eldobhatunk. ||

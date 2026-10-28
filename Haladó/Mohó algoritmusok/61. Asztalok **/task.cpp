@@ -1,6 +1,8 @@
 /*
-Feladat: A vendégeket asztalokhoz kell osztani. Egy asztalhoz legfeljebb K vendég ülhet, és egy asztal vendégeinek intervallumai metsszék egymást (legyen közös időpont, amikor mind jelen vannak). A cél az asztalok számának minimalizálása.
-Ötlet: Határidő (távozás) szerinti mohó csoportosítás. Vesszük a legkorábban távozó még be nem osztott vendéget, és az ő távozási idején (t=T) készítünk egy asztalt. Erre az asztalra legfeljebb K olyan még szabad vendéget teszünk, akik tartalmazzák t-t, prioritásban a legkorábban távozókat. Így a sürgős intervallumokat nem késleltetjük, és kapacitás szerint maximálisan töltjük az asztalokat.
+Megoldás lényege:
+Egy asztalhoz akkor ülhet együtt egy vendégcsoport, ha van olyan időpont, amikor mindannyian jelen vannak. A vendégeket távozási idejük szerint dolgozzuk fel: a legkorábban távozó, még be nem osztott vendég T távozási idejére nyitunk egy asztalt. Ide a T-t tartalmazó, még szabad vendégek közül legfeljebb K-1 további vendéget ültetünk, a korábban távozókat előnyben részesítve. Ez a mohó választás maximálisan tölti az asztalokat, így az asztalok száma minimális marad. A kupac műveletei miatt az időigény O(N log N).
+*/
+/*
 Hint 1: || Azonos asztalhoz egy közös t időpont kell, amit minden intervallum tartalmaz. ||
 Hint 2: || Jó „horgony” a legkorábban távozó vendég végpontja. ||
 Hint 3: || A horgonynál aktív vendégek közül a legkorábban távozókat érdemes előbb kiosztani. ||

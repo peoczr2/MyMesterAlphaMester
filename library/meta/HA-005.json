@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/38. Négyzet **",
+    "method": "Rögzített bal alsó csúcsból kiindulva a sorbeli és oszlopbeli távolságlisták metszete adja a négyzetet.",
+    "category": "Geometria: négyzet ponthalmazban",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["geometria", "négyzet", "pontpárok"],
+    "note": "Több azonos területű négyzet esetén a feladat szerint bármelyik megadható; a program az elsőt adja. A minta egyértelmű, a validátor kész.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/39. Nyaklánc *",
+    "method": "Vágás léptetésekor a súlyok csak 1-gyel változnak két félsorozaton, így az összérték O(1)-gyel frissíthető.",
+    "category": "Ciklikus tömb, súlyozott összeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["ciklikus", "prefixösszeg", "tömb"],
+    "note": "Több optimális vágás esetén bármelyik megadható; a program az elsőt adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/40. Nyelvi teszt *",
+    "method": "A kulcsot fává bontjuk, és a megoldás illeszkedését pozíciók halmazával ellenőrizzük.",
+    "category": "Mintaillesztés, rekurzív elemzés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rekurzió", "zárójelezés", "szövegfeldolgozás"],
+    "note": "A szóközök számát nem vesszük figyelembe: a mintában az 'a de f.' (egy szóköz) és az 'a  de g.' (két szóköz) is IGEN, ezért a szavak közti szóközöket egynek tekintjük.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/41. Puffer **",
+    "method": "Érkezési sorrendben, minimum-kupacban tárolt várakozó csomagokkal szimuláljuk a puffert.",
+    "category": "Szimuláció, prioritási sor",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kupac", "szimuláció", "puffer"],
+    "note": "A puffer méretét a benne tárolt csomagok bájtjainak összegeként értelmeztem; a 15-ös minta ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

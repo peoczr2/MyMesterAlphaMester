@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: keresés/20. Végállomás Fonyód előtt *",
+    "method": "Lineáris bejárás, az utolsó megfelelő végállomás-sor megjegyzése, megállás Fonyódnál",
+    "category": "Keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "utolsó előfordulás", "feltétel"],
+    "note": "A „Fonyód előtt” a bemeneti sorrendet jelenti: az első Fonyód-sorig vizsgálunk, a végállomás-sor indulási ideje 9999.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/21. Csökkenő benzin **",
+    "method": "Egy bejárás, a tankban levő benzin nyilvántartása kútról kútra",
+    "category": "Keresés",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "állapot", "számítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/22. Jegy a határon **",
+    "method": "Függvénnyel számolt jegy, minden hallgatóra egy-egy lépéses javítás kipróbálása",
+    "category": "Keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["keresés", "feltételvizsgálat", "kerekítés"],
+    "note": "A jegy legfeljebb 5 lehet, ezért az 5-ös zárthelyi jegyet nem növeljük tovább.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/23. Nagy és drága lakás *",
+    "method": "Egy bejárás, az első olyan lakás keresése, amely mindkét feltételt teljesíti",
+    "category": "Keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

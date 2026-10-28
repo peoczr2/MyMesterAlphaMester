@@ -1,15 +1,15 @@
 /*
-Az N tanulobol pontosan N/2 fo kerul az egyik csapatba, ezert eleg azt megkeresni,
-hogy N/2 valasztott tanulo sulya milyen osszeg lehet. Dinamikus programozassal
-nyilvantartjuk, hogy az elso i tanulobol pontosan c darabot valasztva eloall-e egy adott s
-osszseg. A vegso cel az a fele csapat, amelynek osszsulya a teljes osszeg felehez a
-legkozelebb esik, mert ekkor minimalis a ket csapat kulonbsege. A szulooket is eltesszuk,
-igy vissza tudjuk epiteni az egyik optimalis csapat osszetetelet.
+Az N tanuló közül pontosan N/2 fő kerül az egyik csapatba, ezért elég azt megkeresni, hogy
+az N/2 kiválasztott tanuló súlyai milyen összeget adhatnak ki. Dinamikus programozással
+nyilvántartjuk, hogy az első i tanulóból pontosan c darabot választva előáll-e egy adott s
+összeg. A végső cél az a csapat, amelynek összsúlya a teljes összeg felének legközelebb esik,
+mert ekkor a két csapat különbsége minimális. A szülőket is eltároljuk, így vissza tudjuk
+építeni az egyik optimális csapat összetételét.
 */
 /*
-Hint 1: || Csak az egyik csapatot kell kivalasztani, a masik automatikusan adodik. ||
-Hint 2: || A valasztott emberek szama is allapot legyen, nem eleg csak az osszsuly. ||
-Hint 3: || Ha eltesszuk, melyik tanulo hozott letre egy allapotot, visszaallithato a csapat. ||
+Hint 1: || Csak az egyik csapatot kell kiválasztani, a másik automatikusan adódik. ||
+Hint 2: || A kiválasztott emberek száma is legyen állapot, nem elég csak az összsúly. ||
+Hint 3: || Ha eltároljuk, melyik tanuló hozott létre egy állapotot, visszaállítható a csapat. ||
 */
 
 #include <algorithm>

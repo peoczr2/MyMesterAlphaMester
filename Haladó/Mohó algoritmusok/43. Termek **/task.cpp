@@ -1,9 +1,11 @@
 /*
-Feladat: Az eseményeket a lehető legkevesebb terembe kell beosztani.
-Ötlet: Kezdési idő szerint haladunk, és minden eseményt annak a teremnek adunk, amelyik a legkorábban szabadul fel, de még az esemény kezdete előtt.
+Megoldás lényege:
+Az események kezdési idő szerint haladunk, és minimum-kupacban nyilvántartjuk, mikor szabadul fel az egyes terem. Ha van olyan terem, amelynek utolsó eseménye az új esemény kezdete előtt véget ért (az azonos időpont ütközés), az eseményt oda tesszük; különben új termet nyitunk. Új termet csak akkor nyitunk, ha minden meglévő terem foglalt, ezért a termek száma pontosan a legtöbb egyidejűleg zajló esemény számával egyezik, ami alsó korlát is. Az időigény O(N log N).
+*/
+/*
 Hint 1: || Ha több terem is szabad, azt válaszd, amelyik a legkorábban felszabadul. ||
 Hint 2: || Ha egyik terem sem szabad, új termet kell nyitni. ||
-Hint 3: || A teremlista a rendezett események folyamatos hozzárendeléséből adódik. ||
+Hint 3: || Az események kezdési idő szerint rendezve haladj, és a termek felszabadulási idejét minimum-kupacban tartsd nyilván. ||
 */
 
 #include <bits/stdc++.h>

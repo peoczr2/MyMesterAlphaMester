@@ -1,20 +1,20 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
 Megoldási ötlet:
-A robot csak olyan csatornaszakaszt tud tisztítani, რომლის átmérője nagyobb a
+A robot csak olyan csatornaszakaszt tud tisztítani, amelynek átmérője nagyobb a
 robot méreténél. Ezek a „nagy” szakaszok a tisztító felé mutató fa irányában
 egymás után következhetnek.
 
 A minimális indulási pontok azok a csomópontok, amelyekből indulva van legalább
 egy tisztítható szakasz felfelé, de alattuk már nincs további tisztítható szakasz.
 Másképp: a nagy szakaszok által alkotott erdő leveleit kell kiválasztani.
-
+*/
+/*
 Hint 1: || Csak a robotnál nagyobb átmérőjű szakaszok érdekesek. ||
 Hint 2: || Egy robot egy nagy szakaszokból álló láncot tud végigtakarítani a tisztító felé. ||
 Hint 3: || Az indulópontok a nagy szakaszok láncainak alsó végpontjai. ||
 */
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

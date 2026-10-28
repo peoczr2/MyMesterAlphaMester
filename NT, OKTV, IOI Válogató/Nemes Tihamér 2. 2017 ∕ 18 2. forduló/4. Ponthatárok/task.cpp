@@ -1,11 +1,13 @@
+/*
+Megoldás lényege:
+A ponthatár alatti, közvetlenül egymás után következő előforduló pontszámokat nézzük az első hiányzó pontszámig. Ha ez a blokk legfeljebb L hosszú, a ponthatár a blokk legalacsonyabb pontszámára csökken, különben a régi ponthatár marad. A pontszámok előfordulását egy jelölőtömbben tároljuk, és minden ponthatárnál lefelé megszámoljuk a blokk hosszát. Az időigény O(K + N).
+*/
+/*
+Hint 1: || Az egyes ponthatároknál csak a közvetlenül alattuk lévő pontszámokat kell megnézni: a ponthatártól lefelé haladva az első hiányzó pontszámnál meg lehet állni. ||
+Hint 2: || Jelöld be egy tömbben (0-tól K-ig), melyik pontszám fordul elő. Minden ponthatárnál számold meg a jelölt, egymást követő pontszámokat lefelé; ha ez a szám legfeljebb L, az új határ a legalacsonyabb ilyen pontszám. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Egy ponthatárt addig lehet lejjebb tolni, amíg az alatta levő pontszámok
-    egy összefüggő, legfeljebb L hosszú blokkot alkotnak. Ha a blokk ennél hosszabb,
-    akkor a ponthatár marad a helyén.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

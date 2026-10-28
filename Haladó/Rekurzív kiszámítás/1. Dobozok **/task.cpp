@@ -5,11 +5,11 @@ majd a legnagyobb csomagolható sorozatot egy egyszerű O(N^2) dinamikával kere
 Egy doboz belefér egy másikba, ha minden rendezett mérete szigorúan kisebb.
 
 */
-
-// Hint 1: || A forgathatóság miatt minden dobozt előbb rendezz háromszöggé, majd úgy hasonlítsd össze őket. ||
-// Hint 2: || A leghosszabb lánc egy DAG leghosszabb útja: elég az előző, minden dimenzióban kisebb dobozokat nézni. ||
-// Hint 3: || Tárold az elődöt is, mert a sorozatot vissza kell fejteni, nem csak a hosszát. ||
-
+/*
+Hint 1: || A forgathatóság miatt minden doboz három méretét előbb rendezd nagyság szerint, majd úgy hasonlítsd össze a dobozokat. ||
+Hint 2: || A leghosszabb lánc egy DAG leghosszabb útja: elég az előző, minden dimenzióban kisebb dobozokat nézni. ||
+Hint 3: || Tárold az elődöt is, mert a sorozatot vissza kell fejteni, nem csak a hosszát. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

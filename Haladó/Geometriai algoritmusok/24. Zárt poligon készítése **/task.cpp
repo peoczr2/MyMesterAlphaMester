@@ -1,13 +1,11 @@
 /*
 Megoldás lényege:
-Bitonikus (x-monoton) egyszerű poligont építünk:
-1) pontokat rendezzük (x,y) szerint,
-2) a bal szélső L és jobb szélső R pont meghatározza az LR egyenest,
-3) az LR feletti pontok mennek az "felső" láncba növekvő sorrendben,
-4) az LR alatti pontok mennek az "alsó" láncba, de visszafelé járjuk be őket.
-Az így kapott L -> felső -> R -> alsó(vissza) sorrend nem tartalmaz metsző éleket.
-
-Idő: O(N log N)
+Rendezzük a pontokat (x, y) szerint. A legbaloldalibb L és a legjobboldalibb R pont közötti LR egyenes két oldalán lévő pontokból két láncot építünk: a felső láncot x szerint növekvő, az alsót csökkenő sorrendben bejárva az L -> felső -> R -> alsó (visszafelé) -> L sorrend x-monoton zárt poligont ad. A két lánc csak L-ben és R-ben érintkezik, így nincs metsző élpár. Az LR egyenesen fekvő pontokat úgy kell besorolni, hogy ne fusson rajtuk közvetlenül L és R között él: ha van LR alatti pont, a felső láncba kerülnek, különben az alsóba. Idő: O(N log N)
+*/
+/*
+Hint 1: || Keress olyan bejárást, ahol a poligon két x-monoton láncból áll: a bal szélső pont (L) és a jobb szélső pont (R) közötti egyenes két oldalán lévő pontok alkotják a láncokat. ||
+Hint 2: || Rendezd a pontokat (x, y) szerint. A felső láncot balról jobbra, az alsót jobbról balra járd be; így a két lánc csak L-ben és R-ben érintkezhet, tehát nincs metsző él. ||
+Hint 3: || Az LR egyenesen fekvő pontokat úgy kell besorolni, hogy ne fussanak rajtuk a poligon olyan élei, amelyek L és R között közvetlenül haladnak. Ha van az egyenes alatt pont, ezek a felső láncba kerüljenek; ha nincs, az alsóba. ||
 */
 
 #include <bits/stdc++.h>
@@ -51,9 +49,18 @@ int main() {
     Pt L = pts.front(), R = pts.back();
     vector<Pt> upper, lower;
 
+    // Az LR egyenesen fekvő pontok (c == 0) a felső láncba kerülnek, ha van LR alatti pont,
+    // különben az alsó láncba: így az L és R közötti közvetlen él nem fut át köztes csúcson.
+    bool anyBelow = false;
+    for (int i = 1; i + 1 < N; ++i) {
+        if (cross(L, R, pts[i]) < 0) {
+            anyBelow = true;
+            break;
+        }
+    }
     for (int i = 1; i + 1 < N; ++i) {
         long long c = cross(L, R, pts[i]);
-        if (c >= 0) upper.push_back(pts[i]);
+        if (c > 0 || (c == 0 && anyBelow)) upper.push_back(pts[i]);
         else lower.push_back(pts[i]);
     }
 

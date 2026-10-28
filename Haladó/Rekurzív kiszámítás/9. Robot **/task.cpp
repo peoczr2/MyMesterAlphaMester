@@ -1,14 +1,16 @@
 /*
 Megoldás lényege:
-A robot csak jobbra és felfelé léphet, ezért a bejárható áruval teli mezők pontosan a
-koordináták szerint nemcsökkenő láncot alkotják. Az ilyen lánc leghosszabb részét egy
-2D LIS-sel keressük meg a (x+y)<=L+2 feltétel mellett.
-
+A robot csak jobbra és felfelé léphet, ezért a bejárt áruval teli mezők koordinátái nemcsökkenő
+láncot alkotnak (x és y is nő vagy marad). Egy lánc utolsó eleméig pontosan x+y-2 lépés kell, így
+csak az x+y-2 ≤ L feltételnek eleget tevő mezők jöhetnek szóba. A legnagyobb ilyen lánc 2D LIS-szel
+keresendő: a mezőket x, majd y szerint rendezzük, és az y szerinti Fenwick-fában tároljuk az eddigi
+legjobb láncok hosszát és az elődöket. Az időigény O(N log N), a visszafejtés az elődök láncolatán megy.
 */
-
-// Hint 1: || A mozgás monotón, tehát a látogatott mezők koordinátái is rendezettek. ||
-// Hint 2: || A lépésszám korlátja csak azt szűri, hogy mely pontok érhetők el egyáltalán. ||
-// Hint 3: || A leghosszabb láncot egy Fenwick-fa és egy elődmező segítségével vissza lehet fejteni. ||
+/*
+Hint 1: || A mozgás monotón, tehát a látogatott mezők koordinátái is rendezettek. ||
+Hint 2: || A lépésszám korlátja csak azt szűri, hogy mely pontok érhetők el egyáltalán. ||
+Hint 3: || A leghosszabb láncot egy Fenwick-fa és egy elődmező segítségével vissza lehet fejteni. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

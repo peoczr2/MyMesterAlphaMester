@@ -1,6 +1,7 @@
 /*
-Feladat: A lehető legtöbb utazási igényt kell kielégíteni, ha egyszerre N idegenvezető áll rendelkezésre.
-Ötlet: Azonos hosszúságú utakról van szó; az igényeket a kezdőnap szerint sorban nézzük, és mindig a legkorábban felszabaduló idegenvezetőt használjuk. Ha mind foglalt, az adott igényt kihagyjuk.
+Megoldás lényege: Minden út azonos M hosszú, ezért az igények kezdőnap szerint sorban dolgozhatók fel, és egy igény akkor fogadható el, ha a kezdőnapon kevesebb mint N idegenvezető van lekötve. A lekötött idegenvezetők szabadulási napját egy prioritási sorban tartjuk, az igény előtt pedig kivesszük a már szabadultakat. Mivel minden út azonos hosszú, a kezdőnap szerinti sorrend egyben a befejezés szerinti sorrend is, így a mohó elfogadás optimális (az intervallumok k-gépes ütemezésének klasszikus esete). Az időigény O(C log N).
+*/
+/*
 Hint 1: || Egy út az indulási naptól M napig tart, tehát egy idegenvezető ennyi ideig foglalt. ||
 Hint 2: || A legkorábban felszabaduló idegenvezető nyit új helyet a következő igénynek. ||
 Hint 3: || Ha egyik sem szabad, akkor az igény már nem fér be. ||

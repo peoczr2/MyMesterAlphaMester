@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/13. Robot - 2008. október",
+    "method": "Utasításonkénti szimuláció: koordináták, energia, rövidítés és kibontás futamokból.",
+    "category": "Szimuláció: robotmozgás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "koordináták", "rövidítés"],
+    "note": "A ki1.txt és ki2.txt nem tartalmaz '#' sorokat, pedig a feladat mind a 6 részfeladat elé ír egyet; a program ezeket kiírja, ezért a validátor hibásnak jelzi. A '#' nélküli kimenet mindkét mintán (be1/be2) egyezik, ezt a program és a független Python ellenőrző (library/.work/KH-024/tests/robot_ref.py) igazolja. Az energia: 2 indulás, 1 lépés, 2 irányváltás (a mintából igazolva). A 3. részfeladatban euklideszi távolságot használunk, a Manhattan-távolság nem egyezik a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/14. Lift - 2009. május",
+    "method": "Az igények sorrendi szimulációja, szintkövetés és csapatonkénti előző célszint ellenőrzése.",
+    "category": "Szimuláció: lift",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "szint", "csapat"],
+    "note": "Az 1. részfeladatban a kezdőszintet (S) is beszámítjuk az érintett szintek közé; a minta ezt nem dönti el. A be2 mintában az első sor 5000, de a kérésekben 7522-es szint szerepel, ezért a program nem használja N-et tömbméretként. A 4. részfeladatban az L. csapat első szabálytalanságát írjuk ki: a PDF-példa két szabálytalansági sort mutat, a minta.zip csak az L. csapatét (6 5 13 21 4).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/15. Automata - 2009. május angol",
+    "method": "Mohó címletbontás a fizetéshez, és a vásárlások szimulálása a készlet csökkentésével.",
+    "category": "Mohó algoritmus: érmék",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "pénz", "szimuláció"],
+    "note": "A feladatszöveg az 5. részfeladatban „nem volt eleg penz” szöveget ír elő, a minta.zip (ki2) és a program „nem volt eleg a penz” szöveget ad; a validátor a mintát veszi alapul, ezért a minta szerinti szöveget írjuk ki. A „keves a csoki” szöveg a mintában nem szerepel, a feladatszöveg szerint írjuk ki. Ha a vásárlás több okból is meghiúsul, a programban a csokoládéhiány üzenete kerül kiírásra; erre a mintában nincs példa. A visszajáró kiadását korlátlannak tekintjük, a rekesz készlete a sikeres vásárlásokkal csökken.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/16. Útépítés - 2009. október",
+    "method": "Belépési sorrendben szimuláció: elhagyási idő a maximum az előző járműével, majd rendezés.",
+    "category": "Szimuláció: előzési tilalom",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "maximum", "rendezés"],
+    "note": "A ki1.txt és ki2.txt nem tartalmaz '#' sorokat, pedig a feladat 5 részfeladat elé ír egyet; a program ezeket kiírja, ezért a validátor hibásnak jelzi. A '#' nélküli kimenet mindkét mintán egyezik, ezt a független Python ellenőrző (library/.work/KH-024/tests/road_ref2.py) igazolja. Az előzési tilalom miatt az elhagyási idő az előtte haladó azonos irányú jármű elhagyási idejének és a sajátnak a maximuma; a 4. részfeladat a saját áthaladási idő (Ti) szerint rendez, ezt a minta igazolja. K=0 esetén az 1. részfeladatra -1-et írunk, ez a feladatszövegből nem következik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

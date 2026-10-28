@@ -1,11 +1,15 @@
 /*
-Feladat: N gyereket K szerepre kell kiosztani. Az i. szerepet legfeljebb Mi gyerek kaphatja, és minden szerepet legalább egy gyereknek játszania kell. Egy gyerek akkor sír Ti percet, ha nem a választott Si szerepet kapja. A cél az összsírás minimalizálása.
-Ötlet: A „boldog” gyerekek kiválasztása szerepenként független: egy szerepre érdemes annyi saját jelentkezőt bent hagyni, amennyit a kapacitás enged (top Mi darab Ti szerint), mert ez közvetlenül csökkenti a sírást. Azután a maradék gyerekeket (akik biztosan sírnak) a még szabad férőhelyekre osztjuk, előbb feltöltve az esetleg üres szerepeket (minden szerep legalább 1).
+Megoldás lényege:
+Minden szerepnél a legnagyobb sírású saját jelentkezők maradnak boldogok, legfeljebb a szerep kapacitásáig, mert így a megspórolt sírás a legnagyobb.
+Ha ezzel több hely foglalódna el, mint N, vagy egy szerep üresen maradna, a legkisebb sírású boldogok közül kell néhányat átengedni (egy szerep első boldogja mindig marad).
+Az így maradt sírók közül az üres szerepekre jut egy-egy gyerek, a többi a szabad helyekre kerül; a sírók sírásainak összege a kiosztástól függetlenül adott.
+Időigény: O(N log N).
+*/
+/*
 Hint 1: || Alapállapot: mindenki sír, ezt csökkented a „saját szerepen maradókkal”. ||
 Hint 2: || Egy szerepnél a legnagyobb Ti értékű saját jelentkezőket érdemes megtartani. ||
-Hint 3: || A maradék gyerekek kiosztása már csak kapacitás- és „minden szerep legyen nem üres” feltétel. ||
+Hint 3: || Ha ezért egy szerep üresen maradna, vagy túl sok hely foglalódna el, a legkisebb sírású boldogok közül kell valakit kiengedni. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -23,64 +27,67 @@ int main() {
     for (int i = 1; i <= N; ++i) cin >> pref[i];
     for (int i = 1; i <= N; ++i) cin >> cry[i];
 
-    vector<vector<pair<int,int>>> byRole(K + 1); // (cry, id)
-    long long baseline = 0;
-    for (int i = 1; i <= N; ++i) {
-        byRole[pref[i]].push_back({cry[i], i});
-        baseline += cry[i];
+    // szerepenként a rá jelentkezők, sírás szerint csökkenően
+    vector<vector<int>> byRole(K + 1);
+    for (int i = 1; i <= N; ++i) byRole[pref[i]].push_back(i);
+    for (int r = 1; r <= K; ++r) {
+        sort(byRole[r].begin(), byRole[r].end(), [&](int a, int b) {
+            if (cry[a] != cry[b]) return cry[a] > cry[b];
+            return a < b;
+        });
     }
 
-    vector<int> assigned(N + 1, -1);
-    vector<int> cntRole(K + 1, 0);
+    // 1. szerepenként legfeljebb cap[r] saját jelentkező marad boldog
     vector<char> happy(N + 1, 0);
-
-    long long saved = 0;
-
+    vector<int> hap(K + 1, 0);
+    int usage = 0; // a boldogok száma + az üres szerepek (ezeknek kell majd egy sírós)
     for (int r = 1; r <= K; ++r) {
-        auto& vec = byRole[r];
-        sort(vec.begin(), vec.end(), [](auto a, auto b) {
-            if (a.first != b.first) return a.first > b.first;
-            return a.second < b.second;
+        hap[r] = min((int)byRole[r].size(), cap[r]);
+        for (int j = 0; j < hap[r]; ++j) happy[byRole[r][j]] = 1;
+        usage += hap[r] + (byRole[r].empty() ? 1 : 0);
+    }
+
+    // 2. ha több hely foglalódna, mint N, a legkisebb sírású boldogokat átengedjük
+    //    (szerepenként az első boldog mindig marad, hogy a szerep ne legyen üres)
+    int excess = usage - N;
+    if (excess > 0) {
+        vector<int> pool;
+        for (int r = 1; r <= K; ++r)
+            for (int j = 1; j < hap[r]; ++j) pool.push_back(byRole[r][j]);
+        sort(pool.begin(), pool.end(), [&](int a, int b) {
+            if (cry[a] != cry[b]) return cry[a] < cry[b];
+            return a < b;
         });
-        int keep = min((int)vec.size(), cap[r]);
-        for (int i = 0; i < keep; ++i) {
-            int id = vec[i].second;
-            happy[id] = 1;
-            assigned[id] = r;
-            cntRole[r]++;
-            saved += vec[i].first;
+        for (int j = 0; j < excess; ++j) happy[pool[j]] = 0;
+    }
+
+    // 3. a nem boldogok kiosztása: előbb az üres szerepek kapnak egy-egy gyereket,
+    //    a maradékot a szabad helyekre tesszük
+    vector<int> assigned(N + 1, 0), load(K + 1, 0);
+    vector<int> unhappy;
+    for (int i = 1; i <= N; ++i) {
+        if (happy[i]) {
+            assigned[i] = pref[i];
+            load[pref[i]]++;
+        } else {
+            unhappy.push_back(i);
         }
     }
 
-    vector<int> unhappy;
-    unhappy.reserve(N);
-    for (int i = 1; i <= N; ++i) if (!happy[i]) unhappy.push_back(i);
-
-    int ptr = 0;
-    // Először minden szerep kapjon legalább 1 gyereket.
+    size_t ptr = 0;
     for (int r = 1; r <= K; ++r) {
-        if (cntRole[r] == 0) {
-            if (ptr >= (int)unhappy.size()) {
-                cout << -1 << '\n';
-                return 0;
-            }
+        if (load[r] == 0) {
             int id = unhappy[ptr++];
             assigned[id] = r;
-            cntRole[r]++;
+            load[r]++;
         }
     }
-
-    // A maradék gyerekeket tetszőlegesen a szabad kapacitásokra osztjuk.
     int role = 1;
-    while (ptr < (int)unhappy.size()) {
-        while (role <= K && cntRole[role] >= cap[role]) ++role;
-        if (role > K) {
-            cout << -1 << '\n';
-            return 0;
-        }
+    while (ptr < unhappy.size()) {
+        while (load[role] >= cap[role]) ++role;
         int id = unhappy[ptr++];
         assigned[id] = role;
-        cntRole[role]++;
+        load[role]++;
     }
 
     long long totalCry = 0;

@@ -1,16 +1,18 @@
 /*
 Megoldás lényege:
-Most az utolsó lap lehet 1, 2 vagy 3 hosszú, ezért a Fibonacci helyett egy
-háromtagú rekurziót kapunk. Az üres járda továbbra is egyetlen megoldás.
-
+Az utolsó lap hossza 1, 2 vagy 3 lehet, ezért a lefedések száma háromtagú rekurzióval adódik:
+dp[n] = dp[n-1] + dp[n-2] + dp[n-3], ahol dp[0] = 1 az üres járda egyetlen lefedése.
+Ez azért helyes, mert minden lefedés egyértelműen egy utolsó lapból és a maradék rövidebb
+járda egy lefedéséből áll, így minden lehetőséget pontosan egyszer számolunk.
+N ≤ 70 esetén az eredmény kisebb 2^63-nál, ezért 64 bites egész elegendő, nagy egészre nincs szükség.
+Az időigény O(N), a memóriaigény O(N).
+*/
+/*
+Hint 1: || Nézd meg, milyen hosszúságú lap állhat legutoljára a lefedésben. ||
+Hint 2: || A rekurzió alapjai: hossz 0-ra 1, majd onnan építkezünk tovább. ||
 */
 
-// Hint 1: || Nézd meg, milyen hosszúságú lap állhat legutoljára a lefedésben. ||
-// Hint 2: || A rekurzió alapjai: hossz 0-ra 1, majd onnan építkezünk tovább. ||
-// Hint 3: || A kis N miatt akár sima dinamikus programozás is tökéletes. ||
-
 #include <bits/stdc++.h>
-#include "../bigint.hpp"
 using namespace std;
 
 int main() {
@@ -20,7 +22,7 @@ int main() {
     int N;
     if (!(cin >> N)) return 0;
 
-    vector<BigInt> dp(max(3, N + 1));
+    vector<long long> dp(max(3, N + 1));
     dp[0] = 1;
     if (N >= 1) dp[1] = 1;
     if (N >= 2) dp[2] = 2;

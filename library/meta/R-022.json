@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/15. Róka **",
+    "method": "Korosztályonkénti darabszámok évenkénti léptetése, újszülöttek = szaporodó korúak összege, MOD szerint.",
+    "category": "Szimuláció: korosztályok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "szimuláció",
+      "tömb",
+      "modulo"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/16. Sorrend **",
+    "method": "Inklúzió-exklúzió: j tiltott pár összevonása, (N-j)! sorrend, binomiálisok Pascal-háromszöggel.",
+    "category": "Inklúzió-exklúzió",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "inklúzió-exklúzió",
+      "binomiális"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/17. Sorrend-változás ***",
+    "method": "Szomszédos cserék rekurzív generálása, a darabszám Fibonacci-szám.",
+    "category": "Permutáció, generálás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "permutáció",
+      "rekurzió",
+      "fibonacci"
+    ],
+    "note": "A kiírás pufferelt: a korábbi cout-os változat N=25 esetén kb. 0,1 mp volt, ami az időlimit széle; az algoritmus nem változott.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/18. Számzár *",
+    "method": "Szorzat, a legkisebb tárcsa elhagyása, és bitmaszkos DP a különböző számjegyű kódokra.",
+    "category": "Bitmaszkos DP",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "bitmaszk",
+      "dp",
+      "kombinatorika"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/19. Színezés ***",
+    "method": "Folytatások száma DP-vel, a K-adik sorozat elemenkénti kiválasztása (unrank).",
+    "category": "Rangsorolás, DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dp",
+      "rangsorolás",
+      "bitsorozat"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/2. Befektetés ***",
+    "method": "Mohó Zeckendorf-felbontás: a legnagyobb Fibonacci-számtól, nincs két egymást követő év.",
+    "category": "Zeckendorf-felbontás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fibonacci",
+      "mohó",
+      "számrendszer"
+    ],
+    "note": "A feladat több felbontást is megenged (pl. A=3: év 4, vagy év 1 és 3); a minta és a megoldás a mohó (Zeckendorf) felbontást adja, ezt a mintákkal egyezve.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

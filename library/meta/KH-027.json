@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/24. Tortek- 2012. majus angol",
+    "method": "Egyszerűsítés legnagyobb közös osztóval, összeadás és szorzás egyszerűsített alakban.",
+    "category": "Számelmélet: törtek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "törtek",
+      "egyszerűsítés",
+      "számelmélet"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/25. Szín-kép 2012. október",
+    "method": "Teljes bejárás, sor- és oszlopbeli számlálás, színek gyakorisága, sárga téglalap szélső indexei.",
+    "category": "Kétdimenziós tömb: bejárás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "tömb",
+      "bejárás",
+      "számlálás"
+    ],
+    "note": "Minta-eltérés: a minta.zip ki1.txt és ki2.txt nem tartalmazza a részfeladatok előtti # sorokat, pedig a feladatszöveg (Kimenet) és a PDF példa előírja őket. A megoldás a feladat szerint ír # sorokat; a minta többi értéke (1/0, sor- és oszlopszámlálók, p/k/z/0, téglalap-koordináták) egyezik. Két szövegbeli bizonytalanság: (1) a harmadik sor „szélesség és magasság” (SZ, M) megnevezése ellentmond az (1≤s≤SZ, 1≤o≤M) korlátnak; a megoldás a korlátot követi, SZ a sorok, M az oszlopok száma; a minták négyzetes képet tartalmaznak, ezért a mintából ez nem dönthető el. (2) Döntetlennél a feladat szerint az a szín nyer, amelyik a bejárás során hamarabb éri el a maximumot; ezt úgy értelmezem, hogy a szín utolsó előfordulása a legkorábbi; a mintában nincs döntetlen. Független ellenőrzés: library/.work/KH-027/25/ellenor.py (brute-force, 800 véletlen esetben egyezik a megoldással).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/26. kidolgozás alatt",
+    "method": "",
+    "category": "Nincs feladatszöveg",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": [
+      "hiányzó feladat",
+      "kidolgozás alatt"
+    ],
+    "note": "A feladat.pdf csak a „Kidolgozás alatt” címet tartalmazza, a feladatszöveg hiányzik; minta.zip sincs. Ezért nincs megoldás (nincs task.cpp), és nincs mit ellenőrizni. A nehézség (3) és a cél (Bevezetés) helyőrző, nem becslés.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/27. Választások - 2013 május",
+    "method": "Rekordok tárolása, pártonkénti összegzés, kerületenkénti maximumkeresés, egész százalékok.",
+    "category": "Összegzés és maximumkeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "összegzés",
+      "maximumkeresés",
+      "százalék"
+    ],
+    "note": "Minta-eltérés két pontban: (1) a ki1.txt és ki2.txt nem tartalmaz # sorokat, és kiírja a P és a VK darabszám-sorokat (be1: 3 és 3; be2: 5 és 70), amelyek a feladatszövegben és a PDF példában nincsenek. (2) A be2 minta 5. részfeladatában a 25 jelölt nélküli kerületre (1, 3, 7, 9, 11, 12, 13, 22–25, 29, 32, 34, 39, 40, 47, 48, 50, 51, 54, 60, 61, 64, 67) a minta a 31. kerületi jelöltet (eros bibendum GYEP) írja, a feladat szerint „nincs nyertes” a helyes. A saját kimenet a feladat szerint készült: a be1 minta a darabszám-sorok és a # nélkül egyezik, a be2 többi sora is egyezik, az eltérés pontosan a jelölt nélküli kerületekre esik. A százalékok félre felfelé kerekítve (a PDF példa 77, 68, 17, 15 értékei egyeznek). Független ellenőrzés: library/.work/KH-027/27/ellenor.py (brute-force, 400 véletlen esetben egyezik).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

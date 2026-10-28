@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/35. Legmagasabb vízállású árvíz ***",
+    "method": "Szintekre bontás, futamok bejárása, maximum első előfordulásának szakasza.",
+    "category": "Futamok: maximum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["futamok", "maximum", "tömb"],
+    "note": "Időlimit 0,1 mp; N=10 000 bemeneten mért futásidő kb. 3 ms. A harmadfokú határ a szövegben „10 méter”, azaz 1000 cm.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/36. Legrövidebb árvízmentes folyószakasz ***",
+    "method": "Szintekre bontás, az árvízmentes futamok gyűjtése és a legrövidebb kiválasztása.",
+    "category": "Futamok: minimum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["futamok", "minimum", "tömb"],
+    "note": "Időlimit 0,1 mp; N=10 000 bemeneten mért futásidő kb. 4 ms. A harmadfokú határ a szövegben „10 méter”, azaz 1000 cm.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/37. Legrövidebb harmadfokú folyószakasz ***",
+    "method": "Szintekre bontás, a harmadfokú futamok gyűjtése és a legrövidebb kiválasztása.",
+    "category": "Futamok: minimum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["futamok", "minimum", "tömb"],
+    "note": "Időlimit 0,1 mp; N=10 000 bemeneten mért futásidő kb. 4 ms. A harmadfokú határ a szövegben „10 méter”, azaz 1000 cm.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/38. Legrövidebb harmadfokú folyószakaszt tartalmazó árvíz ***",
+    "method": "Szintekre bontás, a legrövidebb harmadfokú futam körüli árvíz határainak megkeresése.",
+    "category": "Futamok: minimum",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["futamok", "minimum", "keresés"],
+    "note": "Időlimit 0,1 mp; N=10 000 bemeneten mért futásidő kb. 4 ms. A harmadfokú határ a szövegben „10 méter”, azaz 1000 cm.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

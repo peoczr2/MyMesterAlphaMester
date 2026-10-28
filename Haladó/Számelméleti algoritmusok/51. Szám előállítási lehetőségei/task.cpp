@@ -1,9 +1,11 @@
 /*
- * Különböző hármasok számolása kétpontos módszerrel.
- 
-Hint 1: || Ugyanaz a minta, mint az előző feladatban, csak most nem egyetlen hármast, hanem az összes lehetségeset kell megszámolni. ||
-Hint 2: || Rögzítsd az első elemet, és két mutatóval keresd a megfelelő másik kettőt; minden pontos találat egy új előállítás. ||
-Hint 3: || A keresés itt is rendezett tömbön a leghatékonyabb, mert a két mutató mozgatása egyszerre kezeli a túl kicsi és a túl nagy összeget. ||
+Megoldás lényege:
+Mivel a sorozat szigorúan növekvő, minden előállítás egyértelműen megadható három különböző indexszel (i < l < r). Rögzítjük az i-edik elemet, és a tőle jobbra eső részen két mutatóval (l és r) keressük azt a párt, amelyre a[i] + a[l] + a[r] = X. Ha az összeg kisebb X-nél, az l mutatót, ha nagyobb, az r mutatót léptetjük; pontos találatkor mindkettőt, és eggyel növeljük a számlálót. Így minden i-re O(N) munka van, összesen O(N^2), ami N <= 1000 mellett bőven belefér az időkorlátba.
+*/
+/*
+Hint 1: || Rögzíts egy elemet, és a tőle jobbra eső részen keress két másik elemet, amelyek összege a maradék érték. ||
+Hint 2: || A sorozat rendezettsége miatt két mutatóval (az elejéről és a végéről) végigmehetsz a tartományon: kis összegnél a bal, nagy összegnél a jobb mutatót léptesd. ||
+Hint 3: || Minden pontos találat egy új előállítást jelent; mivel a számok szigorúan nőnek, egy előállítást sem számolunk kétszer. ||
 */
 
 #include "../common.hpp"

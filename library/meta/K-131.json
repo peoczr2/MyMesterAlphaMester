@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/52. Legtöbb rendszeridőt használó felhasználó ***",
+    "method": "Bejelentkezési állapot követése felhasználónként, sikeres be/ki párok időtartamainak összegzése",
+    "category": "Állapotkövetés, összegzés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["állapot", "összegzés", "szimuláció"],
+    "note": "A nap végén még bent lévő bejelentkezés a 24:00 pillanatáig számít; a feladat ezt nem mondja ki egyértelműen, a minta nem tartalmaz ilyet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/53. Legtöbb tanár által tanított tantárgy **",
+    "method": "Tantárgyanként a különböző tanárok megszámlálása egy táblázatban",
+    "category": "Mátrix, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "számlálás", "halmaz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/54. Legtöbb tipp **",
+    "method": "Tippenként darabszám és első tippelő, majd a maximális darabszámú tippek kiírása",
+    "category": "Gyakoriság, rendezett map",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gyakoriság", "map", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/55. Legtöbb ügyfél a bankban egyszerre *",
+    "method": "Időszakok szakaszokra bontása, bentlévők halmazával; első maximális szakasz kiírása",
+    "category": "Szakaszos összegzés, halmaz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "időszak", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

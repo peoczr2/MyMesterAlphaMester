@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/11. Fagyos időszakok száma *",
+    "method": "Lineáris bejárás, átmenetek számolása negatív szakaszok kezdetére.",
+    "category": "Összefüggő szakaszok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "szakasz", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/110. Földrengések *",
+    "method": "Jelölt kezdőnapok, intervallumba eső események számlálása bináris kereséssel.",
+    "category": "Intervallumszámlálás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["bináris keresés", "intervallum", "rendezett tömb"],
+    "note": "A K napos időszak az N. napon belül marad (s+K-1 ≤ N); ez illeszkedik a szöveg garanciájához, a minta ezt nem dönti el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/111. Hegycsúcsok **",
+    "method": "Csúcsjelölés belső cellákra, kétdimenziós prefix-összeg, legjobb négyzet keresése.",
+    "category": "Kétdimenziós prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "mátrix", "szomszédság"],
+    "note": "A szélső cellák nem lehetnek csúcsok; a minta.zip be2/ki2 párja ezt igazolja, a szélső cellákat is figyelembe vevő változat más eredményt adna.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/112. Hírterjedés **",
+    "method": "Kezdő megkeresése bejövő él nélkül, majd szélességi bejárás a fán.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bejárás", "fa"],
+    "note": "A közvetítőszám a kezdőtől mért élszám: ez a minta.zip be1/ki1 és be2/ki2 párjait is pontosan adja. A feladat PDF-példájának kimenete (0 1 1 1 2 2 2 2) viszont nem ezt a szabályt követi (ugyanarra a fára 0 1 1 2 2 3 3 3 jönne ki), ezért a példát valószínűleg elírásnak tekintjük.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

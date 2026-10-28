@@ -1,6 +1,10 @@
 /*
 Megoldás lényege:
-Alap síkgeometriai számításokat végzünk: távolságot, területet és egyszerű relációkat kezelünk. A feladat közvetlen geometriai képletekkel megoldható.
+Minden háromszögbe pontosan egy facsemete kerülhet, és a háromszögek nem fedhetik egymást, ezért a maximum egy teljes háromszögelés háromszögeinek száma. Ha a fák száma N, a konvex burok éleinek (a közbeeső, egy egyenesre eső pontokat is beleértve) pontszámát b jelöli, akkor minden háromszögelés 2N - b - 2 háromszögből áll. A burkot egy csúcsából húzott átlókkal háromszögekre bontjuk, majd a belső pontokat véletlen sorrendben egyenként beszúrjuk: a pontot tartalmazó háromszöget három részre osztjuk, ha a pont egy élen van, akkor a két szomszédos háromszöget is. A pont helyét egy háromszögekből álló keresőfa adja.
+*/
+/*
+Hint 1: || Minden háromszögbe pontosan egy facsemete kerül, és a háromszögek nem fedhetik egymást, így a kérdés a fák teljes háromszögelésének háromszögszáma. Gondold át, hogyan függ ez a fák számától és a burkon lévő pontok számától (Euler-formula). ||
+Hint 2: || Építs háromszögelést fokozatosan: a burkot egy csúcsából húzott átlókkal bontsd háromszögekre, majd a belső pontokat egyenként szúrd be. Egy pont beszúrása azt a háromszöget osztja fel, amelyben (vagy amelyen) van; a keresést érdemes egy fában tárolni. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -121,21 +125,20 @@ static int locateLeaf(int rootId, const Pt& p) {
 }
 
 static void splitInteriorLeaf(int nodeId, int pIdx) {
-    Node& node = nodes[nodeId];
-    int a = node.a, b = node.b, c = node.c;
+    int a = nodes[nodeId].a, b = nodes[nodeId].b, c = nodes[nodeId].c;
     removeLeafEdges(nodeId);
-    node.child[0] = makeCCW(a, b, pIdx);
-    node.child[1] = makeCCW(b, c, pIdx);
-    node.child[2] = makeCCW(c, a, pIdx);
-    node.childCount = 3;
-    addLeafEdges(node.child[0]);
-    addLeafEdges(node.child[1]);
-    addLeafEdges(node.child[2]);
+    int c0 = makeCCW(a, b, pIdx);
+    int c1 = makeCCW(b, c, pIdx);
+    int c2 = makeCCW(c, a, pIdx);
+    nodes[nodeId].child = {c0, c1, c2};
+    nodes[nodeId].childCount = 3;
+    addLeafEdges(c0);
+    addLeafEdges(c1);
+    addLeafEdges(c2);
 }
 
 static int splitEdgeLeaf(int nodeId, int leftIdx, int rightIdx, int pIdx) {
-    Node& node = nodes[nodeId];
-    int a = node.a, b = node.b, c = node.c;
+    int a = nodes[nodeId].a, b = nodes[nodeId].b, c = nodes[nodeId].c;
     int third = -1;
     if (a != leftIdx && a != rightIdx) third = a;
     if (b != leftIdx && b != rightIdx) third = b;
@@ -144,9 +147,8 @@ static int splitEdgeLeaf(int nodeId, int leftIdx, int rightIdx, int pIdx) {
     removeLeafEdges(nodeId);
     int leftTri = makeCCW(leftIdx, pIdx, third);
     int rightTri = makeCCW(pIdx, rightIdx, third);
-    node.child[0] = leftTri;
-    node.child[1] = rightTri;
-    node.childCount = 2;
+    nodes[nodeId].child = {leftTri, rightTri, -1};
+    nodes[nodeId].childCount = 2;
     addLeafEdges(leftTri);
     addLeafEdges(rightTri);
     return rightTri;

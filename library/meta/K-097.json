@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/1. Első teaforgalmazó összes eladott mennyisége *",
+    "method": "Lineáris bejárás, az első elem neve alapján feltételes összegzés.",
+    "category": "Feltételes összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozat", "összegzés", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/10. Összterület *",
+    "method": "Lineáris bejárás, a szélességek négyzetének összegzése.",
+    "category": "Összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "négyzet", "terület"],
+    "note": "A minta.zip csak bemeneti fájlokat tartalmaz (be1, be2), kimeneti fájl nincs; kézzel ellenőrizve: be1 → 29, be2 → 25, a feladat példája (2, 3, 4) is 29.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/11. Összterület négyzetekkel *",
+    "method": "Lineáris bejárás, a szélességek négyzetének összegzése.",
+    "category": "Összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "négyzet", "terület"],
+    "note": "A minta.zip csak bemeneti fájlokat tartalmaz (be1, be2), kimeneti fájl nincs; kézzel ellenőrizve: be1 → 29, be2 → 25, a feladat példája (2, 3, 4) is 29.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/12. Összterület téglalapokkal *",
+    "method": "Lineáris bejárás, téglalapok területének (szélesség·hosszúság) összegzése.",
+    "category": "Összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "téglalap", "terület"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

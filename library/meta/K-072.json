@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/42. Legnagyobb haszon *",
+    "method": "Feltételes maximumkiválasztás egy menetben: csak a 2. héten többet fogyó termékek hasznát vizsgáljuk.",
+    "category": "Maximumkiválasztás, feltétel",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "feltétel", "szűrés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/43. Távoli bolygó",
+    "method": "Különbségtömb (+1 születéskor, −1 halálozás után), prefix összeggel az élők maximuma.",
+    "category": "Különbségtömb, prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["különbségtömb", "prefixösszeg", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/44. Szobafoglalások",
+    "method": "Félnyílt [K, V) intervallumok különbségtömbje, prefix összeggel az éjszakánkénti foglaltság maximuma.",
+    "category": "Különbségtömb, intervallumok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["különbségtömb", "intervallum", "prefixösszeg"],
+    "note": "Időlimit: a legnagyobb mintán (be2, 8,9 MB) cin/cout mellett 0,088–0,099 s mértem, az időlimit (0,1 mp) szűk; éles tesztnél ellenőrizendő.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/45. Autópálya",
+    "method": "Autónként első–utolsó észlelés időkülönbsége, szomszédos irányított párok számlálása, maximum kiválasztása.",
+    "category": "Szomszédos párok, irányított számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szomszédos", "irányított", "időkülönbség"],
+    "note": "Éjfélen átnyúló út: a feladat nem mondja ki, hogy előfordulhat; a napváltást az időrend alapján kezeljük (óra-perc csökkenésekor +1440 perc). A mintában ilyen eset nincs.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

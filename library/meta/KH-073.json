@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/1. Adott századi háborúk",
+    "method": "Intervallum-átfedés szűrése, majd a háborúk teljes hosszának összegzése.",
+    "category": "Intervallumok: összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "intervallum",
+      "átfedés",
+      "összegzés"
+    ],
+    "note": "Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 2 ms, időlimit 0,3 mp. A szöveg „N sorban” része K sort jelent (a minta be2 szerint K=623 sor).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/10. Egy törzs adott századi háborúi *",
+    "method": "Lineáris bejárás: a törzs részvételének és az évszázadbeli átfedésnek egyidejű ellenőrzése.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "számlálás",
+      "intervallum",
+      "feltétel"
+    ],
+    "note": "Feltevés: a háború a századba esik, ha legalább részben beleesik (mint az 1. feladatban); a minta ezt nem dönti el. Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/11. Egy törzs háborúi *",
+    "method": "Lineáris bejárás, feltétel szerinti számlálás.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "számlálás",
+      "tömb",
+      "feltétel"
+    ],
+    "note": "Mért futásidő legnagyobb bemeneten: kb. 2 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/12. Egy törzs háborús évei egy évszázadban *",
+    "method": "Jelölőtömb a századi évekre, a közös évek egyszeri számlálása.",
+    "category": "Intervallumok: évek egyesítése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "jelölőtömb",
+      "egyesítés"
+    ],
+    "note": "Kérdés: a minta.zip be1.txt ugyanazt a bemenetet kapja, mint a feladat.pdf példája, de a ki1.txt 30-at ír, a példa 5-öt. A megoldás az 5-öt adja (a törzs háborúinak Sz századbeli évei, az átfedő évek egyszer számítva: 1801–1805). A 30 a Sz századba eső háborúk teljes időtartama (1776–1805). Melyik a helyes értelmezés? Mért futásidő legnagyobb bemeneten: kb. 2 ms, időlimit 0,3 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/27. Mekk Elek **",
+    "method": "Határidő szerinti rendezés, legkésőbbi szabad napra helyezés DSU-val.",
+    "category": "Mohó: határidős ütemezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "ütemezés", "dsu"],
+    "note": "Minta-eltérés: a feladat szerint több helyes kiosztás van; a darabszám egyezik a mintával (5, 100), az érvényesség ellenőrizve (library/.work/R-035/test/check_sample.py, harness.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/28. Mekk Elek munkái **",
+    "method": "Befejezési idő szerinti rendezés, mohó kiválasztás zárt intervallumokkal.",
+    "category": "Intervallum-ütemezés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "mohó", "rendezés"],
+    "note": "Minta-eltérés: a feladat szerint több helyes részhalmaz és sorrend is megfelel; a darabszám egyezik a mintával (3, 17), az érvényesség ellenőrizve (library/.work/R-035/test/check_sample.py, harness.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/29. Minél több fénykép ***",
+    "method": "Időben haladó szimuláció, minimum-kupac a távozási idők szerint.",
+    "category": "Kupac, szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["kupac", "szimuláció", "mohó"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/3. Alkatrészt gyűjtő robot **",
+    "method": "Mohó láncfedés nemcsökkenő oszlopsorozatokkal, multiset-tel.",
+    "category": "Dilworth, láncfedés",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["láncfedés", "rács", "multiset"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/30. Minibusz ***",
+    "method": "Utasok szerinti rendezés, aktív halmaz, a legkésőbb célba érő utas elengedése.",
+    "category": "Intervallum-kiválasztás kapacitással",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["intervallum", "kapacitás", "multiset"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/31. Mozi ***",
+    "method": "Felső határ szerinti rendezés, legkisebb szabad pont DSU-val.",
+    "category": "Intervallum-párosítás, DSU",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["hozzárendelés", "dsu", "intervallum"],
+    "note": "Minta-eltérés (be2): a feladat szerint több helyes jegykiosztás is megengedett; a darabszám egyezik a mintával (5, 50), az érvényesség ellenőrizve (library/.work/R-035/test/check_sample.py, harness.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

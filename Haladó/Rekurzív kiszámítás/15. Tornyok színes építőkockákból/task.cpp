@@ -1,15 +1,11 @@
 /*
 Megoldás lényege:
-Ha a torony magassága 1-gyel nő, kétféle egységkockát tehetünk rá. Ha 2-vel nő,
-akkor egy fehér téglát választunk. Ez a fenti két lehetőség miatt a T(n)=2T(n-1)+T(n-2)
-rekurzíót adja.
-
+Ha a torony magassága 1-gyel nő, kétféle egységkockát tehetünk rá. Ha 2-vel nő, akkor egy fehér téglát választunk. Ez a fenti két lehetőség miatt a T(n)=2T(n-1)+T(n-2) rekurziót adja, ahol T(k) a k magasságú tornyok száma. A T(0)=1 és T(1)=2 kezdőértékekből a sorozatot egy tömbben, 20 201 114-gyel vett maradékkal számoljuk. Az időigény O(M), a memóriaigény szintén O(M).
 */
-
-// Hint 1: || Az utolsó elem vagy 1 magas színes kocka, vagy 2 magas fehér tégla. ||
-// Hint 2: || A két színes kocka csak a darabszámot szorozza meg kettővel. ||
-// Hint 3: || A feladatban a válasz modult kell venni, ezért a számolás végig maradhat egész. ||
-
+/*
+Hint 1: || Az utolsó elem vagy 1 magas színes kocka, vagy 2 magas fehér tégla. ||
+Hint 2: || A két színes kocka csak a darabszámot szorozza meg kettővel. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/20. Tornádók",
+    "method": "Napok szerinti gyakorisági tömb, egy bejárás a leghosszabb egymást követő szakaszokra.",
+    "category": "Összefüggő szakaszok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "gyakoriság", "szakasz"],
+    "note": "A 2. részfeladatban az „egy tornádó” legalább egy tornádót jelent; a minta mindkét olvasattal ugyanazt adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/21. Földrengések",
+    "method": "Évenkénti tömb, prefixösszeg, a szomszédos időközök összehasonlítása és csúszó ablak.",
+    "category": "Prefixösszeg, csúszó ablak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "prefixösszeg", "ablak"],
+    "note": "Az 5. részfeladatban az időszak kezdete mindig földrengés-év, döntetlennél a régebbi; a 2. minta (269) ezt igazolja: a 270 nem földrengés-év, a 267 pedig fiatalabb. A 4. részfeladatban minden földrengés külön számít, ezt a minta igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/22. Kikötők",
+    "method": "Szomszédos távolságok és három szomszédos kikötő szélső távolsága; két mutató az L hosszú ablakhoz.",
+    "category": "Szomszédos elemek, ablak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "kétmutatós", "ablak"],
+    "note": "Az 1. részfeladatban a forrástól az első kikötőig és az utolsótól a Duna végéig tartó szakaszokat is számítjuk; a 4. részfeladatban a hosszt km-ben mérjük. A minta mindkét választásnál ugyanazt adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/23. Zászlók",
+    "method": "Színazonosítás hash-táblával, országonként rendezett egyedi listák, a különböző listák számolása.",
+    "category": "Halmazok, hash-tábla",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["hash-tábla", "halmaz", "gyakoriság"],
+    "note": "A 2. részfeladatban az első előfordulású egyedi színt írjuk, ezt a minta várja. A csoportszámnál csak a legalább egy színnel rendelkező országokat számoljuk (a minta 92-t ad). A legnagyobb bemeneten (100 000 ország, 200 000 megadás) a futásidő kb. 0,04 mp, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

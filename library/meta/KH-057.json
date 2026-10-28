@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/20. Snowboard verseny - 2009. október",
+    "method": "Különbségek egyszerű ellenőrzése egy menetben, tízszeres egész számokkal",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["feltétel", "tizedes", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/21. Euklideszi algoritmus - 2010. május",
+    "method": "Euklideszi algoritmus: maradékos osztással ismételt csere",
+    "category": "Számelmélet: euklideszi algoritmus",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számelmélet", "euklidesz", "maradék"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/22. Teljesítőképesség vizsgálat - 2010. május",
+    "method": "Kerekítés egy tizedesjegyre, egész számokkal, különbség és maximumkeresés",
+    "category": "Kerekítés, szélsőérték-keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["kerekítés", "tizedes", "maximum"],
+    "note": "Két részfeladat, a kimenetben # sorok tagolják; a kerekítés félértéknél felfelé történik, a minta ezzel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/23. Barkochba - 2010. október",
+    "method": "Intervallumfelezés: középső szám kérdezése, határok szűkítése",
+    "category": "Bináris keresés, intervallumfelezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "keresés", "felezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

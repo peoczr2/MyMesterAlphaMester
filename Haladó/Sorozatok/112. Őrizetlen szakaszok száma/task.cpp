@@ -7,9 +7,11 @@ száma csak lokálisan változhat.
 A komponenseket rendezett map-ben tároljuk, és mindig csak az előző/ következő intervallumot kell
 megnézni.
 */
-// Hint 1: || Most a lefedetlen részek számát kell követni. ||
-// Hint 2: || Egy új szakasz belső üres részt kettévág, vagy két üres részt összefűz. ||
-// Hint 3: || Elég az előző és a következő lefedett intervallumot megvizsgálni. ||
+/*
+Hint 1: || Most a lefedetlen részek számát kell követni. ||
+Hint 2: || Egy új szakasz belső üres részt kettévág, vagy két üres részt összefűz. ||
+Hint 3: || Elég az előző és a következő lefedett intervallumot megvizsgálni. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

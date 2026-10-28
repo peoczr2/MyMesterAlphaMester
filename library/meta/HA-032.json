@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/6. Folyón átkelés *",
+    "method": "Topologikus sorrendű DP: szigetenként a legnagyobb elérhető pénz, visszakövetéssel az útvonal",
+    "category": "Gráf: DP körmentes gráfon",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "körmentes", "dinamikus programozás"],
+    "note": "Minta-eltérés: a minta.zip in0 párjának out0.txt 3. sora (101 114 124 144 54 260 254 244 265 261) nem szerepel a feladatban; az első két sor (265 és az útvonal) egyezik, a harmadik sor pedig pontosan a megoldás szigetenkénti pénzértékei. Független teljes útkeresés (library/.work/HA-032/f6/brute.py) az in0-n ugyanezt adja. A validátor emiatt hibásnak jelzi, a többi minta (in1, in2) egyezik. A belépési díjat a belépés előtt kell kifizetni (a minták ezt nem döntik el). Mért idő a legnagyobb mintán (in2, 832 KB): 0,013 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/7. Kredit *",
+    "method": "Legkorábbi és legkésőbbi félév topologikus sorrendben; egyenlőségnél a tárgy kötött",
+    "category": "Gráf: kritikus út",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "körmentes", "topologikus rendezés"],
+    "note": "Mért idő a legnagyobb mintán (be2, 31 KB): 0,002 s. Mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/8. Mingrel *",
+    "method": "Szomszédos szavak első eltérő betűpárjából gráf, arra topologikus rendezés (Kahn)",
+    "category": "Gráf: topologikus sorrend",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "topologikus rendezés", "ábécé"],
+    "note": "Minta-eltérés: több helyes ábécé-sorrend van, a feladat szerint bármelyik megadható, ezért a validátor (a minta sorrendjét várja) hibásnak jelzi. Ellenőrző program (library/.work/HA-032/chk/mingrel_check.py) mindkét minta kimenetét érvényesnek találja, és a fordított ábécére elbukik. Mért idő a legnagyobb mintán (be2, 1,2 MB): 0,006 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/9. Minimális házépítési idő **",
+    "method": "Leghosszabb út irányított körmentes gráfon, élsúly k+1; kör esetén -1",
+    "category": "Gráf: leghosszabb út",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "körmentes", "leghosszabb út"],
+    "note": "Mért idő a legnagyobb mintán (be2, 932 KB): 0,013 s. Mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

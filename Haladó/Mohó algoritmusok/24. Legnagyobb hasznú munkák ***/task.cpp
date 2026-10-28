@@ -1,6 +1,7 @@
 /*
-Feladat: 1 napos munkákból kell olyan részhalmazt és sorrendet választani, hogy minden munka a határidőig elkészüljön, az összhaszon pedig maximális legyen.
-Ötlet: Határidő szerint haladva minimum-kupacban tartjuk a beválasztott munkákat (profit, id, deadline). Ha túl sok munka lenne az adott határidőig, a legkisebb profitút eldobjuk. A kiválasztott halmazból DSU-val napokra ültetünk: minden munkát a lehető legkésőbbi szabad napra teszünk.
+Megoldás lényege: határidő szerint haladva minimum-kupacban tartjuk a beválasztott munkákat (haszon, sorszám, határidő); ha egy határidőig több munka férne be, mint ahány nap van, a legkisebb hasznút eldobjuk. A kupacban maradt halmaz pontosan akkor elvégezhető, ha minden d-re legfeljebb d olyan munka van, amelynek határideje legfeljebb d, és ezt a kupac fenntartja. A kiválasztott munkákat haszon szerint csökkenően, DSU-val a legkésőbbi még szabad, határidőnél nem későbbi napra ültetjük, így a sorrend is megadható; az időigény O(N log N).
+*/
+/*
 Hint 1: || A „deadline-ig max ennyi munka fér be” feltétel miatt deadline szerinti sorrend természetes. ||
 Hint 2: || Ha telítettél egy prefixet, mindig a legkisebb hasznú munkát érdemes kivenni. ||
 Hint 3: || Kimeneti sorrendhez készíts konkrét nap-beosztást: legkésőbbi szabad nap <= határidő. ||

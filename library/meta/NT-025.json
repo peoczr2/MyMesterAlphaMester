@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2019 ∕ 20 3. forduló/1. Hanoi tornyai variáns (45)",
+    "method": "Rekurzív gyűjtés a harmadik toronyra, a legnagyobb korong egy vagy két átvitele, a lépések megfordítása",
+    "category": "Rekurzió: Hanoi-torony",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["rekurzió", "hanoi", "minimális lépésszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2019 ∕ 20 3. forduló/2. Hírvivők csoportosítása (40)",
+    "method": "Manhattan-távolságok rendezése, Kruskal-féle összekötés unió-kereséssel, a (H−K)-adik él súlya",
+    "category": "Gráf: minimális feszítőfa",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "unió-keresés", "manhattan-távolság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2019 ∕ 20 3. forduló/3. Részekre (40)",
+    "method": "Dilworth-tétel: leghosszabb nem növekvő részsorozat, bináris keresésű LIS-típusú számolás",
+    "category": "Dilworth-tétel: láncfedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dilworth", "leghosszabb részsorozat", "bináris keresés"],
+    "note": "A feladat a „növekvő” szót szigorúan értelmezi: egyenlő elemek nem kerülhetnek ugyanabba a részsorozatba. A minta mindkét értelmezéssel egyezik (3, 620), így nem dönti el a kérdést.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2019 ∕ 20 3. forduló/4. Szurikáta (45)",
+    "method": "Meredekség-rekordok (prefixmaximumok) számolása szegmensfával, pontmódosítással",
+    "category": "Szegmensfa: prefixmaximum",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": ["szegmensfa", "meredekség", "prefixmaximum"],
+    "note": "A szöveg nem dönti el, hogy a szakasz érintése (a fej pontosan a madár–szurikáta szakaszon van) takarja-e a szurikátát; a megoldás az érintést is takarásnak tekinti. A minta mindkét értelmezéssel egyezik, így a minta nem dönt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

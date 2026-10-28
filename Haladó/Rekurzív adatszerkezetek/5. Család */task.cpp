@@ -10,12 +10,13 @@ féltestvéreit, apai ágon a férfiági felmenőit, valamint az első unokatest
 Testvérek: ugyanaz az apa és ugyanaz az anya, a keresett személy nélkül.
 Féltestvérek: pontosan az egyik szülő közös, de nem testvérek.
 Férfiági felmenők: ismételten az apa mezőt követjük.
-Első unokatestvérek: akiknek a szülői között van olyan, akinek a szülői
-megegyeznek a keresett személy valamelyik nagyszülőjével.
-
+Első unokatestvérek: a keresett személy szüleinek testvéreinek és féltestvéreinek gyermekei,
+a keresett személyt és a teljes testvérét kihagyva.
+*/
+/*
 Hint 1: || A feladat központi adatai az apa és az anya táblák; ezekből minden kérdés lokálisan eldönthető. ||
 Hint 2: || A testvér és féltestvér halmazt úgy érdemes előállítani, hogy végignézed az összes személyt, és a szülőpárjukat hasonlítod. ||
-Hint 3: || Az első unokatestvérhez először gyűjtsd ki a keresett személy nagyszülőit, majd keresd meg azokat, akik ezek valamelyikének gyermekei. ||
+Hint 3: || Az első unokatestvérekhez keresd meg a szüleid testvéreit és féltestvéreit (közös szülőjük alapján), majd ezek gyermekeit, a keresett személyt és a teljes testvérét kizárva. ||
 */
 
 int main() {
@@ -62,8 +63,7 @@ int main() {
             for (int child = 1; child <= N; ++child) {
                 if (father[child] == s || mother[child] == s) {
                     if (child == K) continue;
-                    if (father[child] == father[K] && mother[child] == mother[K]) continue;
-                    if ((father[child] == father[K] && father[K] != 0) || (mother[child] == mother[K] && mother[K] != 0)) continue;
+                    if (father[child] && father[child] == father[K] && mother[child] && mother[child] == mother[K]) continue;
                     cousins.insert(child);
                 }
             }

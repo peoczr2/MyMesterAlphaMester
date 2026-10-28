@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/5. Eddigieknél rövidebb állomásszakaszok *",
+    "method": "Egy bejárás: az eddigi legrövidebb távolság tárolása, és az ennél rövidebb szakaszok sorszámának gyűjtése.",
+    "category": "Rekordkeresés: eddigi minimum",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "tömb", "sorszám"],
+    "note": "Az állomásszakasz hossza a távolság (Ti); a PDF-példa (1 1) és a minta (2/2) ezt igazolja. Az első szakasz korábbi nélkül is bekerül. Mért futásidő (N=100): kb. 2 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/50. Villamos útvonalának hossza *",
+    "method": "Egy bejárás: a szomszédos megállók távolságainak összegzése.",
+    "category": "Összegzés: útvonal hossza",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "távolság", "tömb"],
+    "note": "A minta 2/2, a PDF-példa (4200) egyezik. Az időadatok nem számítanak bele. Mért futásidő (N=100): kb. 2 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/51. Villamos várakozási ideje *",
+    "method": "Egy bejárás: az 1. és N-1. megállók indulási mínusz érkezési idejének összege.",
+    "category": "Összegzés: várakozási idő",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "várakozás", "idő"],
+    "note": "A minta 2/2, a PDF-példa (17) egyezik. A feladatszöveg nem mondja ki, hogy a végállomás (N.) várakozása beleszámít-e; a megoldás nem számolja (a 48. feladattal egységesen). A mintákban a végállomáson Erki = Indi, így a minta ezt nem dönti el. Mért futásidő (N=100): kb. 2 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/52. Villamosmegállók ahol megállt *",
+    "method": "Egy bejárás: az Erki < Indi feltételt teljesítő megállók sorszámainak gyűjtése.",
+    "category": "Szűrés: megállások",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "sorszám"],
+    "note": "A minta 2/2, a PDF-példa (3 1 3 4) egyezik. Az induló (0.) és a végállomás (N.) sorszámát a feladat szerint nem írjuk ki. Mért futásidő (N=100): kb. 2 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

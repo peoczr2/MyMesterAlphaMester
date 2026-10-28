@@ -1,11 +1,14 @@
+/*
+Megoldás lényege:
+Mindkét vásárra a profit bevétel − K·asztalszám. Az első vásár minden x asztalszámához a második vásárban azt az y-t keressük, amelyre y ≤ N − x és a profit a legnagyobb. Ezt a második vásár profitjainak prefix maximumával egyszer kiszámoljuk (holtversenyben a kisebb y marad), így minden x-re O(1) alatt megvan a legjobb y. Az x-ek végigpróbálásakor a legnagyobb össz-profit adódik; holtversenynél a kevesebb összes asztal, majd a nagyobb első vásári szám a jó. Az időigény O(N).
+*/
+/*
+Hint 1: || A két vásár csak a teljes asztalszámon (legfeljebb N) osztozik. Rögzítsd az első vásár x asztalszámát, és a maradék N − x asztal közül keresd a második vásár legjobb y értékét. ||
+Hint 2: || A második vásár minden y-ra kiszámolt profitját tárold prefix maximum tömbben, és mellette azt a legkisebb y-t is, amelynél ez a maximum elérhető: így minden x-re egy tömbelem kikeresése elég. ||
+Hint 3: || Az összesítésnél három szempont dönt: a nagyobb össz-profit, azonos profitnál a kevesebb összes asztal, és ezen belül a nagyobb első vásári asztalszám. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Két konkáv bevételi függvényünk van. Az összes lehetséges asztalszám-párra
-    kiszámítjuk a profitot (bevétel - K * asztalok száma), és a maximumot keressük.
-    Holtversenyben a kevesebb összasztal, azon belül a több első vásári asztal a jó.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

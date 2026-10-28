@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 3. forduló/1. Kastély",
+    "method": "Kastélyonként a terem oldalainak legnagyobb közös osztója (gcd-akkumulátor)",
+    "category": "Számelmélet: legnagyobb közös osztó",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számelmélet", "gcd", "osztó"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 3. forduló/2. Hónapok első napjai",
+    "method": "Hónapkezdő napok számlálása 7 elemű tömbben, mod 7 léptetéssel",
+    "category": "Dátumszámítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["naptár", "maradékszámítás", "szökőév"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 3. forduló/3. Távoli bolygó",
+    "method": "26-os számrendszerbeli kódolás, gyakoriságtömbök összevetése",
+    "category": "Számrendszer és számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számrendszer", "gyakoriság", "karakterlánc"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 3. forduló/4. Kereskedők",
+    "method": "Két std::set, szimmetrikus különbség, rendezett kiírás",
+    "category": "Halmazok: szimmetrikus különbség",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "szűrés", "karakterlánc"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

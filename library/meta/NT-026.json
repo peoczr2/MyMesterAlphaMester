@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2019 ∕ 20 3. forduló/5. Turista (40)",
+    "method": "Floyd–Warshall legrövidebb utak, majd bitmaszkos DP körútra",
+    "category": "Gráf: legrövidebb utak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "legrövidebb út",
+      "dinamikus programozás"
+    ],
+    "note": "Több optimális sorrend van: a PDF-példa (2 3 7 4 6 5) másikat ad, a minta a lexikografikusan legkisebbet (2 3 4 5 6 7); a megoldás ezt számolja, ezért a validátor egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2019 ∕ 20 3. forduló/6. Ügyfélszolgálat (45)",
+    "method": "Szimuláció FIFO sorral, prioritásos sorral és rendezett halmazzal",
+    "category": "Szimuláció: sorbanállás",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "prioritási sor",
+      "halmaz"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2019 ∕ 20 3. forduló/7. Kontroll (45)",
+    "method": "Csúcsdiszjunkt utak maximuma, Dinic-folyam csúcsokra bontott gráfon (Menger-tétel)",
+    "category": "Gráf: minimális vágás",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "folyam",
+      "vágás"
+    ],
+    "note": "A feladat szerint több megoldás is megadható és a sorrend tetszőleges, ezért a minta csak egy lehetséges vágás; a kimenetet külön ellenőrző program igazolja (K egyezik, a kivett csúcsok szétvágják a start–cél utakat).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

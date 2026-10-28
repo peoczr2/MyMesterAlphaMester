@@ -1,11 +1,20 @@
+/*
+    A ritka számok bináris alakjában nincs két egymás melletti 1-es. Az adott
+    bitszámú ritka számok darabszáma Fibonacci-sorozatot követ, ezért a keresett
+    szám legfeljebb kb. 30 bites lehet. Először a bitszámot határozzuk meg: a
+    rövidebb hosszúságú ritka számok darabszámát sorban levonjuk N-ből. Ezután a
+    biteket balról jobbra döntjük el: 1-es után csak 0 állhat; egyébként
+    megszámoljuk, hány ritka szám kezdődik 0-val az adott hosszban, és ha N ennél
+    nagyobb, a bit 1 lesz, N-ből pedig levonjuk ezt a darabszámot.
+    Időigény: O(log N).
+*/
+/*
+Hint 1: || Egy adott bitszámú ritka számok darabszámát lehet összeadni a rövidebb hosszúságok darabszámaiból. Ha N-ből sorban levonod a rövidebb hosszúságok darabszámát, megtalálod a keresett szám bitszámát. ||
+Hint 2: || Balról jobbra haladva, ha az előző bit 1, a következő csak 0 lehet. Különben számold meg, hány ritka szám kezdődik 0-val: ha N ennél kisebb vagy egyenlő, a bit 0, különben a bit 1, és N-ből levonod ezt a darabszámot. ||
+Hint 3: || Előre számold ki egy tömbben: a 0-val kezdődő n bites ritka számok száma megegyezik az (n-1) bites összes ritka sorozat számával, az 1-essel kezdődőké pedig az (n-2) bites összes sorozatéval. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A ritka számok bináris alakjában nincs egymás melletti két 1-es. Ezeket a
-    számokat növekvő sorrendben lehet unrankelni a megfelelő Fibonacci-szerű
-    darabszámokkal.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

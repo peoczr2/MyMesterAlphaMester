@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/1. Buszmenetrend *",
+    "method": "Egyszeri végigolvasás, logikai jelzővel: igaz lesz, ha van Szekszard -1 sor.",
+    "category": "Eldöntés: lineáris keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "keresés", "menetrend"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/2. Kategóriás helységek *",
+    "method": "Lélekszám szerinti besorolás, három logikai jelzővel jegyezzük meg a kategóriákat.",
+    "category": "Feltételes besorolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "feltétel", "kategória"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/3. Nagykorú *",
+    "method": "A mai nap és a születési nap különbségét vizsgáljuk egy ciklusban, 6574-es küszöbbel.",
+    "category": "Dátumkülönbség",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "dátum", "kor"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/10. Zsebtolvajok adategyezése **",
+    "method": "Minden tolvajpárt megvizsgálunk, és a négy adat egyezéseit számoljuk.",
+    "category": "Páronkénti összehasonlítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["eldöntés", "páronkénti", "struktúra"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

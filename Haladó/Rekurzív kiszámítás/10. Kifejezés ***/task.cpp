@@ -5,11 +5,11 @@ változó egy lineáris együtthatót kap. A maximumot úgy érjük el, hogy a p
 változókra B-t, a negatívakra A-t választunk.
 
 */
-
-// Hint 1: || Itt nincs szorzás, ezért a teljes kifejezés lineáris a változókban. ||
-// Hint 2: || A zárójelek és az előjelek csak azt döntik el, hogy egy változó + vagy - előjellel szerepel. ||
-// Hint 3: || Elég a változóegyütthatókat összeszedni, majd abból az értéket és az optimális hozzárendelést is megkapod. ||
-
+/*
+Hint 1: || Itt nincs szorzás, ezért a teljes kifejezés lineáris a változókban. ||
+Hint 2: || A zárójelek és az előjelek csak azt döntik el, hogy egy változó + vagy - előjellel szerepel. ||
+Hint 3: || Elég a változóegyütthatókat összeszedni, majd abból az értéket és az optimális hozzárendelést is megkapod. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

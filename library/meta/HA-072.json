@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/42. Szójáték **",
+    "method": "Szélességi bejárás szógráfon: egy betű csere, B szabálynál betű írása a végére",
+    "category": "Gráf: BFS",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "szélességi bejárás",
+      "szöveg"
+    ],
+    "note": "Megjegyzés: a feladat példája (P-t is beleszámolva 6, a példa listájában OKOS is szerepel) szerint a task.cpp P-t számolja. A minta eltér: ki1.txt 2. sora 5 (P nélkül lenne), ki2.txt 2. sora 0, pedig be2.txt-ben P=AAA-ból 12 szó érhető el P nélkül (13 P-vel). Ha P nem számít, a task.cpp második kiírásából egyet le kell vonni; a ki2.txt így is hibás.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/43. Szolga ***",
+    "method": "Több forrású szélességi bejárás; minden csomópont a bejárásban őt elérő szülőjének küldi a kérést",
+    "category": "Gráf: több forrású BFS",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "szélességi bejárás",
+      "hálózat"
+    ],
+    "note": "A szöveg szerint több helyes kimenet is elfogadható, ezért minta kézi. A task.cpp a minta kimenetét reprodukálja; a kimenet érvényességét a library/.work/HA-072/chk43_45.py ellenőrző is igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/44. Szögletes villamos ***",
+    "method": "Forgatás nélkül szélességi bejárás, forgatással Dijkstra a cellákon (élsúly 1 + forgatások száma)",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "legrövidebb út",
+      "forgatás"
+    ],
+    "note": "Az 1. sor forgatás nélkül, a 2. sor forgatással számolva (egy forgatás egy lépés); a minta mindkét sora egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/45. Találka *",
+    "method": "Két szélességi bejárás (A-ból, B-ből); a találkozási város a max(dA, dB) minimuma",
+    "category": "Gráf: BFS",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "szélességi bejárás",
+      "útvonal"
+    ],
+    "note": "A szöveg szerint több helyes találkozási város és útvonal is kiírható, ezért minta kézi. A task.cpp a minta kimenetét reprodukálja; a kimenet érvényességét a library/.work/HA-072/chk43_45.py ellenőrző is igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

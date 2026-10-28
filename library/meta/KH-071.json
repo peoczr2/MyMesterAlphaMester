@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Középhaladó/Szigetek/9. Egyre szélesebb szigetek? *",
+    "method": "Egy bejárás: a szigetek szakaszait keressük, és a szélességek szigorú növekedését ellenőrizzük.",
+    "category": "Összefüggő szakaszok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szakasz", "tömb", "monotonitás"],
+    "note": "Mért futási idő a legnagyobb mintán (N=10 000): kb. 0,002 mp, az időlimit 0,1 mp. A két minta mindkettőben 0; a 12 elemű mintában két, egyaránt 3 széles sziget van, ezért a szigorú növekedés az elvárt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

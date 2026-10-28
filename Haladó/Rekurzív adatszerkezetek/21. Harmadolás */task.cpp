@@ -1,69 +1,96 @@
+/*
+Megoldás lényege:
+A vállalkozók egy fát alkotnak, a gyökér az 1-es csúcs, és minden továbbadás a pénz
+harmadára csökkenti az összeget. Egy továbbadó vállalkozó a pénz egyharmadát megtartja,
+a munkát meg nem osztó (levél) vállalkozó viszont az egészet. Így egy v csúcs által
+megtartott pénz X / 3^e alakú, ahol e = mélység + 1, ha v továbbad, és e = mélység,
+ha v levél. A legkevesebbet megtartók a legnagyobb e-jű csúcsok, a legtöbbet megtartók
+a legkisebb e-jű csúcsok, a munkát tovább nem adók pedig a levelek. Mindezt egy BFS-sel
+kapjuk meg O(N) időben.
+*/
+/*
+Hint 1: || Minden továbbadásnál a pénz harmadára csökken, ezért a pénz nagysága egyedül a mélységtől függ. ||
+Hint 2: || Egy továbbadó vállalkozó a pénz egyharmadát tartja meg, egy levél az egészet, így a megtartott összeg nevezőjének kitevője mélység vagy mélység + 1. ||
+Hint 3: || A legkevesebb pénzt a legnagyobb kitevőjű csúcsok tartják meg, a legtöbbet a legkisebb kitevőjűek, és a levelek egy külön halmazt adnak. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-Megoldási ötlet:
-A vállalkozók egy fa csúcsai. A pénz minden továbbadással harmadolódik, ezért
-egy csomópont pénze kizárólag a gyökértől mért mélységétől függ.
-
-Így a legkevesebb pénzt a legmélyebb csomópontok kapják, a legtöbbet az 1-es
-csúcs, a munkát tovább nem adó vállalkozók pedig pontosan a levelek.
-
-Hint 1: || A pénz csak a mélységtől függ, mert minden továbbadáskor harmadolódik. ||
-Hint 2: || A minimumot a legmélyebb csúcsok, a maximumot a gyökér adja. ||
-Hint 3: || A levelek azok a csúcsok, amelyeknek nincs két újabb vállalkozójuk. ||
-*/
-
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    // A bemenet összes számát kiolvassuk, így a fájl eleji UTF-8 BOM és a CRLF sorvégek nem zavarnak.
+    string all((istreambuf_iterator<char>(cin)), istreambuf_iterator<char>());
+    vector<long long> nums;
+    long long cur = 0;
+    bool inNum = false;
+    for (unsigned char c : all) {
+        if (c >= '0' && c <= '9') {
+            cur = cur * 10 + (c - '0');
+            inNum = true;
+        } else if (inNum) {
+            nums.push_back(cur);
+            cur = 0;
+            inNum = false;
+        }
+    }
+    if (inNum) nums.push_back(cur);
+    if (nums.empty()) return 0;
 
-    int N;
-    cin >> N;
-    vector<vector<int>> children(2 * N + 5);
-    vector<int> indeg(2 * N + 5, 0), outdeg(2 * N + 5, 0);
+    int N = (int)nums[0];
+    long long maxIdRead = 2LL * N + 1;
+    for (size_t i = 1; i < nums.size(); ++i) maxIdRead = max(maxIdRead, nums[i]);
+    int maxId = (int)maxIdRead;
+
+    vector<vector<int>> children(maxId + 1);
     for (int i = 0; i < N; ++i) {
-        int s, a, b;
-        cin >> s >> a >> b;
+        int s = (int)nums[1 + 3 * i];
+        int a = (int)nums[2 + 3 * i];
+        int b = (int)nums[3 + 3 * i];
         children[s].push_back(a);
         children[s].push_back(b);
-        ++outdeg[s];
-        ++indeg[a];
-        ++indeg[b];
     }
 
-    int maxId = 2 * N + 1;
+    // BFS a gyökérből (1-es vállalkozás): mélységek
     vector<int> depth(maxId + 1, -1);
     queue<int> q;
     depth[1] = 0;
     q.push(1);
-    int bestDepth = 0;
     while (!q.empty()) {
-        int u = q.front(); q.pop();
+        int u = q.front();
+        q.pop();
         for (int v : children[u]) {
-            depth[v] = depth[u] + 1;
-            bestDepth = max(bestDepth, depth[v]);
-            q.push(v);
+            if (depth[v] == -1) {
+                depth[v] = depth[u] + 1;
+                q.push(v);
+            }
         }
     }
 
-    vector<int> minMoney, maxMoney, leaves;
-    for (int i = 1; i <= maxId; ++i) {
-        if (depth[i] == bestDepth) minMoney.push_back(i);
-        if (i == 1) maxMoney.push_back(i);
-        if (outdeg[i] == 0 && depth[i] != -1) leaves.push_back(i);
+    // e: a megtartott pénz nevezőjének kitevője (X / 3^e)
+    vector<int> e(maxId + 1, -1);
+    int emin = INT_MAX, emax = INT_MIN;
+    for (int v = 1; v <= maxId; ++v) {
+        if (depth[v] < 0) continue;
+        bool passes = !children[v].empty();
+        e[v] = depth[v] + (passes ? 1 : 0);
+        emin = min(emin, e[v]);
+        emax = max(emax, e[v]);
     }
 
-    cout << minMoney.size();
-    for (int x : minMoney) cout << ' ' << x;
-    cout << '\n';
+    vector<int> fewestMoney, mostMoney, leaves;
+    for (int v = 1; v <= maxId; ++v) {
+        if (depth[v] < 0) continue;
+        if (e[v] == emax) fewestMoney.push_back(v); // a legkevesebb pénzt tartják meg
+        if (e[v] == emin) mostMoney.push_back(v);   // a legtöbb pénzt tartják meg
+        if (children[v].empty()) leaves.push_back(v); // nem adják tovább a munkát
+    }
 
-    cout << maxMoney.size();
-    for (int x : maxMoney) cout << ' ' << x;
-    cout << '\n';
-
-    cout << leaves.size();
-    for (int x : leaves) cout << ' ' << x;
-    cout << '\n';
+    auto print = [](const vector<int>& xs) {
+        cout << xs.size();
+        for (int x : xs) cout << ' ' << x;
+        cout << '\n';
+    };
+    print(fewestMoney);
+    print(mostMoney);
+    print(leaves);
     return 0;
 }

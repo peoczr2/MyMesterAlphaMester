@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/39. Repülés",
+    "method": "Hidkeresés mélységi bejárással; a nem híd élek végpontjai körön vannak, a többi csúcsot számoljuk.",
+    "category": "Gráf: hidak, körök",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dfs",
+      "híd"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/4. Barátok *",
+    "method": "Unió-keresés (DSU): a barátpárokat egyesítjük, majd a komponenseket sorszám szerint írjuk ki.",
+    "category": "Gráf: összefüggő komponensek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "unió-keresés",
+      "komponens"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/40. Függvény periódushossza",
+    "method": "Funkcionális gráf: körök levágással, a körbe jutás távolsága a levágás fordított sorrendjében.",
+    "category": "Gráf: függvénygráf",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "függvénygráf",
+      "kör"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/41. Parti **",
+    "method": "Legnagyobb megfelelő részhalmaz: a kevesebb mint két javaslatot kapó tagokat iteratívan kihúzzuk.",
+    "category": "Gráf: iteratív levágás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "fokszám",
+      "levágás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

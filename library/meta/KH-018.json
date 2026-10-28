@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/35. Szempontok, ahol nem volt tökéletes kutya *",
+    "method": "Szempontonként keressük, volt-e a maximális pontot elérő kutya",
+    "category": "Szempontonkénti vizsgálat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "maximum", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/36. Szempontok, amelyekben holtversenyt kellett hirdetni *",
+    "method": "Szempontonként a legjobb pont előfordulását számoljuk",
+    "category": "Szempontonkénti maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "maximum", "holtverseny"],
+    "note": "Ha egy szempontban senki nem éri el az alsó határt, nincs első hely, így nincs holtverseny; a minták ezt az esetet nem fedik le.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/37. Szempontok, amelyekben volt tökéletes kutya *",
+    "method": "Szempontonként keressük a maximális pontot elérő kutyát",
+    "category": "Szempontonkénti vizsgálat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "maximum", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/38. Több szempont szerint is győztes kutya *",
+    "method": "Szempontonkénti győztesek kiválasztása, kutyánkénti győzelemszámlálás",
+    "category": "Győzelmek számlálása",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "tömb", "maximum"],
+    "note": "A holtversenyben győztes kutyát győztesnek számítjuk (a 2. feladat konvencióját követi); ezt a minták nem döntik el. Ha egy szempontban senki nem éri el az alsó határt, az nem ad győztest; ezt sem fedik le a minták.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

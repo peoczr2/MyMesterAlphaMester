@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/46. Pontok - 2015. október",
+    "method": "Koordináta szerinti csoportosítás map-pel, páronkénti bejárás a legnagyobb távolságnégyzethez.",
+    "category": "Geometria: pontok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["koordináta", "csoportosítás", "távolság"],
+    "note": "A minta.zip második bemenetéhez (be2) nincs kimenet, ezen nincs összevetés.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/47. Szókereső - 2016. május",
+    "method": "Irány-kódokból eltolás-tábla, a szavak betűinek elhelyezése 16x16-os rácson.",
+    "category": "Mátrix: szóelhelyezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mátrix", "szöveg", "irány"],
+    "note": "A leghosszabb szavak listájában az ismétlődő szó egyszer szerepel; a mintában erre nincs példa.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/48. Bástyák - 2016. október",
+    "method": "Négy irányban a széléig tartó üres út számlálása, bástyánként.",
+    "category": "Mátrix: szimuláció",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "szimuláció", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/49. Txt2Srt - 2017. május",
+    "method": "Szóközös szószámlálás, időzítés másodpercre váltása, óó:pp:mm formázás osztállyal.",
+    "category": "Sztring feldolgozás",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["szöveg", "osztály", "idő"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

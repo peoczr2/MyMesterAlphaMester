@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/59. Házszámok",
+    "method": "Bináris keresés a válaszra, számjegyek helyiértékenkénti számlálásával ellenőrizve.",
+    "category": "Bináris keresés, számlálás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["bináris keresés", "számrendszer", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/6. Boldog számok *",
+    "method": "Minden szám szimulálása a négyzetösszeg-átalakítással, ciklusdetektálással.",
+    "category": "Szimuláció, ciklusdetektálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "ciklus", "számjegyek"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/7. Diofantoszi egyenlet ***",
+    "method": "gcd-szűrés, majd a moduláris inverzzel kapott legkisebb x és a nemnegatív y ellenőrzése.",
+    "category": "Diofantoszi egyenlet",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["diofantoszi egyenlet", "gcd", "moduláris inverz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/8. Egyes számok *",
+    "method": "A számjegyösszeg 9-cel osztott maradékának ellenőrzése, egyszeri összegzéssel.",
+    "category": "Digitális gyök",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["digitális gyök", "számjegyek", "maradék"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

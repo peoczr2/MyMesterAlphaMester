@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/39. Tejárak *",
+    "method": "Lineáris bejárás, minden ár összevetése a [P,Q] intervallummal",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/4. Délben bankban lévő ügyfelek száma **",
+    "method": "Időrendi szimuláció halmazzal: belépés beszúr, kilépés töröl, X:00-ig",
+    "category": "Megszámolás: halmaz",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "halmaz", "időrend"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/40. Teljes útfelújítás **",
+    "method": "Logikai tömb jelölése kilométerenként, a jelöletlenek megszámolása",
+    "category": "Megszámolás: tömb jelölés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "tömb", "lefedés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/41. Tervbe betehető szobák száma ***",
+    "method": "Rács a házról, a szabad területek bal felső mezőinek megszámolása",
+    "category": "Megszámolás: rácsos terület",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["megszámolás", "rács", "téglalap"],
+    "note": "A feladat szerint a szabad területek téglalapok, ezért a szoba oldalának teljes hosszú érintkezését és a részleges érintkezést is ugyanaz a megoldás adja (ellenőrizve brute-force-szal). A minta be2.txt utolsó szobája (0 0 0 0) a házon kívül esik, a program a szobákat a házra vágja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

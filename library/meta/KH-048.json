@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/35. Tenisz adogatógép - 2011. május",
+    "method": "Soronkénti képletszámítás, a legnagyobb relatív eltérés maximumkeresésével",
+    "category": "Képletszámítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["képlet", "maximumkeresés", "lebegőpontos"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/36. Osztálypénztár - 2011. május",
+    "method": "Egyenlegek soronkénti módosítása, osztályszintű kiadás felfelé kerekített egy főre eső részével",
+    "category": "Egyenlegkezelés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "szimuláció", "kerekítés"],
+    "note": "A minta.zip ki-fájljai nem egyeznek a feladatszöveggel: a feladat szerint az osztályszintű kiadás (0 sor, pl. be1.txt 52. sora: 0 -4000) egy főre eső része levonódik, felfelé kerekítve, a minta viszont hozzáadja, és lefelé kerekíti (ki1.txt 1. sora 18540, a szöveg szerint 15860; be2.txt 58. sora, N=28: 0 -5000). A megoldás a feladatszöveget követi; a független ellenőrző (library/.work/KH-048/check36.py) ugyanezt adja, és 300 véletlen teszten egyezik a C++ kóddal.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/37. Körlemez - 2011. október",
+    "method": "Távolságnégyzet összehasonlítása a sugár négyzetével, egész számokon",
+    "category": "Geometria",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["geometria", "kör", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/38. Legtöbb magánhangzó - 2011. október",
+    "method": "Szavanként magánhangzó-számlálás, a legnagyobb érték megtartása",
+    "category": "Szövegfeldolgozás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szöveg", "számlálás", "maximumkeresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

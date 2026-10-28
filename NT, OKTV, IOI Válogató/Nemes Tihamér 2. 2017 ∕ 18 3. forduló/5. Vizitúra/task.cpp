@@ -1,10 +1,17 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
     A folyóhálózat egy fa, ezért a leghosszabb vizitúra a fa átmérője. Két DFS-sel
     megkeressük az egyik szélsőpontot, onnan pedig a másikat és a távolságot.
+    Az időigény O(N), mert minden csúcsot és élt állandó számú alkalommal járunk be.
 */
+/*
+Hint 1: || A települések és a folyószakaszok fát alkotnak, így bármely két település között pontosan egy útvonal van. A leghosszabb vizitúra tehát két település közti legnagyobb távolság, vagyis a fa átmérője. ||
+
+Hint 2: || Válassz egy tetszőleges kezdőcsúcsot, járd be a fát, és számold ki minden csúcsra a távolságot. A kezdőcsúcstól legtávolabbi csúcs mindig az átmérő egyik végpontja. ||
+
+Hint 3: || Az így kapott csúcsból újabb bejárást indítva megkapod a másik végpontot és az átmérő hosszát; a két csúcs lesz a kért kezdő- és végpont. ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

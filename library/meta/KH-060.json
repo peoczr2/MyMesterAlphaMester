@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/31. Tanulócsoport - 2013. május",
+    "method": "Jegyek darabszámából pontszám, összeg és átlag, egész alapú átlag feletti szűrés.",
+    "category": "Összegzés, átlag",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "átlag", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/32. Olimpia - 2014. május",
+    "method": "Napi tömb feltöltése sportágankénti sorokból, összegzés és legnagyobb napi összeg keresése.",
+    "category": "Tömb, összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "összegzés", "maximum"],
+    "note": "A legtöbb döntős nap értéke a hónap napja (július 28–31, augusztus 1–12); a mintában 29 = július 29.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/33. Kő-papír-olló - 2014. október",
+    "method": "Győzelmi szabály maradékos számítással, 3x3-as táblázat feltöltése a párokból.",
+    "category": "Táblázatos számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["táblázat", "elágazás", "számolás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai középszintű érettségi feladatok/34. Keszthely Triatlon - 2015. május",
+    "method": "Időt másodpercre váltva összegzés, egész aritmetikás átlagkerekítés, női minimum-keresés.",
+    "category": "Idők összegzése, átlag",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["idő", "átlag", "kerekítés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

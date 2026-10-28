@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/68. Versenyeredmények ****",
+    "method": "Prefixösszegek, minden érték-párra a szomszédos előfordulások közti maximális rés táblázatban.",
+    "category": "Prefixösszeg",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "tömb", "lekérdezés"],
+    "note": "A minta.zip második bemenete 0 értéket tartalmaz, bár a feladatszöveg szerint 1≤Vi≤M; a megoldás a 0-t is kezeli, a kimenet egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/69. Dinnyeárus ***",
+    "method": "Előzetes és utólagos számlálás, a 100-nál nem nagyobb árak tömbjével.",
+    "category": "Megszámolás",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "gyakoriság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/7. Fagyos napok száma az előrejelzésben *",
+    "method": "Egyszeri bejárás, a napi legkisebb hőmérséklet 0-nál kisebb voltának számlálása.",
+    "category": "Megszámolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "bemenet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/70. Ismétlődő karakterek részsorozatban ****",
+    "method": "Mohó betűnkénti építés, a folytatást betűnkénti felső korláttal ellenőrizve.",
+    "category": "Mohó kiválasztás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["mohó", "részsorozat", "lexikografikus"],
+    "note": "A feladatszöveg szerint minden betűnek K-szor kell szerepelnie az eredeti sorozatban, de ebben az értelmezésben a minta első bemenetére a zzzma lenne a nagyobb válasz, a minta kimenete (zzzaa) viszont csak akkor igaz, ha a részsorozatban szereplő minden betűnek legalább K-szor kell szerepelnie magában a részsorozatban. A megoldás ezt az értelmezést használja; a mintákkal egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

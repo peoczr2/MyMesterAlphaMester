@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/17. Legmesszebb lévő állomások – maximális létszám *",
+    "method": "Egy bejárás: a leghosszabb összefüggő, maximális létszámú szakasz keresése.",
+    "category": "Leghosszabb összefüggő szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "keresés", "szakasz", "maximum"],
+    "note": "A szakasz akkor telt, ha a létszám eléri vagy meghaladja a maximumot (a mintán ez igazolt; az egyenlőségre szűkítés a 2. mintán hibás eredményt adna). Egyenlő hosszú sorozatnál a korábbi párt adja (a feladat ezt nem mondja ki). Mért idő N=1000-nél kb. 1 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/18. Legmesszebb lévő állomáspár – folyamatosan voltak a vonaton *",
+    "method": "Egy bejárás: a leghosszabb összefüggő, pozitív létszámú szakasz keresése.",
+    "category": "Leghosszabb összefüggő szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "keresés", "szakasz", "pozitív"],
+    "note": "Egyenlő hosszúságnál a korábbi párt adja (a feladat szerint: több megoldás esetén a legkorábbit). Mért idő N=1000-nél kb. 1 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/19. Legtöbb leszálló az állomáson *",
+    "method": "Lineáris maximumkiválasztás, egyenlőségnél a korábbi állomás marad.",
+    "category": "Maximumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "maximumkeresés", "lineáris"],
+    "note": "Több azonos maximum esetén a legkisebb sorszámot adja (a feladat szerint). Mért idő N=1000-nél kb. 1 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/2. Ameddig már nem gazdaságos *",
+    "method": "Szakaszok eredményének hátulról történő összegzése, első negatív pont keresése.",
+    "category": "Szuffixösszeg",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["összegzés", "tömb", "feltétel"],
+    "note": "Értelmezés: az előző állomástól a végállomásig tartó szakasz (bevétel − költség) első negatív helye; a válasz az erre következő állomás. A Budapesttől számolt prefix-olvasat is átmegy a mintán, a szöveg („az előző állomástól a végállomásig”) miatt a végállomásig tartó olvasatot választottam. Mért idő N=1000-nél kb. 1 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

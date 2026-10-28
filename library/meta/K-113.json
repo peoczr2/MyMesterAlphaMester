@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/128. Őrzés ***",
+    "method": "Csúszóablak: a leghosszabb szakasz, amelyben M-nél kevesebb különböző dolgozó őrzött.",
+    "category": "Csúszóablak, számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "csúszóablak",
+      "tömb",
+      "számlálás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/129. Legt�bb unoka **",
+    "method": "Unokák száma: a gyermekek gyermekszámainak összege, minden emberre.",
+    "category": "Fa, gyermekek száma",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "gyerek",
+      "összegzés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/13. Folyamatos meleg az előrejelzésben **",
+    "method": "Településenként futó számlálóval keressük a legtöbb egymás utáni K feletti napot.",
+    "category": "Leghosszabb szakasz",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "tömb",
+      "számlálás",
+      "szakasz"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/130. Zenehallgat�s **",
+    "method": "Körmodulo (P-1) mod S, előtagösszeg és bináris keresés (upper_bound).",
+    "category": "Előtagösszeg, keresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "előtagösszeg",
+      "keresés",
+      "moduló"
+    ],
+    "note": "A P-edik másodperc pontos indexelése nincs kifejezetten leírva; a (P-1)..P időszakos értelmezést a mintából választottam (P=6 a 2. dal, P=10 az 1. dal).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

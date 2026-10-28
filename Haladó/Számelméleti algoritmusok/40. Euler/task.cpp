@@ -1,6 +1,10 @@
 /*
- * Euler-féle phi függvény számítása prímtényezős bontással.
- 
+Az N-hez relatív prím, nála kisebb természetes számok száma az Euler-féle phi függvény: N * (1 - 1/p1) * (1 - 1/p2) * ... a különböző p prímosztókra.
+A prímosztókat próbaosztással keressük (p * p <= n), és minden megtalált p-nél n-ből teljesen kiosztjuk a p-t, az eredményre pedig az ans -= ans / p lépést alkalmazzuk.
+Mivel p osztja az aktuális eredményt, az egészosztás pontos; a maradék n > 1 esetén maga is prímosztó.
+Az időigény O(sqrt(N)), ami N <= 10^8 mellett bőven belefér a 0,1 mp-es limitbe.
+*/
+/*
 Hint 1: || Az Euler-féle phi függvényhez a szám különböző prímosztóira van szükség, nem a teljes osztólistára. ||
 Hint 2: || Ha `N` osztható egy `p` prímmel, akkor a válaszban egyszer kell megszorozni `(1 - 1/p)` tényezővel, vagyis `ans -= ans/p`. ||
 */

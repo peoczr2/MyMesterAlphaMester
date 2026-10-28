@@ -1,0 +1,99 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/16. Kemping **",
+    "method": "Végidő szerinti rendezés, a legkésőbb felszabaduló faházhoz rendelés multihalmazzal",
+    "category": "Mohó: intervallum-ütemezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "multihalmaz",
+      "ütemezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/17. Koncert ***",
+    "method": "Jobb végpont szerinti rendezés, a legkisebb szabad hely foglalása DSU-val",
+    "category": "Mohó: párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "párosítás",
+      "dsu",
+      "intervallum"
+    ],
+    "note": "A minta több helyes jegykiosztást enged; a kimenet érvényessége és a maximális szám (50) független ellenőrzéssel (Kuhn-féle párosítás) igazolva a minta be2 esetén.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/18. Konténer ***",
+    "method": "Balról jobbra láncfelbontás: a legnagyobb nála kisebb láncvégre fűzés",
+    "category": "Mohó: láncfelbontás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "láncfelbontás",
+      "multihalmaz",
+      "mohó"
+    ],
+    "note": "BLOKKOLT: a minta be2 86-ot vár, a megoldás 81-et ad; a feladat példája (6) és a minta be1 (5) ellentmond egymásnak. A „csak nagyobbra rakható” szabály szerinti, balról jobbra mozgatásos modell be2-re 92-t ad (kimerítő keresés), a jelenlegi lánc-modell a szabály irányával fordított. Tisztázandó: a robot szabálya és a helyes minta.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/19. Konténeroszlopok **",
+    "method": "Legkisebb, x-nél nem kisebb tetejű oszlop választása, bitmezős keresés",
+    "category": "Mohó: láncfelbontás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "láncfelbontás",
+      "bitmező",
+      "mohó"
+    ],
+    "note": "Az időlimit (0,1 mp, N = 2·10^6) miatt pufferelt be- és kimenet és két szintű bitmező; a maximális méret kb. 0,07 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/2. Alkatrészgyártás ***",
+    "method": "Gyártási idő szerinti csökkenő sorrend, előkészítési prefixösszeggel",
+    "category": "Mohó: ütemezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "ütemezés",
+      "prefixösszeg",
+      "csereargumentum"
+    ],
+    "note": "A minta több optimális sorrendet enged; az optimum (831) és a kiírt sorrend érvényessége független ellenőrzéssel igazolva a minta be2 esetén.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/20. Ládák balról jobbra **",
+    "method": "Legkisebb, x-nél nagyobb legbelső méretű csomag választása multihalmazzal",
+    "category": "Mohó: láncfelbontás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "láncfelbontás",
+      "multihalmaz",
+      "mohó"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

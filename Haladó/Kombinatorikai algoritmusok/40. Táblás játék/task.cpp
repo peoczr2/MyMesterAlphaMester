@@ -1,25 +1,16 @@
+/*
+Megoldás lényege:
+Két bábu akkor üti egymást, ha azonos oszlopban van, vagy azonos sorban úgy, hogy közöttük a sorban végig van cella. Ezért oszloponként legfeljebb egy bábu állhat, és egy összefüggő vízszintes szakaszban is legfeljebb egy.
+A tábla a legalacsonyabb oszlop magasságánál szétvágható: az alsó sáv téglalap, amelynek minden sora egyetlen szakasz, a fölötte lévő, a legalacsonyabb oszlopok által elválasztott részek pedig egymástól függetlenek. Minden részre a bábuszám-polinom (együtthatója: hány módon van t bábu) adódik rekurzívan; ezeket konvolúcióval szorozzuk, majd a sávba s bábu C(h, s)·(w−t)·…·(w−t−s+1) módon kerülhet. A végén a K-adik együttható a válasz modulo 10^9+7.
+Az időigény legrosszabb esetben O(N·K²), ami N, K ≤ 500 mellett belefér az 1 másodperces időlimitbe.
+*/
+/*
+Hint 1: || Két bábu akkor üti egymást, ha azonos oszlopban van, vagy azonos sorban úgy, hogy a köztük lévő cellák is a táblán vannak. Ezért oszloponként legfeljebb egy bábu állhat, és egy összefüggő vízszintes szakaszban is legfeljebb egy. ||
+Hint 2: || Vágd szét a táblát a legalacsonyabb oszlop magasságánál: az így keletkező alsó sáv téglalap, a fölötte lévő részek pedig egymástól függetlenek. Ha a sáv h magas és w széles, és a fölötte lévő részekben t bábu van, akkor a sávba s bábu C(h, s)·(w−t)·(w−t−1)·…·(w−t−s+1) módon kerülhet. ||
+Hint 3: || Rekurzívan add meg minden részre, hogy t bábuval hányféleképp lehet elhelyezni; a gyerekrészek ilyen polinomjait konvolúcióval szorozd össze, majd a sáv-képlettel kombináld. A végén a K-adik együttható a válasz modulo 10^9+7. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-  A tábla egy oszlopmagasság-sorozatból álló „hullámhegy”.
-  Egy adott intervallumban a legalacsonyabb oszlopok választják szét a magasabb
-  részeket. Ha a minimális magasságot levágjuk, akkor a magasabb, összefüggő
-  részek független részproblémákká válnak.
-
-  Az intervallumokra rekurzívan dolgozunk:
-  - a gyerekek a minimumok közötti, m-nél magasabb szakaszok,
-  - a jelenlegi „alsó sáv” egy teljes téglalap: szélesség = intervallum hossza,
-    magasság = jelenlegi minimum - szülő minimum.
-
-  Ha a gyerekek összesen t bábut használnak, akkor a sávban a maradék
-  width - t oszlopba tehetünk még s bábut. Ennek száma:
-      C(sávmagasság, s) * falling(width - t, s)
-  ahol a sávban tetszőleges s sort és s oszlopot választunk.
-
-  A rekurzió fája legfeljebb N csúcsú, N,K <= 500 mellett a K^2-es konvolúció
-  elfér.
-*/
 
 static const int MOD = 1'000'000'007;
 

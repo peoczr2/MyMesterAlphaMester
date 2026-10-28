@@ -1,7 +1,8 @@
 /*
- * Boldog számok keresése egy intervallumban. Minden számról eldöntjük, hogy a
- * számjegy-négyzetösszeg ismételt képzése végül 1-be fut-e.
- 
+Megoldás lényege:
+Egy szám sorsa csak a számjegyeinek négyzetösszegétől függ, ezért minden A..B közötti számra egyesével szimuláljuk az átalakítást. A folyamat akkor ér véget, ha 1-et vagy 7-et kapunk (mindkettő boldog szám, a 7-ből is 1 lesz), vagy ha ciklusba kerül, és ebben a ciklusban sem 1, sem 7 nincs. A ciklust úgy szűrjük ki, hogy eltároljuk a már látott értékeket, így a szimuláció mindig véges. A 100 000-es határig a négyzetösszeg legfeljebb 405, ezért a ciklusok nagyon rövidek, és az összidő O(B - A) lépés, ami a 0,5 mp-es időlimit alatt bőven belefér.
+*/
+/*
 Hint 1: || Egy szám sorsa csak a számjegynégyzet-összeg ismételgetésétől függ, ezt kell szimulálni. ||
 */
 

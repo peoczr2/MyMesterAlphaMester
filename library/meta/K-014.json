@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok/8. Mozi *",
+    "method": "Három fizetendő arány közös nevezőre hozása és egész számokkal való összehasonlítása",
+    "category": "Elágazás, összehasonlítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["elágazás", "feltétel", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/9. Négyzetek *",
+    "method": "Mohó szimuláció: mindig a legnagyobb kirakható négyzet, maradékkal ismételve",
+    "category": "Mohó algoritmus",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["ciklus", "mohó", "négyzetgyök"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

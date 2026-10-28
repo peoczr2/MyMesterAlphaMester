@@ -1,0 +1,38 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2020/1. Kacifántos kerítés",
+    "method": "Oszloponkénti minimum-tartomány, monoton verem, összegzés magassági párokra",
+    "category": "Monoton verem",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["verem", "tartomány", "összeszámlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2020/2. Utak",
+    "method": "Söprővonal balról jobbra, cellánként összekötés, DSU-val feszítőfa",
+    "category": "Geometria: söprés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["geometria", "söprés", "feszítőfa"],
+    "note": "Kézi: a feladat szerint „Több megoldás esetén a program bármelyiket kiírhatja.” A kimenet érvényességét a library/.work/CE-012/utak/check.cpp (bináris: library/.work/CE-012/utak/check_bin) ellenőrzi: a szakaszok nem metszik egymást, csak közös végpontjuk lehet, és az úthálózat összefüggő. A validátor a két mintán a kimenet eltérése miatt jelzi hibásnak, de mindkét minta kimenete érvényes.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2020/3. Star Trek",
+    "method": "Fa-játék: mohó típusok, 2x2-es mátrix hatványozása, rerootolás",
+    "category": "Fa-játék, mátrixhatvány",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "játékelmélet", "mátrixhatvány"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

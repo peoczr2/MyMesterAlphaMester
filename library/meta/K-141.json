@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/89. Találkozások ****",
+    "method": "Érkezési és távozási időpontokat külön rendezve, bináris kereséssel számoljuk minden ember találkozóit.",
+    "category": "Intervallumok metszése",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "bináris keresés", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/9. Első útszakasz többszöri felújítással *",
+    "method": "Különbségtömbbel számoljuk a felújítások számát km-enként, majd keressük az első 10 hosszú ablakot.",
+    "category": "Különbségtömb, ablak keresése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["különbségtömb", "összegzés", "keresés"],
+    "note": "Az értelmezés: a 10 km-es szakasz minden km-ét legalább három felújítás érinti. A mintákra a teljes lefedésen alapuló olvasat is ugyanazt adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/90. Szomszédainál melegebb napok ***",
+    "method": "Egy bejárással gyűjtjük a csúcsokat, majd K egymás utáni csúcs legszűkebb ablakát keressük.",
+    "category": "Lokális maximumok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["lokális maximum", "csúszóablak", "minimum"],
+    "note": "Több azonos szélességű megoldás esetén a balra legelsőt írja ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/91. Betűk intervalluma ****",
+    "method": "Jobb végpontonként az R-beli betűk utolsó előfordulásainak minimuma adja a legrövidebb intervallumot.",
+    "category": "Csúszóablak, utolsó előfordulás",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "karakterek", "intervallum"],
+    "note": "Több azonos hosszúságú intervallum esetén a jobb végűt írja ki, ahogy a minta is várja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

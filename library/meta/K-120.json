@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/153. Vásárlás",
+    "method": "Két mutató a rendezett sorozatokon: minden i-hez a legkisebb j, amellyel az összeg eléri X-et.",
+    "category": "Kétmutatós bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["kétmutatós", "rendezés", "párosítás"],
+    "note": "A feladat nem mondja meg, mi legyen a kimenet, ha több pár ad azonos minimális maradékot; a minták ilyet nem tartalmaznak. A megoldás a legkisebb első, majd második indexű párt írja ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/154. Két búzaraktár",
+    "method": "Határpont-bejárás, szakaszonkénti optimum prefixösszegekkel.",
+    "category": "Prefixösszeg, szakaszok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["prefixösszeg", "medián", "optimalizálás"],
+    "note": "Több optimális második sor is elfogadható (a feladat szerint pl. 3 3 5); a kiírt változat a mintával egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/155. Fénykép elemzés",
+    "method": "Értékenként számolunk; a szomszédos előforduló fényességek egy osztályt alkotnak.",
+    "category": "Osztályok, befoglaló téglalap",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["ekvivalencia", "tömb", "téglalap"],
+    "note": "A minta ki1.txt és ki2.txt a 3 kért sor után extra, a feladatszövegben nem szereplő 7 soros számtáblázatot tartalmaz (ki1.txt 4. sorától 31 szám soronként, ki2.txt 4. sorától 21 szám soronként). A 3 kért sor egyezik a kimenetünkkel, a helyességet független brute-force (páronkénti |különbség| <= 1, union-find) igazolja. A téglalap sorrendje (sor, oszlop) a mintákból nem dönthető el, a természetes sor-oszlop sorrendet követjük.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/156. Állás",
+    "method": "Söprővonal: l csökkenésével tiltott intervallumok, szegmensfa range-add és legjobboldalibb nulla.",
+    "category": "Szegmensfa, söprővonal",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["szegmensfa", "szakasz", "söprővonal"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

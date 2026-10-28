@@ -1,0 +1,67 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 3. forduló/1. Fesztivál (16 pont)",
+    "method": "Befejezés szerint rendezés, majd súlyozott intervallumütemezés dinamikus programozással",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "rendezés",
+      "dinamikus"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 3. forduló/2. Karavánok (20 pont)",
+    "method": "Kosaraju-féle komponensek; pontosan egy bejövő élmentes komponens adja a választ",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "komponens",
+      "irányított"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 3. forduló/3. Keresősorozatok (16 pont)",
+    "method": "Az elemek megengedett (alsó, felső) határainak követése a sorozat mentén",
+    "category": "Keresőfa",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "keresőfa",
+      "intervallum",
+      "szimuláció"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 3. forduló/4. Konvex négyszög (35 pont)",
+    "method": "Inkrementális háromszögelés; üres konvex négyszög két szomszédos háromszögből",
+    "category": "Geometria, konvex burok",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "konvex burok",
+      "háromszögelés"
+    ],
+    "note": "A régi O(N⁵) megoldás csak kis N-re futott le; az új O(N log N) blokkonként, K=10 nagy blokknál 0,09 s (határ 0,2 s). A be2 2. blokkjában a minta más, de érvényes négyszöget ad; mindkét válasz ellenőrizve. Több jó válasz van, ezért kézi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
+  }
+]

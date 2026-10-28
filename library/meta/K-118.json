@@ -1,0 +1,68 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/146. Tóparti búzaföldek",
+    "method": "Két rendezett lista kéttámutatós bejárása, a legnagyobb X-en belüli összeg keresése",
+    "category": "Kéttámutatós módszer",
+    "difficulty": 2,
+    "goal": "Magyarázás",
+    "tags": [
+      "kéttámutatós",
+      "rendezett tömb",
+      "keresés"
+    ],
+    "note": "A feladat.pdf a „Részvények” feladatot tartalmazza, a minta.zip viszont egy másik feladathoz tartozik (be1: „5 / 10 13 / …” nem „N M X + két lista” formátum, ki1: „9 / 5 3”), ezért a validátor nem tud igazolni. A megoldás a PDF szerint készült: a PDF példáján (4 5 32 → 1) és véletlen bemeneteken brute force-szal egyezik. Kérdés: melyik feladatszöveg tartozik ehhez a mappához? Értelmezési pont: a PDF szerinti „ha bármely két részvény összértéke nagyobb X-nél, X-et kell kiírni” szabály ellentmond a példának (7 + 40 > 32, mégis 1 a kimenet), ezért csak az X-en belüli párokat vettem figyelembe, és X-et írok, ha nincs ilyen pár.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/147. Zsetonok",
+    "method": "Csúszóablak, városonként az utolsó előfordulás tárolásával",
+    "category": "Csúszóablak",
+    "difficulty": 2,
+    "goal": "Magyarázás",
+    "tags": [
+      "csúszóablak",
+      "tömb",
+      "egyedi elemek"
+    ],
+    "note": "A feladat.pdf az „Utazás” feladatot tartalmazza, a minta.zip viszont egy másik feladathoz tartozik (ki1: „IGEN 8 1 1”-típusú sorok, nem egyetlen szám), ezért a validátor nem tud igazolni. A megoldás a PDF szerint készült: a PDF példáján (8 / 1 2 1 6 3 5 2 5 → 5) és véletlen bemeneteken brute force-szal egyezik. Kérdés: melyik feladatszöveg tartozik ehhez a mappához?",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/148. Gabonaraktár",
+    "method": "Prefixösszegekkel minden helyre O(1) költség, majd a legkisebb kiválasztása",
+    "category": "Súlyozott medián",
+    "difficulty": 3,
+    "goal": "Magyarázás",
+    "tags": [
+      "medián",
+      "prefixösszeg",
+      "költség"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/149. Kép elemzés",
+    "method": "Fényességértékenként szélsőindexek, egymást követő értékek szakaszainak összegzése",
+    "category": "Összefüggő komponensek",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "komponens",
+      "tartomány",
+      "befoglaló téglalap"
+    ],
+    "note": "A ki1.txt és ki2.txt a feladatszöveg 3 kimeneti sora után további 8 sort tartalmaz (ki1: 4–11. sor, a „30” és utána 7 számsor; ki2: 4–11. sor, a „20” és utána 7 számsor), a feladat PDF példája viszont csak 3 sort ír ki. A 3 kötelező sor mindkét mintában egyezik a megoldással, és független, páronkénti unió-keresős brute force a minta-bemenetekre és véletlen képekre is ugyanezt adja. Ezért a 3 soros kimenet a feladatszöveg szerint helyes; a validátor a többlet-sorok miatt jelez eltérést.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

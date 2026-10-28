@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 3. forduló/1. Csapatösszeállítás",
+    "method": "Lexikografikus rákövetkező és előző részhalmaz: jobbról első változtatható tag, ciklikus záródás",
+    "category": "Kombinatorika: lexikografikus sorrend",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kombinatorika", "lexikografikus sorrend", "ciklikus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 3. forduló/2. Házépítés",
+    "method": "A elődeinek és B utódainak kizárása, majd topologikus rendezés csoportprioritással",
+    "category": "Gráf: topologikus rendezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "topologikus rendezés", "bejárás"],
+    "note": "ki2.txt hibás: az első sora 105, de a sorrendje 10001 számot tartalmaz (az 1036 kétszer szerepel), és a 105 kisebb, mint egy ellenőrzött érvényes sorrend 2298 közötti értéke; a saját kimenetet független ellenőrző program igazolja (library/.work/NT-015/check2_final.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 3. forduló/3. Konténerhelyek",
+    "method": "Szomszédos halmok összevonása, ha értékeik egymás utáni egész számok; láncolt listával",
+    "category": "Szimuláció: halmok összevonása",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["szimuláció", "láncolt lista", "invariáns"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 3. forduló/4. Számok előállítása",
+    "method": "Maradékosztályonkénti legkisebb előállítható szám Dijkstra-val, utána A1 többszöröseivel",
+    "category": "Maradékosztályok: legrövidebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["maradékosztály", "legrövidebb út", "dijkstra"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

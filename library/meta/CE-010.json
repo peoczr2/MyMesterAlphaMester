@@ -1,0 +1,51 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2018/1. Számítások felhőben",
+    "method": "Frekvencia szerinti rendezés, dp a szabad magok számán, Hall-feltétel",
+    "category": "Dinamikus programozás, Hall-tétel",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "hall-tétel",
+      "rendezés"
+    ],
+    "note": "Szűk időkeret: a helyi legrosszabb eset (2000 + 2000 bejegyzés, minden 50 mag) kb. 0,09 mp a 0,1 mp-es limit alatt; más gépen túllépés lehet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2018/2. Globális felmelegedés",
+    "method": "Előtag- és tükrözött utótag-LNR bináris kereséssel; a legjobb változtatás |d| = x",
+    "category": "LNR, dinamikus programozás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "lnr",
+      "bináris keresés",
+      "dp"
+    ],
+    "note": "A régi megoldás O((2x+1)·n·log n) volt; az új O(n log n), és nem függ x-től. A minták és egy független brute force (400 eset) egyeznek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2018/3. Lottó",
+    "method": "Ablakpárok távolsága eltolásonként csúszó ablakkal, vödrök a k-értékekre",
+    "category": "Csúszó ablak, hasonlóság",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "csúszó ablak",
+      "vödrös számlálás",
+      "hasonlóság"
+    ],
+    "note": "Szűk időkeret: a helyi legrosszabb eset kb. 0,09 mp a 0,1 mp-es limit alatt; más gépen túllépés lehet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

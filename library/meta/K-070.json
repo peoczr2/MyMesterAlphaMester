@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/35. Földrengések *",
+    "method": "Időpontok másodpercre váltása, szomszédos különbségek maximuma és minimuma.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximumkiválasztás", "idő", "különbség"],
+    "note": "Bizonytalan pont: a leghosszabb földrengésmentes időszakba a hónap eleje és vége felé eső szakaszokat nem vettük bele, csak a szomszédos földrengések közötti időtartamokat. A feladatszöveg ezt nem zárja ki egyértelműen, de a minták mindkét értelmezéssel ugyanazt a leghosszabb értéket adják; a minimumnál viszont a szélső szakaszok már kizárhatók (be1: a hónap elejétől az első rengésig tartó 4 10 22 33 kisebb lenne a kiírt 4 23 37 25-nél).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/36. Ideális lakás **",
+    "method": "Anti-érték minimumának kiválasztása egy menetben, döntetlennél ár szerint.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["minimumkiválasztás", "holtverseny", "képlet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/37. Kalapácsvető verseny győztese ***",
+    "method": "Versenyzők dobásainak csökkenő rendezése, lexikografikus maximum, holtverseny kiírása.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["maximumkiválasztás", "lexikografikus", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/38. Legcsapadékosabb hét **",
+    "method": "Hetenkénti összegzés és maximumkiválasztás, egyenlőségnél a korábbi hét marad.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximumkiválasztás", "összegzés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

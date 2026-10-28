@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/28. Legháborgóbb év *",
+    "method": "Háborúk kezdő- és záró eseményeinek rendezése, majd a legtöbb egyidejű háború keresése eseménypont-bejárással.",
+    "category": "Eseménypont-bejárás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["eseménypont", "rendezés", "maximum"],
+    "note": "Zárt intervallum: a befejező év is háborús év; a be2 minta ki2 sora (1747 333) csak így stimmel. A feladatszöveg „N sorban” kifejezése K sort jelent (a minta be2 szerint K=623). Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,3 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/29. Leghosszab haborus idoszak *",
+    "method": "Háborús intervallumok rendezése és összevonása, majd a leghosszabb összevont szakasz keresése.",
+    "category": "Intervallumok: összevonás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "összevonás", "rendezés"],
+    "note": "Az egymást érintő háborúk (egyik vége = másik kezdete) egy időszakba vonva; a minták nem tartalmaznak ilyet, így ez a döntés nem igazolható belőlük. A feladatszöveg „N sorban” kifejezése K sort jelent (a minta be2 szerint K=623). Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,3 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/3. Békés törzs *",
+    "method": "Háborúban szereplő törzsek halmazba gyűjtése, majd az első nem szereplő sorszám keresése.",
+    "category": "Halmaz: részvétel",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "keresés", "feltétel"],
+    "note": "A feladatszöveg „N sorban” kifejezése K sort jelent (a minta be2 szerint K=623). Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,3 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/30. Leghosszabb béke *",
+    "method": "Háborús intervallumok összevonása, majd a két szomszédos szakasz közti leghosszabb rés keresése.",
+    "category": "Intervallumok: rések",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "összevonás", "maximum"],
+    "note": "A rés a háborúk vége és a következő kezdete között van; egymást érintő háborúk között nincs béke, és ha nincs pozitív hosszú rés, a válasz 0 0 (be2 minta ki2 szerint). A feladatszöveg „N sorban” kifejezése K sort jelent (a minta be2 szerint K=623). Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,3 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

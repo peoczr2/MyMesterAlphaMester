@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/30. Leghosszabb emelkedő **",
+    "method": "Két irányú lineáris bejárás, leghosszabb szigorúan monoton szakasz keresése.",
+    "category": "Leghosszabb monoton szakasz",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "futam", "bejárás"],
+    "note": "Holtverseny nincs a mintában: az oda-úti emelkedő nyer az egyenlő hosszú visszaútival szemben, visszaúton pedig a nagyobb sorszámú kezdőpont a korábbi. Emelkedőnek legalább 2 elem számít, így nincs emelkedő esetén a kiírt -1 kötőjeles.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/31. Leghosszabb időintervallumban dobogón elért helyezés *",
+    "method": "Lineáris bejárás, leghosszabb egymást követő legalább 3. helyezések sorozata.",
+    "category": "Leghosszabb feltételes szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "futam", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/32. Leghosszabb időszakban folyamatos meleg *",
+    "method": "Lineáris bejárás, leghosszabb K-nál szigorúan melegebb egybefüggő szakasz.",
+    "category": "Leghosszabb feltételes szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "futam", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/33. Leghosszabb intervallum estére romló légszennyeződésre *",
+    "method": "Lineáris bejárás, leghosszabb egybefüggő szakasz, ahol az esti érték nagyobb.",
+    "category": "Leghosszabb feltételes szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "futam", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

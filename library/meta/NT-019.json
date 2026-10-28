@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 3. forduló/1. Csatornák",
+    "method": "Csökkenő élsúly szerinti unió-find a szűk keresztmetszetre, majd BFS a legkevesebb élhez.",
+    "category": "Gráf: legszélesebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "unió-find", "bfs"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 3. forduló/2. Vonatok",
+    "method": "Eseményvezérelt szimuláció prioritási sorral, szakaszonkénti szabad időpont keresése intervallumokon.",
+    "category": "Szimuláció: eseményvezérelt",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["szimuláció", "prioritásos sor", "ütemezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 3. forduló/3. Tanyák",
+    "method": "Levelek ismételt törlése (2-mag), majd többforrású BFS a városokból a tanyákig.",
+    "category": "Gráf: 2-mag és BFS",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bejárás", "fokszám"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 3. forduló/4. Fal",
+    "method": "Monoton verem a legnagyobb téglalap megkeresésére a hisztogramban.",
+    "category": "Verem: legnagyobb téglalap",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["verem", "téglalap", "hisztogram"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

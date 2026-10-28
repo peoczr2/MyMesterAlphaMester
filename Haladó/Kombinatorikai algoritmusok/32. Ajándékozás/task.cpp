@@ -1,10 +1,24 @@
 /*
 Megoldás lényege:
-Az N szaloncukrot úgy osztjuk szét, hogy a csomagok sorrendje nem számít.
-Ez pontosan az N szám partícióinak száma, ahol az egyes tagok legfeljebb M-esek.
-
-Az 1D dinamikus programban a dp[s] azt jelenti, hogy az eddig feldolgozott
-csomagméretekkel hányféleképpen állítható elő az s összeg.
+Az N szaloncukrot úgy osztjuk szét, hogy a csomagok sorrendje nem számít, és egy
+csomagba legfeljebb M szaloncukor kerülhet, így a feladat az N szám legfeljebb
+M-es tagokból álló felbontásainak (partícióinak) számát kérdezi.
+Az 1D DP-ben dp[s] azt tárolja, hányféleképpen állítható elő az s összeg az
+eddig figyelembe vett csomagméretekből. A csomagméreteket egyenként, 1-től M-ig
+dolgozzuk fel, és egy méret bevételekor az s értékeket növekvő sorrendben
+frissítjük: dp[s] += dp[s - méret]. Így egy méret tetszőleges számszor
+szerepelhet, a tagok sorrendje pedig nem számít.
+A végső válasz dp[N], a számolás O(N·M) összeadás. A kód a számokhoz BigInt
+típust használ biztonsági tartalékként, bár N ≤ 100 esetén a végeredmény akár 32
+bites egészbe is belefér.
+*/
+/*
+Hint 1: || A csomagok sorrendje nem számít, így két felosztás akkor azonos, ha
+ugyanazok a csomagméretek szerepelnek benne. A kérdés tehát az N szám olyan
+felbontásainak száma, ahol minden tag legfeljebb M. ||
+Hint 2: || Legyen dp[s] az s összeg előállításainak száma az eddig megengedett
+méretekből (kezdetben dp[0] = 1). Egy m méret bevételekor minden s-re, növekvő s
+szerint, dp[s] += dp[s - m]. A végén dp[N] a válasz. ||
 */
 
 #include <bits/stdc++.h>

@@ -1,0 +1,67 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/6. Számok előállítása",
+    "method": "Dijkstra a maradékosztályok gráfján, közös osztóval egyszerűsítve",
+    "category": "Számelmélet: maradékosztályok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "számelmélet",
+      "maradékosztály",
+      "dijkstra"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/7. Kódok",
+    "method": "Blokkonkénti DP balról jobbra, blokkonként legfeljebb egy bitpár-fordítás",
+    "category": "Dinamikus programozás: bitsorozat",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "bináris kód",
+      "blokkos feldolgozás"
+    ],
+    "note": "Több helyes kimenet van (a feladat szerint bármelyik megadható), ezért a minta nem egyezik. A kimenetet library/.work/R-086/kodok_check.py ellenőrzi (K ≤ N, a műveletek után a súly ≥ 2N); minden N ≤ 6 bemenetre és véletlen tesztekre sikeres.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/8. Vasutak",
+    "method": "Dijkstra az F–L útra, majd Prim-szerű mohó bővítés az elért városokból",
+    "category": "Gráfok: legrövidebb út, Prim",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "prim"
+    ],
+    "note": "Blokkolt, a megoldás javítandó: a saját kimenet (14877) nem minimális, mert érvényes építési sorrenddel 14841 érhető el. A minta.zip be2 mintájának költsége (14846) szintén nem minimális, és a kipróbált döntetlen-feloldások közül egyik sem adja pontosan a mintát; a kiírási sorrend és irány is eltér.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/9. Hálózat felezés",
+    "method": "Fa-DP: összefüggő N/2 csúcsú részfa minimális határélszáma",
+    "category": "Gráfok: fa-DP",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "dinamikus programozás",
+      "részfa"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

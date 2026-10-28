@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/31. Karavánok találkozása",
+    "method": "Karavánok útjának időbeli szimulálása, oázisonként a köztes érkezések páronkénti összevetése.",
+    "category": "Gráf: útvonal-szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szimuláció", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/32. Oázisok szállásai",
+    "method": "Karavánok útjának szimulálása, oázisonként az éjszakánkénti különböző karavánok maximuma.",
+    "category": "Gráf: útvonal-szimuláció, maximum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szimuláció", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/33. Leghosszabb kör",
+    "method": "Funkcionális gráf bejárása, a lépésszámok különbségéből a körök hossza.",
+    "category": "Gráf: funkcionális gráf",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "funkcionális gráf", "kör"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/34. Telephelyek",
+    "method": "Középpont-keresés: minden csúcsra a három legrövidebb út összköltsége, Floyd–Warshall távolságokkal.",
+    "category": "Gráf: Steiner-fa, Floyd–Warshall",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "legrövidebb út", "steiner-fa"],
+    "note": "Több optimális fa is elfogadható a feladat szerint; a kiírás a mintával egyezik, de más optimum is helyes.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

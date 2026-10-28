@@ -1,7 +1,8 @@
 /*
-Feladat: A lehető legtöbb néző igényét kell kielégíteni úgy, hogy mindenki egyetlen ülőhelyet kapjon a saját tartományán belül.
-Ötlet: A kéréseket a felső határ szerint rendezzük, és minden igénynek a legkorábban szabad ülőhelyet adjuk. Ez a klasszikus interval scheduling / greedy assignment.
-Hint 1: || A szűkebb igényeket érdemes előbb elhelyezni. ||
+Megoldás lényege: Az i-edik igénylő a [s_i, s_i+K] intervallumba eső ülőhelyet kaphat, így a feladat intervallum-pont párosítás. Az igényeket a felső határuk (s_i+K) szerint növekvően dolgozzuk fel, és mindegyiknek a legkisebb még szabad, s_i-nél nem kisebb ülőhelyet adjuk, ha az még belefér az intervallumba; különben az igény kimarad. A legkisebb szabad pont választása mindig a legkevesebb jövőbeli lehetőséget veszi el, ezért a mohó sorrend maximális számú kielégített igényt ad. A szabad ülőhelyeket DSU tartja nyilván, az időigény O(N log N + M α(M)).
+*/
+/*
+Hint 1: || A kérés egy [s, s+K] intervallum; az intervallumok közül a legkorábban záródót érdemes előbb elhelyezni. ||
 Hint 2: || Mindig a legkisebb még szabad helyet add oda, ami belefér a kért intervallumba. ||
 Hint 3: || A szabad helyek kezeléséhez következő szabad hely DSU kell. ||
 */

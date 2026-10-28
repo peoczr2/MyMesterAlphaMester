@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/75. Egyirányú egyensúly ***",
+    "method": "Fiktív csúcs a páratlan fokúakhoz, majd zárt Euler-sétákkal irányítás.",
+    "category": "Gráf: Euler-séta, irányítás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "euler-séta", "irányítás"],
+    "note": "Több jó irányítás van, a feladat szerint bármelyik megadható, ezért a minta „kézi”. A validate.py a be1 és be2 mintán hibásnak jelzi, mert a minta más, de szintén helyes irányítást ad; a kiírt érték egyezik a ki-fájlok első számával (be1: 6, be2: 2080). Ellenőrzés: 600 kis gráfon (N≤6, M≤9, többélű is) kimerítő kereséssel a minimum egyezik, és minden kimenet érvényes; nagy véletlen gráfokon az érték a páratlan fokú csúcsok száma. Ellenőrző: library/.work/HA-060/75/check75.py. A legnagyobb teszten (N=20000, M=50000) a futás 0,02 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/76. Játék a síkon ****",
+    "method": "Kuhn-féle maximális párosítás, majd BFS a nem fedett csúcsokból páros hosszú váltakozó úton.",
+    "category": "Játékelmélet: párosítás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["játékelmélet", "párosítás", "gráf"],
+    "note": "A feladat szerint tetszőleges sorrend megengedett, ezért a minta „kézi”. A validate.py a sorrend miatt hibásnak jelzi, pedig a két minta-kimenet ugyanazt a ponthalmazt adja. Egész koordinátákat feltételeztem (a részfeladatok rácsszerűek). Ellenőrzés: 500 kis ponthalmazon (N≤10) kimerítő játékkereséssel (minimax) egyezett, 25 közepes méretű halmazon pedig a „v nélküli gráf maximális párosítása ugyanakkora” kritériummal. Ellenőrző: library/.work/HA-060/76/check76.py. N=5000 esetén a futás 0,01 s alatt van.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/77. Turista járatok ****",
+    "method": "Blokkbontás (Tarjan élverem) és a DFS-fán lefelé terjesztett látványosság-jelző.",
+    "category": "Gráf: blokkok, összefüggőség",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "blokkok", "mélységi bejárás"],
+    "note": "A városok sorrendje a feladat szerint tetszőleges, ezért a minta „kézi”. A validate.py mindkét mintán kész-t ad, a két minta-kimenet halmaza megegyezik a programéval. Ellenőrzés: 1500 kis gráfon (N≤8, M≤13) az összes egyszerű úton bejáró kimerítő kereséssel egyezett. Ellenőrző: library/.work/HA-060/77/check77.py. A 2. minta (N=10492) 0,005 s, az N=40000, M=400000 teszt 0,09 s alatt fut.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/78. Multiplikátoros telebabrátor ****",
+    "method": "Gyökértől vett XOR-értékek, és bináris trie a legnagyobb XOR-ú pár keresésére.",
+    "category": "Bináris trie: XOR-maximum",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["fa", "xor", "trie"],
+    "note": "Több legtávolabbi csúcs is lehet, a feladat szerint bármelyik megfelel, ezért a minta „kézi”. A PDF példájában a 2. csúcsnál 4 áll, a minta-fájlban 6; mindkettő helyes, mert a távolságuk 7. A validate.py mindkét mintán kész-t ad. Ellenőrzés: 400 véletlen fán (N≤40, súlyok ≤10^9) minden csúcsra BFS-sel mért távolsággal, a két mintán is. Ellenőrző: library/.work/HA-060/78/check78.py. Az N=100000 teszt 0,08 s alatt fut.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

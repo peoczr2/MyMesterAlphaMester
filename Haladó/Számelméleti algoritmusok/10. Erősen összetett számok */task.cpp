@@ -1,8 +1,14 @@
 /*
- * Az erősen összetett számok azok, amelyeknek a pozitív osztóinak száma új
- * rekordot jelent. Minden szám osztószámát megszámoljuk, és a rekordokat kiírjuk.
- 
-Hint 1: || Erősen összetett szám akkor lesz valami, ha az osztóinak száma nagyobb minden kisebb száménál. ||
+Megoldás lényege:
+Minden x <= N számra kiszámoljuk az osztók számát egy szitával: minden d-re a d
+többszöröseinek (d, 2d, 3d, ...) osztószámát eggyel növeljük. Ezután x-et 1-től N-ig
+sorban nézzük, és kiírjuk azokat, amelyek osztószáma nagyobb az addig látott
+összes szám osztószámánál (a futó maximumnál). A szita O(N log N) időben fut,
+ami N <= 1 200 000 esetén bőven belefér az időkorlátba.
+*/
+/*
+Hint 1: || Az osztók számát ne egyenként számold: minden d-re végigmész a d többszörösein, és mindegyiknek eggyel növeled az osztószámát. ||
+Hint 2: || A kiírandó számok azok, amelyek osztószáma szigorúan nagyobb az eddig látott minden számnál; ezt egy futó maximummal követheted. ||
 */
 
 #include "../common.hpp"

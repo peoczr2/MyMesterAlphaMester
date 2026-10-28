@@ -1,0 +1,67 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/13. Csavarok",
+    "method": "Véletlen pivot-rekurzió: egy csavar párja, majd a többi csavar szétosztása",
+    "category": "Párosítás: pivot-rekurzió",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "párosítás",
+      "véletlen pivot",
+      "összehasonlítás"
+    ],
+    "note": "Könyvtáras (speciális) feladat: a validátor csak a task.cpp-t fordítja, a csavarok.h hiányzik, ezért 'hibás' jelzést ad. A minta.zip csavarok.h/.cpp könyvtárával lefordítva be1 és be2 TRUE. A proba-hívások száma n>=40-nél nem garantált: 300 véletlen tesztből n=40-nél 17 lépte túl az n*n/4 korlátot, n=45-nél 7, n=50-nél 3, n=60-nál 0. Ez a kockázat az n≈40–50 tesztekre vonatkozik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku",
+    "problematic": false
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/14. Dominó",
+    "method": "Gráf Euler-út feltétel, páratlan csúcsok párosítása, komponensek mohó összekötése",
+    "category": "Gráf: Euler-út",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "euler-út",
+      "mohó"
+    ],
+    "note": "Több helyes kimenet van (a feladat szerint bármelyik megadható), a validátor pontos egyezést néz: be1 egyezik, be2 eltér, de ugyanaz a minimális összeg (580937, 5 dominó) és a kimenet független ellenőrzővel érvényes (.work/NT-003/14/proto/check_out.py). Kis esetekre (K<=6) brute force-szal is igazolva. Ezért minta: kézi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/15. Úttisztítás",
+    "method": "Komponensenkénti számolás, leveles lehúzással részfa-méretek, körös komponensek külön",
+    "category": "Gráf: fák és körök",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "összeszámlálás",
+      "fa"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/16. Hilbert-görbe",
+    "method": "Hilbert-sorszám bitenkénti számítása, majd rendezés a sorszám szerint",
+    "category": "Geometria: Hilbert-görbe",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "rendezés",
+      "bitek"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/31. Legtöbb idő megállás nélkül *",
+    "method": "Egy bejárásban a valódi megállások közti időszakok maximuma, a végállomás érkezéséig.",
+    "category": "Maximumkeresés: megállás nélküli idő",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "megállás", "időszak"],
+    "note": "A minta be2/ki2 párja hibás: a ki2 szerint 29, a megoldásunk 40. A be2.txt 37. sorában a 36. állomás indulása 594, a 40. sorában (39. állomás) az érkezés 634; a 37. és 38. állomáson nem áll meg (érkezés = indulás), tehát a villamos 594 és 634 között megállás nélkül megy. A 68. és 70. sor (67. indulás 1089, 69. érkezés 1122) szerint egy 33 perces megállás nélküli szakasz is van, így a 29 a feladat definíciójával sem egyeztethető össze. Független, percenkénti szimuláció (library/.work/KH-109/bf/ref.py) a 40-et adja; a PDF-példa (be1: 25) egyezik a megoldásunkkal. Mért idő: 0.002 mp (N=100), időlimit 0,1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/32. Legtöbb várakozási idő egy villamosmegállóban *",
+    "method": "Egy bejárásban az állomásonkénti indulás és érkezés különbségének maximuma, egyenlőségnél a kisebb sorszámmal.",
+    "category": "Maximumkeresés: várakozás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "várakozás", "bejárás"],
+    "note": "Mért idő: 0.002 mp (N=100), időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/33. Leghosszabb szakasz, ahol mindenhol megáll a villamos *",
+    "method": "Egy bejárásban a megállókból álló egymás utáni sorozatok hosszának futó számlálása és maximuma.",
+    "category": "Maximális szakasz: megállók",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["sorozat", "maximum", "feltétel"],
+    "note": "Mért idő: 0.002 mp (N=100), időlimit 0,1 mp. A feladatszöveg nem mondja meg, mi a kimenet, ha egyetlen állomáson sem áll meg a villamos; ekkor 0 0 0-t írunk ki, a 34. feladat analóg esetét követve.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/34. Legtöbb villamosmegálló megállás nélkül *",
+    "method": "Egy bejárásban a nem megálló állomásokból álló egymás utáni sorozatok hosszának maximuma.",
+    "category": "Maximális szakasz: nem megállók",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["sorozat", "maximum", "feltétel"],
+    "note": "Mért idő: 0.002 mp (N=100), időlimit 0,1 mp. Ha minden állomáson megállt a villamos, a feladat szerint 0 0 0 a kimenet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

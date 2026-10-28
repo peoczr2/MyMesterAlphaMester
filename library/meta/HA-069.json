@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/31. Nincs kimérhető tej *",
+    "method": "Szélességi bejárás a három kanna állapotain; a negyedik kanna tartalma a maradék",
+    "category": "Állapottér bejárása",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["állapottér", "szélességi bejárás", "öntögetés"],
+    "note": "A minta.zip be1/be2 bemenete más formátumú (első sor N, utána N szám), és nincs ki-fájl, ezért a validátor nincs minta állapotot ad. A PDF példáján (13 11 5 -> 2, majd 4 9) kézzel ellenőriztem; független Python-keresés 40 véletlen esetben is egyezett.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/32. Összefüggő hálózat *",
+    "method": "Komponensek BFS-sel, a komponensek legkisebb csomópontjainak összekötése láncban",
+    "category": "Gráf: komponensek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összefüggőség", "komponens", "gráf"],
+    "note": "Több megoldás esetén bármelyik megadható (feladatszöveg). A validátor a minta kimenetét pontosan adja vissza; a független ellenőrző library/.work/HA-069/32/check32.py mindkét mintára OK.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/33. Pontok gráfon ***",
+    "method": "Legkisebb összefüggő terület, amelynek határa nem nagyobb nála; BFS és három pontos Steiner-fa",
+    "category": "Gráf: határ és terület",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["játékelmélet", "határ", "gráf"],
+    "note": "A minta be2 hibás: N=20, de 21-es szomszéd szerepel, a 16. pont önmagával szomszédos, a 4. pont listájában a 8 kétszer van. A validátor ezeket a hibás éleket eldobva 2-t ad, és ugyanezt adja a független pontos minimax (library/.work/HA-069/33/bf_safe). A képlet (min összefüggő B, 1 eleme B-ben, határ legfeljebb |B|) több száz véletlen gráfon (N<=18) egyezett a minimaxszal; formális bizonyítás nincs.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/34. Raktár *",
+    "method": "Fa átmérője: két BFS a szabad mezők között",
+    "category": "Gráf: fa átmérője",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["fa", "átmérő", "bfs"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/60. Földrengések",
+    "method": "Intervallumok egy listába gyűjtése, rendezés, balról jobbra haladó maximális rés keresése.",
+    "category": "Intervallumok, rendezés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "rendezés", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/61. Két csoportra osztás",
+    "method": "Pontszámok jelölőtömbbel, szomszédos előfordulók különbségének maximuma.",
+    "category": "Szomszédos különbség",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "különbség", "maximum"],
+    "note": "A feladatszöveg szerint a távolságnak T-nél nagyobbnak kell lennie (szigorúan); a minták ezt az egyenlő esetet nem tartalmazzák.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/62. Rövid földrengések",
+    "method": "Időpontok rendezése, a közöttük lévő szabad percek maximuma.",
+    "category": "Időpontok, szabad percek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "időpont", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/63. Határőrök",
+    "method": "Különbségi tömb (prefixösszeg), leghosszabb nem nulla szakasz, majd maximális nap keresése a szakaszon belül.",
+    "category": "Különbségi tömb, prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["különbségi tömb", "prefixösszeg", "keresés"],
+    "note": "Bizonytalan pont: több azonos hosszú leghosszabb időszak esetén a feladatszöveg nem rögzíti, melyiket kell választani; a megoldás a balról elsőt veszi, a napot pedig ezen belül a legnagyobb darabszámú, legkisebb sorszámú nap adja. A két minta (26/15, 10/4) a második sor „legkisebb sorszámú” szabályát igazolja, a több-időszakos esetet nem tartalmazza.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -9,7 +9,10 @@ tartományban ezekből egyértelműen meghatározható az érték: az összes ne
 10 bites mintához pontosan egy szám tartozik, az összes nulla minta pedig 1024.
 Miután bejelöltük a látott számokat, a hiányzó az első, amely nem szerepelt.
 */
-
+/*
+Hint 1: || Egy 1 és 1024 közötti szám tízbites bináris alakja egyértelmű: ha minden megjelent versenyzőre lekérdezed a 0-tól a 9-ig terjedő biteket, megkapod a rajtszámát. Az 1024 tízbites alakja csupa nulla, ezt külön kezeld. ||
+Hint 2: || Az 1..N-1 sorszámú versenyzőket kérdezd meg, és egy logikai tömbben jelöld, mely rajtszámok szerepeltek. A hiányzó rajtszám az 1 és N közötti első nem jelölt szám. ||
+*/
 #include <bits/stdc++.h>
 #include "valasz.h"
 using namespace std;

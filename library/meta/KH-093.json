@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/39. Vagy csak felszálló vagy csak leszálló *",
+    "method": "Állomásonként a leszállók és felszállók pozitív voltának összevetése egy bejárásban",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "tömb"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa és a minta is stimmel. A (0 0) állomás nem számít.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/4. Csökkent az utasok száma *",
+    "method": "Egy bejárás, az első olyan állomás keresése, ahol a leszállók száma nagyobb a felszállókénál",
+    "category": "Keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "tömb"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa és a minta is stimmel. A feladat nem mondja meg, mi a teendő, ha nincs csökkenő állomás; ekkor 0-t írunk ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/40. Vasút *",
+    "method": "Érkezéskori létszám és a leszállók összevetése egy bejárásban, ha volt utas a vonaton",
+    "category": "Szimuláció",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "feltétel", "összehasonlítás"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A minta stimmel. A feltétel „legalább” (le >= érkezéskori létszám): a példában 20 leszálló van 19 utas mellett, és az egyenlőséggel 1 jönne ki a 2 helyett. Az üres vonaton (pl. Budapest) nem számolunk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/41. Veszteséges-e a vonat üzemeltetése *",
+    "method": "Összes bevétel (utas×szakasz·K) és összes kiadás ((N-1)·M) összevetése egy bejárásban",
+    "category": "Prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "szimuláció", "összegzés"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa és a minta is stimmel. A veszteség a teljes üzemeltetésre értendő (a 10. feladat szemléletét követve); a szakaszonkénti értelmezés is megfelelne a mintának.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

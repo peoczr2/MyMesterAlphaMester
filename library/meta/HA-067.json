@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/24. Két Mérőkanna *",
+    "method": "Szélességi bejárás a két kanna vízmennyiségének (a, b) állapotain",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "szélességi bejárás",
+      "állapottér",
+      "legrövidebb út"
+    ],
+    "note": "A szöveg egy olyan műveletsort kér (\"meghatároz egy olyan műveletsort\"); minimális sorozatból több is lehet, ezért kézi. A minta ezúttal egyedi optimumot ad, a kimenetet a checker (library/.work/HA-067/check.py kanna) is igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/25. Kommandó ***",
+    "method": "Dijkstra a (trikócsere, országok száma) párokon, színváltásonként 1 költséggel",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dijkstra",
+      "súlyozott gráf",
+      "legrövidebb út"
+    ],
+    "note": "A szöveg szerint több azonos értékű megoldás esetén elég egyet megadni, ezért kézi. A checker (library/.work/HA-067/check.py kommando) ellenőrzi a csereszámot, az országszámot és az útvonal érvényességét.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/26. Körút ***",
+    "method": "BFS K-ból ágcímkékkel, a legrövidebb K-n átmenő kör megkeresése",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "kör",
+      "szélességi bejárás",
+      "gráf"
+    ],
+    "note": "A körút leírása „a követelményeknek megfelelő” útvonal, de a szövegben nincs kifejezett „bármelyik megadható” kitétel; a be2 mintától eltérő, de érvényes körutat a checker (library/.work/HA-067/check.py korut) igazolja. A kézi jelölés döntésre vár.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/27. Labirintus **",
+    "method": "Szélességi bejárás (mező, kapcsolóparitás) állapotokon",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "labirintus",
+      "állapot",
+      "paritás"
+    ],
+    "note": "Több megoldás esetén bármelyik megadható (a szöveg szerint), ezért kézi. A feladatlap példája (LJLFJJLLJ), a minta fájl (LFLJJJLLJ) és a saját kimenet (LJJLFJLLJ) is érvényes, 9 lépéses útvonal; a checker (library/.work/HA-067/check.py labirint) mindhármat igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

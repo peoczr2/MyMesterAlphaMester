@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/20. Kukutyinhoz közelebb lévő települések száma *",
+    "method": "Egyszeri bejárás, minden sorban a K < P feltétel ellenőrzése és számlálás.",
+    "category": "Megszámolás: feltétel",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "egyszerű"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/21. Lakatlan territóriumok száma **",
+    "method": "Minden rácspont ellenőrzése: fedi-e valamelyik territórium, és a fedetlenek számlálása.",
+    "category": "Megszámolás: rácsfedés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "rács", "téglalap"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/22. Leghosszabb növekvő szakaszok száma *",
+    "method": "Balról jobbra haladó bejárás: a legtovább növekvő szakaszokat levágva, legalább kételemű szakaszok számlálása.",
+    "category": "Megszámolás: szakaszok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "szakasz", "sorozat"],
+    "note": "Bizonytalan pont: számít-e az egyelemű szakasz, mert a mintákban nincs köztes egyelemű szakasz. A 2. minta (1 2 3 2 5 1 -> 2) alapján csak a legalább kételemű szakaszokat számoljuk. Az, hogy a következő szakasz a végponttól közösen vagy az után kezdődik, nem változtat a számláláson, mert a végpont utáni elem mindig nem nagyobb nála.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/23. Légszennyezettségmérő javításainak száma *",
+    "method": "Az előző és a mai nap értékét párban nézzük; 0-ról pozitívra váltás a javítás.",
+    "category": "Megszámolás: állapotváltás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "állapot"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

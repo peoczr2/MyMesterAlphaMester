@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/20. Folyamatosan áradó, majd apadó árvizek ***",
+    "method": "Árvizek bejárása; minden árvízben szigorúan nő, majd szigorúan csökken a sorozat.",
+    "category": "Szakaszok, monotonitás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "monotonitás", "tömb"],
+    "note": "Értelmezés: az egyenlő egymás melletti vízállások megszakítják a monoton sorozatot; ezt a feladat példája is igazolja (950, 950 nem számít). Mért futásidő N=10000 bemeneten: kb. 0,003 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/21. Harmadfokú készültségű folyószakaszok együttes hossza ***",
+    "method": "Vízállások szintekre bontása, majd a harmadfokú folyószakaszok összegyűjtése egy bejárással.",
+    "category": "Szakaszok, összegzés",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["árvíz", "szakasz", "összegzés"],
+    "note": "A szintek határait szigorúan (meghaladja) értelmeztem; a feladat példája ezt igazolja (1000 cm másodfokú). Mért futásidő N=10000 bemeneten: kb. 0,003 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/22. Harmadfokú pontok között elsőfokút is tartalmazó árvizek ***",
+    "method": "Árvizek bejárása, a harmadfokú pontok közti elsőfokú mérés jelzőkkel való követése.",
+    "category": "Szakaszok, feltételes keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "feltétel", "bejárás"],
+    "note": "Értelmezés: elsőfokú mérés pontosan 800 cm felett, de 900 cm-t nem meghaladó; a minták ezt a 'legalább elsőfokú' olvasattól nem különböztetik meg. Mért futásidő N=10000 bemeneten: kb. 0,003 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/23. Harmadfokúval nem határos másodfokú árvizek együttes hossza ***",
+    "method": "Folyószakaszok szintenkénti kigyűjtése, a másodfokúak szomszédainak ellenőrzése.",
+    "category": "Szakaszok, szomszédság",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["árvíz", "szakasz", "szomszéd"],
+    "note": "Értelmezés: a szomszédság a közvetlenül előtte és utána álló folyószakasz; a minták és a példa az 'ugyanazon árvízen belül' olvasattól nem különböztetik meg. Mért futásidő N=10000 bemeneten: kb. 0,003 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

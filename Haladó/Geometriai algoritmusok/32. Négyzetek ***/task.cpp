@@ -1,6 +1,11 @@
 /*
 Megoldás lényege:
-A négyzetek vagy téglalapok fedését, metszését vagy optimális kiválasztását kell kezelni. A számítás a geometriai átfedések pontos vizsgálatára épül.
+Minden négyzet az első negyedsíkban van (X, Y >= 1), így az origóból induló sugarak szöge (0, pi/2) tartományban mozog. Egy négyzet akkor látható, ha van olyan, pozitív szögméretű sugár-tartomány, amelyen az origóból induló sugár először éppen ezt a négyzetet éri el. Ezért összegyűjtjük az összes csúcspont polárszögét, és minden két szomszédos szög felezőpontjában megkeressük a legközelebbi négyzetet: ezen az intervallumon a legközelebbi négyzet nem változik, mert a négyzetek nem érintkeznek. A sugár és a négyzet metszését tengelyenként (x- és y-sáv) számoljuk. Mivel legfeljebb 4N szögmintánk van, és mindegyiknél N négyzetet vizsgálunk, az idő O(N²).
+*/
+/*
+Hint 1: || Egy négyzet akkor látszik, ha van olyan irány, amerre az origóból induló félegyenes először éppen ezt a négyzetet éri el. Ezt az irány-tartományt kell megtalálni minden négyzetre. ||
+Hint 2: || A négyzetek csúcsainak polárszögei jelölik ki azokat a helyeket, ahol a legközelebbi négyzet megváltozhat. Két szomszédos ilyen szög között a legközelebbi négyzet állandó, ezért elég minden ilyen intervallum közepén megnézni. ||
+Hint 3: || Egy adott irányú sugárra minden négyzetnél vizsgáld meg, mikor lép be és ki a sugár a négyzet x-, illetve y-tartományába. A két intervallum metszetének kezdő pontja adja a belépési távolságot, a legkisebb belépési távolságú négyzet a látható. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

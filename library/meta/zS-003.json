@@ -1,0 +1,36 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/36. Poligon",
+    "method": "Legyezős szögrendezés félsíkonként, az elfogyasztott oldal leválasztásával és visszalépéssel",
+    "category": "Geometria: poligonút",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "poligon",
+      "szögrendezés",
+      "legyező"
+    ],
+    "note": "A feladat „több megoldás esetén bármelyik megadható”. be1: a saját kimenet pontosan egyezik. be2: az első 100 szám egyezik (1 101 100 … 4 3), a 101. helytől eltér (ki2: 410, 113, 125 …; saját: 102, 103 …), de érvényes: a független, egész aritmetikájú O(N²) szakaszmetszés-ellenőrző (library/.work/zS-003/poly/check.cpp) szerint a törtvonal A-ból indul, B-ben végződik, minden pont egyszer szerepel, és semmilyen két nem szomszédos szakasz nem érinti egymást. Kis esetekre (N<=13, sűrű rácsok, egyenesre eső pontok) brute force-szal vetettem össze (poly/harness2.cpp): ahol van megoldás, ~99,995%-ban megtalálja, érvénytelen kimenet 0. Az AB egyenesen álló pontok (A előtt, A és B között, B után) miatt a keresés visszalépéses; megoldhatatlan bemenetekre (pl. A egy kollineáris pontsor közepén) nincs út. N=20000-re ~5 ms.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/39. Facsemete",
+    "method": "Szögrendezés A körül, minimális üres (jobb, bal) fapár keresése szuffix-minimummal",
+    "category": "Geometria: üres háromszög",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "háromszög",
+      "szögrendezés",
+      "szuffix-minimum"
+    ],
+    "note": "Minta 2/2. Ha az AP félegyenesen P mögött áll fa (q; be1-ben és be2-ben is), a két szögben szomszédos fa háromszöge q-t tartalmazhatja: be2-ben a szomszédos pár (153, 920) tartalmazza a q-t (1730), az O(N²) felsorolás szerint pontosan egy jó háromszög van (2495 741). A módszert kis esetekre (N<=70, rácsok, kollineáris q) teljes felsorolással, N<=2000-re O(N²) számolóval vetettem össze (library/.work/zS-003/tree/): 0 eltérés. N=10^5-re ~0,03 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  }
+]

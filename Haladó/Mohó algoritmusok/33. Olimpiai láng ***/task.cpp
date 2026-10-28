@@ -1,9 +1,11 @@
 /*
-Feladat: A lángot a célba a lehető legkevesebb futóval kell eljuttatni.
-Ötlet: A pillanatnyi határig elérhető futók közül mindig a legtovább vivőt választjuk. Ez az intervallumfedés klasszikus mohója.
-Hint 1: || Az aktuális kilométerig az összes olyan futó szóba jöhet, aki eddig elindulhat. ||
-Hint 2: || Ezek közül a legtávolabbra nyúló futóval érdemes továbbmenni. ||
-Hint 3: || Ha nem találsz új futót, akkor nincs megoldás. ||
+Megoldás lényege:
+A futókat a kezdő kilométerük szerint dolgozzuk fel, és az aktuális pontig elérhető futók közül mindig azt választjuk, aki a legtávolabbra (kezdet + H) viszi a lángot. Ez az intervallumlefedés klasszikus mohója: a legtávolabbi elérhető pont minden lépésben a lehető legtöbbet adja, ezért a futók száma minimális. Mivel minden futó pontosan H kilométert fut, a kiválasztott futók kezdőpontjai növekvők lesznek, és a lánc feltétele automatikusan teljesül. A rendezés miatt az időigény O(N log N). Ha egyik elérhető futó sem visz tovább az aktuális pontnál, a láng nem juttatható célba, és a válasz 0.
+*/
+/*
+Hint 1: || Tekintsd az aktuális pontot haladó határnak: a futók közül csak azok jöhetnek szóba, akiknek a kezdőpontja nem nagyobb ennél. ||
+Hint 2: || Ezek közül mindig a legtávolabbra érő futót (kezdőpont + H) válaszd, és a határt erre a távolságra toljuk. ||
+Hint 3: || Rendezd a futókat kezdőpont szerint, és egy mutatóval haladj végig; ha nincs olyan futó, aki a határt tovább tolja, a válasz 0. ||
 */
 
 #include <bits/stdc++.h>

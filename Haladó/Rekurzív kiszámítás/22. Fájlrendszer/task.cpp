@@ -1,30 +1,21 @@
 /*
 Megoldás lényege:
-A fa olyan mappákat tartalmaz, ahol a hiányzó értékek a gyökértől lefelé, az egygyerekes
-láncokon keresztül rögzülnek. A végül fix értéket kapó levelek összegét levonjuk a gyökér
-értékéből, a többi hiányzó levél pedig szabad változó marad. Ezek elosztásainak száma
-egy stars-and-bars kombináció.
+Egy mappa fájlszáma a gyermekmappáinak fájlszámainak összege, a levelek fájlszáma pedig
+vagy ismert, vagy szabad. Alulról felfelé minden részfához azt tároljuk, hogy az összege már
+rögzült-e, vagy hogy legalább mennyi és hány szabad levél van benne. Ismert értékű mappánál
+a szabad levelek közötti maradékot csillag-rúd módszerrel (stars and bars) osztjuk szét.
+Minden csomópontot O(1) plusz a szétosztás költsége dolgoz fel, így az összes munka O(N).
 
 */
-
-// Hint 1: || Az egygyerekes, ismert értékű csomópontok csak továbbadják a fix értéket. ||
-// Hint 2: || A végső szabadságfokok a valóban ismeretlen levelekből jönnek. ||
-// Hint 3: || A maradékot egyszer kell kombinatorikusan elosztani a szabad levelek között. ||
-
+/*
+Hint 1: || Egy mappa fájlszáma a közvetlen gyermekmappáinak fájlszámának összege; egy levél fájlszáma ismert, vagy szabadon választható. ||
+Hint 2: || Alulról felfelé számolj: minden részfához elég tudni, hogy az összege rögzült-e, vagy legalább mennyi, és hány szabad levél van benne. ||
+Hint 3: || Ha egy ismert értékű mappa alatt k szabad levél van, és a rögzített részek összege s, a maradék R-s egész számot kell k levél között szétosztani: ennek C(R-s+k-1, k-1) módja van. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
 static const long long MOD = 1000000007LL;
-
-static long long modPow(long long a, long long e) {
-    long long r = 1;
-    while (e > 0) {
-        if (e & 1) r = r * a % MOD;
-        a = a * a % MOD;
-        e >>= 1;
-    }
-    return r;
-}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -84,7 +75,8 @@ int main() {
         int freeCnt = 0;
     };
 
-    function<Form(int)> dfs = [&](int u) -> Form {
+    vector<Form> res(N + 1);  // a csúcsok részeredményei; a gyerekek mindig előbb készülnek el
+    auto dfs = [&](int u) -> Form {
         Form cur;
 
         if (children[u].empty()) {
@@ -102,11 +94,11 @@ int main() {
         }
 
         if ((int)children[u].size() == 1) {
-            cur = dfs(children[u][0]);
+            cur = res[children[u][0]];
             if (!cur.ok) return cur;
         } else {
-            Form a = dfs(children[u][0]);
-            Form b = dfs(children[u][1]);
+            Form a = res[children[u][0]];
+            Form b = res[children[u][1]];
             if (!a.ok || !b.ok) {
                 cur.ok = false;
                 return cur;
@@ -158,7 +150,17 @@ int main() {
         return cur;
     };
 
-    Form root = dfs(1);
+    // Iteratív bejárás (nincs rekurzió, így a láncszerű, 10^5 mély fa sem okoz veremtúlcsordulást):
+    // a szülő az order-ben a gyermeke előtt áll, ezért fordított sorrendben a gyerekek már készek.
+    vector<int> order, stk = {1};
+    while (!stk.empty()) {
+        int u = stk.back();
+        stk.pop_back();
+        order.push_back(u);
+        for (int c : children[u]) stk.push_back(c);
+    }
+    for (int idx = (int)order.size() - 1; idx >= 0; --idx) res[order[idx]] = dfs(order[idx]);
+    Form root = res[1];
     if (!root.ok || !root.delta || val[1] == -1 || root.fixed != val[1]) {
         cout << 0 << '\n';
         return 0;

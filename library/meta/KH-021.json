@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/5. Éppen minimális pontszámú kutyák *",
+    "method": "Soronkénti bejárás: a kutya bekerül, ha valamely szempontban pontosan az alsó határt éri el",
+    "category": "Szűrés, ponthatár-egyezés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "szűrés", "egyezés"],
+    "note": "A ponthatár-egyezés szempontonként külön számít; a kiesett kutya is bekerülhet, ha máshol pontosan az alsó határt éri el (a be2 minta 1. kutyája így szerepel).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/6. Győztesek csak maximális pontszámmal *",
+    "method": "Szempontonkénti legjobb pont, majd annak ellenőrzése, hogy minden győzelem a maximumon van",
+    "category": "Szempontonkénti maximum, feltétel",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "feltétel", "mátrix"],
+    "note": "Bizonytalan pont: a feladat nem mondja ki, hogy csak az lehet a kimenetben, aki legalább egyszer győzött; a minták szerint a sosem győztes kutya kimarad. A holtverseny is győzelem (be2: a 3. és 6. kutya közös 9-es pontja). A „maximális pontszám” a szempont megadott Max értéke (be1: a 4. kutya több szempontban is győz, de a 9-es maximumot sehol sem éri el, ezért kimarad).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/7. Ha nyertek valamilyen szempont szerint, akkor azt holtversenyben nyerték *",
+    "method": "Szempontonkénti legjobb pont és darabszám; a holtversenyes győztesek kiválogatása",
+    "category": "Holtverseny, szempontonkénti maximum",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["holtverseny", "maximum", "mátrix"],
+    "note": "Bizonytalan pont: a szó szerinti olvasat („minden győzelme holtverseny”) cáfolja a mintát, mert a be1 4. kutya a 3–7. szempontban egyedül győz, mégis szerepel a kimenetben. Ezért a megoldás azokat írja ki, akik legalább egy szempontban holtversenyben győztek (közös legjobb pont, ami legalább az alsó határ); mindkét mintával egyezik. A szó szerinti olvasatot nem követtem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/8. Kieső kutyák pontszámai *",
+    "method": "Bejárásban összegzés; a ponthatár alatt maradó kutyák összpontszámának kiírása",
+    "category": "Összegzés, kiesés-szűrés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "szűrés", "mátrix"],
+    "note": "A „pontszám” a kiesett kutya összes szempontbeli pontjának összege (be1: 48 = 8+4+6·6). A kiesés globális: a kutya akkor esik ki, ha bármely szempontban az alsó határ alatt van.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

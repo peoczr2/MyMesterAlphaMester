@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/28. Olcsó és egyben nagy lakások száma *",
+    "method": "Feltételes számlálás: egy beolvasás, két feltétel együttes teljesülése.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "beolvasás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/29. Órát tartó tanárok száma naponként **",
+    "method": "Logikai táblázat (nap, tanár) jelöléssel, majd soronkénti megszámolás.",
+    "category": "Megszámolás: egyedi párok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "táblázat", "egyediség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/3. Bináris alak 1-esei *",
+    "method": "Maradékos osztással (2-vel) kinyert számjegyek 1-eseinek számlálása.",
+    "category": "Számjegyek számlálása",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "bináris", "maradékos osztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/30. Őrzött falak száma *",
+    "method": "Szomszédos elempárok bejárása egy ciklusban, logikai VAGY feltétellel.",
+    "category": "Szomszédos párok számlálása",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "tömb", "szomszédság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

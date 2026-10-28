@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/9. Tőzsdei stabilitás- 2006. május",
+    "method": "Szomszédos különbségek összegzése cégenként, majd a minimum és a minimumot elérők kiválogatása",
+    "category": "Összegzés és minimumkeresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "minimum", "összegzés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/17. Játék",
+    "method": "Aho–Corasick-automata a kombinációkra, dp a K gombnyomás állapotaira",
+    "category": "Mintaillesztés: Aho–Corasick",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "aho-corasick",
+      "dinamikus programozás",
+      "trie"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/18. Fantasztikus feladat",
+    "method": "Prímenként szomszédos párok intervallum-lefedése, módosításnál inkrementális frissítés",
+    "category": "Számelmélet: prímosztók, intervallumok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prímosztó",
+      "intervallum",
+      "inkrementális"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/2. Robotok összegyűjtése",
+    "method": "Állapotpárok visszafelé BFS-e: minden pár összevonható-e, ekkor van szinkronizáló szó",
+    "category": "Gráf: szinkronizáló szó",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "automata",
+      "bfs",
+      "állapotpárok"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/3. Hálózati átvitel",
+    "method": "Élek sebesség szerinti hozzáadása, inkrementális Dijkstra a K-költségen belül",
+    "category": "Gráf: legszélesebb út",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "inkrementális"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

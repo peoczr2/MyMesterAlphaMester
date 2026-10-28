@@ -1,14 +1,16 @@
 /*
 Megoldás lényege:
-Az azonos színű négyzetekhez 0+szín kódot írunk, az eltérő színű területeket pedig
-négy negyedre bontjuk, és rekurzívan kódoljuk. A kész kódhalmazt lexikografikus
-sorrendben a negyedek bejárási sorrendje adja.
-
+Az azonos színű négyzetekhez 0 + szín kódot írunk, az eltérő színű területeket pedig négy negyedre
+bontjuk, és rekurzívan kódoljuk a negyedeket 1, 2, 3, 4 sorrendben. Mivel a '0' karakter kisebb
+minden számjegynél, ez a bejárási sorrend már lexikografikus, a végső rendezés ezt csak biztosítja.
+Egy csomópont színellenőrzése a négyzet területével arányos, így az összes szinten együtt az
+időigény O(N² log N).
 */
-
-// Hint 1: || Ha egy négyzet egyszínű, azonnal kész a kódja. ||
-// Hint 2: || Egy nem homogén tartományt mindig ugyanarra a négy részre bontunk. ||
-// Hint 3: || A kimenethez elég egy DFS, ami 1-2-3-4 sorrendben halad. ||
+/*
+Hint 1: || Ha egy négyzet egyszínű, azonnal kész a kódja. ||
+Hint 2: || Egy nem homogén tartományt mindig ugyanarra a négy részre bontunk. ||
+Hint 3: || A kimenethez elég egy DFS, ami 1-2-3-4 sorrendben halad. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

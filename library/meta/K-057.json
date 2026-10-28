@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/79. Generátor ***",
+    "method": "Értékenkénti prefixösszegek, lekérdezésenként az előforduló értékek megszámolása.",
+    "category": "Megszámolás: prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "prefixösszeg", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/8. Futamok száma **",
+    "method": "Egy bejárás: az előjelváltásoknál új futam kezdődik, a határelem mindkettőhöz tartozik.",
+    "category": "Megszámolás: futamok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "sorozat", "monotonitás"],
+    "note": "A feladatszöveg („folyamatosan nő / csökken”) nem dönti el egyértelműen, hogy az egyenlő szomszédos elemek megszakítják-e a futamot. A megoldás szigorúan értelmez (egyenlő pár megszakítja a futamot). A mintákban nincs egyenlő szomszédos pár, ezért a minta ezt nem igazolja; a teszteknél ellenőrizendő.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/80. Falfestés",
+    "method": "Kőnként az utolsó két festés színének követése rácson.",
+    "category": "Megszámolás: rácsszimuláció",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "mátrix", "szimuláció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/81. Telekocsi",
+    "method": "Városonként a minimum: az autók 3-szoros férőhelye és az utasok száma.",
+    "category": "Megszámolás: csoportosítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "csoportosítás", "minimum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

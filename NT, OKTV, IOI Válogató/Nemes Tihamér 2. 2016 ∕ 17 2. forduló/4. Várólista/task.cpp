@@ -1,11 +1,19 @@
+/*
+    A páciensek érkezési sorrendben kerülnek ellátásra, így minden beteg kezdési
+    ideje az előző kezelés végének és a saját érkezésének maximuma. A várakozási
+    idő a kezdési idő és az érkezés különbsége. A várakozók száma az
+    [érkezés, kezdés) félig nyílt intervallumok átfedése: sweep line-nal számoljuk,
+    az érkezéseket +1, a kezdéseket -1 eseménynek véve. Azonos időpontban előbb a
+    -1 eseményeket dolgozzuk fel, mert a kezdett kezelés már nem várakozás.
+    Időigény: O(N log N).
+*/
+/*
+Hint 1: || Egy beteg kezdési ideje az érkezése és az előző beteg kezelésének vége közül a későbbi. A várakozása ebből a saját érkezési idejének levonásával adódik. ||
+Hint 2: || A várakozás egy [érkezés, kezdés) időintervallum. Rendezd az eseményeket időpont szerint: az érkezés +1, a kezdés -1, és azonos időpontban a -1 kerüljön előre. Az összegzett érték maximuma adja a B kérdés válaszát. ||
+Hint 3: || Akinek a várakozása 0, azt nem kell az eseménysorba tenni, mert üres az intervallum. Az A kérdésnél elég egy bejárás a maximális várakozás keresésére, egyenlőség esetén a kisebb sorszám marad. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A páciensek érkezési sorrendben kerülnek ellátásra. Az egyes várakozási
-    időket egyszerűen kiszámoljuk a kezdési időből, majd az [érkezés, kezdés)
-    intervallumok maximum átfedését sweep line-nal kapjuk meg.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

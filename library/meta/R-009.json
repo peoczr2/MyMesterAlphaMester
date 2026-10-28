@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/85. Szavak **",
+    "method": "Két oldali hátizsák-DP a betűhosszak különbségére, közös összeggel, visszafejtéssel.",
+    "category": "Dinamikus programozás: hátizsák",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus programozás", "hátizsák", "lineáris egyenlet"],
+    "note": "A minta.zip 2. esetében a minta I→A, V→AA helyettesítést ad, a megoldás I→AA, V→A-t; mindkettőben L=223, a feladat olyan helyettesítést kér, így több helyes kimenet van, ezt ellenőrző program igazolta.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/88. Táblás játék csapdákkal és gyöngyökkel *",
+    "method": "Rács-DP: mezőnkénti legjobb gyöngyszám, az előd irányának eltárolásával.",
+    "category": "Dinamikus programozás: rács",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["dinamikus programozás", "rács", "visszafejtés"],
+    "note": "A minta.zip mindkét esetében a pontszám egyezik, de az útvonal más (a feladat szerint bármelyik optimális megadható); ellenőrző program igazolta az útvonal érvényességét és az optimumot.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/90. Táblás játék legkevesebb lépéssel ***",
+    "method": "Oszloponkénti két söprés (fel és le) DP-vel, a legrövidebb lépésszám visszafejtésével.",
+    "category": "Rács: legrövidebb út",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["rács", "legrövidebb út", "visszafejtés"],
+    "note": "A minta.zip mindkét esetében a lépésszám egyezik, de az útvonal más (a feladat szerint bármelyik legrövidebb megadható); ellenőrző program igazolta az érvényességet és a legkisebb K-t.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/93. Tükörszó betűk beszúrásával **",
+    "method": "Palindrommá kiegészítő intervallum-DP, majd a célszó követése beszúrásokkal.",
+    "category": "Dinamikus programozás: palindrom",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "palindrom", "beszúrás"],
+    "note": "A minta.zip mindkét esetében az M egyezik, de a beszúrási pozíciók és karakterek mások (a feladat szerint bármelyik megadható); ellenőrző program igazolta, hogy a kapott szó tükörszó és M minimális.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/96. Ülőhely igénylés **",
+    "method": "Határidő szerint rendezés, majd DP a foglalt helyek számára, visszafejtéssel.",
+    "category": "Dinamikus programozás: határidős ütemezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "ütemezés", "határidő"],
+    "note": "A minta.zip mindkét esetében a bevétel és a K egyezik, de a jegykiosztás más (a feladat szerint bármelyik érvényes kiosztás megadható); ellenőrző program igazolta a kiosztás érvényességét és a bevétel optimumát.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/97. Városnézés **",
+    "method": "Topologikus sorrend (i<j) és élszám-DP leghosszabb útra, szülőél-visszafejtéssel.",
+    "category": "Dinamikus programozás: DAG",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["dinamikus programozás", "dag", "útvonal"],
+    "note": "A minta.zip be1 esetében a ki1.txt második sora „1”, pedig K=0 esetén üres kell legyen, és nincs 1-es városból induló járat (brute force igazolja K=0-t); be2-ben K=2 egyezik, de a járatsor más (a feladat szerint bármelyik megadható).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

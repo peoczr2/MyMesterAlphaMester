@@ -1,8 +1,8 @@
 /*
 Megoldás lényege:
 Legyen a start az egyetlen olyan csúcs, amelybe nem vezet él, a cél pedig az,
-amelyből nem vezet él. Egy start-tól célig vezető útvonalakra keresett két pont
-pontosan egy 2 elemű csúcsvágás.
+amelyből nem vezet él. A keresett két pont olyan legfeljebb 2 elemű csúcshalmaz,
+amely minden start-cél utat metsz (csúcsvágás).
 
 A gráfot csúcsszétválasztással alakítjuk át: minden belső csúcsból in->out él lesz
 1 kapacitással, a startból és a célból pedig INF kapacitású él. Az eredeti élek
@@ -11,7 +11,11 @@ számolunk (Edmonds-Karp BFS-sel). Ha legalább 3 egység flow van, akkor nincs 
 pont, különben a maradék gráfban a source-ból elérhető in/out határán lévő csúcsok
 adják a minimális vágást. Egyetlen ilyen csúcs esetén ugyanazt kétszer írjuk ki.
 */
-
+/*
+Hint 1: || A start és a cél csúcsát a fokszámokból kapod: a startba nem fut be él, a célból nem indul ki él. A keresett pontok minden start-cél utat el kell hogy vágjanak. ||
+Hint 2: || Két csúcs elvágása csúcsvágási feladat: minden csúcsot két részre bonthatsz (be és ki), így a csúcsok kapacitása egységnyi lesz, az élek pedig végtelen kapacitásúak. ||
+Hint 3: || Max-folyammal (például Edmonds–Karp-pal) számold a csúcsdiszjunkt start-cél utakat, de elég legfeljebb 3 egységig. Ha legalább 3 út van, nincs megfelelő pár; különben a minimális vágás csúcsai adják a választ. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

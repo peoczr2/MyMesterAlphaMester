@@ -1,0 +1,64 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/28. Számok- 2013. május angol",
+    "method": "Egy bejárás: számlálás, tömbös gyakoriság, szélsőérték-keresés és halmaz",
+    "category": "Lineáris bejárás, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "számlálás",
+      "tömb",
+      "halmaz"
+    ],
+    "note": "A 4. részfeladat témakör-sorrendje tetszőleges (a feladat szerint nem számít); a minta más sorrendet ad, ezért a validátor eltérést jelez. A library/.work/KH-028/check.py a témakör-listát sorrendtől függetlenül hasonlítja össze; minden más rész egyezik a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/29. Kozúti ellenőrzés - 2013. október",
+    "method": "Másodpercre váltás, óránkénti első jármű, futó 300 másodperces ellenőrzési határidő",
+    "category": "Szimuláció, időintervallumok",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "idő",
+      "halmaz",
+      "karakterlánc"
+    ],
+    "note": "Bizonytalan pontok: (1) a munkaórák száma a legkorábbi és a legkésőbbi áthaladás órái közötti összes óra (a minta ezt igazolja); (2) az ellenőrzés határán, pontosan 300 másodperccel később érkező jármű szabadnak számít, a szöveg ezt nem mondja, a minta nem teszteli; (3) az 5. és 6. részfeladat rendszámai ismétlés nélkül, betűrendben (a minta így van, a szöveg nem írja elő).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/3. Vigenere tabla - 2005. oktober",
+    "method": "Karakterek sorszámának összege modulo 26, a kulcs ismétlésével",
+    "category": "Moduláris aritmetika, titkosítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "titkosítás",
+      "modulo",
+      "karakterlánc"
+    ],
+    "note": "A minta ki1.txt és ki2.txt UTF-16 LE kódolású (BOM), a validate.py UTF-8-ként olvassa, ezért 'hibás'-nak jelzi. Dekódolva mindkét minta egyezik a kimenettel (library/.work/KH-028/check.py).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/30. kidolgozás alatt",
+    "method": "",
+    "category": "",
+    "difficulty": 3,
+    "goal": "",
+    "tags": [],
+    "note": "Nincs megoldás: a feladat.pdf csak a 'Kidolgozás alatt' címlapot tartalmazza, feladatszöveg és minta.zip nincs, ezért task.cpp nem készült. A method, category, goal, tags és difficulty nem tölthető ki.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

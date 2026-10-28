@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/42. Öt évnél hosszabb *",
+    "method": "Lineáris bejárás: a háború hossza (kezdő- és befejező évvel együtt) összevetése O-val.",
+    "category": "Intervallumok: hossz szerinti számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "számlálás", "feltétel"],
+    "note": "A szöveg a háborúkra „N sorban” kifejezést használ, a helyes szám K (a be2 minta K=623 sort tartalmaz); a megoldás K sort olvas. A háború éveit a kezdő- és a befejező évvel együtt számoljuk: a be1 minta (O=5, 1770–1775 háború) ezt igazolja, a kimenet 6. Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/43. Részben adott századi háborúk száma *",
+    "method": "Lineáris bejárás: a háború átfedi-e a megadott század évtartományát.",
+    "category": "Intervallumok: átfedés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "átfedés", "feltétel"],
+    "note": "A szöveg a háborúkra „N sorban” kifejezést használ, a helyes szám K (be2: K=623); a megoldás K sort olvas. Az utolsó sor „XIX.” alakú, a program csak a betűket veszi figyelembe. A századok évtartománya: XVII. 1601–1700, XVIII. 1701–1800, XIX. 1801–1900; a be1 minta (XIX. → 1) a 1801-es kezdőéret igazolja. Mért futásidő legnagyobb bemeneten: kb. 3 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/44. Több háború *",
+    "method": "Évenkénti változási események rendezett map-ben, a legalább Y-os szakaszok hosszának összegzése.",
+    "category": "Intervallumok: eseménypont-bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "eseménypont", "rendezés"],
+    "note": "A szöveg a háborúkra „N sorban” kifejezést használ, a helyes szám K (be2: K=623); a megoldás K sort olvas. A befejező év is a háborús évek közé tartozik: a be1 minta (Y=3) 21-et ad, félig nyílt intervallummal 18 jönne ki. Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/45. Több törzs *",
+    "method": "Törzsenkénti aktív háborúszámláló és eseménypont-bejárás: legalább Y különböző törzs szakaszai.",
+    "category": "Intervallumok: eseménypont-bejárás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "eseménypont", "számlálás"],
+    "note": "A szöveg a háborúkra „N sorban” kifejezést használ, a helyes szám K (be2: K=623); a megoldás K sort olvas. A törzseket különbözőként számoljuk, nem a háborúkat: a be1 minta (Y=3) 45-öt ad, a háborúszámmal számolva 21 jönne ki. Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 3 ms, időlimit 0,3 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

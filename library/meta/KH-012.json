@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/13. Legmagasabb átlagpontszámú szempont *",
+    "method": "Szempontonként az összes pontot összegezzük, és a legnagyobb összegű szempontot keressük",
+    "category": "Átlagszámítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["átlag", "tömb", "maximumkeresés"],
+    "note": "A minta.zip be2.txt / ki2.txt párja hibás: a ki2.txt első sora 0, de a feladat szerint a szempont sorszámát kell kiírni (1–8 között), és ebben a feladatban nincs „nincs megoldás” eset. A be2.txt szempontonkénti átlagai: 7.67, 5.83, 6.33, 6.17, 7.17, 5.83, 6.17, 6.00, így az 1. szempont az egyértelmű maximum; a megoldás ezt írja ki. Az ellenőrzést a library/.work/KH-012/t1/check_be2.py és a library/.work/KH-012/ref/brute.py (400 véletlen teszt) igazolja. A be1.txt, a ki1.txt és a feladat példája egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/14. Kiesők átlagpontszáma a legmagasabb *",
+    "method": "Szempontonként a kiesők pontösszegét és darabszámát gyűjtjük, majd átlagot hasonlítunk össze",
+    "category": "Szűrt átlagszámítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["átlag", "szűrés", "maximumkeresés"],
+    "note": "A kiesés szempontonként értendő: a kutya a j. szempont szerint akkor esik ki, ha a j. pontja kisebb a j. alsó ponthatárnál. Ez az értelmezés egyezik a feladat példájával (a 2. szempont kiesője 4 pontot kapott, a válasz 2) és a minta.zip mindkét párjával; a kutyánkénti kiesés a példán más eredményt adna. Ha nincs egyetlen kiesés sem, a megoldás -1-et ír ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/15. Kiesők nélküli átlagpontszám a legmagasabb *",
+    "method": "Szempontonként a ponthatárt elérő kutyák pontjait átlagoljuk, és a legnagyobb átlagút keressük",
+    "category": "Szűrt átlagszámítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["átlag", "szűrés", "maximumkeresés"],
+    "note": "A kiesés szempontonként értendő (lásd a 14. feladatot): a kiesőt csak abban a szempontban hagyjuk ki az átlagból, amelyben az alsó ponthatár alatt maradt. Az értelmezést a feladat példája és a minta.zip mindkét párja igazolja. Ha egyik szempontban sincs bent maradó kutya, a megoldás -1-et ír ki; erre a feladatszöveg nem ad szabályt, ez csak védelmi ág.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/16. Legkevesebb kieső *",
+    "method": "Szempontonként megszámoljuk a ponthatár alatti pontokat, és a legkevesebbet keressük",
+    "category": "Számlálás, minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "minimumkeresés", "tömb"],
+    "note": "A kiesés szempontonként értendő (lásd a 14. feladatot). A minta.zip mindkét párja és a feladat példája egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,9 +1,11 @@
 /*
-Feladat: A lehető legtöbb előadást kell megtartani két teremben úgy, hogy egy teremben ne legyen ütközés.
-Ötlet: Sorban, befejezési idő szerint nézve mindig azt az előadást tesszük be, amelyik az egyik szabad teremre még ráfér. Ha mindkét terem foglalt, akkor az aktuális előadást kihagyjuk.
-Hint 1: || A legkorábban befejeződő előadások hagyják meg a legtöbb lehetőséget. ||
-Hint 2: || Egy előadás csak akkor mehet egy terembe, ha az előző ott már befejeződött. ||
-Hint 3: || Két terem esetén elég két utolsó befejezési időt nyomon követni. ||
+Megoldás lényege:
+Az előadásokat befejezési idő szerint növekvő sorrendben dolgozzuk fel, és minden előadást olyan teremnek adunk, amelyben az utolsó előadás már befejeződött az új kezdés előtt. Ha mindkét terem megfelel, azt választjuk, amelyik később szabadult fel, így a korábban szabaduló terem szabad ideje megmarad a későbbi előadásoknak. Ha egyik terem sem szabad, az előadást kihagyjuk. Ez a mohó választás maximális számú előadást ad, és mivel a feldolgozás befejezési idő szerint halad, a termekben az előadások időrendben követik egymást. Két teremnél elég két utolsó befejezési időt nyilvántartani, az időigény O(N log N).
+*/
+/*
+Hint 1: || A legkorábban befejeződő előadások hagyják meg a legtöbb lehetőséget a többi előadásnak, ezért ezekkel érdemes kezdeni. ||
+Hint 2: || Egy előadás egy terembe csak akkor mehet, ha a kezdési ideje nagyobb a teremben lévő utolsó előadás befejezési idejénél. ||
+Hint 3: || Ha mindkét terem szabad, a később felszabaduló (nagyobb befejezési idejű) terem kapja az előadást, így a másik terem korábbi szabadsága megmarad. ||
 */
 
 #include <bits/stdc++.h>
@@ -33,10 +35,12 @@ int main() {
     int endA = 0, endB = 0;
     vector<int> roomA, roomB;
     for (const auto &ev : a) {
-        if (ev.s > endA) {
+        bool fitA = ev.s > endA, fitB = ev.s > endB;
+        // a szabad termek közül azt választjuk, amelyik később szabadult fel
+        if (fitA && (!fitB || endA >= endB)) {
             endA = ev.e;
             roomA.push_back(ev.id);
-        } else if (ev.s > endB) {
+        } else if (fitB) {
             endB = ev.e;
             roomB.push_back(ev.id);
         }

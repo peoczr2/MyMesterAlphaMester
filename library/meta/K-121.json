@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/16. Gombaszedés **",
+    "method": "Rendezés súly szerint, majd szimuláció a kapacitás és a Csiperke-szabály szerint.",
+    "category": "Mohó kiválasztás, rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "mohó", "szimuláció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/17. Igazságos edző **",
+    "method": "Posztonkénti számlálás, majd a minimális indulásszámú versenyzők kiválogatása.",
+    "category": "Számlálás, gyakoriság",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "gyakoriság", "minimum"],
+    "note": "Az igazságossági ellenőrzésbe a tartalék poszt is beletartozik (a szöveg szerint „minden poszton”); a mintán ez nem dől el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/18. Királyok száma kiknek gyermeke nem volt király **",
+    "method": "Két halmaz: van-e gyereke, és van-e királyként szereplő gyereke.",
+    "category": "Halmazok, szülő-gyerek kapcsolat",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["halmaz", "szülő-gyerek", "beolvasás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/19. Könyvbírálók ****",
+    "method": "Négy alsó korlát maximuma: fontos lánc, bíráló-összmunkák, legnagyobb könyv.",
+    "category": "Alsó korlát, ütemezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["ütemezés", "alsókorlát", "bizonyítás"],
+    "note": "A képlet (a négy alsó korlát maximuma) kis esetekre egységidős kereséssel igazolva; általános bizonyítás nincs leírva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

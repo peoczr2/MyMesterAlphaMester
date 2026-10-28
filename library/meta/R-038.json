@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/44. Tópart ***",
+    "method": "Kör egyenessé vágása, ugrótábla (bináris emelés) és mohó intervallumválasztás.",
+    "category": "Mohó: körös intervallumütemezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["mohó", "intervallum", "kör", "ugrótábla"],
+    "note": "Több helyes kimenet: a 2. mintában a 7 4 38 20 és a program 7 4 16 20 is 4 diszjunkt szakasz, mindkettő maximális (ellenőrző: verify44.py). A feladat maximális halmazt enged, ezért kézi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/45. Ütemezés ***",
+    "method": "Határidő szerinti rendezés, és a leghosszabb elem eldobása túlcsordulás esetén.",
+    "category": "Mohó: ütemezés határidővel",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "ütemezés", "prioritási sor", "határidő"],
+    "note": "Több helyes kimenet: a mintákban ugyanaz a kiválasztott halmaz szerepel, csak a sorrend tér el (pl. 1. minta: 5 2 3 és a program 2 5 3); a feladat bármely határidőket betartó sorrendet enged, ezért kézi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/46. Vasút *",
+    "method": "Mohó bejárás balról, az utolsó állomás előtti megállót a T(N)-K határig keresve.",
+    "category": "Mohó: megállók kiválasztása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mohó", "tömb", "távolság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/47. Vendégség **",
+    "method": "A találkozások száma a nem találkozók darabszámából adódik prefix- és szuffixösszeggel.",
+    "category": "Prefixösszeg: találkozások",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "intervallum", "számlálás"],
+    "note": "A be1/ki1 minta („3 2”) ellentmond a szövegnek (első szám = találkozások száma): brute force szerint a 3. vendég találkozott a legkevesebb vendéggel (2 db), így a helyes kimenet „2 3”. A be2/ki2 minta („8 1”) a szöveggel egyezik; a program mindkettőre a szöveg szerinti sorrendet adja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/48. Vizirendőr **",
+    "method": "Az első lefedetlen településhez a folyásirányban legtávolabbi, még elérhető állomást választjuk.",
+    "category": "Mohó: intervallumlefedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "lefedés", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/49. WiFi **",
+    "method": "Balról jobbra, az első lefedetlen házhoz a hatótávolságon belül legjobbra eső házra telepítünk.",
+    "category": "Mohó: pontlefedés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mohó", "lefedés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

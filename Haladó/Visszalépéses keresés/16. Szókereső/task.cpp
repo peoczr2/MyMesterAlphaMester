@@ -1,9 +1,13 @@
 /*
-Hungarian megoldás: a szókeresést DFS-sel végezzük a rácson, négy irányban
-mozogva, minden mezőt legfeljebb egyszer használva.
-
-Hint 1: || Ha a szó első betűje megvan, onnan folytatható a keresés. ||
-Hint 2: || A találat útvonala a lépések irányából közvetlenül kiírható. ||
+Megoldás lényege: minden olyan mezőből mélységi keresést (DFS) indítunk, ahol a szó első betűje áll.
+A következő betűt a négy szomszédos mező közül választjuk, egy mezőt legfeljebb egyszer használunk,
+és az első teljes illeszkedésnél megállunk. A lépések irányát az F (fel), B (balra), L (le) és J
+(jobbra) betűkkel írjuk ki. Időigény: 10x10-es rácson és 12 betűs szónál a bejárás a feladat
+korlátai mellett gyors, az időlimit bőven teljesül.
+*/
+/*
+Hint 1: || Csak azokból a mezőkből érdemes indítani, amelyek betűje a keresett szó első betűje. ||
+Hint 2: || Minden lépés után jelöljük meg a mezőt, sikertelen ágban pedig vonjuk vissza a jelölést (visszalépés). ||
 */
 
 #include <bits/stdc++.h>

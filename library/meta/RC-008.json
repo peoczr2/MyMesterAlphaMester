@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/40. Euler",
+    "method": "Prímtényezős bontás, minden p prímre az eredmény ans -= ans/p módosítása (Euler-féle phi).",
+    "category": "Euler-féle phi függvény",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prímtényező", "phi-függvény", "relatív prím"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/41. Faktoriális vége",
+    "method": "Legendre-formula: az N! ötös prímtényezőinek száma: N/5 + N/25 + ...",
+    "category": "Faktoriális, prímek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["faktoriális", "prímtényező", "legendre-formula"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/42. Nem négyzetmentes számok",
+    "method": "Próbaosztás minden x-re: van-e p^2 osztója, így számlálunk az N-edik találatig.",
+    "category": "Négyzetmentesség, próbaosztás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["négyzetmentes", "próbaosztás", "osztó"],
+    "note": "N = 100000 esetén (a válasz 255051) helyi mérésen kb. 0,10 mp (g++ -O2), ez a 0,1 mp-es limit határesete. A minta és egy brute-force ellenőrzés (N <= 300) rendben.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/43. Számok előállítása",
+    "method": "Maradékgráf Dijkstra-val: minden maradékosztály legkisebb előállítható értéke, lekérdezésenként a minimumot vesszük.",
+    "category": "Maradékgráf: Dijkstra",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["maradékosztály", "dijkstra", "szemiksoport"],
+    "note": "Helyes: a minta és 300 véletlen kis eset brute-force-szal egyezik. Nagy eset (n=5000, A1≈45000) helyi mérésen kb. 0,67 mp (g++ -O2), ez meghaladja a 0,3 mp-es limitet; a kód a szabály szerint nem módosult.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

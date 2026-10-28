@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/53. Városok ***",
+    "method": "Három Dijkstra-futás más lépésköltséggel, a városok területe 2-es mezőkön át számolt BFS-sel.",
+    "category": "Gráf: rácsos legrövidebb út",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "rács"],
+    "note": "A zip két mintájának végpontja nem mind városmező (be1: 0-s mező, be2: 1-es mezők); a területet a minta szerint számoljuk: a pont plusz a szomszédos város területe. A PDF példa bemeneti sora \"1 1 9 1\", kimenete (3 5 / 2 / 8 / 22) viszont a (9,10) végponthoz tartozik; a program ezt adja (9,10)-re.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/54. Vasút ***",
+    "method": "Vonalak mint csúcsok szélességi bejárása; az átszállások száma a felhasznált vonalak számából adódik.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "vonal"],
+    "note": "Bármelyik átszállási állomás elfogadható (a feladat szerint), ezért kézi a minta; a program a mintát adja. Ellenőrző: library/.work/HA-075/54/tools/check54.py (véletlen esetek, minimum és átszállási lánc).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/55. Bolha ***",
+    "method": "Legközelebbi szomszéd mutatók; fák hosszú-út felbontása, körökön maradékosztályok szerinti összeg.",
+    "category": "Gráf: funkcionális gráf",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "szomszéd", "fa"],
+    "note": "Nincs minta: a minta.zip-ben csak be1 és be2 van, ki nincs, ezért a validátor nem adhat kész állapotot. Kézi ellenőrzés: a PDF-példa (33) és 400 véletlen kis gráf szimulációja egyezik, be1-re a szimuláció és a program is 242. Ellenőrző: library/.work/HA-075/55/tools/cmp55.py.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/56. Tiltott városok 2 **",
+    "method": "Két szélességi bejárás, saját tiltott városokkal; a legkisebb távolságösszegű közös város keresése.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "szélességi bejárás", "minimum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

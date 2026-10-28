@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szigetek/20. Legszélesebb síkság szigeten *",
+    "method": "Szigetenként egy bejárás: az egyenlő pozitív mérések leghosszabb futamának keresése.",
+    "category": "Futamkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "futam", "sziget"],
+    "note": "Döntetlennél a balról első síkság a válasz; mindkét mintában két, egyaránt 2 hosszú síkság van, és a várt kimenet a balra eső.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/21. Legszélesebb sziget *",
+    "method": "Egy bejárás: a szigetek szélességének (a két part közti mérésszámnak) maximumának keresése.",
+    "category": "Maximumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "sziget"],
+    "note": "Döntetlennél a balról első sziget a válasz; az első mintában két, egyaránt 3 szélességű sziget van (4–6 és 8–10), és a várt kimenet a bal oldali.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/22. Legvölgyesebb sziget *",
+    "method": "Szigetenként prefix- és suffix-maximum tömbökkel a völgyek számlálása, a legtöbb völgyű sziget keresése.",
+    "category": "Prefix- és suffixmaximum",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "maximum", "völgy"],
+    "note": "Döntetlennél a balról első sziget a válasz, a feladatszöveg „egy” legtöbb völgyű sziget kifejezése ezt megengedi; a mintákban nincs döntetlen. Ha egyik szigeten sincs völgy, a balról első sziget a válasz.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/23. Magas szigetek *",
+    "method": "Egy bejárás: szigetenként a legmagasabb pont, az 1000 m-nél magasabbak szűrése és sorban gyűjtése.",
+    "category": "Feltételes szűrés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "feltétel", "sziget"],
+    "note": "Ha nincs 1000 m-nél magasabb sziget, a kimenet csak a 0; ilyenkor a második sor nem jelenik meg.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/20. Akadálypálya tervezés",
+    "method": "BFS-rétegezés; a rétegek közti élek minimális lefedése párosítással (Hopcroft–Karp)",
+    "category": "Gráfok: rétegezett párosítás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "párosítás", "bfs"],
+    "note": "A feladat szerint több helyes kimenet lehet, ezért a minta más élhalmazt ad, de ugyanannyi éllel (12, illetve 11542). A megoldás a terv eredeti legrövidebb hosszát tartja meg (a mintán így 12 a minimum). Ellenőrző: library/.work/HA-029/chk/check20.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/21. Házépítés",
+    "method": "A-elődök és B-utódok rögzítése, a köztes munkák topologikus sorrendje A és B között",
+    "category": "Gráfok: topologikus rendezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "topologikus", "függőség"],
+    "note": "A be1 minta egyezik, a be2 mintája hibás: a ki2.txt első sora K=105, de a sorrend 10001 számot tartalmaz, és az A munka (1036) kétszer szerepel. A bemenetből számolt maximum N-2-|A elődei|-|B utódai| = 10000-2-319-7381 = 2298, és a megoldás ilyen hosszú érvényes sorrendet ad (ellenőrző: library/.work/HA-029/chk/check21.py). A be2 M=420344 is meghaladja a 100 000-es korlátot.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/22. Hálózat központja *",
+    "method": "Átmérő két végpontjától mért távolságok maximuma adja az excentricitást; három BFS",
+    "category": "Fa: excentricitás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["fa", "bfs", "átmérő"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/23. Vasútvonal leghamarabb érkezéssel",
+    "method": "Vonatok indulási sorrendben, állomásonkénti legkorábbi érkezés frissítése egy menetben",
+    "category": "Gráf: időfüggő út",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "dinamikus", "menetrend"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

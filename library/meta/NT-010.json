@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/1. Energiatakarékos ellenőrzés ****",
+    "method": "Állapottér-Dijkstra (pozíció, égő lámpák, bejárt szobák); csak kis N-re",
+    "category": "Dinamikus programozás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "fa",
+      "állapottér"
+    ],
+    "note": "Nincs kész megoldás: a task.cpp N <= 10 esetén exakt (az 1. minta jó), nagy N-re nem fut. Holtágak: csak DFS-sorrendű bejárás (minden gyermekhez a szülő lámpa égve) a 2. mintán 38-at ad a 36 helyett; az optimum extra visszalépéseket (pl. 1->0->1) használ a lámpák átadására; láncra az optimum 8N-20 (N>=4), ami nem írható fel egyszerű csomópontonkénti összegként.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/10. Házak ****",
+    "method": "Szögszerinti sweep a ház két látható élére, rendezett halmazzal",
+    "category": "Geometria: láthatóság",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "sweep",
+      "halmaz"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/11. Multiplikátoros telebabrátor ****",
+    "method": "Gyökértől vett xor-távolságok, bináris trie a legnagyobb xor-párhoz",
+    "category": "Gráf: xor-távolság",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "xor",
+      "trie"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/12. Építkezés ****",
+    "method": "Blokkonkénti mohó ütemezés határidő szerinti prioritásos sorral, prefix-korlátokkal",
+    "category": "Gráf: topologikus rendezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "topologikus rendezés",
+      "mohó"
+    ],
+    "note": "Több helyes sorrend van (\"bármelyik megadható\"), ezért a 2. minta kimenetétől eltér a sorrend; a kapott sorrendek érvényesek (ellenőrző: library/.work/NT-010/t12/checker12.py), és a -1 esetek egyeznek a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

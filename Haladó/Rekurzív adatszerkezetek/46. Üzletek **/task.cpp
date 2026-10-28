@@ -16,6 +16,7 @@ Hint 2: || Ha már elvitted az árut egy csúcsig, ott üzletet nyitni csak jav�
 Hint 3: || A gyerekrészfák egymástól függetlenek, ezért a hozzájárulásuk külön-külön `max(0, ...)` alakban adódik. ||
 */
 
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -95,6 +96,7 @@ int main() {
         }
     }
 
+    sort(chosen.begin(), chosen.end());
     cout << dp[root] << '\n';
     cout << chosen.size() << '\n';
     for (int i = 0; i < static_cast<int>(chosen.size()); ++i) {

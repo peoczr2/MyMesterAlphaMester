@@ -1,19 +1,18 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
-Megoldási ötlet:
+Megoldás lényege:
 Ha két ember között új közvetlen kapcsolatot hozunk létre, akkor a kialakuló kör
-hossza a köztük lévő fa-beli távolság + 1. Tehát a leghosszabb körhöz a fa két
-legtávolabbi pontját kell megkeresni.
-
-Ez pontosan a fa átmérője. Egy tetszőleges csúcsból BFS-sel megtaláljuk a
-legtávolabbi pontot, onnan indulva pedig a másik végpontot és a távolságot.
-
+hossza a köztük lévő fa-beli távolság + 1, hiszen az új élhez a fa egy útja tartozik.
+Így a leghosszabb körhöz a fa két legtávolabbi pontját kell összekötni, vagyis a fa
+átmérőjét keressük. Egy tetszőleges csúcsból BFS-sel megtaláljuk a legtávolabbi
+pontot, onnan indulva pedig a másik végpontot és a távolságot. Az időigény O(N).
+*/
+/*
 Hint 1: || A leghosszabb körhöz a fa két legtávolabbi csúcsát kell összekötni. ||
 Hint 2: || Egy fa átmérőjét két BFS-sel vagy DFS-sel is meg lehet találni. ||
 Hint 3: || Az eredmény hossza a távolság + 1, mert az új él is része a körnek. ||
 */
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/42. Rózsafüzér permutáció",
+    "method": "Az 1 nélküli sorozat next_permutation-je; ha nincs, az első elem növelése.",
+    "category": "Lexikografikus permutáció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["permutáció", "lexikografikus", "ciklikus"],
+    "note": "Javítva: az első elem növelésének ága sosem futott le (a used-tömb minden értéket foglaltnak jelölt), a mintán ez nem látszott; brute force-szal igazolva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/43. Szavak",
+    "method": "Betűszámlálás: bővítés, hátulról növelés; előző: utolsó betű csökkentése vagy elhagyása.",
+    "category": "Szavak sorrendje",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["szavak", "multihalmaz", "lexikografikus"],
+    "note": "Javítva: az előző szó nem vette figyelembe a prefixet (S utolsó betűjének elhagyását), a ciklikus határeset pedig téves volt; brute force-szal igazolva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/44. Következő közeli elrendezés",
+    "method": "Közeli permutáció 0/1 bitsorozat (nincs két szomszédos 1), következő bitsorozat lexikografikus sorrendben.",
+    "category": "Közeli permutációk",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bitsorozat", "permutáció", "lexikografikus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/45. Előző és következő közeli elrendezés",
+    "method": "Bitkódolás; előző: utolsó 1-es törlése és váltakozó kitöltés; következő: jobbról első 0 növelése.",
+    "category": "Közeli permutációk",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["bitsorozat", "permutáció", "lexikografikus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/46. Euler **",
+    "method": "Eulerian-rekurzió: E(n,k) = (k+1)E(n-1,k) + (n-k)E(n-1,k-1), modulo 20191019.",
+    "category": "Eulerian-számok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["eulerian-számok", "dinamikus programozás", "modulo"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/47. Ritka számok",
+    "method": "Ritka bináris számok következője és előzője bitszintű módosítással, vezető nullával.",
+    "category": "Ritka bináris számok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["bináris", "ritka számok", "bitsorozat"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

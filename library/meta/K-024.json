@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/8. Tükörtelefonszámok *",
+    "method": "Palindrom-ellenőrzés sztringként: teljes szám, vidéki körzetszám és körzet utáni rész",
+    "category": "Eldöntés: palindrom",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["eldöntés", "sztring", "palindrom"],
+    "note": "Minta-eltérés: a ki1.txt és ki2.txt első tokenje a tükörszámok darabszáma (4, illetve 944), és a számok egy sorban állnak, a feladatszöveg PDF-példája szerint viszont darabszám nélkül, soronként egy szám kell; a számsor a mintával egyezik, a független Python-ellenőrzés (library/.work/K-024/8/check_rule.py) igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/9. Vonatmenetrend *",
+    "method": "Egyetlen bejárás: van-e 9999-es indulás Pécstől eltérő városban",
+    "category": "Eldöntés: végállomás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "feltétel", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

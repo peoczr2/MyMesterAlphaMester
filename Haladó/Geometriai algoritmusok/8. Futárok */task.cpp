@@ -1,13 +1,12 @@
 /*
 Megoldás lényege:
-Egy futár adott nap egyik irányban, másnap visszafelé halad ugyanabban az időintervallumban,
-tehát egy adott napon minden futár egyszerre vagy az eredeti (s->e), vagy a fordított (e->s)
-irányában mozog.
-Két futár akkor találkozhat, ha az átfedő időintervallumban metszik egymást aznapi pályáik:
-ezt két esetben kell ellenőrizni: (s->e, s->e) és (e->s, e->s). Mivel a különbség lineáris,
-elég az átfedés két végpontját vizsgálni: ha eltérő előjelűek (vagy valamelyik 0), akkor van találkozás.
-
+Egy futár adott nap egyik irányban, másnap visszafelé halad ugyanabban az időintervallumban, tehát egy adott napon minden futár egyszerre vagy az eredeti (s->e), vagy a fordított (e->s) irányában mozog.
+Két futár akkor találkozhat, ha az átfedő időintervallumban metszik egymást aznapi pályáik: ezt két esetben kell ellenőrizni: (s->e, s->e) és (e->s, e->s). Mivel a különbség lineáris, elég az átfedés két végpontját vizsgálni: ha eltérő előjelűek (vagy valamelyik 0), akkor van találkozás.
 Idő: O(M^2), M<=2000 esetén megfelelő.
+*/
+/*
+Hint 1: || Két futár csak azonos napon, azonos irányban haladva találkozhat, ezért két esetet kell megnézni: mindketten az eredeti, vagy mindketten a visszafelé irányban mennek. ||
+Hint 2: || Egy futár helye lineáris az időben, ezért az átfedő időintervallum két végpontjában vizsgált pozíciókülönbség előjele elég a találkozás eldöntéséhez. ||
 */
 
 #include <bits/stdc++.h>

@@ -7,9 +7,11 @@ előre kiszámított prefixösszegekkel pedig O(1)-ben megkapható.
 A keresett legrövidebb intervallumot bináris kereséssel kapjuk meg a hosszra,
 majd az adott hosszra balról jobbra végigpróbáljuk az összes lehetséges kezdőpontot.
 */
-// Hint 1: || Egy vendég akkor benne van a találkozásban, ha az intervallum metszi a saját [érkezés, távozás] szakaszát. ||
-// Hint 2: || Fix hosszra a vendégszámot prefixekből O(1)-ben ki lehet számolni. ||
-// Hint 3: || A minimális hosszhoz elég binárisan keresni, majd az első jó kezdőpontot megkeresni. ||
+/*
+Hint 1: || Egy vendég akkor benne van a találkozásban, ha az intervallum metszi a saját [érkezés, távozás] szakaszát. ||
+Hint 2: || Fix hosszra a vendégszámot prefixekből O(1)-ben ki lehet számolni. ||
+Hint 3: || A minimális hosszhoz elég binárisan keresni, majd az első jó kezdőpontot megkeresni. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

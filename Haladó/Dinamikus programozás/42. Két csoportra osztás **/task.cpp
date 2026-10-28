@@ -2,7 +2,7 @@
 A barátság reláció tranzitív lezárása miatt az összefüggő komponensek gyermekei nem választhatók szét: egy komponens
 egészben kerül az egyik vagy a másik csoportba. Így a feladat a komponensméretek két részre osztásává egyszerűsödik,
 ahol a cél a két összeg különbségének minimalizálása. Egy klasszikus részösszeg-DP megadja, mely összeg érhető el, és a
-szülőtáblából az egyik optimális csoport komponensei visszafejthetők.
+szülőtáblából az egyik optimális csoport komponensei visszafejthetők. Az időigény O(M + N²).
 */
 /*
 Hint 1: || Először vond össze azokat, akiknek mindenképp együtt kell maradniuk. ||

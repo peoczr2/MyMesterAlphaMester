@@ -5,11 +5,11 @@ segédtoronyra rendezzük, majd áthelyezzük a nagy korongot, végül a kisebbe
 rakjuk vissza.
 
 */
-
-// Hint 1: || A legnagyobb korong pozíciója dönti el, kell-e egyáltalán mozgatni őt. ||
-// Hint 2: || A kisebb korongok először egy közös segédtoronyra kerülnek, csak utána jöhet a nagy korong. ||
-// Hint 3: || Minden lépést azonnal kiírhatsz, miközben a belső állapotot frissíted. ||
-
+/*
+Hint 1: || A legnagyobb korong pozíciója dönti el, kell-e egyáltalán mozgatni őt. ||
+Hint 2: || A kisebb korongok először egy közös segédtoronyra kerülnek, csak utána jöhet a nagy korong. ||
+Hint 3: || Minden lépést azonnal kiírhatsz, miközben a belső állapotot frissíted. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

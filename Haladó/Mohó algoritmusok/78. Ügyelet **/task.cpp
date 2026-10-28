@@ -1,11 +1,15 @@
 /*
-Feladat: Minden percre legalább két ügyeletes kell, és a lehető legkevesebb jelentkezőt kell kiválasztani.
-Ötlet: Időben előrehaladva mindig azt az intervallumot vesszük fel, amelyik a jelenlegi pontot lefedi, és a legtovább tart. Ha a lefedettség 2 alá csökken, új intervallumot kell választani.
+Megoldás lényege:
+Időben haladva minden percnél a már kezdődött jelentkezőket max-heapbe tesszük a befejezési idejük szerint.
+Ha a kiválasztott és még élő ügyeletesek száma 2 alá esik, a heap tetejéről, vagyis a leghosszabban tartó jelentkezőt vesszük fel.
+Ez mohón optimális, mert a legkorábbi hiányzó percet a lehető legtovább tartó intervallum fedi le a legtöbb későbbi percre is.
+Ha nincs elég jelentkező, nincs megoldás (0). Időigény: O(M + N log N).
+*/
+/*
 Hint 1: || Minden perc előtt az addig már kezdődött jelentkezőket tedd egy heapbe. ||
 Hint 2: || Ha a kiválasztott ügyeletesek száma 2 alá esik, válaszd a leghosszabban tartó jelölteket. ||
 Hint 3: || Ha nem tudsz két élőt biztosítani, nincs megoldás. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

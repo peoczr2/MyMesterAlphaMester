@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/4. Erősen páratlan számok *",
+    "method": "Számjegyösszeg ismételt képzése karakterláncként, paritás-ellenőrzéssel.",
+    "category": "Számjegyek: összegképzés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számjegyek", "paritás", "karakterlánc"],
+    "note": "Ha a bemenet páros, a sorozat első tagja maga a szám, ezért a második sorba az N kerül. A feladatszöveg ezt az esetet külön nem említi, a program így értelmezi.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/5. Eszperantó számok *",
+    "method": "Helyiértékek szerinti szétbontás, szorzószavak tömbből, speciális esetekkel.",
+    "category": "Tömb: számnevek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számjegyek", "tömb", "szöveg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/6. Francia számok *",
+    "method": "Számnévtábla és esetszétválasztás a tízesek és egységek szerint.",
+    "category": "Elágazás: számnevek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "elágazás", "szöveg"],
+    "note": "A feladatszövegben az 50 neve „cinqante” (elírás); a program a helyes francia „cinquante” alakot írja ki. A minta ezt nem tartalmazza, a szabályt a francia nyelvtan alapján választottam.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/7. Hét napja *",
+    "method": "Eltelt napok összegzése a hónapok hosszából, maradékképzés hét szerint.",
+    "category": "Dátum: maradékos számítás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["dátum", "maradékképzés", "tömb"],
+    "note": "A szökőévet a Gregorián-naptár szabálya szerint számolom; a feladatszöveg ezt nem részletezi.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

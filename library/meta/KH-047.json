@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/31. Ferde hajítás - 2010. október",
+    "method": "A ferde hajítás képletének közvetlen alkalmazása, fokból radiánba váltással.",
+    "category": "Matematikai képlet",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["képlet", "trigonometria", "kerekítés"],
+    "note": "A minta.zip kimenete formátumban tér el a feladat két tizedesjegyes előírásától: be1 6. sora 2234.6 (a helyes 2234.60), be1 5. sora „-0” (a helyes 0.00, mert sin(180°) = 0); be2-ben 389 nem kétjegyű és 54 „-0” sor van. Minden sor numerikusan egyezik a képlet kerekített értékével (0,005-ös tűrésen belül), ezt a független ellenőrző program (library/.work/KH-047/1/check31.py) igazolja, ezért a kiírás a feladat szerinti marad.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/32. Traffipax - 2010. október",
+    "method": "Egy bejárásban összegzés és számlálás a sebességkorlát szerint, az átlag egész aritmetikával.",
+    "category": "Összegzés, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "számlálás", "átlag"],
+    "note": "Nincs betartó jármű esetén az átlag helyére 0 kerül, a feladat szerint.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/33. Kerékpárverseny - 2010. október",
+    "method": "Első helyezések számlálása versenyzőnként, majd a maximumot elérők kiírása és egész osztás.",
+    "category": "Számlálás, maximum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "maximum", "tömb"],
+    "note": "A szakaszsorokban az i-edik szám az i-edik rajtszámú versenyző helyezése (a minta igazolja).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/34. Római számok - 2011. május",
+    "method": "Mohó átváltás: a legnagyobb értékű római jelcsoportot vonjuk le, amíg lehet.",
+    "category": "Átváltás, mohó algoritmus",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["római", "mohó", "táblázat"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "path": "Haladó/Szimuláció/16. Pincefúrás *",
+    "method": "Rács-szimuláció ágazonosítókkal, 8 szomszédos cella ütközésvizsgálata, ágak főág-első sorrendben.",
+    "category": "Szimuláció, ütközésvizsgálat",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "verem",
+      "rács"
+    ],
+    "note": "Blokkolt (minta 1/2): a program a feladatszöveg példájára (19) és be1-re (19) jó, be2-re 9-et ad, az elvárt 5. Mindhárom adatnál az ágazás helyén a szülőág egyik cellája és a leágazás első cellája átlósan érintkezik; be1-ben a leágazás első cellája (19. karakter) a jelzett ütközés, be2-ben a leágazási pont előtti cella (5. karakter, a főág elején), a 9. karakter (a leágazás első cellája) helyett. Holtágak: (1) csak oldalszomszédos ellenőrzés, a leágazási pont mentesítve (0/2); (2) 8 szomszédos ellenőrzés, a leágazási pont és a szülőág folytatása mentesítve, jelentés = az új cella karaktere (példa 19, be1 19, be2 9) – ez van a task.cpp-ben; (3) kb. 10^5 szabályváltozat gépi keresése (szomszédság, mentesítések, fúrási sorrend, jelentett index, kihagyott szomszédirányok): természetes szabály nincs, ami a példára, be1-re és be2-re egyszerre 19, 19, 5-öt adna. A minta.zip (2015. május) régebbi a feladat.pdf-nél (2015. június), a minták készülhettek a szöveg korábbi változatához. Teendő: a zsűrimegoldás vagy több hiteles tesztadat kell a találkozás pontos szabályához (az ág első cellájának érintkezése a szülőág szomszédos celláival).",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "sonnet",
+    "problematic": true
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2021/1. Energiatakarékos ellenőrzés ****",
+    "method": "Fa-DP: részfánként a fény átvitele vagy a szülő lámpájának égve hagyása, lámpaszám szerint.",
+    "category": "Dinamikus programozás: fa",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "fa",
+      "lámpák"
+    ],
+    "note": "Új, lineáris megoldás (a régi állapottér-Dijkstra csak N<=10-re működött). D(v,k) = a v részfa bejárása, ha v lámpája ég az elején és a végén, és kívül még k lámpa ég; gyerekenként min(2(k+1)+D(d,k+1), 6k+8+D(d,k)), levél 2(k+1). Elég k<=2 (a „marad” változat csak legfeljebb 2k+2 élű részfánál éri meg), a kód k<=3-ig tárol. Ellenőrzés: Dijkstra-brute-force (állapot: szoba, égő lámpák, látogatott szobák) az összes gyökeres fán N<=9-ig (486 fa, 0 eltérés), véletlen fákon N=10, 11, 12, 14, 16, 18 (0 eltérés), és 300 véletlen fán N<=13 a C++ kóddal; lánc: 8N-20 (N>=4), csillag: 2(N-1). A 2. minta (N=100000) 416740, pontosan egyezik, futásidő kb. 0,03 s. A korábbi holtágak (csak DFS-sorrend, láncra nem összeg alakú) azért akadtak el, mert a fény átvitelének költsége (6k+8) függ a kívül égő lámpák k számától, és a „marad”/„viszi a fényt” választás részfánként külön történik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/51. Wagons *",
+    "method": "Háromnapos láncképlet (három első elakadás), korlátos keresőfa a beállításokra, bitkészletek.",
+    "category": "Verem, szimuláció",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "verem",
+      "szimuláció",
+      "keresőfa",
+      "bitkészlet"
+    ],
+    "note": "Nincs kimenetes minta (validátor: nincs minta), a két be-fájl kézzel futtatva: in1 -> 24 / 4 1 2, in2 -> 14699 / 229 424 0; a feladatszöveg példája 11 / 2 1 4. Gyorsítás: a régi O(S^3·N) hármas-keresés S=1000, N=20000 mellett 4,1–12,7 s volt (3 szerkezeti teszt), az új: 0,003–0,02 s (legrosszabb mért 17261 rekurzióhívás, kb. 6 MB memória; in2: 0,01 s). Ötlet: részleges kiosztásnál a nem választott napok „semmit sem fogadnak el”, a lánc első elakadó vagonjának típusát egy üres nap beállításának el kell fogadnia (típusonként <=10 beállítás), a mélység <=3, optimista (mindent elfogadó) korláttal metszve; az elakadás-keresés bitkészletek uniójának első nulla bitje. Ellenőrzés: a láncképletet művelet-szintű brute force (3000 véletlen eset, minden hármas) igazolja; az új és a régi P értéke és a napok száma 1900 véletlen teszten egyezik, a kimeneti hármas P-jét külön függvény számolja. Több helyes kimenet lehet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/3. Vigenere tabla - 2005. oktober",
+    "method": "Karakterek sorszámának összege modulo 26, a kulcs ismétlésével.",
+    "category": "Moduláris aritmetika, titkosítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "titkosítás",
+      "moduló",
+      "karakterlánc"
+    ],
+    "note": "A korábbi 0/2 a minta UTF-16 LE (BOM) kimeneteiből jött; a validátor most átkódolja őket, a kód változatlanul 2/2 (kész). A feladat.pdf-fel egyeznek a részfeladatok és a # elválasztók.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/69. Kerítés",
+    "method": "Azonos italú komponensek gráfja, BFS minden komponensből, legkisebb excentricitás (sugár).",
+    "category": "Gráf: sugár, BFS",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "komponensek",
+      "bfs",
+      "sugár"
+    ],
+    "note": "Blokkolt (adathiba): a mappa feladat.pdf-je az „Üdítő monopólium” (DV 2019), a minta.zip viszont a „Kerítés” geometriai feladat mintája; a megoldás a minta alapján nem ellenőrizhető. Javítandó: a mappa feladat.pdf-jét vagy minta.zip-jét kell cserélni.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "sonnet",
+    "problematic": true
+  }
+]

@@ -1,13 +1,17 @@
 /*
-Hungarian megoldás: az N vezér összes megoldásához soronként építjük fel a
-kirakást, és minden lépésben kizárjuk az elfoglalt oszlopokat és átlókat.
-
+Megoldás lényege: az N vezér megoldásait soronként építjük fel: minden sorba az oszlopok közül azt tesszük,
+amelyik nincs elfoglalva és nem esik egy korábbi vezér átlójába. Az oszlopokat és a két átlóirányt
+(sor+oszlop, sor-oszlop+N-1) külön jelölőtömbben tartjuk nyilván, így egy mező ellenőrzése O(1).
+Ha egy sorban nincs szabad mező, visszalépünk, és a korábbi sor következő oszlopát próbáljuk.
+Az oszlopokat balról jobbra járjuk be, ezért a megoldások lexikografikus sorrendben jönnek ki.
+Az időigény a visszalépéses keresési fa csomópontjainak száma; N <= 10 esetén ez néhány tízezer, így a 0,2 másodperces limit bőven teljesül.
+*/
+/*
 Hint 1: || Ha minden sorba pontosan egy vezér kerül, akkor már csak az oszlopok
 és a kétféle átló ütközését kell figyelni. ||
 Hint 2: || Az összes megoldást visszalépéses kereséssel, soronként lehet felsorolni. ||
 Hint 3: || Ha egyetlen megoldás sincs, a kimenet -1. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

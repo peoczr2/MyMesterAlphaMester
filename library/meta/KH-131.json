@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/13. Autókölcsönző",
+    "method": "Autónkénti logikai tömb a napi létszámhoz, összegzés és egyszerű bejárás",
+    "category": "Intervallumok, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "számlálás", "tömb"],
+    "note": "Időlimit 0,1 mp; mért idő ~0,002 mp (N=1000). A 4. részfeladatban az 1. nap nem kerül a listába (előtte nincs nap), ezt a minta igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/14. Földbirtok",
+    "method": "Különbségi tömb a napi létszámhoz, prefixösszeg, egy menetes bejárás a szakaszokra",
+    "category": "Intervallumok, prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["különbségi tömb", "prefixösszeg", "szélsőérték"],
+    "note": "Időlimit 0,1 mp; mért idő ~0,002 mp (M=1000). A 2. részfeladatban a legtöbbet kereső az összkereset szerint értendő, ezt a minta igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/15. Világutazó",
+    "method": "Map-es számlálás a visszatéréshez, kezdőnapok bejárása, párok közötti maximális távolság",
+    "category": "Koordináták, csúszóablak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["távolság", "csúszóablak", "map"],
+    "note": "Időlimit 0,1 mp; mért idő ~0,002 mp (N=100). A visszatérésnél az azonos napi ismétlés is számít, ezt a minta igazolja; a 2. részfeladatban a kezdőnap a 0–1000 bármelyik napja lehet, a feladat nem korlátozza eseménynapra.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/16. Vándormadarak",
+    "method": "Páronkénti egyezésvizsgálat napra és helyre, szűrés távolsággal és napokkal, párok maximuma",
+    "category": "Koordináták, halmaz",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["távolság", "csúszóablak", "halmaz"],
+    "note": "Időlimit 0,1 mp; mért idő ~0,002 mp (N=100).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

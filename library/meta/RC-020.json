@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/30. Körmérkőzés új párosítása",
+    "method": "Visszalépéses keresés: a legkisebb párosítatlan csapatot kötjük össze egy vele még nem játszott csapattal.",
+    "category": "Visszalépés: párosítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "párosítás",
+      "visszalépés",
+      "bitmask"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/31. Svájci rendszerű körmérkőzés",
+    "method": "Bitmaskos DP a párosítatlan csapatok halmazán, minimális pontkülönbség-összeggel.",
+    "category": "Bitmaskos DP: párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "párosítás",
+      "bitmask",
+      "dp"
+    ],
+    "note": "Minta-eltérés: a ki1/ki2 nem tartalmazza a feladatszöveg szerinti első sort (az optimális pontkülönbség-összeg, itt 1); a párok egyeznek a mintával. A be2 csak 5 csapatsort tartalmaz N=6-hoz. Az összeg és a párok független DP-s ellenőrzéssel igazolva.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/32. Banda szétválasztása",
+    "method": "Az első sor mind 2^N mintájának kipróbálása, a többi sor kényszerített.",
+    "category": "Visszalépés: rácsos kapcsolás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rács",
+      "visszalépés",
+      "kapcsolás"
+    ],
+    "note": "Minta-eltérés: a minta.zip egy másik (gráf) feladat adatait tartalmazza (pl. be1: 10 csúcs, 12 él, ki1: 7), ezért a validátor nem tudja igazolni. A feladatszöveg példája pontosan egyezik. Több optimális megoldás megengedett; a minimum és a kapcsolások érvényessége független GF(2)-es ellenőrzővel igazolva. N=15, T=5: kb. 0,36 mp (limit 1,0 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/33. Fesztivál",
+    "method": "Visszalépés a legkevesebb lehetőségű emberrel, kapacitáskorlátozással és üres helyszín-szimmetriával.",
+    "category": "Visszalépés: beosztás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "beosztás",
+      "visszalépés",
+      "korlátozás"
+    ],
+    "note": "Az első, naiv visszalépéses változat N=20, M=5 zsákutcás esetben 20 mp fölé futott (limit 0,2 mp); a keresést ezért javítottam. A kimenet a régivel azonos (lexikografikusan legkisebb megoldás), több száz esetben összevetve.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

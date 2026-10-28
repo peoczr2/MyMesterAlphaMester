@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/79. Üzletlánc ****",
+    "method": "Két BFS a két raktárból, majd mohó kiosztás a dA−dB különbség szerint rendezve.",
+    "category": "Gráf: BFS",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "szélességi bejárás",
+      "mohó"
+    ],
+    "note": "Több helyes kiosztás van, a feladat szerint bármelyik megadható. A validátor a 2. minta kimenetét szó szerint veti össze, ezért hibásnak jelzi; a kimenet azonos költségű (283), az érvényességet a library/.work/HA-082/79/check.py igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/8. Anyagmozgató robot ***",
+    "method": "Állapot-BFS (sor, oszlop, irány): előre lépés és fordulás egyaránt 1 másodperc.",
+    "category": "Gráf: BFS",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "szélességi bejárás",
+      "állapottér"
+    ],
+    "note": "A feladat PDF-példájában a kimenet 19, a minta.zip ki1.txt szerint 22. A megoldás a mintával egyezik (22, és a be2 esetén -1), a PDF példája tehát eltér a mintától.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/80. Matekbolha",
+    "method": "Min: BFS a karaktergráfon; max: zárójelcsoportonként DP a két x között.",
+    "category": "Gráf: BFS",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "zárójelezés",
+      "dinamikus programozás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/81. Távoli városok",
+    "method": "Mélységi bejárás, low-érték: a főváros–kikötő fa-úton elválasztó csúcs keresése.",
+    "category": "Gráf: artikulációs pont",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dfs",
+      "elválasztó pont"
+    ],
+    "note": "Több helyes válasz van (a minta ki-fájljai az összes jó várost felsorolják, pl. 3 és 5 az 1. mintára). A validátor a teljes listát várná, a program egy várost ír ki; az érvényességet a library/.work/HA-082/81/check.py igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

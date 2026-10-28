@@ -1,0 +1,96 @@
+[
+  {
+    "path": "Haladó/Sorozatok/105. Átülés",
+    "method": "Permutáció ciklusokra bontása, nemtriviális ciklusonként k+1 átülés összegzése",
+    "category": "Permutáció: ciklusok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "ciklusok"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/107. Kötések hossza",
+    "method": "Veremes mohó párosítás: eltérő színű szomszédos LED-ek összekötése, a távolságok összege",
+    "category": "Verem: párosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "verem",
+      "zárójelezés",
+      "mohó"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/108. Őrzött szakaszok száma",
+    "method": "Diszjunkt intervallumok rendezett tárolása, szomszédos összeolvadások követése",
+    "category": "Intervallumok: egyesítés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "map",
+      "szimuláció"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/109. Ültetés",
+    "method": "Permutáció ciklusfelbontása, nemtriviális ciklusonként k+1 átülés összegzése",
+    "category": "Permutáció: ciklusok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "ciklusok"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/11. Fogadás **",
+    "method": "Corneil háromszoros LexBFS-bejárása, majd umbrella-sorrend ellenőrzése",
+    "category": "Gráf: egységintervallum",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "intervallum",
+      "lexbfs"
+    ],
+    "note": "A minta ki2.txt kimenete hibás: az 5-ös vendég a 74-essel és a 65-össel találkozik, a 34-essel nem, a kimenetben viszont a 74-es a 65., a 34-es a 74., a 65-ös a 80. helyen áll. A program más, érvényes sorrendet ad; több helyes sorrend is van. Ellenőrző: library/.work/R-058/chk/check11.py.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/111. Leghosszabb kötés",
+    "method": "Bináris keresés a kötélhosszon, mohó veremes párosítás ellenőrzéssel",
+    "category": "Bináris keresés: válasz",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "bináris keresés",
+      "verem",
+      "zárójelezés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

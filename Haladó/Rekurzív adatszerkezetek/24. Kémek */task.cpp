@@ -8,7 +8,8 @@ az összes kapcsolatból ki lehet olvasni.
 
 A legtöbb közvetlen beosztottal rendelkező tag a legnagyobb kifokú csúcs. A
 „legmesszebb” levő tag pedig a főnöktől mért legnagyobb mélységű csúcs.
-
+*/
+/*
 Hint 1: || A főnök az egyetlen, aki nem szerepel felettesként máshol. ||
 Hint 2: || A legtöbb beosztottat a közvetlen gyerekek száma adja. ||
 Hint 3: || A legmesszebb levő tag a fa legmélyebb pontja. ||

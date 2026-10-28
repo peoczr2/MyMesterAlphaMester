@@ -71,9 +71,7 @@ int main() {
         rebuild.pop_back();
 
         bool takeNode;
-        if (node == 1) {
-            takeNode = true;
-        } else if (!parentChosen) {
+        if (node != 1 && !parentChosen) {
             takeNode = true;
         } else {
             takeNode = (dp1[node] <= dp0[node]);

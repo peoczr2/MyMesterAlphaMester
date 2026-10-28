@@ -10,7 +10,8 @@ hogy melyik mélységi szinten van a legtöbb csúcs.
 Egy BFS-sel kiszámítjuk minden tag napját (mélységét), majd megszámoljuk a
 szintek elemszámát és a legnagyobbat választjuk. Holtversenyben a kisebb napot
 írjuk ki.
-
+*/
+/*
 Hint 1: || A kérdezett nap a gyökértől mért szintszámnak felel meg. ||
 Hint 2: || Egy szintszámláló tömb elég, ha végigjárjuk a bináris fát. ||
 Hint 3: || Holtversenyben a kisebb napot kell választani. ||

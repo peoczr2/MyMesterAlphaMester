@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/1. Adott intervallumban rendezett környezetvédelmi világnapok helyszínei **",
+    "method": "Egyszeri beolvasás, az intervallumba eső rendezvények országainak jelölése.",
+    "category": "Szűrés, jelölés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "jelölés", "szűrés"],
+    "note": "A feladatszöveg példájának kimenete („0 NINCS”) ellentmond a szabálynak és a minta.zip be1/ki1 párjának („1 Norvegia”); a be1 bemenete a példával lényegében azonos, csak a mottók szövege tér el. A megoldás a szabályt és a mintát követi (a minta 2/2 stimmel), a PDF-példa kimenetét nem követi.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/10. Évek mikor több bor készült mint azelött *",
+    "method": "Futó maximum: a korábbi évek legnagyobb mennyiségénél nagyobb évek gyűjtése.",
+    "category": "Futó maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "rekord"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/100. Kártyaleosztás értéke *",
+    "method": "Táblázatos értékkeresés a figurákra, a piros lapok értékének duplázásával.",
+    "category": "Összegzés, táblázat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["táblázat", "összegzés", "feltétel"],
+    "note": "A felső és a király figura ékezet nélküli alakját (felso, kiraly) a feladatszöveg ékezetmentes-szabályából következtettük; a minta.zip ezeket nem tartalmazza, a minta 2/2 stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/101. Lövészverseny eredményei **",
+    "method": "Futó maximum és minimum, versenyzőnként az előtte állók számlálása.",
+    "category": "Futó maximum és minimum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "minimum", "tömb"],
+    "note": "A feladatszöveg nem mondja ki, hogy holtverseny esetén a B és C részben a versenyző szerepel-e; a minta.zip be2 szerint igen (a 2. versenyző mindkét listában benne van, a 450-es eredmény miatt), a megoldás ezt követi. Az A részben a szigorúan jobb eredmény számít.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

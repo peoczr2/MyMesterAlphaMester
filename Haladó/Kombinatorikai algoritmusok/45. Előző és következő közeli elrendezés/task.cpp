@@ -1,8 +1,16 @@
 /*
-   Előző és következő közeli elrendezés: a permutációk az egymást nem fedő
-   szomszédos cserék sorozatai. Ez egy olyan 0/1 sorozatra felel meg, amelyben
-   egymás mellett nem állhat két 1-es. A lexikografikus előző/következő ehhez
-   a sorozathoz egyszerűen átalakítható.
+   Előző és következő közeli elrendezés: a közeli permutációk egymást nem fedő szomszédos cserék
+   sorozatai, vagyis olyan 0/1 sorozatok, amelyekben nincs két egymás melletti 1-es. A lexikografikus
+   sorrend a sorozatok számértékének sorrendje. A következő: a jobbról első olyan 0-t 1-re állítjuk, amelynek
+   bal szomszédja 0, a mögötte lévő biteket nullázzuk. Az előző: a jobbról első 1-est 0-ra állítjuk, a mögötte
+   álló részt pedig a lehető legnagyobb, váltakozó 1-0-1… mintával töltjük ki. Ha a sorozat csupa 0
+   (identitás), az előző a legnagyobb közeli permutáció, vagyis ugyanez a minta az elsőtől kezdve.
+   Az időigény O(N).
+*/
+/*
+Hint 1: || Használd ugyanazt a 0/1 kódolást, mint a közeli permutációknál: két szomszédos 1-es nem állhat, és a lexikografikus sorrend a bitsorozat számértékének sorrendje. Az előző és a következő is így keresendő. ||
+Hint 2: || A következő keresésénél jobbról az első olyan 0 kell, amelynek bal szomszédja 0, ezt 1-re állítva a mögötte lévő biteket nullázd. Az előző keresésénél jobbról az első 1-est nullázd, a mögötte álló részt viszont a lehető legnagyobb értékkel tölts ki: két 1-es nem állhat egymás mellett, így ez a váltakozó 1-0-1… minta. ||
+Hint 3: || Az identitás előzőjét és az utolsó közeli permutáció utáni ugrást külön határesetként kezeld: a csupa 0 sorozat előzője a legnagyobb, váltakozó mintájú sorozat, a legnagyobb sorozat következője pedig az identitás. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,100 +1,107 @@
 /*
-A két irányból közeledő vonatok találkozásának időpontja az eseménysorozatból számolható ki. Ezért közös idővonalon kell kezelni az érkezéseket, indulásokat és a pillanatnyi várakozásokat.
+Megoldás lényege: a két vonat útját egy közös idővonalon, percenként szimuláljuk. Minden szakasz egyszerre csak egy vonatot engedhet át, egy vonat a szakasz indulásától az érkezéséig foglalja; a szakaszon álló vonat pontosan akkor indul, amikor a szakasz szabad, és azonos percben az innen indulók közül a Kukutyinból jövő vonatnak van elsőbbsége. Az érkezési és indulási időkből kiolvasható, melyik állomáson járnak egy időben, így a találkozás állomása is megkapható, a várakozás pedig a menetrend szerinti továbbindulás és a tényleges indulás különbsége. Az időigény a percek számával arányos.
 */
 /*
-Hint 1: || A két irányból érkező vonatokat közös idővonalon kell kezelni, mert a találkozásuk időpontja a lényeg. ||
-Hint 2: || A haladás és a várakozás is egyszerűen az események sorrendjéből számolható ki. ||
+Hint 1: || A vonatok ugyanazon a pályán mennek egymással szemben, ezért minden szakaszt csak az egyik vonat foglalhat egyszerre; a foglaltságot a szakasz szabad időpontjával érdemes tárolni. ||
+Hint 2: || A találkozás abban az állomásban van, ahol a két vonat egy időben tartózkodik (a bennük lévő intervallumok metszik egymást); a várakozás a tényleges és a menetrendi indulás különbsége. ||
+Hint 3: || Percenként haladj előre: előbb a Kukutyinból induló vonat dönt, aztán a másik, így az azonos időpontú indulás szabálya automatikusan teljesül. ||
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-static int parseTime(const string &h, const string &m) {
-    return stoi(h) * 60 + stoi(m);
-}
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    string h1, m1, h2, m2;
+    long long h1, m1, h2, m2;
     cin >> h1 >> m1 >> h2 >> m2;
     int n;
     cin >> n;
-    vector<int> dist(n + 1), wait(n + 1);
-    for (int i = 1; i <= n; ++i) cin >> dist[i] >> wait[i];
+    vector<long long> v;
+    for (long long x; cin >> x; ) v.push_back(x);
 
-    int tK = parseTime(h1, m1), tP = parseTime(h2, m2);
-    vector<int> depK(n + 2, -1), depP(n + 2, -1);
-    vector<int> freeSeg(n + 1, 0);
+    vector<long long> dist(n + 2, 0), wait(n + 2, 0);
+    for (int i = 1; i <= n; ++i) {
+        dist[i] = v[2 * (i - 1)];
+        wait[i] = v[2 * (i - 1) + 1];
+    }
+    dist[n + 1] = v[2 * n];
 
-    struct Ev { int time, train, pos; bool operator>(const Ev &o) const { return time != o.time ? time > o.time : train > o.train; } };
-    priority_queue<Ev, vector<Ev>, greater<Ev>> pq;
-    pq.push({tK, 0, 0});
-    pq.push({tP, 1, n + 1});
+    long long tK = h1 * 60 + m1;
+    long long tP = h2 * 60 + m2;
 
-    int meetStation = -1, waitSide = -1, waitTime = 0;
-    while (!pq.empty()) {
-        auto [time, train, pos] = pq.top(); pq.pop();
-        if (train == 0 && pos == n + 1) continue;
-        if (train == 1 && pos == 0) continue;
+    vector<long long> kDep(n + 2, -1), kArr(n + 2, -1), pDep(n + 2, -1), pArr(n + 2, -1);
+    vector<long long> occEnd(n + 2, -1);  // szakasz foglalt vége (kizárt), -1: szabad
 
-        int seg = train == 0 ? pos + 1 : pos;
-        if (time < freeSeg[seg]) {
-            pq.push({freeSeg[seg], train, pos});
-            continue;
+    int kst = 0, pst = n + 1;
+    long long kReady = tK, pReady = tP;
+    bool kDone = false, pDone = false;
+    long long kWait = 0, pWait = 0;
+    kArr[0] = tK;
+    pArr[n + 1] = tP;
+
+    for (long long t = min(tK, tP); !(kDone && pDone); ++t) {
+        if (!kDone && kReady <= t) {
+            int seg = kst + 1;
+            if (occEnd[seg] <= t) {
+                kDep[kst] = t;
+                kWait += t - kReady;
+                long long a = t + dist[seg];
+                occEnd[seg] = a;
+                ++kst;
+                kArr[kst] = a;
+                if (kst == n + 1) {
+                    kDone = true;
+                    kDep[kst] = a;
+                } else {
+                    kReady = a + wait[kst];
+                }
+            }
         }
-
-        int nextPos = train == 0 ? pos + 1 : pos - 1;
-        if (train == 0) depK[pos] = time;
-        else depP[pos] = time;
-        int arr = time + dist[seg];
-        freeSeg[seg] = arr;
-
-        if (train == 0 && nextPos == n + 1) depK[n + 1] = arr;
-        if (train == 1 && nextPos == 0) depP[0] = arr;
-
-        if (nextPos >= 1 && nextPos <= n) {
-            int nextTime = arr + wait[nextPos];
-            pq.push({nextTime, train, nextPos});
-        } else {
-            if (train == 0) depK[n + 1] = arr;
-            else depP[0] = arr;
+        if (!pDone && pReady <= t) {
+            int seg = pst;
+            if (occEnd[seg] <= t) {
+                pDep[pst] = t;
+                pWait += t - pReady;
+                long long a = t + dist[seg];
+                occEnd[seg] = a;
+                --pst;
+                pArr[pst] = a;
+                if (pst == 0) {
+                    pDone = true;
+                    pDep[pst] = a;
+                } else {
+                    pReady = a + wait[pst];
+                }
+            }
         }
-
-        if (meetStation == -1 && train == 0 && pos + 1 == n + 1) continue;
-        if (meetStation == -1 && train == 1 && pos - 1 == 0) continue;
-
-        // Detect first conflicting segment crossing.
-        // If both trains occupy a segment at the same time, the later attempt waits.
-        // The meeting station is where one of them waits for the other.
-        // We approximate by scanning after both schedules are finalized.
     }
 
-    // Reconstruct the per-station departure times from the schedules.
-    vector<int> pathK, pathP;
-    // Fallback explicit simulation using the recorded depart times.
-    // Since the sample and constraints are small, the event process above already establishes the times.
+    int meet = -1;
+    for (int i = 0; i <= n + 1 && meet < 0; ++i) {
+        long long lo = max(kArr[i], pArr[i]);
+        long long hi = min(kDep[i], pDep[i]);
+        if (lo <= hi) meet = i;
+    }
 
-    // For compatibility with the statement format, we print the known start/arrival sequence.
-    // The exact meeting metadata is derived by comparing station arrival/departure envelopes.
-    auto fmt = [](int x) {
-        int hh = x / 60, mm = x % 60;
-        stringstream ss;
-        ss << hh << ':' << setw(2) << setfill('0') << mm;
+    auto fmt = [](long long x) {
+        ostringstream ss;
+        ss << setw(2) << setfill('0') << (x / 60) << ':' << setw(2) << setfill('0') << (x % 60);
         return ss.str();
     };
 
-    cout << 0 << '\n' << '\n' << 0 << '\n';
-    for (int i = 0; i <= n; ++i) {
-        if (i) cout << ' ';
-        cout << fmt(depK[i] == -1 ? tK : depK[i]);
+    cout << meet << '\n';
+    if (kWait > 0) {
+        cout << "Kukutyin\n" << kWait << '\n';
+    } else if (pWait > 0) {
+        cout << "Pirip\xa2" << "cs\n" << pWait << '\n';
+    } else {
+        cout << '\n' << 0 << '\n';
     }
-    cout << '\n';
-    for (int i = n + 1; i >= 0; --i) {
-        if (i != n + 1) cout << ' ';
-        cout << fmt(depP[i] == -1 ? tP : depP[i]);
-    }
-    cout << '\n';
+    for (int i = 0; i <= n; ++i) cout << fmt(kDep[i]) << ' ';
+    cout << fmt(kArr[n + 1]) << '\n';
+    for (int i = n + 1; i >= 1; --i) cout << fmt(pDep[i]) << ' ';
+    cout << fmt(pArr[0]) << '\n';
     return 0;
 }

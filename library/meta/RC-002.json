@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/13. Hatványmaradék *",
+    "method": "Ciklus-keresés: 1 mod B-től indulva ismételt szorzás A-val mod B, az első ismétlésnél megállunk.",
+    "category": "Moduláris aritmetika",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "maradék",
+      "hatvány",
+      "ciklus"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/14. Hatványozás *",
+    "method": "10^9 alapú nagy szám ismételt szorzása kis számmal, átvitel kezelésével.",
+    "category": "Nagy számok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "nagy szám",
+      "szorzás",
+      "átvitel"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/20. Mókusok *",
+    "method": "Ugráshosszonként a többszörösök számlálása, majd 0 és maximális darabszámú kövek kiírása.",
+    "category": "Többszörösök, számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "többszörös",
+      "számlálás",
+      "tömb"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/21. Nagyonprímek *",
+    "method": "Balról jobbra DFS, csak prím prefixeket bővítünk 1, 3, 7, 9 számjegyekkel.",
+    "category": "Prímek, DFS keresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "prím",
+      "dfs",
+      "prefix"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

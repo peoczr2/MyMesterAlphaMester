@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/60. Hajók ***",
+    "method": "Városonkénti darabszám, hajók és szabad hely képlettel, majd rendezés",
+    "category": "Megszámolás: csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "csoportosítás", "rendezés"],
+    "note": "A 0 szabad helyű városok is szerepelnek a rangsorban (az 1. mintában Stockholm a 4. helyen áll). Ha összesen kevesebb mint 3 város van, kevesebb sort írunk ki; ez a 'kevesebb város' eset mintában nincs, a feladatszöveg alapján értelmezett.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/61. Földrengések ***",
+    "method": "Egyszeri bejárás: az utórengés-feltétel az utolsó mérés idejével és a földrengés erősségével",
+    "category": "Megszámolás: állapotgép",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "állapot", "időablak"],
+    "note": "Az utórengés feltétele: az előző nem nulla méréstől legfeljebb K perc (a K-t inkluzívan értelmezzük, a mintán a 13. perc igazolja), és az erősség a földrengésénél kisebb. Mindkét mintán (3, 110) egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/62. Visszhang ***",
+    "method": "Egyszeri bejárás: az előző nem nulla mérés idejével és erősségével, visszhangok számlálása",
+    "category": "Megszámolás: állapotgép",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "állapot", "időablak"],
+    "note": "A kimenet a hallott visszhangok száma, nem az új hangadásoké; a szöveg „az előző hangnál” kifejezését az előző nem nulla mérés erősségeként értelmeztem. A piros kiemelésű mintaértékek (1, 2, 1) és a két mintakimenet (3, 97) ezt igazolják.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/63. Csoportképek ****",
+    "method": "Differenciatömbbel a létszám, prefixösszeggel a képes időpontok, videónként két kivonással",
+    "category": "Megszámolás: prefixösszeg",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["megszámolás", "prefixösszeg", "differenciatömb"],
+    "note": "Olyan időpontban, ahol senki sincs jelen, nem készül kép (a szöveg „a jelenlevőkről” készülő képet említ); a 2. mintán ez adja a 6-ot, enélkül 7 lenne. A végpontok (érkezés, távozás, videó eleje és vége) beleszámítanak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

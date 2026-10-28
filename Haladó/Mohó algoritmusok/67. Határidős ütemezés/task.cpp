@@ -1,6 +1,8 @@
 /*
-Feladat: A legtöbb munkát kell kiválasztani úgy, hogy mindegyik beleférjen a határidejébe.
-Ötlet: Határidő szerint haladva mindig megtartjuk a már látott munkák közül a legrövidebb összidőt adó halmazt; ha a teljes idő túllépi az aktuális határidőt, a leghosszabb munkát ejtjük ki.
+Megoldás lényege:
+Határidő szerint rendezve haladunk, és minden munkát hozzáveszünk az aktuális halmazhoz, amelynek összidejét nyilvántartjuk. Ha az összidő túllépi az aktuális határidőt, a halmazból a leghosszabb munkát ejtjük, így a halmaz mindig megvalósítható marad. Ez a Moore–Hodgson-algoritmus, amely a határidőre elvégezhető munkák maximális számát adja. A megtartott munkákat végül határidő szerint rendezve írjuk ki, ez adja a megvalósítható végrehajtási sorrendet. Az időigény O(N log N).
+*/
+/*
 Hint 1: || A minél több munka megtartása miatt a hosszabbakat érdemes áldozatul dobni, ha túlcsordulunk. ||
 Hint 2: || A kiválasztott halmazt a végén elég határidő szerint rendezni. ||
 Hint 3: || A legnagyobb időtartamú munkát egy max-heapből tudod kivenni. ||

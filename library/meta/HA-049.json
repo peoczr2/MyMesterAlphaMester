@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/35. Négykannás öntögetés *",
+    "method": "Állapottér szélességi bejárása a négy kanna tartalmával, a negyedik kanna értékeinek gyűjtése.",
+    "category": "Gráf: állapottér-keresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "állapottér"],
+    "note": "A minta.zip-ben csak bemeneti fájl van, ezért a validátor „nincs minta” állapotot ad. A PDF-példa (13 11 5 → 4 9) egyezik a megoldással. Értelmezés: a tej mennyisége a három ismert kanna közül a legnagyobb űrtartalom. 258 bemeneten (véletlen és határ eset) egy külön Python-os állapottér-bejárás is ugyanazt adja. Mért idő 0,01 mp alatt (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/36. Nincs odaút **",
+    "method": "Két bejárás P-ből: élek irányában és fordítva; a halmazok különbsége a válasz.",
+    "category": "Gráf: elérhetőség",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "irányított gráf", "bejárás"],
+    "note": "A PDF-példa hibás: a kimenet első sora 4, de a második sorban csak két szám (1 2) áll, és a gráf szerint a helyes halmaz {1, 2}, tehát K=2. A megoldás a szöveg szerint számol (K=2). A minta.zip-ben nincs bemenet-kimenet pár; 400 véletlen kis gráfon Floyd–Warshall-lal igazoltam. A sorrend a feladat szerint tetszőleges. Mért idő 0,03 mp N=10 000, M=200 000 esetén (időlimit 0,1 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/37. Nincs visszaút **",
+    "method": "Két bejárás P-ből, élek irányában és fordítva; az elsőből kivonjuk a másodikat.",
+    "category": "Gráf: elérhetőség",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "irányított gráf", "bejárás"],
+    "note": "A minta.zip-ben csak bemeneti fájl van, ezért „nincs minta” állapot. A PDF-példa (K=4, a halmaz {6, 7, 8, 9}) egyezik; a sorrend a feladat szerint tetszőleges, ezért növekvő sorrendben íródik. 400 véletlen kis gráfon Floyd–Warshall-lal igazoltam. Mért idő 0,04 mp, 21 MB memória N=100 000, M=1 000 000 esetén (időlimit 0,1 mp, memória 32 MiB).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/38. Oda-vissza független út megadása ***",
+    "method": "Csúcsdiszjunkt utak: maximális folyam csúcsok szétbontásával, két szélességi augmentálással.",
+    "category": "Folyam: csúcsdiszjunkt utak",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "folyam", "irányítatlan gráf"],
+    "note": "Több megoldás elfogadott, ezért kézi ellenőrzés: a PDF-példa kimenetét pontosan adja. A minta.zip-ben nincs kimeneti fájl; egy Python-os ellenőrző két sorozatban, összesen mintegy 850 véletlen kis gráfon igazolja, hogy a két út érvényes, ha létezik megoldás. Nagy bemeneten (N=10 000, M=300 000) is érvényes párt ad. Ha az A–B közvetlen él az egyetlen út, mindkét sor ugyanaz az él. Mért idő 0,05 mp (időlimit 0,2 mp), memória 14 MB.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

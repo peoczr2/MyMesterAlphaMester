@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/17. Fagyos napok száma szerinti sorrend",
+    "method": "Napi számlálás a negatív értékekre, majd rendezés a számláló szerint csökkenően.",
+    "category": "Mátrix: oszlopok számlálása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "rendezés", "mátrix"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/18. Napi maximumok száma szerinti sorrend",
+    "method": "Napi maximum keresése, településenként a maximumot elérő napok számlálása, majd rendezés.",
+    "category": "Mátrix: napi maximumok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "számlálás", "rendezés"],
+    "note": "A feladatszöveg nem mondja ki, mi történik döntetlen napon. Minden, az aznapi maximumot elérő település pontot kap; a nagy minta (ki2) igazolja, az első előfordulásnak pontot adó értelmezés nem illeszkedik rá.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/19. Az átlagnál melegebb napok száma szerinti sorrend",
+    "method": "Soronkénti összeg, majd egész-összehasonlítás (M·h > összeg) alapján napok számlálása és rendezés.",
+    "category": "Mátrix: átlag feletti számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["átlag", "összeg", "rendezés"],
+    "note": "Az „átlagnál melegebb” szigorú összehasonlítást jelent, az átlaggal egyenlő nap nem számít; a feladatszöveg ezt nem mondja ki, a nagy minta (ki2) igazolja, a nem szigorú értelmezés nem illeszkedik rá.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/2. Átlagosan legmelegebb település",
+    "method": "Soronként összegzés, a legnagyobb összeg és sorszám követése egy bejárásban.",
+    "category": "Mátrix: összegek maximuma",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "összeg", "mátrix"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

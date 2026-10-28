@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/31. Maximális utasszám a villamoson *",
+    "method": "Lineáris bejárás: futó utaslétszám, minden állomás után a maximum frissítése.",
+    "category": "Prefixösszeg, maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "maximum", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/32. Múzeumban leghosszabb ideig szolgálatban lévő őr *",
+    "method": "Lineáris bejárás: a zárt intervallum hosszának (U − E + 1) maximumát tartjuk nyilván.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "intervallum", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/33. Utazási iroda legtávolabbi városa *",
+    "method": "Lineáris bejárás, a legnagyobb távolság és a hozzá tartozó legkisebb ár nyilvántartása.",
+    "category": "Maximumkiválasztás, döntetlen",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "kiválasztás", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/34. Legnagyobb hőmérséklet eltérés *",
+    "method": "Fix hosszú (7) csúszóablak: minden szakasz max−min különbsége, egyenlőségnél a korábbi kezdőnap.",
+    "category": "Csúszóablak, max-min",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["csúszóablak", "maximum", "minimum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

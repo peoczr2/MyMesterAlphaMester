@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/20. Részvények - 2008. május - emelt",
+    "method": "Egy bejárásban összegzés, majd összeg/N és az N-szeres összevetés.",
+    "category": "Összegzés: átlag",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "átlag", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/21. Futóverseny - 2008. május - emelt",
+    "method": "Köridők összegzése, rendezés (összidő, rajtszám) párokkal, időformázás osztással és maradékkal.",
+    "category": "Rendezés: összetett kulcs",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "idő", "holtverseny"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/22. Célbadobás - 2008. október - emelt",
+    "method": "Manhattan-távolság, majd (K − d) maradéka M szerint, negatív esetben nulla.",
+    "category": "Képlet: Manhattan-távolság",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["képlet", "maradékképzés", "abszolútérték"],
+    "note": "A (K − d) mod M negatív K − d esetén nincs külön definiálva; a szöveg szerint a negatív pontszám helyett 0 jár, a minta be2 64 ilyen esetében 0-t vár, ez igazolja a választott értelmezést.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/23. Madármegfigyelés - 2008. október - emelt",
+    "method": "Napok rendezése (darabszám, nap) párként, majd az azonos darabszámú szakaszok egy sorba írása.",
+    "category": "Rendezés: csoportos kiírás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "párok", "csoportosítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

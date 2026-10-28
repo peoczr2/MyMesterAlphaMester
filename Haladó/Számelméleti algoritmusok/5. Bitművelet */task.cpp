@@ -1,7 +1,8 @@
 /*
- * Az (X,Y) párok sorozata a diagonális felsorolás alapján adott. Az N-edik párt
- * visszafejtjük, majd kiszámítjuk az AND és OR értéket kettes és tízes alakban.
- 
+Megoldás lényege:
+A párok átlónként (X+Y = d állandó) követik egymást, a d-edik átló d+1 párt tartalmaz. Az N-edik elem átlóját a legnagyobb olyan d adja, amelyre d(d+1)/2 ≤ N, az átlón belüli eltolás pedig N − d(d+1)/2, így X az eltolás, Y pedig d − X. Ezután X és Y bitenkénti ÉS és VAGY értékét számoljuk ki, a kettes alakot a legkisebb helyiértéktől kezdve építjük fel, majd megfordítjuk. Az átló megkeresése O(√N) lépés, ami N ≤ 1 000 000 esetén gyors.
+*/
+/*
 Hint 1: || Az (X,Y) párok nem véletlen sorrendben jönnek: átlókon vannak felsorolva, ahol X+Y állandó. ||
 Hint 2: || Ha megtaláltad, melyik átlón van az N-edik elem és az átlón belüli pozícióját is, már csak ki kell számolni az AND és OR értékeket binárisan is. ||
 */

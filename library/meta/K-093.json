@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/28. Kavicsok 2",
+    "method": "Mohó választás: K legnagyobb kupac, bináris keresés a K-adik értékre.",
+    "category": "Mohó: bináris keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "kupac", "bináris"],
+    "note": "A mintában N = 1 000 000 (a szöveg szerint N ≤ 100 000); a megoldás ettől független.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/29. Kavicsok 3",
+    "method": "Streamelt K legnagyobb kupac min-kupacban, bináris keresés a K-adik értékre.",
+    "category": "Mohó: kupac, bináris keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "kupac", "memória"],
+    "note": "A mintában K = 10 000 000 (a szöveg szerint K ≤ 1000), a kupacméretek 2·10^6-ig mennek; a megoldás ettől független.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/3. Futóverseny *",
+    "method": "Futási idő = célidő − rajtszám, rendezés, csoportonként helyezés holtversennyel.",
+    "category": "Rendezés: rangsorolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "rangsor", "holtverseny"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/30. Kavicsok 4",
+    "method": "Streamelt K legnagyobb kupac min-kupacban, bináris keresés a K-adik értékre.",
+    "category": "Mohó: kupac, bináris keresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["mohó", "kupac", "bináris"],
+    "note": "A mintában a kupacméretek 2·10^9-ig mennek (a szöveg szerint D ≤ 10^6); a megoldás long long-ot használ.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,11 +1,16 @@
+/*
+    Először minden napra megszámoljuk, hány diák jelentkezett rá. Ezután balról jobbra haladva a
+    pozitív darabszámú napok összefüggő szakaszait keressük; minden szakasz hosszát és rajta a
+    legnagyobb darabszámot határozzuk meg. A leghosszabb szakasz hosszát és a hozzá tartozó
+    maximumot írjuk ki. Időigény O(N + M), memória O(M).
+*/
+/*
+Hint 1: || Először számold meg minden napra, hány diák jelentkezett rá. Ezután a kérdés már csak az, hogy a pozitív darabszámú napok mely szakaszai a leghosszabbak. ||
+Hint 2: || Egy szakasz a pozitív darabszámú napok egymás utáni csoportja. Balról jobbra haladva addig növeled az aktuális szakaszt, amíg a darabszám pozitív, közben nyilvántartod a szakasz hosszát és a napok legnagyobb darabszámát. ||
+Hint 3: || Ha egy lezárt szakasz hossza nagyobb a mostanáig legjobbnál, frissítsd a legjobb hosszt és a hozzá tartozó maximumot. Az utolsó szakaszt se felejtsd el, ha a napok tömbje pozitív értékkel ér véget. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A napokra érkező jelentkezők számát megszámoljuk. Ezután a pozitív
-    számlálók leghosszabb összefüggő szakaszát keressük, és azon belül a
-    legnagyobb értéket.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

@@ -1,7 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
+Megoldás lényege:
   A tábla egy oszlopmagasság-sorozatból álló „hullámhegy”.
   Egy adott intervallumban a legalacsonyabb oszlopok választják szét a magasabb
   részeket. Ha a minimális magasságot levágjuk, akkor a magasabb, összefüggő
@@ -20,6 +18,13 @@ using namespace std;
   A rekurzió fája legfeljebb N csúcsú, N,K <= 500 mellett a K^2-es konvolúció
   elfér.
 */
+/*
+Hint 1: || Vizsgáld a tábla legalacsonyabb oszlopát: a legalacsonyabb magasság szétválasztja a táblát, így a bábuk a két oldalon nem üthetik egymást. ||
+Hint 2: || Rekurzívan dolgozz az intervallumokon: minden részintervallumra számold ki, hány módon lehet t bábut elhelyezni benne, és a gyerekek eredményeit konvolúcióval szorozd össze K-ig. ||
+Hint 3: || Egy sávban, amelynek szélessége a részintervallum hossza és magassága a minimum és a szülő minimuma közötti különbség, s bábu úgy helyezhető el, hogy s sort és s oszlopot használunk: ennek száma C(magasság, s) * (a szabad oszlopok száma fogyó szorzata, s tagig). ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 static const int MOD = 1'000'000'007;
 

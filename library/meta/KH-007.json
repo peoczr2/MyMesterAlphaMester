@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/31. Nagyon hideg település",
+    "method": "Beolvasás közben összeg és minimum, az átlag összevetése M·min alakban, egész számokon",
+    "category": "Átlag és minimum összevetése",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["átlag", "minimum", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/32. Települések átlag szerinti sorrendje",
+    "method": "Összegek a beolvasás közben, majd egyedi összehasonlítóval rendezés (összeg csökkenő, sorszám növekvő)",
+    "category": "Rendezés egyedi összehasonlítóval",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "átlag", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/33. A települések legalább felében melegedő napok",
+    "method": "Soronként szomszédos elemek összevetése, napi számláló, a feltétel 2·db ≥ N egész számokon",
+    "category": "Szomszédos elemek összevetése",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["sor", "számlálás", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/34. Kis maximumú település",
+    "method": "Beolvasás közben maximum és összeg, a maximum összevetése az átlaggal szorzással (max·M < összeg)",
+    "category": "Maximum és átlag összevetése",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "átlag", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

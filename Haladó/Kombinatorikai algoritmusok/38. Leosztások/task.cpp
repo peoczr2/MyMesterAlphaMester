@@ -1,13 +1,11 @@
 /*
 Megoldás lényege:
-A leosztások a megadott kártyahalmaz minden nem üres rész-multihalmazának
-összes permutációi lexikografikus sorrendben.
-
-A következő elem megtalálásához a jelenlegi szó prefixfáján haladunk:
-- ha még van fel nem használt kártya, akkor a következő szó a legkisebb
-  felhasználható kártyával való bővítés,
-- különben a jobb szélről keressük az első olyan helyet, ahol nagyobb kártyára
-  tudunk váltani, és utána csak a legkisebb bővítést tartjuk meg.
+A lerakások lexikografikus sorrendje prefixfa-bejárásnak felel meg: egy szó közvetlenül a saját bővítései elé kerül. Ha a jelenlegi lerakás még bővíthető (van fel nem használt kártya), akkor a következő lerakás a szó végére írt legkisebb fel nem használt kártya. Ha nem bővíthető, a jobb végétől visszafelé keressük az első olyan pozíciót, ahol a még elérhető kártyák között van a jelenlegi betűnél nagyobb; ide a legkisebb ilyen betűt írjuk, a prefixet pedig megtartjuk. Ha ilyen pozíció nincs, a lerakás a lista utolsó eleme, és a kód ciklikusan a legkisebb betűt írja ki.
+A prefixenként felhasznált kártyák darabszámát tömbben tároljuk, így az időigény O(N·ábécé), ami N ≤ 1000 mellett bőven belefér.
+*/
+/*
+Hint 1: || A lerakások sorrendje prefixfa-bejárás: egy szó előbb áll, mint a bővítései. Először nézd meg, lehet-e a jelenlegi lerakást még egy kártyával bővíteni, és ha nem, honnan kell visszalépni. ||
+Hint 2: || Tartsd nyilván betűnként, hány kártya van összesen, és a prefixekben hány van már felhasználva. Visszalépéskor a jobb végétől balra haladva az első olyan pozícióban, ahol még elérhető nagyobb betű van, a legkisebb ilyet írd a helyére, az előtte álló prefixet pedig tartsd meg. ||
 */
 
 #include <bits/stdc++.h>

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/86. Tóparti búzaföldek",
+    "method": "Kétszer leírt sorozat, prefixösszegek és csúszó minimum (monoton deque) a legjobb körbe érő szakaszra.",
+    "category": "Körkörös maximális szakasz",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["körkörös tömb", "prefixösszeg", "csúszó minimum"],
+    "note": "A szöveg nem mondja ki egyértelműen, hogy nulla haszonnál mi a helyes válasz: a 'haszon' szót pozitív nyereségnek véve -1-et írok ki, ha a legjobb szakasz haszna 0 vagy kisebb. Több azonos hasznú optimális szakasz esetén a feladat nem határozza meg a kiírandót; a megoldás a kétszer leírt sorozatban legelőbb végződő, azon belül legrövidebb optimális szakaszt adja. A teljes kör (N birtok) is megengedett szakasznak számít.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/87. Ismétlődés sorozatban",
+    "method": "Értékenkénti utolsó előfordulás tárolása, a szomszédos előfordulások távolságának maximuma szigorú összehasonlítással.",
+    "category": "Utolsó előfordulás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["utolsó előfordulás", "maradékos osztás", "tömb"],
+    "note": "A több azonos távolságú pár közül a 'legelsőt' a sorozatban korábban kezdődő pár adja: a 2. minta (71, nem a kisebb értékű 47) ezt igazolja, a legkisebb érték szerinti választást nem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/88. Lift felfelé",
+    "method": "Különbségi tömb a szállási és célemeletekre, majd prefixösszeg-bejárás a maximális utasszámhoz.",
+    "category": "Különbségi tömb: maximum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["különbségi tömb", "prefixösszeg", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/89. Tóparti földek vásárlása",
+    "method": "Birtokonként K*B_i - A_i érték, majd körbe érő szakasz maximuma csúszó minimummal (monoton deque).",
+    "category": "Körkörös maximális szakasz",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["körkörös tömb", "prefixösszeg", "csúszó minimum"],
+    "note": "A szöveg szerint -1 csak akkor jár, ha minden vásárlás veszteséges, ezért a legjobb szakasz 0 hasznát is kiírom (nem -1). Több azonos hasznú optimális szakasz esetén ugyanaz a szabály, mint a 86. feladatnál; a teljes kör szakasznak számít.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

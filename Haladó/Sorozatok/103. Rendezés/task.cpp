@@ -6,8 +6,10 @@ tehát minden komponensen elég egyszer rendezni a benne álló elemeket.
 
 Ezután minden komponensben megszámoljuk, hány pozíció marad a helyén.
 */
-// Hint 1: || Az átfedő vagy egymást érintő intervallumok egy komponensbe olvadnak. ||
-// Hint 2: || A fixpontokat komponensenként úgy kapjuk meg, hogy a komponens elemeit rendezve összehasonlítjuk az indexekkel. ||
+/*
+Hint 1: || Az átfedő vagy egymást érintő intervallumok egy komponensbe olvadnak. ||
+Hint 2: || A fixpontokat komponensenként úgy kapjuk meg, hogy a komponens elemeit rendezve összehasonlítjuk az indexekkel. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

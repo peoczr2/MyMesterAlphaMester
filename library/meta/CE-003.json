@@ -1,0 +1,50 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2012/1. Feladatütemezés",
+    "method": "Határidő szerinti mohó ütemezés FIFO sorral, bináris kereséssel a gépszámra",
+    "category": "Mohó ütemezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "ütemezés",
+      "bináris keresés",
+      "sor"
+    ],
+    "note": "Nincs minta: a minta.zip csak bemeneteket tartalmaz (in1.txt, in2.txt), kimeneti fájl nincs, ezért a validátor nincs minta állapotot ad. A PDF-példa kimenete szó szerint egyezik. Véletlen kis tesztekre a K minimum és az ütemezés érvényessége független ellenőrzővel igazolt, nagy bemenetre a futásidő 0,11 mp. Ellenőrző: library/.work/CE-003/f1_check/check.py",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2012/2. Vitorlásverseny",
+    "method": "Körívekre épülő intervallum-DP, egy keresztezés két oldalának összevonásával",
+    "category": "Dinamikus programozás",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "intervallum dp",
+      "körgráf",
+      "keresztezés"
+    ],
+    "note": "Nincs minta: a minta.zip csak bemeneteket tartalmaz (in1.txt, in2.txt), kimeneti fájl nincs, ezért a validátor nincs minta állapotot ad. A PDF-példa kimenete (5 szakasz, kezdő kikötő 2) egyezik, és ebben a példában a kezdő kikötő egyedi optimum. Véletlen, legfeljebb 8 kikötős irányított gráfokon a teljes útkeresés (brute force) ugyanazt a számot és kezdőkikötőt adja. Ellenőrző: library/.work/CE-003/f2_check/brute.py, rnd.py, rnd8.py",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2012/3. Nyomtatott áramkör",
+    "method": "Szögszerinti söprés az origóból, rendezett halmazzal a sugár első metszéspontjához",
+    "category": "Geometria: láthatóság",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "söprés",
+      "láthatóság"
+    ],
+    "note": "Nincs minta: a minta.zip csak bemeneteket tartalmaz (in1.txt, in2.txt), kimeneti fájl nincs, ezért a validátor nincs minta állapotot ad. A PDF-példa kimenete (3 pont: 3 4 7) egyezik. Véletlen egyszerű sokszögeken, legfeljebb 300 csúccsal, az O(N^2) ellenőrző ugyanazt a listát adja. Ellenőrző: library/.work/CE-003/f3_check/brute3.py, star3.py",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

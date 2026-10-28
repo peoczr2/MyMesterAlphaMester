@@ -1,7 +1,8 @@
 /*
-Hungarian megoldás: a még nem találkozott csapatok között kell tökéletes
-párosítást találni.
-
+Megoldás lényege:
+Visszalépéses keresést végzünk a párosításra: mindig a legkisebb, még párosítatlan csapatot kötjük össze egy nála nagyobb sorszámú, vele még nem játszott csapattal, majd rekurzívan folytatjuk a maradékkal. A csapatok állapota egy N bites maszk (melyik csapat van már párban), amely N ≤ 16 miatt kicsi. Ha egy ágon nem lesz teljes párosítás, visszalépünk és másik párt próbálunk. A kiírt párok diszjunktak, lefedik az összes csapatot, és egyikük sem játszott még egymással, tehát a feltétel teljesül. Időigény legrosszabb esetben a teljes párosítások száma (N = 16 esetén kb. 2·10^6 levél), a gyakorlatban a keresés gyorsan talál megoldást.
+*/
+/*
 Hint 1: || Az N legfeljebb 16, ezért bitmaskos visszalépés bőven elég. ||
 Hint 2: || Mindig a legkisebb szabad csapatot érdemes először párosítani. ||
 */

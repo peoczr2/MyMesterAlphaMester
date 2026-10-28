@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/73. Részekre *",
+    "method": "Mohó láncillesztés: a legnagyobb, x-nél kisebb végű láncra fűzés (multiset).",
+    "category": "Mohó: láncfelbontás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "részsorozat",
+      "mohó",
+      "dilworth"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/74. Kamionok **",
+    "method": "Kapacitásfüggvény adja a kamionszámot; min-heap a legkorábbi érkezésekhez.",
+    "category": "Mohó: kamionütemezés",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prioritási sor",
+      "kapacitás",
+      "ütemezés"
+    ],
+    "note": "Minta-eltérés: be2.txt (N=200, S=9), ki2.txt 2. sora a minta szerint 1278, a program 900. A feladatszöveg szerint 900 elérhető: 4 kamion, az igények négyesével a (2j+1)·S. napon érkeznek, az utolsó érkezés a 891. napon, visszaérkezés a 900. napon; ezt független ellenőrző program igazolta. A minta 1278 a legnagyobb szabad időpontra illesztés eredménye, nem minimum. be1 teljesen egyezik, be2 kamionszáma (4) is; kis esetek brute-force ellenőrzése egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/75. Robotok **",
+    "method": "Mohó láncfedés: a legnagyobb, a ponté alatti oszlopú láncra fűzés, multisettel.",
+    "category": "Mohó: láncfedés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "rácsos út",
+      "láncfedés",
+      "dilworth"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/76. Tevafarm ***",
+    "method": "Fa-DP: vagy a csúcsot választjuk (részfája tiltott), vagy a gyerek-részfákat optimalizáljuk.",
+    "category": "Fa dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "dinamikus",
+      "függetlenség"
+    ],
+    "note": "A kiválasztott városok sorrendje tetszőleges (feladatszöveg), a minta más sorrendben írja ki ugyanazt a halmazt; az összeg és a darabszám egyezik. Ellenőrző program igazolta: a halmaz érvényes (nincs ős-leszármazott pár), be1 és be2 is.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/77. Óvoda ***",
+    "method": "Szerepenként a legnagyobb sírásúak maradnak, a túlfoglalást és az üres szerepeket korrigálva.",
+    "category": "Mohó: kapacitáskiosztás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "kapacitás",
+      "kiosztás",
+      "mohó"
+    ],
+    "note": "Javítva: a korábbi kód olyan esetben -1-et írt, ahol van megoldás (pl. cap 2 2, pref 1 1, cry 8 9: helyes válasz 8). A kis esetek brute-force ellenőrzése most egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/78. Ügyelet **",
+    "method": "Időben haladva, lefedettség 2 alá esésekor a leghosszabb ideig élő jelentkező (max-heap).",
+    "category": "Mohó: intervallumlefedés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "heap",
+      "lefedés"
+    ],
+    "note": "A kiválasztott sorszámok sorrendje tetszőleges (feladatszöveg), a minta más sorrendben írja ki; a halmaz és a darabszám egyezik. Ellenőrző program igazolta, hogy a halmaz minden percet legalább kétszer fed.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

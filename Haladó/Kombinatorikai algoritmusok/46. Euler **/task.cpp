@@ -1,6 +1,13 @@
 /*
-   Euler-számok: az 1..N permutációinak száma pontosan K emelkedéssel.
-   Klasszikus Eulerian DP-t használunk.
+   Euler-számok: az 1..N permutációinak száma pontosan K emelkedéssel. Legyen E(n,k) az n elemű, k emelkedéses
+   permutációk száma. Az n-edik (legnagyobb) elemet beszúrva egy (n-1) elemű, k emelkedéses sorrendbe k+1 helyen
+   nem változik az emelkedések száma, egy (n-1) elemű, (k-1) emelkedéses sorrendbe pedig n-k helyen eggyel nő.
+   Így E(n,k) = (k+1)·E(n-1,k) + (n-k)·E(n-1,k-1), E(1,0) = 1, és minden lépésben modulo 20191019.
+   Az időigény O(N·K).
+*/
+/*
+Hint 1: || N legfeljebb 1000, ezért a sorrendek felsorolása szóba sem jöhet. Gondold végig, mi történik az emelkedések számával, ha a legnagyobb elemet egy rövidebb, már számolt sorrendbe szúrod be. ||
+Hint 2: || Ha az (n-1) elemű sorrend k emelkedéses, k+1 helyre szúrva nem változik az emelkedések száma; ha k-1 emelkedéses, n-k helyre szúrva eggyel nő. Ebből a rekurzió: E(n,k) = (k+1)·E(n-1,k) + (n-k)·E(n-1,k-1). ||
 */
 #include <bits/stdc++.h>
 using namespace std;

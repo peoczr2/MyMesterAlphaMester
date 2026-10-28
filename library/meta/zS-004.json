@@ -1,0 +1,51 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/4. Csomópontok **",
+    "method": "Két oldali konvex burok láncai jelölt élek, mohó intervallumlefedéssel kiválasztva.",
+    "category": "Geometria: konvex burok",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "konvex burok",
+      "mohó"
+    ],
+    "note": "A feladat „több megoldás esetén bármelyik megadható”. be1: a saját kimenet pontosan egyezik (5 1 / 13 4). be2: ki2.txt 10 élt ad, ami érvényes, de nem minimális (pl. 180->160, 160->60, 60->10, 10->6, 6->2, 103->1 már elég); a saját kimenet 3 él (103 1 / 160 60 / 180 160), ezért tér el. Független ellenőrző (library/.work/zS-004/t4/chk4.py: létező/szomszédos él, ismétlés, nem metszés közös végpont nélkül, erős összefüggőség) a ki1/ki2 mintákat és a saját kimenetet is érvényesnek találja; ~2500 véletlen kis (sok kollineáris) bemeneten, a minta tükrözött/forgatott/megfordított változatain és spirálokon is hibátlan. N=100000 esetén ~10 ms.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/40. Konvex négyszög",
+    "method": "Háromszögelés (x,y) söpréssel; két háromszögből álló cserélhető él üres konvex négyszöget ad.",
+    "category": "Geometria: üres négyszög",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "háromszögelés",
+      "konvex négyszög"
+    ],
+    "note": "A feladat tetszőleges megfelelő négyszöget kér. be1 egyezik; be2: az 1., 3., 4. halmaz eredménye egyezik, a 2. halmazra ki2.txt „3 5003 6 4”, a saját kimenet „5001 3 5003 5002”: mindkettő üres, szigorúan konvex, óramutatóval ellentétes négyszög (library/.work/zS-004/t40/chk40.py). A korábbi heurisztika hiányos volt; az új teljes algoritmus a „0 0 0 0” és a találat esetét is egyezteti a brute force-szal (brute40.cpp) ~50000 véletlen kis és degenerált (kollineáris) halmazon. K=10, N=100000 esetén ~0,03-0,09 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/41. Bekerítés konvex négyszöggel",
+    "method": "A célpontot tartalmazó üres háromszög kiegészítése a legközelebbi éltartománybeli ponttal konvex négyszöggé.",
+    "category": "Geometria: bekerítés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "háromszögelés",
+      "konvex négyszög",
+      "bekerítés"
+    ],
+    "note": "A feladat „több megoldás esetén bármelyik megadható”. A „0 0 0 0” halmazokban egyezik a minta; be1 1. halmaz: ki1 „1 3 7 5”, saját „5 2 7 6”; be2 2. halmaz ugyanaz a négyszög más kezdőponttal (ki2 „2 5 1 4”, saját „1 4 2 5”); be2 3. halmaz: ki2 „91 9935 6157 9971”, saját „1772 423 310 3881”. Mindegyik érvényes: szigorúan konvex, óramutatóval ellentétes, a célpont szigorúan belül, más pont nincs benne (library/.work/zS-004/t41/chk41.py). A régi heurisztika hibás volt; az új algoritmus (üres háromszög + éltartomány-tétel, él esetén bal-jobb pár keresése) ~60000 véletlen kis/közepes degenerált és „pinwheel” jellegű halmazon egyezik a brute force-szal (brute41.cpp). K=10, N=100000 esetén ~0,04-0,11 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "sonnet"
+  }
+]

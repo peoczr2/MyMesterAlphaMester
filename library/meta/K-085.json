@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/9. Legidősebb ember *",
+    "method": "Egy menetes minimumkiválasztás az (év, hónap, nap) dátumok egyetlen számmá alakított kulcsával",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximumkiválasztás", "dátum", "összehasonlítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/90. Lift felfelé és lefelé",
+    "method": "Irányonként különbségi tömb a szakaszokon, a két menet maximumának nagyobbika",
+    "category": "Intervallumok és különbségi tömb",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "prefixösszeg", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/91. Csökkenés és növekedés",
+    "method": "Az elemeket egyesével generálva két futó szakaszhossz-számlálóval követjük a monoton szakaszokat",
+    "category": "Monoton részsorozatok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["sorozat", "szakasz", "generálás"],
+    "note": "Bizonytalan: a sorozat X[1]..X[n] (X[0] nincs benne), mert a példa 12 generált eleme X[1]..X[12]; a csökkenést és növekedést szigorúan (<, >) értelmeztem. A minták nem döntik el sem az X[0] beszámítását, sem az egyenlő szomszédos elemek kezelését (mindkét változat ugyanazt adja). A minta.zip be1 bemenetében X[0]=5 >= m=3, ami sérti a korlátot, de a kimenet ettől nem változik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

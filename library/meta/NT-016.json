@@ -1,0 +1,14 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2016 ∕ 2017 3. forduló/5. Tábor",
+    "method": "BFS-sel páros színezés komponensenként, majd részösszeg-DP a két tábor létszámkülönbségére",
+    "category": "Gráf: páros színezés, részösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "páros gráf", "részösszeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

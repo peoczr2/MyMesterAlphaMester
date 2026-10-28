@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/26. P-ig nem osztott *",
+    "method": "Lcm-modulusú maradékos egyenlet megoldása kiterjesztett euklideszi algoritmussal.",
+    "category": "Kínai maradéktétel",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "számelmélet",
+      "maradékok",
+      "inverz"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/27. Prímtényezős faktoriális *",
+    "method": "Legendre-képlet: a prímkitevők összegzése egész osztásokkal.",
+    "category": "Legendre-képlet",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "számelmélet",
+      "prímtényező",
+      "faktoriális"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/28. Prímtényezős felbontás *",
+    "method": "Próbaosztás a négyzetgyökig, a végén maradt szám prím.",
+    "category": "Prímtényezős felbontás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "számelmélet",
+      "prímtényező",
+      "próbaosztás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/29. Részosztó *",
+    "method": "Minden folytonos résztringet megvizsgálunk, a 0-val kezdődőket kihagyva, hossz szerint csökkenően.",
+    "category": "Számjegyek, résztringek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "karakterlánc",
+      "osztó",
+      "számjegyek"
+    ],
+    "note": "A 0-val kezdődő résztringek nem számítanak (a minta 1010 esetén a 010-et kizárja).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

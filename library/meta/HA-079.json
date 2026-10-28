@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/68. Bástya a sakktáblán",
+    "method": "Szélességi bejárás szakaszonként: egy lépésben a teljes szabad sor- vagy oszlopszakasz elérhető.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "rács", "bfs"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/69. Futó a sakktáblán",
+    "method": "Szélességi bejárás szakaszonként, átlós irányban: egy lépésben a teljes szabad átlószakasz elérhető.",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "rács", "bfs"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/7. Állatkert ***",
+    "method": "Szélességi bejárás, minden csúcshoz a legrövidebb utak számának összegzése a szomszédokból.",
+    "category": "Gráf: legrövidebb utak száma",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bfs", "számlálás"],
+    "note": "A minta második bemenetében a bejárattól (0) nincs él, ezért a kimenet csupa 0. Az ismétlődő utakat (két állat között több út) külön útnak számoljuk; a minta ezt nem dönti el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/70. Repülési esetek",
+    "method": "Komponensenként szorzás: fa esetén V, egy körös komponensben 2, kétélű körnél 1 lehetőség.",
+    "category": "Gráf: komponensek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "komponens", "kombinatorika"],
+    "note": "Két azonos csík felcserélése ugyanazt a repülési tervet adja, ezért a kétélű kör 1 lehetőség; a PDF-példa 1–5 párja ezt mutatja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

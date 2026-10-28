@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/113. Leghosszabb nyaralás **",
+    "method": "Kétmutatós csúszóablak pozitív összegekkel, a P-t nem haladó leghosszabb szakasz",
+    "category": "Kétmutatós módszer",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["kétmutatós", "tömb", "összeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/114. Síkság ****",
+    "method": "Csúszóablak két monoton deque-kel követi a max-min különbséget; a legkisebb kezdőindex marad",
+    "category": "Csúszóablak: monoton deque",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "deque", "szélsőérték"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/115. Leggyorsabb pénzkeresés **",
+    "method": "Kétmutatós csúszóablak pozitív fizetésekkel, a legalább P összegű legrövidebb szakasz",
+    "category": "Kétmutatós módszer",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["kétmutatós", "tömb", "összeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/116. Versenyzők ***",
+    "method": "Minden egész ponthatárt kipróbálunk, a számlálásokat rendezett tömbön lower_bound adja",
+    "category": "Számlálás, küszöbérték-keresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "rendezés", "keresés"],
+    "note": "A ponthatárokat egész számnak tekintettem, az 1 és 100 001 közötti tartományban keresek, és a feladat szerinti legnagyobb optimális értéket írom ki. Mindkét minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

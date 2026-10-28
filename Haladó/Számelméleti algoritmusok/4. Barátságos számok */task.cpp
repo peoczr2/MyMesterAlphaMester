@@ -1,9 +1,11 @@
 /*
- * Barátságos számpárok keresése. Előbb kiszámítjuk minden szám proper osztóinak
- * összegét, majd azokat a párokat írjuk ki, amelyek kölcsönösen megfelelnek.
- 
+ * Barátságos számpárok keresése. Először szitával kiszámoljuk minden 1..N szám valódi osztóinak összegét (minden d
+ * szám a többszöröseinek osztója), majd azokat a P < Q párokat írjuk ki, amelyekre sum[P] = Q és sum[Q] = P.
+ * A szita O(N log N) időben fut.
+*/
+/*
 Hint 1: || Előbb minden számhoz számold ki a valódi osztók összegét, és csak utána keresd a párokat. ||
-Hint 2: || Ha sum[P]=Q és sum[Q]=P, valamint P<Q, akkor megvan egy barátságos pár, amit pontosan egyszer kell kiírni. ||
+Hint 2: || Ha sum[P]=Q, sum[Q]=P és P<Q, akkor megvan egy barátságos pár, amit pontosan egyszer kell kiírni. ||
 */
 
 #include "../common.hpp"

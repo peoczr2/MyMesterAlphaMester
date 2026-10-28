@@ -6,9 +6,9 @@ szamat maximalizalni. A hossza 3N, ezert 3 bites blokkokra bontjuk a stringet.
 Egy blokkban legfeljebb egy muveletet hasznalunk: vagy semmit nem csinalunk,
 vagy az elso ket bitet, vagy az utolso ket bitet forditjuk meg. Igy osszesen legfeljebb
 N muvelet lesz. Dinamikus programmal vegigprobaljuk, hogy az elozo blokk utolso bitje
-0 vagy 1 volt-e, es minden blokkra kivalsztjuk a harom lehetoseg kozul azt, ami a blokk
+0 vagy 1 volt-e, es minden blokkra kivalasztjuk a harom lehetoseg kozul azt, ami a blokk
 belseji ket atmenettel es a blokkok kozti atmenettel egyutt a legtobb kulonbozo szomszedot adja.
-Ha az atmenetek szama legalabb 2N-1, akkor a suly legalabb 2N.
+Ha az atmenetek szama legalabb 2N-1, akkor a suly legalabb 2N. Az idoigeny O(N) kodonkent.
 */
 /*
 Hint 1: || A suly helyett a szomszedos kulonbozo bitparok szamat maximalizald; a vegere csak +1 kerul. ||

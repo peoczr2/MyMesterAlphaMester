@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, feszítőfák/3. Gyár *",
+    "method": "Gyárak összevonása egy csúccsá, majd Kruskal-algoritmus a minimális feszítőfára.",
+    "category": "Feszítőfa: Kruskal",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "feszítőfa", "kruskal"],
+    "note": "A validátor hibásnak jelzi: az 1. minta egyezik, a 2. mintában más, de azonos összhosszúságú feszítőfa szerepel (a feladat szerint bármelyik megoldás kiírható). Ellenőrző: library/.work/HA-024/chk3.py (összhossz 532997, 19980 él, erdő és összefüggőség rendben).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, feszítőfák/4. Hálózat kiépítés *",
+    "method": "Minimális feszítőfa újraszámolása hetente: az előző fa éleiből és az új élből, Kruskal-algoritmussal.",
+    "category": "Feszítőfa: inkrementális frissítés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "feszítőfa", "kruskal"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, feszítőfák/5. Járásközpont *",
+    "method": "Floyd-Warshall legrövidebb utak, majd a lakosokkal súlyozott távolságösszeg minimuma.",
+    "category": "Legrövidebb utak: Floyd-Warshall",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "legrövidebb út", "floyd-warshall"],
+    "note": "A validátor hibásnak jelzi: a 2. minta (M=250 000, a feladat szerint M≤25 000) kimenete két sor (286, 1), a feladat egy sorszámot kér. Független Dijkstra-ellenőrzés (library/.work/HA-024/brute5.cpp) egyértelmű optimumot ad: 286 (összeg 2718449877), az 1-es település nem optimális, ezért a minta második sora hibás.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, feszítőfák/6. Kereskedők *",
+    "method": "Járások városait ingyen összekötjük, majd Kruskal-algoritmussal választjuk az ajánlatokat.",
+    "category": "Feszítőfa: járások összevonása",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "feszítőfa", "unió-keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

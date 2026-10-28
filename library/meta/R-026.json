@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/37. Elrendezés",
+    "method": "Zárójelezések (Dyck-utak) számolása, Catalan-rekurzióval O(N²) időben",
+    "category": "Catalan-számok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "kombinatorika",
+      "catalan",
+      "rekurzió"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/38. Leosztások",
+    "method": "Prefixfa-bejárás: bővítés a legkisebb kártyával, különben visszalépés a legkisebb nagyobb betűre",
+    "category": "Lexikografikus rákövetkező",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "lexikografikus",
+      "multihalmaz"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/39. Multihalmaz variációi",
+    "method": "Prefixfa-bejárás: rákövetkező és előző variáció visszalépéssel, prefixenkénti darabszámokkal",
+    "category": "Lexikografikus rákövetkező",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "multihalmaz",
+      "lexikografikus"
+    ],
+    "note": "Javítva: egyelemű, nem legkisebb variáció előzőjének számítása (a kód eddig a teljes multihalmazt adta); a minta ezt nem fedi le.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/4. Birtokfelosztás ***",
+    "method": "Vágások száma C(N−1, K−1), lexikografikus unrankelés csökkenő első résszel",
+    "category": "Kompozíciók, unrankelés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "kombinatorika",
+      "binomiális",
+      "unrankelés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/40. Táblás játék",
+    "method": "Legalacsonyabb oszlop szerinti rekurzív felbontás, sávonkénti képlet és konvolúció",
+    "category": "Rekurzív DP, konvolúció",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "rekurzió",
+      "konvolúció"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Kombinatorikai algoritmusok/41. Permutációk",
+    "method": "Veremmel kódolt Dyck-szó, rákövetkező Dyck-szó és visszaalakítás veremmel",
+    "category": "Verem, Dyck-szavak",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "permutáció",
+      "verem",
+      "zárójelezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

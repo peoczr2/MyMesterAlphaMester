@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/7. Délkert *",
+    "method": "Bináris keresés a K időkorlátra, utána a kényszerített és rugalmas termelők kapacitás szerinti szétosztása.",
+    "category": "Bináris keresés: hozzárendelés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["bináris keresés", "hozzárendelés", "kapacitás"],
+    "note": "A be1 K értéke (6) egyezik a mintával, de a hűtőházi besorolás más: a minta A={4,5,6,8}, a megoldás A={1,4,6,8}, mindkettő érvényes és a feladatszöveg szerint bármelyik megadható. Ellenőrző program (library/.work/R-012/ellenorzo.py): nincs átfedés, a kapacitások és az időkorlát betartva, a K minimális (max-flow), és 600 véletlen kis teszten egyezik a 2^N brute-force eredményével. A be2 kimenete egyezik a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

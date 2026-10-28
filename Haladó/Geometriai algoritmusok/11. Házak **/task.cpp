@@ -1,15 +1,21 @@
 /*
 Megoldás lényege:
-A napfény balról-fentről, párhuzamos sugarakkal érkezik (DX,DY > 0), ezért az árnyékhatár
-minden épületnél azonos meredekségű egyenes. Egy korábbi épület j árnyékát az x helyen a
-h_j - (DY/DX)*(x-r_j) képlet adja (r_j: jobb oldali x).
-Mivel minden árnyékegyenes meredeksége azonos, elég a legnagyobb
-(h_j + (DY/DX)*r_j) értéket tárolni (intercept). Az i-edik épület akkor kap napot, ha a jobb felső
-sarka az árnyékhatár fölött van:
-    h_i + (DY/DX)*r_i  >  max_intercept
-Szigorú > kell, mert az egyenlőség esetén csak érintés lenne (nem kap közvetlen napfényt).
+A napfény balról-fentről, párhuzamos sugarakkal érkezik (DX,DY > 0), ezért minden sugár egyenese azonos
+meredekségű: y + (DY/DX)*x értéke egy sugáron állandó (ez a sugár tengelymetszete). Egy ház akkor kap napot,
+ha valamely pontján átmenő sugár nem metszi a tőle balra lévő házakat. Egy ház pontjai közül a legnagyobb
+tengelymetszetet a jobb felső sarka adja, ezért elég ezt vizsgálni: a ház akkor napos, ha jobb felső sarkának
+tengelymetszete nagyobb, mint az eddigi házak legnagyobb tengelymetszete. Az egyenlőség csak érintés, ezért
+szigorú > kell. Az összehasonlítást DX-szel szorozva egész számokkal végezzük, így nincs lebegőpontos hiba.
 
 Idő: O(N).
+*/
+/*
+Hint 1: || Minden sugár párhuzamos, ezért egy sugarat egyetlen szám jellemez: az a magasság, ahol az
+y-tengelyt metszi (a sugár egyenesének tengelymetszete). Egy ház napos, ha van olyan pontja, amelyen átmenő
+sugár nem akad el a balra lévő házakon. ||
+Hint 2: || Melyik pontja a legkitettebb? Az y + (DY/DX)*x tengelymetszet a jobb felső sarokban a legnagyobb.
+Haladj balról jobbra, tartsd nyilván az eddigi legnagyobb tengelymetszetet, és csak a szigorúan nagyobb
+értékű házak lesznek naposak. ||
 */
 
 #include <bits/stdc++.h>
@@ -20,28 +26,23 @@ int main() {
     cin.tie(nullptr);
 
     int N;
-    long double DX, DY;
+    long long DX, DY;
     if (!(cin >> N >> DX >> DY)) return 0;
 
-    const long double k = DY / DX;
-    const long double NEG_INF = -1e300L;
-    const long double EPS = 1e-15L;
-
-    long double bestIntercept = NEG_INF;
+    // h + (DY/DX)*r > best  <=>  h*DX + DY*r > best*DX  (DX > 0), ezért a tárolt érték már DX-szeresen szerepel.
+    long long bestScaled = LLONG_MIN;
     vector<int> sunny;
     sunny.reserve(N);
 
     for (int i = 1; i <= N; ++i) {
-        long double x, w, h;
+        long long x, w, h;
         cin >> x >> w >> h;
-        long double r = x + w;
-
-        long double val = h + k * r;
-        if (val > bestIntercept + EPS) {
+        long long r = x + w;  // a jobb felső sarok x-koordinátája
+        long long val = h * DX + DY * r;
+        if (val > bestScaled) {
             sunny.push_back(i);
+            bestScaled = val;
         }
-
-        if (val > bestIntercept) bestIntercept = val;
     }
 
     cout << sunny.size() << '\n';

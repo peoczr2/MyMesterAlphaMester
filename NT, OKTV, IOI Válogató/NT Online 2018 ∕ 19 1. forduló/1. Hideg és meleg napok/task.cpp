@@ -1,11 +1,19 @@
+/*
+    Az első és az utolsó nap kivételével minden napot megjelölünk: hideg (+1), ha mindkét
+    szomszédjánál hidegebb, meleg (-1), ha mindkettőnél melegebb, egyébként 0. Egy [l, r]
+    intervallum pontosan akkor jó, ha l és r is hideg vagy meleg nap (jelük nem 0), és a jelek
+    összege az intervallumon 0, vagyis a végpontokat is beleszámolva ugyanannyi hideg és meleg
+    nap van benne. Az összeg prefixösszeggel O(1)-ben kiszámítható: pref[r] − pref[l−1].
+    Mivel N ≤ 5000, minden (l, r) párt végigpróbálunk; ez O(N²) ≈ 12,5 millió lépés, ami az
+    időlimiten belül van.
+*/
+/*
+Hint 1: || Az első és az utolsó nap kivételével minden napról külön eldöntheted, hogy hideg, meleg vagy egyik sem, és ez csak a két szomszédjától függ. Ezeket a jeleket egyszer, előre kiszámíthatod. ||
+Hint 2: || Egy [l, r] intervallum akkor jó, ha l és r jele nem 0, és a jelek összege az l-től r-ig tartó szakaszon 0, így a végpontok is számítanak. Ez azt jelenti, hogy ugyanannyi hideg és meleg nap van benne. ||
+Hint 3: || Az összegeket prefixösszeggel gyorsan megkaphatod: az [l, r] összege pref[r] − pref[l−1]. Mivel N legfeljebb 5000, két egymásba ágyazott ciklussal az összes (l, r) párt ellenőrizheted. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A hideg napot +1-gyel, a meleg napot -1-gyel, a többit 0-val jelöljük.
-    Egy intervallum akkor jó, ha a két végén hideg vagy meleg nap áll, és a
-    belsejében a +1 és -1 értékek összege 0.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

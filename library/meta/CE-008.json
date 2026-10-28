@@ -1,0 +1,38 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2017/1. Hídépítés",
+    "method": "Dinamikus programozás, Li Chao fa a minimum-egyenes lekérdezéshez",
+    "category": "Dinamikus programozás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus programozás", "konvex burok", "li chao fa"],
+    "note": "Kézi: a minta.zip Be2.txt/Ki2.txt párjának kimenete 289, a feladatszöveg („Írj programot, amely meghatározza, hogy mekkora a lehető legkisebb költsége az első és utolsó oszlopot összekötő híd építésének!”) szerint viszont a minimum 374495. Ezt független O(N²) DP ellenőrző igazolja: library/.work/CE-008/scripts/check_bridge_n2.py (a task.cpp Li Chao változata ugyanezt adja, a modellt kis véletlen esetekben részhalmaz-bruteforce-szal is összevetettük). A Be1.txt minta (17) egyezik, a minta Be2 kimenete ezért hibás.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2017/2. Hajsza",
+    "method": "Fa-DP a legjobb úthoz, felfelé és lefelé haladó láncok tömbjeivel",
+    "category": "Fa: dinamikus programozás",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "útvonal", "dinamikus programozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2017/3. Tükrös felosztások",
+    "method": "Szélről befelé mohó választás, legrövidebb egyező szelet, hash-összehasonlítás",
+    "category": "Szöveg: hash, mohó",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szöveg", "hash", "mohó"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

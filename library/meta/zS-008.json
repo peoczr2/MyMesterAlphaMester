@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/42. Nem négyzetmentes számok",
+    "method": "Szita: minden p-re a p^2 többszöröseit megjelöljük, majd megszámoljuk a jelölteket.",
+    "category": "Szita, négyzetmentesség",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szita", "négyzetmentes", "számelmélet"],
+    "note": "A korábbi számonkénti próbaosztás N=100000-re ~0,10 mp volt (limit 0,1 mp); a szita ~0,002 mp. Független (legkisebb prímosztós) referenciával N<=3000-ig és véletlen N-ekre egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/43. Számok előállítása",
+    "method": "Maradékosztályok a legkisebb érme szerint, blokkonkénti bitkészlet-szita Dijkstra helyett.",
+    "category": "Maradékgráf, bitkészlet",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["maradékosztályok", "legrövidebb út", "bitkészlet", "érmék"],
+    "note": "A korábbi Dijkstra n=5000, A1=45000 mellett ~0,67 mp volt (limit 0,3 mp); az új változat a legrosszabb esetben (A1=49999, A2=50000) ~0,04 mp. A régi Dijkstra-megoldással véletlen és szerkezetes nagy bemeneteken, tiszta DP brute-force-szal kis értékeken egyezik. A 46. feladattal azonos szövegű; a kimenet egy sorban.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/46. Számok előállítása",
+    "method": "Maradékosztályok a legkisebb érme szerint, blokkonkénti bitkészlet-szita Dijkstra helyett.",
+    "category": "Maradékgráf, bitkészlet",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["maradékosztályok", "legrövidebb út", "bitkészlet", "érmék"],
+    "note": "A korábbi körbejárásos frissítés n=5000, A1=45000 mellett ~0,6 mp volt (limit 0,3 mp); az új változat a legrosszabb esetben ~0,04 mp. A régi Dijkstra-megoldással véletlen és szerkezetes nagy bemeneteken, tiszta DP brute-force-szal kis értékeken egyezik. A 43. feladattal azonos szövegű és megoldású.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "sonnet"
+  }
+]

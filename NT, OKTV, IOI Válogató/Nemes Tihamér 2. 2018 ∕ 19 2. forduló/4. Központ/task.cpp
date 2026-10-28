@@ -1,11 +1,16 @@
+/*
+Megoldás lényege:
+Egy útvonal sebessége a rajta lévő legkisebb átviteli sebesség, ezért két gép legjobb sebessége a legszélesebb út (maximin) értéke.
+Ezt Floyd–Warshall-szerű táblázattal számoljuk: a köztes csúcsot végigpróbálva a best[i][j] értéket max(best[i][j], min(best[i][k], best[k][j])) szerint frissítjük.
+Minden i jelöltre azt a legkisebb sebességet nézzük, amellyel bármely más gép elérhető; a legnagyobb ilyen értékű gépet választjuk, egyenlőség esetén a kisebb sorszámút.
+Az időigény O(N³), ami N ≤ 100 esetén bőven elég.
+*/
+/*
+Hint 1: || Egy útvonal sebessége a szakaszsebességek minimuma, ezért két gép legjobb sebessége a legszélesebb út feladat: a Floyd–Warshall-hoz hasonló táblázat mindent megad. ||
+Hint 2: || Minden i géphez számold ki a többi géphez vezető legjobb sebességek minimumát. Az a jó központ, ahol ez a minimum a legnagyobb; ha több ilyen van, a legkisebb sorszámút válaszold. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Minden csúcspárra kiszámítjuk a legjobb bottleneck-értéket.
-    A központi gép az, amelyből minden másik csúcs a lehető legnagyobb
-    minimális kapcsolatsebességgel érhető el.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: másolás/1. Autóbusz menetrend *",
+    "method": "Megállónként haladva, az időt percben összegezzük a menetidővel és a várakozással.",
+    "category": "Szimuláció, időszámítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "idő", "menetrend"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: másolás/2. Benzinkút **",
+    "method": "Prioritási sor (min-heap) a töltőhelyek szabadulási idejével, érkezési sorrendben.",
+    "category": "Prioritási sor, szimuláció",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prioritási sor", "szimuláció", "várakozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: másolás/3. Határátkelő *",
+    "method": "Egyetlen változó: mikor lesz szabad a határőr; az autó a kettő maximumától indul.",
+    "category": "Szimuláció, sorban állás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "idő", "sorban állás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: másolás/4. Lóverseny *",
+    "method": "Három eset szétválasztása, az 5 pontos csoportok sorszámát egész osztással számoljuk.",
+    "category": "Elágazás, egész osztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["elágazás", "egész osztás", "képlet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/42. Leggyorsabb apadás ***",
+    "method": "Szakaszokra bontás, majd a szomszédos (harmadfokú, árvízmentes) szakaszpárok vizsgálata.",
+    "category": "Szakaszok, szomszédos párok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakaszok", "szomszédos párok", "tömb"],
+    "note": "Az apadás iránya (harmadfokú, utána árvízmentes) a mintából olvasható ki. Egyenlő távolságnál az első pár kell; a minta-2 ezt várja. N=10000 mért futásidő 2-4 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/43. Leggyorsabb áradás ***",
+    "method": "Szakaszokra bontás, majd a szomszédos (árvízmentes, harmadfokú) szakaszpárok vizsgálata.",
+    "category": "Szakaszok, szomszédos párok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakaszok", "szomszédos párok", "tömb"],
+    "note": "Az áradás iránya (árvízmentes, utána harmadfokú) a mintából olvasható ki. Egyenlő távolságnál a legkisebb sorszámú pár kell. N=10000 mért futásidő 3-4 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/44. Milyen készültségű folyószakaszból volt a legtöbb ***",
+    "method": "Árvizek nyitása és zárása egy bejárásban, fokonkénti számlálással, majd a legnagyobb darabszám kiválasztása.",
+    "category": "Szakaszok, számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakaszok", "számlálás", "tömb"],
+    "note": "Ha nincs árvíz, csak a 0 sor kerül ki (a feladat szerint nincs további sor). Egyenlő darabszámnál a kisebb fokozat kell. N=10000 mért futásidő 2-3 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/45. Mögötte majdnem árvíz kezdődik ***",
+    "method": "Egy bejárás: az előzőhöz képesti növekedés alapján a mögötte levő pont hipotetikus szintjét vizsgáljuk.",
+    "category": "Szomszédos elemek",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["szomszédos elemek", "feltétel", "tömb"],
+    "note": "A mögötte levő pont hipotetikus szintje A[i]+(A[i]-A[i-1]); a pont és a mögötte levő pont most árvízmentes kell legyen (a minta-1 második pontja ezért nem jelölhető). N=10000 mért futásidő 2-3 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

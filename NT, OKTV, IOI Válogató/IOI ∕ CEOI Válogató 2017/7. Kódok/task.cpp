@@ -10,7 +10,11 @@ blokk utolsó bitje 0 vagy 1 volt, és minden blokkra kiválasztjuk a legjobb he
 átalakítást. A DP a különböző szomszédos bitpárok számát maximalizálja, így a
 végső súly legalább 2N lesz.
 */
-
+/*
+Hint 1: || Egy 3N hosszú kódot 3 bites blokkokra bontva elég blokkonként legfeljebb egy műveletet használni (az első két bit, az utolsó két bit vagy semmi), így a műveletek száma nem lesz több N-nél. ||
+Hint 2: || Balról jobbra haladva dinamikus programozást végezz: az állapot az előző blokk utolsó bitje (0 vagy 1), az érték pedig az eddigi különböző szomszédos párok maximális száma. Egy blokk párjai közül a blokkon belüli két pár és az előző blokkal való határ is számít. ||
+Hint 3: || Minden átmenetnél tárold az előző állapotot és a választott műveletet, majd a végső állapotból visszafelé haladva gyűjtsd össze a műveleteket. A művelet száma a megfordított két bit közül az első bit 1-től számozott pozíciója. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -60,21 +64,21 @@ int main() {
                 // 0. nincs művelet
                 {
                     int na = a, nb = b, nc = c;
-                    long long add = (i == 0 ? (nb != nc) : (prevState != na) + (nb != nc));
+                    long long add = (i == 0 ? 0 : (prevState != na)) + (na != nb) + (nb != nc);
                     relax(prevState, 0, na, nb, nc, add);
                 }
 
                 // 1. az első két bit fordítása
                 {
                     int na = a ^ 1, nb = b ^ 1, nc = c;
-                    long long add = (i == 0 ? (nb != nc) : (prevState != na) + (nb != nc));
+                    long long add = (i == 0 ? 0 : (prevState != na)) + (na != nb) + (nb != nc);
                     relax(prevState, 3 * i + 1, na, nb, nc, add);
                 }
 
                 // 2. az utolsó két bit fordítása
                 {
                     int na = a, nb = b ^ 1, nc = c ^ 1;
-                    long long add = (i == 0 ? (nb != nc) : (prevState != na) + (nb != nc));
+                    long long add = (i == 0 ? 0 : (prevState != na)) + (na != nb) + (nb != nc);
                     relax(prevState, 3 * i + 2, na, nb, nc, add);
                 }
             }

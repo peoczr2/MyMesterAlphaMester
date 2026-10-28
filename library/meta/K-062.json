@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/97. Áruszállítás üres szakaszai",
+    "method": "Különbségtömbbel jelöljük a lefedett szakaszokat, majd a lefedetlen futamok kezdeteit számoljuk.",
+    "category": "Intervallumok lefedése",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "különbségtömb", "futam"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/98. Síugró verseny",
+    "method": "Lineáris bejárás: ugrásonként számoljuk a nála szigorúan jobb pontszámúak számát, és ebből a helyezést.",
+    "category": "Helyezések gyakorisága",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "rangsor", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/99. Szálloda",
+    "method": "Lineáris bejárás, futás közben a Hó Eduárdhoz legközelebbi felső és alsó pontszám karbantartása.",
+    "category": "Szomszédok a rangsorban",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "rangsor", "szélsőérték"],
+    "note": "Minta-eltérés: a minta.zip kimenetei nem ehhez a feladathoz illenek. A be1 esetén a ki1.txt első sora 9, pedig N=8 mellett legfeljebb 7 versenyző állhat Hó Eduárd előtt, és a kimenet négy sor (a feladat kettőt ír elő). A be2 esetén a ki2.txt első sora 94092 (N=100). A feladat.pdf példája (10 3 / 4 8 6 3 9 2 6 8 1 5 bemenet, 2 2 8 / 2 1 10 kimenet) a megoldással egyezik. A mappanév (Szálloda) és a PDF címe (Sírepülő verseny) eltér, a feladatot a PDF szerint oldottam meg. A kimenetet független brute-force szimuláció igazolja véletlen teszteken és a mintabemeneteken. A validátor ezért hibás állapotot jelez.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

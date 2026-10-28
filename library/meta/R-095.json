@@ -1,0 +1,38 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 2. forduló/1. Maja naptár",
+    "method": "Abszolút napsorszám a két naptár között, osztással és maradékkal visszaalakítva",
+    "category": "Dátumkonverzió",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dátum", "maradékos osztás", "átszámítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 2. forduló/2. Globális felmelegedés",
+    "method": "Éves összegek sorrendje, napi oszlopos maximum és annak első előfordulása",
+    "category": "Szélsőérték-keresés, táblázat",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szélsőérték", "mátrix", "összegzés"],
+    "note": "Minta-eltérés oka: a korábbi kód a C) és D) részben csak egyedi napi maximumot fogadott el. A kimenet-leírás („egyik másik évben sem volt melegebb”) és a be2 minta (66, 950) egyenlőséget is megenged, ezért a kód ehhez igazodott (korábban 39 és 956 jött ki). A C) pont szövege szigorúbbnak hangzik, de a kimenet-leírás és a minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 2. forduló/3. Ajándékozás",
+    "method": "Partíciók számlálása méretenként, növekvő s-sel frissített dinamikus programozás",
+    "category": "Dinamikus programozás, partíciók",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "partíció", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

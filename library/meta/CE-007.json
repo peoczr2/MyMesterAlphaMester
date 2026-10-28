@@ -1,0 +1,51 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2016/1. Kenguru",
+    "method": "Cellák növekvő sorrendben, állapot: láncok száma, K és V jelenléte",
+    "category": "Dinamikus programozás, permutáció",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "permutáció",
+      "zikk-cakk"
+    ],
+    "note": "Blokkolt: a 2. minta (199 100 70 → 955348527) nem egyezik a feladatszöveggel: a pontos érték 330 jegyű, a feladat nem említ modulust, a 10^9+7 szerinti maradék pedig 914653136. A task.cpp a 10^9+7 szerinti maradékot számolja; a DP-t N ≤ 12 esetén brute force igazolja (library/.work/CE-007/kenguru/dp_check.py).",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2016/2. Programozóverseny",
+    "method": "DP csoporthatárokra, költség: megoldók száma × pontösszeg, k-szerinti előtagminimum",
+    "category": "Dinamikus programozás, optimalizáció",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "előtagminimum",
+      "részfeladat"
+    ],
+    "note": "Nincs minta.zip a mappában, ezért a validátor nincs minta állapotot ad. A PDF példája (0, 8, 16) kézzel ellenőrizve; a legnagyobb méretű esetben (T=20000, N=50, S=50) kb. 0,19 mp, az 1 mp-es időlimit alatt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2016/3. Zárojelezés",
+    "method": "Redukció fában: nyitó zárójel párja az utolsó azonos élen tett visszalépés",
+    "category": "Zárójelezés, lexikografikus minimum",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "zárójelezés",
+      "trie",
+      "lexikografikus"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

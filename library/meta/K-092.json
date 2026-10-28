@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/24. Programozási verseny",
+    "method": "Versenyzőnként összegyűjtött helyezési pontok, összeg szerinti rendezés, egyenlőségnél lexikografikus pontlista-összehasonlítás.",
+    "category": "Rendezés: összetett kulcs",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "összehasonlító", "pontozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/25. Konténerek rendezése",
+    "method": "Oszlopok szomszédos összeolvasztása elkülönülő értékhalmazok mentén, rekurzív felosztással.",
+    "category": "Rendezés: rekurzív felosztás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["rendezés", "rekurzió", "szimuláció"],
+    "note": "Több helyes műveletsor van, ezért a minta kézi ellenőrzéssel igazolt: a saját kimenet szimulátorral érvényes, a zip ki1.txt 4. sora pedig a legnagyobb konténer oszlopát mozgatja, ami tilos.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/26. Kavicsok",
+    "method": "Mohó megoldás: a kupacméretek gyakoriságából a legnagyobb K érték összege.",
+    "category": "Mohó algoritmus, számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "számlálás", "gyakoriság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/27. Kavicsok 1",
+    "method": "Mohó megoldás gyakoriságtömbből, a legnagyobb K érték összege; a kupacokat nem tároljuk.",
+    "category": "Mohó algoritmus, számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "számlálás", "memória"],
+    "note": "A minta be2.txt a 26-os feladat másolata: minden D-érték 190000 és 199999 közé esik, a feladatszöveg viszont D ≤ 100000-t ír elő. A tömb ezért 200001-es méretű (kb. 800 KB), hogy a minta kimenete (19997016390, független heap-alapú szimulációval igazolva) is egyezzen; a feladat szerinti korlát mellett 400 KB elég lenne.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

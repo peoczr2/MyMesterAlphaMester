@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/13. Legtöbbször legmelegebb települések",
+    "method": "Naponként megkeressük az aznapi maximumot, és minden településnél számoljuk a maximumot elérő napok számát.",
+    "category": "Mátrix: napi maximumok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "számlálás", "mátrix"],
+    "note": "A feladatszöveg nem mondja ki, mi történik döntetlen napon. Minden, a napi maximumot elérő település pontot kap; a nagy minta (ki2) igazolja, az első találatot számoló értelmezés nem illeszkedik rá.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/14. Legváltozatosabb települések",
+    "method": "Soronként a nem nulla napi különbségek előjelét követjük, és számoljuk az előjelváltásokat.",
+    "category": "Mátrix: irányváltások",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["előjel", "változás", "mátrix"],
+    "note": "A feladatszöveg nem mondja ki, mit kell tenni az egyenlő szomszédos napokkal. Ezeket kihagyjuk, mert nem változtatják az irányt; a minta (ki1, ki2) igazolja, a közvetlen szomszédpárok vizsgálata nem illeszkedik rá.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/15. Legváltozóbb települések",
+    "method": "Soronként a szomszédos napok közti abszolút különbségek maximuma, majd a legnagyobbat elérő települések kiírása.",
+    "category": "Mátrix: maximális változás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "különbség", "mátrix"],
+    "note": "A „legnagyobb változás” abszolút különbséget jelent, az előjel nem számít. Ezt a minta (ki2) igazolja: az előjeles értelmezés (csak a legnagyobb emelkedés vagy csökkenés) nem adja a mintakimenetet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/16. Sem maximum, sem minimum",
+    "method": "Naponkénti szélsőértékek kiszámítása, majd a soha szélsőértéket nem elérő települések kiírása.",
+    "category": "Mátrix: napi szélsőértékek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "minimum", "mátrix"],
+    "note": "A feladatszöveg nem mondja ki, mi történik döntetlen napon. Az egyenlő értéket is maximumnak, illetve minimumnak tekintjük; a nagy minta (ki2) igazolja, az első előfordulást figyelembe vevő értelmezés nem illeszkedik rá.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

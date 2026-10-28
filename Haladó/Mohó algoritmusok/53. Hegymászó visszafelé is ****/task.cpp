@@ -1,11 +1,17 @@
 /*
-Feladat: A hegymászó táboronként élelmiszert vehet fel (H kapacitásig), de minden táborban legalább annyit kell hátrahagyni, amennyi onnan visszafelé az 1. táborig szükséges. Felfelé mindig a lehető legtöbbet viszi. Meg kell adni, meddig jut fel úgy, hogy onnan még visszaérjen, és az egyes táborokban mennyit vett fel.
-Ötlet: Szimuláció táboronként. Legyen needBack[i] az i. táborból az 1.-ig szükséges összes élelem (prefix a K értékekből). Az i. táborban legfeljebb Vi-needBack[i] vehető fel úgy, hogy a kötelező tartalék megmaradjon. A mohó szabály miatt mindig ennek és a szabad kapacitásnak a minimumát vesszük fel. Ha ezzel sem érjük el a következő szakasz költségét, ott meg kell állni.
-Hint 1: || A visszaútra szükséges tartalék az i. táborban: K1+K2+...+K(i-1). ||
-Hint 2: || A felvehető mennyiség felső korlátja egyszerre a hátizsák maradék helye és a táborban hagyandó tartalék miatt adódik. ||
-Hint 3: || Ha a maximálisan felvehető mennyiséggel sem tudod kifizetni a következő szakaszt, innen már nem mehetsz tovább. ||
+Megoldás lényege: felfelé minden táborban annyit veszünk fel, amennyi a hátizsákba még belefér, de a táborban
+mindig legalább a közvetlenül előtte levő szakasz visszaútjához szükséges K_{i-1} marad. Ha a táborban nincs elég
+élelmiszer ehhez, a hátizsákunkból teszünk le; ha így sincs elég, az előző táborból kell visszafordulni. A táborokban
+hagyott élelmiszert a lejutáskor útközben felvesszük, így minden lejutási szakasz a saját tábora tartalékából
+fedezhető. A hátizsák tartalma minden lépésben a lehető legnagyobb, ezért a mohó felvétel optimális.
+Időigény: O(N).
 */
-
+/*
+Hint 1: || Egy táborban elég annyit hagyni, amennyi a közvetlenül előtte levő szakasz visszaútjához kell. ||
+Hint 2: || Ha a táborban nincs elég élelmiszer a hagyáshoz, a hátizsákodból is letehetsz; ha így sincs elég, visszafordulsz. ||
+Hint 3: || Minden táborban annyit vegyél fel, amennyi a hátizsákba még belefér, majd ellenőrizd, hogy a következő szakaszt megteheted-e. ||
+Hint 4: || Az utolsó táborból a csúcsig és vissza tartó oda-vissza út költségét ugyanúgy a hátizsák maradékából kell fedezni. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -16,59 +22,51 @@ int main() {
     int N, H;
     cin >> N >> H;
 
-    vector<int> V(N, 0), K(N, 0);
+    vector<long long> V(N, 0), K(N, 0);
     for (int i = 1; i <= N - 1; ++i) {
         cin >> V[i] >> K[i];
     }
 
-    vector<long long> needBack(N + 1, 0);
-    for (int i = 2; i <= N; ++i) {
-        needBack[i] = needBack[i - 1] + K[i - 1];
-    }
-
-    vector<int> take;
-    take.reserve(N - 1);
-
+    // take[i]: az i. táborban felvett mennyiség (1-től számozva)
+    vector<long long> take(N, 0);
     long long bag = 0;
 
+    // Kimenet: az elért K tábor, majd a K-1 darab felvétel (az 1..K-1. táborokra)
+    auto print = [&](int reached) {
+        cout << reached << '\n';
+        for (int i = 1; i <= reached - 1; ++i) {
+            if (i > 1) cout << ' ';
+            cout << take[i];
+        }
+        cout << '\n';
+    };
+
     for (int i = 1; i <= N - 1; ++i) {
-        long long reserve = needBack[i];
-        long long maxTakeByReserve = (long long)V[i] - reserve;
-        if (maxTakeByReserve < 0) {
-            int reached = i - 1;
-            cout << reached << '\n';
-            for (int j = 0; j < (int)take.size(); ++j) {
-                if (j) cout << ' ';
-                cout << take[j];
-            }
-            cout << '\n';
+        // a táborban legalább K[i-1] marad a visszaúthoz (az 1. táborban nincs rá szükség)
+        long long reserve = (i >= 2) ? K[i - 1] : 0;
+
+        // felvehető: a hátizsák szabad helye és a tartalékkal nem ütköző rész
+        long long pick = min((long long)H - bag, max(0LL, V[i] - reserve));
+
+        // ha a táborban nincs elég a tartalékhoz, a hátizsákunkból teszünk le
+        long long deposit = max(0LL, reserve - (V[i] - pick));
+        if (deposit > bag) {
+            // nem tudunk elég élelmiszert hagyni: az előző táborból kell visszafordulni
+            print(i - 1);
             return 0;
         }
 
-        long long canTake = min((long long)H - bag, maxTakeByReserve);
-        if (canTake < 0) canTake = 0;
+        take[i] = pick;
+        bag = bag + pick - deposit;
 
-        long long maxCarryAfterPickup = bag + canTake;
-        if (maxCarryAfterPickup < K[i]) {
-            int reached = i;
-            cout << reached << '\n';
-            for (int j = 0; j < (int)take.size(); ++j) {
-                if (j) cout << ' ';
-                cout << take[j];
-            }
-            cout << '\n';
+        if (bag < K[i]) {
+            // a következő szakaszt (az utolsó táborban a csúcsig és vissza) nem tudjuk megtenni
+            print(i);
             return 0;
         }
-
-        take.push_back((int)canTake);
-        bag = maxCarryAfterPickup - K[i];
+        bag -= K[i];
     }
 
-    cout << N << '\n';
-    for (int i = 0; i < (int)take.size(); ++i) {
-        if (i) cout << ' ';
-        cout << take[i];
-    }
-    cout << '\n';
+    print(N);
     return 0;
 }

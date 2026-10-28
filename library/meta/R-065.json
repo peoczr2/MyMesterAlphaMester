@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Szimuláció/35. Sejtautomata síkon",
+    "method": "Lépésenkénti szimuláció 3×3 környezet 9 bites maszkjával és szabálytáblázattal, a szélső cellák mindig fehérek",
+    "category": "Sejtautomata: 2D rács",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "rács",
+      "bitmaszk"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/36. Sejtautomata",
+    "method": "Kétpufferes szimuláció 5 bites mintázat-maszkkal és szabálytáblázattal",
+    "category": "Sejtautomata: 1D",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "szimuláció",
+      "tömb",
+      "bitmaszk"
+    ],
+    "note": "A minta.zip be2.txt a 37-es (L-es) formátumot követi: a fejléc 2000 200 3, a szabályok 7 betűsek, ami ellentmond a feladatszövegnek (fejléc: N K, 5 betűs szabályok). Az elvárt 1099 sem a 36-os, sem az L=3-as olvasatban nem jön ki; a független szimuláció az L=3-as olvasatban 139-et ad. A megoldás a feladatszöveg szerint helyes: a be1 mintát teljesíti (7), és 700 véletlen tesztesetben egyezik a referencia-szimulációval.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/37. Sejtautomata-2",
+    "method": "Kétpufferes szimuláció 2L+1 bites mintázat-maszkkal és szabálytáblázattal",
+    "category": "Sejtautomata: általános sugár",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "bitmaszk",
+      "paraméter"
+    ],
+    "note": "A minta.zip be1.txt és be2.txt fejlécéből hiányzik az L (csak N K áll benne), a feladatszöveg viszont N K L formátumot ír elő (példa: 12 3 2). A szabályok 5 betűsek, ezért L=2. L=2 fejléccel kiegészítve a megoldás 7-et és 1805-öt ad, ami az elvárt kimenet; ezt független szimuláció is megerősíti. A véletlen tesztekben (700 eset) egyezik a referencia-szimulációval.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/9. Hangya nyolcszögeken ***",
+    "method": "Mezőtípusos szimuláció, a különböző érintett négyzetek halmaza, látogatásszámlálás map-pel",
+    "category": "Szimuláció: rácsbolyongás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "halmaz",
+      "rács"
+    ],
+    "note": "A minta be1.txt az utolsó lépéssel négyzeten áll meg, a szöveg szerint pedig nyolcszögben kellene; a kimenet a négyzet bal alsó nyolcszögének koordinátáit adja, ez egyezik a mintával.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

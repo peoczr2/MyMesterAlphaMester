@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Sorozatok/112. Őrizetlen szakaszok száma",
+    "method": "Rendezett map a lefedett szakaszokról, szomszédos szakaszok összevonása",
+    "category": "Intervallum-lefedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "map",
+      "lefedés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/113. Mágikus táblázat",
+    "method": "Küszöbönkénti aktív szakaszok unió-kereséssel, mindkét sorozaton",
+    "category": "Unió-keresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "unió-keresés",
+      "küszöb",
+      "szorzat"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/114. Mágikus intervallum",
+    "method": "Oszd-meg-és-uralkodj, középen átnyúló intervallumok Fenwick-fával",
+    "category": "Oszd-meg-és-uralkodj",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "oszd-meg-uralkodj",
+      "fenwick",
+      "intervallum"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/14. Háromsoros vasút *",
+    "method": "Mohó bontás három nemcsökkenő részsorozatra, a sínek fejéből kiürítés",
+    "category": "Mohó algoritmus",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "sor",
+      "rendezés"
+    ],
+    "note": "Több helyes műveletsor van, és a minta ki2 hibás (a 980. sorban K1 után 1 jönne ki a 3 után, a C-F sínen); a saját kimenetet FIFO-sínes szimulátor igazolja, a NEM-eseteket brute-force ellenőrzi.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/17. Játékosok unatkozó napjai *",
+    "method": "Különbségi tömbök a napi részvételhez, egyedül lévő játékos napjainak összevonása",
+    "category": "Különbségi tömb",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "különbségi tömb",
+      "intervallum",
+      "összegzés"
+    ],
+    "note": "Javítva: a 0 hosszúságú szakasz nem ad napot, és a sor M-nél további számait a minta szerint figyelmen kívül kell hagyni.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Sorozatok/2. Alma *",
+    "method": "Időegységenkénti szimuláció, szélen irányfordítás, páronkénti ütközésvizsgálat",
+    "category": "Szimuláció",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "szimuláció",
+      "ütközés",
+      "rács"
+    ],
+    "note": "Javítva: a szélen mindkét irány megfordul, ütközés a célmező egyezése vagy másik bábu jelenlegi mezőjére lépés (ezt a két minta igazolja). A mappanév (Alma) nem egyezik a feladat.pdf címével (Bábuk ütközése átlósan).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

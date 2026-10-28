@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Verseny/20. Nem induló győztesek",
+    "method": "Versenyenkénti maximumkeresés, győzelem- és indulásszámlálás tanulónként",
+    "category": "Verseny",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["verseny", "maximum", "szűrés"],
+    "note": "Győztes: versenyenként a legmagasabb pontszámú indulók (döntetlennél mindnyájan), a minimum nem feltétele az egyéni győzelemnek; a minta ezt az olvasatot nem zárja ki. Mért idő legnagyobb bemeneten ~0,003 s (limit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/21. Összetett holtverseny",
+    "method": "Értékelhető tanulók összpontszáma, pontszámonkénti számlálás, helyezés = 1 + nála jobbak száma",
+    "category": "Verseny",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["holtverseny", "helyezés", "összegzés"],
+    "note": "Mért idő legnagyobb bemeneten ~0,003 s (limit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/22. Versenyben nem értékelhetők",
+    "method": "Versenyenkénti teljesítés-számlálás, a nem teljesítő tanulók sorszámainak kiírása",
+    "category": "Verseny",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "számlálás", "verseny"],
+    "note": "Mért idő legnagyobb bemeneten ~0,003 s (limit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/23. Összetett rangsor",
+    "method": "Értékelhető tanulók összpontszáma, rendezés csökkenő pontszám, növekvő sorszám szerint",
+    "category": "Verseny",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "összegzés", "verseny"],
+    "note": "Mért idő legnagyobb bemeneten ~0,003 s (limit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

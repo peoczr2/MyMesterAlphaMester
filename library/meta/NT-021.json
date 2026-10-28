@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 2. forduló/1. Filmgyártás",
+    "method": "Pontlefedés intervallumokkal, mohó kiválasztás a legkésőbb záródó munkaidő szerint.",
+    "category": "Mohó algoritmus: intervallumlefedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "intervallum",
+      "lefedés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 2. forduló/2. Szavak",
+    "method": "Lexikografikus szomszéd keresése a betűdarabszámok és az előtagok alapján.",
+    "category": "Kombinatorika: lexikografikus sorrend",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "lexikografikus",
+      "kombinatorika",
+      "szöveg"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 2. forduló/3. Vásár",
+    "method": "Kötelező darabok levonása, majd 0/1 hátizsák-DP a szabad kapacitásra.",
+    "category": "Dinamikus programozás: hátizsák",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "hátizsák",
+      "dp",
+      "korlát"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2018 ∕ 19 2. forduló/4. Üres téglalap",
+    "method": "Fánként felfelé és lefelé sweep a szabad oszlopintervallum szűkítésével, O(K²) időben.",
+    "category": "Geometria: üres téglalap",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "téglalap",
+      "sweep"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

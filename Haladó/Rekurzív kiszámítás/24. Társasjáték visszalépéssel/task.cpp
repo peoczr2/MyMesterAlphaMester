@@ -4,11 +4,10 @@ Most az ugrás hátra is mehet, ezért a feladat egy egysúlyú legrövidebb út
 kis fokszámú gráfban. BFS-sel meghatározzuk a legkevesebb lépésszámot.
 
 */
-
-// Hint 1: || Az élek már nem aciklikusak, ezért visszafelé számolás helyett BFS kell. ||
-// Hint 2: || Minden mezőről legfeljebb két él indul, így a bejárás nagyon olcsó. ||
-// Hint 3: || A távolságot az első mezőtől indulva számold. ||
-
+/*
+Hint 1: || Az élek már nem aciklikusak, ezért visszafelé számolás helyett BFS kell. ||
+Hint 2: || Minden mezőről legfeljebb két él indul, így a bejárás nagyon olcsó. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

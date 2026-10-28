@@ -3,17 +3,19 @@ using namespace std;
 
 /*
 Megoldási ötlet:
-A beépített ügynököt a főnökhöz lehető legközelebb kell elhelyezni, ezért az
-összes lehetséges jelölt közül csak a főnök közvetlen beosztottjai számítanak.
-Ha több ilyen csomópont van, akkor azt választjuk, amelyiknek a legnagyobb a
-teljes leszármazotti száma; holtversenyben a kisebb sorszám nyer.
+Az ügynök akkor van a főnökhöz legközelebb, ha a közvetlen főnöke a legkisebb mélységű
+olyan tag, akinek még van szabad helye (kevesebb mint 2 közvetlen beosztottja van).
+Több ilyen jelölt közül azt választjuk, akinek a legtöbb (nem csak közvetlen) beosztottja van;
+ha ez is egyenlő, a kisebb sorszámút.
 
-Ezért elegendő a fa gyökerét megtalálni, majd minden csomópontra kiszámítani a
-leszármazottainak számát egy DFS-sel.
-
-Hint 1: || A lehető legközelebb a főnökhöz azt jelenti, hogy csak a gyökér közvetlen gyerekei jöhetnek szóba. ||
-Hint 2: || A döntésnél csak a teljes részfa méretét kell összehasonlítani a gyökér gyerekei között. ||
-Hint 3: || Először keresd meg a gyökeret, majd egyetlen mélységi bejárással számold ki a részfák méretét. ||
+Ezért a főnöktől indított szélességi bejárással kiszámoljuk minden tag mélységét, majd a
+bejárás fordított sorrendjében összeadjuk a leszármazottak számát. Végül a szabad helyű
+tagok közül a (mélység, leszármazottak száma, sorszám) szerint legjobbat írjuk ki.
+Ez O(N) időben fut.
+*/
+/*
+Hint 1: || A főnökhöz legközelebbi hely azt jelenti, hogy a legkisebb mélységű olyan tagot keresed, akinek van szabad helye. ||
+Hint 2: || Egy tag leszármazottainak száma a közvetlen gyerekei és azok leszármazottainak számának összege, ezért a bejárás fordított sorrendjében kiszámolható. ||
 */
 
 int main() {
@@ -40,20 +42,35 @@ int main() {
         }
     }
 
-    vector<int> subtree(N + 1, 1);
-    function<void(int)> dfs = [&](int u) {
-        subtree[u] = 1;
+    // szélességi bejárás a főnöktől: mélységek és sorrend
+    vector<int> depth(N + 1, 0);
+    vector<int> order = {root};
+    for (size_t i = 0; i < order.size(); ++i) {
+        int u = order[i];
         for (int v : children[u]) {
-            dfs(v);
-            subtree[u] += subtree[v];
+            depth[v] = depth[u] + 1;
+            order.push_back(v);
         }
-    };
-    dfs(root);
+    }
+
+    // leszármazottak száma: a gyerekek mindig a szülő előtt szerepelnek a fordított sorrendben
+    vector<int> descendants(N + 1, 0);
+    for (int i = (int)order.size() - 1; i >= 0; --i) {
+        int u = order[i];
+        for (int v : children[u]) {
+            descendants[u] += 1 + descendants[v];
+        }
+    }
 
     int best = -1;
-    for (int v : children[root]) {
-        if (best == -1 || subtree[v] > subtree[best] || (subtree[v] == subtree[best] && v < best)) {
-            best = v;
+    for (int u = 1; u <= N; ++u) {
+        if (children[u].size() >= 2) {
+            continue;
+        }
+        if (best == -1 || depth[u] < depth[best] ||
+            (depth[u] == depth[best] && (descendants[u] > descendants[best] ||
+                                         (descendants[u] == descendants[best] && u < best)))) {
+            best = u;
         }
     }
 

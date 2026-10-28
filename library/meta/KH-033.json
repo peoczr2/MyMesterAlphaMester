@@ -1,0 +1,47 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/7. Zenei adók - 2006. november",
+    "method": "Rádiónként kumulatív kezdési idők, időintervallumos keresés és órás hírekhez igazított szimuláció.",
+    "category": "Szimuláció, időintervallumok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "időintervallum",
+      "részsorozat"
+    ],
+    "note": "A validátor 2/2 mintát ad. Értelmezési döntések: (1) Az X-re illeszkedés részsorozat-egyezés kis- és nagybetű különbség nélkül; a be1 mintából ez következik, mert a „Crazy Country Hop” és a „Catch Me If You Can” csak így illeszkedik. (2) Az új szerkezetben a 0. percben is szól 3 perces hír; a be1 13:30-as eredménye ezt igényli (hír nélkül 10:30 lenne). (3) Ha a bevezetővel együtt a szám nem férne el a következő egész óra előtt, a bevezető is a hírek után kezdődik; a be2 3:20:0-s eredménye ezt igazolja, a bevezető-a-hír-előtt változat 3:19:0-t adna.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/8. SMS Szavak - 2007. május",
+    "method": "Betűnkénti kódolás, kódok számlálása szótárral, a legtöbb szavas kód keresése.",
+    "category": "Szótár, csoportosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szótár",
+      "kódolás",
+      "csoportosítás"
+    ],
+    "note": "A minta.zip hibás, ezért a validátor „hibás” állapotot ad (0/2). Kézi ellenőrzés: a saját kimenet minden részfeladatban megegyezik a feladatszöveg szerinti független Python-számítással (library/.work/KH-033/8/check.py). A minta három ponton tér el a feladatszöveggel és a PDF-példától: (1) nincs benne a kötelező # sor; (2) a w, x, y, z betűk kódja a mintában 0, a betűtáblázat és a PDF-példa szerint 9 (be1/ki1: az „elvesz” sora a mintában 358370, helyesen 358379); (3) az 5. részben a mintában bemeneti sorrend van (be1: 2562 alma a 225 baj előtt), a PDF-példa kód szerint növekvő, a feladat a sorrendet nem köti, a PDF-példát követtem. Értelmezési döntések: (a) a 2. részfeladat az öt karakternél rövidebb szavakat számolja (<5), a feladat bevezetője „legfeljebb öt” (≤5) szöveget ír; a minta mindkettőre 4-et ad, ezért nem dönthető el; (b) a 4. részben K a szavak száma (PDF-példa: 4), nem a kódoké; (c) az 5. rész kódsorrendje számérték szerinti; (d) a 6. rész az első olyan szó kódja, amelynél a szavak száma maximális (PDF-példa: 2562).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/9. kidolgozás alatt",
+    "method": "",
+    "category": "",
+    "difficulty": 3,
+    "goal": "",
+    "tags": [],
+    "note": "BLOKKOLT: a feladat.pdf csak a „Kidolgozás alatt” helyőrzőt tartalmazza, nincs feladatszöveg, és nincs minta.zip sem. A feladat nem oldható meg, task.cpp nem készült. A nehézség (3) és a többi üres mező helyőrző, nem becslés.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

@@ -6,9 +6,11 @@ hogy balról, jobbról, mindkét oldalról vagy egyik oldalról sem ér hozzá.
 
 A válasz minden lépés után az intervallumok száma.
 */
-// Hint 1: || Csak a szomszédos, esetleg éppen érintkező intervallumok számítanak. ||
-// Hint 2: || Ha egyik oldalról sem ér hozzá, akkor új komponens keletkezik. ||
-// Hint 3: || Ha mindkét oldalról érintkezik, akkor két komponenst egyesít. ||
+/*
+Hint 1: || Csak a szomszédos, esetleg éppen érintkező intervallumok számítanak. ||
+Hint 2: || Ha egyik oldalról sem ér hozzá, akkor új komponens keletkezik. ||
+Hint 3: || Ha mindkét oldalról érintkezik, akkor két komponenst egyesít. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

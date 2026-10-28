@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/42. Tesztverseny - 2017. majus",
+    "method": "Válaszok karakterenkénti egyeztetése, pontszámítás ponthatárok szerint, stabil rendezés",
+    "category": "Tömbök, rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "string",
+      "rendezés",
+      "pontozás"
+    ],
+    "note": "A 3. részfeladat kerekítési módját a feladat nem rögzíti; félre felfelé kerekítünk, a minta ilyen félértéket nem tesztel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/43. Furdo - 2017. majus",
+    "method": "Vendégenként csoportosítás, időpontok másodpercre váltása, részlegenkénti be- és kilépési párok összegzése",
+    "category": "Eseménynapló feldolgozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "csoportosítás",
+      "idő",
+      "számlálás"
+    ],
+    "note": "A feladat szerint a vendégek sorrendjét a kilépés ideje szabja meg, de a példában és a mintában a lista sorrendje érvényesül (pl. 453 6:15:27 előbb áll, mint 112 6:14:56); a megoldás a lista sorrendjét használja. Az időpontokat a minta szerint nullázás nélkül írjuk ki (pl. 6:30:0).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/5. Fehérje - 2006. május",
+    "method": "Atomtömegek összegzése, vízkilépés levonása a fehérje összegképletében, hasítási helyek egy bejárással",
+    "category": "Karakterlánc-feldolgozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "karakterlánc",
+      "összegzés",
+      "szimuláció"
+    ],
+    "note": "A feladat PDF példájában a H és az O érték (46, 18) piros jelölésű és ellentmond a szövegnek és a mintának (36, 13); a megoldás a vízkilépést levonja, ezt a minta igazolja. A 3. és 4. résznél a feladat nem mondja meg, mi a teendő, ha nincs hasítási hely (\"MI VAN HA NINCS?\"): ilyenkor az egész lánc egy darabnak számít; a minta ezt nem teszteli.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/6. 2006_május_angol kidolgozás alatt",
+    "method": "Nincs módszer: a feladatszöveg hiányzik",
+    "category": "Ismeretlen témakör",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": [
+      "érettségi",
+      "emeltszintű"
+    ],
+    "note": "A feladat.pdf csak a „Kidolgozás alatt” szöveget tartalmazza; a feladatszöveg és a minta hiányzik, ezért nincs mit megoldani, task.cpp nem készült.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

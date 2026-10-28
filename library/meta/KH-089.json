@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/24. Leszállók és felszállók is voltak *",
+    "method": "Egy bejárásban számolni azokat az állomásokat, ahol a leszállók és a felszállók száma is pozitív",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "tömb"],
+    "note": "Mért idő N=1000-en: kb. 1 ms (időlimit 0,1 mp). A példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/25. Leszállt-e mindenki *",
+    "method": "Utasok számának követése egy bejárásban, az utolsó állomáson az érkezők és leszállók összevetése",
+    "category": "Szimuláció",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "tömb", "összehasonlítás"],
+    "note": "Mért idő N=1000-en: kb. 1 ms (időlimit 0,1 mp). A példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/26. Meddig gazdaságos, ha lehet veszteséges szakasz *",
+    "method": "Futó bevételösszeg és a Budapesttől mért szakaszok költsége, az utolsó gazdaságos állomás keresése egy bejárásban",
+    "category": "Prefixösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["összegzés", "tömb", "feltétel"],
+    "note": "Mért idő N=1000-en: kb. 1 ms (időlimit 0,1 mp). Az állomás akkor gazdaságos, ha a Budapesttől idáig tartó bevétel legalább a kiadás; a példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/27. Mennyit fizettek az utasok? *",
+    "method": "Az utas-szakasz párok összegének kiszámítása egy bejárásban, majd szorzás U-val",
+    "category": "Összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "tömb", "szorzás"],
+    "note": "Mért idő N=1000-en: kb. 1 ms (időlimit 0,1 mp). A példa és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

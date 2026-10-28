@@ -1,11 +1,19 @@
+/*
+Megoldás lényege:
+A távolság az erősek legkisebb és a gyengék legnagyobb pontszámának különbsége.
+Mivel a távolságnak T-nél nagyobbnak kell lennie, és T legalább 1, minden gyenge
+versenyző pontszáma kisebb minden erős versenyző pontszámánál. Rendezett sorozatban
+ez egyetlen vágást jelent: előtte állnak a gyengék, utána az erősek. A vágás két
+szomszédos elem közé kerül, így a távolság a szomszédos különbség. A T-nél nagyobb
+szomszédos különbségek közül a legnagyobbat keressük; ha nincs ilyen, a válasz -1.
+A rendezés miatt az időigény O(N log N).
+*/
+/*
+Hint 1: || Rendezés után gondold végig, hogy a két csoport hol választható szét: a gyengék egy közös határ alatt, az erősek felette állnak. Melyik két szomszédos rendezett elem között érdemes ezt a határt húzni? ||
+Hint 2: || Ha a rendezett sorozat i-edik és (i+1)-edik eleme közé húzod a határt, a távolság e[i+1] - e[i] lesz. Keresd a T-nél nagyobb legnagyobb ilyen különbséget, és ha nincs ilyen, a válasz -1. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    A csoportok távolsága a rendezett pontszámok két egymást követő eleme közti
-    rés. Ezért elég a sorozatot rendezni, majd a T-nél nagyobb legnagyobb rést
-    megkeresni.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/36. Kamion pakolás **",
+    "method": "Elérhetőségi 0/1 hátizsák DP, a kiválasztott tárgyak visszafejtése szülőmutatókkal",
+    "category": "Hátizsák-DP",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["hátizsák", "dp", "visszafejtés"],
+    "note": "Több helyes megoldás: a kiírt sorrend (be1) és a készlet (be2) is eltérhet, mindkettő érvényes. A minta.zip fejlécében N eggyel nagyobb a súlyok számánál (be1: 20/19, be2: 1000/999); az ellenőrzés a tényleges adatokkal történt. Ellenőrizve: S, M, összsúly, optimum.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/39. Kemence súlykorláttal **",
+    "method": "DP az utolsó menet kezdőpontjára, szegmensfa a blokkmaximumok karbantartására",
+    "category": "Szegmensfa, monoton verem",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["szegmensfa", "verem", "dp"],
+    "note": "Eltérő, de optimális csoportosítás (be2: T=1948585 mindkettőnél). A program kimenete csoportonként ellenőrizve, kis véletlen tesztekkel (N<=12) brute-force egyezés.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/4. Alternáló részsorozat **",
+    "method": "Mohó csúcs-völgy kiválasztás, folytatás esetén a legutolsó index cseréje",
+    "category": "Mohó: csúcsok és völgyek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "alternálás", "részsorozat"],
+    "note": "Eltérő, de azonos hosszú indexkészlet (be1, be2); az érvényesség és a hossz ellenőrizve, kis véletlen tesztekkel brute-force egyezés. Ellentmondás a szövegben: azonos elemekből álló sorozatnál a program H=1-et ad, a triplaelv szerint két azonos elem is alternálónak számítana (H=2). Tisztázandó.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/40. Kepatlo **",
+    "method": "Oszlopról oszlopra DP a vonal alsó sorára, prefixösszegekkel és futó minimummal",
+    "category": "Rácsos DP, prefixösszegek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["rács", "dp", "prefixösszeg"],
+    "note": "Az eredeti kód hibás volt (PDF-példa: 7 helyett 3), ezért újraírva: a vonal cellái nem számítanak, a DP oszloponként az alsó sort tartja. A PDF-példa és be1 (2) egyezik, kis tesztekkel brute-force egyezés. A be2 mintakimenete (30031) nem reprodukálható: a DP minimuma 488731, véletlen 0/1 képen ez a várható nagyságrend, a minta feltehetően hibás.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/42. Két csoportra osztás **",
+    "method": "Barátok összevonása komponensekre (DSU), majd részösszeg-DP a létszámkülönbségre",
+    "category": "Komponensek, részösszeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "komponens", "részösszeg"],
+    "note": "A ki1 minta a kisebbik csoportot írja (7 gyerek), a szöveg szerint a nagyobbikat kell (8); a program a nagyobbikat adja. Eltérő felosztás is lehet, a program kimenete ellenőrizve: komponensek egészben, optimális különbség, kis gráfokon brute-force egyezés.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/47. Kockákból legmagasabb torony **",
+    "method": "Rendezés után súlyozott leghosszabb növekvő részsorozat-DP a torony magasságára",
+    "category": "Rendezés, LNRS-típusú DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "dp", "részsorozat"],
+    "note": "A kiírt M a kockák száma (a mintának megfelelően), a szöveg magasságot említ. Több legmagasabb torony lehet. A ki2 minta magassága 1260969 (95 kocka), ez nem optimális: a program 1461311-et talál, ez DP és kis brute-force szerint a maximum. A ki1 egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

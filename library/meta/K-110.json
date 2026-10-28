@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/117. Résztömb **",
+    "method": "Előjel-paritás és abszolútérték alapú esetszétválasztás, lineáris bejárással",
+    "category": "Szélsőérték-keresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szélsőérték", "szorzat", "előjel"],
+    "note": "A feladatszöveg a részsorozat elemszámát és elemeit kéri, a minta.zip ki1.txt (-60) és ki2.txt (0) viszont szorzatértéket tartalmaz, ezért a minta nem ezt a kimenetet adja. A ki2.txt (0) még a szorzatértékes olvasat szerint is hibás: a be2.txt 200 elemében 101 negatív szám van és nincs nulla, így a legkisebb szorzat negatív. A kimenetet független brute-force ellenőrzővel igazoltam (library/.work/K-110/tests/check117.py, check_big117.py), a sorrend a feladat szerint tetszőleges. A validátor ezért hibásnak jelzi, a kimenet a feladat szerint helyes.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/118. Kifejezés ***",
+    "method": "Verem a zárójelszintek előjel-szorzóihoz, együtthatók előjeles összegzése",
+    "category": "Kifejezés-kiértékelés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["verem", "zárójel", "kifejezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/119. Kifejezés ***",
+    "method": "Verem a zárójelszintekhez, az egymás utáni előjelek szorzásával",
+    "category": "Kifejezés-kiértékelés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["verem", "zárójel", "előjel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/12. Folyamatos fagy *",
+    "method": "Egy bejárás, futó számláló az egymás utáni fagyos napokra",
+    "category": "Keresés: folytonos szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

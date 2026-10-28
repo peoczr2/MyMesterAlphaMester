@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok/20. Titkos kód **",
+    "method": "Kínai maradéktétel: a legkisebb megoldás keresése 385-ig, majd 385-ösével számlálás",
+    "category": "Számelmélet: maradékok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maradék", "számelmélet", "ciklus"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/21. Törtek **",
+    "method": "Egész számként számolás, az eredmény egyszerűsítése legnagyobb közös osztóval",
+    "category": "Törtek, egyszerűsítés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tört", "lnko", "egyszerűsítés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/22. Tükördátumok **",
+    "method": "Számjegysorozatok halmaza, a megfordított sorozat keresése a halmazban",
+    "category": "Halmaz, dátumok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dátum", "halmaz", "sztring"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok/23. Időkülönbség *",
+    "method": "Időpontok másodpercre váltása, különbség, visszaalakítás egész osztással és maradékképzéssel",
+    "category": "Időszámítás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["idő", "másodperc", "osztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

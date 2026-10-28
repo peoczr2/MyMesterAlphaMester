@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/26. Facsemeték bekerítése ***",
+    "method": "Randomizált inkrementális háromszögelés legyezővel és DAG-pontlokalizációval; eredmény 2N−h−2.",
+    "category": "Háromszögelés, maximális lefedés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "háromszögelés",
+      "konvex burok",
+      "geometria"
+    ],
+    "note": "Nincs kimeneti minta (nincs ki-fájl), a validátor ezért „nincs minta” állapotot ad. Több helyes kimenet van (bármely háromszögelés jó), ezért a kimenetet library/.work/R-016/tools/rt.py ellenőrzi: CCW háromszögek, a területösszeg a burok területe, a db = 2N−h−2 (be1: 11 háromszög, PDF-példa: 7), élek párosítása, 300 véletlen teszten és N≤3000-ig üres háromszögekkel. Időlimit: N=30000-re ~0,07 mp, memória ~16 MB (32 MiB).",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/27. Háromszög **",
+    "method": "Legalsó pontból irányonként a legközelebbi pont; szomszédos irányok üres háromszöget alkotnak.",
+    "category": "Üres háromszög, szögrendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "szögrendezés",
+      "háromszög"
+    ],
+    "note": "Több helyes kimenet van (a feladat szerint bármelyik üres háromszög megadható): be1-re a minta „6 5 2”, a program „5 2 3”; be2-re a minta „753 953 407”, a program „760 435 199”; mind a négy érvényes. Ellenőrzés: library/.work/R-016/tools/rt.py (CCW, nincs pont a zárt háromszögben), 300 véletlen teszt hibátlan. Időlimit: N=10000-re ~0,005 mp.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/28. Oszlopok *",
+    "method": "Az origóból nézve az egyszerűsített (gcd-vel osztott) irányok számának megszámlálása halmazzal.",
+    "category": "Irányok, gcd egyszerűsítés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "geometria",
+      "gcd",
+      "irány"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/29. Épület elhagyása ***",
+    "method": "Falak mentén átfedés-párosítás, fedett hossz alapján kijáratos szobák, BFS a legközelebbi kijáratig.",
+    "category": "Gráf: BFS, téglalapok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bfs",
+      "téglalap"
+    ],
+    "note": "A korábbi kijárat-jelölés hibás volt: ha egy szoba oldalát több szomszéd csak részben fedte, a fedetlen rés nem számított kijáratnak (konstruált 6 szobás esetben 1 helyett 0 a helyes válasz, brute force szerint). Javítva: átfedések hosszát helyiségenként összegezzük, és kijáratos, ha a kerület nincs teljesen lefedve. Ellenőrzés: rácsos brute force 500 véletlen és partíciós elrendezésen egyezik. Időlimit: N=50000-re ~0,03 mp, memória ~12 MB.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/3. Bekerítő háromszög **",
+    "method": "A-ból és B-ből mért szögek szerinti rendezés, minimális pontok prefix-minimummal, legkisebb sorszámú jó pont.",
+    "category": "Szögrendezés, pont a háromszögben",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "szög",
+      "háromszög"
+    ],
+    "note": "A korábbi megoldás hibás volt: az orientációs érték int-be ment (túlcsordulás nagy koordinátánál), és a q az ab egyenesen nem kapott 0-t; véletlen tesztekben hibás válasz is adott. Átírva szög-alapú módszerre. Mindkét minta egyezik; a több helyes válasz közül a legkisebb sorszámút adja. Ellenőrzés: 1500 véletlen teszt brute force-szal egyezik. Időlimit: N=50000-re ~0,01 mp.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/30. Elválasztó egyenes ****",
+    "method": "A fehér és fekete burok különbségének (Minkowski-összeg) burka egész számokkal; origó-helyzet alapján normálvektor-jelöltek.",
+    "category": "Minkowski-összeg, szeparáció",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "minkowski",
+      "konvex burok"
+    ],
+    "note": "Több helyes kimenet van (a feladat szerint bármelyik egyenes megadható): be1-re a minta „3 4 12 10”, a program „6 6 10 7”, mindkettő érvényes (az egyenes átmehet fehér ponton). Be2 kimenete egyezik a mintával. A korábbi kód hibás volt: két véletlen tesztben 0 0 0 0-t adott, ha az origó a különbség-burok határán volt, és a kimenő koordináták túlcsordultak (1e16). Átírva. Ellenőrzés: 1200 véletlen és 4000 szűk rácsos (elfajult) teszt brute force-szal egyezik. Időlimit: N=M=50000-re ~0,03 mp, memória ~9 MB.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

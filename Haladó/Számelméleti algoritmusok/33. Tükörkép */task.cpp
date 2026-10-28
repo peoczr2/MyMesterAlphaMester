@@ -1,23 +1,51 @@
 /*
- * A helyes karakterizáció: a számjegyek 0/1/2 lehetnek, az első és az utolsó
- * számjegy nem lehet 0, és a digitköltség (1 -> 1, 2 -> 4) legfeljebb 9.
- * A lexikografikusan legkisebb N-jegyű megoldásokat DP-s számlálással generáljuk.
- 
-Hint 1: || Először keresd meg, milyen számjegyek jelenhetnek meg egyáltalán olyan számban, amely szorzás után palindromot ad. ||
-Hint 2: || Ha megvan a karakterizáció, már csak lexikografikusan kell generálni a jó N-jegyű számokat, és kiírni az első M darabot. ||
+Megoldás lényege:
+Ha x számjegyei a_0 … a_{n-1}, akkor az x · tükörképe szorzat együtthatói a számjegypárok szorzatösszegei, és ezek szimmetrikusak a közepükre.
+Ha minden együttható legfeljebb 9, nincs átvitel, így a szorzat számjegyei is szimmetrikusak lesznek, azaz palindrom.
+Az együtthatók közül a legnagyobb az a_i^2 összeg, ezért elég, hogy a számjegyek négyzetösszege legfeljebb 9 legyen.
+Az első és az utolsó számjegy nem lehet nulla, különben a szorzat végén vagy elején nulla állna, és nem lenne palindrom.
+N ≤ 8 esetén a teljes keresés megerősíti, hogy ez a feltétel pontosan a jó számokat adja.
+A számjegyek így 0, 1 vagy 2 lehetnek, és egy visszafelé számolt táblázat megmutatja, melyik maradék négyzetösszeg-keretből van még teljes kitöltés.
+Ezzel a lexikografikus DFS zsákutca nélkül, növekvő sorrendben adja a számokat, és az M. találatnál megáll.
+Időigény: O(N · M), gyakorlatilag azonnali.
+*/
+/*
+Hint 1: || Vizsgáld meg, mi történik a szorzat együtthatóival, ha az összes számjegypár-szorzatösszeg legfeljebb 9: akkor nincs átvitel, és a szorzat palindrom lesz. ||
+Hint 2: || Ebből következik, hogy a számjegyek négyzetösszege legfeljebb 9, az első és az utolsó számjegy nem nulla, a többi számjegy 0, 1 vagy 2. Ezt lexikografikus DFS-sel, a zsákutcákat egy egyszerű táblázattal kiszűrve járd be. ||
 */
 
 #include "../common.hpp"
 
-static int cost_of(int digit) {
-    return digit == 0 ? 0 : (digit == 1 ? 1 : 4);
+static int n, m;
+static int found = 0;
+// ok[pos][b]: a pos-tól kezdődő számjegyek kitölthetők-e úgy, hogy a négyzetösszeg legfeljebb b legyen
+static vector<vector<bool>> ok;
+
+static int first_digit(int pos) {
+    return (pos == 0 || pos == n - 1) ? 1 : 0;
+}
+
+static void generate(int pos, int budget, string& cur) {
+    if (found >= m) return;
+    if (pos == n) {
+        cout << cur << '\n';
+        ++found;
+        return;
+    }
+    for (int d = first_digit(pos); d <= 2; ++d) {
+        int cost = d * d;
+        if (cost > budget || !ok[pos + 1][budget - cost]) continue;
+        cur.push_back(char('0' + d));
+        generate(pos + 1, budget - cost, cur);
+        cur.pop_back();
+        if (found >= m) return;
+    }
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n, m;
     cin >> n >> m;
 
     if (n == 1) {
@@ -25,44 +53,17 @@ int main() {
         return 0;
     }
 
-    vector<vector<unsigned long long>> ways(n + 1, vector<unsigned long long>(10, 0));
-    for (int b = 0; b <= 9; ++b) ways[n][b] = 1;
+    ok.assign(n + 1, vector<bool>(10, false));
+    for (int b = 0; b <= 9; ++b) ok[n][b] = true;
     for (int pos = n - 1; pos >= 0; --pos) {
         for (int b = 0; b <= 9; ++b) {
-            unsigned long long count = 0;
-            int start = (pos == 0 ? 1 : 0);
-            int finish = (pos == n - 1 ? 2 : 2);
-            for (int d = start; d <= finish; ++d) {
-                int c = cost_of(d);
-                if (c <= b) count += ways[pos + 1][b - c];
+            for (int d = first_digit(pos); d <= 2; ++d) {
+                if (d * d <= b && ok[pos + 1][b - d * d]) ok[pos][b] = true;
             }
-            ways[pos][b] = count;
         }
     }
 
-    unsigned long long total = ways[0][9];
-    if ((unsigned long long)m > total) m = (int)total;
-
-    for (int rank = 0; rank < m; ++rank) {
-        int budget = 9;
-        string s;
-        for (int pos = 0; pos < n; ++pos) {
-            int start = (pos == 0 ? 1 : 0);
-            int finish = (pos == n - 1 ? 2 : 2);
-            for (int d = start; d <= finish; ++d) {
-                int c = cost_of(d);
-                if (c > budget) continue;
-                unsigned long long cnt = ways[pos + 1][budget - c];
-                if ((unsigned long long)rank >= cnt) {
-                    rank -= (int)cnt;
-                    continue;
-                }
-                s.push_back(char('0' + d));
-                budget -= c;
-                break;
-            }
-        }
-        cout << s << '\n';
-    }
+    string cur;
+    generate(0, 9, cur);
     return 0;
 }

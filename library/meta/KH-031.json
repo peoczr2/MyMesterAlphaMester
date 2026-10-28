@@ -1,0 +1,63 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/39. Zár - 2016. május",
+    "method": "Szomszédos jegyek különbsége mod 10: ekvivalencia összehasonlítása",
+    "category": "Sztring, modulo aritmetika",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "sztring",
+      "modulo",
+      "ekvivalencia"
+    ],
+    "note": "Az ekvivalencia szabályát a szöveg példáiból (135 ~ 802 ~ 024, a 208 nem) általánosítottam: azonos hossz és azonos szomszédos különbségsorozat (mod 10), a forgatás megengedett, a tükrözés nem. Mindkét minta-bemenettel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/4. Telefonszámla - 2006. február",
+    "method": "Időpontok másodpercre váltása, megkezdett percek felfelé kerekítése, feltételes összegzés",
+    "category": "Feltételes összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "idő",
+      "feltétel",
+      "összegzés"
+    ],
+    "note": "A minta.zip hívott számai 7 jegyűek, a feladatszöveg 8 jegyet ír (10 000 000 ≤ Hi). A megoldás a szám első két karakterét nézi (20, 30, 70: mobil), így mindkét esetben ugyanazt adja. Mintán 2/2, eltérés nincs.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/40. Telefonos ügyfélszolgálat - 2016. október",
+    "method": "Kezdési sorrendben szimuláljuk a munkatárs szabad idejét; sikeres a hívás, ha a fogadásig vonalban marad",
+    "category": "Szimuláció: várakozási sor",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "sor",
+      "időpont"
+    ],
+    "note": "Két értelmezési pont, amelyet a mintából és a szövegből vontam le: (1) a „8 óra után” kitételt úgy vettem, hogy a hívásnak a fogadásig vonalban kell maradnia, azaz a vége később van a fogadási időnél; (2) ha az adott pillanatban nincs beszélgető hívó, a „Nem” szót egyedül írom ki (ilyenkor várakozó sincs). Mindkét minta-bemenettel egyezik; a „Nem” ágat a minta nem teszteli.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/41. kidolgozás alatt",
+    "method": "",
+    "category": "",
+    "difficulty": 3,
+    "goal": "",
+    "tags": [],
+    "note": "BLOKKOLT: a feladat.pdf csak a „Kidolgozás alatt” címet tartalmazza (1 oldal, képek nélkül, vizuálisan is ellenőrizve), nincs feladatszöveg és nincs minta.zip. A feladat nem oldható meg, task.cpp nem készült. A nehézség (3) helyőrző, nem becslés.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

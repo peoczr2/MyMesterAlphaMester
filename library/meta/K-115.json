@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/135. Legátlagosabb testtömegű ember",
+    "method": "Korok szerinti prefixösszegek, az átlag-eltérés törtként, egész számokkal összehasonlítva.",
+    "category": "Prefixösszeg, átlag",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "átlag", "korintervallum"],
+    "note": "Az ember saját magát is beleszámítja a közeli korúak közé (|K_j - K_i| ≤ M, j = i is): ezt a feladat példájának magyarázata igazolja (a 8. ember 0 eltérése), és a nagy minta is ezzel egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/136. Versenyeredmények",
+    "method": "Azonosítók rendezése, egyedi prefix a két szomszédjával vett közös prefixből.",
+    "category": "Rendezés, közös prefix",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "prefix", "szöveg"],
+    "note": "Azonos azonosítók esetén a teljes azonosítót írjuk ki: a feladat nem zárja ki az ismétlést, a mintában ilyen eset nincs.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/137. Osztályok",
+    "method": "Darabszám szerinti küszöbnövelés, a futamszám inkrementális karbantartása értékek törlésével.",
+    "category": "Értéktartományok, futamok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["értéktartomány", "szakasz", "küszöb"],
+    "note": "A válasz a küszöb (a legkisebb darabszám, amelynél az ennél ritkábban előforduló értékek kidobása után az osztályszám eléri K-t), és nem a kidobott értékek száma: a minta (1 és 3 a válasz) ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/138. Résztömb",
+    "method": "Prefixösszegek rendezése, a legközelebbi szomszédos pár adja a minimumot.",
+    "category": "Prefixösszeg, rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "rendezés", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

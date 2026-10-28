@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/20. Legtöbbel csökkent az utasok száma a vonaton *",
+    "method": "Állomásonként a változás (fel - le) minimumának keresése egy bejárásban, döntetlenben a korábbi állomás",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "minimum", "tömb"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa (4) és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/21. Legtöbbel nőtt az utasok száma a vonaton *",
+    "method": "Állomásonként a változás (fel - le) maximumának keresése egy bejárásban, döntetlenben a korábbi állomás",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "maximum", "tömb"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa (3) és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/22. Legtöbben szálltak fel *",
+    "method": "Felszállók maximumának keresése egy bejárásban, döntetlenben a korábbi állomás",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "maximum", "tömb"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa (3) és a minta is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/23. Legtöbbet nőtt az utasok száma *",
+    "method": "Állomásonként a változás (fel - le) maximumának keresése egy bejárásban, döntetlenben a korábbi állomás",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "maximum", "tömb"],
+    "note": "Ugyanaz a kérdés, mint a 21. feladatban. A feladatszöveg nem mondja ki a döntetlen szabályát, a minta (be1: 2 és 8 is +34) a legkisebb sorszámot várja, a megoldás ezt követi. Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp). A példa (3) is stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -6,6 +6,10 @@ Először indegreesöpréses topológiai kiszórással eltávolítjuk a cikluson
 csúcsokat, így csak a ciklusok maradnak meg. Ezután a még megmaradt csúcsok között
 bejárjuk a ciklusokat, és kiválasztjuk a legrövidebbet.
 */
+/*
+Hint 1: || Minden csúcsból pontosan egy él indul, ezért minden komponensben pontosan egy kör van. Egy x kezdőpontból az x, F(x), F(F(x)), ... sorozat erre a körre jut, így a periódushossz pontosan a kör hossza. ||
+Hint 2: || Először a körön kívüli csúcsokat távolítsuk el: számoljuk a befokokat, a befok-nulla csúcsokat sorban töröljük, és a törölt csúcs F-szerinti célpontjának befokát csökkentjük. A megmaradt csúcsok mind körön vannak; ezeken végigmenve a köröket a legrövidebbet kell kiírni. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

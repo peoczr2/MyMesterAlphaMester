@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/7. Benzin *",
+    "method": "Rácsos dinamikus programozás a maximális benzinkészlettel, szülőmutatóval az útvisszaállításhoz.",
+    "category": "Dinamikus programozás: rácsbejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["dinamikus programozás", "rács", "visszafejtés"],
+    "note": "A be1 kimenete egyezik a mintával. A be2-ben az érték egyezik (1288130), de a lépéssorozat más és érvényes: az ellenőrző program végigszimulálta az utat (a benzin sosem fogy el, a végső mennyiség a minta értéke). A feladatszöveg szerint több megoldás esetén bármelyik megadható.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/70. Parok **",
+    "method": "LCS-szerű kétdimenziós DP a párokra, szülőinformáció alapján visszaépítve.",
+    "category": "Dinamikus programozás: LCS-típus",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "lcs", "visszafejtés"],
+    "note": "A be1 (7 pár) és be2 (245 pár) darabszáma egyezik a mintával, de a párlista más. A feladatszöveg a konkrét párokat nem írja elő, és a példában is két érvényes lista van: (1 1), (3 2), (4 3) és (2 1), (3 2), (4 3). Ellenőrző program: minden pár ismerős, a párok mindkét oldalon szigorúan nőnek.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/71. Piramis **",
+    "method": "Memoizált DFS a széli kezdőmezőkről; a magasság szigorú növekedése miatt nincs kör.",
+    "category": "Dinamikus programozás: leghosszabb út",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "gráf", "leghosszabb út"],
+    "note": "A minta.zip ki1.txt első sora 9, ki2.txt első sora 140; a megoldás 8, illetve 139 lépést ad. A be1 9 értéke nem lehet lépésszám: a magasságok 1..9, így egy út legfeljebb 9 mezőt, azaz 8 lépést tartalmaz. A feladatszöveg lépésszámot kér, a példa (6 mező, 5 lépés) ezt igazolja; a minta mindkét esetben a lépésszám + 1 értéket adja. A kezdőpont a széle (a feladat története szerint, a minta kezdőpontjai is szélen vannak). Ellenőrzés: független, magasság szerint rendezett DP ugyanezt adja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/77. Rendőr **",
+    "method": "Rendezett párosítás a mozgatási költséghez, DP a célvárosok kiválasztására visszafejtéssel.",
+    "category": "Dinamikus programozás: átcsoportosítás",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus programozás", "rendezés", "párosítás"],
+    "note": "A be1 kimenete egyezik a mintával. A be2-ben a célvárosok halmaza más, a költség azonos (4548). A feladatszöveg szerint több megoldás esetén tetszőleges kiírható. Ellenőrző program: az 1-esek száma megegyezik a rendőrök számával, és a rendezett párosítás költsége 4548.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/8. Bérlet **",
+    "method": "Súlyozott intervallumütemezés DP-vel, bináris kereséssel a kompatibilis előző megrendelést.",
+    "category": "Dinamikus programozás: intervallumütemezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus programozás", "intervallum", "ütemezés"],
+    "note": "A be1-ben ugyanaz az elfogadott halmaz, csak más sorrendben (a feladatszöveg szerint a sorrend tetszőleges). A be2-ben más halmaz, de ugyanannyi nap (975; K = 111 a minta 127 helyett). A feladatszöveg szerint bármelyik megoldás megadható. Ellenőrző program: nincs átfedés, a lefedett napok összege 975.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/83. Szállítás - minimálisan legjobban terhelt kamionnal **",
+    "method": "Bináris keresés a maximális terhelésen, mohó szétosztás ellenőrzéssel, visszafejtéssel.",
+    "category": "Bináris keresés: válaszkeresés",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["bináris keresés", "mohó algoritmus", "szétosztás"],
+    "note": "A be1-ben csak az egyik elválasztás tér el (73 a minta 74 helyett), a be2-ben több kezdőindex más. A legnagyobb terhelés mindkettőben egyezik (531, illetve 313963). A feladatszöveg szerint több megoldás esetén bármelyik megadható. Ellenőrző program: K szakasz, szigorúan növekvő kezdőindexek, a legnagyobb szakaszösszeg a minta értéke.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

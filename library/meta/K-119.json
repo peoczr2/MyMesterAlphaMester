@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/15. Gazdaságos-e a vonat üzemeltetése *",
+    "method": "Szakaszonkénti utasszámok összegzése, majd a bevétel és a költség összehasonlítása",
+    "category": "Összegzés: szakaszonkénti utasszám",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "számlálás", "gazdaságosság"],
+    "note": "Egyenlő bevétel és költség esetén 1-et adok (a nem veszteséges üzemeltetést tekintem gazdaságosnak). A feladatszöveg ezt az esetet nem rendezi egyértelműen, a minták nem döntik el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/150. Repülők indulása és érkezése",
+    "method": "Csúszóablak fajtánkénti számlálóval, a legrövidebb teljes szakasz",
+    "category": "Csúszóablak: legrövidebb szakasz",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "kétmutatós", "számlálás"],
+    "note": "A mappa minta.zip-je nem a feladat.pdf-hez tartozik: bájtra azonos a Haladó/Dinamikus programozás/143. Repülők indulása és érkezése mappa mintájával (md5 5428c676b23016d292a48e2550f57420), és a be1 első sora „3 5”, ami ellentmond a feladat N≤M feltételének (N=5 > M=3). A feladat.pdf saját mintája (10 3 2 / 1 3 3 3 2 3 1 2 1 2, kimenet 6) egyezik a megoldással, és 400 véletlen kis bemeneten a brute-force ellenőrzés is egyezett. A minta.zip-et nem módosítottam, ezért a validátor a minta miatt „hibás” állapotot ad.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/151. Körutazás",
+    "method": "Kétmutatós csúszóablak városonkénti számlálóval",
+    "category": "Csúszóablak: legfeljebb K előfordulás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "kétmutatós", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/152. Szálloda",
+    "method": "Csúszóablakos összeg K telekre, a minimum és az összes minimális kezdőpozíció kiírása",
+    "category": "Csúszóablak: összeg és minimum",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["csúszóablak", "összeg", "szélsőérték"],
+    "note": "A feladat nem mondja ki, hogy K ≤ N; a megoldás K ≤ N-t feltételez (K > N esetén nincs csoport, a kimenet nincs definiálva).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/1. ABC Ládapakolás *",
+    "method": "Dilworth-tétel: a leghosszabb A*B*C* részsorozat hossza, O(N) DP három állapottal.",
+    "category": "Láncfedés, Dilworth-tétel",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["részsorozat", "dilworth", "dp"],
+    "note": "Minta-eltérés: a minta.zip ki2.txt (185) nem lehetséges a feladat szabályai szerint. A be2 (N=500) bemenetben van 189 páronként egymásba nem pakolható láda (A*B*C* alakú részsorozat), így legalább 189 láda kell; egy explicit, érvényes 189 láncos csomagolás is létezik. Mindkét korlátot library/.work/R-032/t1/check_be2.py ellenőrzi. A be1 minta egyezik. A DP-t 400 véletlen kis esetben (N<=9) teljes láncfedés-kereséssel is igazoltam.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/11. Fényképész-menetek ***",
+    "method": "Mohó: a legkorábban távozó lefedetlen vendég távozási idejétől indul új menet.",
+    "category": "Intervallum-lefedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "intervallum", "lefedés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/12. Gépek **",
+    "method": "Prefix-korlát adja a gépszámot; a munkákat határidő szerint, a legkésőbbi szabad napra ütemezzük (DSU).",
+    "category": "Határidős ütemezés",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["ütemezés", "határidő", "dsu"],
+    "note": "Több helyes kimenet van (a feladat szerint bármelyik megadható), ezért a kimenet eltér a mintától. Ellenőrzés: a G egyezik az alsó korláttal (max ceil(határidőig db / nap)), és minden munka érvényes napra és gépre kerül; 500 véletlen esetben és a mintákon igazoltam (library/.work/R-032/t3/check.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/13. Hangosítás ***",
+    "method": "Napi maximális nem átfedő rendezvényszám (befejezési idő szerinti mohó), majd DP az előrefizetési blokkokon.",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["dinamikus", "mohó", "intervallum"],
+    "note": "A beolvasás fread-alapúra váltva: a cin-es változat maximális bemeneten (N=M=1000, kb. 9 MB) 0,096 mp volt a 0,1 mp-es időlimit mellett, a gyors beolvasással 0,023 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/14. Hegy ***",
+    "method": "Suffix-összegek hányadosának minimuma (Hall-feltétel).",
+    "category": "Hall-feltétel, suffix-összeg",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["suffixösszeg", "hall-tétel", "elosztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/15. Intervallumok ***",
+    "method": "Mohó: a legkisebb jobb végű nem dominált intervallum legjobb végű szomszédát választjuk.",
+    "category": "Intervallumgráf, domináló halmaz",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["intervallum", "mohó", "szegmensfa"],
+    "note": "Az O(N^2) változat legrosszabb esetben (diszjunkt intervallumok, N=10000) 0,10 mp volt, ezért szegmensfával és bináris kereséssel O(N log N)-re javítottam (0,004 mp). A kimenet a régi változattal 1500 véletlen esetben azonos; kis esetekben a minimum brute force-szal igazolva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

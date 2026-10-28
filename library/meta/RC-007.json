@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/37. Irányítószámok ***",
+    "method": "Projektív sík egyeneseinek prímszorzatai, egyedi címke-prímmel megkülönböztetve",
+    "category": "Számelméleti konstrukció",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prímtényező",
+      "konstrukció",
+      "gcd"
+    ],
+    "note": "A kimenet eltér a mintától, de a feladat szerint bármely megfelelő válasz elfogadott; a kimenet érvényességét a library/.work/RC-007/37/check.py ellenőrzi (N=4..100). A validátor emiatt továbbra is hibás-t ír.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/38. Kártyakeverés ***",
+    "method": "A duplakeverés négyzetre emelés; a 2^S kitevő modulo N inverzével visszafelé hatványozás",
+    "category": "Permutáció hatványozása",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "permutáció",
+      "moduláris",
+      "hatványozás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/39. Számok ***",
+    "method": "Lnko-val leosztás, majd moduláris inverzzel a legkisebb nemnegatív y kiszámítása",
+    "category": "Diofantikus egyenlet",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "lnko",
+      "kongruencia",
+      "inverz"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/4. Barátságos számok *",
+    "method": "Osztóösszeg-szita, majd a kölcsönös párok kiírása",
+    "category": "Osztóösszeg, szita",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "szita",
+      "osztók",
+      "összeg"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

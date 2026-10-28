@@ -1,13 +1,13 @@
 /*
 Megoldási ötlet:
 A sorozat pozíció alapú műveleteihez implicit treap kell. A csomópontokban a részfa méretét tartjuk nyilván, így
-a k-adik elem, a beszúrás és a törlés is két split és egy merge művelettel megoldható.
+a k-adik elem a részfa-méretek alapján megkereshető, a beszúrás és a törlés pedig két split és egy merge művelettel megoldható.
 
-A módosítás egyszerűen a k-adik csomópont értékének átírása. A teljes sorozat kiolvasása inorder bejárással történik.
+A módosítás egyszerűen a k-adik csomópont értékének átírása. Minden művelet várhatóan O(log n) idejű.
 */
 /*
 Hint 1: || Pozíció szerinti műveletekhez nem kulcs, hanem a részfa mérete alapján kell vágni. ||
-Hint 2: || A beszúrás, törlés és módosítás mind két splitre vezethető vissza. ||
+Hint 2: || A beszúrás és a törlés két splitre vezethető vissza, a módosítás pedig a k-adik csomópontot éri el. ||
 Hint 3: || A k-adik elem az implicit treapben a részfa-méretekből közvetlenül megtalálható. ||
 */
 

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/1. Hideg és meleg napok",
+    "method": "Szomszédok alapján jelölés, minden intervallum ellenőrzése prefixösszeggel",
+    "category": "Prefixösszeg, intervallumok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "intervallum", "szomszédok"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/2. Középső életkorú",
+    "method": "Gyakorisági tömb és kumulatív összeg a középső elemhez",
+    "category": "Gyakorisági tömb",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gyakorisági tömb", "medián", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/3. Színhalmazok",
+    "method": "Halmazok részhalmaz-vizsgálata minden más emberrel (std::includes)",
+    "category": "Halmazok, részhalmaz",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "részhalmaz", "map"],
+    "note": "A korábbi kód a valamely más embernek kifejezést színenként értelmezte, ez a mintákkal nem egyezett (5 és 100 helyett 3 és 8 a helyes); a javítás szerint egyetlen másik embernek kell tartalmaznia az összes kedvenc színt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2018 ∕ 19 1. forduló/4. Ügyelet",
+    "method": "Összefüggő pozitív szakaszok bejárása, szakaszonként hossz és maximum",
+    "category": "Összefüggő szakaszok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szakasz", "bejárás", "maximum"],
+    "note": "Több azonos hosszú leghosszabb szakasz esetén az elsőt vesszük figyelembe; a feladatszöveg ezt nem rögzíti.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

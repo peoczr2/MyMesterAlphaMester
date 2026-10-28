@@ -1,0 +1,18 @@
+[
+  {
+    "path": "Haladó/Szimuláció/2. Autómentés ***",
+    "method": "Lépésenkénti forgalomszimuláció, a mentő útja BFS-sel, visszafelé rekonstruálva",
+    "category": "Szimuláció",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szimuláció",
+      "bfs",
+      "forgalom"
+    ],
+    "note": "PDF/minta eltérés: a PDF szerint a baleset időpontja 1000-nél kisebb, de a be2 mintában 1500 áll; a megoldás ezt nem korlátozza. A D rész „nem befolyásolja a többi autót” szabályát a két mintával és a PDF-példával igazoltuk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

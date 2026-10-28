@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
 Megoldási ötlet:
 Ugyanazt a F-láncos rekurzív szerkezetet használjuk, mint a következő faelágazós
@@ -11,11 +8,14 @@ Ha ismerjük egy részfa lánchosszát, akkor a magassága egyszerűen a saját 
 plusz a gyermekek közül a legnagyobb magasság. A leghosszabb elágazás nélküli
 szakasz pedig a saját lánchossz és a gyermekek leghosszabb ilyen szakaszának
 maximuma.
-
+*/
+/*
 Hint 1: || A magasság a lánchossz és a legnagyobb gyermekmagasság összegeként áll elő. ||
 Hint 2: || Az elágazás nélküli leghosszabb szakasz a lánchossz maximuma a részfában található többi szakasz felett. ||
 Hint 3: || Egyetlen rekurzív bejárásban gyűjtsd össze a gyerekek eredményét, majd ezekből képezd a saját válaszodat. ||
 */
+#include <bits/stdc++.h>
+using namespace std;
 
 struct Res {
     int height = 0;

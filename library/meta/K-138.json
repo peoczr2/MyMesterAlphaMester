@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/78. Magasugró világcsúcsok folyamatosan **",
+    "method": "Halmaz rendezi és szűri az éveket, majd egy bejárással keressük a leghosszabb folytonos szakaszt.",
+    "category": "Leghosszabb folytonos szakasz",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "rendezés", "szakasz"],
+    "note": "A magasság a kérdéshez nem kell; a bemenet minden sora világcsúcs-esemény, ezért csak az évek számítanak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/79. Megbízható versenyzők **",
+    "method": "Versenyzőnkénti bejárás: sikertelen dobás keresése, majd minimum és maximum különbsége.",
+    "category": "Szűrés, minimum-maximum",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "maximum", "feltétel"],
+    "note": "A PDF-példa 7200-as adata a minta.zip be1 fájlban 7000; mindkét változatra a megoldás helyes kimenetet ad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/8. Előrejelzések átlaga legnagyobb *",
+    "method": "Soronkénti összegzés, az eddigi legnagyobb összeg és sorszám követése szigorú összehasonlítással.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximumkiválasztás", "összegzés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/80. Mindenhol pontot szerző versenyzők *",
+    "method": "Versenyzőnként az öt helyezés ellenőrzése: mindegyik 1 és K között kell legyen.",
+    "category": "Feltételes szűrés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szűrés", "feltétel", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -12,6 +12,11 @@ mert a távolabbi, kollineáris pontok az O-hoz közelebbiig tartó szakaszon k�
 
 Idő: O(N log N)
 */
+/*
+Hint 1: || Válassz egy biztosan a burok csúcsa, például a legalsó (majd a legbaloldali) pontot, és a többi pontot tekintsd az innen mért irányok szerint. ||
+Hint 2: || Egy irányban csak a kiindulóponthoz legközelebbi pont lehet háromszög-csúcs, mert a közelebbi pont a távolabbi és a kiindulópont közötti szakaszon lenne. ||
+Hint 3: || Az irányonként legközelebbi pontokat szögrendben véve bármely két szomszédos pont az egyik ponttal üres háromszöget alkot. A körüljárást a keresztszorzat előjele adja. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

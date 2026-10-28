@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/1. Ádám és Éva kirándul",
+    "method": "Csúcskapacitásos maximális folyam: két csúcsdiszjunkt út Évából Ádámig és a célig.",
+    "category": "Folyam: csúcsdiszjunkt utak",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "folyam",
+      "egyszerű út"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti (ki) fájl, ezért a validátor „nincs minta” állapotot ad. A feladat szerint több helyes útvonal is elfogadható, ezért a minta „kézi”. A be1.txt-n és a feladat példáján futtatva a kimenet érvényes; a példa kimenete pontosan 9 7 2 1 3 5. Ellenőrzés: 1300 véletlen kis gráfon (N≤8) kimerítő kereséssel igazoltam, hogy a 0 és a nem 0 kimenet döntése helyes, és az útvonal egyszerű, A-val kezdődik, K-val végződik, tartalmazza E-t és élek mentén halad. A be2.txt (N=7000, M=99777) futása kb. 0,02 s, N=10000 és M=200000 véletlen gráfon kb. 0,06 s, az időlimit 0,2 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/10. Hálózat *",
+    "method": "Két BFS K-ból: az élek irányában és fordítva; a különbségük a válasz.",
+    "category": "Gráf: elérhetőség",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "bejárás",
+      "irányított gráf"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl, ezért a validátor „nincs minta” állapotot ad. A feladat szerint a csúcsok sorrendje tetszőleges, így több helyes kimenet van, a minta „kézi”. A példa bemenetén a kimenet 6 csúcs: 1 3 7 8 9 10, ami halmazként egyezik a feladat példájával. Ellenőrzés: 500 véletlen kis gráfon (N≤9) tranzitív lezárással számolt eredménnyel egyezett. A be2.txt (N=12611, M=21740) futása kb. 0,007 s, N=20000 és M=200000 véletlen gráfon kb. 0,04 s, az időlimit 0,1 s.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/11. Hálózat kitüntetett csomóponttal **",
+    "method": "BFS K-ból az élek mentén (legfeljebb T+1 élig) és fordítva; a két halmaz metszete.",
+    "category": "Gráf: távolság, elérhetőség",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bejárás",
+      "távolság"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl, ezért a validátor „nincs minta” állapotot ad. A feladat példáján (N=10, M=14, K=3, T=2) a kimenet 4, a második sorban 2 4 5 6, ami egyezik a feladat példájával. A T értelmezése: T közbülső csúcs legfeljebb T+1 élnek felel meg, a példa ezt igazolja. Ellenőrzés: 600 véletlen kis gráfon (N≤8) kimerítő útkereséssel, minden egyszerű K-ból induló úton, legfeljebb T közbülső csúccsal. A be2.txt (N=10000, M=99948) futása kb. 0,017 s, N=10000 és M=300000 véletlen gráfon kb. 0,04 s, az időlimit 0,1 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/12. Hálózat hiányzó vonal **",
+    "method": "Erősen összefüggő komponensek (Tarjan): a komponensek láncának kezdő és záró csúcsa adja a P,Q párt.",
+    "category": "Gráf: erősen összefüggő komponensek",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "összefüggőség",
+      "irányított gráf"
+    ],
+    "note": "A minta.zip-ben nincs kimeneti fájl, ezért a validátor „nincs minta” állapotot ad. A feladat példáján a kimenet 5 2, ami egyezik a mintával. A feltételből következik, hogy a kiegészítő él kezdőpontja és végpontja egyértelmű: minden él legfeljebb egy egyszerű körben lehet, így az eredeti komponensek közötti élek egyetlen láncot alkotnak. Ellenőrzés: 2100 véletlen kis gráfon (N≤7) kimerítő útszámlálással, minden (P,Q) párra, hogy a bővített gráfban minden sorrendezett csúcspárra pontosan egy egyszerű út van; a kapott P,Q pár mindig érvényes volt, és több megoldás egyszer sem fordult elő. A be2.txt (N=2216, M=20158) futása kb. 0,004 s, N=10000 és M=200000 véletlen gráfon kb. 0,03 s, az időlimit 0,1 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

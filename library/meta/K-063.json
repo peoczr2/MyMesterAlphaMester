@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/1. Előrejelzések maximuma legnagyobb *",
+    "method": "Soronkénti maximum számítása, majd egy menetes maximumkiválasztás a települések között.",
+    "category": "Maximumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "mátrix", "kiválasztás"],
+    "note": "A feladat nem mondja ki, mi legyen holtverseny esetén; a be2 minta (100 település közül több is 49-es maximumot ér el, a kimenet 1) alapján a legkisebb sorszámú települést választjuk. A K korlátot a megoldás nem használja: a be1 mintában K=30, a helyes válasz mégis a 35-ös maximumhoz tartozik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/10. Legjobb idejű futóverseny eredmény helyezése *",
+    "method": "Időeredmény átszámítása másodpercre, majd egy menetes minimumkiválasztás a versenyek között.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "idő", "kiválasztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/11. Legkisebb bortermésű év *",
+    "method": "Egy menetes minimumkiválasztás: az eddigi legkisebb mennyiség és a sorszám nyilvántartása.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "tömb", "kiválasztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/12. Legkisebb különbség a min es max hőmérséklet között *",
+    "method": "Napi különbség (max − min) számítása, majd egy menetes minimumkiválasztás.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "maximum", "különbség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

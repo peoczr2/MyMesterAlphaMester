@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/20. Legkevesebb várakozási idő egy villamosmegállóban *",
+    "method": "Lineáris bejárás: a pozitív várakozási idő minimuma és sorszáma",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "minimumkeresés",
+      "lineáris bejárás",
+      "szűrés"
+    ],
+    "note": "Mért idő: 3 ms a legnagyobb mintán (N=100), időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/21. Legkisebb sebesség két villamosmegálló között *",
+    "method": "Szakaszonként távolság osztva idővel, minimum keresése keresztszorzással",
+    "category": "Minimumkeresés, sebesség",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "minimumkeresés",
+      "sebesség",
+      "törtek összehasonlítása"
+    ],
+    "note": "Mért idő: 3 ms a legnagyobb mintán (N=100), időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/22. Legközelebb lévő távoli állomás *",
+    "method": "Folyamatos távolság-összegzés, az első K-nál távolabbi megálló keresése",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "prefixösszeg",
+      "keresés",
+      "távolság"
+    ],
+    "note": "Mért idő: 3 ms a legnagyobb mintán (N=100), időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/23. Legközelebb lévő távoli állomás a végállomástól *",
+    "method": "Prefixösszeg, a végállomástól mért távolság: teljes hossz mínusz prefixösszeg",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "prefixösszeg",
+      "keresés",
+      "távolság"
+    ],
+    "note": "Kérdés: a minta.zip be1.txt és be2.txt első sora csak N-et tartalmaz, a K hiányzik (a feladatszöveg szerint N és K). A PDF-példa (5 3000 -> 2 3900) és a minta ki2 (99 7569) szerint az i. megállóhoz az (i-1). megálló végállomástól mért távolsága tartozik, a szöveg szerint viszont az 1. megálló van 3900 m-re. A task.cpp a szöveg szerint számol (a példa: 1 3900), a validátor ezért hibás mintát jelez. Mért idő: 2 ms N=100-nál, időlimit 0,1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

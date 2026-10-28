@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/57. Turistaház ***",
+    "method": "Összefüggő szabad szakaszok bejárása, szakaszonként a maradék napok korlátozzák a meghosszabbítást.",
+    "category": "Szabad szakaszok számlálása",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakasz", "számlálás", "maradék"],
+    "note": "A feladatszöveg nem részletezi a meghosszabbítást. Az értelmezés: az utazások nem fedhetik egymást, a meghosszabbító nap szabad és nincs másik utazáshoz foglalva, a második szám a legtöbb utazás mellett elérhető legtöbb meghosszabbítható utazás. Ezt a két mintából és kis N-es brute-force ellenőrzésből (31 200 eset) vontam le.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/58. Vitorlásverseny",
+    "method": "Szeles szakaszok bejárása, szakaszonként a versenyszám és a maradék napok alapján.",
+    "category": "Szabad szakaszok számlálása",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakasz", "számlálás", "maradék"],
+    "note": "A mappanévben nincs csillag (a feladatlap fejléce ***), a difficulty a becslésem. A meghosszabbítás értelmezése ugyanaz, mint az 57. feladatnál (a versenyek nem fedhetik egymást, a meghosszabbító nap szabad és nincs másik versenyhez foglalva). A két mintán 2/2 stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/59. Rendezőpályaudvar ***",
+    "method": "Városonkénti számlálás, majd szabad hely szerinti rendezés, az első három város kiírása.",
+    "category": "Számlálás és rendezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "rendezés", "csoportosítás"],
+    "note": "A három város a szabad helyek szerinti első három, 0 szabad hellyel is. Azonos szabad hely esetén a szerelvényszám, majd a városnév szerint rendezek; a feladat szerint ilyenkor bármelyik sorrend megengedett. A két mintán 2/2 stimmel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/6. Fagyos napok száma *",
+    "method": "Lineáris bejárás: a 0 foknál hidegebb mérések számlálása.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

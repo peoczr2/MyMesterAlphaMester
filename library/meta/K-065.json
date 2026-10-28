@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/17. Legnagyobb hórétegű sípálya *",
+    "method": "Egyszeri bejárás, menet közben az eddigi legnagyobb érték és sorszám nyilvántartása.",
+    "category": "Maximumkiválasztás: sorszám",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "sorszám", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/18. Legnagyobb hőmérsékletváltozás két nap között *",
+    "method": "Szomszédos párok bejárása, mindkét keresztkülönbség abszolút értékének maximuma.",
+    "category": "Maximumkiválasztás: párok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "szomszédos", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/19. Legnagyobb különbség a min es max hőmérséklet között *",
+    "method": "Napi maximum és minimum különbségét számoljuk, és a legnagyobbat keressük, holtversenynél az elsőt.",
+    "category": "Maximumkiválasztás: különbség",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "különbség", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/2. Gyanús hőmérsékletek *",
+    "method": "Belső mérések eltérése a szomszédok átlagától, egész számokkal (kétszeres eltérés), maximumkiválasztás.",
+    "category": "Maximumkiválasztás: szomszédok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "szomszédok", "átlag"],
+    "note": "Nincs küszöbérték a feladatban, ezért a „nincs gyanús mérés” esetét úgy értelmeztük, hogy minden belső mérés pontosan a szomszédai átlaga (az eltérés 0), és ekkor 0 a kimenet. A mintákban ez az eset nem szerepel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

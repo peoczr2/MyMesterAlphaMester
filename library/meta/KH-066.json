@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szigetek/17. Legmagasabb csúcsú sziget *",
+    "method": "Szakaszonként belső csúcsok keresése, a legmagasabb csúcs szigetének partjai",
+    "category": "Maximumkeresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["sziget", "csúcs", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/18. Legmélyebb völgyű sziget *",
+    "method": "Szigetenként prefix- és suffix-maximum, a legmélyebb völgy szigetének partjai",
+    "category": "Minimumkeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["sziget", "völgy", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/19. Legmeredekebb csúcsú sziget *",
+    "method": "Csúcs meredeksége: magasság mínusz a kisebbik szomszéd, legmeredekebb csúcs keresése",
+    "category": "Maximumkeresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["sziget", "meredekség", "csúcs"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/2. Alacsony szigetek *",
+    "method": "Szigetenként a maximum, a 100 m alatti magasságok gyűjtése listába",
+    "category": "Feltételes szűrés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sziget", "szűrés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

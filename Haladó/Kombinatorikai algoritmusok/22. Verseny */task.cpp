@@ -1,13 +1,18 @@
 /*
 Megoldás lényege:
-A kiosztott jutalmak száma egy N összegű, szigorúan csökkenő pozitív részösszeg-
-felbontás. Ez pontosan az N szám partícióinak a száma különböző tagokkal,
-ahol a tagok legfeljebb M értékűek lehetnek.
-
-Ezért egy egyszerű 1D dinamikus program elég: minden részméretet egyszer
-felhasználhatunk, és visszafelé frissítjük az összegeket.
+A kiosztott utalványok száma a versenyzők sorrendjében szigorúan csökken, ezért a
+nem nulla értékek különböző pozitív egészek. Így a feladat: hányféleképpen írható
+fel N különböző, M-nél nem nagyobb tag összegeként. Ez egy 0/1 hátizsák-típusú DP:
+minden 1..M számot legfeljebb egyszer használunk fel, és a dp tömböt az összegek
+szerint nagytól kicsi felé frissítjük, hogy egy szám ne kerüljön bele kétszer.
+Az eredmény N<=500 esetén 10^15 alatt marad, a BigInt-tel való tárolás ettől
+függetlenül biztonságos.
+Időigény O(N·M) nagy számú összeadással, ami a korlátok mellett gyors.
 */
-
+/*
+Hint 1: || A versenyzők sorrendjében a kapott utalványok száma szigorúan csökken, így a nullától különböző értékek különbözőek. A kiosztás tehát N különböző, legfeljebb M nagyságú szám összege, a tagok sorrendje nem számít. ||
+Hint 2: || Tekintsük az 1..M számokat tárgyaknak, mindegyiket legfeljebb egyszer használhatjuk. Legyen dp[s] az olyan felbontások száma, amelyek összege s. Kezdetben dp[0] = 1, majd minden tárgyra az s értékeket N-től a tárgy értékéig csökkenő sorrendben frissítjük: dp[s] növelése a dp[s - tárgy] értékkel. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

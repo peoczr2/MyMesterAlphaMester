@@ -1,12 +1,11 @@
 /*
 Megoldás lényege:
-A kerítés egy egyszerű (nem önmetsző) ortogonális poligon. Minden fára pont-bennevan tesztet
-végzünk: jobbra mutató félegyenest veszünk, és megszámoljuk, hányszor metszi a poligon
-függőleges éleit. Páratlan metszésszám esetén a pont belül van, páros esetén kívül.
-A bemenet garantálja, hogy egy fa sem esik kerítésszakaszra, így a szabványos ray-casting
-feltétel biztonságosan használható.
-
+Az elkerített rész egy egyszerű (nem önmetsző) ortogonális poligon. Minden fára pont-benne-van tesztet végzünk: jobbra mutató félegyenest húzunk, és megszámoljuk, hányszor metszi a poligon függőleges éleit. Páratlan metszésszám esetén a pont belül, páros esetén kívül van. A bemenet garantálja, hogy egy fa sem esik kerítésszakaszra, így a szabály egyértelmű.
 Idő: O(N*M), ami a korlátokra elegendő.
+*/
+/*
+Hint 1: || Az elkerített rész ortogonális poligon: egy pont akkor van benne, ha a jobbra húzott félegyenes páratlan számú függőleges kerítésszakaszt metsz. ||
+Hint 2: || Minden kivágandó fára külön-külön végigmész a függőleges éleken, és a metszések számának paritása dönt; összesen O(N·M) lépés. ||
 */
 
 #include <bits/stdc++.h>

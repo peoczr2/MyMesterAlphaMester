@@ -1,7 +1,11 @@
 /*
-   Dekódolás: a b_i érték a balra eső nagyobb elemek száma, vagyis egy
-   inverziós kód. Jobbról balra haladva mindig a még szabad számok közül
-   a megfelelő sorszámút választjuk ki Fenwick-fával.
+Megoldás lényege:
+A b_i érték azt adja meg, hány nála nagyobb elem áll tőle balra. Az a_i szám rangja az a_1 … a_i részsorozatban így i − b_i, mert a balra lévő i − 1 elem közül b_i nagyobb, i − 1 − b_i pedig kisebb nála. Jobbról balra haladva a még szabad számok halmazából kell kiválasztani a rangnak megfelelő, (i − b_i)-edik legkisebb számot, majd ezt a számot a halmazból törölni. A szabad számok halmazát Fenwick-fa tartja nyilván, amelyben a k-adik elem O(log N) időben megtalálható, így az összidő O(N log N).
+*/
+/*
+Hint 1: || Haladj jobbról balra: az i-edik helyen álló szám rangja csak i-től és b_i-től függ, a jobb oldali számokat pedig már kiosztottuk. ||
+Hint 2: || Az i-edik helyen álló szám a még szabad számok halmazában pontosan a (i − b_i)-edik legkisebb lesz, ezért ezt kell kivenni a halmazból, és folytatni a bal oldali következő pozícióval. ||
+Hint 3: || A szabad számok kezelésére használj Fenwick-fát: kezdetben minden szám szabad (1-es), a k-adik 1-es pozíciót bináris ugrásokkal, log N lépésben megtalálod, a kiválasztott számot pedig 0-ra állítod. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

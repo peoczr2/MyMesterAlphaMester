@@ -1,12 +1,10 @@
 /*
-Megoldas: az utasokat egy érkezési sorban, a mozgólépcsőt pedig két párhuzamos
-szalagon szimuláljuk. Minden időlépésben előbb a metro viszi el a váróteremben
-lévő utasokat, utána jönnek az új utasok, majd legfeljebb ketten felállnak a
-mozgólépcsőre és a lépcső egyet lejjebb lép.
+Megoldás lényege: az utasok csak az érkezési idejük alapján különböznek, ezért nem egyesével, hanem időegységenként darabszámmal szimuláljuk az állomást. Az utcai sorból időegységenként legfeljebb 2 fő lép a lefelé menő lépcsőre, és a lépcső K időegység múlva engedi be őket a váróterembe, ezért a beérkezéseket egy K-val eltolt tömbben tároljuk. Minden időegységben előbb a metró (M-enként) viszi el a váróteremben addig összegyűlt utasokat, utána jönnek a lépcsőről érkezők, és csak ezután lép a lépcsőre a következő két utas; ha a váróterem kapacitása túllépődne, a szimuláció megáll. A szimuláció O(N+K+M) időben fut.
 */
 /*
-Hint 1: || A két irányú forgalmat és a metró érkezését külön eseményként kezeld. ||
-Hint 2: || A mozgólépcsőn egyszerre csak a következő szabad helyre lehet belépni, a sorok sorrendje viszont megtartja az érkezést. ||
+Hint 1: || Az utcai sorban az utasok csak darabszámként számítanak: minden időegységben annyi lép a lépcsőre, amennyi legfeljebb 2-t és a sorban várók számát engedi. ||
+Hint 2: || A lépcsőre lépés időpontjából K időegységet kell hozzáadni a váróterembe érkezés időpontjához, ezért érdemes egy K-val eltolt tömbben tárolni, hány utas érkezik a váróterembe. ||
+Hint 3: || Egy időegységen belül a sorrend számít: előbb a metró viszi el a korábban érkezett utasokat, utána érkeznek be az aktuális időegységben a váróterembe lépők, és csak ezután lép be a lépcsőre a következő csoport. ||
 */
 
 #include <bits/stdc++.h>
@@ -16,65 +14,37 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n, k, l, m, u;
+    long long n, k, l, m, u;
     cin >> n >> k >> l >> m >> u;
-    vector<int> arrival(u);
-    for (int i = 0; i < u; ++i) cin >> arrival[i];
+    vector<long long> arrivals(n + 1, 0);
+    for (long long i = 0; i < u; ++i) {
+        long long a;
+        cin >> a;
+        arrivals[a]++;
+    }
 
-    deque<int> pending;
-    vector<deque<int>> belt(2, deque<int>(k, -1));
-    int idx = 0;
-    int room = 0;
-    vector<int> served;
+    long long last = n + k + m;
+    vector<long long> toRoom(last + k + 2, 0);
+    long long street = 0;
+    long long room = 0;
+    vector<long long> served;
 
-    auto takeMetro = [&](int t) {
+    for (long long t = 0; t <= last; ++t) {
         if (t > 0 && t % m == 0) {
-            if (room > 0) served.push_back(room);
+            served.push_back(room);
             room = 0;
         }
-    };
+        room += toRoom[t];
+        if (room > l) break;
 
-    int lastTime = n + k + m;
-    for (int t = 0; t <= lastTime; ++t) {
-        takeMetro(t);
-
-        while (idx < u && arrival[idx] == t) {
-            pending.push_back(arrival[idx]);
-            ++idx;
-        }
-
-        for (int lane = 0; lane < 2; ++lane) {
-            if (!pending.empty() && belt[lane].front() == -1) {
-                belt[lane].front() = pending.front();
-                pending.pop_front();
-            }
-        }
-
-        for (int lane = 0; lane < 2; ++lane) {
-            for (int pos = k - 1; pos >= 0; --pos) {
-                if (belt[lane][pos] == -1) continue;
-                if (pos == k - 1) {
-                    if (room == l) {
-                        cout << served.size() << '\n';
-                        for (int i = 0; i < (int)served.size(); ++i) {
-                            if (i) cout << ' ';
-                            cout << served[i];
-                        }
-                        cout << '\n';
-                        return 0;
-                    }
-                    ++room;
-                    belt[lane][pos] = -1;
-                } else if (belt[lane][pos + 1] == -1) {
-                    belt[lane][pos + 1] = belt[lane][pos];
-                    belt[lane][pos] = -1;
-                }
-            }
-        }
+        if (t <= n) street += arrivals[t];
+        long long enter = min(2LL, street);
+        street -= enter;
+        toRoom[t + k] += enter;
     }
 
     cout << served.size() << '\n';
-    for (int i = 0; i < (int)served.size(); ++i) {
+    for (size_t i = 0; i < served.size(); ++i) {
         if (i) cout << ' ';
         cout << served[i];
     }

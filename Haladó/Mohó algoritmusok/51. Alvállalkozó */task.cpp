@@ -1,11 +1,15 @@
 /*
-Feladat: Egynapos munkák határidőkkel adottak (növekvő sorrendben), egy alvállalkozó naponta legfeljebb egyet végezhet. A cél a maximálisan kiadható munkaszám.
-Ötlet: Határidő szerinti egyetlen bejárás. Ha eddig k munkát vállaltunk, akkor a következő csak akkor fér be, ha a (k+1)-edik nap még nem késő a határidőhöz képest, azaz k+1 <= Hi. Ez a klasszikus egynapos, határidős maximum-kardinalitású kiválasztás.
+Megoldás lényege: a munkákat a bemenet szerinti (növekvő) határidejük sorrendjében dolgozzuk fel. Ha eddig k munkát
+vállaltunk, a következő munkát akkor vesszük el, ha a (k+1). napon még el tudjuk végezni, azaz k+1 <= Hi.
+Helyesség: a határidők szerint haladva az elfogadott munkák mindig a 1..k napokra ütemezhetők, és egy
+elfogadott munka sem blokkol olyan későbbi munkát, amelyet egy optimális megoldás elfogadna (csereargumentum).
+Időigény: O(N), a bemenet beolvasása dominál.
+*/
+/*
 Hint 1: || Ha egy munka határideje d, akkor legkésőbb a d. napon készülhet el. ||
 Hint 2: || Tartsd számon, hány munkát vállaltál már: ez lesz a következő munka napja. ||
 Hint 3: || Növekvő határidőnél az első elfogadható munkákból épített mohó halmaz optimális. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

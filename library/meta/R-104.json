@@ -1,0 +1,74 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/1. Vonatok",
+    "method": "Eseményvezérelt szimuláció szakaszonkénti prioritásos várakozósorral",
+    "category": "Szimuláció: prioritásos sor",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["szimuláció", "várakozási sor", "események"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/2. Szókereső",
+    "method": "Visszalépéses keresés (DFS) minden kezdőcellából, látogatott jelöléssel",
+    "category": "Rácsos keresés: visszalépés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rács", "visszalépés", "keresés"],
+    "note": "A feladat szerint: „Több megoldás esetén bármelyik megadható.” A kimenet érvényességét a library/.work/R-104/tests/szokereso_check.py független ellenőrző igazolja (véletlen mátrixokon, a „0 0” kimenet helyességével együtt).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/3. DNS vizsgálat",
+    "method": "Bázisonként a leghosszabb bázisnélküli szakasz; a válasz ezek maximuma plusz egy",
+    "category": "Sztringek: hézagok maximuma",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["sztring", "maximum", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/4. Cső vásárlás",
+    "method": "Korlátlan hátizsák-DP pontos hosszra, visszakövetéssel a vásárlás",
+    "category": "Dinamikus programozás: hátizsák",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dp", "hátizsák", "visszakövetés"],
+    "note": "A feladat szerint: „Készíts programot, amely meghatározza azt a legkevesebb összeget, amennyiért megvásárolható a szükséges csőmennyiség és megad egy ilyen vásárlást!” Több azonos árú vásárlás is lehet; a library/.work/R-104/tests/cso_check.py független DP-vel ellenőrzi az árat, a hosszt és a kiírt vásárlást.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/5. Vizitúra",
+    "method": "Fa átmérője: két mélységi bejárás, egy szélsőpontból indítva",
+    "category": "Gráf: fa átmérője",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["fa", "átmérő", "bejárás"],
+    "note": "A feladat szerint: „Készíts programot, amely megadja a leghosszabb lehetséges vizitúra hosszát, valamint lehetséges kezdő- és végpontját!” A kezdő- és végpont nem egyértelmű; a library/.work/R-104/tests/vizitura_check.py Floyd-Warshall-lal ellenőrzi a hosszt és a két végpont távolságát.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 2. 2017 ∕ 18 3. forduló/6. Találkozások",
+    "method": "Rendezett kezdő- és végpontlisták, bináris kereséssel számolt metszetszám",
+    "category": "Intervallumok: metszetszámolás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "rendezés", "bináris"],
+    "note": "A feladat szerint: „A standard kimenet első sorába egy olyan ember E sorszámát kell kiírni, aki a legtöbb emberrel találkozott (több megoldás esetén bármelyiket)!” Az E sorszám és a találkozószám ellenőrzése a library/.work/R-104/tests/talalkozasok_check.py programmal, páronkénti számolással történt.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

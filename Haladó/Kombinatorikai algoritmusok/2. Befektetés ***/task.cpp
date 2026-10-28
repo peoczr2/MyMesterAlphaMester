@@ -1,7 +1,11 @@
 /*
-   Befektetés: a befektetési összegek Zeckendorf-szerű felbontása kell.
-   A kiválasztott évek a Fibonacci-sorozat indexei, a következő évre tolva
-   pedig azonnal megkapjuk a második kért összeget.
+Megoldás lényege:
+Egy év befektetése az előző két év befektetésének összege, így az évi befektetések 1, 1, 2, 3, 5, 8, ... Fibonacci-számok. Az A összeget úgy kell felírni, hogy a kiválasztott évek ne legyenek egymás mellett; erre a mohó, Zeckendorf-féle felbontás ad megoldást: mindig a legnagyobb, a maradéknál nem nagyobb Fibonacci-számot vesszük. Egy szám kiválasztása után a maradék kisebb a szomszédos Fibonacci-számnál, ezért a következő kiválasztott év legalább két évvel korábbi, így nincs két egymást követő év. A második sorban a kiválasztott években lévő befektetések összege szerepel, egy évvel későbbre tolva. A futás O(log A), mert A <= 10^8 esetén csak néhány tucat Fibonacci-szám van.
+*/
+/*
+Hint 1: || Számold ki, mennyit fektet be az egyes években: az 1. és a 2. évben 1-et, utána minden év befektetése az előző két év befektetésének összege. ||
+Hint 2: || Keresd meg a legnagyobb olyan Fibonacci-számot, amely nem nagyobb A-nál, vond le A-ból, és a maradékkal ismételd; a kiválasztott évek így nem lesznek egymás mellett. ||
+Hint 3: || Az évek fordított sorrendben keletkeznek, ezért kiíráskor fordítsd meg a sorrendet. A második sorhoz minden kiválasztott évben a befektetést egy évvel később kell venni, azaz a következő Fibonacci-számot. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

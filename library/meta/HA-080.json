@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/71. Hálózati átvitel",
+    "method": "Összes várospár összevonhatóságának visszafelé szélességi bejárása a párok gráfján",
+    "category": "Gráf: párok szélességi bejárása",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "szélességi bejárás",
+      "állapottér"
+    ],
+    "note": "A feladat.pdf (Robotok összegyűjtése) és a minta.zip (Hálózati átvitel, más bemeneti formátum) nem egyezik, ezért a validátor a mintán hibásnak jelzi. A megoldás a PDF szerint készült: a PDF példáján (NEM, IGEN) és 1500 véletlen esetben brute-force ellenőrzéssel igazolt. Véletlen T=50, N=500 bemeneten a futási idő kb. 0,21 mp (időlimit 0,2 mp).",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/72. Sípályák",
+    "method": "Körmentes gráf: célhelyek bitmaszkja topologikus sorrendben, starthelyenként számolva",
+    "category": "Gráf: DAG, bitmaszk",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "topologikus rendezés",
+      "bitmaszk"
+    ],
+    "note": "A minta.zip be2.txt-jén a validátor eltérést jelez: a 26 starthelyről több célhely is elérhető, a minta 9974-et, a megoldás 10000-et ír ki, mindkettő 26 starthelyről érhető el. A feladat szerint több megoldás esetén bármelyik kiírható, ezért a kimenetet ellenőrző programmal igazoltam (library/.work/HA-080/72/checker.py), és nem írtam át a mintához. A PDF bemenetleírása N sort említ a szakaszokra, de a példa és a minta M sort használ; az M-et olvastam.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/73. Tom és Jerry 1 ***",
+    "method": "Tom 2-es élekre korlátozott távolságai, majd Dijkstra-szerű visszafelé számolás az egérlyuktól",
+    "category": "Gráf: idő-korlátos bejárás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "legrövidebb út"
+    ],
+    "note": "Mért idő véletlen N=100 000, M=100 000, P=10 000 bemeneten: kb. 0,05 mp, az időlimit 0,5 mp. A minta.zip be1 két élben eltér a PDF példától (a PDF 7–5 és 5–8 éle helyett 3–5 és 6–8 szerepel), de a kimenet ugyanaz.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/74. Hírvivők csoportosítása **",
+    "method": "Manhattan-távolságok rendezése, Kruskal-típusú összevonás DSU-val, a csoportszám K alá csökkenéséig",
+    "category": "Unió-keresés, csoportosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "unió-keresés",
+      "rendezés",
+      "manhattan-távolság"
+    ],
+    "note": "Mért idő véletlen H=1000 bemeneten: kb. 0,03 mp (időlimit 0,2 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

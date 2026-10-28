@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: keresés/1. A nap mikor nem volt kapás *",
+    "method": "Lineáris bejárás, az első nulla értékű elem keresése",
+    "category": "Lineáris keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/10. Korcsolyázós nap a Balatonon *",
+    "method": "Szomszédos napok párjainak egyetlen bejárásos vizsgálata",
+    "category": "Szomszédos elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "szomszédos"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/11. Lehűlés napja *",
+    "method": "Előző napi minimum tárolása, egyetlen bejárás",
+    "category": "Szomszédos elemek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "szomszédos"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/12. Memóriajáték *",
+    "method": "Közös előtag hossza és mohó részsorozat-egyeztetés két mutatóval",
+    "category": "Sztring, részsorozat",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["sztring", "részsorozat", "mohó"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

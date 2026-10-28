@@ -1,14 +1,17 @@
 /*
 Megoldás lényege:
-Ugyanazzal a veremszerű párosítással dolgozunk, mint a minimális összhossz esetén. Egy adott
-legnagyobb megengedett kötélhosszra balról jobbra haladva csak akkor párosítunk, ha az aktuális
-LED és a verem teteje eltérő színű, és a távolságuk nem nagyobb a megengedettnél.
-
-Erre binárisan keresünk.
+Adott D legnagyobb megengedett kötélhosszra balról jobbra haladva ugyanúgy veremmel dolgozunk, mint
+a 107. feladatban, de két zászlót csak akkor kötünk össze, ha színük eltér és a távolságuk legfeljebb D.
+Ha a verem tetején álló zászló már D-nél messzebb van, akkor soha nem kerülhet párba, tehát D nem jó.
+Ha az aktuális zászló párosítható a verem tetejével, az összekötés nem ront, mert egy esetleges más
+megoldás is átalakítható úgy, hogy ugyanezt a párt használja. Mivel a nagyobb D sosem rontja a
+helyzetet, a legkisebb jó D-t bináris kereséssel keressük meg.
 */
-// Hint 1: || Ugyanaz a veremes párosítás működik, mint a minimális összhossznál. ||
-// Hint 2: || Egy adott D-re csak azt kell eldönteni, létrejöhet-e minden kötél hossza legfeljebb D. ||
-// Hint 3: || Ha igen/nem ellenőrzés van, akkor a legkisebb jó D-t bináris kereséssel kapjuk. ||
+/*
+Hint 1: || Ugyanaz a veremes párosítás működik, mint a 107. feladatban, csak a kötélhossz felső korlátja (D) is szerepet kap. ||
+Hint 2: || Egy adott D-re elég egyetlen balról jobbra haladó bejárás: ha az aktuális zászló és a verem teteje eltérő színű és D-n belül vannak, összekötjük, különben a verembe tesszük. ||
+Hint 3: || Az igen/nem válasz D-ben monoton, ezért a legkisebb igen-hoz tartozó D-t bináris kereséssel kapjuk. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

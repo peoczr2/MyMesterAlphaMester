@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/69. Közös főnök",
+    "method": "LCA bináris emeléssel, majd a közvetlen főnök kiválasztása, ha az egyik dolgozó a másiké",
+    "category": "Fa: legközelebbi közös ős",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "lca",
+      "bináris emelés"
+    ],
+    "note": "A minta.zip ellentmond a feladatnak: be1-ben N=7 mellett A=9 > N és csak 4 él van (6 kellene); be2-ben N=1000000 > 100000 és A=B; ki2=3101375592 nem lehet csúcssorszám. A PDF példája (9 4 9 -> 7) és 3000 véletlen fa brute-force ellenőrzése egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/7. Csatornatakarító **",
+    "method": "Nagy szakaszok erdejének levelei indulnak robotot, a lánc hosszát felfelé számoljuk.",
+    "category": "Fa: erdő levelei",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "erdő",
+      "számlálás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/74. Robotok összegyűjtése",
+    "method": "Ajtónyitottság szerinti elérhetőség; a bejárási sorrend az útvonal lexikografikus összehasonlítása.",
+    "category": "Bináris fa: bejárási sorrend",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "bejárás",
+      "dinamikus"
+    ],
+    "note": "A feladat.pdf a Termek feladat (a mappanév Robotok összegyűjtése), a minta.zip egy másik feladaté: NEM/IGEN kimenetet ad, a PDF -1/0/+1 értékeket kér. A PDF példája (1 -1 0 -1 -1 1) és 1500 véletlen eset brute-force szimulációval egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/8. DNS ismétlődés ***",
+    "method": "Csúszóablak K hosszú részsztringekre, négyes számrendszerű kulccsal és gyakoriságszámlálással.",
+    "category": "Hash: csúszóablak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "sztring",
+      "hash",
+      "csúszóablak"
+    ],
+    "note": "A minta be1 (a PDF példája, 11 3 TACACAGTACA) ki1='2 4' ellentmond a PDF kimenetének ('3 2'): az ACA 3-szor fordul elő (2., 4., 9. pozíció), a helyes válasz 3 2. A be2-nél a '2 2332' is helyes, de a feladat szerint bármelyik helyes pozíció megadható; a program '2 186'-ot ad, ez szintén érvényes. 2000 véletlen eset brute-force ellenőrzése: 0 hiba.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/82. Dinamikus rendezett minta",
+    "method": "Treap kulcs szerint, részfa-méretekkel a sorszámhoz és a rangkereséshez.",
+    "category": "Rendezett halmaz: treap",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "treap",
+      "rendezett halmaz",
+      "rang"
+    ],
+    "note": "speciális: grader-alapú (rendminta.h/.cpp, a main a graderben van), a validátor nem tudja lefordítani. Kézi ellenőrzés: a grader 60 seeden, 300/5000/100000 művelettel Helyes. A grader a rand() által ismételt értéket is elemszámnak veszi: seed 42, 51, 54 mellett 100000 műveletnél elszáll; duplikátum-biztos grader-változattal 180/180 futás helyes.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/83. Dinamikus rendezett minta törléssel",
+    "method": "Treap kulcs szerint, részfa-méretekkel; törlés kulcs és sorszám alapján.",
+    "category": "Rendezett halmaz: törlés",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "treap",
+      "rendezett halmaz",
+      "törlés"
+    ],
+    "note": "speciális: grader-alapú (rendminta.h/.cpp). Értelmezés: Adat(x) akkor hat, ha x éppen nincs a halmazban, így törlés után újra beszúrható (a korábbi változat a valaha beszúrt értékeket tiltotta; a grader ehhez az értelmezéshez illeszkedik, az eredeti változat seed 4-nél elszállt). Döntés kell, ha a tanár az eredeti szöveg szerinti értelmezést akarja. Ellenőrzés: 60 seed x 3 méret, duplikátum-biztos grader-változattal 180/180 helyes.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

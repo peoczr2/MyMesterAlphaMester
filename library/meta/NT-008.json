@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/2. Pletyka",
+    "method": "Kétrétegű (csúcs, paritás) gráf BFS-e: legrövidebb páros és páratlan séták",
+    "category": "Gráf: séták paritása",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bfs",
+      "paritás"
+    ],
+    "note": "Minta-eltérés, a szöveg szerint a megoldás a helyes: a be2 mintán (N=30000) az 1 izolált kezdő diák (3081, nincs barátja) a mintában minden páratlan napon (3., 5., ...) ismeri a pletykát, a szöveg szerint (S_{x+1} = N(S_x)) viszont csak az 1. napon. Emiatt a 3. nap értéke a mintában 73, a megoldásé 72; a maximum a mintában 29743, a megoldásé 29742 (14995. nap). Független szimuláció (library/.work/NT-008/t2/brute.py) 400 véletlen kis gráfon egyezik a megoldással (gen_pl.py). Ha a minta a helyes, az izolált kezdőcsúcsokat kell másképp kezelni.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/3. Hadjárat",
+    "method": "Leghosszabb lánc (sorszám, R, A szerint): felezéses rekurzió, Fenwick-fa",
+    "category": "Dinamikus programozás: 3D lánc",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "lánc",
+      "fenwick-fa"
+    ],
+    "note": "Több helyes kimenet (a feladat szerint bármelyik megadható): a be1 minta pontosan egyezik; a be2 mintán (N=50000) a lánc hossza egyezik a mintával (83), de a kiírt várossorozat más. Ellenőrző: library/.work/NT-008/t3/check3.py (a kiírt lánc érvényes, hossza 83). Az optimális hosszt O(N²) dp (t3/brute3.py) 300 véletlen kis esetben igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/4. Számlexikon",
+    "method": "Monoton számláló N-ben: bináris keresés, a számlálás hosszak szerint",
+    "category": "Bináris keresés: lexikografikus rang",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "bináris keresés",
+      "lexikografikus sorrend",
+      "számjegyek"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/5. Xor",
+    "method": "Szomszédos pár (x, x+1) xor-maszkja, és a harmadik szám legjobb xor-párja",
+    "category": "Bitműveletek: xor-maximalizálás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "bitműveletek",
+      "xor",
+      "intervallum"
+    ],
+    "note": "Több helyes kimenet van, ezért a minta eltérhet: a be1 minta 2. tesztjében (0 10) az 1 4 10 mellett a 3 4 8 is 15 xor-értékű. Ellenőrző: library/.work/NT-008/t5/check5.py (érvényes hármas, a minta xor-értékével egyezik; be2: 5000/5000). Nem bizonyított, kísérleti állítás, amelyre a megoldás épül: az optimális hármasban van szomszédos pár (x, x+1). Brute-force-szal ellenőrizve minden R<140 tartományra és kb. 38 ezer véletlen esetre.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

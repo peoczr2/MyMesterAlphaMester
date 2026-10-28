@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 2. forduló/1. k-homogén sorozat",
+    "method": "Értékenként pozíciólista, kétmutatós módszerrel a leghosszabb ablak",
+    "category": "Tömb: kétmutatós módszer",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "csúszóablak",
+      "tömb",
+      "kétmutatós"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 2. forduló/2. Virágok",
+    "method": "Rekurzív kikelés-sorozat, az élő évek összegzése modulo 20180113",
+    "category": "Rekurzió, maradékos számolás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "rekurzió",
+      "maradékos számolás",
+      "sorozat"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 2. forduló/3. Fa szélső pontjai",
+    "method": "Szintenkénti (szélességi) bejárás, minden szint első és utolsó pontja",
+    "category": "Fa: szintenkénti bejárás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "szélességi bejárás",
+      "bfs"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/OKTV 2017 ∕ 2018 2. forduló/4. Országok",
+    "method": "Évenkénti szimuláció szomszédsági számlálókkal és tulajdonos-nyilvántartással",
+    "category": "Gráf: szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "szimuláció",
+      "szomszédság"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2020/4. A hatalom elixíre",
+    "method": "Változásnapló sámánonként, időnkénti pillanatkép, barátlisták kétmutatós összevetése",
+    "category": "Interaktív: dinamikus gráf",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "interaktív",
+      "gráf",
+      "pillanatkép"
+    ],
+    "note": "Interaktív, grader-alapú feladat: a task.cpp az init, curseChanges és question függvényt valósítja meg, a main() a zsűri grader.cpp-ben van, ezért a validátor (nincs main, nincs be/ki minta) hibásnak jelzi. A zip grader.cpp mintapéldáján mind a 4 kérdés helyes („All Correct!”), véletlen brute-force teszteken kb. 90 000 kérdés egyezett, N=1000, U=2·10^5, Q=5·10^4 esetén kb. 0,25 s. Kézzel: a zsűri gradert a task.cpp-vel együtt kell fordítani és futtatni.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2020/5. Tavaszi nagytakarítás",
+    "method": "Élek költsége 1 vagy 2 a levélparitás szerint, virtuális fával frissítve",
+    "category": "Fák: útvonal-lefedés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "paritás",
+      "lca"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "CEOI (Közép-Európai Informatikai Diákolimpia)/CEOI 2020/6. Sakkfutam",
+    "method": "Király: mátrixhatvány; futó: fordulópontok és kombináció; bástya: zárt képlet",
+    "category": "Kombinatorika, mátrixhatványozás",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "kombinatorika",
+      "mátrixhatvány",
+      "moduláris",
+      "sakk"
+    ],
+    "note": "Q független lekérdezés (nem kérdésszámlálás), a számok mod 10^9+7. A régi kód a királynál 40 kérdésre is 7,8 s volt; az új 0,09 s a legnagyobb bemeneten (határ 1,3 s). A zip mindkét mintája egyezik; kis és közepes táblán független BFS egyezik. Az arithmetics.h include kikerült (a feladat szerint nem kötelező).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/74. Leghosszabb száraz időszak **",
+    "method": "Heti összegek számítása, majd egy bejárásban a leghosszabb folyamatos jó szakasz keresése",
+    "category": "Leghosszabb összefüggő szakasz",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "szakasz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/75. Legszárazabb időszak **",
+    "method": "Napok számolása hetenként, majd csúszó ablak az N/2 hetes szakaszok összegére",
+    "category": "Csúszóablak, minimum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "összegzés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/76. Legtöbb világcsúcs növekedés **",
+    "method": "Évenként számlálás: a szigorúan magasabb rekordok és az első rekord",
+    "category": "Számlálás, maximum",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/77. Legtovább szabad terem ***",
+    "method": "Foglalt napok jelölése termenként, majd a leghosszabb szabad szakasz keresése",
+    "category": "Tömb: szabad szakaszok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "intervallum", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

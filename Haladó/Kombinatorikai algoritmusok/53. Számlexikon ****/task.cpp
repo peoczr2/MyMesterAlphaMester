@@ -1,6 +1,17 @@
 /*
-   Számlexikon: megkeressük azt a legkisebb N-et, amelyre a K szám a P-edik
-   helyen áll az 1..N számok lexikografikus sorrendjében.
+Megoldás lényege: a K szám pozíciója (Q_{N,K}) az 1..N számok lexikografikus
+sorrendjében nem csökken, ha N nő, ezért a legkisebb N-et bináris kereséssel
+keressük. Q_{N,K} megszámolása: azon x <= N számok száma, amelyekre str(x) <= str(K).
+Ezek a K prefixei, plusz azok a számok, amelyek a K-val közös prefix után kisebb
+számjegynél térnek el; egy p prefixszel kezdődő, L hosszú számok egy
+[p*10^(L-|p|), (p+1)*10^(L-|p|)-1] intervallumot alkotnak, így az N-nél nem nagyobb
+darabszám egyszerűen összeadható. Egy lekérdezés O(log N * jegyek^2 * 10) műveletet
+igényel, így T <= 10 000 mellett bőven belefér a 0,2 másodpercbe.
+*/
+/*
+Hint 1: || Q_{N,K} növekvő N-ben, ezért a „legalább P” feltétel bináris kereséssel kezelhető. A felső korlátot duplázással találhatod meg. ||
+Hint 2: || Q_{N,K} = #{x <= N : str(x) <= str(K)}. Ide tartoznak K prefixei, és azok a számok, amelyek a K-val közös prefix után egy kisebb számjegynél térnek el. ||
+Hint 3: || Egy adott p prefixszel kezdődő, L hosszú számok a [p*10^(L-|p|), (p+1)*10^(L-|p|)-1] intervallumban vannak, így az N-nél nem nagyobbak számát min-műveletekkel kapod meg, minden L-re. ||
 */
 #include <bits/stdc++.h>
 using namespace std;

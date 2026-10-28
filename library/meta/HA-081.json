@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/75. Pletyka ***",
+    "method": "BFS a (diák, paritás) párok gráfján, a napi létszámok prefixösszeggel",
+    "category": "Gráf: séták paritása",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "szélességi bejárás", "paritás"],
+    "note": "A minta.zip be2/ki2 eltér a feladatszöveg szabályától: a barát nélküli kezdő diák (izolált csúcs) a ki2 szerint minden páratlan napon ismeri a pletykát (ki2 1. sora 29743, 3. nap 73), a feladat szerint viszont az első nap után elfelejti. A független napi szimuláció (library/.work/HA-081/75/brute.cpp) a feladat szerint 29742 és 14995 eredményt ad, ezt írja ki a megoldás; a be1 minta stimmel. A ki2 pontosan úgy reprodukálható, ha az izolált diákot minden páros lépésszámú napon számoljuk, ami a feladatszöveggel ellentmond.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/76. Egyirányú utcák **",
+    "method": "BFS az irányított rácson, a szülőtömbből visszafelé rakjuk össze az utat",
+    "category": "Gráf: irányított BFS",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "szélességi bejárás", "irányított gráf"],
+    "note": "Több legrövidebb út esetén a minta útja a K, D, E, N irányú bejárás eredménye; a feladat nem mondja ki, hogy bármelyik út elfogadható. Mindkét minta stimmel, és 500 véletlen esetben a hossz és az út érvényessége független ellenőrzéssel igazolt.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/77. Legközelebbi szigetek **",
+    "method": "Minden szigetből többforrású BFS a rácson, így a szigetpárok legkisebb távolsága",
+    "category": "Rács: többforrású BFS",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rács", "szélességi bejárás", "manhattan-távolság"],
+    "note": "A feladat szerint több megoldás esetén bármelyik pár kiírható, ezért minta kézi. A minta.zip ki-fájljai az összes optimális sorrendezett pár listáját tartalmazzák (első sor a darabszám), a feladat viszont egy párt kér, ezért a validátor a formátum miatt hibásnak jelzi. A kiírt párok (be1: 2 3, be2: 3 15) szerepelnek a minta listájában, és a független ellenőrző (library/.work/HA-081/77/check.py) 400 véletlen esetben is igazolta.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/78. Legelszigeteltebb sziget **",
+    "method": "Szigetenként többforrású BFS, a legközelebbi másik sziget távolságainak maximuma",
+    "category": "Rács: többforrású BFS",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rács", "szélességi bejárás", "legkisebb távolság"],
+    "note": "A feladat szerint több megoldás esetén bármelyik sziget kiírható, ezért minta kézi. A minta.zip ki-fájljai az összes optimális sziget listáját tartalmazzák (első sor a darabszám: be1 „1” és alatta 1; be2 „4” és alatta 1, 7, 9, 12), a feladat viszont egy sorszámot kér, ezért a validátor a formátum miatt hibásnak jelzi. A kiírt 1 mindkét mintában szerepel, és a független ellenőrző (library/.work/HA-081/78/check.py) 400 véletlen esetben is igazolta.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

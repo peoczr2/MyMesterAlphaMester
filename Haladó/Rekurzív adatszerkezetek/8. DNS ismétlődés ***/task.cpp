@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
 Megoldási ötlet:
 A megadott DNS-szekvenciából minden K hosszú részsztringet végignézünk, és
@@ -10,11 +7,14 @@ számkódolással a részsztringek gyorsan hash-elhetők.
 Az A, C, G, T betűket 0, 1, 2, 3 értékre képezzük, és a K hosszú ablakot 2 bites
 kód helyett 4-es számrendszerben tartjuk nyilván. Így minden részsztring egyetlen
 egész számmal azonosítható.
-
+*/
+/*
 Hint 1: || Minden K hosszú részsztringet csak egyszer kell kiolvasni az ablakos bejárással. ||
 Hint 2: || Az A/C/G/T betűk helyett használhatsz 0..3 kódot, így gyors lesz az azonosítás. ||
 Hint 3: || A legtöbbször előforduló rész mellett annak egy előfordulási helyét is meg kell őrizni. ||
 */
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

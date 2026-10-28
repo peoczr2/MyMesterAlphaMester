@@ -1,10 +1,13 @@
 /*
 Megoldás lényege:
-A B kód i-edik eleme azt mutatja, hány korábbi elem nagyobb az A[i]-nél.
-Ez pontosan a prefixben még előfordult számok számából számítható ki.
-
-Mivel A permutáció, egy Fenwick-fával minden lépésben gyorsan megkapjuk,
-hány kisebb vagy egyenlő elem szerepelt már.
+A B kód i-edik eleme azt adja meg, hány korábbi elem nagyobb A[i]-nél; ez a korábbi elemek számának (i−1) és az A[i]-nél kisebb vagy egyenlő korábbi elemek számának különbsége.
+A kisebb vagy egyenlő korábbi elemek számát egy Fenwick-fával (bináris indexelt fa) kérdezzük le: minden A[i] feldolgozása után az A[i] helyére 1-et írunk, és az A[i]-ig tartó prefixösszeget kérdezzük le.
+Minden elemre egy lekérdezés és egy beszúrás történik, ezért az időigény O(N log N), a tárigény O(N).
+*/
+/*
+Hint 1: || Az i-edik elem B-értéke a korábbi i−1 elem közül azoknak a száma, amelyek nagyobbak A[i]-nél; ezt megkapod, ha az i−1-ből kivonod a kisebb-egyenlő korábbiak számát. ||
+Hint 2: || Egy 1..N méretű jelölőtömbben tárold, mely értékek szerepeltek már; a kérdés egy prefixösszeg, amelyet naivan O(N) időben kapnál meg, így összesen O(N²) lenne. ||
+Hint 3: || Prefixösszeg lekérdezésére és egy pozíció növelésére használj Fenwick-fát (bináris indexelt fát): mindkettő O(log N), így az összes elem gyorsan feldolgozható. ||
 */
 
 #include <bits/stdc++.h>

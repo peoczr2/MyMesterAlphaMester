@@ -1,139 +1,171 @@
 /*
 Megoldás lényege:
-Az épületek uniójának kerületét függőleges söpréssel számoljuk.
-- Az x szerinti eseményeknél (téglalap bal/jobb oldala) frissítjük az aktív [y1,y2) szakaszokat.
-- A függőleges kerület-hozzájárulás adott x-nél: |fedett_hossz_után - fedett_hossz_előtt|.
-- Két egymást követő x között a vízszintes kerület-hozzájárulás: 2 * aktív_szakaszok_száma * dx.
-Ehhez szegmentfát használunk, amely tárolja a fedett hosszt és az aktív összefüggő y-szakaszok
-számát.
-
-Idő: O(N log N)
+Az épületek külső oldalainak összhossza az egyesített alakzat kerülete. A vízszintes éleket x szerinti söpréssel számoljuk: egy x-szeletben a lefedett y-szakaszok számát szegmensfával tartjuk nyilván, és a szelet szélességével szorozva 2-vel adjuk hozzá. A függőleges éleket ugyanígy kapjuk, ha a tengelyeket felcseréljük és y szerint söpörünk. Mindkét söprés O(N log N), az összidő is ennyi.
+*/
+/*
+Hint 1: || Az egyesített alakzat kerülete tengelyek szerint szétválasztható: a vízszintes és a függőleges élek összhosszát külön-külön számold. ||
+Hint 2: || Két egymást követő esemény között a lefedettség állandó, így egy x-szeletben a vízszintes élek összhossza 2 · (lefedett y-szakaszok száma) · szélesség. ||
+Hint 3: || A szegmensfa csomópontjában tárold a lefedett hosszt, a lefedett szakaszok számát és a két szélének lefedettségét; két gyerek összevonásakor a határon összeérő szakaszok egynek számítanak. ||
 */
 
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 
-struct Event {
-    long long x;
-    long long y1, y2;
-    int delta;
-    bool operator<(const Event& other) const {
-        return x < other.x;
-    }
+struct Rect {
+    int x1, y1, x2, y2;
+};
+
+struct Ev {
+    int x;
+    int l, r;  // az y-elemi intervallumok [l, r) indexei
+    int d;
 };
 
 struct Node {
-    int cover = 0;
-    long long len = 0;
-    int segs = 0;
-    bool leftCov = false;
-    bool rightCov = false;
+    int cover;  // a csomópontra közvetlenül ráfeszülő téglalapok száma
+    int len;    // a csomópont lefedett hossza
+    int segs;   // a lefedett futamok száma
+    int flags;  // bit0: bal szél lefedett, bit1: jobb szél lefedett
 };
 
-struct SegTree {
-    int n;
-    vector<Node> st;
-    vector<long long> ys;
+static vector<int> ys;
+static vector<int> full;  // a csomópont teljes hossza (kitöltetlen levelek: 0)
+static vector<Node> st;
+static int sz;  // 2-hatvány >= elemi intervallumok száma
 
-    SegTree(const vector<long long>& coords) : ys(coords) {
-        n = (int)ys.size() - 1; // intervals
-        st.resize(4 * max(1, n));
+static inline void pull(int p) {
+    Node& nd = st[p];
+    if (nd.cover > 0) {
+        nd.len = full[p];
+        nd.segs = 1;
+        nd.flags = 3;
+        return;
     }
+    if (p >= sz) {
+        nd.len = 0;
+        nd.segs = 0;
+        nd.flags = 0;
+        return;
+    }
+    const Node& a = st[p << 1];
+    const Node& b = st[(p << 1) | 1];
+    nd.len = a.len + b.len;
+    nd.segs = a.segs + b.segs - (((a.flags >> 1) & 1) && (b.flags & 1) ? 1 : 0);
+    nd.flags = (a.flags & 1) | (b.flags & 2);
+}
 
-    void pull(int p, int l, int r) {
-        if (st[p].cover > 0) {
-            st[p].len = ys[r + 1] - ys[l];
-            st[p].segs = 1;
-            st[p].leftCov = st[p].rightCov = true;
-            return;
+// [l, r) elemi intervallum lefedése d-vel (alulról felfelé, rekurzió nélkül).
+static void update(int l, int r, int d) {
+    l += sz;
+    r += sz;
+    int l0 = l, r0 = r - 1;
+    while (l < r) {
+        if (l & 1) {
+            st[l].cover += d;
+            pull(l);
+            ++l;
         }
-
-        if (l == r) {
-            st[p].len = 0;
-            st[p].segs = 0;
-            st[p].leftCov = st[p].rightCov = false;
-            return;
+        if (r & 1) {
+            --r;
+            st[r].cover += d;
+            pull(r);
         }
-
-        int lc = p << 1, rc = lc | 1;
-        st[p].len = st[lc].len + st[rc].len;
-        st[p].segs = st[lc].segs + st[rc].segs - (st[lc].rightCov && st[rc].leftCov ? 1 : 0);
-        st[p].leftCov = st[lc].leftCov;
-        st[p].rightCov = st[rc].rightCov;
+        l >>= 1;
+        r >>= 1;
     }
+    for (int i = l0 >> 1; i >= 1; i >>= 1) pull(i);
+    for (int i = r0 >> 1; i >= 1; i >>= 1) pull(i);
+}
 
-    void add(int p, int l, int r, int ql, int qr, int delta) {
-        if (qr < l || r < ql) return;
-        if (ql <= l && r <= qr) {
-            st[p].cover += delta;
-            pull(p, l, r);
-            return;
-        }
-        int m = (l + r) >> 1;
-        add(p << 1, l, m, ql, qr, delta);
-        add(p << 1 | 1, m + 1, r, ql, qr, delta);
-        pull(p, l, r);
+// Egy irányú söprés: az x-szerinti szeletekben a lefedett y-futamok száma
+// adja a vízszintes élek összhosszát (2 * futamok * dx).
+static ll sweepHorizontal(const vector<Rect>& R) {
+    ys.clear();
+    ys.reserve(2 * R.size());
+    for (const auto& r : R) {
+        ys.push_back(r.y1);
+        ys.push_back(r.y2);
     }
-
-    void add(long long y1, long long y2, int delta) {
-        if (n <= 0 || y1 >= y2) return;
-        int l = (int)(lower_bound(ys.begin(), ys.end(), y1) - ys.begin());
-        int r = (int)(lower_bound(ys.begin(), ys.end(), y2) - ys.begin()) - 1;
-        if (l <= r) add(1, 0, n - 1, l, r, delta);
-    }
-
-    long long coveredLen() const { return n > 0 ? st[1].len : 0; }
-    int segmentCount() const { return n > 0 ? st[1].segs : 0; }
-};
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    int N;
-    if (!(cin >> N)) return 0;
-
-    vector<Event> ev;
-    ev.reserve(2 * N);
-    vector<long long> ys;
-    ys.reserve(2 * N);
-
-    for (int i = 0; i < N; ++i) {
-        long long x1, y1, x2, y2;
-        cin >> x1 >> y1 >> x2 >> y2;
-        ev.push_back({x1, y1, y2, +1});
-        ev.push_back({x2, y1, y2, -1});
-        ys.push_back(y1);
-        ys.push_back(y2);
-    }
-
     sort(ys.begin(), ys.end());
     ys.erase(unique(ys.begin(), ys.end()), ys.end());
-    sort(ev.begin(), ev.end());
+    int n = (int)ys.size() - 1;  // elemi y-intervallumok száma
+    if (n <= 0) return 0;
 
-    SegTree st(ys);
+    vector<Ev> ev;
+    ev.reserve(2 * R.size());
+    for (const auto& r : R) {
+        int l = (int)(lower_bound(ys.begin(), ys.end(), r.y1) - ys.begin());
+        int rr = (int)(lower_bound(ys.begin(), ys.end(), r.y2) - ys.begin());
+        ev.push_back({r.x1, l, rr, +1});
+        ev.push_back({r.x2, l, rr, -1});
+    }
+    sort(ev.begin(), ev.end(), [](const Ev& a, const Ev& b) { return a.x < b.x; });
 
-    long long perimeter = 0;
-    long long prevX = ev.empty() ? 0 : ev[0].x;
-    int i = 0;
+    sz = 1;
+    while (sz < n) sz <<= 1;
+    full.assign(2 * sz, 0);
+    for (int i = 0; i < n; ++i) full[sz + i] = ys[i + 1] - ys[i];
+    for (int i = sz - 1; i >= 1; --i) full[i] = full[2 * i] + full[2 * i + 1];
+    st.assign(2 * sz, Node{0, 0, 0, 0});
 
-    while (i < (int)ev.size()) {
-        long long x = ev[i].x;
-        long long dx = x - prevX;
+    ll res = 0;
+    size_t i = 0;
+    ll prevX = ev[0].x;
+    while (i < ev.size()) {
+        ll x = ev[i].x;
+        ll dx = x - prevX;
         if (dx > 0) {
-            perimeter += 2LL * st.segmentCount() * dx;
+            res += 2LL * st[1].segs * dx;
             prevX = x;
         }
-
-        long long before = st.coveredLen();
-        while (i < (int)ev.size() && ev[i].x == x) {
-            st.add(ev[i].y1, ev[i].y2, ev[i].delta);
+        while (i < ev.size() && ev[i].x == x) {
+            update(ev[i].l, ev[i].r, ev[i].d);
             ++i;
         }
-        long long after = st.coveredLen();
-        perimeter += llabs(after - before);
+    }
+    return res;
+}
+
+static char buf[1 << 23];
+
+int main() {
+    size_t len_in = fread(buf, 1, sizeof(buf) - 1, stdin);
+    buf[len_in] = 0;
+    char* p = buf;
+    auto readInt = [&]() -> int {
+        while (*p && (*p < '0' || *p > '9') && *p != '-') ++p;
+        bool neg = false;
+        if (*p == '-') {
+            neg = true;
+            ++p;
+        }
+        int v = 0;
+        while (*p >= '0' && *p <= '9') {
+            v = v * 10 + (*p - '0');
+            ++p;
+        }
+        return neg ? -v : v;
+    };
+
+    int N = readInt();
+    vector<Rect> R(N);
+    for (auto& r : R) {
+        r.x1 = readInt();
+        r.y1 = readInt();
+        r.x2 = readInt();
+        r.y2 = readInt();
     }
 
-    cout << perimeter << "\n";
+    // Vízszintes élek: x-szerinti söprés; függőleges élek: ugyanez a tengelyek
+    // felcserélésével (y-szerinti söprés).
+    ll perimeter = sweepHorizontal(R);
+    for (auto& r : R) {
+        swap(r.x1, r.y1);
+        swap(r.x2, r.y2);
+    }
+    perimeter += sweepHorizontal(R);
+
+    printf("%lld\n", perimeter);
     return 0;
 }

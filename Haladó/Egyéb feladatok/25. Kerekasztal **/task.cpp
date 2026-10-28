@@ -15,6 +15,7 @@ Hint 1: || Egy rögzített körkörös célrendre a minimális párcsereszámot 
 Hint 2: || Nem kell minden célrendet külön tárolni: egy lovag célhelye az eltolásból és a sorszámából azonnal kiszámítható. ||
 */
 
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -27,27 +28,31 @@ int main() {
     int n;
     cin >> n;
 
-    vector<int> knights(n);
+    vector<unsigned short> knights(n);
     for (int i = 0; i < n; ++i) {
-        cin >> knights[i];
-        --knights[i];
+        int knight;
+        cin >> knight;
+        knights[i] = static_cast<unsigned short>(knight - 1);
     }
 
-    vector<int> visited(n, -1);
+    vector<char> visited(n);
     int best = n;
 
     for (int shift = 0; shift < n; ++shift) {
+        fill(visited.begin(), visited.end(), 0);
         int cycles = 0;
         for (int i = 0; i < n; ++i) {
-            if (visited[i] == shift) {
+            if (visited[i]) {
                 continue;
             }
             ++cycles;
             int current = i;
-            while (visited[current] != shift) {
-                visited[current] = shift;
-                current += knights[current] + shift;
-                current %= n;
+            while (!visited[current]) {
+                visited[current] = 1;
+                current = knights[current] + shift;
+                if (current >= n) {
+                    current -= n;
+                }
             }
         }
         best = min(best, n - cycles);

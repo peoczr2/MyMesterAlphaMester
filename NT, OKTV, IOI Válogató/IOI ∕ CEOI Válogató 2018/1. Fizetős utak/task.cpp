@@ -5,7 +5,11 @@ Ezért a feladat egy 0-1 súlyozású legrövidebb út keresés. A szokásos 0-1
 számoljuk a minimális fizetős útszakaszok számát, majd a szülőmutatókból vissza-
 építjük a konkrét útvonalat.
 */
-
+/*
+Hint 1: || Rendeljünk súlyt az utaknak: a fizetős szakasz 1, az ingyenes 0. Így a keresett szám egy V-ből W-be vezető legrövidebb út hossza ebben a súlyozásban. ||
+Hint 2: || A súlyok csak 0 és 1 lehetnek, ezért nem kell a teljes Dijkstra: egy deque-val a 0 súlyú élet az elejére, az 1 súlyút a végére tehetjük (0-1 BFS). ||
+Hint 3: || Minden csúcsnál jegyezd fel az előző csúcsot, majd W-ből visszafelé haladva építsd fel az útvonalat, és fordítsd meg. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -4,7 +4,10 @@ Minden ablakra taroljuk a minimumot es maximumot, es azt az ablakot valasztjuk,
 amelynél a max-min kulonbseg a legnagyobb. Egyenloseg eseten a kisebb kezdoindex
 marad meg.
 */
-
+/*
+Hint 1: || Egy K hosszú ablak legnagyobb és legkisebb eleme monoton sorral (deque) tartható karban: a sor elején mindig az aktuális szélsőérték indexe áll. ||
+Hint 2: || Balról jobbra haladva új elemnél a sor végéről töröld a már nem szükséges elemeket, a sor elejéről pedig azokat, amelyek kiestek az ablakból. Azonos különbségű ablakok esetén a korábbi kezdőnapot tartsd meg. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

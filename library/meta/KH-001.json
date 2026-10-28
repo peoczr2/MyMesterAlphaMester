@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Időjárás/1. Az átlag kisebb a minimum és maximum átlagánál",
+    "method": "Soronként egy bejárás: összeg, minimum, maximum; a feltétel szorzással: 2·összeg < M·(min+max).",
+    "category": "Átlag és szélsőértékek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["átlag", "minimum", "maximum"],
+    "note": "A feladatszöveg („az átlagtól a maximum jobban eltér, mint a minimum”) szó szerinti olvasata nem illeszkedik a mintára. A feladat címével („az átlag kisebb a minimum és maximum átlagánál”) összhangban az átlag < (min+max)/2 feltételt használjuk, amelyet a minta mindkét párja igazol.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/10. Legmelegebb települések leghidegebb napjai",
+    "method": "Az országos maximumot elérő települések sorában a saját minimumnapok megjelölése, majd a jelölt napok kiírása.",
+    "category": "Mátrix: szélsőértékek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["maximum", "minimum", "mátrix"],
+    "note": "A feladatszöveg nem mondja ki egyértelműen, hogy a legkisebb értéket településenként kell venni (és a minimumnapok unióját kiírni), vagy az összes legmelegebb településen együtt. A példa magyarázata az előbbit mutatja, és a minta 2. párja is ezt igazolja, az utóbbi nem illeszkedik rá.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/11. Legszélsőségesebb települések",
+    "method": "Soronként egy bejárás a legnagyobb és legkisebb érték különbségéhez, majd a maximális különbségű települések kiírása.",
+    "category": "Mátrix: szélsőérték-különbség",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "minimum", "mátrix"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Időjárás/12. Legtöbb helyen maximális hőmérsékletű napok",
+    "method": "Az országos maximumot egyezően elért értékek számlálása naponként, majd a legnagyobb darabszámú napok kiírása.",
+    "category": "Mátrix: oszlopszámlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "számlálás", "mátrix"],
+    "note": "A „maximális hőmérséklet” az országos maximum (az összes N·M érték legnagyobbja, a 10. feladat fogalmával), nem a településenkénti maximum. A minta mindkét értelmezést igazolja, ezért a választás a feladatszöveg fogalomhasználatán alapul.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

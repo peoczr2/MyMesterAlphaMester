@@ -7,8 +7,10 @@ felfelé: visszaosztás, vízszintes lépések: oszlop +/- 1.
 
 A végső oszlopot binárisan kell kiírni.
 */
-// Hint 1: || A sorok hossza 1,2,4,8,..., ezért a pozíciót binárisan is érdemes felfogni. ||
-// Hint 2: || A 0 és 1 lefelé visz, a 2 felfelé, a 3 és 4 ugyanabban a sorban mozgat. ||
+/*
+Hint 1: || A sorok hossza 1,2,4,8,..., ezért a pozíciót binárisan is érdemes felfogni. ||
+Hint 2: || A 0 és 1 lefelé visz, a 2 felfelé, a 3 és 4 ugyanabban a sorban mozgat. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,6 +1,8 @@
 /*
-Feladat: N őrt kell elhelyezni N x N teremben. Az i. őr csak a saját téglalapjában állhat. Az összes termet látni kell (azonos sor/oszlop mentén), viszont őrök ne lássák egymást.
-Ötlet: Két őr akkor látja egymást, ha soruk vagy oszlopuk azonos, ezért minden őrnek külön sort és külön oszlopot kell adni. Mivel N őr van N sorra/oszlopra, ez pontosan egy sor-permutáció és egy oszlop-permutáció. A téglalap-feltétel szétválik: sor az [BAS,JFS], oszlop a [BAO,JFO] intervallumban legyen. Tehát két független intervallum-hozzárendelés kell (őr -> egyedi érték 1..N), amit klasszikus greedy-vel oldunk: pozíciónként a legkisebb jobb végű aktív intervallumot választjuk.
+Megoldás lényege:
+Két őr akkor látja egymást, ha azonos sorban vagy oszlopban áll, ezért minden sorban és minden oszlopban pontosan egy őrnek kell lennie. Így az oszlopokat és a sorokat is egy-egy permutációval kell kiosztani: az i. őr oszlopa a [BAO, JFO], sora a [BAS, JFS] intervallumból való. A két hozzárendelés független, mert az oszlop- és a sorintervallumok külön kezelhetők. Intervallumok egyedi értékekkel való lefedésére a mohó módszer működik: pozíciónként 1-től N-ig a még aktív intervallumok közül azt választjuk, amelynek jobb vége a legkisebb. Ha valamelyik pozícióhoz nem jut intervallum, nincs megoldás, és -1 kerül a kimenetre. Az időigény O(N log N).
+*/
+/*
 Hint 1: || „Ne lássák egymást” => minden őr külön sorban és külön oszlopban legyen. ||
 Hint 2: || A téglalap korlátja külön sor- és oszlop-intervallumot ad, ezeket külön is lehet kezelni. ||
 Hint 3: || Intervallumokra egyedi értékadásnál használj jobb vég szerint min-kupacot. ||

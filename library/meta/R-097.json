@@ -1,0 +1,38 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 2. forduló/1. Órák",
+    "method": "Félfokban számolt mutatóállások különbsége, a kisebbik szög",
+    "category": "Geometria: szögszámítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["matematika", "szögszámítás", "óra"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 2. forduló/2. Osztályzatok",
+    "method": "Küszöbök szerinti osztályzatolás, osztályzatonkénti maximum egy bejárásban",
+    "category": "Maximumkeresés csoportonként",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "elágazás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2017 ∕ 18 2. forduló/3. Legtöbb hegycsúcs",
+    "method": "Csúcsok 0/1 tömbje, prefixösszeg, minden K hosszú szakasz O(1) kiértékelése",
+    "category": "Prefixösszeg, csúcsszámlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "tömb", "szakasz"],
+    "note": "Javítva: a korábbi változat a szakasz két végpontját nem számolta, és K<3 esetén mindig -1 -1-et írt; a minta most egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

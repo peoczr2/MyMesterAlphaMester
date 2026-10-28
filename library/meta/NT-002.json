@@ -1,0 +1,66 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/1. Termek",
+    "method": "Fa gyökértől felfelé lépkedés, ajtóállapotok, bal-előbb mélységi sorrend a közös ősig",
+    "category": "Fa: bejárási sorrend",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "bejárás",
+      "közös ős"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/10. Segély",
+    "method": "Prefixfeltételek (Hall-típusú) külön alsó és felső korlátra, rendezés és prefixösszegek után",
+    "category": "Korlátos elosztás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "elosztás",
+      "prefixösszeg",
+      "korlát"
+    ],
+    "note": "A PDF példa magyarázó elosztásában a 3. felajánló (E=2) a 3. országba is küld, ami ellentmond a szövegnek (E_i-ig küldhet); a megoldás a szöveget követi, a példa eredménye (1) egyezik. A minta mindkét tesztjén egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/11. Csatornák",
+    "method": "Bináris keresés a szélességen, 0-1 BFS: legfeljebb egy keskeny csatorna",
+    "category": "Gráf: 0-1 BFS",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bináris keresés",
+      "legszélesebb út"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2019/12. Hálózattervezés",
+    "method": "Intervallum-DP, élenkénti vágóköltség 2D prefixösszegekkel",
+    "category": "Dinamikus programozás: intervallum",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "bináris keresőfa",
+      "prefixösszeg"
+    ],
+    "note": "A minta.zip ki1.txt és ki2.txt a számot követően egy extra '0' sort is tartalmaz (231 és 7323271498 után), a feladatszöveg és a PDF példa (47) szerint viszont csak egy sor kell. Az első sor egyezik: a be1 (N=10, R=1) eredményét független brute-force (minden BST-alak összes költsége) igazolja, 231; a be2 (N=500) első sora 7323271498 egyezik a programmal. A kimenet tehát csak a költséget tartalmazza.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

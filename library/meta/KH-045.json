@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/24. Lotto - 2008. október - emelt",
+    "method": "Darabszámláló tömb (1–90), majd rendezés darabszám szerint csökkenően, azonos darabszámnál szám szerint növekvően.",
+    "category": "Számlálás: gyakoriság",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/25. Háromszög szerkeszthetősége",
+    "method": "Háromszög-egyenlőtlenség ellenőrzése minden hármasra, sorszámok a beolvasás sorrendjében.",
+    "category": "Feltételellenőrzés: háromszög",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["feltétel", "egyenlőtlenség", "geometria"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/26. Hangya barangolás",
+    "method": "Egymást követő pontok távolságának maximuma (négyzetesen), majd gyök, ×1000 és osztás K-val.",
+    "category": "Maximumkeresés: szomszédos távolság",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "geometria", "kerekítés"],
+    "note": "Bizonytalan pont: az egészre kerekítésnél a pontosan .5-ös értéket felfelé kerekítem (matematikai kerekítés); a feladatszöveg ezt nem mondja ki, a minták ilyen esetet nem tartalmaznak. Az átlagsebességet a szomszédos mérések közti távolságból számolom, a minta (2867) ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/27. Felesleges szóközök",
+    "method": "Balról jobbra bejárás: ismétlődő szóközök kihagyása, sor eleji szóközök megtartása, sorvég levágása.",
+    "category": "Szövegfeldolgozás: szóközök",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["szöveg", "szóköz", "sorfeldolgozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

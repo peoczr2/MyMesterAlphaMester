@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/28. Bővelkedő számok",
+    "method": "Pascal-háromszög előre kiszámolt táblázata, minden pár egy táblázat-olvasás.",
+    "category": "Kombinatorika: binomiális táblázat",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["kombinatorika", "táblázat", "pascal-háromszög"],
+    "note": "A mappa neve (Bővelkedő számok) nem egyezik a feladat.pdf címével (Kombináció, 2010. május 14.); a megoldás a PDF szövegét követi, a minta.zip párjai is ehhez illeszkednek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/29. Mérések",
+    "method": "Rendezés után az azonos értékek futamainak megszámolása.",
+    "category": "Számlálás: gyakoriság",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "gyakoriság", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/3. legporosabb napok - 2005. május",
+    "method": "Egy menetben a napi összegek és az aktuális maximum-lista karbantartása.",
+    "category": "Maximumkeresés: napi összeg",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "összegzés", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/30. Az ország karácsonyfája",
+    "method": "Termelőnként a d²·l értékek összege, egész számokkal; csak szigorúan nagyobb összegnél cserél.",
+    "category": "Maximumkeresés: térfogat-összeg",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "összegzés", "képlet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

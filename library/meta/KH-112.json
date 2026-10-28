@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/42. Rákövetkező villamosmegálló messze van *",
+    "method": "Egy bejárásban az első megálló sorszámát keressük, amelynek távolsága az előzőtől K-nál nagyobb.",
+    "category": "Keresés: első találat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "távolság"],
+    "note": "A kiírt távolság a megálló és az előző megálló távolsága (ahogy a 41. feladatnál). Ha nincs ilyen megálló, a kimenet -1. Mért futásidő a legnagyobb mintán (N=100): kb. 3 ms, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/43. Rövid állomásszakaszok száma *",
+    "method": "Minden szakasz hosszát az első szám adja; a K-nál szigorúan rövidebbeket számoljuk.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "távolság"],
+    "note": "Hiányos minta: a be2.txt első sorából hiányzik a K, a fájl csak „100”-at tartalmaz, a feladatszöveg szerint „N K” állna ott. A megállósorok megegyeznek a 42. feladat be2.txt-jével, amelynek fejléce „100 500”. A ki2.txt szerinti 9 a „hossz < K” számlálással csak K ∈ [472, 506] esetén adódik, köztük a K = 500-zal. A K = 500 beszúrásával a kimenet 9 (független ellenőrzés: library/.work/KH-112/check43.py, library/.work/KH-112/bf.py). A validátor ezért hibás mintát jelez, a minta kézi jelölt. Mért futásidő: kb. 3 ms a legnagyobb mintán (N=100), időlimit 0,1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/44. Rövid várakozási idejű villamosmegállók *",
+    "method": "Egy bejárásban a valódi megállókat szűrjük: a várakozás (indulás mínusz érkezés) legyen K-nál kisebb.",
+    "category": "Szűrés: várakozási idő",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["szűrés", "feltétel", "várakozás"],
+    "note": "A nulla várakozású, vagyis ki nem állt megállók (érkezés = indulás) kimaradnak akkor is, ha a 0 kisebb K-nál. A kimenet első száma a darabszám, utána a sorszámok növekvő sorrendben, egy sorban; ha nincs ilyen, a kimenet 0. Mért futásidő a legnagyobb mintán (N=100): kb. 3 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/45. Utolsó állomás adott idő alatt *",
+    "method": "Egy bejárásban az utolsó olyan állomás, ahová K-nál korábban érkezik; a távolság sorszámmal nő.",
+    "category": "Keresés: utolsó találat",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["keresés", "idő", "távolság"],
+    "note": "Az induló állomás (0. állomás, 0 perc) mindig elérhető, így ha nincs más találat, a kimenet 0 0. A megálló nélküli állomásokat is számoljuk, mert a villamos rajtuk is áthalad; a minta ezt nem dönti el. Az eljutási idő az érkezési idő. Mért futásidő a legnagyobb mintán (N=100): kb. 3 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

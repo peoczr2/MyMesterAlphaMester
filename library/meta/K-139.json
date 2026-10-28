@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/81. Szabad nap nélküli termek **",
+    "method": "Termenként rendezés után a szomszédos foglalások között keressük azt a párt, ahol a következő foglalás közvetlenül az előző után kezdődik.",
+    "category": "Rendezés, szomszédos elemek",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "intervallum", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/82. Pénzfeldobások ***",
+    "method": "Egy bejárással szériánként számoljuk a hosszokat gyakorisági tömbben, és a leggyakoribb hosszt választjuk.",
+    "category": "Gyakorisági tábla, sorozatok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gyakoriság", "sorozat", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/83. Fajok száma ****",
+    "method": "Eseményeket rendezve végigsöpörjük a fajszámot, és a maximumos szakaszok hosszait összegezzük.",
+    "category": "Eseményseprés, intervallumok",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "esemény", "maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/84. Születések ****",
+    "method": "Dátumokat egész kulccsá kódolunk, és rendezett kulcsokon 372 hosszú ablakban számoljuk a születéseket.",
+    "category": "Csúszóablak, rendezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["dátum", "csúszóablak", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/118. Fesztivál",
+    "method": "Végpont szerinti rendezés, utolsó kompatibilis elem keresése, lineáris DP visszafejtéssel",
+    "category": "Súlyozott intervallumütemezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "ütemezés",
+      "rendezés",
+      "visszafejtés"
+    ],
+    "note": "A minta.zip két tesztjénél más, de érvényes kimenet jön ki: az 1. tesztben az indexek sorrendje más, a 2. tesztben más, azonos bevételű fesztiválhalmaz. A kiválasztást külön ellenőriztem (ütközésmentes, összeg egyezik); véletlen kis esetekben brute force-szal is egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/119. Hálózattervezés",
+    "method": "Intervallum-DP: a részfák költsége a belső élek metszeteinek összege",
+    "category": "Bináris keresőfa, intervallum-DP",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "intervallum",
+      "dp"
+    ],
+    "note": "A minta.zip ki-fájljaiban az összköltség után egy extra '0' sor áll, a feladat szerint egyetlen sor kell; az első sor egyezik, az 1. tesztet brute force igazolja. Véletlen kis esetekben (N≤7) brute force-szal egyezik; N=500-ra kb. 0,06 mp.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/124. Autózás ***",
+    "method": "Mohó tankolás a következő olcsóbb kútig, szegmensfás keresés",
+    "category": "Mohó tankolási stratégia",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "szegmensfa",
+      "tankolás"
+    ],
+    "note": "A minta.zip 2. tesztjében más, de azonos összköltségű tankolási terv jön ki (423 tankolás); a tervet szimulációval ellenőriztem. Véletlen kis esetekben DP-vel egyezik; N=300 000-re kb. 0,08 mp.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/125. Hadjárat ****",
+    "method": "CDQ (felosztás és uralkodás) rekurzió, Fenwick-fa az összefésülésben",
+    "category": "Leghosszabb lánc, CDQ",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "cdq",
+      "lánc",
+      "fenwick"
+    ],
+    "note": "A minta.zip 2. tesztjében más, de azonos hosszúságú (83) hadjárat jön ki; a lánc feltételeit ellenőriztem. 540 véletlen kis és közepes esetben O(N²) DP-vel egyezik. N=100 000 véletlen adaton kb. 0,15 mp (limit 0,2 mp), a határ közelében van.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/141. Főzet készítés",
+    "method": "Egyszerűsített (p,q) párok kiválasztása hátizsák-DP-vel két kapacitással",
+    "category": "Relatív prím párok, hátizsák",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "számelmélet",
+      "hátizsák",
+      "dp"
+    ],
+    "note": "A feladatszöveg nem mondja ki egyértelműen, hogy a főzetek literigénye összeadódik; a minta mind a 2000 esetét ez az értelmezés adja (különböző arányú főzetek, Σa ≤ A, Σb ≤ B). A minta teljesen egyezik.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

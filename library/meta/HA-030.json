@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/24. Vasútvonal leghamarabb érkezés legkésőbbi indulással",
+    "method": "Előre: legkorábbi érkezés, hátra: állomásonként a legnagyobb jó indulási idő",
+    "category": "Gráf: időzített utak",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "időpont", "visszafelé bejárás"],
+    "note": "Átszálláskor az érkezési időnek szigorúan kisebbnek kell lennie az indulásnál. Az 1. állomásról bármikor lehet indulni, a kimenetbe a legkésőbbi olyan indulás kerül, amellyel a legkorábbi érkezés még elérhető.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/25. Utazás ***",
+    "method": "Nyerő és vesztő városok visszafelé terjesztése körmentes gráfon",
+    "category": "Gráf: játékelmélet",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "körmentes", "játékelmélet"],
+    "note": "Az a játékos nyer, aki az utolsó járatot választotta; ahonnan nincs kimenő járat, ott a választó veszít. Ha a kezdővárosból nincs járat, a program B-t ír; ilyen eset a mintákban nincs.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/26. Hegymászó **",
+    "method": "Topologikus sorrendű DP: kezdőtáborokból elérhető útvonalak száma maradékkal",
+    "category": "Gráf: utak száma",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "körmentes", "dinamikus programozás", "útvonal"],
+    "note": "Útvonal: bemenő szakasz nélküli táborból kimenő szakasz nélküli csúcsba, legalább egy szakasszal; az elszigetelt tábort nem számolom. A 26. és a 27. feladat szövege azonos.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/27. Hegymászó",
+    "method": "Topologikus sorrendű DP: kezdőtáborokból elérhető útvonalak száma maradékkal",
+    "category": "Gráf: utak száma",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "körmentes", "dinamikus programozás", "útvonal"],
+    "note": "Azonos a 26. feladattal: ugyanaz a szöveg és ugyanaz a megoldás. Az elszigetelt tábort nem számolom útvonalnak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

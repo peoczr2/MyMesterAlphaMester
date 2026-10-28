@@ -1,14 +1,19 @@
+/*
+Megoldás lényege:
+Minden pozícióban csak a fedő intervallumok száma számít 10-es maradék szerint.
+Egy [L, R] intervallum hozzáadása minden érintett pozícióban a maradékot 1-gyel
+növeli mod 10, az aktuális maradékok összege pedig a lekérdezett szakasz válasza.
+Ezt egy lazított szegmensfa oldja meg: minden csúcsban a 0..9 maradékok darabszámát
+tároljuk, a lazy érték pedig a teljes szakasz forgatásának mértéke mod 10.
+Idő: O((N + M) * log N * 10)
+*/
+/*
+Hint 1: || Csak a fedő intervallumok száma 10-es maradékának van szerepe, így minden pozícióhoz elég a 0..9 maradékot tárolni. Egy intervallum hozzáadása a szakaszon minden értéket 1-gyel léptet tovább mod 10. ||
+Hint 2: || Szegmensfába tegyük: minden csúcsban tárolunk egy tömböt, amely megmondja, hány pozícióban van 0, 1, ..., 9 maradék a szakaszon, és egy lazy értékkel a teljes szakasz tömbjét körbeforgatjuk. ||
+Hint 3: || A lekérdezésnél a szakasz összege a sum d * cnt[d] képlettel adódik, a lazy értékek mod 10 összeadódnak, és a gyerek csúcsokhoz lefelé kell átadni a körbeforgatást, mielőtt a részszakaszokat bejárjuk. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-  Minden pozícióban csak a fedő intervallumok száma számít 10-es maradék szerint.
-  Egy [L, R] intervallum hozzáadása annyit csinál, hogy minden érintett helyen a
-  maradékot +1-gyel növeli mod 10. A kérdés az aktuális maradékok összege a szakaszon.
-
-  Ez egy klasszikus lazított szegmensfa: minden csúcsban a 0..9 maradékok darabszámát
-  tároljuk, a lazy érték pedig a forgatás mértéke mod 10.
-*/
 
 static const int MAXD = 10;
 

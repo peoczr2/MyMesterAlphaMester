@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/42. Szurikáta ****",
+    "method": "Eredeti látható lánc, lekérdezésenként bináris keresés a módosított indexek között.",
+    "category": "Láthatóság, bináris keresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "bináris keresés",
+      "láthatóság"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/43. Szakaszok",
+    "method": "X szerinti söpréssel, Fenwick-fával számoljuk a metsző vízszintes szakaszokat.",
+    "category": "Söprővonal, Fenwick-fa",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "söprővonal",
+      "fenwick-fa"
+    ],
+    "note": "A feladat PDF-mintapéldája (3 3 …) szerint a válasz 2, de a szöveg szerinti számítás (brute force-szal igazolva) 1-et ad; a minta.zip két párja (be1/ki1, be2/ki2) egyezik a megoldással. A legkisebb sorszámú maximum kiválasztását javítottam.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/44. Házak",
+    "method": "Szögsöprés az origó körül, az alsó és bal élek legközelebbi metszésének nyilvántartása eseményekkel.",
+    "category": "Szögsöprés, láthatóság",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "szögsöprés",
+      "láthatóság"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/45. Várfalak száma",
+    "method": "Közös végpontú falak DSU-val való egyesítése, a komponensek számolása.",
+    "category": "Unió-find, komponensek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "unió-find",
+      "gráf"
+    ],
+    "note": "Feltevés: a falak csak végpontjaikban találkoznak (nincs T-csatlakozás).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/46. Várfalak hossza",
+    "method": "Közös végpontú falak DSU-val csoportosítása; komponensenként hossz összeg, terület a rendezéshez.",
+    "category": "Unió-find, shoelace-terület",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "geometria",
+      "unió-find",
+      "terület"
+    ],
+    "note": "Feltevés: a falak csak végpontjaikban találkoznak (nincs T-csatlakozás).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/47. Úthálózatbővítés",
+    "method": "Szögsöprés A körül: irányonként a legközelebbi csomópont és a sugár legközelebbi útszakasza.",
+    "category": "Láthatóság, szögsöprés",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "szögsöprés",
+      "rendezett halmaz"
+    ],
+    "note": "A korábbi megoldás a minta 2. párján hibázott (közös végpontú élek rendezése); a sweep átírva, kisméretű és közepes véletlen fákon brute-force-szal ellenőrizve.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

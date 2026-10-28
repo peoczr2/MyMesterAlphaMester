@@ -1,10 +1,12 @@
 /*
 Megoldás lényege:
-Az ábécé öt betűből áll, és csak négy párosítás tilos: cd, ce, ed, ee.
-Ezért elegendő a legutolsó betűt tárolni, és egy 5 állapotú DP-vel számolni
-az összes lehetséges láncot.
-
-Mivel N akár 30 is lehet, a szám már nagy, ezért nagy egész típus kell.
+A tiltott párok (cd, ce, ed, ee) miatt a következő betű megengedettsége csak az aktuális betűtől függ, ezért elég az utolsó betű szerinti darabszámokat nyilvántartani: egy 5 állapotú DP-t használunk.
+A c és az e után csak a, b vagy c jöhet, a többi betű után bármi. Így az a, b, c állapotok új értéke az összes előző érték összege, a d és az e állapotoké pedig az a, b, d előző értékek összege.
+A láncok száma legfeljebb 5^30 ≈ 9·10^20, ami már meghaladja a 64 bites egész tartományát, ezért nagy egész számokkal (BigInt) számolunk; az időigény O(N) nagy egész összeadás.
+*/
+/*
+Hint 1: || Csak az utolsó betű számít: írd fel, mely betűk állhatnak egy adott betű után, és ezek alapján vezess be betűnkénti darabszám-állapotokat. ||
+Hint 2: || A c és az e után csak a, b vagy c jöhet, így az új darabszámok egyszerű összegek lesznek; mivel a végeredmény nagy, a számokat nagy egész típussal add össze. ||
 */
 
 #include <bits/stdc++.h>

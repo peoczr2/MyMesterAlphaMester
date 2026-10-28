@@ -1,17 +1,19 @@
 /*
 Megoldás lényege:
-Két soros járdán profile DP-t használunk. Egy állapot azt mutatja meg, melyik cellák
-vannak már lefedve a jelenlegi és a következő oszlopban. A következő oszlopba lépve
-az összes éppen teljes oszlopot balra csúsztatjuk.
-
+A két soros járdát oszloponként profil-DP-vel számoljuk: egy állapot azt mutatja meg, mely cellák
+foglaltak már az aktuális és a következő oszlopokban (6 bites maszk, összesen 64 állapot).
+Mindig a bal szélső még üres cellát fedjük le egy 1×1 vagy egy 1×2 lappal (vízszintesen vagy
+függőlegesen), amíg az oszlop meg nem telik, majd az oszlop lezárásával az állapot egy oszloppal
+előrébb lép. Az eredmény a végén a teljesen üres állapotba vezető utak száma, ami N ≤ 36 esetén
+64 bites egész alatt marad. Az időigény O(N), mert minden oszlopban legfeljebb 64 állapotot
+járunk be, és minden állapotból konstans számú átmenet van.
+*/
+/*
+Hint 1: || A 2×N tábla miatt elég néhány cellás „profil” állapotot fenntartani. ||
+Hint 2: || Mindig a bal szélső még üres cellát töltsd ki egy lappal; a végén csak a teljesen üres profil ad érvényes lefedést. ||
 */
 
-// Hint 1: || A 2×N tábla miatt elég néhány cellás „profil” állapotot fenntartani. ||
-// Hint 2: || Mindig a bal szélső még üres cellát töltsd ki valamelyik lap elhelyezésével. ||
-// Hint 3: || A végén csak a teljesen üres profil elfogadható. ||
-
 #include <bits/stdc++.h>
-#include "../bigint.hpp"
 using namespace std;
 
 using Mask = int;
@@ -89,21 +91,21 @@ int main() {
     };
 
     auto trans = buildTransitions(shapes);
-    vector<BigInt> dp(64), ndp(64);
+    vector<unsigned long long> dp(64), ndp(64);
     dp[0] = 1;
 
     for (int col = 0; col < N; ++col) {
         fill(ndp.begin(), ndp.end(), 0);
         int rem = min(3, N - col);
         for (int s = 0; s < 64; ++s) {
-            if (dp[s].isZero()) continue;
+            if (dp[s] == 0) continue;
             for (auto [nxt, mul] : trans[rem]) {
                 // trans[rem] was filled for all states; we filter by exact state later.
                 (void)nxt; (void)mul;
             }
         }
         for (int s = 0; s < 64; ++s) {
-            if (dp[s].isZero()) continue;
+            if (dp[s] == 0) continue;
             map<int, long long> cnt;
             function<void(int)> dfs = [&](int cur) {
                 if ((cur & 3) == 3) {

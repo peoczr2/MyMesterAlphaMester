@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Verseny/17. Nehéz versenyek",
+    "method": "Versenyenként megszámoljuk a minimum alatt maradókat, és a 2·k ≥ i feltétellel szűrünk.",
+    "category": "Feltételes számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "szűrés"],
+    "note": "Mért futásidő a legnagyobb mintán: kb. 2 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/18. Nem csak összetettben győzött",
+    "method": "Versenyenként maximumkeresés, az összetettben a szűrt tanulók összpontszámának maximuma.",
+    "category": "Maximum és szűrés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "szűrés", "döntetlen"],
+    "note": "Mért futásidő a legnagyobb mintán: kb. 4 ms (időlimit 0,1 mp). Döntetlennél minden azonos értékű tanuló győztes.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/19. Sehol sem győztek",
+    "method": "Győztesek halmazának kiszámítása, majd az indulók és a győztesek különbsége.",
+    "category": "Halmazműveletek és szűrés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "szűrés", "maximum"],
+    "note": "Mért futásidő a legnagyobb mintán: kb. 3 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/2. Csak egy versenyen indultak",
+    "method": "Tanulónként megszámoljuk az indulásokat, és kiválogatjuk azokat, akiknél pontosan 1.",
+    "category": "Számlálás, szűrés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "szűrés"],
+    "note": "Mért futásidő a legnagyobb mintán: kb. 2 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

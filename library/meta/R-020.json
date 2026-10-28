@@ -1,0 +1,62 @@
+[
+  {
+    "path": "Haladó/Geometriai algoritmusok/5. Épület *",
+    "method": "Sávonkénti söprés, megmaradó üres futamok DSU-val, kerület és terület összegzés",
+    "category": "Téglalap-unió, lyukak",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["geometria", "söprés", "unió"],
+    "note": "Nincs ki-fájl a minta.zip-ben (csak be1, be2), ezért „nincs minta” állapot. A kimenet be1/be2-n és a PDF-példán (2 udvar; kerület 80 100; terület 400 600) megegyezik az eredeti megoldáséval, továbbá 1300 kis véletlen esetben cellás brute force-szal egyezik. Az eredeti kód N=10000 véletlen téglalapon 0,27 mp és 34 MB volt (az időlimit 0,1 mp), az új változat 0,03 mp és 6,5 MB, ezért a kód cserélve.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/6. Épület kerülete ***",
+    "method": "Vízszintes és függőleges élek külön söprése, szegmensfa a lefedett szakaszok számára",
+    "category": "Sweep line, szegmentfa",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["geometria", "söprés", "szegmensfa"],
+    "note": "A korábbi kód a függőleges éleket |után − előtt| alakban számolta, ez 300 kis tesztből 111-ben hibás volt; most a függőleges éleket y szerinti söprésben számoljuk. Mintán 2/2; 300 kis és 120 közepes (rácsos brute force-szal ellenőrzött) tesztet teljesít. N=100000 véletlen téglalapon 0,16–0,18 mp, 23 MB.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/7. Fák kivágása **",
+    "method": "Ray casting (sugármetszés) egyszerű ortogonális poligonra",
+    "category": "Pont poligonban",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["geometria", "poligon", "sugármetszés"],
+    "note": "A kód változatlan, csak a formátum lett a szabály szerinti. 300 kis véletlen ortogonális poligonon független ellenőrzővel egyezik; N≈6400 csúcs és M=5000 lekérdezés 0,02 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/8. Futárok *",
+    "method": "Pozíciókülönbség lineáris: előjelváltás vagy nulla az átfedő időintervallum végpontjain",
+    "category": "Lineáris mozgás, találkozás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["lineáris", "intervallum", "találkozás"],
+    "note": "A kód változatlan, csak a formátum lett a szabály szerinti. Mintán 2/2; 300 véletlen esetben egyezik a pontos (törtes) aritmetikájú ellenőrzővel, köztük 10^8-as időkkel és koordinátákkal. M=2000 esetén 0,06 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Geometriai algoritmusok/9. Háromszög **",
+    "method": "Séta az oq szakasz mentén üres háromszögeken, minimális beírt szögű csúcs választásával",
+    "category": "Üres háromszög, q-pont",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["geometria", "háromszög", "séta"],
+    "note": "Több helyes kimenet van (bármelyik üres háromszög jó): be1-re a program „5 4 2”-t ad a minta „4 3 5” helyett, mindkettő CCW, üres és tartalmazza q-t; ellenőrző: library/.work/R-020/tools/check9.py. Az eredeti kód (csak a legalsó pontból induló háromszögek) be1-re 0 0 0-t adott, ezért a megoldás újraírva. Ellenőrizve 1100 kis és 150 közepes véletlen, degenerált (kollineáris) esetre, valamint N=200000 nagy elrendezésen (check9big.py); nagy esetben 0,05 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

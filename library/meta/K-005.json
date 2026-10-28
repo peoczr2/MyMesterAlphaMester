@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: keresés/24. Utolsó sikeres dobás *",
+    "method": "Soronként végigmegyünk a dobásokon, és az utolsó nem -1 dobás sorszámát tároljuk.",
+    "category": "Keresés: utolsó előfordulás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "feltétel"],
+    "note": "A PDF-példa kimenetében egy extra sor (6 3 6 5 1) látszik; a minta.zip szerint a kimenet egy sor.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/25. Utolsó világcsúcsmentes év *",
+    "method": "A világcsúcs-években halmazt építünk, és a legújabb évtől visszafelé az első rekordmentes évet keressük.",
+    "category": "Keresés: halmaz",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["keresés", "halmaz", "rekord"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/26. Ponthatárok",
+    "method": "Legkisebb, legfeljebb L-es csökkentés, amelynél az új határ alatti pontszám senkinél sincs meg.",
+    "category": "Keresés: határok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["keresés", "tömb", "határ"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/27. Távoli bolygó DNS-e",
+    "method": "A sorozatot K-hosszú darabokra bontjuk, és a darabok gyakorisági táblázatait hasonlítjuk össze.",
+    "category": "Keresés: gyakoriság",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["keresés", "map", "gyakoriság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

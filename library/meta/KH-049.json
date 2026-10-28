@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/39. Betűkeverés - 2011. október",
+    "method": "Szavanként a belső betűk megfordítása std::reverse-szel, a szóhatárok bejárásával.",
+    "category": "Sztring feldolgozás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szöveg", "karakterlánc", "bejárás"],
+    "note": "A minta egybájtos magyar kódolású (pl. Ü = 0xDC), ezért a 128 feletti bájtokat betűnek tekintjük; így a minta egyezik. Számjegy a mintában nincs.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/4. Összetett szavak - 2005. május",
+    "method": "Az összes szósorrend bejárása next_permutation-nel, az eredmények halmazban (set) gyűjtve.",
+    "category": "Permutáció, halmaz",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["permutáció", "halmaz", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/40. Szakaszok - 2012. május",
+    "method": "Koordináták egyenlőségének vizsgálata: tükrözés, közös végpont, négyzetes hossz.",
+    "category": "Geometria: szakaszok",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["geometria", "koordináta", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szakmai emelt szintű érettségi feladatok/41. Háromszögek - 2012. október",
+    "method": "Héron-képlet egész alakban (16T²), törtek egyszerűsítése gcd-vel, derékszög négyzetösszeggel.",
+    "category": "Geometria: háromszögek",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["geometria", "héron-képlet", "tört"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

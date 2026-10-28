@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/51. Szám előállítási lehetőségei",
+    "method": "Rögzített első elem, két mutató a rendezett maradék részen.",
+    "category": "Kétpontos módszer",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["kétpontos", "tömb", "számlálás"],
+    "note": "A PDF-példa (7 25 → 3) nem egyezik a mintával: a sorozatban négy hármas van (3+10+12, 4+6+15, 4+9+12, 6+9+10), a minta és a program is 4-et ad. Minta 2/2.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/52. Lineáris kombináció",
+    "method": "Floor-sum számlálás bináris kereséssel, a felbontás moduló-inverzzel.",
+    "category": "Számelmélet: lineáris kombináció",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["számelmélet", "gcd", "bináris keresés", "moduláris inverz"],
+    "note": "A feladatszöveg csak az X-et kéri, a minta második sorában viszont K és L áll (X = K·A + L·B). A program L-t a [0, A/gcd − 1] tartomány egyértelmű értékeként írja ki, K = (X − L·B)/A; a minták ezt igazolják, de a felbontás nem egyértelmű, ezért a második sor konvenciója a mintából következtetett. Minta 2/2.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/53. Sokszögszámok",
+    "method": "Zárt képlet az N-szögszámra, modulo 1 000 000.",
+    "category": "Zárt képlet",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számelmélet", "képlet", "moduló"],
+    "note": "A PDF-példák 6 6 → 81 és 10 10 → 325 nem egyeznek a képlettel (66, illetve 370); a minta (6 6 → 66, 1000000 42 → 0) a képletet követi. Minta 2/2.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/54. Terem",
+    "method": "Euklideszi algoritmus hányadosösszege; egyforma lapokhoz a gcd.",
+    "category": "Euklideszi algoritmus",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számelmélet", "euklideszi algoritmus", "gcd"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

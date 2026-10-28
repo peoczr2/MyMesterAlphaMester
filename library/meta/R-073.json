@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/48. Börtön",
+    "method": "Osztók paritása: csak a tökéletes négyzetek kapnak páratlan sok osztót, így azok maradnak nyitva.",
+    "category": "Számelmélet: osztók paritása",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "osztók",
+      "négyzetszám",
+      "számelmélet"
+    ],
+    "note": "A minta.zip ki2.txt (be2: N=999999) a zárt cellákat listázza (999000 szám, 2-vel kezdődik), nem a nyitvákat; a ki1 (N=10: 1 4 9) egyezik a feladattal. Független szimuláció N=999999-re a 999 négyzetszámot adja, ezt írja ki a megoldás. Kézi jelölés nem került be, mert a feladatszöveg nem mondja ki, hogy több helyes kimenet lenne. Kérdés: javítható-e a minta ki2.txt, vagy legyen kézi jelölés?",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/49. Páros számok",
+    "method": "Sorban végigmenve számlálás: a bináris 1-esek számának paritása (popcount) dönt.",
+    "category": "Bitműveletek: paritás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "popcount",
+      "bitművelet",
+      "paritás"
+    ],
+    "note": "Ugyanaz a módszer, mint a 45. feladatban (ott páratlan, itt páros paritás).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/5. Bitművelet *",
+    "method": "Átlónkénti (Cantor-féle) indexelés, majd a pár bitenkénti ÉS és VAGY értéke.",
+    "category": "Bitműveletek: átlós indexelés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "bitművelet",
+      "indexelés",
+      "átló"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/50. Számok összege",
+    "method": "Rögzített első elem, két mutató a maradék rendezett részen.",
+    "category": "Kétmutatós keresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "kétmutatós",
+      "rendezett tömb",
+      "összeg"
+    ],
+    "note": "Több hármas is megfelelhet (a példa bemenetében 4 6 15 és 4 9 12 is 25); a megoldás és a minta az indexek szerint első hármast írja ki. A példa bemenetében 11 szerepel, a mintafájlban 10; mindkettőre a megoldás helyes.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/51. Szám előállítási lehetőségei",
+    "method": "Rögzített első elem, két mutató a maradék rendezett részen, minden találatot megszámol.",
+    "category": "Kétmutatós számlálás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "kétmutatós",
+      "számlálás",
+      "rendezett tömb"
+    ],
+    "note": "A feladat példájának kimenete (3) elírás: a 3+10+12, 4+6+15, 4+9+12 és 6+9+10 mind 25, így a helyes érték 4; a minta is 4-et vár, a megoldás ezt adja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/52. Lineáris kombináció",
+    "method": "Bináris keresés a legkisebb előállítható számra, a számlálás floor_sum-mal.",
+    "category": "Diofantikus egyenlet: floor_sum",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "lineáris kombináció",
+      "bináris keresés",
+      "gcd"
+    ],
+    "note": "A szöveg csak X-et kér; a minta és a megoldás második sorába K és L is kerül (K az A, L a B együtthatója). Több felbontás esetén a legkisebb nem negatív L-et írja ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

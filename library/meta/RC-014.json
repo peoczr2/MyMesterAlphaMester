@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/9. Egységtört **",
+    "method": "Mohó egyiptomi törtbontás: mindig a legkisebb 1/d tag levonása, gcd-s egyszerűsítéssel.",
+    "category": "Számelmélet: egységtörtek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "számelmélet", "tört"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

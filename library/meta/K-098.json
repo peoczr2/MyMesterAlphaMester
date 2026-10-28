@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/13. Pénzfelvételek összege *",
+    "method": "Lineáris bejárás, a pénzfelvételi (-2 jelű) események összegzése.",
+    "category": "Feltételes összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozat", "összegzés", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/14. Sikertelen napokon fogott halak száma *",
+    "method": "Lineáris bejárás, feltételes összegzés a K-nál kisebb napokon.",
+    "category": "Feltételes összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozat", "összegzés", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/15. Tervbe nem tartozó falak összhossza *",
+    "method": "Oldalankénti különbségtömb, a lefedett mezők levonása a kerületből.",
+    "category": "Különbségtömb",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["sorozat", "rács", "különbségtömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: sorozatszámítás/16. Benzinmaradék **",
+    "method": "Mérleg: kezdő benzin plusz tankolások, mínusz a teljes fogyasztás.",
+    "category": "Összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["sorozat", "összegzés", "mérleg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

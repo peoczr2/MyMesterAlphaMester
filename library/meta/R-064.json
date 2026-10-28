@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Szimuláció/29. Nemzetközi Rántott Hús Fesztivál ****",
+    "method": "Monoton verem a járható végpontokhoz, szakaszminimum a legtöbb hús kiszámításához",
+    "category": "Prefixösszeg, monoton verem",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prefixösszeg",
+      "monoton verem",
+      "szakaszminimum"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/30. Bábuk ütközése visszapattanással",
+    "method": "Idősoros szimuláció, falnál egy irány előjelének megfordítása, páronkénti ütközésvizsgálat",
+    "category": "Szimuláció: ütközés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "ütközés",
+      "visszapattanás"
+    ],
+    "note": "A minta be1 (ki1 = -1) ellentmond a szabálynak: a példa (4) és a be2 (2) ugyanezzel a szabállyal egyezik, be1-ben viszont az 1. és 3. bábu a 6. időpontban ugyanarra a (4,5) mezőre lépne (az 1. bábu (5,4)-ről, a 3. bábu (5,6)-ról), így a helyes kimenet 6.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/31. Bábuk ütközése átlósan",
+    "method": "Idősoros szimuláció, a falnál mindkét irány megfordul, ütközés: azonos vagy másik bábu mezőjére lépés",
+    "category": "Szimuláció: ütközés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "átlós mozgás",
+      "ütközés"
+    ],
+    "note": "Az ütközés szabálya: azonos mezőre lépés, vagy olyan mezőre lépés, ahol az adott pillanatban másik bábu áll; a minta be2 csak így adja ki a 8-at, a rajz (azonos mező, csere) ezt a bővítést nem zárja ki.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/32. Orvos",
+    "method": "FIFO kezdési idő (max(érkezés, előző befejezés)), jelenlévők száma érkezés/befejezés összefésüléssel",
+    "category": "Sorbanállás, FIFO",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "szimuláció",
+      "sor",
+      "várakozás"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/33. Posta",
+    "method": "Eseményalapú szimuláció közös FIFO sorral, ügyintézők befejezési idejét prioritási sor tartja",
+    "category": "Eseményalapú szimuláció",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "sor",
+      "prioritási sor"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/34. Úthálózat szimuláció",
+    "method": "Autónkénti szimuláció, lámpafázis-várakozás és a célhoz közelebbi irány választása",
+    "category": "Szimuláció: forgalmi lámpák",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "lámpa",
+      "úthálózat"
+    ],
+    "note": "A minta be2 (ki2) sérti a bemeneti korlátot: az Ei/Ti értékek (pl. 144, 151, 172) nagyobbak 2(N+M)=40-nél, ezért a szabályok szerint nem ellenőrizhető; be1 és a példa egyezik.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Középhaladó/Verseny/9. Legalább egy versenyben indultak",
+    "method": "Logikai tömbben megjelölni a résztvevőket, majd sorszám szerint kiírni",
+    "category": "Halmaz, logikai tömb",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "beolvasás", "részvétel"],
+    "note": "Időlimit 0,1 mp: a legnagyobb bemeneten (N=M=100, versenyenként 100 induló) a futás kb. 0,004 mp. A pontszámok és a minimumok nem számítanak, csak a részvétel; a minták ezzel egyeznek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

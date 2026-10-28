@@ -1,0 +1,38 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 3. forduló/1. Napszámosok",
+    "method": "Lineáris bejárás: kereset szorzással, összegzéssel és maximumkereséssel",
+    "category": "Összegzés, maximumkeresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "maximum", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 3. forduló/2. Konténerek rendezése",
+    "method": "Beszúró rendezés szomszédos cserékkel; egy csere négy lépésből áll",
+    "category": "Szimuláció, beszúró rendezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["rendezés", "szimuláció", "beszúrás"],
+    "note": "A mintakimenet eltér a referenciától, mert a feladat szerint „Írj programot, amely megad egy műveletsort, amely rendezi a konténersort!”, tehát bármely megfelelő műveletsor elfogadható. A kimenet érvényességét a library/.work/R-096/tools/check_kontenerek.py ellenőrzi: minden lépés szabályos, a végállapotban az i. helyen az i. konténer áll. A korábbi kód több bemenetre szegmentálási hibával (SIGSEGV) leállt, ezért a rendezés algoritmusát kicseréltük.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/Nemes Tihamér 1. 2016 ∕ 17 3. forduló/3. Páratlan számok",
+    "method": "Lineáris keresés a számokon, bitszámlálással az i. találatig",
+    "category": "Bitműveletek, számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["bitek", "számlálás", "popcount"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

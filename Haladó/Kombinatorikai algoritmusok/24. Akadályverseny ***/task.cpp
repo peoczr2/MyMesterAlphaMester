@@ -1,14 +1,19 @@
 /*
 Megoldás lényege:
-A helyes sorrendek az alternáló permutációk. Ezek száma az Euler-féle
-zigzag-számokkal írható le, amelyeket az Entringer-triangle dinamikával
-számolunk.
-
-Az N hosszú, először növekvő permutációk száma a triangle utolsó eleme.
-Mivel a feladat nem rögzíti, hogy a sorozat emelkedéssel vagy süllyedéssel
-induljon, a válasz ennek kétszerese (N>1 esetén).
+A feltétel szerint a próbák nehézsége felváltva nő és csökken, vagyis a sorrend
+alternáló permutáció. Ha N>1, az alternáló permutációk száma 2·E_N, ahol E_N az
+Euler-féle zigzag-szám, azaz az egyik irányban kezdődő alternáló permutációk száma.
+Az E_N az Entringer-háromszöggel számolható: E(0,0) = 1, E(n,0) = 0, ha n>0, és
+E(n,k) = E(n,k-1) + E(n-1,n-k), ha 1<=k<=n. Ekkor E_n = E(n,n). A kettes szorzó a
+két kezdési irány miatt kell. N=1 esetén a válasz 1.
+Időigény O(N^2) nagy egész számokkal számolva; N<=23 esetén az eredmény 2·10^18
+alatt marad.
 */
-
+/*
+Hint 1: || A szomszédos próbák nehézsége felváltva nő és csökken, tehát a sorrend fel-le-fel-... vagy le-fel-le-... alakú. A két kezdési irányt külön kell számolni, és N=4 esetén a példában 10 ilyen sorrend van. ||
+Hint 2: || Egy háromszög táblázat adja a számokat: E(0,0) = 1, E(n,0) = 0 ha n>0, és E(n,k) = E(n,k-1) + E(n-1,n-k) ha 1<=k<=n. Az n-edik sor utolsó eleme E(n,n), ami az egy irányban kezdődő alternáló permutációk száma. ||
+Hint 3: || A válasz E(N,N) kétszerese, ha N>1, és 1, ha N=1. Mivel a számok gyorsan nőnek (N=23 esetén 10^18 körüli), elég egy sort tárolni, és az összeadásokat nagy egész számokkal végezni. Időigény O(N^2). ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,0 +1,63 @@
+[
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/31. IPv6 - 2014. május",
+    "method": "Csoportonkénti számértékek összehasonlítása, prefix- és nullaszámlálás, leghosszabb nullás csoportsorozat rövidítése.",
+    "category": "Karakterlánc-feldolgozás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "karakterlánc",
+      "ipv6",
+      "hexadecimális"
+    ],
+    "note": "DÖNTÉS KELL: a minta ki1.txt és ki2.txt nem tartalmazza a feladatszöveg szerinti '#' sorokat (minden részfeladat eredménye elé kötelező; a PDF példa kimenetében szerepelnek), ezért a validátor 'hibás' (minta 0/2). A task.cpp a feladatszöveg szerint írja a '#' sorokat. A '#' sorok nélkül a kimenet mindkét mintával tokenre megegyezik; ezt a független ellenőrző (library/.work/KH-029/check31.py) igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/32. kidolgozás alatt",
+    "method": "",
+    "category": "",
+    "difficulty": 3,
+    "goal": "",
+    "tags": [],
+    "note": "BLOKKOLT: a feladat.pdf csak a 'Kidolgozás alatt' helyőrzőt tartalmazza (1 oldal, nincs beágyazott kép), nincs feladatszöveg és nincs minta.zip sem. A feladat nem oldható meg, task.cpp nem készült. A nehézség nincs megbecsülve (a 3 csak helyőrző).",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/33. Céllövészet - 2014. május angol",
+    "method": "Lövésenként csökkenő pontérték szimulációja, majd rendezés holtverseny-helyezéssel.",
+    "category": "Szimuláció és rendezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "rendezés",
+      "karakterlánc"
+    ],
+    "note": "DÖNTÉS KELL: a 2. részfeladatban a feladatszöveg szerint csak egy, a legtöbb lövést leadó versenyző rajtszámát kell kiírni; a minta viszont az összes döntetlenes versenyzőt sorolja (ki1: '2' és '3'; ki2: 31 rajtszám, köztük 23, 29, 34 ...). A PDF példa bemenete megegyezik a be1-gyel, kimenetében csak '2' szerepel. A task.cpp a legkisebb rajtszámút írja, ez érvényes; a többi részfeladat tokenre egyezik a mintával. Az érvényességet a library/.work/KH-029/check33.py igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Közismereti emeltszintű érettségi feladatok/34. Expedíció - 2015. május",
+    "method": "Napi pozíciónkénti helyreállítás a '@' jelek kihagyásával; nyers szövegkeresés és fejléc-elemzés.",
+    "category": "Karakterlánc: helyreállítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "karakterlánc",
+      "hibajavítás",
+      "szövegfeldolgozás"
+    ],
+    "note": "Mintán kész (be1 és be2 egyezik). Két bizonytalan pont a feladatszövegben: (1) a 6. részfeladatot az A. amatőr saját, nyers feljegyzéséből számolom, nem a napi helyreállított üzenetből; a minta mindkét értelmezéssel ugyanazt adja (be1: 1, be2: -2), ezért nem dönthető el a mintából. (2) A napi helyreállított üzenet hossza a napi feljegyzések leghosszabbika, legfeljebb 90 karakter; ezt a mintából következtettem (a 6. napi 91 karakteres feljegyzés kimenete 90 karakter). A 4. részfeladatban a napi különböző amatőrök számát írom ki (a mintában ez egybeesik a feljegyzések számával).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

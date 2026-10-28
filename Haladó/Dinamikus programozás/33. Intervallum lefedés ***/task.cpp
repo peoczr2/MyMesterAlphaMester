@@ -73,7 +73,6 @@ int main() {
         chosen.push_back(seg[last].idx);
         last = parent[last];
     }
-    reverse(chosen.begin(), chosen.end());
 
     cout << answer << '\n';
     for (int i = 0; i < (int)chosen.size(); ++i) {

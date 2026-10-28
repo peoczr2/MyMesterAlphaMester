@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/24. Virágárusok **",
+    "method": "Egyedi (árus, virág) párok rendezése, számlálás, azonos halmazok csoportosítása",
+    "category": "Számlálás, egyedi párok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "halmaz", "rendezés", "csoportosítás"],
+    "note": "Időlimit 0,1 mp; mért kb. 60 ms a legnagyobb saját teszten (V = 100 000, A = 200 000). A 4. részfeladatban több jó válasz is lehet; a megoldás a legkisebb sorszámút adja, ez a minta szerint is elfogadott.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/25. Tanárok **",
+    "method": "Egyedi (tanár, tárgy) párok rendezése, számlálás, azonos halmazok csoportosítása",
+    "category": "Számlálás, egyedi párok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "halmaz", "rendezés", "csoportosítás"],
+    "note": "Időlimit 0,1 mp; mért kb. 60 ms a legnagyobb saját teszten (T = 100 000, O = 200 000). A 4. részfeladatban több jó válasz is lehet; a megoldás a legkisebb sorszámút adja, ez a minta szerint is elfogadott.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/26. Szakiskolák **",
+    "method": "Egyedi (iskola, szakma) párok, számlálás, iskolánkénti szakmalisták összevetése",
+    "category": "Halmazok, csoportosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "csoportosítás", "számlálás"],
+    "note": "Időlimit 0,1 mp; mért kb. 60 ms a legnagyobb saját teszten (Sz = 100 000, S = 200 000). A 2. részfeladatban tetszőleges egyedi szakma is jó, itt az első előfordulásút adjuk, ez egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/27. Idegen nyelv **",
+    "method": "Egyedi (hallgató, nyelv) párok, számlálás, azonos nyelvkészletek csoportosítása",
+    "category": "Halmazok, csoportosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "csoportosítás", "számlálás"],
+    "note": "Időlimit 0,1 mp; mért kb. 60 ms a legnagyobb saját teszten (N = 100 000, M = 200 000). Kézi: a 2. részfeladatban a feladat tetszőleges, egyetlen hallgató által beszélt nyelvet enged; a be2 minta 'mj'-t ad, a megoldás az első előfordulású 'hv'-t, ezért a validátor hibásnak jelzi, a kimenet a bemenetből ellenőrizve érvényes (library/.work/KH-134/tests/kezi27.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

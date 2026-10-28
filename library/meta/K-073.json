@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/46. Születések",
+    "method": "Évenkénti darabszám-tömb; kezdőévenként a legrövidebb felet lefedő intervallum; majd a leghosszabb üres szakasz.",
+    "category": "Intervallumkeresés, számlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "gyakoriság", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/47. Autópálya",
+    "method": "Autónkénti észlelési idők, szakaszonként és irányonként a legkisebb menetidő kiválasztása.",
+    "category": "Minimumkiválasztás csoportonként",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "csoportosítás", "tömb"],
+    "note": "A holtverseny szabálya (\"legkorábbi autó\") a feladatszövegből nem egyértelmű; a mintából (be2, a 30. és 32. szakasz holtversenye) igazolva: a bemenetben korábban először észlelt autó nyer. Kimenet egyezik a mintával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/48. Napszámosok",
+    "method": "Keresetek (V−K+1)·B összegzése; a legtöbbet kereső egy menetben, holtversenyben a több napot dolgozó.",
+    "category": "Összegzés, maximumkiválasztás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "maximum", "túlcsordulás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/49. Osztályzatok",
+    "method": "Osztályzatonként egy maximum, a pontszámot a négy ponthatárhoz hasonlítva.",
+    "category": "Maximumkiválasztás csoportonként",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "csoportosítás", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

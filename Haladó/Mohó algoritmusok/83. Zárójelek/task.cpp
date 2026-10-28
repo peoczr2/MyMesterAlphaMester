@@ -1,14 +1,12 @@
 /*
-Feladat: Adott zárójelsztringeket kell olyan sorrendbe rakni, hogy az összefűzés szabályos zárójelezés legyen.
-Ötlet: Minden sztringhez számoljuk: összeg (sum), és minimális prefix-egyenleg (mn). Pozitív (sum>=0) és negatív (sum<0) csoportokra bontunk.
- - Pozitívaknál a kisebb igényűek menjenek előre: need=-mn szerint növekvő (ekvivalensen mn csökkenő).
- - Negatívaknál a „végre maradó tartalék” alapján rendezünk: (sum-mn) csökkenő.
-Ezen sorrend után egy lineáris ellenőrzés eldönti a létezést.
+Megoldás lényege:
+Minden szövegre kiszámoljuk az összegét (sum: nyitó és csukó zárójelek különbsége) és a minimális prefix-egyenlegét (mn). A nemnegatív összegű szövegeket mn szerint csökkenően rendezzük, így a kisebb kezdő egyenleget igénylők kerülnek előre. A negatív összegűeket (sum - mn) szerint csökkenően rendezzük: a visszafelé olvasott, zárójelet cserélt szövegekre ugyanez a nemnegatív eset szabálya. Az így kapott sorrendet szimulációval ellenőrizzük: ha az egyenleg valahol negatívba megy, vagy a végén nem 0, nincs megoldás és -1 a válasz. Az időigény O(N log N + összhossz).
+*/
+/*
 Hint 1: || Egy részsztring csak akkor tehető be, ha az aktuális egyenleg + saját minimális prefixe nem megy 0 alá. ||
 Hint 2: || A pozitív és negatív összegű sztringeket külön érdemes kezelni. ||
 Hint 3: || Végül mindig ellenőrizd a teljes sorrendet szimulációval (prefixek és végső egyenleg). ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

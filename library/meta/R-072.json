@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/42. Nem négyzetmentes számok",
+    "method": "Eratoszthenész-szita: a p² többszöröseinek megjelölése, majd az N-edik megjelölt szám.",
+    "category": "Számelmélet: szita",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szita", "négyzetszám", "számelmélet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/43. Számok előállítása",
+    "method": "Maradékosztályonként a legkisebb előállítható szám, blokkonkénti bitszintű előrehaladással.",
+    "category": "Érmeprobléma: maradékosztályok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["érmeprobléma", "maradékosztály", "bitkészlet"],
+    "note": "A 46. feladattal azonos szöveg, megoldás és minta. Legrosszabb eset mért ideje kb. 0,04 mp (limit 0,3 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/44. Ritka szám",
+    "method": "Fibonacci-jellegű számlálás, bitenkénti felépítés a sorszám alapján.",
+    "category": "Kombinatorika: Fibonacci-számolás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["fibonacci", "bitek", "rangsorolás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/45. Páratlan számok",
+    "method": "Számok sorban vizsgálata, a bináris 1-esek számának paritása alapján (popcount).",
+    "category": "Bitműveletek: paritás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["popcount", "bitművelet", "paritás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/46. Számok előállítása",
+    "method": "Maradékosztályonként a legkisebb előállítható szám, blokkonkénti bitszintű előrehaladással.",
+    "category": "Érmeprobléma: maradékosztályok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["érmeprobléma", "maradékosztály", "bitkészlet"],
+    "note": "A 43. feladattal azonos megoldás és minta; a szöveg ugyanaz, a PDF-ben csak a bevezető nem ismétlődik. Legrosszabb eset mért ideje kb. 0,04 mp (limit 0,3 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/47. Kastély",
+    "method": "Közös osztó: az összes oldalhossz legnagyobb közös osztója, gcd-lánccal.",
+    "category": "Számelmélet: gcd",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["lnko", "osztó", "euklidész"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

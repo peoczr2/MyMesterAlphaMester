@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/10. Folt határa *",
+    "method": "Perem-bejárás a Moore-szomszédsággal, az óramutató szerint, az előző iránytól indulva.",
+    "category": "Lánckód, kontúrkövetés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["lánckód", "kép", "bejárás"],
+    "note": "A kezdőpontba az első visszaérkezésnél állunk meg; ezt a be2/ki2 (50×50) minta igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/11. Fordítóprogram **",
+    "method": "Két menetes fordítás: címkék előre kiszámítása, majd a [X] hivatkozások feloldása a teljes tár alapján.",
+    "category": "Fordítóprogram, tár",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["fordító", "címke", "tár"],
+    "note": "Értelmezési pont: a [X] a cél rekesz végső értékét másolja (előre hivatkozás és láncolt [X] is megengedett). Ezt a be2/ki2 minta mutatja (a pillanatnyi érték szerinti olvasat nem egyezett), a feladatszöveg ezt nem rögzíti egyértelműen.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/12. Futár *",
+    "method": "Csúszó ablakos párosítás: ellentétes irány és az indulások különbsége kisebb, mint O.",
+    "category": "Intervallum-párosítás, csúszó ablak",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["csúszó-ablak", "rendezés", "idő"],
+    "note": "Határeset: |t1-t2| = O (az egyik futár épp ott érkezik, ahonnan a másik indul) nem találkozásnak számít (\"út közben\"). A minták ezt nem döntik el (mindkét értelmezés ugyanazt adja), ezért kézzel ellenőrizendő.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/13. Genetika **",
+    "method": "Visszalépéses keresés balról jobbra: K aktív darab, a leghosszabb új darab választása.",
+    "category": "Visszalépéses keresés, sztring",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["visszalépés", "sztring", "lefedés"],
+    "note": "A megoldás arra épül, hogy minden bázis pontosan K darabban szerepel, vagyis a darabolások nem osztoznak darabon (a feladatszöveg szerint a darabok különbözők). A minta 2/2, és saját véletlen próbákon is egyezett a generált molekulával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

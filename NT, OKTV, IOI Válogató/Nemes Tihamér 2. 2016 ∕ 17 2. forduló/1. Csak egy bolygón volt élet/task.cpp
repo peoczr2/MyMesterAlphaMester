@@ -1,11 +1,19 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
     A két bolygó életszakaszai rendezett, zárt intervallumok. Azok a részek,
     ahol pontosan az egyik bolygón van élet, a két halmaz szimmetrikus
-    különbségét adják. Ezt eseményekkel sweep line módszerrel számoljuk.
+    különbségét adják. Minden intervallumhoz két eseményt rendelünk: a kezdetnél
+    +1-et, a vége utáni évnél -1-et. Az eseményeket időrendbe rendezzük, és
+    egyszerre végigmegyünk rajtuk: nyilvántartjuk, hány bolygón van élet.
+    Azonos évhez tartozó változásokat összevonjuk, így a szomszédos időszakok
+    automatikusan egybeolvadnak. Időigény: O(N log N), ahol N az intervallumok száma.
 */
+/*
+Hint 1: || Gondolj úgy az intervallumokra, mint nyitó és záró eseményekre az időtengelyen, és számold, hányan vannak élőben egy adott évben. ||
+Hint 2: || Ha az eseményeket rendezed, az egy bolygóra jutó időszakok azok a szakaszok, ahol a számláló éppen 1. Az 1-es szintről való belépés kezdetet, a kilépés végződést jelent (a végződés a kilépést megelőző év). ||
+Hint 3: || Ugyanazon az x időpontban történő több esemény eredőjét egyszerre vedd figyelembe: így egy időpontban történő belépés és kilépés nem szakít meg egy folyamatos időszakot. ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);

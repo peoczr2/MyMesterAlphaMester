@@ -1,36 +1,20 @@
 /*
-Megoldas lenyege:
-A kocsikat harom oldalsinre kell szetosztani ugy, hogy mindegyik oldalsinen az oda kerulo
-kocsik az input sorrendjeben csokkeno sorozatot alkossanak. Ehhez konfliktusgrafot epitunk:
-ket kocsi nem lehet ugyanazon a sinen, ha van egy kesobbi, nala kisebb kocsi, amely miatt a
-ketto egyutt mar nem lenne jo. A konfliktusgrafot harom szinnel színezzuk.
-A színezés után az egyes színekhez tartozó kocsikat külön-ből a megfelelő sínre rakjuk,
-majd a végén a három sínről a legkisebb éppen elérhető címkét adjuk vissza az A sínre.
+Megoldás lényege:
+A kocsikat a bemeneti sorrendben tesszük a három oldalsín valamelyikére (B-művelet). Egy oldalsínen a kocsik
+abban a sorrendben jönnek ki, ahogy beléjük kerültek, ezért minden sínen a bemeneti sorrendben
+nemcsökkenő címkesorozat kell álljon. A bemenet tehát akkor rendezhető, ha három nemcsökkenő részsorozatra
+bontható, és ez pontosan akkor nem lehetséges, ha van 4 hosszú szigorúan csökkenő részsorozat.
+A bontást mohón végezzük: minden kocsit arra a sínre teszünk, amelynek utolsó kocsija a legnagyobb, de még
+nem nagyobb az új kocsi címkéjénél; ha ilyen sín nincs, a válasz NEM. A kiürítésnél (K-művelet) mindig azt
+a sínt választjuk, amelynek első kocsija a legkisebb címkéjű. Az időigény O(N).
 */
 /*
-Hint 1: || Egy oldalsínre kerülő kocsiknak az input sorrendjében csökkenő sorozatot kell alkotniuk. ||
-Hint 2: || Két kocsi csak akkor kerülhet ugyanarra a sínre, ha nincs olyan későbbi kisebb kocsi, amely miatt blokkolnák egymást. ||
-Hint 3: || A színezés után a kész oldalsínekről mindig a legkisebb felső címkét érdemes visszatolni az A sínre. ||
+Hint 1: || Egy oldalsínen a kocsik a beérkezés sorrendjében jönnek ki, így ezen a sínen a bemeneti sorrendben a címkéknek nemcsökkenőnek kell lenniük. ||
+Hint 2: || Ha a bemenet három nemcsökkenő részsorozatra bontható, a kiürítés egyszerű: mindig a három sín közül a legkisebb első címkéjű kocsit húzd ki. ||
+Hint 3: || A bontást mohón építsd: minden sínhez tartsd nyilván az utolsó kocsi címkéjét, és az új kocsit arra a sínre tedd, amelynek ez a címke a legnagyobb, de még nem nagyobb az új címkénél. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
-
-static vector<vector<int>> buildConflictGraph(const vector<int> &a) {
-    int n = (int)a.size();
-    vector<int> suffixMin(n + 1, INT_MAX);
-    for (int i = n - 1; i >= 0; --i) suffixMin[i] = min(suffixMin[i + 1], a[i]);
-
-    vector<vector<int>> adj(n);
-    for (int i = 0; i < n; ++i) {
-        for (int j = i + 1; j < n; ++j) {
-            if (a[i] < a[j] && suffixMin[j + 1] < a[i]) {
-                adj[i].push_back(j);
-                adj[j].push_back(i);
-            }
-        }
-    }
-    return adj;
-}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -41,61 +25,40 @@ int main() {
     vector<int> a(n);
     for (int i = 0; i < n; ++i) cin >> a[i];
 
-    auto adj = buildConflictGraph(a);
-
-    vector<int> order(n);
-    iota(order.begin(), order.end(), 0);
-    sort(order.begin(), order.end(), [&](int lhs, int rhs) {
-        if (a[lhs] != a[rhs]) return a[lhs] < a[rhs];
-        return lhs < rhs;
-    });
-
-    vector<int> color(n, -1);
-    for (int v : order) {
-        bool used[3] = {false, false, false};
-        for (int u : adj[v]) {
-            if (color[u] != -1) used[color[u]] = true;
-        }
-        int chosen = -1;
+    // top[c]: a c-edik oldalsín utolsó kocsijának címkéje (0, ha a sín üres; a címkék 1..4)
+    array<int, 3> top = {0, 0, 0};
+    vector<int> side(n);
+    for (int i = 0; i < n; ++i) {
+        int best = -1;
         for (int c = 0; c < 3; ++c) {
-            if (!used[c]) {
-                chosen = c;
-                break;
-            }
+            if (top[c] <= a[i] && (best == -1 || top[c] > top[best])) best = c;
         }
-        if (chosen == -1) {
+        if (best == -1) {
             cout << "NEM\n";
             return 0;
         }
-        color[v] = chosen;
+        side[i] = best;
+        top[best] = a[i];
     }
 
-    array<vector<int>, 3> stacks;
     vector<string> ops;
     ops.reserve(2 * n);
-
+    array<vector<int>, 3> track;
     for (int i = 0; i < n; ++i) {
-        int c = color[i];
-        ops.push_back(string("B") + char('1' + c));
-        stacks[c].push_back(a[i]);
+        ops.push_back("B" + to_string(side[i] + 1));
+        track[side[i]].push_back(a[i]);
     }
 
-    auto popOnce = [&](int idx) {
-        ops.push_back(string("K") + char('1' + idx));
-        stacks[idx].pop_back();
-    };
-
+    array<size_t, 3> head = {0, 0, 0};
     while (true) {
-        int bestIdx = -1;
-        int bestVal = INT_MAX;
-        for (int i = 0; i < 3; ++i) {
-            if (!stacks[i].empty() && stacks[i].back() < bestVal) {
-                bestVal = stacks[i].back();
-                bestIdx = i;
-            }
+        int best = -1;
+        for (int c = 0; c < 3; ++c) {
+            if (head[c] >= track[c].size()) continue;
+            if (best == -1 || track[c][head[c]] < track[best][head[best]]) best = c;
         }
-        if (bestIdx == -1) break;
-        popOnce(bestIdx);
+        if (best == -1) break;
+        ops.push_back("K" + to_string(best + 1));
+        ++head[best];
     }
 
     for (const string &op : ops) cout << op << '\n';

@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/28. Építkezés ****",
+    "method": "Blokkokra bontás, mohó bővítéshelyek intervallum-feltétellel, határidős (EDF) kiosztás",
+    "category": "Gráf: látványos sorrend",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "körmentes",
+      "intervallum",
+      "ütemezés"
+    ],
+    "note": "A feladat szerint több megoldás esetén bármelyik megadható; a saját sorrend eltér a mintától (in.2), de minden tesztesetben egyezik a -1 / nem -1 döntés a mintával, és a sorrendek érvényességét library/.work/HA-031/check31.py ellenőrzi (előfeltételek, látványos sorrend, várakozási idők különbsége ≤1).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/3. Családfa *",
+    "method": "Gyermektelenekre visszafelé bejárt ősök számlálása; közös ős, ha mindegyiknél megjelenik",
+    "category": "Gráf: ősök",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "körmentes",
+      "bejárás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/4. Építkezés *",
+    "method": "Kahn-féle topologikus rendezés, szintek a leghosszabb előírás-lánc szerint",
+    "category": "Gráf: topologikus sorrend",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "körmentes",
+      "topologikus rendezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, körmentes gráfok/5. Építkezési terv *",
+    "method": "Legkorábbi napok javítása az előírások szerint, majd rendezett mohó ütemezés",
+    "category": "Gráf: ütemezés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "ütemezés",
+      "topologikus rendezés"
+    ],
+    "note": "A feladat szerint több megoldás esetén bármelyik megadható; a saját ütemezés eltér a mintától (be1, be2), de K egyezik (13 és 25686), és az ütemezés érvényességét library/.work/HA-031/check31.py ellenőrzi (napok egyediek, legkorábbi nap, előírások), kis véletlen tesztekre brute-force optimummal.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

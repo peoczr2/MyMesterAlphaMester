@@ -1,9 +1,11 @@
 /*
-Feladat: A megadott számokat olyan intervallumokra kell bontani, hogy mindegyikbe legalább két szám essen, és az összhossz minimális legyen.
-Ötlet: A rendezett számok között kiválasztjuk a legnagyobb hézagokat, de két vágás nem lehet egymás mellett, különben egyelemű csoport keletkezne. Ez egy súlyozott független halmaz a láncon.
-Hint 1: || Az összhossz az első és utolsó szám különbségéből a kivágott hézagok összegével csökken. ||
+Megoldás lényege:
+Az összhossz a legnagyobb és a legkisebb szám különbsége, mínusz a levágott hézagok összege, ezért a rendezett számok közötti hézagok közül a legnagyobb összegű vágáshalmazt keressük. Két vágás nem lehet egymás mellett (különben egyelemű csoport keletkezne), és az első, illetve az utolsó hézag sem vágható, mert a szélső csoportoknak is legalább két szám kell. Ezt dinamikus programozással oldjuk meg: dp[i] = max(dp[i-1], hézag[i] + dp[i-2]), a vágásokat pedig a táblázatból fejtjük vissza. Az időigény a rendezés miatt O(N log N).
+*/
+/*
+Hint 1: || Az összhossz az első és utolsó szám különbségéből indul, és minden kivágott hézaggal csökken. ||
 Hint 2: || Olyan hézagokat válassz, amelyek között legalább egy szám marad. ||
-Hint 3: || Dinamikával vagy a path-maximum egyszerű változatával vissza lehet fejteni az intervallumokat. ||
+Hint 3: || Legyen dp[i] a legnagyobb összeg, amelyet az 1..i sorszámú hézagok közül választva érhetünk el: dp[i] = max(dp[i-1], hézag[i] + dp[i-2]). ||
 */
 
 #include <bits/stdc++.h>

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/17. Vám *",
+    "method": "Dijkstra-algoritmus csúcsokra súlyozva, a célvárosban nem fizetett vám kivonásával.",
+    "category": "Gráf: csúcssúlyozott legrövidebb út",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "legrövidebb út"],
+    "note": "A minta.zip-ben nincs kimeneti fájl (csak be1, be2), ezért kézzel ellenőriztük: a feladat példája (20; 1 2 4 6) és be1 (0; 5 3) egyezik, 400 véletlen kis esetben a DFS-alapú minimum egyezik. Mért idő: be2 (N=50 000, M=500 000) 0,09 s, generált N=100 000, M=1 000 000 teszten 0,24 s (időlimit 0,5 s). A szöveg nem mondja ki, hogy bármelyik útvonal elfogadott; többféle optimum esetén a kiírt út az egyik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/2. Bányászrobot *",
+    "method": "Dijkstra a cellarácson: szabad cellába lépés 1, falba lépés F időegységgel.",
+    "category": "Gráf: rácsgráf, legrövidebb út",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "rács", "dijkstra"],
+    "note": "Validátor: kész, minta 2/2 (ki1 = 8, ki2 = 1325). A falba lépés összesen F időegységbe kerül (a 8-as minta ezt igazolja). Mért idő: be2 (500x500) 0,03 s, csupa-fal 500x500 generált teszt 0,02 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/18. Repülőút menetrenddel ***",
+    "method": "Dijkstra a legkorábbi érkezési időkkel, átszállásnál a napi menetrend szerinti következő indulással.",
+    "category": "Gráf: időfüggő legrövidebb út",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "dijkstra", "menetrend"],
+    "note": "Nincs kimeneti fájl (csak be1, be2): a példa (440; 3 1 4 6) és be1 (2432) független, Bellman-Ford-jellegű számítással és az útvonal visszajátszásával igazolva; 400 véletlen kis esetben egyezik. Mért idő: be2 (N=7000, M=100 000) 0,03 s, generált N=10 000, M=200 000 teszten 0,05 s (időlimit 0,2 s). A szöveg szerint több megoldás esetén bármelyik megadható.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/19. Tűzoltó ***",
+    "method": "Többforrású Dijkstra az állomásokról, az elődláncon visszafelé követve az útvonalat.",
+    "category": "Gráf: többforrású legrövidebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dijkstra", "többforrású"],
+    "note": "A validátor hibás 1/2-t ad: be1 egyezik, be2 ki2.txt-jének 23 sorában (69, 92, 257, 276, 328, 363, 376, 465, 482, 522, 547, 607, 628, 638, 663, 745, 773, 807, 815, 817, 837, 887, 906) a kiírt útvonal nem legrövidebb; pl. a 69. sor 450 746 566 173 251 712 hossza 177, a legrövidebb 176 (450 606 94 711 712). A mi kimenetünk minden sorban legrövidebb (független Python-ellenőrzővel, saját Dijkstrával igazolva), a többi 977 sor egyezik a mintával, és a szöveg szerint több megoldás esetén bármelyik kiírható. Mért idő: be2 0,003 s (időlimit 0,1 s).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

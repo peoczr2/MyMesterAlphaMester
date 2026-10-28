@@ -1,95 +1,94 @@
 /*
-Hungarian megoldás: a boltokat egyenként olyan pékségekhez rendeljük, amelyek
-kapacitása még elbírja a teljes megrendelést, és a teljes költséget minimalizáljuk.
+L üzlet – K pékség
+Feladat: L ≤ 12 üzlet (igény) és K ≤ 12 pékség (napi kapacitás, ár) adott. Minden üzlet a teljes
+igényét egyetlen, vele kapcsolatban lévő pékségtől rendeli; egy pékség sem léphet túl a kapacitásán.
+A cél a minimális összköltség (ár · igény összege); ki kell írni minden üzlet pékségét.
 
-Hint 1: || Egy bolt csak egy pékségtől rendelhet, ezért a döntés boltonként egyetlen választás. ||
-Hint 2: || Kevés bolt és kevés pékség mellett visszalépéses kereséssel lehet minimális költséget találni. ||
+Megoldási ötlet: pékségenként döntünk, melyik üzletcsoportot szolgálja ki (részhalmaz-DP).
+dp[k][mask] = minimális költség, ha az első k pékség pontosan a mask üzleteit szolgálja ki.
+A (k+1). pékség a mask egy sub részhalmazát kapja (mind kapcsolatban van vele, igény(sub) ≤ kapacitás):
+  dp[k+1][mask] = min dp[k][mask − sub] + ár · igény(sub).
+A részhalmazokat a sub = (sub − 1) & mask lépéssel járjuk be; az összes (mask, sub) pár száma 3^L,
+így az idő O(K · 3^L) ≈ 6,4·10^6, a memória O(K · 2^L). A visszafejtéshez pékségenként eltároljuk a
+választott sub-ot. Ha nincs megoldás (a feladat erről nem szól), -1-et írunk ki.
+*/
+/*
+Hint 1: || Ne üzletenként dönts, hanem pékségenként: melyik üzletcsoportot szolgálja ki az adott pékség? Egy csoport akkor jó, ha minden tagja kapcsolatban van vele, és az igények összege belefér a kapacitásba. ||
+Hint 2: || Állapot: (hány pékséget dolgoztunk már fel, mely üzletek vannak kiszolgálva). A következő pékség a még kiszolgálatlan üzletek egy részhalmazát kapja: ez részhalmaz-felsorolás. ||
+Hint 3: || dp[k+1][mask] = min dp[k][mask − sub] + ár[k] · igény(sub), ahol sub ⊆ mask (az üres halmaz is jó). A részhalmazokat a sub = (sub − 1) AND mask lépéssel járd be; az összes (mask, sub) pár száma 3^L. A visszafejtéshez tárold, melyik sub adta a minimumot. ||
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int l, k;
-vector<int> igeny, kap, ar;
-vector<vector<int>> kapcsolat;
-vector<int> ans;
-vector<char> hasznalt;
-long long best = (1LL << 60);
-
-long long lowerBound() {
-    long long sum = 0;
-    for (int i = 0; i < l; ++i) if (!hasznalt[i]) {
-        long long mn = (1LL << 60);
-        for (int b : kapcsolat[i]) if (kap[b] >= igeny[i]) mn = min(mn, 1LL * igeny[i] * ar[b]);
-        if (mn == (1LL << 60)) return (1LL << 60);
-        sum += mn;
-    }
-    return sum;
-}
-
-bool dfs(int placed, long long cost) {
-    if (cost >= best) return false;
-    long long lb = lowerBound();
-    if (lb == (1LL << 60) || cost + lb >= best) return false;
-    if (placed == l) {
-        best = cost;
-        return true;
-    }
-    int bestIdx = -1;
-    vector<int> cand;
-    for (int i = 0; i < l; ++i) if (!hasznalt[i]) {
-        vector<int> v;
-        for (int b : kapcsolat[i]) if (kap[b] >= igeny[i]) v.push_back(b);
-        if (v.empty()) return false;
-        if (bestIdx == -1 || v.size() < cand.size() || (v.size() == cand.size() && igeny[i] > igeny[bestIdx])) {
-            bestIdx = i;
-            cand = move(v);
-        }
-    }
-    hasznalt[bestIdx] = 1;
-    sort(cand.begin(), cand.end(), [&](int a, int b) {
-        return 1LL * igeny[bestIdx] * ar[a] < 1LL * igeny[bestIdx] * ar[b];
-    });
-    for (int b : cand) {
-        kap[b] -= igeny[bestIdx];
-        ans[bestIdx] = b + 1;
-        dfs(placed + 1, cost + 1LL * igeny[bestIdx] * ar[b]);
-        kap[b] += igeny[bestIdx];
-    }
-    hasznalt[bestIdx] = 0;
-    return false;
-}
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    cin >> l >> k;
-    kap.resize(k);
-    ar.resize(k);
-    igeny.resize(l);
-    kapcsolat.assign(l, {});
-    for (int i = 0; i < k; ++i) cin >> kap[i];
-    for (int i = 0; i < k; ++i) cin >> ar[i];
-    for (int i = 0; i < l; ++i) {
-        for (int j = 0; j < k; ++j) {
+    const long long INF = LLONG_MAX / 4;
+
+    // beolvasás; kapcs[k] = a k. pékséggel kapcsolatban lévő üzletek maszkja
+    int L, K;
+    cin >> L >> K;
+    vector<long long> kap(K), ar(K), igeny(L);
+    vector<int> kapcs(K, 0);
+    for (int k = 0; k < K; k++) cin >> kap[k];
+    for (int k = 0; k < K; k++) cin >> ar[k];
+    for (int i = 0; i < L; i++) {
+        for (int k = 0; k < K; k++) {
             int x;
             cin >> x;
-            if (x) kapcsolat[i].push_back(j);
+            if (x) kapcs[k] |= 1 << i;
         }
         cin >> igeny[i];
     }
-    ans.assign(l, -1);
-    hasznalt.assign(l, 0);
-    dfs(0, 0);
-    if (best == (1LL << 60)) {
+
+    // osszeg[mask] = a mask üzleteinek összigénye (a legalsó bitet leválasztva)
+    int teljes = (1 << L) - 1;
+    vector<long long> osszeg(1 << L, 0);
+    for (int mask = 1; mask <= teljes; mask++) {
+        int i = __builtin_ctz(mask);
+        osszeg[mask] = osszeg[mask & (mask - 1)] + igeny[i];
+    }
+
+    // dp[k][mask], és valaszt[k][mask] = melyik sub-ot kapta a k. pékség
+    vector<vector<long long>> dp(K + 1, vector<long long>(1 << L, INF));
+    vector<vector<int>> valaszt(K + 1, vector<int>(1 << L, 0));
+    dp[0][0] = 0;
+
+    // átmenet: a k. pékség (0-tól számozva) a mask egy részhalmazát kapja
+    for (int k = 0; k < K; k++)
+        for (int mask = 0; mask <= teljes; mask++) {
+            int lehet = mask & kapcs[k];  // csak kapcsolatban lévő üzletet kaphat
+            // részhalmazok bejárása: sub = (sub - 1) & lehet, az üres halmazig bezárólag
+            for (int sub = lehet;; sub = (sub - 1) & lehet) {
+                if (osszeg[sub] <= kap[k] && dp[k][mask ^ sub] != INF) {
+                    long long c = dp[k][mask ^ sub] + ar[k] * osszeg[sub];
+                    if (c < dp[k + 1][mask]) {
+                        dp[k + 1][mask] = c;
+                        valaszt[k + 1][mask] = sub;
+                    }
+                }
+                if (sub == 0) break;
+            }
+        }
+
+    if (dp[K][teljes] == INF) {  // a feladat nem írja, mi legyen ilyenkor
         cout << -1 << '\n';
         return 0;
     }
-    for (int i = 0; i < l; ++i) {
-        if (i) cout << ' ';
-        cout << ans[i];
+
+    // rekonstrukció: az utolsó pékségtől visszafelé leválasztjuk a kapott csoportokat
+    vector<int> pekseg(L);
+    int mask = teljes;
+    for (int k = K; k >= 1; k--) {
+        int sub = valaszt[k][mask];
+        for (int i = 0; i < L; i++)
+            if (sub >> i & 1) pekseg[i] = k;
+        mask ^= sub;
     }
-    cout << '\n';
+
+    // kiírás
+    for (int i = 0; i < L; i++) cout << pekseg[i] << (i + 1 < L ? ' ' : '\n');
     return 0;
 }

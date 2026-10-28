@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: keresés/13. Metró átszállás ***",
+    "method": "Gráf 0-1 BFS-sel a legkevesebb megállóra, majd vonalankénti szakaszok összevonása",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "bfs", "keresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/14. Műhold *",
+    "method": "Pixelenkénti összehasonlítás, az eltérések szélső indexei",
+    "category": "Mátrix: eltérések keresése",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "keresés", "szélsőérték"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/15. Olcsó fenyőfa *",
+    "method": "Lineáris keresés az első K-nál olcsóbb elemre",
+    "category": "Keresés: lineáris",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/16. Őr nélküli nap a múzeumban *",
+    "method": "Különbségtömb és prefixösszeg a napi lefedettség számítására",
+    "category": "Prefixösszeg: intervallumok",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "intervallum", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,11 +1,16 @@
 /*
-Feladat: A meglévő tankolások közül a lehető legkevesebbet kell felhasználni, hogy eljussunk a célba.
-Ötlet: Amíg még tovább tudunk menni, gyűjtjük az elérhető tankolásokat; ha nem elég az üzemanyag, akkor a legnagyobb korábban látott tankolást választjuk. Ez a max-heapes mohó.
+Megoldás lényege: a benzint 100-szoros egységben számoljuk, így egy kilométer fogyasztása L egység, a távolságok
+pedig egész számok maradnak. Haladunk előre, és minden elért kutat egy prioritási sorba teszünk a tankolt mennyiséggel.
+Ha a következő kútig vagy a célig nem elég a benzin, a sorból a legnagyobb tankolást vesszük ki, és ezt használjuk
+fel (a tartály mérete nem korlát, így a már elhaladt kutak is használhatók). Ez a mohó stratégia optimális: mindig
+a legnagyobb tankolással kevesebb állomás kell.
+Időigény: O(N log N), a rendezés és a prioritási sor dominál.
+*/
+/*
 Hint 1: || Az elérhető kutak tankolásait egy prioritási sorban tárold. ||
 Hint 2: || Amikor kevés a benzin, mindig a legnagyobb eddig látott tankolást használd fel. ||
-Hint 3: || A válasz csak a tankolások száma. ||
+Hint 3: || Ha a célig a jelenlegi benzinnel nem jutsz el, a legnagyobb tankolást vedd hozzá, és így ismételd. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

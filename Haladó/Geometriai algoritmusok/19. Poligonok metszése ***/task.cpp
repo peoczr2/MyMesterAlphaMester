@@ -1,6 +1,11 @@
 /*
 Megoldás lényege:
-Két sokszög metszetét kell kiszámítani, majd ennek a területét vagy peremét meghatározni. A megoldás a poligon-klippelés klasszikus lépéseire épül.
+Mindkét konvex sokszöget két láncra bontjuk (a bal és a jobb szélső csúcs között a felső és az alsó lánc), a láncok éleinek x-irányú intervallumai egymás után következnek. A két lánc éleit az x-intervallumok szerinti összefésüléssel járjuk be: minden olyan élpárt megvizsgálunk, amelynek x-intervallumai átfedik egymást, és az első metsző párt kiírjuk. Ha két él jobb végpontja egybeesik, a szomszédos párokat is ellenőrizzük, mert érintkezés is előfordulhat. A futásidő O(M+N), a négy láncpár mindegyikére lefuttatjuk, és ha egyik sem ad metszést, a 0 0 a válasz.
+*/
+/*
+Hint 1: || Ha két konvex sokszög határa metszi egymást, van olyan P-oldal és Q-oldal, amelynek közös pontja van. Ha az egyik sokszög teljesen a másikban van, nincs ilyen oldalpár. Gondold át, hogyan lehet a határokat x szerint rendezett láncokra bontani. ||
+Hint 2: || Egy lánc élei x-irányban egymás után következnek, így két láncot egy kéttagú mutatóval, összefésüléssel lehet végigjárni. A mutató mindig azt az élt léptesse, amelynek jobb végpontja hamarabb van. ||
+Hint 3: || Ha két él jobb végpontja egybeesik, akkor a következő élek is szóba jöhetnek: egy csúcs az oldal belsejében érintkezhet vele. Ezért ilyenkor a keresztezett szomszédos párokat is ellenőrizd, mielőtt mindkét mutatót léptetnéd. ||
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -14,12 +19,6 @@ static int orient(const Pt& a, const Pt& b, const Pt& c) {
     if (v < 0) return -1;
     if (v > 0) return 1;
     return 0;
-}
-
-static bool onSegment(const Pt& a, const Pt& b, const Pt& p) {
-    if (orient(a, b, p) != 0) return false;
-    return min(a.x, b.x) <= p.x && p.x <= max(a.x, b.x) &&
-           min(a.y, b.y) <= p.y && p.y <= max(a.y, b.y);
 }
 
 static bool segIntersect(const Pt& a, const Pt& b, const Pt& c, const Pt& d) {
@@ -82,6 +81,13 @@ static optional<pair<int, int>> mergeChains(const vector<Pt>& A, const Chain& aC
         } else if (br < ar) {
             ++j;
         } else {
+            // egyenlő jobb végpontok: az érintkező szomszédos párokat is megvizsgáljuk
+            if (j + 2 < (int)bChain.verts.size() &&
+                segIntersect(A[ai], A[an], B[bChain.verts[j + 1]], B[bChain.verts[j + 2]]))
+                return make_pair(aChain.edges[i] + 1, bChain.edges[j + 1] + 1);
+            if (i + 2 < (int)aChain.verts.size() &&
+                segIntersect(A[aChain.verts[i + 1]], A[aChain.verts[i + 2]], B[bi], B[bn]))
+                return make_pair(aChain.edges[i + 1] + 1, bChain.edges[j] + 1);
             ++i;
             ++j;
         }

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/31. Jegesmedve ***",
+    "method": "Elérhető halak DSU-val napról napra, Hall-feltétel alapján min(nap + halak)",
+    "category": "Gráf: unió-keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "unió-keresés",
+      "ütemezés"
+    ],
+    "note": "Időlimit 0,3 mp; 100×100-as véletlen bemeneten 0,004 mp. A mintákon egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/32. Egyirányú utcák megfordítása **",
+    "method": "Dijkstra két költséggel: megfordítások száma, majd út hossza",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "rács"
+    ],
+    "note": "Időlimit 0,2 mp; 100×100-as bemeneten 0,005 mp. Több optimális út van; a kiírt út a 2. mintával egyezik (a B-ből számolt távolságok mentén a lépési sorrend: le, jobbra, fel, balra).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/33. Vázsony vonatjegyet vásárol ****",
+    "method": "Dijkstra a célból, azonos távolságú csoportok DSU-val, lánc-DP a csoportok között",
+    "category": "Gráf: legrövidebb út, DP",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "dinamikus programozás"
+    ],
+    "note": "Időlimit 1,5 mp; N=10^5, M=10^6 véletlen bemeneten 0,27 mp. Azonos távolságú szomszédok között oda-vissza lehet utazni, ezért a teljes csoport bejárható; kis véletlen gráfokon nyers keresés is ugyanezt adja. A 2. minta halmaza pontosan egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, legrövidebb utak/34. Rácsháló gráf",
+    "method": "Új élek után minden pontból BFS, az átmérő kiírása",
+    "category": "Gráf: BFS, átmérő",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "szélességi bejárás",
+      "rács"
+    ],
+    "note": "Az 1. minta egyezik; a 2. minta (10×20, 50 él) 2. sorától eltér: a leírás szerinti modellben az 1. és a 199. pont távolsága az 1. és 2. él felvétele után 26, a minta 25-öt ír. A minta vagy a leírás hibás, ezt ellenőrizni kell. Időlimit 0,5 mp; 200 pontos, 100 éles bemeneten 0,05 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

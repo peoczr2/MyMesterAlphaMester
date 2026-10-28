@@ -1,0 +1,74 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/EGOI Válogató 2021/1. Posta",
+    "method": "Eseményszimuláció időrendben, az ügyintézők és a sor állapotának követésével.",
+    "category": "Szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "sor", "prioritási sor"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EGOI Válogató 2021/2. Székek",
+    "method": "Permutáció ciklusokra bontása, minden ciklus költsége a hosszából adódik.",
+    "category": "Permutáció: ciklusok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["permutáció", "ciklus", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EGOI Válogató 2021/3. Málna",
+    "method": "Prefixösszegek paritásának számlálása egy menetben.",
+    "category": "Prefixösszeg",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "paritás", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EGOI Válogató 2021/4. Versenyeredmények",
+    "method": "Radix rendezés, majd a szomszédos azonosítók leghosszabb közös előtagja.",
+    "category": "Szövegek: előtag, rendezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "radix", "szöveg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EGOI Válogató 2021/5. Zászló",
+    "method": "Két bináris kereséssel a piros-fehér és a fehér-zöld határ megkeresése.",
+    "category": "Keresés: bináris keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["bináris keresés", "interaktív", "függvény"],
+    "note": "Grader-alapú (zaszlo.h modul): a validátor a modult nem kapja meg, ezért nem fordul, nem kész. A minta.zip zaszlo.cpp/zaszlo.h moduljával és egy saját számláló graderrel (library/.work/R-082/zaszlo5/) 191 véletlen és a két minta eset helyes, a kérdések száma a limit alatt.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EGOI Válogató 2021/6. Matekbolha",
+    "method": "Minimum BFS-sel; maximum a zárójelpárok fáján, alulról felfelé számolva.",
+    "category": "Gráf: utak, zárójelfa",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "bfs", "fa", "dinamikus programozás"],
+    "note": "Az eredeti megoldás hibás volt (a minimum és a maximum is), ezért újraírtuk. Kis esetekre (kb. 3400 véletlen és az összes legfeljebb 7 karakteres kifejezés) brute force-szal egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

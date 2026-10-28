@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: keresés/17. Sípálya ahol vastag a hó *",
+    "method": "Lineáris keresés az első legalább 100 cm-es sípályára",
+    "category": "Keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/18. Székesfehérvári vonat *",
+    "method": "Lineáris keresés a kezdőállomásról induló vonat feltételével",
+    "category": "Keresés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["keresés", "feltétel", "karakterlánc"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/19. Szövegkereső **",
+    "method": "Két minta párhuzamos bejárása visszalépéses kereséssel, memoizálással",
+    "category": "Keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["mintaillesztés", "visszalépés", "karakterlánc"],
+    "note": "Több helyes szó is létezik; a mintában szereplő szó a bejárás sorrendje szerint adódik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: keresés/2. Azonos évben születtek *",
+    "method": "Páronkénti összehasonlítás két egymásba ágyazott ciklussal",
+    "category": "Keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "tömb", "páros"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

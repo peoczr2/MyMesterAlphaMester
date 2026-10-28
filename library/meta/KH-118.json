@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/1. A csúcsmagassága után leggyorsabban elapadó árvíz helye ***",
+    "method": "Árvizek kigyűjtése egy bejárással, majd a csúcs és az árvíz vége közötti minimális távolság keresése",
+    "category": "Szakaszok, maximumkeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakaszok", "maximum", "tömb"],
+    "note": "N = 10 000 bemeneten mért futásidő kb. 4 ms (időlimit 0,1 mp). A 800/900/1000 cm határértékeket szigorúan (meghaladja) értelmeztem; a minták ilyen értéket nem tartalmaznak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/10. Árvizek hosszai **",
+    "method": "Árvizek kezdő és záró indexe egy bejárásban, a hossz záró − kezdő + 1",
+    "category": "Szakaszok, hossz",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szakaszok", "tömb", "bejárás"],
+    "note": "N = 10 000 bemeneten mért futásidő kb. 4 ms (időlimit 0,1 mp). A 800/900/1000 cm határértékeket szigorúan (meghaladja) értelmeztem; a minták ilyen értéket nem tartalmaznak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/11. Árvizek hosszai növekednek-e ***",
+    "method": "Árvizek kigyűjtése egy bejárásban, majd a hosszak szomszédos párjainak szigorú összehasonlítása",
+    "category": "Szakaszok, monotonitás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szakaszok", "monotonitás", "tömb"],
+    "note": "N = 10 000 bemeneten mért futásidő kb. 4 ms (időlimit 0,1 mp). K = 1 esetén a minta IGEN-t vár, ez a szigorú monotonitás triviális teljesülése. A 800/900/1000 cm határértékeket szigorúan (meghaladja) értelmeztem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/12. Árvízmentes folyószakaszok teljes hossza ***",
+    "method": "Árvízmentes szakaszok kigyűjtése egy bejárásban, a hosszak összegzése",
+    "category": "Szakaszok, összegzés",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["szakaszok", "összegzés", "tömb"],
+    "note": "N = 10 000 bemeneten mért futásidő kb. 4 ms (időlimit 0,1 mp). A 800/900/1000 cm határértékeket szigorúan (meghaladja) értelmeztem; a minták ilyen értéket nem tartalmaznak.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

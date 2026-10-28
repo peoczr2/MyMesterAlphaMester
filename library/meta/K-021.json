@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/8. Játéktábla 1. **",
+    "method": "A bábu (sor, hely) párját tartjuk nyilván, minden lépésnél index-képlettel frissítjük",
+    "category": "Szimuláció: indexelés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["szimuláció", "tömb", "indexelés"],
+    "note": "A mintában nincs kilépés a tábláról; a kilépő lépésnél a program leáll és az addigi utolsó helyet írja ki, ezt a feladatszöveg („ahol utoljára volt”) alapján értelmeztem.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/9. Játéktábla 2. **",
+    "method": "Csak lefelé lépések, a hely (p-1) bináris alakja adja a lépéseket",
+    "category": "Bináris fa: legrövidebb út",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "legrövidebb út", "bitek"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

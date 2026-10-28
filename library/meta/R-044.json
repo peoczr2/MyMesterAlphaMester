@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/79. Többszörös összefésülés",
+    "method": "Mindig a két legkisebb sorozatot egyesítjük, min-heappel (Huffman-stratégia).",
+    "category": "Mohó: optimális összefésülés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "prioritásos sor", "összefésülés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/8. Fadöntés ***",
+    "method": "Láncreakció-végpontok balról jobbra, majd mohó intervallumfedés.",
+    "category": "Mohó: láncreakció, intervallumfedés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["mohó", "intervallum", "láncreakció"],
+    "note": "A határeset (a fa pontosan a szakasz végpontján áll) kidől a megoldásban; a két minta mindkét értelmezést elfogadja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/81. Tűzijáték",
+    "method": "A telephelytől mindkét irányban a legközelebbi még megengedett településsel haladunk.",
+    "category": "Mohó: távolságkorlátos kiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mohó", "távolság", "kiválasztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/82. Vállalkozó",
+    "method": "Határidő szerint rendezve elfogadunk egy munkát, ha a prefix-kapacitás még belefér.",
+    "category": "Mohó: határidős ütemezés",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "határidő", "prefixösszeg"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/83. Zárójelek",
+    "method": "Nemnegatív összegűek mn szerint, negatívak (sum-mn) szerint rendezve, majd szimulációval ellenőrzünk.",
+    "category": "Mohó: zárójelezés rendezése",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["mohó", "zárójelezés", "rendezés"],
+    "note": "A feladat bármely megfelelő sorrendet elfogad: a 2. minta kimenete más, de érvényes (ellenőrző program igazolta), a -1 döntést 3000 kis véletlen teszten brute-force igazolta.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/9. Fénykép **",
+    "method": "A legkorábban távozó lefedetlen vendég távozása előtti utolsó pillanatban fotózunk, és a lefedett vendégeket kihagyjuk.",
+    "category": "Mohó: intervallum-lefogás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "intervallum", "lefogás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

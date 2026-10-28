@@ -1,6 +1,8 @@
 /*
 Feladat: A lehető legkevesebb menetben kell minden vendéget lefényképezni, ahol egy menet hossza K.
 Ötlet: A menet kezdőpontját mindig az első lefedetlen vendég távozási idejére tesszük. Így az adott menet a lehető legtöbb további vendéget is lefedi.
+*/
+/*
 Hint 1: || Az első lefedetlen vendég távozási ideje a legkésőbbi jó kezdés. ||
 Hint 2: || Ha ennél korábban kezdesz, nem fogsz kevesebb menetet elhasználni. ||
 Hint 3: || Egy menet mindenkit lefed, akinek van közös jelenléti szakasza a [F, F+K) intervallummal. ||

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/5. Leghidegebb hőmérséklet a Balatonon *",
+    "method": "Egy menetes minimumkiválasztás a beolvasás közben.",
+    "category": "Minimumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "kiválasztás", "bejárás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/50. Kihalt állatok",
+    "method": "Különbségi tömb: minden faj intervallumának határait jelöljük, prefixösszeggel számoljuk az éveket.",
+    "category": "Prefixösszeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "intervallum", "tömb"],
+    "note": "A mintában a sorok nem Ui≤Ei sorrendben vannak (pl. „8 3”), ezért a két kort kisebb-nagyobb sorrendbe rendezem; a minták így stimmelnek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/51. Születésnapok",
+    "method": "Dátumok napsorszámra váltása, a névnap távolsága három év közül, globális minimum.",
+    "category": "Dátumszámítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["dátum", "minimum", "szökőév"],
+    "note": "Szökőnap (02.29.) nem szökőévben a megoldásban március 1-jének számít; a feladatszöveg ezt nem rendezi, a minták nem tartalmaznak ilyet.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/52. Sikertelen napok",
+    "method": "Sikeres (rekord) napok szakaszolása, a leghosszabb sikertelen szakasz egy menetben.",
+    "category": "Prefixmaximum",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["prefixmaximum", "szakasz", "rekord"],
+    "note": "Az 1. nap a „bármely korábbi napnál nagyobb” feltétel miatt sikeres (nincs korábbi nap); a -1 kimenet szabálya is ezt támasztja alá. A minták ezt nem döntik el.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

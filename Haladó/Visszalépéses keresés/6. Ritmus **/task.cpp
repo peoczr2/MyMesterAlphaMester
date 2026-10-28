@@ -1,9 +1,13 @@
 /*
-Hungarian megoldás: minden verssort dinamikus programozással bontunk fel a megadott
-ritmusminták egymás utáni illesztésével.
-
-Hint 1: || A sorokat kis darabokra kell bontani, ahol minden darab valamelyik ismert minta. ||
-Hint 2: || Mivel a minták rövidek, a lehetséges illesztéseket egyszerűen végig lehet próbálni. ||
+Megoldás lényege: minden verssort dinamikus programozással bontunk fel ismert ritmusminták egymás utáni
+illesztésére. A dp[i] azt jelzi, hogy a sor első i karaktere felbontható-e; ha dp[i] igaz, és egy minta
+pontosan az i-edik pozíciótól illeszkedik, akkor a minta hosszával későbbi pozíció is elérhető. Az
+elágazásokat eltároljuk, így a sor végétől visszafelé követve kapjuk a mintasorozatot. Egy sorra az
+időigény O(L · n · 10), ahol L a sor hossza és n a minták száma.
+*/
+/*
+Hint 1: || Dinamikus programozással: dp[i] legyen igaz, ha a sor első i karaktere felbontható ismert minták egymásutánjára (dp[0] igaz). ||
+Hint 2: || Ha dp[i] igaz, és a j-edik minta pontosan az i-edik pozíciótól illeszkedik, akkor dp[i + a minta hossza] is igaz; a végétől visszafelé követve az eltárolt elágazásokkal kapod meg a mintasorozatot. ||
 */
 
 #include <bits/stdc++.h>

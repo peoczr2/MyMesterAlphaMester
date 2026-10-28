@@ -6,6 +6,7 @@ alkot. Egy mezőbe csak a négy szomszédja közül azokról érkezhetünk, amel
 Legyen dp[i][j] a (i,j) mezőig vezető út minimális sáros mezőszáma. A gyűrűket növekvő távolság szerint dolgozzuk fel, minden mezőhöz a
 legjobb elődöt és az oda vezető irányt is eltároljuk. A végén a szélmezők közül választjuk a legjobbat, majd hozzáírjuk az utolsó, a
 szigetről kilépő lépést.
+Az időigény és a memóriaigény O(N²).
 */
 /*
 Hint 1: || A Manhattan-távolság mindig pontosan eggyel nő egy szabályos lépésben. ||
@@ -47,7 +48,8 @@ int main() {
 
     const int dx[4] = {-1, 1, 0, 0};
     const int dy[4] = {0, 0, -1, 1};
-    const char moveChar[4] = {'D', 'N', 'E', 'K'};
+    // a betű: az elődből (x,y)-be vezető lépés iránya (N = észak, sor-1; E = nyugat, oszlop-1)
+    const char moveChar[4] = {'D', 'N', 'K', 'E'};
 
     for (int d = 1; d <= maxDist; ++d) {
         for (auto [x, y] : rings[d]) {
@@ -83,7 +85,7 @@ int main() {
         path.push_back(c);
         if (c == 'D') --x;
         else if (c == 'N') ++x;
-        else if (c == 'E') --y;
+        else if (c == 'K') --y;
         else ++y;
     }
     reverse(path.begin(), path.end());
@@ -91,8 +93,8 @@ int main() {
     char exitMove;
     if (finish.first == 1) exitMove = 'N';
     else if (finish.first == n) exitMove = 'D';
-    else if (finish.second == 1) exitMove = 'K';
-    else exitMove = 'E';
+    else if (finish.second == 1) exitMove = 'E';
+    else exitMove = 'K';
     path.push_back(exitMove);
 
     cout << best << '\n';

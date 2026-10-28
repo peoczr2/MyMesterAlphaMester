@@ -1,15 +1,24 @@
 /*
-Megoldási ötlet:
-Ez a szokásos 0/1 hátizsák: minden tárgy egyszer választható, és a teljes súly legfeljebb K lehet. A dp[w] tömbben azt tároljuk, hogy
-pontosan w összsúllyal mekkora maximális haszon érhető el.
+Hátizsák probléma – sok kicsi tárgy: N tárgy (súly S[i], haszon E[i]) közül kell kiválasztani
+legfeljebb K összsúlyút úgy, hogy a haszon maximális legyen; ki kell írni a tárgyakat is.
 
-Az egydimenziós DP-t súly szerint visszafelé frissítjük, így minden tárgy csak egyszer használódhat fel. Amikor egy állapot javul,
-eltároljuk, melyik tárgy tette jobbá és milyen korábbi súlyból jöttünk, így a végén a kiválasztott tárgyak listája visszafejthető.
+Megoldási ötlet: 0/1 hátizsák egy dimenzióban. dp[w] = az eddigi tárgyakból legfeljebb w
+összsúllyal elérhető legnagyobb haszon (ezért minden érték 0-ról indul). Az i-edik tárgynál
+w-t K-tól LEFELÉ járjuk, így dp[w - S[i]] még az i-edik tárgy nélküli értéket tartalmazza,
+vagyis minden tárgy legfeljebb egyszer kerül be.
+
+Visszafejtés: egy bittáblában jegyezzük, hogy az i-edik tárgy javított-e dp[w]-n
+(vesz[i][w]). Ezután w = K-ból indulva, i = N..1 sorrendben: ha vesz[i][w], akkor az i-edik
+tárgy benne van, és w -= S[i]. Egy 1-D "utolsó javító tárgy" tömb nem elég, mert egy későbbi
+tárgy felülírja, és ugyanaz a tárgy többször is kijöhetne. A tábla bitenként N·K ≈ 12,5 MB
+(char-táblával 100 MB lenne, ez nem fér bele a 64 MB-ba).
+
+Idő: O(N·K), memória: O(K) + N·K bit.
 */
 /*
-Hint 1: || Minden tárgy vagy bekerül, vagy kimarad, ezért visszafelé kell frissíteni a súlyokat. ||
-Hint 2: || Nem muszáj pontosan K súlyt kitölteni, a legjobb válasz bármelyik legfeljebb K súlynál állhat. ||
-Hint 3: || A rekonstrukcióhoz tárold el, melyik tárggyal javult utoljára az adott súly. ||
+Hint 1: || Minden tárgyról egyetlen döntés születik: bekerül vagy kimarad. Mi az a legkevesebb, amit az első i tárgyról tudnod kell, hogy a többiről dönthess? ||
+Hint 2: || dp[w] = az eddigi tárgyakból legfeljebb w összsúllyal elérhető legnagyobb haszon. Egy dimenzió elég, ha az i-edik tárgynál w-t K-tól lefelé járod, így minden tárgy legfeljebb egyszer kerül be. ||
+Hint 3: || Jegyezd fel egy bittáblában, hogy az i-edik tárgy javított-e dp[w]-n, és ebből fejtsd vissza a halmazt K-tól, az utolsó tárgytól visszafelé haladva. Egy 1-D szülőtömb nem elég, mert a későbbi tárgyak felülírják. ||
 */
 
 #include <bits/stdc++.h>
@@ -19,45 +28,45 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n, cap;
-    cin >> n >> cap;
-    vector<int> w(n + 1), e(n + 1);
-    for (int i = 1; i <= n; ++i) cin >> w[i];
-    for (int i = 1; i <= n; ++i) cin >> e[i];
+    // beolvasás
+    int N, K;
+    cin >> N >> K;
+    vector<int> S(N + 1), E(N + 1);
+    for (int i = 1; i <= N; i++) cin >> S[i];
+    for (int i = 1; i <= N; i++) cin >> E[i];
 
-    vector<int> dp(cap + 1, -1), parentItem(cap + 1, -1), parentWeight(cap + 1, -1);
-    dp[0] = 0;
+    // dp[w]: legfeljebb w súllyal elérhető legnagyobb haszon ("<= w", ezért minden 0-ról indul)
+    vector<int> dp(K + 1, 0);
+    // vesz[i][w] = 1, ha az i-edik tárgy javította dp[w]-t (bitenként tárolva)
+    vector<vector<bool>> vesz(N + 1, vector<bool>(K + 1, false));
 
-    for (int i = 1; i <= n; ++i) {
-        for (int curW = cap; curW >= w[i]; --curW) {
-            if (dp[curW - w[i]] == -1) continue;
-            int cand = dp[curW - w[i]] + e[i];
-            if (cand > dp[curW]) {
-                dp[curW] = cand;
-                parentItem[curW] = i;
-                parentWeight[curW] = curW - w[i];
+    for (int i = 1; i <= N; i++) {
+        int s = S[i], e = E[i];  // helyi változóban gyorsabb a belső ciklus
+        // visszafelé: így minden tárgyat legfeljebb egyszer használunk fel
+        for (int w = K; w >= s; w--) {
+            if (dp[w - s] + e > dp[w]) {
+                dp[w] = dp[w - s] + e;
+                vesz[i][w] = true;
             }
         }
     }
 
-    int bestW = 0;
-    for (int curW = 1; curW <= cap; ++curW) {
-        if (dp[curW] > dp[bestW]) bestW = curW;
+    // rekonstrukció: az utolsó tárgytól visszafelé, w = K-ból indulva
+    vector<int> targyak;
+    int w = K;
+    for (int i = N; i >= 1; i--) {
+        if (vesz[i][w]) {
+            targyak.push_back(i);
+            w -= S[i];
+        }
     }
+    reverse(targyak.begin(), targyak.end());
 
-    vector<int> items;
-    int curW = bestW;
-    while (curW > 0 && parentItem[curW] != -1) {
-        items.push_back(parentItem[curW]);
-        curW = parentWeight[curW];
-    }
-    reverse(items.begin(), items.end());
-
-    cout << dp[bestW] << '\n';
-    cout << items.size() << '\n';
-    for (int i = 0; i < (int)items.size(); ++i) {
-        if (i) cout << ' ';
-        cout << items[i];
+    // kiírás
+    cout << dp[K] << '\n' << targyak.size() << '\n';
+    for (int j = 0; j < (int)targyak.size(); j++) {
+        if (j > 0) cout << ' ';
+        cout << targyak[j];
     }
     cout << '\n';
     return 0;

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/13. Orgonasíp elrendezés *",
+    "method": "Csökkenő rendezés, majd a legnagyobbtól kezdve váltakozó balra-jobbra elhelyezés a középtől.",
+    "category": "Rendezés, elrendezés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "tömb", "elrendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/14. Párosítás *",
+    "method": "Rendezés után mohó párosítás: mindig a legkisebb, még legyőzhető ellenféllel.",
+    "category": "Rendezés, mohó párosítás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["párosítás", "mohó", "rendezés"],
+    "note": "Több helyes párosítás van (a feladat bármelyiket elfogadja), ezért a validátor a be2 minta 2. sorának eltérését jelzi; az 1. sor (5967) egyezik a mintával, a 2. sor érvényessége független ellenőrzővel igazolt (library/.work/K-089/check_all.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/15. Ütemez *",
+    "method": "Johnson-szabály: csoportosítás A_i≤B_i szerint, rendezés, majd két gép idejének szimulálása.",
+    "category": "Ütemezés, Johnson-szabály",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": ["ütemezés", "rendezés", "szimuláció"],
+    "note": "Több optimális sorrend van (a feladat bármelyiket elfogadja), ezért a validátor a be2 minta 2. és 3. sorának eltérését jelzi; az 1. sor (38912) egyezik a mintával, a sorrendek érvényessége és az optimum független ellenőrzővel igazolt (library/.work/K-089/check_all.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/16. Üvegválogatás *",
+    "method": "A legtöbb fehéret tartalmazó rekeszek tiszta fehérek; a többi fehér összege, a vegyes rekesz korrekciójával.",
+    "category": "Mohó választás, cserék száma",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "számlálás", "rekesz"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

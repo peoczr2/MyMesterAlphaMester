@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szigetek/13. Legkisebb szintkülönbségű sziget *",
+    "method": "Szigetenként egy bejárás: a legnagyobb és a legkisebb mérés különbsége, ennek minimuma.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["minimum", "tömb", "sziget"],
+    "note": "Döntetlennél a balról első sziget a válasz; a mintákban nincs döntetlen.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/14. Leglaposabb csúcsú sziget *",
+    "method": "Szigetenként a csúcsok legkisebb meredeksége (a két oldal nagyobb különbsége), és ennek minimuma.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "csúcs", "meredekség"],
+    "note": "Döntetlennél a balról első sziget a válasz; a mintában két sziget csúcsának meredeksége is 3, és a várt kimenet a bal oldali.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/15. Leglaposabb partú sziget *",
+    "method": "Szigetenként a két part közül a kisebb meredekség (a parti mérés magassága), ennek minimuma.",
+    "category": "Minimumkeresés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["minimum", "part", "sziget"],
+    "note": "Döntetlennél a balról első sziget a válasz; a mintában két sziget leglaposabb partja is 1, és a várt kimenet a bal oldali.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/16. Legmagasabb csúcs *",
+    "method": "Egy bejárás: a három egymást követő mérés feltételének szűrése, a legmagasabb csúcs keresése.",
+    "category": "Maximumkeresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "csúcs"],
+    "note": "Döntetlennél a balról első legmagasabb csúcs a válasz; a mintákban nincs döntetlen.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

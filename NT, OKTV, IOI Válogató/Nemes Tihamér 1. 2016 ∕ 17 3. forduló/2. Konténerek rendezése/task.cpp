@@ -1,19 +1,39 @@
+/*
+Megoldás lényege:
+    Egy kisebb konténer mindig ráfér egy nagyobbra vagy egy üres helyre, ezért a
+    szomszédos konténerek cseréjével a sorrend megváltoztatható. Beszúró rendezést
+    végzünk: a t = 1, 2, ... konténert addig toljuk balra, amíg el nem éri a t. helyet.
+    Az 1..t-1 konténerek már a helyükön állnak, így a t. konténer bal oldali
+    szomszédai a t-nél nagyobbak vagy üresek. Egy t-nél nagyobb x bal oldali
+    szomszédos cseréje 4 lépésben megy: t-t x fölé rakjuk, majd a bal oldali másik
+    szomszédra tesszük (ha az üres vagy nála nagyobb), x átmegy a felszabadult helyre,
+    végül t visszalép. Ha nincs használható bal oldali szomszéd, a jobb oldali
+    szomszédot használjuk. Így a t. konténer legfeljebb N-t helyet lép, az összes
+    művelet száma O(N^2).
+*/
+/*
+Hint 1: || Egy kisebb konténert bármely nagyobbra vagy üres helyre rakhatunk, így a szomszédos konténerek cseréje megvalósítható, és ezekből felépíthető a teljes sorrend. ||
+Hint 2: || Beszúró rendezést csinálj: t = 1, 2, … sorrendben a t. konténert addig mozgasd balra, amíg a t. helyre nem ér. Az 1..t-1 konténereket nem mozgatjuk: a t-nél nagyobbak és az üres hely a t. helytől jobbra vagy a t. helyen vannak. ||
+Hint 3: || Egy x > t konténer és a t szomszédos cseréje 4 lépés: t rakd x fölé, t-t vidd x bal oldali szomszédjára (ha az üres vagy nagyobb), x lépjen a felszabadult helyre, végül t lépjen vissza. Ha a bal oldalon nincs használható szomszéd, a cserét a jobb oldali szomszéddal végezd el. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-    A kisebb konténerek mindig rátehetők a nagyobbakra, ezért egy konténer
-    útjában álló kisebb blokkolókat ugyanabba az irányba toljuk tovább, amíg a
-    mozgatni kívánt konténer el nem jut a célhelyére. A feldolgozást csökkenő
-    méret szerint végezzük, így a már a helyükre került nagyobb konténereket a
-    kisebbek nem tudják megzavarni.
-*/
-
 int n;
-vector<vector<int>> rakas;
-vector<pair<int, char>> muveletek;
+vector<vector<int>> rakas;          // rakas[h]: a h. helyen lévő konténerek, a vége a legfelső
+vector<pair<int, char>> muveletek;  // a végrehajtott lépések (hely, irány)
 
-int keres(int k) {
+// A legfelső konténert átrakja a szomszédos helyre: irany = -1 balra (B), +1 jobbra (J).
+void mozgat(int honnan, int irany) {
+    int hova = honnan + irany;
+    int x = rakas[honnan].back();
+    rakas[honnan].pop_back();
+    rakas[hova].push_back(x);
+    muveletek.push_back({honnan, irany == -1 ? 'B' : 'J'});
+}
+
+// A k konténer aktuális helyét adja meg.
+int hol_van(int k) {
     for (int i = 1; i <= n + 1; ++i) {
         for (int x : rakas[i]) {
             if (x == k) return i;
@@ -22,41 +42,38 @@ int keres(int k) {
     return -1;
 }
 
-void csucs_mozgat(int honnan, int irany) {
-    int hova = honnan + irany;
-    int mozgo = rakas[honnan].back();
-    while (!rakas[hova].empty() && rakas[hova].back() < mozgo) {
-        if ((hova == 1 && irany == -1) || (hova == n + 1 && irany == 1)) {
-            csucs_mozgat(hova, -irany);
-        } else {
-            csucs_mozgat(hova, irany);
-        }
-    }
-    rakas[honnan].pop_back();
-    rakas[hova].push_back(mozgo);
-    muveletek.push_back({honnan, irany == -1 ? 'B' : 'J'});
-}
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
     cin >> n;
-    vector<int> kezdo(n + 1);
-    for (int i = 1; i <= n; ++i) cin >> kezdo[i];
-
     rakas.assign(n + 2, {});
-    for (int i = 1; i <= n; ++i) rakas[i].push_back(kezdo[i]);
+    for (int i = 1; i <= n; ++i) {
+        int m;
+        cin >> m;
+        rakas[i].push_back(m);
+    }
 
-    for (int k = n; k >= 1; --k) {
-        int pos = keres(k);
-        while (pos != k) {
-            int irany = (pos < k ? 1 : -1);
-            while (rakas[pos].back() != k) {
-                csucs_mozgat(pos, irany);
+    for (int t = 1; t <= n; ++t) {
+        int q = hol_van(t);
+        while (q > t) {
+            if (rakas[q - 1].empty()) {
+                // üres bal szomszéd: egy lépés
+                mozgat(q, -1);
+            } else if (q - 2 >= t) {
+                // x = rakas[q-1] > t: t x fölé, majd a bal szomszédra, x jobbra, t vissza
+                mozgat(q, -1);
+                mozgat(q - 1, -1);
+                mozgat(q - 1, +1);
+                mozgat(q - 2, +1);
+            } else {
+                // q = t+1: t jobbra a szomszédra, x jobbra, t x fölé, majd balra
+                mozgat(q, +1);
+                mozgat(q - 1, +1);
+                mozgat(q + 1, -1);
+                mozgat(q, -1);
             }
-            csucs_mozgat(pos, irany);
-            pos += irany;
+            q = hol_van(t);
         }
     }
 

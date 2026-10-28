@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Villamosjárat/1. Állomásszakaszok száma, amit hosszú idő alatt tett meg *",
+    "method": "Szakaszonként az érkezési idő mínusz az előző indulási idő, egy menetben számolva.",
+    "category": "Számlálás: szakaszidők",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["bejárás", "számlálás", "idő"],
+    "note": "Mért futásidő a legnagyobb mintán (N=100): kb. 2 ms, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/10. Első villamosmegálló, ahol a villamos nem áll meg *",
+    "method": "Egy menetben keressük az első olyan megállót, ahol az érkezési és az indulási idő egyenlő.",
+    "category": "Keresés: első találat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "tömb"],
+    "note": "Mért futásidő a legnagyobb mintán (N=100): kb. 2 ms, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/11. Hosszú állomásszakaszok száma *",
+    "method": "Egy menetben a megállók közötti távolságot hasonlítjuk K-hoz, és a nagyobbakat számoljuk.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "bejárás", "távolság"],
+    "note": "A be2.txt első sorából hiányzik a K: a fájl csak „100”-at tartalmaz, a feladatszöveg szerint „N K” állna ott, ezért a validátor hibás állapotot jelez. A minta kimenete (91) csak a távolság > K értelmezéssel magyarázható: a 91-et K ∈ [471, 505] adja, az időalapú értelmezéssel egyetlen K sem ad 91-et, és minden ilyen K-ra a megoldás 91-et ad (ellenőrző: library/.work/KH-103/check11.py). A feladatszöveg K ≤ 20 korlátja ellentmond a be1 mintának (K = 500), ez a megoldást nem érinti. Mért futásidő (N=100, K=500 beszúrva): kb. 2 ms.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Villamosjárat/12. Hosszú utazási idejű állomásszakaszok *",
+    "method": "Szakaszonként az érkezési idő mínusz az előző indulási idő, a K-nál hosszabbak sorszámait gyűjtjük.",
+    "category": "Bejárás: szakaszidők, lista",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["bejárás", "idő", "lista"],
+    "note": "Mért futásidő a legnagyobb mintán (N=100): kb. 2 ms, az időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

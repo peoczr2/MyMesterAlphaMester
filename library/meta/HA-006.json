@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/42. Repterek ***",
+    "method": "Szélességi bejárás a (0,0) pontból, a negyedsíkokra szegmensfával, törölt pontokkal.",
+    "category": "Gráf: BFS, negyedsíkok",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "szélességi bejárás", "szegmensfa"],
+    "note": "A feladat szerint a sorszámok tetszőleges sorrendben is megadhatók; a program x koordináta szerint növekvően írja ki, ami a mintákkal egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/43. Sokszög területe **",
+    "method": "Pick-tétel: a területet cipőformulával, a határpontokat élenkénti gcd-vel számoljuk.",
+    "category": "Geometria: Pick-tétel",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["geometria", "pick-tétel", "rácspont"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/44. Szálloda *",
+    "method": "Kérdésenként végigszűrjük a személyeket, majd a legfiatalabbat vagy legidősebbet választjuk.",
+    "category": "Feltételes keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "szűrés", "minimum"],
+    "note": "Azonos életkor esetén az ábécé szerint első nevet adja; ezt a mintában nem ellenőrzi semmi, a feladat szövege alapján értelmezett. A névrendezés ASCII szerinti (kis- és nagybetű különbséggel).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/45. Szójáték **",
+    "method": "Részsorozat-illesztés DP-vel: minden végponthoz a legkésőbbi kezdőindexet követjük.",
+    "category": "Részsorozat: legrövidebb ablak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["szövegfeldolgozás", "részsorozat", "dinamikus programozás"],
+    "note": "A szó és a szöveg bájtonként van kezelve; a mintákban csak ASCII betűk szerepelnek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

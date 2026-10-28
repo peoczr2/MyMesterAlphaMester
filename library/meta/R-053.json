@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív kiszámítás/1. Dobozok **",
+    "method": "Méretek rendezése, majd O(N²) leghosszabb-lánc DP a visszafejtéssel.",
+    "category": "DP: leghosszabb lánc",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "rendezés",
+      "lánc"
+    ],
+    "note": "Minta-eltérés: be2-n (N=2000) a program más, de azonos hosszúságú (44) és érvényes láncot ad; a feladat szerint bármelyik megoldás elfogadható. Ellenőrző program: library/.work/R-053/chk/check1.py (lánc-feltétel és H-egyezés a két mintán); kis esetekre (N≤9, 400 véletlen teszt) brute-force minden részhalmazzal igazolja az optimumot. Időigény be2-n kb. 9 ms.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/10. Kifejezés ***",
+    "method": "Lineáris együtthatók összegyűjtése, pozitív együtthatóhoz B, negatívhoz A.",
+    "category": "Rekurzív elemzés, lineáris kifejezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rekurzió",
+      "lineáris",
+      "szélsőérték"
+    ],
+    "note": "Minta-eltérés: a nulla együtthatós változókat a program B-vel írja ki, a minta A-val (be1: a, b; be2: a, e, o, t, w). Ezekre a változókra a feladat szerint bármely érték jó, a maximum (2, illetve 190) egyezik a mintával. Ellenőrző program: library/.work/R-053/chk/check10.py (független kiértékelő, a maximumot együtthatókkal számolja); 300 véletlen kis esetben teljes kiosztás-kereséssel igazolja az optimumot. Időigény be2-n ~1 ms.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/11. Hilbert-görbe",
+    "method": "Hilbert-index kiszámítása negyedenként, rotációval; index szerint rendezés.",
+    "category": "Térkitöltő görbe: rendezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rekurzió",
+      "bitművelet",
+      "rendezés"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/12. Járda-L ***",
+    "method": "Oszloponkénti profil-DP: a két sor lefedettségi maszkjával, 64 állapottal.",
+    "category": "DP: profilalapú lefedés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "profil",
+      "kombinatorika"
+    ],
+    "note": "A korábbi BigInt-include (../bigint.hpp) a validátor munkakönyvtárából nem oldódott fel (fordítási hiba), ezért a kód long long-ot használ: N≤28-ra a legnagyobb érték 1914332891. Ellenőrzés: N≤8 brute-force lefedésszámlálás (1 2 5 11 24 53 117 258) és N=28 exakt Python-számítás egyezik.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/13. JardaT ***",
+    "method": "Ugyanaz a profil-DP, a két T-alakú elforgatással kiegészítve, mod 20200111.",
+    "category": "DP: profil, T-tetromino",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "profil",
+      "maradék"
+    ],
+    "note": "Ellenőrzés: N≤8 brute-force lefedésszámlálás (1 2 5 11 26 61 143 336) és N=100 exakt számítás (mod 20200111 = 14833215) egyezik a programmal.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív kiszámítás/14. Hanoi tornyai variáns ***",
+    "method": "Rekurzió a legnagyobb, nem célpozícióban lévő korongtól; a kisebbek segédtoronyon.",
+    "category": "Hanoi: rekurzív átrendezés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "rekurzió",
+      "hanoi",
+      "állapot"
+    ],
+    "note": "Független szimulátor (library/.work/R-053/chk/check14.py) 1000 véletlen állapotpáron (N≤7) minden lépést szabályosnak és a célállást elértnek talál. N=16 (65535 lépés) kb. 18 ms alatt fut (időlimit 0,3 mp).",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

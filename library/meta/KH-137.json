@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/4. Megye úthálózata",
+    "method": "Mátrixsorokból szomszédlisták, zsákfalunkénti láncbejárás",
+    "category": "Gráf: szomszédság",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "mátrix", "láncbejárás"],
+    "note": "A be2 minta távolságmátrixa nem szimmetrikus; a szomszédokat a sorokból számoltuk, így a minta zsákfalu-száma (8) egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/5. Világnapok",
+    "method": "Események tárolása, hónaponkénti számlálás halmazzal",
+    "category": "Adatfeldolgozás: dátumok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "halmaz", "szövegfeldolgozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/6. Állatkert",
+    "method": "Állatkert×fajta táblázat, sor- és oszlopösszehasonlítás",
+    "category": "Mátrix: összehasonlítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "összesítés", "megszámlálás"],
+    "note": "Az állat nélküli állatkertek a 3. és 5. részfeladatban beleszámítanak (üres feltétel teljesül); a minta 98 és 14 darabszáma ezt igazolja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/7. Megrendelések",
+    "method": "Cég×termék ajánlattábla, termékenkénti és cégenkénti összehasonlítás",
+    "category": "Mátrix: ajánlatok, minimum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mátrix", "minimum", "halmaz"],
+    "note": "PDF/minta eltérés: a 3. rész második sorába a PDF cégszámokat kér, a minta az egyetlen beszállítós termékek sorszámait adja; az 5. részben a minta szerint az azonos ár is kizárja a céget (a PDF 'nincs olcsóbb' szövege ezt nem zárja ki). A megoldás a mintát követi; az ajánlat nélküli cégeket a 4. és 5. részben kihagyjuk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

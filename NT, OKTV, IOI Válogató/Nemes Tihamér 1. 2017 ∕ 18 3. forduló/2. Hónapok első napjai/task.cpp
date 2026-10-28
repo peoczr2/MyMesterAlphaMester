@@ -1,10 +1,16 @@
+/*
+Megoldás lényege:
+A napokat hétfőtől kezdve 0 és 6 közötti indexszel jelöljük, az év első napjának indexe S-1.
+Végigmegyünk az év 12 hónapján: minden hónap első napjának indexét egy 7 elemű számlálótömbben eggyel növeljük, majd a következő hónap első napjának indexe az aktuális index plusz a hónap napjainak száma, mod 7.
+Február napjainak száma 28 vagy 29, a szökőév-szabály szerint (400-zal osztható, vagy 4-gyel osztható de 100-zal nem).
+Az időigény O(1), mert mindig 12 hónapot járunk be.
+*/
+/*
+Hint 1: || Nem kell naptárat építeni: elég az év első napjának indexéből kiindulni, és minden hónap után megnézni, mennyivel tolódik el a következő hónap első napja. ||
+Hint 2: || Egy 7 elemű tömbben számold, hányszor fordul elő az egyes napindex hónap első napjaként. A következő hónap indexe: (aktuális + a mostani hónap napjainak száma) mod 7, a február hossza pedig a szökőév-szabálytól függ. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Az év első napjából kiindulva végiglépünk a hónapokon, és minden hónap első
-    napjának hét napos maradékát megszámoljuk. A szökőévi február 29 napos.
-*/
 
 static bool szokoev(int ev) {
     if (ev % 400 == 0) return true;

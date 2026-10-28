@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/13. Csoport ***",
+    "method": "Paritásos unió-keresés (DSU) a barát/ellenség feltételekre",
+    "category": "Gráf: kétszínezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "unió-keresés", "kétszínezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/14. Egér és macska",
+    "method": "Két szélességi bejárás (macska, egér); az egér csak ott léphet, ahol előbb ér",
+    "category": "Gráf: BFS időkorláttal",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "szélességi bejárás", "időkorlát"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/15. Falak ***",
+    "method": "Cellákra bontás, zárt falak lefedése, szélességi bejárás a szélig",
+    "category": "Rács: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rács", "szélességi bejárás", "falak"],
+    "note": "A feladat.pdf ábrája szerint a kezdőpont egy cella, a falak cellák halmaza; a lépés 4 irányú.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/16. Falvakban üzletek **",
+    "method": "Fa-DP: részfánként két állapot (van/nincs üzlet), visszafejtés fentről",
+    "category": "Fa: dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["fa", "dinamikus programozás", "független halmaz"],
+    "note": "Több maximális halmaz is helyes (a feladat szerint bármelyik megadható); a minta sorrendje és halmaza eltér, ezért a validate.py hibásnak jelzi. Az optimum és a függetlenség igazolása: library/.work/HA-064/check16.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

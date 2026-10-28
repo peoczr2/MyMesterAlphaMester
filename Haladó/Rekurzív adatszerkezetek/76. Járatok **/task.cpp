@@ -1,15 +1,15 @@
 /*
 Megoldási ötlet:
-Minden teremhez egy rácspozíciót rendelünk: a bal oldali járat x координátája -1-gyel, a jobb oldali +1-gyel változik.
+Minden teremhez egy rácspozíciót rendelünk: a bal oldali járat x koordinátája -1-gyel, a jobb oldali +1-gyel változik.
 A felszínről függőlegesen lefelé fúrt sugár egy adott x koordinátán a legmélyebben fekvő termet találja meg.
 
-Ezért elég egy DFS-sel kiszámítani minden terem (x, mélység) koordinátáját, majd minden x-re eltárolni a legnagyobb
+Ezért elég egy bejárással kiszámítani minden terem (x, mélység) koordinátáját, majd minden x-re eltárolni a legnagyobb
 mélységű termet. A válasz a kiválasztott termek halmaza.
 */
 /*
 Hint 1: || A bal és jobb járatok x koordinátája rendre -1 és +1 irányban tolódik. ||
 Hint 2: || Egy függőleges fúrásnál ugyanazon x koordinátán a legmélyebb terem látszik. ||
-Hint 3: || DFS-sel számold ki az összes terem koordinátáját, majd x szerint tartsd meg a legnagyobb mélységet. ||
+Hint 3: || Bejárással számold ki az összes terem koordinátáját, majd x szerint tartsd meg a legnagyobb mélységet. ||
 */
 
 #include <algorithm>

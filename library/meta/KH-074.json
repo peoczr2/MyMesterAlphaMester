@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/13. Egy törzs leghosszabb békés időszaka *",
+    "method": "Kezdés szerint rendezés, majd a legnagyobb szabad szakasz keresése a legkésőbbi befejezés alapján.",
+    "category": "Intervallumok, rések keresése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "rendezés",
+      "maximum"
+    ],
+    "note": "Időmérés: 3 ms a legnagyobb mintán (K=623), időlimit 0,3 mp. A szöveg a háborúkhoz N sort említ, a minták K sort tartalmaznak; a megoldás K sort olvas.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/14. Egy törzs leghosszabb háborúja *",
+    "method": "Lineáris bejárás, a kérdezett törzs háborúi közül a leghosszabb keresése.",
+    "category": "Keresés, maximum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "keresés",
+      "maximum",
+      "intervallum"
+    ],
+    "note": "Megjegyzés: a be2 minta ki2 sora („4 1866 1882”) ellentmond a feladatnak. A 4-es törzs egyetlen háborúja a „4 282 1866 1882” sor, így az ellenséges törzs 282, nem 4; a program 282 1866 1882-t ad. A be1 minta egyezik. Kérdés: a minta hibás-e, vagy a feladat a háborúzó (első oszlopú) törzset kéri? A 15. feladat mintája az ellenséget írja, ezért a második értelmezés ellentmondana neki. Időmérés: 3 ms a legnagyobb mintán (időlimit 0,3 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/15. Egy törzs legrövidebb háborúja *",
+    "method": "Lineáris bejárás, a kérdezett törzs háborúi közül a legrövidebb keresése.",
+    "category": "Keresés, minimum",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "keresés",
+      "minimum",
+      "intervallum"
+    ],
+    "note": "Időmérés: 3 ms a legnagyobb mintán (K=623), időlimit 0,3 mp. A szöveg a háborúkhoz N sort említ, a minták K sort tartalmaznak; a megoldás K sort olvas.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/16. Egy törzs legrövidebb háborús időszaka *",
+    "method": "Kezdés szerint rendezés, átfedő háborúk összevonása, a legrövidebb összevont időszak keresése.",
+    "category": "Intervallum-összevonás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "összevonás",
+      "rendezés"
+    ],
+    "note": "Megjegyzés: a be1 minta (ki1: „1752 1758”) nem egyezik a feladat szövegével. Az 1-es törzs háborúi összevont időszakai 1696–1736 és 1752–1805, a legrövidebb tehát 1696 1736, ezt adja a task.cpp. Az 1752 1758 csak akkor jön ki, ha a következő háború kezdetét az előző háború (és nem a legkésőbbi) befejezéséhez hasonlítjuk; a feladat kimenet-szövege („béke kezdeti, befejezési dátuma”) pedig a békére utal. Kérdés: melyik értelmezés a helyes. Időmérés: 3 ms (időlimit 0,3 mp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

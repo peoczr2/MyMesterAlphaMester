@@ -1,11 +1,12 @@
 /*
-Feladat: A rendezett osztálynévsorokat a lehető legkevesebb lépésben kell összefésülni.
-Ötlet: Ez az optimális összefésülési fa klasszikus esete: mindig a két legkisebb sorozatot érdemes összefésülni, vagyis Huffman-stratégia.
-Hint 1: || Ha két sorozatot összefűzöl, a költségük összeadódik. ||
-Hint 2: || A kisebb sorozatokat érdemes előbb egymáshoz adni, mert így később kevesebbszer fizeted meg ugyanazokat az elemeket. ||
-Hint 3: || Min-heapből mindig a két legkisebbet vedd ki. ||
+Megoldás lényege:
+Egy osztály tanulói annyiszor számítanak bele az összköltségbe, ahány összefésülésben részt vesznek, vagyis a költség az összefésülési fában a levelek súlyozott mélységösszege. Ezt a Huffman-stratégia minimalizálja: mindig a két legkisebb sorozatot egyesítjük, így a kicsik kerülnek a legmélyebbre, a nagyok a gyökér közelébe. Min-heapben ez O(N log N) időben megvalósítható, a költségek összege miatt 64 bites egészeket használunk.
 */
-
+/*
+Hint 1: || Egy osztály tanulói annyiszor kerülnek be a költségbe, ahány összefésülésben részt vesznek. ||
+Hint 2: || A kisebb sorozatokat érdemes előbb egymáshoz adni, mert így később kevesebbszer fizeted meg ugyanazokat az elemeket. ||
+Hint 3: || Min-heapből mindig a két legkisebbet vedd ki, egyesítsd, az összeget pedig tedd vissza a heapbe. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

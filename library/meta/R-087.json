@@ -1,0 +1,98 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/1. Fizetős utak",
+    "method": "0-1 BFS a fizetős élek számával súlyozva, szülőmutatókból az útvonal visszaállítása",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "legrövidebb út",
+      "0-1 bfs"
+    ],
+    "note": "A feladat szerint bármelyik megfelelő útvonal kiírható; a kimenetet külön ellenőrző program igazolja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/10. Vásárlások",
+    "method": "Napokon végigmenő bitmask-DP a megvett termékek halmazával, visszakövetéssel a napok",
+    "category": "Dinamikus programozás: bitmask",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "bitmask",
+      "visszakövetés"
+    ],
+    "note": "Több optimális napkiosztás is elfogadható (a be1 mintában a 4 8 7 is 5 összegű), ezt külön ellenőrző program igazolja; a validátor pontos egyezése miatt hibásnak jelzi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/11. Telephelyek",
+    "method": "Minden csúcsból Dijkstra, a három telephelyre vezető utak uniója közül a legolcsóbb",
+    "category": "Gráf: Steiner-fa",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "legrövidebb út",
+      "steiner-fa"
+    ],
+    "note": "Más optimális élhalmaz és az élek fordított sorrendje is elfogadható; a költségeket és az összekötöttséget külön ellenőrző program igazolja, a validátor pontos egyezése miatt hibásnak jelzi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/12. Konténer pakolás",
+    "method": "Prefix- és suffix-LIS-értékek szegmensfában, a K-adik elem szerinti söpréssel",
+    "category": "LIS, szegmensfa",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "lis",
+      "szegmensfa",
+      "söprés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/13. Párhuzamos kiszámítás",
+    "method": "Kritikus út adja az időt; a processzorszámot Hu-féle ütemezéssel, bináris kereséssel",
+    "category": "Fakifejezés: ütemezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "ütemezés",
+      "bináris keresés"
+    ],
+    "note": "A korábbi ceil(műveletszám/idő) képlet a 2. mintán hibázott (1389 a várt 2001 helyett), ezért a processzorszámot ütemezéssel és bináris kereséssel számoljuk.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/14. Táblás játék",
+    "method": "Oszlopmagasság-intervallumok rekurziója, a gyerekek polinomjainak konvolúciója",
+    "category": "Dinamikus programozás: konvolúció",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus programozás",
+      "rekurzió",
+      "konvolúció"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

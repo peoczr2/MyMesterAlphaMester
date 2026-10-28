@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/5. Vám",
+    "method": "Floyd–Warshall-távolságok csúcsvámmal, új út esetén O(N²) frissítés a régi távolságokból.",
+    "category": "Legrövidebb utak, online frissítés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["legrövidebb út", "gráf", "online"],
+    "note": "Speciális: interaktív (vamok modul), a minta.zip nem tartalmaz be/ki párt, ezért a validátor nem tesztel. Saját ellenőrző (library/.work/HA-093/chk) véletlen kis gráfokon az összes egyszerű utat végigpróbálva, közepes méretben (N≤25, teljes újraszámolással) egyezett. Feltevés: a vám a kiinduló és a végső települést is tartalmazza, azaz az út minden települése fizet; ha csak az érintetlen köztes településeket kell számolni, a kiinduló vámot le kell vonni. Kimenet: minden t=1 kérdésre egy sor, -1, ha nincs út (a PDF nem ír ki formátumot).",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/6. Autómosó",
+    "method": "Mosónkénti befejezési idők: a K-adik utolsó adja a szabad időpontot, majd a legkorábbi befejezésű mosó.",
+    "category": "Szimuláció, sorok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["szimuláció", "sor", "időpont"],
+    "note": "Speciális: interaktív (moso modul), a minta.zip csak be1.txt-t tartalmaz kimenet nélkül, ezért a validátor nem tesztel. Saját ellenőrző (library/.work/HA-093/chk) időpontonként újraszámoló referenciával egyezett véletlen, kis tesztekben és ~2000 autós tesztekben is. Minta-eltérés: be1.txt első autója e=0, a PDF szerint e≥1, és a moso modul az e=0 sort végjelnek veszi; a megoldás csak a 0 0 sorra áll meg, így be1-re a kimenet 3 3 6 4 6 7. Döntések: a sorban az is számít, aki éppen mosódik; holtversenynél a kisebb sorszámú mosó. Kimenet: minden autóra a befejezési idő, soronként. Időigény: 100 000 autóra kb. 0,02 s.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/7. Legkisebb kizárt ***",
+    "method": "Unió-keresés a következő szabad számra: beszúráskor a szám a következőre mutat, útkompresszióval.",
+    "category": "Unió-keresés, legkisebb kizárt",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["unió-keresés", "halmaz", "tömb"],
+    "note": "Speciális: grader-alapú (lekiki modul), a minta.zip üres, ezért a validátor nem tesztel. A PDF nem ad szabványos bemeneti formátumot: a main() helyi próbaprotokollt használ (első sor a műveletek száma, utána 'A x' = Adat(x), 'M a' = Mex(a); a Mex eredményeit soronként írjuk ki). Az Adat és Mex függvények a lekiki.h deklarációjával egyeznek, de a grader foprog.cpp saját main()-t ad, ezért a task.cpp-t azzal együtt a main() törlése nélkül nem lehet fordítani. Saját ellenőrző: véletlen kis tesztek és 10^7-es értékű, 20 000 műveletes teszt naiv Mex-keresés szerint egyezett.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Interaktív feladatok, online algoritmusok/8. Ismerősök ***",
+    "method": "Feszítőerdő karbantartása; törlésnél a két fa-rész közti pótélt szomszédsági bitsorokkal keressük.",
+    "category": "Dinamikus összefüggőség, feszítőerdő",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["összefüggőség", "feszítőerdő", "bitset"],
+    "note": "Speciális: a minta ismer modul interaktív, a helyes csoportszámokat a minta bemenetének páros sorai tartalmazzák; a validátor nem tesztel. A bemenetet tokenenként olvassuk, így ezek a számsorok kimaradnak; a kimenet minden f/t műveletre egy sor: a csoportok száma. Többszörös ismeretség esetén a párokat számlálva kezeljük; ha a bemenet ugyanazt a párt többször nem veszi fel, ez nem számít. Saját ellenőrző: N≤7 és N=60 (2000 művelet) mellett minden lépés után újraszámolt komponensszám egyezett; N=1000, 150 000 művelet mellett 0,26 s.",
+    "minta": "speciális",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

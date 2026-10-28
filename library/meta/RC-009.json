@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/44. Ritka szám",
+    "method": "Fibonacci-számlálás bithosszonként, majd greedy bitépítés a sorszám alapján.",
+    "category": "Fibonacci, bináris számok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["fibonacci", "bitek", "greedy"],
+    "note": "A 0 is ritka szám, ő a sorozat első eleme (a mintából: N=3 → 2), ezért az N-1-edik pozitív ritka számot állítjuk elő.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/45. Páratlan számok",
+    "method": "A számokat sorban végignézzük, és a páratlan popcountúakat számoljuk az i-edikig.",
+    "category": "Bitműveletek, popcount",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["popcount", "bitek", "paritás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/46. Számok előállítása",
+    "method": "Maradékosztályonként a legkisebb előállítható összeg, körbejárásos frissítéssel; lekérdezésenként minimum.",
+    "category": "Maradékosztályok, legrövidebb út",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["maradékosztály", "legrövidebb út", "körbejárás"],
+    "note": "Helyi mérés szerint a legrosszabb eset (n=5000, legkisebb A kb. 45000) kb. 0,6 mp, az időlimit 0,3 mp; a mintákon minden stimmel, a szigorú időlimit ebben az esetben nem garantált.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/47. Kastély",
+    "method": "Kastélyonként az összes oldalhossz legnagyobb közös osztója (gcd-lánc).",
+    "category": "Legnagyobb közös osztó",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["gcd", "euklidész", "osztók"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

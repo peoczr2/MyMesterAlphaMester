@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/13. Árvízmentes szakaszok közötti elsőfokú árvizek **",
+    "method": "Szintekre bontás, majd egy bejárás az árvizeket és a bennük csökkenő szinteket gyűjti.",
+    "category": "Futamok keresése",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "árvíz",
+      "futam",
+      "szintek"
+    ],
+    "note": "Értelmezés: a sorozat szélén álló elsőfokú árvizet nem számoltam, mert nincs mindkét oldalán árvízmentes szomszédos szakasz. Mért futásidő N=10000 bemeneten: kb. 0,003 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/14. Árvízvédelmi készültség csökkenésű árvizek ***",
+    "method": "Szintekre bontás, majd egy bejárás az árvizeket és a bennük csökkenő szinteket gyűjti.",
+    "category": "Futamok keresése",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "árvíz",
+      "futam",
+      "csökkenés"
+    ],
+    "note": "Mért futásidő N=10000 bemeneten: kb. 0,003 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/15. Az első harmadfokú árvizet is tartalmazó árvíz leghosszabb harmadfokú árvize ***",
+    "method": "Első olyan árvíz keresése, amelyben van legalább 2 hosszú harmadfokú futam; belső bejárás.",
+    "category": "Futamok keresése",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "árvíz",
+      "futam",
+      "leghosszabb"
+    ],
+    "note": "Értelmezés: a kiírt harmadfokú szakaszok is legalább 2 hosszúak (a „folyamatos” jelző szerint); a minta ezt nem különbözteti meg attól, ha az egyelemű harmadfokú pontokat is kiírnánk. Mért futásidő N=10000 bemeneten: kb. 0,003 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/16. Azon helyek,ahol a készültség az előzőhöz képest legalább 2 fokozattal nőtt **",
+    "method": "Szomszédos mérések szintkülönbségének vizsgálata egyetlen bejárásban.",
+    "category": "Szomszédos párok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "árvíz",
+      "szomszédos",
+      "összehasonlítás"
+    ],
+    "note": "Mért futásidő N=10000 bemeneten: kb. 0,003 s (időlimit 0,1 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

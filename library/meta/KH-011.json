@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/1. Abszolút győztes, de minden szempont szerint van jobb *",
+    "method": "Kiesési szűrés, összpontszám-maximum, szempontonkénti maximum összevetése",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["kiválogatás", "maximum", "összehasonlítás"],
+    "note": "Bizonytalan pont: a „győzött” és a „jobb” összevetés csak a bennmaradó kutyák között értendő, a holtversenyes győzelem győzelemnek számít, és elég egy ilyen győztes a VAN-hoz. Ezt a mintákból következtettem: ha minden kutya között néznénk, a be2 minta VAN lenne, a minta viszont NINCS.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/10. Kutyapár egyike minden szempont szerint több pontot kapott a másiknál **",
+    "method": "Páronkénti összehasonlítás: minden szempontban szigorúan nagyobb-e",
+    "category": "Párok összehasonlítása",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["páros", "összehasonlítás", "eldöntés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/11. Kutyaszépségverseny -  *",
+    "method": "Szempontonkénti kiválogatás alsó határral, csökkenő rendezés pontszám szerint",
+    "category": "Feltételes rendezés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "kiválogatás", "küszöb"],
+    "note": "Kézi: a feladat nem rögzíti a holtversenyes kutyák sorrendjét, ezért több helyes kimenet van. A minta be1 3. sora „4 2 3 1 5 6”, a megoldásé „4 2 1 3 5 6” (azonos pontszámú kutyák sorszám szerint); az érvényességet a library/.work/KH-011/check11.py ellenőrzi, mindkét minta és a megoldás kimenete átmegy.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/12. Kutyaszépségverseny - az összetett verseny sorrendje *",
+    "method": "Kiesők szűrése, összpontszám szerinti csökkenő rendezés, holtverseny sorszám szerint",
+    "category": "Összegzés és rendezés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "összeg", "holtverseny"],
+    "note": "Kézi: a be2 mintakimenet (ki2) „3 2 6 1 1” hibás, mert az 1-es sorszám kétszer szerepel, a 4-es kutya (összpontszám 48, minden szempontban eléri az alsó határt) pedig hiányzik. A független referencia (library/.work/KH-011/ref.py) és a megoldás „3 2 6 1 4”-et ad; a be1 minta egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

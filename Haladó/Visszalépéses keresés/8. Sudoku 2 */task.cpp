@@ -1,7 +1,9 @@
 /*
-Hungarian megoldás: a 4x4-es sudoku összes szabályos kitöltését előállítjuk,
-és megszámoljuk, melyek illeszkednek a megadott táblára.
-
+Megoldás lényege: a 4x4-es sudoku összes szabályos kitöltését (288 darab) visszalépéses
+kereséssel állítjuk elő, majd megszámoljuk, hány közülük illeszkedik a megadott táblára.
+A táblák száma kicsi, így a teljes felsorolás néhány ezer lépésben lefut.
+*/
+/*
 Hint 1: || A méret kicsi, ezért a teljes 4x4-es megoldáshalmaz végigjárható. ||
 Hint 2: || A megadott számokkal ellentmondó táblák kiesnek. ||
 */
@@ -47,6 +49,7 @@ void gen() {
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+    if (cin.peek() == 0xEF) { cin.get(); cin.get(); cin.get(); }  // UTF-8 BOM átugrása (a minta-fájlok tartalmazhatják)
     for (int i = 0; i < 4; ++i) for (int j = 0; j < 4; ++j) cin >> a[i][j];
     gen();
     long long cnt = 0;

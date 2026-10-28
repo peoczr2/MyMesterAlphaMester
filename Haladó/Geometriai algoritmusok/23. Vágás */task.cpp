@@ -15,6 +15,10 @@ különben C = (K+1)/2.
 
 Idő: O(N)
 */
+/*
+Hint 1: || A darabok száma 1 + (az út belső szakaszainak száma). Mivel A és B a földön kívül van, az AB szakasz minden belső szakasza egy belépő és egy kilépő metszésponttal rendelkezik, így a metszéspontok száma páros. ||
+Hint 2: || Számold meg, hány olyan sokszög-él metszi az AB szakaszt, amelynek két végpontja az AB egyenes két külön oldalán van, és ahol az AB szakasz két végpontja az él egyenesének két oldalán van. A fordulások előjelével, egész számokkal dönts. ||
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

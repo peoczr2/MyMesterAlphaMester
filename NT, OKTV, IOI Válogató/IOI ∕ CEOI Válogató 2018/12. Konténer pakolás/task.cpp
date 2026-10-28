@@ -1,7 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
+Megoldás lényege:
   A minimum toronyszám megegyezik a sorozat LIS-hosszával.
   Egy lekérdezésben csak az K-adik elem változik H-ra, ezért két esetet nézünk:
   - a toronyhasználat tartalmazza az új elemet,
@@ -19,6 +17,13 @@ using namespace std;
   A K-t balról jobbra söpörve csak egy prefix- és egy suffix-érték változik lépésenként,
   ezért minden frissítés O(log V), a lekérdezés pedig O(log V).
 */
+/*
+Hint 1: || Próbáld ki a sorozat szigorúan növekvő részsorozatainak (LIS) leghosszabbját: kis példákon (pl. 2 4 3 7) nézd meg, hogy a toronyszám ezzel a hosszal egyezik-e. ||
+Hint 2: || Mivel minden kérdésben csak egyetlen elem változik, a sorozatot a K-adik elem előtti és utáni részre bonthatod, és mindkét részre előre kiszámolhatók a legjobb LIS-hosszak (balról a végződő, jobbról a kezdő részsorozatok). ||
+Hint 3: || A H értékkel áthaladó legjobb növekvő részsorozat hossza: a H-nál kisebb értékre végződő legjobb prefix-hossz + 1 + a H-nál nagyobb értékkel kezdődő legjobb suffix-hossz. Ezt K balról jobbra haladva, értékek szerint koordinátakompresszióval, szegmensfában tartsd karban. ||
+*/
+#include <bits/stdc++.h>
+using namespace std;
 
 struct FastScanner {
     static const int SZ = 1 << 20;

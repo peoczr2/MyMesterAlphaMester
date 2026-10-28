@@ -1,6 +1,8 @@
 /*
- * Az i. olyan szám, amelynek bináris alakjában páros számú 1-bit van.
- 
+Megoldás lényege:
+Az 1-től kezdve sorban végigmegyünk a számokon, és mindegyikben a __builtin_popcountll függvénnyel megszámoljuk a bináris alakjában lévő 1-eseket. Ha ez a szám páros, a számlálót eggyel növeljük; amint a számláló eléri i-t, az éppen vizsgált szám a keresett érték. A 0-t kihagyjuk, mert a feladatban a természetes számok 1-től indulnak. Az ilyen számok aránya kb. 1/2, így az i-edik szám közelítőleg 2i, és a futásidő O(i), ami i ≤ 1 000 000 esetén gyors.
+*/
+/*
 Hint 1: || Itt is a `popcount` a lényeg, csak most a páros darabszámú 1-biteket kell keresni. ||
 Hint 2: || Növeld sorban a természetes számokat, és akkor növeld a számlálót, ha a bináris alak 1-eseinek száma páros. ||
 */

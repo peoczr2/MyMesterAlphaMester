@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/75. Háromértékű szelet",
+    "method": "Csúszóablak, számláló-map, legfeljebb három különböző értékkel",
+    "category": "Csúszóablak: különböző értékek",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "map", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/76. Világcsúcsok közötti legnagyobb időkülönbség *",
+    "method": "Szomszédos sorok évkülönbségének maximumkiválasztása egy menetben",
+    "category": "Maximumkiválasztás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "tömb", "szomszédos"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/77. Szélsőséges időjárás ***",
+    "method": "Csúszóablak két monoton deque-kel, a szélső értékek tartására",
+    "category": "Csúszóablak: min és max",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "deque", "minimum-maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: minimum, maximum számítás/78. Szélsőséges időjárás",
+    "method": "Csúszóablak két monoton deque-kel, a szélső értékek tartására",
+    "category": "Csúszóablak: min és max",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "deque", "minimum-maximum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

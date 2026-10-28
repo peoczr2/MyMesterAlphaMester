@@ -1,10 +1,11 @@
 /*
 Megoldási ötlet:
-Az intervallumhalmazt egy kulcs szerint rendezett, kiegyensúlyozott fával tároljuk. Minden csúcs egy [l,r] intervallum,
-és a részfájában eltároljuk a legnagyobb jobb végpontot.
+Az intervallumhalmazt (l,r) szerint rendezett, véletlen prioritású fával (treap) tároljuk. Minden csúcs egy [l,r] intervallum,
+és a részfájában eltároljuk a legnagyobb jobb végpontot. Egy intervallum a halmazban csak egyszer szerepel.
 
 A MetszKeres lekérdezésnél az intervallumfa klasszikus logikáját használjuk: ha a bal részfában van olyan intervallum,
 amelynek jobb vége eléri az [xa,xb] bal szélét, akkor balra megyünk, különben a jelenlegi csúcsot vizsgáljuk, majd jobbra.
+Minden művelet várhatóan O(log n) idejű.
 */
 /*
 Hint 1: || Egy intervallum akkor metsz egy másikat, ha a kezdete nem nagyobb a másik végénél és fordítva. ||
@@ -51,23 +52,38 @@ static bool lessInterval(int l1, int r1, int l2, int r2) {
     return l1 < l2 || (l1 == l2 && r1 < r2);
 }
 
+static void split(Node* node, int l, int r, Node*& left, Node*& right) {
+    if (!node) { left = right = nullptr; return; }
+    if (lessInterval(node->l, node->r, l, r)) {
+        split(node->right, l, r, node->right, right);
+        left = node;
+        pull(left);
+    } else {
+        split(node->left, l, r, left, node->left);
+        right = node;
+        pull(right);
+    }
+}
+
 static Node* insertNode(Node* node, Node* item) {
     if (!node) return item;
     if (item->pr > node->pr) {
-        if (lessInterval(item->l, item->r, node->l, node->r)) {
-            item->left = insertNode(node->left, item);
-            item->right = node;
-        } else {
-            item->left = node;
-            item->right = insertNode(node->right, item);
-        }
+        split(node, item->l, item->r, item->left, item->right);
         pull(item);
         return item;
     }
     if (lessInterval(item->l, item->r, node->l, node->r)) node->left = insertNode(node->left, item);
-    else if (lessInterval(node->l, node->r, item->l, item->r)) node->right = insertNode(node->right, item);
+    else node->right = insertNode(node->right, item);
     pull(node);
     return node;
+}
+
+static bool contains(const Node* node, int l, int r) {
+    while (node) {
+        if (node->l == l && node->r == r) return true;
+        node = lessInterval(l, r, node->l, node->r) ? node->left : node->right;
+    }
+    return false;
 }
 
 static Node* eraseNode(Node* node, int l, int r) {
@@ -96,6 +112,7 @@ static bool search(Node* node, int xa, int xb, int& a, int& b) {
 }
 
 void Bovit(int a, int b) {
+    if (contains(root, a, b)) return;
     root = insertNode(root, new Node(a, b, static_cast<int>(rng())));
 }
 

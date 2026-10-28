@@ -1,8 +1,9 @@
 /*
-Itt ugyanaz a megfigyelés érvényes, mint az előző feladatnál: a levett blokkok helye üresen marad, ezért a
-későbbi lépésekben sem olvadnak össze a blokkok. Így legfeljebb L darab, egymást nem átfedő, pontosan H hosszú
-blokkból kell kiválasztani a maximális összsúlyút. A DP-ben dp[t][i] az első i elemre adja a legjobb értéket
-t kiválasztott blokkal; szülőinformációval a blokkok kezdőpozíciói visszafejthetők.
+A levett blokkok helye üresen marad, és egy lépésben csak összefüggő számsor vehető el, ezért minden lépés az
+eredeti sorozat egy pontosan H hosszú, más lépésekkel nem átfedő szakaszát veszi le. Így legfeljebb L darab
+egymást nem átfedő, H hosszú szakaszt kell kiválasztani a maximális összegű szakaszösszeggel. A DP-ben dp[t][i]
+az első i elemre adja a legjobb értéket t kiválasztott szakasszal; a szülőinformációval a kezdőpozíciók
+visszafejthetők. Az időigény O(L*N), a lépések sorrendje tetszőleges.
 */
 /*
 Hint 1: || Az üresen maradó helyek miatt nem alakulnak ki új H hosszú blokkok a lyukakon át. ||

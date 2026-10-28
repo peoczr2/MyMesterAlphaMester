@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/142. Legtöbbször szomszédok",
+    "method": "Pontszámonkénti számlálók rendezett halmazzal: Ló előtti és utáni legközelebbi pontszám ugrásonként",
+    "category": "Rendezett halmaz: szomszédok",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["rendezett halmaz", "számlálás", "szomszédok"],
+    "note": "A számlálás az ugrások időpontjait számolja: a Ló ugrásától (a Ló ugrását is beleértve) az utolsó ugrásig tartó időpontokat. Ezt a minta igazolja (1. versenyző: 8, 6. versenyző: 4). Holtverseny esetén minden, a legközelebbi pontszámot birtokló versenyző egyaránt számít.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/143. Vásárlás",
+    "method": "Az A-nál vett szakasz: legkisebb összegű összefüggő részsorozat (Kadane) az árkülönbségekből",
+    "category": "Részsorozat: legkisebb összeg",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["részsorozat", "szélsőérték", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/144. TV szolgáltatók",
+    "method": "Fix K hosszú szakasz, a költség konvex x-ben, bináris keresés a minimumra",
+    "category": "Bináris keresés: konvex költség",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["bináris keresés", "konvexitás", "intervallum"],
+    "note": "A szolgáltató többszöri terjeszkedését (több lépés, mindegyik 1 petákba kerül) a minta igazolja: a mintában az optimális [3;4] szakaszhoz az 1. szolgáltatónak két lépés kell, és csak így adódik a 4 peták. A feladatszöveg ezt nem mondja ki expliciten.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/145. Földvásárlás",
+    "method": "Csúszóablakos összegzés, a minimum és darabszáma egy bejárásban",
+    "category": "Csúszóablak: összeg, számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["csúszóablak", "összeg", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

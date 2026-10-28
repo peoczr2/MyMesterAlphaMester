@@ -1,9 +1,10 @@
 /*
 Megoldási ötlet:
-Most minden tagnak legfeljebb K sorszámozott közvetlen beosztottja lehet. Az új tag minden olyan helyre kerülhet,
+Minden tagnak legfeljebb K sorszámozott közvetlen beosztottja lehet. Az új tag minden olyan helyre kerülhet,
 ahol valamelyik csúcs egy közvetlen beosztotti helye még üres. Egy csúcs saját üres helyeinek száma `K - gyerekszám`.
 
-Számoljuk ki minden részfára az összes üres hely számát. Ekkor:
+Számoljuk ki minden részfára az összes üres hely számát, a gyerekeket a szülő előtt feldolgozva
+(a bejárási sorrend fordítottját használva, mert a sorszámok nem feltétlenül követik a főnök sorrendjét). Ekkor:
 - az első kérdés válasza a főnök üres helyeinek száma;
 - a második kérdés i-edik válasza a főnök i-edik közvetlen beosztottjának részfájában levő összes üres hely,
   vagy 0, ha ilyen i-edik beosztott nincs.
@@ -37,8 +38,16 @@ int main() {
         ++childCount[boss];
     }
 
+    vector<int> order = {1};
+    for (size_t i = 0; i < order.size(); ++i) {
+        for (int child : children[order[i]]) {
+            order.push_back(child);
+        }
+    }
+
     vector<int> subtreeFree(n + 1, 0);
-    for (int node = n; node >= 1; --node) {
+    for (int i = (int)order.size() - 1; i >= 0; --i) {
+        int node = order[i];
         subtreeFree[node] = k - childCount[node];
         for (int child : children[node]) {
             subtreeFree[node] += subtreeFree[child];

@@ -1,11 +1,12 @@
 /*
-Feladat: N napra adott napi kapacitások és M darab 1 órás munka határidővel. Maximum hány munka végezhető el határidőre?
-Ötlet: Ha d napig összesen C[d] munkaóra áll rendelkezésre (prefix összeg), akkor legfeljebb C[d] darab, d-ig lejáró munka teljesíthető. A határidőket növekvőre rendezzük, és mohón elfogadunk egy munkát, ha az aktuális elfogadott darabszám +1 még belefér a megfelelő prefix-kapacitásba.
+Megoldás lényege:
+Ha d napig összesen C[d] munkaóra áll rendelkezésre (prefixösszeg), akkor a d-ig lejáró munkákból legfeljebb C[d] teljesíthető. A határidőket növekvő sorrendben dolgozzuk fel, és egy munkát akkor fogadunk el, ha az eddig elfogadott munkák számánál eggyel nagyobb szám még belefér a munka határidejéig tartó prefix-kapacitásba. Mivel a korábban elfogadott munkák határideje nem nagyobb, elegendő az aktuális határidőt ellenőrizni. A mohó döntés optimális, mert a feladat a párosítások matroidjának esete. Az időigény O(N + M log M).
+*/
+/*
 Hint 1: || Prefix-korlát: d-ig legfeljebb az addigi napi kapacitások összege teljesíthető. ||
 Hint 2: || Határidő szerint rendezve minden munkáról azonnal eldönthető, hogy még befér-e. ||
-Hint 3: || Ez a döntés optimális, mert csak darabszámot maximalizálunk. ||
+Hint 3: || Ha az elfogadott darabszám + 1 nem fér be a munka határidejéig tartó kapacitásba, a munkát kihagyod. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

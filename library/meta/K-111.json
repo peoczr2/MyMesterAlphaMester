@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/120. Rosszsorrend ***",
+    "method": "Prefixmaximum és bináris keresés: minden elemhez a balról első nagyobb elemet keressük.",
+    "category": "Keresés, prefixmaximum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixmaximum", "bináris keresés", "tömb"],
+    "note": "A feladatszöveg csak a két értéket írja elő, a minta-fájlok (ki1, ki2) második sorában viszont a két elem távolsága (j-i) is szerepel (5, illetve 26); a megoldás a mintát követve ezt is kiírja. Ha a zsűri csak az első sort várja, a második sor elhagyandó.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/121. Xor ****",
+    "method": "Legmagasabb eltérő bit szerinti bontás, alsó párok komplementálása, két jelölt közül a nagyobb.",
+    "category": "Bitműveletek, xor maximalizálás",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["bitműveletek", "xor", "intervallum"],
+    "note": "A feladat szerint bármelyik optimális hármas megadható, ezért a minta-kimenet eltérhet (pl. a 2. teszt: minta 1 4 10, saját 3 4 8); az optimumot független digit-DP ellenőrző igazolja (library/.work/K-111/121/tools/check121.cpp).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/122. Rosszsorrend ***",
+    "method": "Prefixmaximum és bináris keresés: minden elemhez a balról első nagyobb elemet keressük.",
+    "category": "Keresés, prefixmaximum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixmaximum", "bináris keresés", "tömb"],
+    "note": "A 120. feladattal bájtra megegyező feladatszöveg és minta, ezért a megoldás is azonos; a második sor (távolság) kérdése lásd a 120. feladatnál.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/123. Eső ***",
+    "method": "Prefixösszeg (±1 minden napra), a jobb végpontot minden bal végponthoz hátulról keressük.",
+    "category": "Prefixösszeg, intervallumkeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "intervallum", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

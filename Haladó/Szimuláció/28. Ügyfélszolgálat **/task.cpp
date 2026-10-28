@@ -1,15 +1,13 @@
 /*
-Az ügyfélszolgálat modellje típusonként külön sorokat és a következő szabad kapu időpontját követi. A feladat lényege az események helyes sorrendjének fenntartása, hogy mindig a következő érkezést vagy felszabadulást kezeljük.
+Eseményvezérelt szimuláció: a várakozók érkezési sorrendben állnak egy FIFO sorban, a szabad pultok egy min-heapben vannak, így mindig a legkisebb sorszámú szabad pult adódik. A foglalt pultok egy prioritásos sorban (távozási idő, pult) szerepelnek. Minden eseményidőpontban előbb a felszabaduló pultokat tesszük szabaddá, utána a megérkezőket sorba állítjuk, végül a sor elejét a legkisebb szabad pultra ültetjük, és rögzítjük a várakozást. A munkanap vége a legkésőbbi E+H, a várakozók maximuma az egyes időpontok utáni sorhossz maximuma. A futásidő O(N log(N+M)).
 */
 /*
-Hint 1: || Az ügyfeleket típusonként külön sorban tartsd nyilván, és mindig az érkezési sorrend maradjon meg. ||
-Hint 2: || A következő esemény a legközelebbi érkezés vagy felszabadulás lesz; ezek közül kell ugrani a következő időpontra. ||
+Hint 1: || Az ügyfeleket érkezési sorrendben egy sorban tartsd, a szabad pultok közül pedig mindig a legkisebb sorszámút válaszd. ||
+Hint 2: || A következő esemény mindig a legkorábbi érkezés vagy a legkorábbi pultfelszabadulás; eseménynél előbb a felszabadulásokat dolgozd fel, utána az érkezőket, és csak ezután ültesd le a sor elejét. ||
 */
 
 #include <bits/stdc++.h>
 using namespace std;
-
-struct Client { long long arrival, service; int id; };
 
 int main() {
     ios::sync_with_stdio(false);
@@ -17,49 +15,44 @@ int main() {
 
     int m, n;
     cin >> m >> n;
-    vector<long long> desk_time(m + 1);
-    for (int i = 1; i <= m; ++i) cin >> desk_time[i];
+    vector<long long> arrival(n), service(n);
+    for (int i = 0; i < n; ++i) cin >> arrival[i] >> service[i];
 
-    vector<Client> c(n);
-    for (int i = 0; i < n; ++i) { cin >> c[i].arrival >> c[i].service; c[i].id = i + 1; }
+    priority_queue<int, vector<int>, greater<int>> freeDesks;
+    for (int d = 1; d <= m; ++d) freeDesks.push(d);
+    priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> busy;
 
-    queue<Client> q;
-    priority_queue<pair<long long,int>, vector<pair<long long,int>>, greater<pair<long long,int>>> busy;
-    priority_queue<int, vector<int>, greater<int>> free_desks;
-    for (int i = 1; i <= m; ++i) free_desks.push(i);
-
-    vector<int> desk_of(n + 1, 0);
-    long long best_wait = 0, max_queue = 0;
-    long long workday_end = 0;
+    vector<int> deskOf(n, 0);
+    queue<int> waiting;
+    long long bestWait = 0, maxQueue = 0, dayEnd = 0;
     int idx = 0;
-    long long time = 0;
 
-    while (idx < n || !q.empty() || !busy.empty()) {
-        long long next_arrival = idx < n ? c[idx].arrival : LLONG_MAX;
-        long long next_finish = busy.empty() ? LLONG_MAX : busy.top().first;
-        time = min(next_arrival, next_finish);
+    while (idx < n || !waiting.empty() || !busy.empty()) {
+        long long nextArrival = idx < n ? arrival[idx] : LLONG_MAX;
+        long long nextFinish = busy.empty() ? LLONG_MAX : busy.top().first;
+        long long now = min(nextArrival, nextFinish);
 
-        while (!busy.empty() && busy.top().first <= time) {
-            free_desks.push(busy.top().second);
+        while (!busy.empty() && busy.top().first <= now) {
+            freeDesks.push(busy.top().second);
             busy.pop();
         }
-        while (idx < n && c[idx].arrival <= time) q.push(c[idx++]);
+        while (idx < n && arrival[idx] <= now) waiting.push(idx++);
 
-        while (!q.empty() && !free_desks.empty()) {
-            Client cur = q.front(); q.pop();
-            int desk = free_desks.top(); free_desks.pop();
-            desk_of[cur.id] = desk;
-            best_wait = max(best_wait, time - cur.arrival);
-            long long finish = time + desk_time[desk];
-            workday_end = max(workday_end, finish);
-            busy.push({finish, desk});
+        while (!waiting.empty() && !freeDesks.empty()) {
+            int c = waiting.front();
+            waiting.pop();
+            int d = freeDesks.top();
+            freeDesks.pop();
+            deskOf[c] = d;
+            bestWait = max(bestWait, now - arrival[c]);
+            long long finish = now + service[c];
+            dayEnd = max(dayEnd, finish);
+            busy.push({finish, d});
         }
-
-        max_queue = max<long long>(max_queue, q.size());
-        if (q.empty() && busy.empty() && idx < n && time < c[idx].arrival) time = c[idx].arrival;
+        maxQueue = max(maxQueue, (long long)waiting.size());
     }
 
-    cout << workday_end << ' ' << best_wait << ' ' << max_queue << '\n';
-    for (int i = 1; i <= n; ++i) cout << desk_of[i] << '\n';
+    cout << dayEnd << ' ' << bestWait << ' ' << maxQueue << '\n';
+    for (int i = 0; i < n; ++i) cout << deskOf[i] << '\n';
     return 0;
 }

@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Mohó algoritmusok/68. Segély",
+    "method": "Bináris keresés a D különbségre, minden prefixre alsó korlát ellenőrzése.",
+    "category": "Bináris keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "bináris",
+      "prefixösszeg",
+      "korlát"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/69. Jelzőlámpák",
+    "method": "Rendezés után mohó láncbontás: minden pont a legnagyobb még jó láncába kerül.",
+    "category": "Láncfedés (Dilworth)",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rendezés",
+      "lánc",
+      "dilworth"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/7. Dominó ***",
+    "method": "DP a lánc két végpontjára (10x10 tábla), dominónként átmenetekkel.",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus",
+      "állapot",
+      "dominó"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/70. Utazásszervezés *",
+    "method": "Mohó elfogadás kezdőnap szerint, prioritási sorral a foglalt idegenvezetőkről.",
+    "category": "Intervallum-ütemezés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "ütemezés",
+      "intervallum"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/71. Fasor **",
+    "method": "Két irányú csúszóablakos maximum, az első olyan fa keresése.",
+    "category": "Csúszóablakos maximum",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "csúszóablak",
+      "maximum",
+      "deque"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Mohó algoritmusok/72. Ládapakolás raktárban ***",
+    "method": "DP az alapok számával, az utolsó torony jobb végpozíciója szerint.",
+    "category": "Dinamikus programozás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "dinamikus",
+      "torony",
+      "intervallum"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

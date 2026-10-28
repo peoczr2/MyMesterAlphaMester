@@ -1,0 +1,34 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/86. Sportos nyaralás",
+    "method": "Két DSU a komponensekhez, majd a (bicikli, vízi) komponens-párok csoportméretéből",
+    "category": "Gráf: komponensek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dsu",
+      "komponens"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/9. Autók ***",
+    "method": "BFS (pozíció, sebesség) állapotokon, cellánkénti előszámolt szabad szakaszokkal",
+    "category": "Gráf: szélességi bejárás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "bfs",
+      "állapottér"
+    ],
+    "note": "Megjegyzés: a minta.zip be2.txt fejléce hibás (\"30 302109744\": csak két szám, így K nem olvasható, M pedig a 200-as korlátot messze túllépi), a ki2.txt egy Free Pascal futásidejű hibaüzenet (Runtime error 106), nem kimenet; a validátor ezért időtúllépést jelez. A be1 példa egyezik (7), és a sebességszabályt is ez dönti el: pontosan ±1 változásnál be1-re 9 jönne ki, ezért a legfeljebb ±1 a helyes értelmezés. Az algoritmust 3000 véletlen kis teszten független, cellánkénti BFS-sel igazoltam (3000/3000 egyezés). Döntendő: a be2/ki2 mintapár javítása vagy törlése.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

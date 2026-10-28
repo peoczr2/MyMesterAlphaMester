@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Verseny/24. Egyetlen versenyben sem győztek",
+    "method": "Versenyenkénti maximum és összetett összeg, majd a nem nyertesek kiírása",
+    "category": "Maximumkeresés és összegzés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["maximum", "összegzés", "szűrés", "tömb"],
+    "note": "Az összetett verseny győztesét a jogosultak pontjainak összege dönti el (döntetlennel együtt); a minták ezt nem tesztelik, mert ott más tanuló nyer. Mért futásidő a 100x100-as bemeneten: 0,003 mp (korlát 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/25. Volt holtverseny",
+    "method": "Versenyenként a minimumot elérők maximumának számlálása",
+    "category": "Maximumkeresés, számlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["maximum", "számlálás", "holtverseny"],
+    "note": "Ha senki nem érte el a verseny minimumát, a versenyt nem vettem holtversenynek. Mért futásidő a 100x100-as bemeneten: 0,003 mp (korlát 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/3. Egyéni rangsorok",
+    "method": "Versenyenként szűrés, majd rendezés pont szerint csökkenőn, sorszám szerint növekvőn",
+    "category": "Rendezés, szűrés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "szűrés", "tömb"],
+    "note": "Mért futásidő a 100x100-as bemeneten: 0,004 mp (korlát 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Verseny/4. Eredménytelen versenyek",
+    "method": "Versenyenkénti logikai jelző: senki nem érte el a minimumot",
+    "category": "Keresés, logikai jelző",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "logikai", "tömb"],
+    "note": "Mért futásidő a 100x100-as bemeneten: 0,003 mp (korlát 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

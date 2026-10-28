@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/75. Társaság ***",
+    "method": "Bináris keresés a várakozási időre, alulról felfelé mohó kijelölés.",
+    "category": "Fa, bináris keresés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "bináris keresés", "mohó"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/79. Színes fa ***",
+    "method": "A legkisebb levélmélység adja a színek számát; színezés mélység szerint.",
+    "category": "Fa, színezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["fa", "színezés", "mélység"],
+    "note": "Több helyes színezés is megadható; a minta-egyezés mellett az ellenőrző program is igazolta (library/.work/HA-095/check_kezi.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/80. Szállítás ***",
+    "method": "A fa leghosszabb utas láncokra bontása, a K leghosszabb lánc összege.",
+    "category": "Fa, láncfelbontás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["fa", "mohó", "láncfelbontás"],
+    "note": "Bármelyik optimális kezdőpont-halmaz elfogadható. A validate.py hibásnak jelzi: a K-adik határon azonos hosszúságú láncok közül más városokat választ, és más sorrendben írja ki őket. Az ellenőrző program szerint a kimenet érvényes és optimális (807).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/81. Útadó ***",
+    "method": "Él-együttható 2·s·(N−s), majd átrendezési párosítás a maximumhoz.",
+    "category": "Fa, élek súlyozása",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["fa", "párosítás", "rendezés"],
+    "note": "Több helyes elosztás lehet; a minta-egyezés mellett az ellenőrző program is igazolta (library/.work/HA-095/check_kezi.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

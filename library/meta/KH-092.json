@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Vasútvonal/35. Több leszálló, mint felszálló *",
+    "method": "Egy bejárás, állomásonként a leszállók és felszállók összehasonlítása, a többen leszállók számlálása.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "tömb"],
+    "note": "Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/36. Többen szálltak fel, mint az előző állomáson *",
+    "method": "Egy bejárás, az előző állomás felszállóinak megjegyzése, az első olyan állomás keresése.",
+    "category": "Szomszédos elemek összehasonlítása",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "szomszédos elemek", "feltétel"],
+    "note": "Az „előző állomás” a közvetlenül megelőző állomás; csak akkor felel meg, ha ott is volt felszálló. Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/37. Többen szálltak volna le, mint ahányan voltak *",
+    "method": "Futó utaslétszám egy bejárásban, és minden állomáson összevetés a leszállók számával.",
+    "category": "Prefixösszeg, feltétel",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "szimuláció", "feltétel"],
+    "note": "Az „éppen a vonaton voltak” az állomás előtti utaslétszámot jelenti; ezt a minta 20 27 sora igazolja (19 utas volt a vonaton). Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Vasútvonal/38. Utasok száma nem változott *",
+    "method": "Egy bejárás, az első állomás keresése, ahol a leszállók és felszállók száma megegyezik.",
+    "category": "Feltételes keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "feltétel", "tömb"],
+    "note": "Több állomás is megfelelhet; a minta és a megoldás a legkisebb sorszámú találatot adja. Mért idő N=1000-en: 0,00 mp (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

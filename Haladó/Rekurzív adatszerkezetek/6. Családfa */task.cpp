@@ -11,7 +11,8 @@ A legnépesebb generációt a legnagyobb elemszám, holtversenyben a gyökérhez
 közelebbi generáció nyeri. A legkevesebb létszámú generációnál a gyökér saját
 generációja nem jöhet szóba, ezért a 2..maxDepth tartományban keresünk, ott is
 holtversenyben a kisebb sorszám nyer.
-
+*/
+/*
 Hint 1: || Minden generáció pontosan egy mélységi szintnek felel meg. ||
 Hint 2: || Számold meg szintenként a csomópontokat, és ebből választod ki a maximumot és minimumot. ||
 Hint 3: || A gyökér generációját nem szabad a minimumkeresésbe belevenni. ||

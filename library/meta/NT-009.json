@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/6. Erőművek",
+    "method": "Hídkeresés DFS-fával, részfa-összegek, legközelebbi párkeresés hullámmátrixszal",
+    "category": "Gráf: hidak és részfák",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "dfs", "híd", "részfa"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/7. Autózás",
+    "method": "Mohó tankolás: a következő olcsóbb kútig tankolunk, monoton veremmel",
+    "category": "Mohó: következő olcsóbb elem",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "verem", "szimuláció"],
+    "note": "A be2 mintán a kimenet eltér: az összköltség (2015384) egyezik a mintával, de a tankolási helyek és mennyiségek listája más. A feladat szerint bármelyik megoldás kiírható; az érvényességet a library/.work/NT-009/7/check7.py ellenőrzi.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/8. Két csoport",
+    "method": "Lokális keresés: legalább két hibás társú résztvevő átrakása",
+    "category": "Gráf: kétszínezés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "kétszínezés", "potenciál"],
+    "note": "Mindkét mintán eltér a kimenet, mert több helyes beosztás is elfogadott (a feladat szerint bármelyik megadható). Az érvényességet a library/.work/NT-009/8/check8.py ellenőrzi: minden résztvevőnek legfeljebb egy azonos csoportbeli nem kedvelt társa van, és a létszám egyezik.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2020/9. Szakaszok",
+    "method": "Söprővonal az x-tengely mentén, Fenwick-fa az aktív vízszintes szakaszokra",
+    "category": "Söprővonal, Fenwick-fa",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["geometria", "söprővonal", "fenwick"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

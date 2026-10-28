@@ -1,0 +1,98 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/15. Séta",
+    "method": "Kosaraju-féle SCC-k, az összevont DAG leghosszabb útja DP-vel",
+    "category": "Gráf: erős összefüggőség",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "komponens",
+      "dinamikus programozás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/16. Akadálypálya tervezés",
+    "method": "Szintek szerinti minimális élfedés bipartit párosítással",
+    "category": "Gráf: bipartit párosítás",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "párosítás",
+      "élfedés"
+    ],
+    "note": "Több helyes kimenet van, a feladat szerint bármelyik megadható; a validátor a minta éleinek sorrendje és választása miatt tér el. Az ellenőrző (library/.work/R-085/chk/check16.py) igazolja a kimenetek érvényességét és az élszámot. A 2. feltétel legrövidebb útjának hosszát a tervével azonosnak vettük (a minta 12 éle így minimális); szabad hosszal az 1. mintán 10 él is elég.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/2. Csapatépítés",
+    "method": "Napi söprés, majd mohó intervallumfedés prioritási sorral",
+    "category": "Mohó: intervallumfedés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "intervallum",
+      "prioritási sor"
+    ],
+    "note": "A 2. minta 0-s kezdőnapot tartalmaz (a szöveg szerint ≥1), ezért a söprés 0-tól indul. Azonos ajánlatok közül a kisebb sorszám kerül a kimenetbe, így a minta egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/3. DNS",
+    "method": "Aho–Corasick automata, mohó intervallumfedés a módosításokra",
+    "category": "Szövegkeresés: Aho–Corasick",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "sztring",
+      "automata",
+      "mohó"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/4. Kémek",
+    "method": "Mélységi bejárás, artikulációs pontok és lowlink számítása",
+    "category": "Gráf: artikulációs pontok",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "mélységi bejárás",
+      "artikulációs pont"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2017/5. Megfigyelés",
+    "method": "Min-heap, legszűkebb közös intervallum keresése",
+    "category": "Sorozatok: legszűkebb intervallum",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "sorozat",
+      "prioritási sor",
+      "intervallum"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

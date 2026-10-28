@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Dinamikus programozás/55. Leghosszabb tükörszó hossza **",
+    "method": "Intervallum-DP: ha a szélek egyeznek, belülről +2, különben az egyik szélt elhagyjuk.",
+    "category": "Intervallum DP",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["palindróma", "részsorozat", "intervallum"],
+    "note": "A minta.zip ki2.txt (121) hibás: a be2 szó 140-szer tartalmazza a 'b' betűt, így a betűk kihagyásával kapott tükörszó legalább 140 hosszú; a helyes érték 473. Ellenőrzés: külön írt Python O(n²) DP a be2-re 473-at ad, és 150 véletlen, legfeljebb 9 hosszú szón a task.cpp egyezik a 2^n-es teljes kereséssel.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/58. Legtöbb kockából építhatő torony ***",
+    "method": "Rendezés után O(N²) leghosszabb-lánc DP, szülőtömbbel visszaépítve.",
+    "category": "Lánc DP",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["lánc", "rendezés", "dp"],
+    "note": "Több azonos méretű legjobb torony van; a be2-re a program és a minta is 55 kockát ad, de más sorszámokkal. Ellenőrzés: a sorszámok között nincs ismétlés, alulról felfelé az oldalhossz és a súly nem nő, a kockák száma egyezik a mintával (be1 és be2).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/60. Licit2 *",
+    "method": "Végpont szerinti rendezés, bináris keresés az utolsó kompatibilis előddal, DP.",
+    "category": "Súlyozott intervallumkiválasztás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "rendezés", "dp"],
+    "note": "A nyertes pályázók sorszámainak sorrendjét a feladat nem írja elő: a program és a minta ugyanazt a halmazt adja, csak más sorrendben. Ellenőrzés: a kiírt intervallumok diszjunktak, a díjösszeg egyezik a kiírt bevétellel és a mintával (be1, be2), és 300 véletlen kis esetben a bevétel egyezik a 2^N-es kereséssel.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/63. Mars *",
+    "method": "Elérhetőség DP-vel előről és hátulról; a két feltételt teljesítő 1-es mezők számlálása.",
+    "category": "Rácson elérhetőség",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["rács", "elérhetőség", "dp"],
+    "note": "A minta.zip be2/ki2 (56778) hibás: a feladat példáján (14) a megoldás helyes, a be2-re viszont a program és egy külön írt Python-számítás is 187850-et ad, a 56778 a szövegben leírt értelmezéssel nem adódik. Ellenőrzés: a feladat példája és a Python-számítás egyezik a programmal.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/65. Mozijegyek ***",
+    "method": "Intervallumok szegmensfa-csomópontokra bontása, minimumköltségű maximumfolyam.",
+    "category": "Minimumköltségű folyam",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["folyam", "szegmensfa", "párosítás"],
+    "note": "Több jó jegykiosztás van; a minta más hozzárendelést ad, de ugyanazt a bevételt és K-t (1728, 16 / 165763, 1000). Ellenőrzés: minden sorszám a [A, A+D] tartományban van, nincs ismétlés, a fizetések összege a kiírt bevétel. Futásidő: a legnagyobb tesztben (N=1000, M=3000) helyi mérésen ~0,9 s, a 0,1 mp időlimit ezzel várhatóan nem teljesül.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Dinamikus programozás/66. Munkagépek **",
+    "method": "Részösszeg-DP: a lehető legközelebbi összeg a teljes idő feléhez, visszaépítés.",
+    "category": "Részösszeg, particionálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["részösszeg", "particionálás", "dp"],
+    "note": "Több jó felosztás van; a minta más csoportokat ad, azonos T-vel (118, 25494). Ellenőrzés: a két lista partíciót alkot az összes sorszámon, és a nagyobb terhelés egyezik a kiírt T-vel és a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

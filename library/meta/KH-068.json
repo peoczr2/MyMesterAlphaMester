@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Szigetek/24. Meredekebbek a bal oldali partok? *",
+    "method": "Szigetenként a bal és a jobb part magasságának összehasonlítása, két számlálóval.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "összehasonlítás", "sziget"],
+    "note": "A meredekség a part magassága, mert a szomszédos tengerszint 0; a kontinenshez érő szakaszok nem szigetek, döntetlennél egyik számláló sem nő.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/25. Minden sziget legmagasabb pontja csúcs? *",
+    "method": "Szigetenként a legmagasabb pontok ellenőrzése: mindegyik csúcs-e a szomszédai alapján.",
+    "category": "Lokális maximum",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "maximum", "csúcs"],
+    "note": "Több azonos legmagasabb pont esetén mindegyiknek csúcsnak kell lennie (a mintákban ez nem dönt); sziget nélkül a válasz 1.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/26. Szigetek teljes hossza *",
+    "method": "Egy bejárás: a kontinenshez nem tartozó nem nulla szakaszok hosszának összegzése.",
+    "category": "Szakaszok összegzése",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "összegzés", "sziget"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Szigetek/27. Szigeteken lévő hegycsúcsok magasságai *",
+    "method": "Egy bejárás: a szigeteken belüli, 500 m-nél magasabb csúcsok szűrése a szomszédok alapján.",
+    "category": "Lokális maximum és szűrés",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "feltétel", "csúcs"],
+    "note": "Csak a szigeteken lévő csúcsok számítanak; ha nincs ilyen, a kimenet csak a 0, a második sor elmarad.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

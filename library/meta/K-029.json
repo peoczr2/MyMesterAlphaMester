@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/13. Fiatal dolgozók *",
+    "method": "Lineáris bejárás, a korfeltételnek megfelelő sorszámok gyűjtése vektorba",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "A feladatszöveg azonos a 12. Fiatal dolgozók feladatával (K-028 batch).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/14. Gyors vonatok *",
+    "method": "Lineáris bejárás, a K-nál rövidebb menetidők sorszámainak kiválogatása",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/15. Időintervallumok amikor a halózat használatban van **",
+    "method": "Állapotkövetés felhasználónként, szakaszok különbségi tömbbel, percenkénti összegzéssel",
+    "category": "Intervallumok, különbségi tömb",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "szimuláció", "tömb"],
+    "note": "Bizonytalan pont: a feladatszöveg nem dönti el, hogy a kijelentkezés perce használt perc-e. A megoldás a [BE, KI) félnyílt szakaszt veszi, így két szakasz csak akkor olvad össze, ha az egyik kijelentkezése pontosan a másik bejelentkezésének percén van; a minta ilyen esetet nem tartalmaz. A nap végéig bent maradó felhasználót a megoldás 23:59-ig aktívnak veszi, ez sincs leírva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválogatás/16. Legalább K-t kapott tanulók *",
+    "method": "Lineáris bejárás, a legalább K jegyű tanulók sorszámainak kiválogatása",
+    "category": "Feltételes kiválogatás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["kiválogatás", "tömb", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

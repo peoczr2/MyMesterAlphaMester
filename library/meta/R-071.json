@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/37. Irányítószámok ***",
+    "method": "Projektív sík egyeneseit prímszorzatokként kódoljuk, címke-prímmel megkülönböztetve.",
+    "category": "Prímszorzatos konstrukció",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["prímtényező", "lnko", "konstrukció"],
+    "note": "A validátor hibás állapota a mintakimenet eltérése miatt marad, de a feladat szerint bármelyik megfelelő kimenet elfogadott (\"Több megoldás esetén bármelyik megadható\"). Független ellenőrzővel igazolva N=4..100-ra: páronként nem coprime, minden prím legfeljebb N/2 számban szerepel, legnagyobb érték 262104349 (≤ 10^9). Ellenőrző: library/.work/R-071/verify37.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/38. Kártyakeverés ***",
+    "method": "A duplakeverés permutáció-négyzetre emelés; az eredetit a 2^S modulo N inverzével hatványozva kapjuk.",
+    "category": "Permutáció-hatványozás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["permutáció", "modulo inverz", "gyors hatványozás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/39. Számok ***",
+    "method": "Lnko-val osztunk, majd a moduláris inverzzel kiszámoljuk a legkisebb nemnegatív y-t.",
+    "category": "Lineáris diofantikus egyenlet",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["euklideszi algoritmus", "moduláris inverz", "diofantikus egyenlet"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/4. Barátságos számok *",
+    "method": "Szitával kiszámoljuk minden szám valódi osztóinak összegét, majd a kölcsönös párokat keressük.",
+    "category": "Szita, osztóösszeg",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["szita", "osztóösszeg", "párkeresés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/40. Euler",
+    "method": "Próbaosztással megkeressük a különböző prímtényezőket, és mindegyikre az eredményt (1−1/p)-vel szorozzuk.",
+    "category": "Euler-féle phi-függvény",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["phi-függvény", "próbaosztás", "prímtényező"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/41. Faktoriális vége",
+    "method": "A nullák száma az N!-beli ötös prímtényezők száma: N/5 + N/25 + ...",
+    "category": "Legendre-formula",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["faktoriális", "legendre-formula", "nullák"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

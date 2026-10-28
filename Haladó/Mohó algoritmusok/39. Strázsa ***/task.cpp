@@ -1,6 +1,8 @@
 /*
-Feladat: A rendezvény teljes időtartamát a lehető legkevesebb tanulóval kell lefedni úgy, hogy a szolgálat átadható legyen.
-Ötlet: Mindig az aktuálisan lefedett pontig elérő jelentkezők közül azt választjuk, aki a legtovább képes tovább tartani a szolgálatot.
+Megoldás lényege:
+A tanulók láncban fedik le a [1, N] szakaszt: mindig az aktuálisan lefedett végpontból (cur) indulunk, és a már elkezdődött jelentkezők (a <= cur) közül azt választjuk, akinek a legkésőbbi a befejezése (b). A mohó választás optimális, mert a legtovább érő tanuló után legalább olyan messzire jutunk, mint bármelyik más választással. Ha nincs cur-nál tovább érő jelentkező, nincs megoldás. A jelentkezőket kezdési idő szerint dolgozzuk fel és prioritási sorban tároljuk, az időigény O(M log M).
+*/
+/*
 Hint 1: || Az aktuális időpontig minden olyan intervallum használható, amely már elkezdődött. ||
 Hint 2: || Ezek közül mindig a legnagyobb jobb végpontú intervallum a legjobb. ||
 Hint 3: || Ha a következő lépésben semmilyen új tanuló nem érhető el, akkor nincs megoldás. ||
@@ -31,7 +33,7 @@ int main() {
 
     priority_queue<int> pq;
     int ptr = 0, cur = 1, cnt = 0;
-    while (cur < n) {
+    do {
         while (ptr < (int)a.size() && a[ptr].a <= cur) {
             pq.push(a[ptr].b);
             ++ptr;
@@ -44,7 +46,7 @@ int main() {
         cur = pq.top();
         pq.pop();
         ++cnt;
-    }
+    } while (cur < n);
 
     cout << cnt << '\n';
     return 0;

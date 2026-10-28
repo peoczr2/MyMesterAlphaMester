@@ -1,8 +1,15 @@
 /*
- * A számjegyösszegek láncában az első páros értéket kell megadni, vagy IGEN-t,
- * ha a lánc végül egyjegyű páratlan számhoz fut.
- 
-Hint 1: || Itt csak a számjegyösszeg-láncot kell követni, nem a teljes nagy számot feldolgozni mindenféle bonyolult módon. ||
+Megoldás lényege:
+A definíció szerint egy páratlan szám akkor erősen páratlan, ha egyjegyű, vagy a
+számjegyeinek összege erősen páratlan. Ezt a láncot követjük: egyjegyű (páratlan)
+szám esetén IGEN a válasz; különben vesszük a számjegyek összegét. Ha ez páros,
+NEM a válasz, és maga az összeg a kiírandó első páros szám. Ha páratlan és többjegyű,
+ugyanezt a lépést megismételjük rá. A lánc minden lépésben jelentősen lerövidül,
+így a teljes futásidő az N jegyeinek számával (legfeljebb 100 000) arányos.
+*/
+/*
+Hint 1: || A definíció rekurzív: egyjegyű szám mindig megfelel, többjegyűnél a számjegyösszeget kell ugyanígy vizsgálni, ezért egy ciklus elég. ||
+Hint 2: || Az első páros számjegyösszegnél megállhatsz: az ott kapott összeget kell kiírni NEM után, és csak akkor IGEN a válasz, ha a lánc egyjegyű páratlan számhoz ér. ||
 */
 
 #include "../common.hpp"

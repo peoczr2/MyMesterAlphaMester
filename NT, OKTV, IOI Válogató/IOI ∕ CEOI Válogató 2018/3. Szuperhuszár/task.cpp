@@ -14,7 +14,11 @@ Geometriailag ez két esetet jelent:
 Az ellenőrzéshez az irányokat szög szerint rendezzük, és megkeressük a legnagyobb
 szomszédos szögkülönbséget.
 */
-
+/*
+Hint 1: || Ha minden lépés egy egyenesre esik, akkor a második játékos csak akkor tud visszajutni az origóba, ha az egyenes mindkét irányába van lépés. Ellenkező esetben az origónak a lépésvektorok konvex burkának belsejében kell lennie. ||
+Hint 2: || Az irányokat szögük szerint rendezve elég a szomszédos szögkülönbségeket nézni: ha valahol 180 foknál nagyobb a rés, akkor a lépések egy félsíkba esnek és az origó nem nyerhető vissza. ||
+Hint 3: || A szögekkel egész koordinátákon dolgozz: a rendezéshez félsíkonkénti felosztás és keresztszorzat elég, így nincs szükség lebegőpontos összehasonlításra. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,10 +1,24 @@
 /*
 Megoldás lényege:
-N gyémántot úgy osztunk szét, hogy a kapó munkások mind különböző számú
-gyémántot kapjanak. Ez a N szám különböző részekre bontott partícióinak száma.
-
-A klasszikus 1D DP-ben minden részméretet legfeljebb egyszer használhatunk,
-ezért az összegeket visszafelé frissítjük.
+N gyémántot osztunk szét úgy, hogy a kapó munkások mind különböző számú
+gyémántot kapnak, és a munkások sorrendje nem számít, így a kérdés N különböző
+részekre bontott felbontásainak számát adja meg.
+Az 1D DP-ben dp[s] az s összeg előállításainak számát tárolja. Mivel minden
+részméret legfeljebb egyszer szerepelhet, a méreteket egyenként dolgozzuk fel,
+és az összegeket csökkenő sorrendben frissítjük: így a dp[s - méret] értéke még
+nem tartalmazza az aktuális méretet, tehát egy méret nem kerül kétszer a
+felosztásba.
+A válasz dp[N], a számolás O(N²) összeadás, ami N ≤ 200 mellett bőven gyors.
+*/
+/*
+Hint 1: || Egy felosztásban a kapott számok különbözőek, a munkások sorrendje
+pedig nem számít, így csak a különböző tagokból álló, N-et kiadó összegeket kell
+megszámolni. Ez egy 0-1 hátizsák típusú DP: minden részméretet legfeljebb
+egyszer használhatunk fel. ||
+Hint 2: || Legyen dp[s] az s összeg előállításainak száma az eddig figyelembe
+vett méretekből (kezdetben dp[0] = 1). Egy m méret bevételekor az s értékeket
+csökkenő sorrendben frissítjük: dp[s] += dp[s - m]. Ha növekvő sorrendben
+haladnánk, ugyanaz az m többször is bekerülne az összegbe. ||
 */
 
 #include <bits/stdc++.h>

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/124. Ügyelet ***",
+    "method": "Csúszóablak, darabszám-tömb és számláló: a legrövidebb teljes lefedő intervallum.",
+    "category": "Csúszóablak (kétmutatós)",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["csúszóablak", "tömb", "számlálás"],
+    "note": "A szöveg „ügyeletesek” többesszámot használ, de a mintában minden naphoz egyetlen sorszám tartozik (N darab szám összesen), ezért egy napon egy ügyeletest veszek figyelembe.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/125. Szerencsejáték ***",
+    "method": "Utolsó előfordulás nyilvántartása, a távolságok darabszámának maximuma.",
+    "category": "Távolságok gyakorisága",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "távolság", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/126. Bánya ***",
+    "method": "2D prefixösszeg, minden téglalap végigpróbálása O(1) ellenőrzéssel.",
+    "category": "Prefixösszeg (2D)",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "téglalap", "rács"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/127. Sorsolás ***",
+    "method": "Utolsó előfordulás és első kezdőnap nyilvántartása, a hosszok darabszáma.",
+    "category": "Távolságok gyakorisága",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "távolság", "tömb"],
+    "note": "A „legelső ilyen szakasz” értelmezése: a legnagyobb darabszámú hosszak szakaszai közül az időben legkorábbi kezdőnap. Az alternatív olvasat (a legkisebb ilyen hosszúságú szakasz első napja) a mintán ugyanazt adja, véletlen tesztekben viszont eltér, ezért ezt érdemes ellenőrizni.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

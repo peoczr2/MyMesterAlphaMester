@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/31. Konténerek rendezése",
+    "method": "Buborékrendezés az üres hely segítségével: a szomszédos inverz párokat négy lépéses cserével rendezzük.",
+    "category": "Rendezés: műveletsor",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "buborékrendezés", "műveletsor"],
+    "note": "Több helyes műveletsor is elfogadható, ezért a kimenet eltér a mintától, és a validátor szövegegyezés miatt hibásnak jelzi. Érvényességét szimulátor igazolja (library/.work/K-094/t31/check31.py): a két mintabemenet, a véletlen tesztek és az N<=6 összes permutációja mind szabályos és rendezett végállapotot ad.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/32. Sok csoportra osztás",
+    "method": "Pontszámok rendezése, a T-nél nagyobb szomszédos különbségek közül a K-1 legnagyobb.",
+    "category": "Rendezés: csoportosítás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["rendezés", "csoportosítás", "távolság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/33. Világranglista",
+    "method": "Ranglista összefésülése: csak a javított versenyzők mozognak, egyetlen bejárással számolunk helyezést.",
+    "category": "Rendezés: ranglista frissítés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["rendezés", "összefésülés", "ranglista"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: rendezések/34. Késés ****",
+    "method": "Az évszámok utolsó előfordulási indexei közül a minimumot keressük; rendezéssel csoportosítunk.",
+    "category": "Keresés: utolsó előfordulás",
+    "difficulty": 4,
+    "goal": "Bevezetés",
+    "tags": ["keresés", "utolsó előfordulás", "rendezés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

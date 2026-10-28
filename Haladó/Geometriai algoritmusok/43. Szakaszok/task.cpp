@@ -14,7 +14,17 @@ Lépések:
 
 Idő: O((M + N) log M)
 */
-
+/*
+Hint 1: || Söpörd végig a síkot x szerint: a vízszintes szakaszok bal és jobb végpontja aktiválási,
+illetve törlési esemény, a függőleges szakaszok pedig lekérdezési események. Azonos x-nél előbb az
+aktiválás, aztán a lekérdezés, végül a törlés jön, mert a közös végpont is metszésnek számít. ||
+Hint 2: || A lekérdezés pillanatában azt kell megszámolni, hány aktív vízszintes y-koordinátája esik
+a függőleges szakasz [y1, y2] intervallumába. Az y-koordinátákat rendezve tömörítsd, és egy Fenwick-fában
+tartsd nyilván az aktív szakaszokat, így egy intervallum darabszáma O(log M) alatt megkapható. ||
+Hint 3: || A söprés x szerint halad, nem sorszám szerint, ezért a legkisebb sorszámú maximumot külön
+kell kezelni: egyenlő darabszámnál a kisebb sorszámút tartsd meg. Ha minden lekérdezés 0-t ad,
+a válasz 0. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -115,7 +125,7 @@ int main() {
             fw.add(e.a, -1);
         } else {
             int cur = fw.sumRange(e.a, e.b);
-            if (cur > bestCnt) {
+            if (cur > bestCnt || (cur == bestCnt && cur > 0 && e.id < bestIdx)) {
                 bestCnt = cur;
                 bestIdx = e.id;
             }

@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Szimuláció/20. Ügyfélkapu",
+    "method": "Érkezési sorrend szerinti szimuláció prioritásos sorral (ügyintézési idő, érkezés, sorszám).",
+    "category": "Szimuláció: sorbanállás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "prioritási sor",
+      "várakozás"
+    ],
+    "note": "A minta.zip ki1.txt 2. sora 3, a feladatszöveg példája ugyanerre a bemenetre 2-t ír. A megoldás és egy percenkénti brute-force is 2-t ad, ezért a minta hibás.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/22. Vonatok",
+    "method": "Eseményvezérelt szimuláció szakaszonként prioritásos sorral (készenlét, irány, sorszám).",
+    "category": "Szimuláció: vonatforgalom",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "prioritási sor",
+      "eseményvezérelt"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/23. Vonatok 1-2 vágánnyal",
+    "method": "Eseményvezérelt szimuláció szakaszkapacitással (vágányszám), prioritásos sorral.",
+    "category": "Szimuláció: vonatforgalom",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szimuláció",
+      "kapacitás",
+      "prioritási sor"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/24. Vizitúra",
+    "method": "Hátulról számolt igények, előre haladva csak a hiány felvétele; előtte elérhetőség-szimuláció.",
+    "category": "Mohó: visszafelé számolás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "mohó",
+      "visszafelé",
+      "szimuláció"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/26. Hegymászó",
+    "method": "Felfelé mohó felvétel a visszaútra szükséges tartalékkal; csúcsra és elérhetőségre külön ellenőrzés.",
+    "category": "Mohó: készletezés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mohó",
+      "készletezés",
+      "szimuláció"
+    ],
+    "note": "A csúcsos eset tartalékszabálya (a csúcs oda-vissza igénye a 2.–(N-1). tábor visszaútjában is) a két feladatbeli példából lett illesztve; a szöveg ezt nem rögzíti egyértelműen.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Szimuláció/28. Ügyfélszolgálat **",
+    "method": "Eseményvezérelt szimuláció: FIFO sor, a legkisebb sorszámú szabad pult min-heapből.",
+    "category": "Szimuláció: ügyfélszolgálat",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "szimuláció",
+      "sor",
+      "prioritási sor"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

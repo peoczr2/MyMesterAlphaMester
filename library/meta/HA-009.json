@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/6. Csőposta *",
+    "method": "Eseményvezérelt szimuláció, láncolt listában tartott szomszédos ütközési párokkal és min-kupaccal.",
+    "category": "Szimuláció: ütközések",
+    "difficulty": 5,
+    "goal": "Mélyebb megértés",
+    "tags": ["szimuláció", "ütközés", "láncolt lista", "kupac"],
+    "note": "Az ütközés értelmezése: a vesztes csomag kiesik, a győztes útja változatlan, és a sorszámban később induló csomag számít ütközőnek; a szöveg az egyforma időben, azonos állomásról induló csomagok sorrendjét nem mondja ki, itt a sorszám szerinti sorrendet követtem. Az időértékeket 32 bites egésznek tekintem (10^9 alatt feltételezve). N=10^6 esetén kb. 0,3–0,4 s és 27 MB.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/8. Dominó nyertes **",
+    "method": "Memoizált DFS a játékállapotokon (maradék dominók, szabad vég, kör), kimenetelek bitmaszkos egyesítése.",
+    "category": "Játékelmélet: memoizált keresés",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["játékelmélet", "memoizálás", "bitmaszk", "rekurzió"],
+    "note": "Az első lépés a legnagyobb dupla, és ha ezzel fogy el a kezdő dominója, az azonnal nyer. A mintákon kívül egy független, memo nélküli keresés 300 kis esetben egyezett; N=11, T=25 esetén kb. 0,1 s és 32 MB (4 bites memo).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/9. Fenyőfa **",
+    "method": "Kétdimenziós prefixösszeg, minden sor- és oszlopintervallum-párra O(1) téglalap-ellenőrzés, minimális terület.",
+    "category": "Prefixösszeg: téglalap",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["prefixösszeg", "téglalap", "rács"],
+    "note": "A „legkisebb” a legkisebb területet jelenti (a mintából igazolva). Ha több azonos területű téglalap van, az első talált (sor, majd oszlop szerinti bejárás) marad; ez a választás a szöveg „egy olyan” megfogalmazása miatt nincs a mintákkal igazolva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

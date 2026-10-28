@@ -1,6 +1,8 @@
 /*
-Feladat: A lehető legkevesebb vendéget kell kiválasztani úgy, hogy minden eseményidőpontot lefedjenek.
-Ötlet: A legkorábban még lefedetlen eseményhez mindig a legtovább bent maradó, azt lefedő vendéget választjuk. Ez az intervallum-stabbing klasszikus mohó megoldása.
+Megoldás lényege:
+A vendégeket érkezési idő szerint rendezzük, az eseményeket időrendben dolgozzuk fel. A legkorábbi, még le nem fedett eseményhez azt a vendéget választjuk, aki lefedi (E <= x <= T), és a legkésőbb távozik, így ő fedi le a legtöbb későbbi eseményt. A választott vendég intervallumába eső eseményeket kihagyjuk; ha egy eseményt senki nem fed le, a válasz 0. Ez az intervallum-stabbing klasszikus mohó megoldása, az időigény O(M log M + N).
+*/
+/*
 Hint 1: || Először a legkisebb eseményidőpontot kell lefedni. ||
 Hint 2: || Az ezt lefedő vendégek közül a legkésőbb távozót érdemes választani. ||
 Hint 3: || Utána minden olyan esemény kihagyható, amely ebbe a vendég-intervallumba esik. ||

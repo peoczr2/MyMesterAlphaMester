@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/24. Kártya **",
+    "method": "Összeg és maradékos osztás: az összeg osztható-e N-nel, majd a többlet kiosztása",
+    "category": "Tömbök: összegzés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "összeg", "osztás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/25. Oszthatóság 31-gyel **",
+    "method": "Számjegyes redukció: az utolsó számjegy háromszorosának levonása, a köztes értékek kiírása",
+    "category": "Oszthatóság: számjegyes szabály",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["oszthatóság", "számjegy", "szimuláció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/26. Oszthatóság 37-tel **",
+    "method": "Számjegyes redukció az utolsó számjegy 11-szeresének levonásával; az IGEN/NEM döntés az eredeti számból",
+    "category": "Oszthatóság: számjegyes szabály",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["oszthatóság", "számjegy", "szimuláció"],
+    "note": "Bizonytalan pont: az IGEN/NEM-et N % 37 == 0 adja, nem a redukció 0 végállapota, mert a redukció negatív végállapota is lehet 37-tel osztható (37 -> -74, 74 -> -37). A köztes listában csak a nemnegatív értékek szerepelnek (ahogy a 38-as példában). A minta.zip mindkét esete egyezik, de 37-hez vagy 74-hez hasonló esetre nincs minta; ha a zsűri a 0 végállapotot tekinti feltételnek, ezek a számok más eredményt kapnának.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Elemi feladatok tömbökre/3. Dátum *",
+    "method": "Napok számlálása 1901-től mod 7 léptetéssel, szökőév-szabállyal",
+    "category": "Dátum: szökőévek",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["dátum", "szökőév", "maradék"],
+    "note": "A minta.zip ki2.txt (a be2.txt szerinti E=2001 esetén) „hétfő” (ékezetes) szöveget tartalmaz, ez ellentmond a feladatszövegnek („csupa kis betűvel, ékezetek nélkül”). A helyes kimenet „hetfo”, a megoldás ezt adja; független naptárral (1902 és 10000 közötti minden évre, Python) ellenőriztük. Emiatt a validátor „hibás” (1/2) állapotot ad, a hiba a mintafájlban van.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

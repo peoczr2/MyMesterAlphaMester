@@ -1,9 +1,17 @@
 /*
- * 6174-es tétel: a négyjegyű szám számjegyeit rendezgetve ismételt kivonással
- * eljutunk a 6174-hez. Az egyes lépésekhez kiírjuk a rendezett számokat és a
- * különbséget, majd megkeressük a legkisebb azonos lépésszámú négyjegyű számot.
- 
+Megoldás lényege:
+A 6174-es tétel szerint a négyjegyű szám számjegyeit csökkenő (A) és növekvő (B)
+sorrendbe rendezve az A - B különbség újabb négyjegyű számot ad, és ezt ismételve
+mindig eljutunk a 6174-hez. A program az N kiindulóértéktől kezdve kiírja minden
+lépés A, B és az új szám értékét, amíg 6174-et nem kapunk. Az utolsó sorba a
+legkisebb olyan négyjegyű szám kerül, amelynek ugyanannyi lépés kell a 6174-hez:
+ezt az 1000 és 9999 közötti számokon keressük, a csupa azonos jegyből álló
+számokat kihagyva (azok nullához vezetnek). Egy lépés konstans idejű, a keresés
+legfeljebb 9000 szám végigpróbálása, ezért gyorsan lefut.
+*/
+/*
 Hint 1: || Egy lépésben csak a négy számjegyet kell rendezni csökkenő és növekvő sorrendbe, majd kivonni őket. ||
+Hint 2: || A keresésnél először számold ki N lépésszámát, majd 1000-től 9999-ig minden számra ugyanezt, és az első egyezőt írd ki. ||
 */
 
 #include "../common.hpp"

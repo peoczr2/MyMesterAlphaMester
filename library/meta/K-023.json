@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/4. Nevezetes események koronként *",
+    "method": "Négy logikai jelzőt tartunk, és minden esemény évszámát a korszakhatárok alapján soroljuk be.",
+    "category": "Eldöntés: feltételes besorolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "feltétel", "évszám"],
+    "note": "Az év-intervallum és a kategórianevek a kimenetet nem befolyásolják (a mintákon és a példán ellenőrizve). A határévek (476, 1492, 1642) a korszakhoz tartoznak; ezt a „>1642” jelölésből következtettem, mintában nincs határéves esemény.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/5. Névsorban növekvő magasság *",
+    "method": "Egyszeri végigolvasás: minden magasságot az előzővel hasonlítunk, és egy logikai jelzőt állítunk csökkenésnél.",
+    "category": "Eldöntés: monotonitás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "monotonitás", "tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/6. Szomszédos szabad helyek *",
+    "method": "Soronként végignézzük a szomszédos helypárokat, köztük az átjárón átívelő párt is.",
+    "category": "Eldöntés: szomszédos elemek",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["eldöntés", "mátrix", "szomszédság"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: eldöntés/7. Születésnap minden hónapban *",
+    "method": "Hónapnevek halmazba gyűjtése, majd annak ellenőrzése, hogy mind a 12 hónap szerepel-e.",
+    "category": "Eldöntés: halmazlefedés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["eldöntés", "halmaz", "sztring"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/1. Szélsőséges időjárás",
+    "method": "Két monoton sor (deque) tartja karban a K hosszú ablak min és max értékét",
+    "category": "Csúszóablak, monoton sor",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "csúszóablak",
+      "tömb",
+      "monoton sor"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/2. Tippek",
+    "method": "Bináris keresés a rendezett sorozatban, a két szomszéd közül a közelebbi",
+    "category": "Bináris keresés",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "bináris keresés",
+      "tömb",
+      "rendezett sorozat"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/3. Könnyű túra",
+    "method": "Körmentes rácsgráf DP-je (jobbra és lefelé lépés), a kezdő- és végcella visszakövetése",
+    "category": "Dinamikus programozás: rács",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "dinamikus programozás",
+      "rács",
+      "út"
+    ],
+    "note": "Több megoldás esetén bármelyik kiírható (feladatszöveg), ezért kézi. Ellenőrzés: library/.work/R-083/check_konnyu_tura.py, 400 véletlen teszt és a két minta szerint a kimenet érvényes.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/4. Hegymászó",
+    "method": "Topologikus DP: útszámlálás a forrásokból a nyelőkbe, összegzés",
+    "category": "Gráf: DAG útszámlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dinamikus programozás",
+      "moduló"
+    ],
+    "note": "Javítva: a modulus 721 helyett 20200721 (a feladat szerint). A minta ezt nem vette észre. Véletlen irányított körmentes gráfokon (300 eset) a kód egyezik a Python-referenciával.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/5. Kamionok",
+    "method": "Prefix-korlát adja a minimális kamionszámot, körös kiosztás a legkorábbi visszaérést (2S·ceil(N/K))",
+    "category": "Mohó, alsó korlát",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "mohó",
+      "alsó korlát",
+      "ütemezés"
+    ],
+    "note": "Megjegyzés: a be2 (N=200, S=9) minta ki2 második sora 1278, a kód 900-at ír. A 900 elérhető: 4 kamion, az igények körönként 4 kamionnal (indulás 1, 19, 37, ...), 50 körben, az utolsó visszaérés 900. 3 kamion nem elég (16 igénynek legfeljebb 5 indulási pozíció jut kamionként, 3*5 = 15 hely; library/.work/R-083/check_kamionok.py). 900 alsó korlát is: 200 út 4 kamionon, így valamelyik kamion legalább 50 utat tesz meg, az 18*50 = 900. A 1278 egy első szabad kamionhoz rendelő mohó kiosztás értéke, nem a legkorábbi. A feladat nem mond több megoldást, ezért nincs kézi jelölés. Döntés kell: a minta javítása vagy a feladatszöveg értelmezése.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/EJOI Válogató 2020/6. Résztömb",
+    "method": "Előjel-paritás szerinti esetszétválasztás, a legkisebb abszolútértékű negatív elhagyása",
+    "category": "Szorzat: esetszétválasztás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "esetszétválasztás",
+      "mohó",
+      "előjel"
+    ],
+    "note": "Megad egy részsorozatot, tetszőleges sorrendben, ezért kézi. A feladatszöveg példája részsorozatot ír (3 / 5 -4 3), a minta ki1 viszont szorzatot (-60). A minta ki2 (0) hibás: be2-ben nincs nulla, 101 negatív van, így a minimum negatív. Ellenőrzés: library/.work/R-083/check_residual.py, 500 véletlen teszt brute force-szal, be2 DP-vel.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

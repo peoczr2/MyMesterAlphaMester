@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/68. Hilbert-görbe",
+    "method": "Hilbert-sorszám bitenkénti kiszámolása, majd rendezés a sorszám szerint",
+    "category": "Rendezés: Hilbert-görbe",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "rendezés",
+      "görbe",
+      "bitművelet"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/69. Kerítés",
+    "method": "Azonos színű komponensek összevonása, majd a komponensgráf sugara (BFS)",
+    "category": "Gráfok: komponensgráf, BFS",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "bfs",
+      "komponens"
+    ],
+    "note": "A feladat PDF (Üdítő monopólium) és a minta.zip nem egyezik: a minta egy másik feladat adatait tartalmazza (be1.txt 2. sora '7 5 3', a feladat szerint két szám és 0/1 színek lennének). A task.cpp a PDF két példáján (1, 2) helyes, és 80 véletlen esetben egyezik a független BFS-ellenőrzéssel (library/.work/HA-058/checks/udito_brute.py). A mappanév ('Kerítés') a mintához illik, ezért el kell dönteni, melyik a helyes feladatszöveg.",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/7. Elfogó *",
+    "method": "Zsákutca- és körellenőrzés minden csúcs kihagyásával, topologikus rendezéssel",
+    "category": "Gráfok: körök, zsákutcák",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "irányított gráf",
+      "topologikus rendezés"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/70. Kontroll ****",
+    "method": "Minimális csúcs-vágás maximális folyammal, csúcsbontással (Dinic)",
+    "category": "Gráfok: maximális folyam",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "maximális folyam",
+      "csúcs-vágás",
+      "dinic"
+    ],
+    "note": "Több helyes kimenet van (a feladat szerint bármelyik megadható): a be1 esetben a program 5 6 7 sorrendben adja a 3 kontrollpontot (a minta 6 7 5), a be2 esetben 51 307 a két pont (a minta 50592 50951). Független Edmonds-Karp ellenőrző (library/.work/HA-058/checks/kontroll_check.py) igazolja, hogy mindkét halmaz lefogja az összes utat és mérete a maximális folyammal egyezik. A validátor ezért hibás állapotot mutat, a megoldás helyes.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,10 +1,16 @@
 /*
-Hungarian megoldás: kevés pékség esetén visszalépéssel választjuk ki, hogy az
-egyes üzletek melyik pékségtől rendeljenek úgy, hogy a napi kapacitások ne
-fogyjanak el.
-
-Hint 1: || Mivel a pékségek száma legfeljebb 7, a keresési fa erősen korlátozott. ||
-Hint 2: || A legszűkebb üzlettel érdemes kezdeni, vagyis amelynek kevés lehetősége van. ||
+Megoldás lényege: visszalépéses keresés. Mindig a legszűkebb lehetőségű, még ki nem osztott
+üzletet választjuk (amelynek a kapacitással még kiszolgálható pékségei száma a legkisebb), és
+kipróbáljuk az összes ilyen pékséget; ha egy üzletnek nem jut pékség, az ág kudarc, és
+visszalépünk. Az ágat akkor is levágjuk, ha valamely X pékség-halmazra az X-ből kizárólag
+kiszolgálható üzletek összigénye nagyobb X maradék kapacitásánál: ekkor ebben az ágban nincs
+megoldás. Mivel a pékségek száma legfeljebb 7, a halmazok száma (legfeljebb 128) kicsi, a vágás
+olcsó, és a megoldás nélküli, nehéz esetekben is jelentősen csökkenti a keresési fát.
+*/
+/*
+Hint 1: || Mivel a pékségek száma legfeljebb 7, a keresési fa erősen korlátozott: üzletenként végig lehet próbálni a lehetséges pékségeket. ||
+Hint 2: || A legszűkebb üzlettel érdemes kezdeni, vagyis amelynek kevés lehetősége van; ha egy üzletnek nincs elég kapacitású pékség, vágd le az ágat. ||
+Hint 3: || Vágd le az ágat, ha egy pékség-halmazra az ott kizárólag kiszolgálható üzletek összigénye nagyobb a halmaz maradék kapacitásánál; a halmazokat bitmaszkkal érdemes kezelni. ||
 */
 
 #include <bits/stdc++.h>
@@ -16,17 +22,28 @@ vector<vector<int>> kapcsolatok;
 vector<int> ans;
 vector<char> hasznalt;
 
-bool jobb(int a, int b) {
-    int ca = 0, cb = 0;
-    for (int x : kapcsolatok[a]) if (kap[x] >= igeny[a]) ++ca;
-    for (int x : kapcsolatok[b]) if (kap[x] >= igeny[b]) ++cb;
-    if (ca != cb) return ca < cb;
-    return igeny[a] > igeny[b];
-}
-
 bool dfs(int placed, long long leftDemand) {
     if (placed == n) return true;
     if (leftDemand > accumulate(kap.begin(), kap.end(), 0LL)) return false;
+
+    // Vágás: X pékség-halmazra az X-ből kizárólag kiszolgálható üzletek igénye nem haladhatja
+    // meg X maradék kapacitását. need[X]: az X-be eső üzletek összigénye (részhalmaz-összeg),
+    // capX[X]: X maradék kapacitása.
+    const int K = 1 << m;
+    long long need[1 << 7] = {0}, capX[1 << 7] = {0};
+    for (int i = 0; i < n; ++i) if (!hasznalt[i]) {
+        int mask = 0;
+        for (int x : kapcsolatok[i]) if (kap[x] >= igeny[i]) mask |= 1 << x;
+        if (mask == 0) return false;
+        need[mask] += igeny[i];
+    }
+    for (int b = 0; b < m; ++b)
+        for (int X = 0; X < K; ++X) if (X >> b & 1) need[X] += need[X ^ (1 << b)];
+    for (int X = 1; X < K; ++X) {
+        capX[X] = capX[X & (X - 1)] + kap[__builtin_ctz(X)];
+        if (need[X] > capX[X]) return false;
+    }
+
     int best = -1;
     vector<int> cand;
     for (int i = 0; i < n; ++i) if (!hasznalt[i]) {

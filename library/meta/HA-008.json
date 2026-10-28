@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Egyéb feladatok/50. Vitorlás *",
+    "method": "Csúszó ablak a megfelelő napok sorozatán: K egymás utáni megfelelő nap legkisebb hossza.",
+    "category": "Ablak, legrövidebb szakasz",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "ablak",
+      "minimum",
+      "tömb"
+    ],
+    "note": "Mind a 2 minta egyezik. A szélsebesség-határokat zártnak vettem (lo ≤ v ≤ hi); a mintában nincs pontosan határértékű szél, így ez nincs igazolva.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/51. Wagons *",
+    "method": "Három beállítás szerinti verem-lánc: az első hiba helye adja a feldolgozott prefixet, az 1 és 2 napos eset külön.",
+    "category": "Verem, lánc-szimuláció",
+    "difficulty": 1,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "verem",
+      "szimuláció",
+      "keresés"
+    ],
+    "note": "Megjegyzés: a minta.zip csak be-fájlokat tartalmaz, kimenet nincs, így a validátor nem ellenőrzi. A feladatszöveg példájára (13 5 4) a program 11 és \"2 1 4\" kimenetet ad, ez egyezik. A modellt (nap elején csak a verem felső elemei vehetők ki, a nap közben berakott vagonok a nap végéig benne maradnak) véletlen kis esetekben (N≤7, S≤4) nyers műveletsor-BFS igazolta. Időkorlát: a három beállítás teljes keresése O(S^3·N); S=300, N=20000 mellett 0,10 s, S=1000-nél az 1,0 s limit várhatóan túllép (nem mértem).",
+    "minta": "",
+    "blocked": true,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/52. Ütemezés",
+    "method": "Pareto-optimális (idő, haszon) állapotok határidő szerinti bővítése, a kiválasztott munkák 64 bites maszkban.",
+    "category": "Ütemezés: Pareto-állapotok",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "ütemezés",
+      "pareto",
+      "határidő"
+    ],
+    "note": "Mind a 2 minta egyezik. A feladatszöveg példájában a 2. és 6. végrehajtási idő (8, 77) eltér a minta.zip be1-től (7, 37); mindkét változatra 55 és 3 5 7 8 az eredmény. Korrelált (haszon ≈ idő) bemenetre a Pareto-keret nagyra nőhet: mért ~7 s és ~900 MB; a mintán és egyenletes véletlen adatokon ~0 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Egyéb feladatok/53. Ládapakolás",
+    "method": "Két nyitott láda (terhelés, másik terhelés) állapotai költség szerint Pareto-tárolva; O(N·L) tömbös DP.",
+    "category": "DP: két nyitott láda",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "pakolás",
+      "állapot",
+      "dp"
+    ],
+    "note": "Mind a 2 minta egyezik. Értelmezés: a ládák száma a ténylegesen használt ládák száma (üres, sosem használt láda nem számít), ezért a mohó egy-ládás szám is min-ban szerepel. Több száz véletlen kis esetben nyers műveletsor-BFS-szel egyezett. Időkorlát: egyenletes súlyoknál (1..L) N=L=10^4-nél ~0,00 s; kis súlyoknál (1..100, 1..1000) ugyanekkora bemenetre mért ~0,23 s, ez az 0,1 mp-es limitet túllépheti.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

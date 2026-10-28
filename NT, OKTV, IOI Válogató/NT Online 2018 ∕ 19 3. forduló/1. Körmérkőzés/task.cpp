@@ -1,11 +1,16 @@
 /*
 Megoldás lényege:
-N legfeljebb 16, ezért bitmaskos visszalépéses keresés elég. Egy állapot azt
-mutatja meg, mely csapatok maradtak még párosítatlanul. A legkisebb sorszámú
-szabad csapatot megpróbáljuk párosítani minden olyan másik szabad csapattal,
-amellyel még nem játszott.
+N legfeljebb 16, ezért a csapatok halmazát bitmaskkal írjuk le, a visszalépéses
+keresést pedig memoizáljuk. Egy állapot azt mutatja meg, mely csapatok maradtak
+még párosítatlanul. A legkisebb sorszámú szabad csapatot megpróbáljuk párosítani
+minden olyan másik szabad csapattal, amellyel még nem játszott, majd rekurzívan
+folytatjuk. Az állapotok száma legfeljebb 2^N, egy állapotban legfeljebb N
+próbálkozás van, így az időigény O(2^N · N), ami N ≤ 16 esetén bőven belefér.
 */
-
+/*
+Hint 1: || A keresés állapota a még párosítatlan csapatok bitmaskja. Mindig a legkisebb sorszámú szabad csapatot párosítsd: így minden párosítás pontosan egyszer kerül sorra, és nem kell a sorrendekkel külön foglalkozni. ||
+Hint 2: || A bemenetből minden csapat már lejátszott ellenfelei tiltott párok, mindkét irányban. Ha a választott párral a maradék állapot nem párosítható, a függvény visszalép, és a következő szabad csapatot próbálja. Az állapot eredményét tárold, hogy minden maszkot csak egyszer számolj ki. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

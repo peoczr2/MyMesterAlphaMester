@@ -1,0 +1,50 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/1. Dinnyeárusok",
+    "method": "Két mutatós mohó párosítás rendezett embereken és helyeken",
+    "category": "Mohó algoritmus, párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["mohó", "két-mutatós", "párosítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/2. Kerítés",
+    "method": "Lécenkénti öt állapotú átmenettábla festési műveletenként",
+    "category": "Állapotgép, szimuláció",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["állapotgép", "szimuláció", "intervallum"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/3. Versenypárok kialakítása",
+    "method": "Piros és zöld pólósok számlálása, két független minimum összege",
+    "category": "Számlálás, minimum",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "minimum", "párosítás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/NT Online 2019 ∕ 20 1. forduló/4. Macskák",
+    "method": "K-ról K-ra haladó söprés két monoton mutatóval, a két hiba számítása",
+    "category": "Söprés, monoton mutatók",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["söprés", "monoton-mutató", "minimalizálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

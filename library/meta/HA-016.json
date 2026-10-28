@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/28. Körutak",
+    "method": "Tarjan-féle hidkeresés DFS-sel; a nem híd élek végpontjai körúton vannak.",
+    "category": "Gráf: hidak, körök",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dfs",
+      "híd"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/29. Legnépszerűbb tagok",
+    "method": "Függvénygráf: minden csúcsból egy él indul, így a körök egy bejárással megtalálhatók.",
+    "category": "Gráf: függvénygráf, körök",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "függvénygráf",
+      "kör"
+    ],
+    "note": "A leghosszabb kör bármelyik csúcsával kezdődhet, és a feladat szerint bármelyik kiírható, a minta más kezdőponttal ugyanazt a kört adja, ezért kézi ellenőrzéssel igazoltuk (független checker).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/3. Baráti lánc *",
+    "method": "Pósa-féle forgatásokkal bővített út, amely 1-ből indulva Hamilton-kört ad.",
+    "category": "Gráf: Hamilton-kör",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "hamilton-kör",
+      "forgatás"
+    ],
+    "note": "Megjegyzés: a feladatszöveg nem mondja ki, hogy bármelyik Hamilton-lánc elfogadott, ezért a minta (más lánc) nem igazolja a saját kimenetünket kézi jelöléssel. Független ellenőrző szerint a kimenet érvényes lánc; kérdés: elfogadható-e bármelyik lánc.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/30. Zsákfalvak",
+    "method": "Zsákfaluból indulva fokszám-2 csúcsokon át követjük az utat, és megszámoljuk az élek számát.",
+    "category": "Gráf: láncok, fokszám",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "gráf",
+      "fokszám",
+      "bejárás"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

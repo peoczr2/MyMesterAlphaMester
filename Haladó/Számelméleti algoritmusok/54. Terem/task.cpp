@@ -1,6 +1,8 @@
 /*
- * Mohó lefedés és az egyforma lapok száma gcd alapján.
- 
+Megoldás lényege:
+A mohó lefedés során a téglalapból mindig a legnagyobb négyzetet vágjuk le, így a maradék téglalap oldalai az euklideszi algoritmus lépéseit követik: a hosszabb oldalból a rövidebbel annyiszor vágunk le négyzetet, amennyi a hányados, majd a maradékkal folytatjuk, amíg valamelyik oldal nulla nem lesz. A hányadosok összege adja az első részfeladat járólapszámát. Egyforma lapok esetén a legnagyobb használható négyzetoldal a két oldal legnagyobb közös osztója, így a darabszám (a / gcd) * (b / gcd). Az idő O(log(min(a, b))).
+*/
+/*
 Hint 1: || A mohó négyzetes lefedés lépésszáma ugyanúgy viselkedik, mint az euklideszi algoritmus hányadosösszege. ||
 Hint 2: || Az egyforma lapok esetén a legnagyobb használható lap oldala a két méret gcd-je, és ebből már könnyen kijön a darabszám. ||
 */

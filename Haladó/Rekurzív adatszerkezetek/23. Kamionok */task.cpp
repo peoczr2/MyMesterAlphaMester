@@ -1,15 +1,17 @@
 /*
-Megoldasi otlet:
-Minden varosbol pontosan egy masik varosba megy a szallitasi ut, ezert a rendszer
-egy gyokeres fa a 1-es varos felé mutatva. A kamionok a levelekbol indulnak, es
-egy utjuk soran minden erintett varos termeleset felveszik.
+Megoldási ötlet:
+Minden városból pontosan egy kamionút indul, így a városok a központi raktár (1-es) felé
+mutató gyökeres fát alkotnak. Egy részfából csak a részfa levelein indított kamionok juthatnak ki,
+ezért a v-ben gyökerező részfa P(v) termelését csak az L(v) darab levélből induló kamion
+szállíthatja el. Ebből P(v) <= C * L(v) szükséges minden v-re, és elegendő is.
+A keresett legkisebb egész kapacitás tehát a max_v ceil(P(v) / L(v)) érték.
 
-Ezert egy kamionhoz szukseges kapacitas pontosan az adott leveltol a gyokerig
-vezeto ut ossztermelese. A feladat valasza ezek kozul a legnagyobb ertek.
-
-Hint 1: || A kamionok mindig a beszallasi pontokbol indulnak, vagyis azokbol a varosokbol, amelyekbe nem erkezik masik varosbol kamion. ||
-Hint 2: || Egy kamion kapacitasat az utja menten osszegzett termeles hatarozza meg. ||
-Hint 3: || Ezert eleg a gyokerbol egy DFS-sel vegigmenni, es minden levelre eltárolni a gyokerig tartó osszeget. ||
+Ezt egy DFS-sel számoljuk: visszatérve összegezzük a részfa termelését és a leveleit.
+*/
+/*
+Hint 1: || Egy részfa termelését csak a részfa levelein indított kamionok vihetik ki a fából. ||
+Hint 2: || Minden v csúcsra számold ki, hány levél van a részfájában, és mennyi a részfa összes termelése. ||
+Hint 3: || A v csúcsra szükséges kapacitás felfelé kerekített P(v) / L(v); a válasz ezek maximuma. Ezt egy DFS-sel, visszatéréskor egyszerre kiszámolhatod. ||
 */
 
 #include <bits/stdc++.h>
@@ -22,32 +24,32 @@ int main() {
     int N;
     cin >> N;
 
-    vector<int> parent(N + 1, 0);
     vector<long long> prod(N + 1, 0);
     vector<vector<int>> children(N + 1);
-    vector<int> indeg(N + 1, 0);
-
     for (int city = 2; city <= N; ++city) {
         int to;
         long long amount;
         cin >> to >> amount;
-        parent[city] = to;
         prod[city] = amount;
         children[to].push_back(city);
-        ++indeg[to];
     }
 
+    // sum[v]: a v részfájának összes termelése, leaves[v]: a v részfájában lévő levelek száma
+    vector<long long> sum(N + 1, 0), leaves(N + 1, 0);
     long long answer = 0;
-    function<void(int, long long)> dfs = [&](int u, long long sum) {
-        sum += prod[u];
-        if (children[u].empty()) {
-            answer = max(answer, sum);
-            return;
+    function<void(int)> dfs = [&](int u) {
+        sum[u] += prod[u];
+        if (children[u].empty()) leaves[u] = 1;
+        for (int v : children[u]) {
+            dfs(v);
+            sum[u] += sum[v];
+            leaves[u] += leaves[v];
         }
-        for (int v : children[u]) dfs(v, sum);
+        long long need = (sum[u] + leaves[u] - 1) / leaves[u];
+        answer = max(answer, need);
     };
 
-    dfs(1, 0);
+    dfs(1);
     cout << answer << '\n';
     return 0;
 }

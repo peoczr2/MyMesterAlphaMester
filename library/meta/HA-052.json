@@ -1,0 +1,67 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/46. Utcák egyirányúsítása ***",
+    "method": "Hidak keresése (Tarjan low-link) mélységi bejárással, a fa- és visszaélek irányításával.",
+    "category": "Gráf: hidak és irányítás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "mélységi bejárás",
+      "híd"
+    ],
+    "note": "Nincs minta-kimenet (a minta.zip csak be1 és be2 bemenetet tartalmaz), ezért brute force-szal ellenőriztem. A feladat szerint bármely megfelelő irányítás jó, ezért minta: kézi. 800 véletlen, legfeljebb 8 pontú összefüggő gráfon igazoltam: K egyezik a hidak számával (élenként törléses próbával), minden híd mindkét irányban szerepel, a többi él pontosan egy irányban, és az irányított gráf erősen összefüggő. A PDF példájában K = 1, a mi kimenetünk más, de érvényes. Legnagyobb esetben (N = 10000, M = 200000) 0,05 s, az időlimit 0,2 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/47. Utcaseprő *",
+    "method": "Euler-kör az utcák két irányú élekre bontott gráfjában, Hierholzer-algoritmussal.",
+    "category": "Gráf: Euler-kör",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "euler-kör",
+      "bejárás"
+    ],
+    "note": "Nincs minta-kimenet (a minta.zip csak be1 és be2 bemenetet tartalmaz), ezért kézzel ellenőriztem. A feladat szerint több megoldás is megadható, ezért minta: kézi. 600 véletlen, legfeljebb 8 pontú összefüggő gráfon brute force-szal igazoltam, hogy a kimenet 2M+1 szám, 1-gyel kezdődik és végződik, és minden irányított (u, v) pár pontosan egyszer szerepel. Legnagyobb esetben (N = 10000, M = 300000) 0,08 s, az időlimit 0,2 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/48. Ültetés ***",
+    "method": "Lineáris erdő legnagyobb súlyú kiválasztása a kérés-gráfon: fa-DP és körös DP.",
+    "category": "Dinamikus programozás gráfon",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "gráf",
+      "dinamikus programozás",
+      "lineáris sorrend"
+    ],
+    "note": "A be1 (ki1) kimenete pontosan egyezik a mintával (T = 7). A be2 (ki2) mintájában T = 7471, a mi kiosztásunk 7473 teljesülő kérést ad; ezt a kiosztásból újraszámoltam, és mindkét sorrend érvényes permutáció. Mivel a feladat a legtöbb teljesülő kérést kéri, a ki2 minta nem optimális, ezért a minta hibás: minta: kézi. A kimenet formátuma a mintát követi: az első sorban T áll, a másodikban a kiosztás (a szöveg „első és egyetlen sorába” megfogalmazása ellenére). A kiosztás szomszédságát a be1 mintája igazolja (T = 7 és a pontos sorrend egyezik). A fa-DP és a körös DP helyességét 400 véletlen, legfeljebb 8 tanulós esetben az összes sorrend kipróbálásával igazoltam. Nagy esetben (N = 20000: véletlen, egy kör, lánc, csillag, háromszögek) mindegyik 0,01 s alatt fut, az időlimit 0,1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/49. Ültetés2 ***",
+    "method": "Kuhn-algoritmussal legnagyobb párosítás; az összefüggőséghez intervallumonként újrapárosítás.",
+    "category": "Gráf: kétoldalú párosítás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "párosítás",
+      "kuhn-algoritmus"
+    ],
+    "note": "BLOKKOLT: a szöveg és a PDF-példa ellentmond a harmadik sorról. A szöveg szerint IGEN, ha van olyan legjobb kiosztás, amelyben a kiosztott helyek között nincs üres szék; a PDF példájában (N = 10, M = 10, T = 8) a kimenet NEM. Brute force-szal igazoltam, hogy a példában van ilyen legjobb kiosztás: az 1–8. székeket foglalja el (a 8. tanuló a 8. székre ül), ezért a kód a szöveg szerinti olvasatot adja, azaz IGEN-t. Ha a helyes olvasat más (pl. minden igény kielégítése kell, vagy minden legjobb kiosztásnak össze kell függnie), mindkettő NEM-et adna a példán; a harmadik sor számítása a kódban külön részben van. Kérdés: melyik olvasat a helyes? T és a kiosztás helyességét 300 véletlen kis esetben (N ≤ 7, M ≤ 6) brute force-szal ellenőriztem. A minta.zip csak bemenetet tartalmaz (be2: N = 187, M = 186), ezen 0,002 s.",
+    "minta": "kézi",
+    "blocked": true,
+    "solved_by": "haiku",
+    "problematic": true
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/5. Család *",
+    "method": "Szülői táblából közvetlen ellenőrzés: testvérek, féltestvérek, apai ág bejárása, unokatestvérek a szülők testvéreinek gyermekeiként.",
+    "category": "Családfa: rokonsági kapcsolatok",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "rokonság",
+      "táblázat",
+      "esetszétválasztás"
+    ],
+    "note": "Az unokatestvérek közé a szülők testvéreinek és féltestvéreinek gyermekei tartoznak; a keresett személy féltestvére is szerepelhet unokatestvérként (be2: 573, 645, 668), ha szülője a keresett személy szülőjének féltestvére.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/53. Farajz ***",
+    "method": "Rekurzív részfa-profil (kontúr) összevonás minden csúcsnál, több jelölt eltolással, a dominált profilok eldobásával.",
+    "category": "Fa: rajzolás, kontúr-DP",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "rajzolás",
+      "dp"
+    ],
+    "note": "Blokkolt: a be2 minta (3996 karakter) 20 mp alatt sem fut le (időlimit 0,1 mp); kis fán (l(x(p(b,j),u(f,f)),a(y,g))) a kód 10-et ad, pedig 7 érhető el, mert a különböző ágak csúcsai egymás közé is kerülhetnek. A mohó (minden csúcsnál minimális eltolás) változat be2-n 916-ot ad a 865 helyett. Pontos megoldás nem készült.",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": true,
+    "problematic": true
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/6. Családfa *",
+    "method": "BFS a gyökértől: a szintenkénti létszám maximuma és minimuma (a gyökér szintje kizárva).",
+    "category": "Fa: szintenkénti bejárás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "bfs",
+      "szint"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/60. Fa szélső pontjai",
+    "method": "Szintenkénti BFS balról jobbra: minden szint első és utolsó csúcsa, unióban.",
+    "category": "Fa: szintenkénti bejárás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": [
+      "fa",
+      "bfs",
+      "szint"
+    ],
+    "note": "A kimenet második sorának sorrendje a feladat szerint tetszőleges; a validátor sorrendérzékeny, ezért az ellenőrzés halmaz-egyezéssel történt (mindkét minta egyezik).",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/65. Részfák",
+    "method": "Kanonikus azonosító (címke, bal és jobb gyerek azonosítója) minden részfára, hash-halmazban keresve.",
+    "category": "Fa: részfa-azonosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "hash",
+      "részfa"
+    ],
+    "note": "A ki2.txt csak 1 sort tartalmaz (az 1. kérdés: NEM), pedig be2 szerint K=6; a 2–6. sor hiányzik. A program 6 sort ad (NEM NEM IGEN IGEN NEM IGEN), ezt független brute-force (közvetlen részfa-összevetés) igazolta.",
+    "solved_by": "haiku",
+    "minta": "kézi",
+    "blocked": false
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/68. Párhuzamos kiszámítás",
+    "method": "Határidő-korlát: t-ig esedékes műveletek száma legfeljebb t·P; az idő a gyökér magassága.",
+    "category": "Fa: párhuzamos végrehajtás",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "fa",
+      "ütemezés",
+      "párhuzamosság"
+    ],
+    "note": "SUMMARY.md-ből importálva",
+    "solved_by": "haiku",
+    "minta": "",
+    "blocked": false
+  }
+]

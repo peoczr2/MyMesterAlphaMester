@@ -1,0 +1,99 @@
+[
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/15. Átfedő intervallumok",
+    "method": "Lazított szegmensfa, csúcsonként 10 maradék-darabszámmal és körforgató lazy értékkel",
+    "category": "Szegmensfa: lazy frissítés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "szegmensfa",
+      "lazy",
+      "intervallum"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/16. Facsemete",
+    "method": "Félegyenes A-ból P-n át; szögszomszédos fák, és üres láncok két mutatóval",
+    "category": "Geometria, szögrendezés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "keresztszorzat",
+      "rendezés"
+    ],
+    "note": "A régi O(N³) megoldás nagy N-re nem végzett; az új O(N log N), 24 ms a legnagyobb bemeneten. Mindkét minta a várt kimenetet adja. Független ellenőrzővel 1600 véletlen eset egyezett. Feltétel: a fák pozíciói különbözőek.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "opus",
+    "problematic": false
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/2. Futárszolgálat",
+    "method": "Steiner-részfa élei, a részfa átmérőjének kétszeres bejárásából levonva",
+    "category": "Fa: minimális séta",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "átmérő",
+      "bejárás"
+    ],
+    "note": "A validátor (pontos összevetés) be2-n eltér, de a séta érvényes és T egyezik; ellenőrző: library/.work/R-088/f2/check2.py. 300 véletlen esetben brute force egyezik (brute2.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/3. Szuperhuszár",
+    "method": "Szögrendezés a lépésvektorokra; az origó nyerhető, ha nincs 180 foknál nagyobb rés",
+    "category": "Geometria: konvex burok",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "geometria",
+      "játékelmélet",
+      "konvex burok"
+    ],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/4. Leggyorsabb szállítás",
+    "method": "Dijkstra (távolság, teherbírás) párral, elődök tárolásával az út visszaállításához",
+    "category": "Gráf: legrövidebb út",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dijkstra",
+      "legrövidebb út"
+    ],
+    "note": "Több legrövidebb út esetén bármelyik elfogadható; ellenőrző: library/.work/R-088/f4/check4.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "NT, OKTV, IOI Válogató/IOI ∕ CEOI Válogató 2018/5. Sűrű részsorozat",
+    "method": "Csúszóablak-minimum adja a maximumot, utána mohó intervallumfedés a legkevesebb pozícióval",
+    "category": "Intervallumfedés, csúszóablak",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "csúszóablak",
+      "intervallumfedés",
+      "mohó"
+    ],
+    "note": "Több megoldás esetén bármelyik elfogadható; ellenőrző: library/.work/R-088/f5/check5.py.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

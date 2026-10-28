@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/5. Csak egy ellenfél *",
+    "method": "Törzsenkénti halmaz a különböző ellenfelekről, majd az egy elemű halmazú törzs keresése.",
+    "category": "Halmazok: különböző elemek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["halmaz", "párok", "feltétel"],
+    "note": "A szöveg „N sorban” része K sort jelent (a minta be2 szerint K=623 sor). Ugyanazzal az ellenféllel többször vívott háború egy ellenfélnek számít. Mért futásidő legnagyobb bemeneten (N=1000, K=2000): kb. 1 ms, időlimit 0,3 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/6. Csak egyszer háborúzó törzs *",
+    "method": "Törzsenkénti háborúszámláló, az első pontosan egyet számláló törzs keresése.",
+    "category": "Számlálás: gyakoriság",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "tömb", "feltétel"],
+    "note": "A szöveg „N sorban” része K sort jelent (a minta be2 szerint K=623 sor). Mért futásidő legnagyobb bemeneten: kb. 1 ms, időlimit 0,3 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/7. Egészében adott századi háborúk száma *",
+    "method": "Két évszámhatár a századra, majd lineáris bejárás a teljes egészében beeső háborúkra.",
+    "category": "Intervallumok: tartalmazás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "feltétel", "karakterlánc"],
+    "note": "Századhatárok: XVII. 1601–1700, XVIII. 1701–1800, XIX. 1801–1900. A minta be2 (XIX.) a 62-t adja ezzel, az 1800–1899 olvasat 64-et adna. A XVII. és XVIII. határait a minta nem ellenőrzi. A szöveg „N sorban” része K sort jelent (K=623). Mért futásidő legnagyobb bemeneten: kb. 1 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/8. Egy évnél rövidebb *",
+    "method": "Lineáris bejárás, a kezdő és a befejező év egyezésének számlálása.",
+    "category": "Számlálás: egyezés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "feltétel", "évszám"],
+    "note": "A szöveg „N sorban” része K sort jelent (a minta be2 szerint K=623 sor). Mért futásidő legnagyobb bemeneten: kb. 1 ms, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

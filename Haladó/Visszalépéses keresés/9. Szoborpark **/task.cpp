@@ -1,7 +1,12 @@
 /*
-Hungarian megoldás: az egyszerű utak számát DFS-sel számoljuk meg a bejárattól
-Árpád szobráig, miközben egy csúcsot legfeljebb egyszer látogatunk.
-
+Megoldás lényege: visszalépéses keresést (DFS) futtatunk a bejárati csomópontból. Minden lépésnél
+csak olyan szomszédba megyünk, amelyet az aktuális úton még nem érintettünk, így minden csúcsot
+legfeljebb egyszer látogatunk. Ha elérjük Árpád szobrát, egy utat találtunk, és a keresés az
+ágon visszalép. A bejárt csúcsokat bitmaszkban tároljuk, a szomszédok bitenkénti műveletekkel
+válogathatók ki. A párhuzamos utakat külön útnak számoljuk. Az időigény az utak számával arányos,
+ezért sűrű gráfon, sok úttal lassabb lehet, de N ≤ 25 mellett ez a szokásos megoldás.
+*/
+/*
 Hint 1: || Minden út egyszerű út, tehát a bejárt csúcsokat jelölni kell. ||
 Hint 2: || A keresés a célcsúcs elérésénél egy útat számol. ||
 */
@@ -10,18 +15,20 @@ Hint 2: || A keresés a célcsúcs elérésénél egy útat számol. ||
 using namespace std;
 
 int n, m, b, a;
-vector<vector<int>> g;
-vector<char> vis;
-long long ans = 0;
+unsigned adj[26];   // adj[u]: u szomszédainak bitmaszkja
+int mult[26][26];   // mult[u][v]: az u és v közötti utak száma
 
-void dfs(int v) {
-    if (v == a) {
-        ++ans;
-        return;
+// v: az aktuális csúcs, used: az eddig érintett csúcsok bitmaszkja (benne v is)
+long long dfs(int v, unsigned used) {
+    long long res = 0;
+    unsigned cand = adj[v] & ~used;
+    while (cand) {
+        int to = __builtin_ctz(cand);
+        cand &= cand - 1;
+        if (to == a) res += mult[v][to];
+        else res += (long long)mult[v][to] * dfs(to, used | (1u << to));
     }
-    vis[v] = 1;
-    for (int to : g[v]) if (!vis[to]) dfs(to);
-    vis[v] = 0;
+    return res;
 }
 
 int main() {
@@ -29,15 +36,14 @@ int main() {
     cin.tie(nullptr);
 
     cin >> n >> m >> b >> a;
-    g.assign(n + 1, {});
     for (int i = 0; i < m; ++i) {
         int u, v;
         cin >> u >> v;
-        g[u].push_back(v);
-        g[v].push_back(u);
+        adj[u] |= 1u << v;
+        adj[v] |= 1u << u;
+        ++mult[u][v];
+        ++mult[v][u];
     }
-    vis.assign(n + 1, 0);
-    dfs(b);
-    cout << ans << '\n';
+    cout << dfs(b, 1u << b) << '\n';
     return 0;
 }

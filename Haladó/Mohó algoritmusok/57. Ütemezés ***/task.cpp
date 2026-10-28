@@ -1,9 +1,11 @@
 /*
-Feladat: Események közül (időtartam, határidő) minél többet kell megtartani úgy, hogy egy esemény folyamatos napblokkon fusson, és befejezése ne lépje túl a saját határidőt.
-Ötlet: Moore–Hodgson típusú mohó. Határidő szerint haladva berakjuk az eseményt, és ha az összidő túllépi az aktuális határidőt, eldobjuk a leghosszabb időtartamút (max-kupac). Így marad meg a maximális darabszám. A kiválasztott eseményeket végül határidő szerint egymás után ütemezzük 1. naptól indulva.
-Hint 1: || A kritikus erőforrás a felhasznált össznapok száma a határidős prefixekben. ||
-Hint 2: || Túlcsorduláskor a leghosszabb esemény kidobása veszít a legkevesebb darabszámot időegységenként. ||
-Hint 3: || A végső kiválasztott halmazt határidő szerinti sorrendben egymás mögé rakva érvényes kezdőnapokat kapsz. ||
+Megoldás lényege:
+Az eseményeket határidő szerint haladva dolgozzuk fel, és közben követjük a kiválasztott események összidejét. Ha egy új esemény hozzávételével az összidő túllépi az aktuális határidőt, a kiválasztott események közül a leghosszabbat (max-kupac) elhagyjuk. Így a megmaradt halmaz a lehető legtöbb eseményt tartalmazza úgy, hogy mindegyik a határidejére befejeződhessen (Moore–Hodgson-elv). A kiválasztott eseményeket határidő szerint egymás után, az 1. naptól kezdve ütemezzük, így minden esemény a határidejére vagy korábban ér véget. Az időigény O(M log M), ahol M az események száma.
+*/
+/*
+Hint 1: || Az összidő-prefixeket határidő szerinti rendezés után érdemes követni, így a feltétel minden lépésben egyszerűen ellenőrizhető. ||
+Hint 2: || Ha túllépnénk a határidőt, a leghosszabb esemény kidobása a legtöbb szabad időt adja, és csak egyetlen eseményt veszítünk. ||
+Hint 3: || A megtartott halmazt határidő szerinti sorrendben egymás mögé ütemezve, az 1. naptól kezdve, minden esemény érvényes kezdőnapot kap. ||
 */
 
 #include <bits/stdc++.h>

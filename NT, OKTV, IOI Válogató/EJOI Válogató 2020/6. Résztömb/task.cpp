@@ -4,7 +4,11 @@ erteket osszegyujtjuk, es ha kell, a legkisebb abszolut erteku negativat elhagyj
 hogy a paritas odd legyen. Ha nincs negativ, de van nulla, akkor a 0 a legkisebb
 szorzat. Kulonben minden szam pozitiv, ekkor a legkisebb egyetlen elem a jo valasz.
 */
-
+/*
+Hint 1: || Ha a negatív elemek száma páratlan, érdemes minden nem nulla elemet megtartani: így a szorzat negatív, és abszolút értéke a lehető legnagyobb. ||
+Hint 2: || Ha a negatív elemek száma páros, egyet ki kell hagyni: azt a negatív számot, amelynek a legkisebb az abszolút értéke. Ha nincs negatív szám, de van nulla, a nulla a legkisebb szorzat. ||
+Hint 3: || Ha minden szám pozitív, a legkisebb elem egyedül adja a minimális szorzatot, mert további elem hozzávétele nem csökkenti a szorzatot. A kiírt részsorozat sorrendje tetszőleges. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

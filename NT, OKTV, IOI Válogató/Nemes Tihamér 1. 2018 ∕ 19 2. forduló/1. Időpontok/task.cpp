@@ -1,11 +1,13 @@
+/*
+Megoldás lényege:
+Mindkét időpontot másodpercekben számoljuk az első hét első napjának 0:00:00 pillanatától, így a két időpont távolsága egyszerű abszolút különbség lesz. A távolságot hét, nap, óra, perc és másodperc szerint váltjuk vissza, a távolság hete és napja 0-tól számozódik, ahogy a mintában. A második időpont a későbbi időpont plusz ugyanez a távolság, amit már az eredeti, 1-től induló számozással írunk ki. A váltások fix egységekkel (604800, 86400, 3600 és 60 másodperc) dolgoznak, így a visszaváltás egyértelmű és minden bemenetre helyes. Az időigény O(1), mert csak néhány aritmetikai művelet történik.
+*/
+/*
+Hint 1: || Az időpontokat érdemes egyetlen számmá, másodperccé alakítani, mert így a távolság egy kivonás és egy abszolútérték. ||
+Hint 2: || Visszaváltáskor maradékos osztással bontsd a másodpercszámot: először a hét (604 800 másodperc), majd a nap (86 400), az óra (3600), a perc (60), a maradék a másodperc; a második időpontnál a hét és a nap számozása 1-től induljon. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Az időpontokat másodpercre váltjuk egy közös, lineáris skálán. A két időpont
-    távolsága a különbségük, az új időpont pedig a későbbi időpont tükörképe a
-    korábbihoz képest.
-*/
 
 static const long long SEC_DAY = 24LL * 60 * 60;
 static const long long SEC_WEEK = 7LL * SEC_DAY;

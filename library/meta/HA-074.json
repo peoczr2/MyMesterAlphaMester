@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/5. Adott ponton átmenő legrövidebb kör **",
+    "method": "Többforrású BFS a P szomszédjaiból, a két különböző forrást összekötő él adja a kört",
+    "category": "Gráf: BFS",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "bfs", "kör"],
+    "note": "Bármelyik megadható; a validátor pontos összevetése ezért eltér, a kimenetet brute-force ellenőrző igazolja (library/.work/HA-074/check/check5.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/50. Térkép ***",
+    "method": "Országgráf BFS a hosszhoz, 0-1 BFS a határ-ellenőrzéshez a rácson",
+    "category": "Gráf: BFS",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bfs", "rács"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/51. Utcák behajtani tilos táblákkal ***",
+    "method": "BFS a rácson, a tiltott irányított éleket kihagyva, útvonal visszakövetéssel",
+    "category": "Gráf: BFS",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["gráf", "bfs", "rács"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, szélességi bejárás/52. Utcák kötelező haladási irány táblákkal ***",
+    "method": "BFS állapottérben (csomópont, érkezési irány), megengedett kimenő irányok maszkkal",
+    "category": "Gráf: BFS",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "bfs", "állapottér"],
+    "note": "A minta egy legrövidebb utat ad; az azonos hosszú utak közül az utolsó előd-választással egyezik. A feladat nem mondja ki, hogy bármelyik legrövidebb út elfogadott.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

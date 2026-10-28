@@ -1,11 +1,19 @@
+/*
+Megoldás lényege:
+A települések távolság szerint növekvően vannak megadva, ezért egy település K legközelebbi
+másik települése mindig egy összefüggő szakaszt alkot a sorban: balra és jobbra egy-egy
+folytonos sorozat. Minden településnél két mutatóval (bal: i-1 felé, jobb: i+1 felé)
+K lépést teszünk, mindig a kisebb távolságú oldalt véve. Egyenlő távolságnál a bal oldali
+települést választjuk, így a legkisebb sorszámú baloldali szomszéd marad meg. A kiírt
+érték a kiválasztott települések legkisebb és legnagyobb sorszáma. Az időigény O(N · K),
+ami legfeljebb 10^7 lépés.
+*/
+/*
+Hint 1: || A K legközelebbi település mindig egy-egy folytonos szakasz i körül: balra az i-1, i-2, ... indexek, jobbra az i+1, i+2, ... indexek közül kerülnek ki. Ezért elég két irányba külön-külön haladni. ||
+Hint 2: || Két mutatóval (l = i-1, r = i+1) K-szor lépj: mindig azt az oldalt léptesd, ahol a távolság kisebb. Egyenlőségnél a bal oldalt válaszd. Ha az egyik oldalon már nincs település, a másik oldalt léptesd. A végén a kiválasztott indexek minimuma és maximuma kell. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-    Minden településnél két mutatóval kiválasztjuk a K legközelebbi másik
-    települést. Ties esetén a baloldali települést részesítjük előnyben, ahogy a
-    feladat kéri.
-*/
 
 int main() {
     ios::sync_with_stdio(false);

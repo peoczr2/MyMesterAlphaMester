@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Középhaladó/Kutyaszépségverseny/9. Kieső kutyák, amelyeknek 1 pont hiányzott a bentmaradáshoz *",
+    "method": "Kutyánként számlálás: pontosan egy kiesési szempont, amelyben 1 pont hiányzik",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számlálás", "feltétel", "tömb"],
+    "note": "A minta be1 nem azonos a PDF példájával (az 5. és 6. kutya sora eltér), de a kimenet mindkettőnél 1 1, és a megoldás a PDF példájával is egyezik.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

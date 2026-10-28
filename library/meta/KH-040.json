@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Középhaladó/Madármegfigyelés/7. Helységek egyedi madárral *",
+    "method": "Fajonként számoljuk, hány helységben fordult elő; az egyedi fajhoz tartozó helységet jelöljük.",
+    "category": "Előfordulás-számlálás, egyediség",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["mátrix", "számlálás", "egyediség"],
+    "note": "A minta.zip-ben csak bemenet (be1, be2) van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. A programot kézzel futtattam: a PDF példáján (2 / 2 3) egyezik, a be1, be2 bemenetekre és 300 véletlen kis bemeneten egyezik a független Python-ellenőrzővel (library/.work/KH-040/check.py). Ha nincs ilyen helység, csak a „0” sor íródik ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/8. Helységek egyféle madárral *",
+    "method": "Helységenként megszámoljuk a pozitív darabszámú fajokat; a pontosan egy fajt tartalmazókat írjuk ki.",
+    "category": "Soronkénti számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "számlálás", "sorok"],
+    "note": "A minta.zip-ben csak bemenet (be1, be2) van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. A programot kézzel futtattam: a PDF példáján (2 / 3 4) egyezik, a be1, be2 bemenetekre és 300 véletlen kis bemeneten egyezik a független Python-ellenőrzővel (library/.work/KH-040/check.py). Értelmezés: a csupa nulla sorú helységet nem írja ki, mert ott nem láttunk egyféle madarat. Ha nincs ilyen helység, csak a „0” sor íródik ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Madármegfigyelés/9. Helységek mindenféle madárral *",
+    "method": "Soronként ellenőrizzük, hogy nincs-e nulla; csak a nulla nélküli sorok helységeit írjuk ki.",
+    "category": "Soronkénti feltételellenőrzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["mátrix", "feltétel", "sorok"],
+    "note": "A minta.zip-ben csak bemenet (be1, be2) van, kimenet nincs, ezért a validátor „nincs minta” állapotot ad. A programot kézzel futtattam: a PDF példáján (2 / 2 4) egyezik, a be1, be2 bemenetekre és 300 véletlen kis bemeneten egyezik a független Python-ellenőrzővel (library/.work/KH-040/check.py). Ha nincs ilyen helység, csak a „0” sor íródik ki.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

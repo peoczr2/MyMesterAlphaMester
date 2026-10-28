@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/20. Két út hálózatban ***",
+    "method": "Csúcsok felbontása, kétegységnyi folyam két BFS-növeléssel",
+    "category": "Gráf: csúcsdiszjunkt utak",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "folyam", "csúcsdiszjunkt"],
+    "note": "A minta.zip csak bemenetet tartalmaz (be1, be2), kimenet nincs, ezért a validátor nincs minta állapotot ad. A feladat bármely megfelelő párt enged; saját ellenőrzővel (egyszerű utak, élek, csúcsdiszjunktság) igazoltam 400 kis véletlen teszten és a be2 bemeneten, a példa kimenete is egyezik. Mért idő: 0.002 s (n=1000, m=3000), időlimit 0.1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/21. Koncert ***",
+    "method": "Komponensenként feszítőfa, a fán kívüli él a gyökérhez, a többi csúcs a szülőélét kapja",
+    "category": "Gráf: feszítőfa",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["gráf", "feszítőfa", "kiosztás"],
+    "note": "A minta.zip csak bemenetet tartalmaz, a feladat bármely megfelelő kiosztást elfogad, ezért a validátor nincs minta állapotot ad. K-t 400 kis véletlen teszten párosítás-optimummal ellenőriztem, a kiosztást érvényességre; a be2 bemeneten K=2393, ez egyezik a komponensenkénti min(csúcs, él) képlettel. Mért idő: 0.018 s (m=30000, n=60000), időlimit 0.1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/22. Körben lévő pontok **",
+    "method": "Tarjan-algoritmus: erősen összefüggő komponensek, hurokéllel kiegészítve",
+    "category": "Gráf: erős komponensek",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "irányított", "kör"],
+    "note": "A feladat szerint a sorrend tetszőleges; a minta ki1 sorrendje (6 4 7 2 1) eltér az enyémtől (7 6 4 2 1), ezért a validátor hibásnak jelzi. A csúcshalmaz és K egyezik a minta mindkét esetével, 400 kis véletlen teszten brute-force-szal is igazoltam. Hurokél körnek számít. Mért idő: 0.027 s (n=10000, m=200000), időlimit 0.1 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, mélységi bejárás/23. Körön kívüli pontok **",
+    "method": "Mélységi bejárás, hidak keresése tin és low értékekkel",
+    "category": "Gráf: hidak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "irányítatlan", "híd"],
+    "note": "A feladat.pdf példájának kimenete (2 / 6 3) nem fér össze a leírással: a 3-as csúcs a 3-4-5 háromszögben van, így körben van. A minta.zip in.1/out.1 és in.10/out.10 párja a leírás szerinti megoldással egyezik. Mért idő: 0.032 s (n=10000, m=200000), időlimit 0.1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/34. Kirándulás",
+    "method": "Visszalépéses keresés a buszok állapotának memoizálásával, az üres buszok szimmetriájának kihasználásával.",
+    "category": "Visszalépéses keresés",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["visszalépés", "memoizálás", "bitmaszk"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/4. Megye ***",
+    "method": "Visszalépés a legkevesebb szabad színű megye kiválasztásával (MRV-heurisztika).",
+    "category": "Gráf: színezés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "színezés", "visszalépés"],
+    "note": "A feladat szerint több helyes kiszínezés is megadható, ezért a minta eltér; a kimenet független ellenőrzővel érvényes, a -1 eset is igazolva (library/.work/R-080/check_r080.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/5. Munka **",
+    "method": "Min-költségű maximális folyam Dijkstra-algoritmussal a munkás–munka hálózaton.",
+    "category": "Hálózati folyam",
+    "difficulty": 2,
+    "goal": "Mélyebb megértés",
+    "tags": ["folyam", "hozzárendelés", "dijkstra"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/6. Ritmus **",
+    "method": "Dinamikus programozás a sor prefixein, az elágazások visszakövetésével a mintasorozat kiírásához.",
+    "category": "Dinamikus programozás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["dinamikus", "sztring", "visszakövetés"],
+    "note": "A feladat szerint több megoldás esetén bármelyik megadható (példa: „vagy 3 3 2 3”), ezért a minta eltér; a kimenet független ellenőrzővel érvényes (library/.work/R-080/check_r080.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/7. Sudoku 1 *",
+    "method": "Teljes felsorolás: a 4x4-es sudoku-táblák soronkénti visszalépéses generálása, az első illeszkedő kiírása.",
+    "category": "Sudoku: teljes felsorolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sudoku", "visszalépés", "tömb"],
+    "note": "A feladat szerint több megoldás esetén bármelyik megadható; a minta k1.txt (be1 párja) nem kimenet, hanem Free Pascal futásidejű hibaüzenet (Runtime error 106), a program kimenete viszont a PDF példájával egyezik, és a független ellenőrző érvényesnek igazolja (library/.work/R-080/check_r080.py).",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/8. Sudoku 2 *",
+    "method": "Az összes 4x4-es sudoku-tábla (288 darab) visszalépéses felsorolása és a megadottal illeszkedők számlálása.",
+    "category": "Sudoku: teljes felsorolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sudoku", "visszalépés", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

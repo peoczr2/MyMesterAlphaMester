@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/35. Központ",
+    "method": "Floyd-Warshall-szerű max-min számítás, majd a leglassabban elért csúcs sebességének maximuma.",
+    "category": "Gráf: legszélesebb utak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "floyd-warshall", "max-min"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/36. Hálózat tesztelés",
+    "method": "Élek visszaadása fordított sorrendben DSU-val, komponensenként a csúcslistákkal.",
+    "category": "Gráf: unió-keresés, fordított idő",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "dsu", "komponens"],
+    "note": "A validátor eltérést jelez, mert a minta a csúcsokat más sorrendben írja ki; a feladat szerint a sorrend tetszőleges. A halmazok független, BFS-alapú brute force programmal (library/.work/HA-018/brute36.cpp) minden lépésre megegyeznek a mintával.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/37. Körmérközés",
+    "method": "Beszúrásos módszer: az új versenyző a végére kerül, majd előrébb cserélgetjük.",
+    "category": "Gráf: turnamenti sorrend",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "turnaj", "beszúrás"],
+    "note": "A feladat szerint bármely megfelelő sorrend elfogadható; a program az 1. mintára 2 1 3 4-et ad a minta 3 2 1 4 helyett. Érvényességét ellenőrző program igazolja (library/.work/HA-018/check37.py): permutáció, és minden elem legyőzte az előtte állót.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Gráfok, elemi feladatok/38. Függvény minimális periódushossza",
+    "method": "Bejárás kezdőpontonként, csúcsonként jegyzett bejárás-azonosítóval; a legrövidebb ciklus kiírása.",
+    "category": "Gráf: függvénygráf, ciklus",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["gráf", "ciklus", "függvény"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

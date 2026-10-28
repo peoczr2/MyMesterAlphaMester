@@ -1,9 +1,13 @@
 /*
+Megoldás lényege:
 Egy adott fajta összes előfordulásának ugyanabban a d szerinti maradékosztályban kell lennie, mert ha két
-azonos tárgy szerepel, akkor a következő ugyanolyan pontosan d hellyel később áll. Ezért először kiszámítjuk,
-hány pozíció van az egyes maradékosztályokban, majd a darabszámokat ezekre a csoportokra osztjuk szét.
-d<=3 miatt ez megoldható kis dimenziós részösszeg-DP-vel, utána pedig a csoportokból közvetlenül felírható
-az eredeti sorrend.
+azonos tárgy szerepel, akkor a következő ugyanolyan pontosan d hellyel később áll; így egy fajta a saját
+maradékosztályának egymás utáni (d távolságra lévő) helyeit foglalja el. Ezért először kiszámítjuk, hány pozíció
+van az egyes maradékosztályokban, majd a fajtákat részösszeg-DP-vel úgy osztjuk szét a d osztály között, hogy a
+darabszámok összege osztályonként pontosan a pozíciók száma legyen (a feladat garantálja, hogy van ilyen).
+d<=3 miatt a DP legfeljebb két dimenziós (a harmadik osztály maradékként adódik), utána az osztályokon belül a
+fajtákat egymás után kiírva közvetlenül megkapjuk az eredeti sorrendet. Időigény: O(M·(N/d)^2), N ≤ 1000 esetén
+legfeljebb kb. 11 millió lépés.
 */
 /*
 Hint 1: || Az azonos típusú elemek pozíciói egyetlen 1, 2 vagy 3 maradékosztályba eshetnek csak. ||

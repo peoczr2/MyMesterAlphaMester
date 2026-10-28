@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Összetett feladatok/31. Szaloncukor árusok **",
+    "method": "Cég–fajta párok legkisebb ára, azonosítók első előfordulás szerint, egyszerű megszámlálás",
+    "category": "Csoportosítás, szélsőérték",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["asszociatív tömb", "csoportosítás", "szélsőérték"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/32. Szaloncukrot gyártó cégek **",
+    "method": "Cég–fajta párok legkisebb ára, cégek és fajták megszámlálása, minimumos ellenőrzés",
+    "category": "Csoportosítás, szélsőérték",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["asszociatív tömb", "csoportosítás", "szélsőérték"],
+    "note": "A feladatszöveg szerint a cég van elöl, de a példa (3 cég a kimenetben) és a minta a fajtát mutatja elöl; a kód a mintához igazodik, a bemenet sorrendje: fajta, cég, ár.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/33. Leértékelés",
+    "method": "Egy menetben számlálás, a Nap napi ár felülírása, jelölőtömb a leghosszabb szünethez",
+    "category": "Számlálás, intervallumok",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["számlálás", "intervallum", "tömb"],
+    "note": "Ha ugyanarra a termékre két leértékelés fedi a Nap sorszámú napot, a bemenetben később szereplő ár érvényes; a minta ezt nem érinti.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Összetett feladatok/34. Vonatok szemben",
+    "method": "Percenkénti szimuláció: szakaszfoglalás, kényszerű várakozás, elsőbbség a Kukutyinból indulónak",
+    "category": "Szimuláció, időzítés",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["szimuláció", "időzítés", "egyvágányú szakasz"],
+    "note": "A P sor a Piripócs felől, az állomások sorrendjében (N-től 1-ig) érkezik; a 3. részfeladat a kényszerű várakozás állomása, ha nincs várakozás és nincs közös állomás, 0. A mintában nincs olyan eset, ahol a vonatok nem találkoznak, vagy ahol csak végállomáson érintik egymást; ezeket a szimuláció a fenti szabály szerint kezeli.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

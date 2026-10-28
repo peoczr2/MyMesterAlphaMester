@@ -1,11 +1,16 @@
 /*
-Feladat: A meghívások közül a lehető legtöbbet kell elfogadni úgy, hogy minden koncert egy külön napon legyen.
-Ötlet: A meghívásokat a határnap szerint rendezzük, majd mindegyiket a lehető legkorábbi szabad napra tesszük a saját intervallumában.
+Megoldás lényege: a meghívásokat a határnapjuk (u) szerint növekvő sorrendben dolgozzuk fel, és mindegyiket
+a saját [e, u] intervallumának legkorábbi még szabad napjára tesszük. A határidő szerinti sorrend miatt
+a korábban lejáró igények kapják meg előbb a napot, a legkorábbi szabad nap választása pedig a későbbi
+igényeknek hagyja a legtöbb lehetőséget, így a maximális számú fellépés elérhető (csereargumentummal
+igazolható). A "következő szabad nap" keresést egy DSU gyorsítja. Időigény: O(N log N), mert a napok
+kezelése gyakorlatilag konstans, a rendezés dominál.
+*/
+/*
 Hint 1: || Ha egy meghívás korán lejár, azt előbb kell elhelyezni. ||
 Hint 2: || A legkorábbi szabad nap kiválasztása a többi meghívásnak még több lehetőséget hagy. ||
 Hint 3: || A szabad napok kezelésére elég egy DSU vagy egy hasonló "következő szabad nap" struktúra. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

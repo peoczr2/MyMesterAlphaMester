@@ -1,11 +1,15 @@
 /*
-Feladat: Egy sorozatot minimális számú növekvő részsorozatra kell bontani (nem feltétlen folytonos részekre).
-Ötlet: Ez a láncfelbontás dualitása: a minimális növekvő részsorozatszám megegyezik a leghosszabb nemnövekvő részsorozat hosszával. Gyakorlatban mohó láncépítés: minden új elemet arra a láncra teszünk, amelynek utolsó eleme a lehető legnagyobb, de még kisebb nála; ha nincs ilyen, új lánc indul.
+Megoldás lényege:
+Dilworth-tétel szerint a legkisebb számú szigorúan növekvő részsorozatra bontás darabszáma megegyezik a leghosszabb nemnövekvő részsorozat hosszával.
+A mohó eljárás sorban halad a számokon: minden x-et arra a láncra fűz, amelynek utolsó eleme a lehető legnagyobb, de még x-nél kisebb.
+Ha ilyen lánc nincs, új láncot nyit. A láncok utolsó elemeit multiset tárolja, így minden lépés logaritmikus.
+Időigény: O(N log N), memória: O(N).
+*/
+/*
 Hint 1: || Egy láncban az utolsó elem < új elem feltétel kell. ||
-Hint 2: || A „legszorosabb” illesztés (largest tail < x) tartja minimálisan a láncok számát. ||
+Hint 2: || A „legszorosabb illesztés” (largest tail < x) tartja minimálisan a láncok számát. ||
 Hint 3: || A válasz a végén kialakult láncok száma. ||
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 

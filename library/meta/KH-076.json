@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Törzsek/20. Háború a századfordulón *",
+    "method": "Kezdő és befejező év századának összehasonlítása, az első eltérő háború sorszáma.",
+    "category": "Intervallumok: évszázad-határ",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "évszázad", "feltétel"],
+    "note": "Kézi elfogadás: a validátor hibás, mert a minta.zip kimenete nem a feladat szerinti. A feladat és a példa szerint a háború sorszáma kell (a példában 1), a minta ki1.txt viszont „1696 1736” (a háború két éve), ki2.txt „1601 1750”, ami a be2 3. háborúja, a program ezt a 3. sorszámmal adja. A minta.zip be-fájljai 2014-11-28-iak, a benne lévő feladat.pdf 2015-08-07-i, ezért valószínűleg a régebbi kimeneti formát tükrözi. A bemenet K sort tartalmaz („N sorban” a szövegben elírás). Független ellenőrzés: évenkénti bejárás, 600 véletlen esetben egyezik. Mért idő: kb. 2 ms N=1000, K=2000 esetén, időlimit 0,3 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/21. Háború együttes ideje adott században *",
+    "method": "A háborúkat a megadott századra vágjuk, és a metszetük éveit (végpontokkal) összegezzük.",
+    "category": "Intervallumok: összegzés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["intervallum", "összegzés", "évszázad"],
+    "note": "Az évek összege átfedésnél többször számol, ezért lehet 100-nál több. A példa (8) és a be2 minta (16662) egyezik. A szöveg „N sorban” része K sort jelent. Független ellenőrzés: évenkénti bejárás, 600 véletlen esetben egyezik. Mért idő: kb. 4 ms N=1000, K=2000 esetén, időlimit 0,3 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/22. Háború nélkül *",
+    "method": "Kezdés szerint rendezés, átfedő intervallumok egyesítése, a lefedetlen évek számolása a teljes időszakból.",
+    "category": "Intervallumok: rések keresése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "rendezés", "egyesítés"],
+    "note": "Az első és az utolsó háborús év a legkorábbi kezdés és a legkésőbbi befejezés. A minták (be1: 15, be2: 0) egyeznek. A szöveg „N sorban” része K sort jelent. Független ellenőrzés: évenkénti bejárás, 600 véletlen esetben egyezik. Mért idő: kb. 3 ms N=1000, K=2000 esetén, időlimit 0,1 mp.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Törzsek/23. Háborús évek száma adott században *",
+    "method": "A századra vágott háborús intervallumok egyesítése, az egyesített évek számának összege.",
+    "category": "Intervallumok: évek egyesítése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["intervallum", "egyesítés", "évszázad"],
+    "note": "Kézi elfogadás: a validátor hibás, mert a minta.zip be1 és be2 fájljából hiányzik az utolsó sorban álló évszázad, amelyet a feladat kötelezőnek ír, és a ki1 (93), ki2 (298) a régebbi, teljes időtartamot számoló értelmezést tükrözi (az összevont szakaszok befejezés - kezdés összege: be1 40+53, be2 298). A feladat példája (kimenet 5) szintén évszázad-sor nélkül van. Évszázad nélkül a program 0-t ad. Az évszázadonkénti értékek (be1: XVII. 5, XVIII. 85, XIX. 5) független, évenkénti bejárással ellenőrizve, 600 véletlen esetben egyezik. Mért idő: kb. 3 ms N=1000, K=2000 esetén, időlimit 0,3 mp.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

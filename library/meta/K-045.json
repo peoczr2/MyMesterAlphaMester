@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/35. Sötétben maradt helyek **",
+    "method": "Lámpánként a négyzet bejelölése logikai rácsban, szélnél levágva; utána a jelöletlen mezők számlálása.",
+    "category": "Megszámolás: rács bejelölése",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "rács", "kétdimenziós tömb"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/36. Szabadnapos tanárok száma **",
+    "method": "Logikai táblázat (nap, tanár) jelöléssel, majd napokra bontott megszámolás.",
+    "category": "Megszámolás: egyedi párok",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["megszámolás", "táblázat", "egyediség"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/37. Számpárok száma *",
+    "method": "Páronkénti ellenőrzés két egymásba ágyazott ciklussal, i<j feltétel mellett.",
+    "category": "Párok számlálása",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "ciklus", "permutáció"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: megszámolás/38. Szélcsendes napok száma *",
+    "method": "Egyetlen végigolvasás, a nulla sebességű napok számlálása.",
+    "category": "Feltételes számlálás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["megszámolás", "feltétel", "beolvasás"],
+    "note": "Szélcsend: pontosan 0 km/óra. A minta igazolja (be2/ki2: S<K vagy S≤K értelmezés 2, illetve 3 napot adna, a helyes 0).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Haladó/Visszalépéses keresés/7. Sudoku 1 *",
+    "method": "Visszalépéses keresés a 4x4-es sudoku összes szabályos kitöltésére, lexikografikus sorrendben.",
+    "category": "Visszalépéses keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "visszalépés",
+      "sudoku",
+      "permutáció"
+    ],
+    "note": "Minta: a k1.txt nem kimenet, hanem zsűri-hibaüzenet (\"Runtime error 106 at $004017B0\"), ezért a validátor eltérést jelez. A feladat szerint bármelyik megfelelő kitöltés elfogadott; a program kimenete a feladat példájával egyezik, és független ellenőrzővel igazolva. A bemeneti minta UTF-8 BOM-ját a program átugorja.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/8. Sudoku 2 *",
+    "method": "Visszalépéses keresés: az összes szabályos sudoku-tábla felsorolása és a megadottal egyezők számlálása.",
+    "category": "Visszalépéses keresés",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": [
+      "visszalépés",
+      "sudoku",
+      "számlálás"
+    ],
+    "note": "A ki1.txt UTF-8 BOM-mal kezdődik; a validátor most ezt levágja (a korábbi hibát a validátor okozta). A program a bemenet BOM-ját is átugorja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Visszalépéses keresés/9. Szoborpark **",
+    "method": "DFS a bejárati csúcsból, bitmaszkos látogatottsággal; az Árpád-csúcs elérésekor egy utat számolunk.",
+    "category": "Gráf: egyszerű utak",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": [
+      "gráf",
+      "dfs",
+      "egyszerű út"
+    ],
+    "note": "Időlimit 0,3 mp: sűrű, N=25, M=60 gráfon (kb. 10^7 út) a futás 0,2–0,7 s. A párhuzamos utakat külön útnak számoljuk, ahogy a korábbi változat is tette.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

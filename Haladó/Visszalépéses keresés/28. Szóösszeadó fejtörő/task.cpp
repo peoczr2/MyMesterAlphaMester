@@ -1,9 +1,14 @@
 /*
-Hungarian megoldás: a klasszikus SEND + MORE = MONEY fejtörőt brute force
-keressük meg a 10 számjegy permutációi között.
-
-Hint 1: || Csak nyolc betű szerepel, ezért a hozzárendelés bruttó kipróbálható. ||
-Hint 2: || A helyes megoldásra az összeadás ellenőrzése azonnal választ ad. ||
+Megoldás lényege: a klasszikus SEND + MORE = MONEY fejtörőt nyers erővel oldjuk meg: a 0..9
+számjegyek összes sorrendjét (permutációját) végigpróbáljuk, és azt a
+hozzárendelést keressük, ahol a SEND és a MORE összege pontosan a MONEY.
+A kezdőjegyek (S és M) nem lehetnek nullák. A talált hozzárendelést
+S, E, N, D, M, O, R, Y sorrendben írjuk ki. Mivel 10! kb. 3,6 millió sorrend,
+az időigény ilyen kicsi feladatnál bőven belefér az időlimitbe.
+*/
+/*
+Hint 1: || Csak nyolc különböző betű szerepel, ezért a 0..9 számjegyek összes kiosztása végigpróbálható. ||
+Hint 2: || Egy kiosztás akkor jó, ha a SEND és a MORE számokból képzett összeg pontosan a MONEY szám. ||
 */
 
 #include <bits/stdc++.h>

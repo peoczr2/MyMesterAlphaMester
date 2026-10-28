@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Középhaladó/Árvíz/17. Egymáshoz legközelebbi harmadfokú folyószakaszok ***",
+    "method": "Azonos szintű szakaszok bejárása, legkisebb távolság keresése a szomszédos szakaszok között.",
+    "category": "Minimumkeresés",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "szakasz", "minimum"],
+    "note": "K=1 esetén a 3. sor a szöveg szerint 0; ilyen minta nincs. N=10 000 esetén kb. 5 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/18. Elsőfokú készültségű árvizek együttes hossza ***",
+    "method": "Egy balról jobbra haladó bejárás az árvizeket, közben jelzi, van-e másod- vagy harmadfokú mérés.",
+    "category": "Szakaszok összegzése",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "szakasz", "összegzés"],
+    "note": "Az árvizet a legalább elsőfokú folyamatos sorozat adja (nem az azonos szintű sorozat); a minta ezt igazolja. N=10 000 esetén kb. 5 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/19. Elsőfokú készültségű folyószakaszok csúcsmagasságainak helyei és értékei ***",
+    "method": "Azonos szintű sorozatok bejárása, és az 1. szintű szakaszokban a legnagyobb érték első helye.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 3,
+    "goal": "Bevezetés",
+    "tags": ["tömb", "maximum", "szakasz"],
+    "note": "A folyószakasz az azonos szintű mérések maximális sorozata, nem a legalább elsőfokú árvíz; a minta ezt igazolja. N=10 000 esetén kb. 5 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Középhaladó/Árvíz/2. A csúcsmagasságát leglassabban elérő árvíz ***",
+    "method": "Árvizek kigyűjtése egy bejárással, majd a csúcs és a kezdet távolságának maximuma.",
+    "category": "Maximumkiválasztás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": ["tömb", "maximum", "szakasz"],
+    "note": "N=10 000 esetén kb. 5 ms (időlimit 0,1 mp).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

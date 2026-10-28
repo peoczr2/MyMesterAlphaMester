@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/67. Teljes sorozatok a lottón **",
+    "method": "Mohó egyszeri bejárás, a különböző számok számlálása sorozatonként",
+    "category": "Mohó szakaszszámlálás",
+    "difficulty": 2,
+    "goal": "Bevezetés",
+    "tags": ["mohó", "tömb", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/68. Új őrség küldése a Kínai Nagy Falra *",
+    "method": "Őrség nélküli szakaszok, szakaszonként floor(L/2) új őrség",
+    "category": "Szakaszok lefedése",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["szakasz", "lefedés", "számlálás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/69. Vitorlás bajnokság végeredménye ****",
+    "method": "Versenyzőnként pontok gyűjtése, legjobb L pont összege, többkulcsos rendezés",
+    "category": "Rendezés, rangsor",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": ["rendezés", "összegzés", "rangsor"],
+    "note": "A be2 mintában egy sorban ismétlődő versenyző van; a minta szerint minden előfordulás külön pontot ér, a megoldás ezt követi. Azonos összpontszámnál a helyezés-számlálók döntenek, nem a sorszám (a minta így várja).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: összeépítése/7. Elég résztvevő a kihívás napján *",
+    "method": "Futó összeg bejárás, az első küszöbátlépés sorszámának kiírása",
+    "category": "Prefixösszeg",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["összegzés", "prefixösszeg", "beolvasás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

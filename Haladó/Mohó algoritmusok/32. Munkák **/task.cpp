@@ -1,9 +1,11 @@
 /*
-Feladat: Minden munkát el kell végezni, és a cél a legnagyobb késés minimalizálása.
-Ötlet: A határidők szerint növekvő sorrendben végrehajtott ütemezés minimális maximum késést ad. Ez az EDD szabály.
-Hint 1: || Ha egy munka késik, az csak a korábban elhelyezett munkák miatt történhet. ||
-Hint 2: || A határidők szerinti sorrend a maximum lateness klasszikus optimális sorrendje. ||
-Hint 3: || Elég a kumulált időt és az aktuális határidőt összevetni. ||
+Megoldás lényege:
+A munkákat a határidők szerinti növekvő sorrendben (EDD-szabály) végezzük el, mert ez minimalizálja a legnagyobb késést. Két szomszédos munka cseréjénél látszik, hogy a korábbi határidejű munka előre hozása nem növeli a késések maximumát, így a határidő szerinti sorrend optimális. Egy munka befejezési ideje az addig elvégzett munkák idejének összege, a késése pedig ez mínusz a határidő. A válasz a késések maximuma, de ha minden munka a határidő előtt készül el, a válasz 0, mert a késés nem negatív időtartam. A rendezés miatt az időigény O(N log N).
+*/
+/*
+Hint 1: || Két szomszédos munka sorrendjét cseréld meg úgy, hogy a korábbi határidejű munka kerüljön előre, és figyeld meg, mi történik a késésekkel. ||
+Hint 2: || Minden munka befejezési ideje az addig elvégzett munkák idejének összege; ebből kell kivonni a munka határidejét. ||
+Hint 3: || Rendezd a munkákat határidő szerint, végigmenve add össze az időket, és tartsd nyilván a késések maximumát. ||
 */
 
 #include <bits/stdc++.h>

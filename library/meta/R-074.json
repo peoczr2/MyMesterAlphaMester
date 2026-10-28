@@ -1,0 +1,74 @@
+[
+  {
+    "path": "Haladó/Számelméleti algoritmusok/53. Sokszögszámok",
+    "method": "Zárt képlet ((N-2)i² - (N-4)i)/2, a végén modulo 1 000 000.",
+    "category": "Számelmélet: zárt képlet",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számelmélet", "képlet", "maradékos osztás"],
+    "note": "A feladat.pdf 6 6 → 81 és 10 10 → 325 példája nem egyezik a képlettel (a minta.zip és a 10 30 → 1270 példa igen); a megoldás a mintát követi.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/54. Terem",
+    "method": "Mohó lefedés az euklideszi algoritmus hányadosainak összege; egyforma lapok mérete a két oldal gcd-je.",
+    "category": "Számelmélet: euklideszi algoritmus",
+    "difficulty": 1,
+    "goal": "Magyarázat",
+    "tags": ["számelmélet", "euklideszi algoritmus", "mohó"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/55. Középpontos sokszögszámok",
+    "method": "Zárt képlet 1 + N*i*(i-1)/2, a túlcsordulás elkerülésére a szorzás előtt modulo.",
+    "category": "Számelmélet: zárt képlet",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["számelmélet", "képlet", "túlcsordulás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/56. K-osztható párok",
+    "method": "Maradékosztályok darabszámából: r és K-r párosítása, a 0-s és K/2-es osztályon belül n(n-1)/2.",
+    "category": "Maradékosztályok, párosítás",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["maradékosztály", "párosítás", "kombinatorika"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/57. Térfogat",
+    "method": "Osztóhármasok felsorolása a ≤ b ≤ c feltétellel, a legkisebb különbségű hármas kiválasztása.",
+    "category": "Számelmélet: osztók",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["számelmélet", "osztó", "felsorolás"],
+    "note": "Azonos különbségű hármasok is létezhetnek (N=360: 9 8 5 és 10 6 6); a szöveg nem dönti el, melyik kell, a megoldás a legkisebb oldalú hármast írja.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Számelméleti algoritmusok/58. Számjegy keverés",
+    "method": "Lépésszám = számjegyösszeg + 9 · kölcsönzött nullák száma, amit zárt képlettel számolunk.",
+    "category": "Mohó stratégia, számjegyek",
+    "difficulty": 3,
+    "goal": "Mélyebb megértés",
+    "tags": ["mohó", "számjegyek", "kölcsönzés"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

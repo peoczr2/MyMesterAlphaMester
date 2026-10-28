@@ -1,0 +1,98 @@
+[
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/84. Művelatek sorozattal",
+    "method": "Implicit treap részfa-méretekkel: beszúrás, törlés, módosítás és k-adik elem pozíció szerint.",
+    "category": "Fa: implicit treap",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "treap",
+      "sorozat",
+      "pozíció"
+    ],
+    "note": "Speciális (grader-alapú): a minta sorozat.cpp a grader. A validátor nem tudja futtatni (nincs main, a sorozat.h hiányzik a munkamappából). Kézi ellenőrzés: a grader n=100000 műveletre Helyes kimenetet ad; saját véletlen teszt (referencia tömbbel, 5×20000 művelet) minden Kadik és Elemszam értéket igazolt. Futásidő kb. 0,01 s.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/85. Intervallumok",
+    "method": "Treap részfa-maximum jobb véggel, metsző intervallum keresése a bal és jobb részfa irányított bejárásával.",
+    "category": "Intervallumfa, metszés",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "intervallum",
+      "treap",
+      "keresés"
+    ],
+    "note": "Speciális (grader-alapú): a minta interval.cpp nem ellenőriz (x, y nincs inicializálva), a validátor nem tudja futtatni. A korábbi beszúrás hibás volt (véletlen teszten összeomlott), ezért split-alapúra cseréltük. Kézi ellenőrzés: brute-force teszt halmaz-referenciával (duplikált Bovit-tal is) hibátlan; MetszKeres minden esetben metsző intervallumot vagy 0 0-t ad. Futásidő kb. 0,013 s 100000 művelettel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/86. Pont a legtöbb intervallumban",
+    "method": "Eseményprefixösszegek maximuma treap-ban, a maximum helyének és értékének karbantartásával.",
+    "category": "Prefixösszeg, maximum",
+    "difficulty": 4,
+    "goal": "Mélyebb megértés",
+    "tags": [
+      "prefixösszeg",
+      "treap",
+      "intervallum"
+    ],
+    "note": "Speciális (grader-alapú): a minta maxipont.cpp valódi ellenőrző, de a validátor nem tudja futtatni (nincs main, a maxipont.h hiányzik a munkamappából). A grader n=1000, 10000 és 30000 műveletre Helyes kimenetet ad. A grader nem hívja a Torol-t, ezért külön brute-force teszt (6 futás, Bovit/Torol/MaxiPont/MaxiHany) igazolta. Futásidő kb. 0,02 s 100000 művelettel.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/87. Génsebész",
+    "method": "Implicit treap A/C/G/T darabszámokkal: beszúrás, törlés, csere és részszámlálás split/merge-dzsel.",
+    "category": "Sztring: implicit treap",
+    "difficulty": 4,
+    "goal": "Magyarázat",
+    "tags": [
+      "treap",
+      "sztring",
+      "számlálás"
+    ],
+    "note": "Speciális (grader-alapú): a minta grader.cpp ellenőrzi a műveleteket; in.1 és in.2 futtatva mindkettő a végső '1' kimenetet adja. A validátor nem tudja futtatni (nincs main, a grader.h hiányzik a munkamappából, az out.* fájlok üresek). Kézi ellenőrzés: referenciával végzett véletlen tesztek (3×3000 és 100000 művelet) hibátlanok; 100000 hosszú sorozattal 100000 művelet 0,13 s (Időlimit 0,2 s).",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/9. DNS kezdőszeletek ***",
+    "method": "Trie-ba építjük a szekvenciákat; minden szekvencia útján összeadjuk a bemeneti végpontok számát.",
+    "category": "Trie, kezdőszelet",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "trie",
+      "karakterlánc",
+      "kezdőszelet"
+    ],
+    "note": "Döntetlen: a példa kimenete (8) és a minta.zip be1 szerint a nagyobb sorszámú szekvencia a válasz. A feladatszöveg 'lexikografikus legelső' kitétele ezzel nem egyezik, a példát követtük. A minta be1/be2 'S' karaktert tartalmaz az ACGT helyett, ezért a trie a karaktereket változatlanul kezeli. Validátor: 2/2. Véletlen brute-force teszt (500 eset) hibátlan; be2 futásideje 0,12 s. A 32 MiB memórialimit nem ellenőrzött.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Haladó/Rekurzív adatszerkezetek/91. Csoportbontás",
+    "method": "Levélszámok a részfákban; törléskor a gyerek-részfák és a felső komponens levélszámaiból a minimum.",
+    "category": "Fa: levélszámlálás",
+    "difficulty": 3,
+    "goal": "Magyarázat",
+    "tags": [
+      "fa",
+      "levél",
+      "komponens"
+    ],
+    "note": "Több helyes kimenet van ('bármelyik kiírható'; a példában a 2 és a 4 elhagyása is megoldás), a program a minta.zip be2 esetén 2 1-et ad a kimenet 3 1 helyett. Ellenőrző: library/.work/R-051/91/check91.py (brute-force optimum és komponens-érvényesség); mindkét minta és 400 véletlen fa igazolva. A gyökér eltávolításának ágát a korábbi kód rosszul számolta (0 kezdőérték), ez javítva.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]

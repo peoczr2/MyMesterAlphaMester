@@ -13,7 +13,11 @@ akkor a <= X értékű pozíciók közül a legkevesebb indexet egy klasszikus g
 intervallumfedéssel választjuk: mindig az aktuálisan még fedetlen ablakban a lehető
 legjobbra eső megengedett pozíciót vesszük.
 */
-
+/*
+Hint 1: || A második feltétel miatt először a kiválasztott maximumot kell minimalizálni. Keresd meg a legkisebb X értéket, amelynél minden M hosszú ablakban van X-nél nem nagyobb elem: ez a csúszóablak-minimumok maximuma. ||
+Hint 2: || Az X-nél nem nagyobb értékű pozíciók közül a fedéshez legkevesebb pozíciót kell választani. Ehhez intervallumfedés kell: mindig az első még fedetlen ablakban a lehető legjobbra eső megengedett pozíciót vedd. ||
+Hint 3: || A csúszóablak-minimum egy monoton deque-kel számolható O(N) időben, a greedy fedés pedig a megengedett pozíciók sorfolytonos bejárásával, egy mutatóval szintén O(N) időben megoldható. ||
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

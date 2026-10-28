@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Kezdő/Programozási tételek: kiválasztás/1. Titkosítás *",
+    "method": "Minden karakter táblázatbeli helyének (sor, oszlop) kiírása, a szóköz a (c, i) cellába esik.",
+    "category": "Táblázatos kódolás",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["táblázat", "karakter", "kódolás"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválasztás/2. Vakáció *",
+    "method": "Egyetlen bejárás: az első legalább 7 hosszú egyesekből álló sorozat kezdőnapjának kiírása.",
+    "category": "Lineáris keresés: sorozat",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sorozat", "számláló", "feltétel"],
+    "note": "",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválasztás/3. Utolsó tankolás **",
+    "method": "Prefixösszeg: az első kút, ahol a kezdeti és tankolt benzin elég a célig.",
+    "category": "Prefixösszeg, feltétel",
+    "difficulty": 2,
+    "goal": "Magyarázat",
+    "tags": ["prefixösszeg", "feltétel", "tankolás"],
+    "note": "A minta.zip be2.txt 16. sora („1500 151600 11”) két kút adatának összeolvadása („1500 15” és „1600 11”, sorvég nélkül); a 151600 tankolt mennyiségként nem lehet (feladat szerint legfeljebb 100). A ki2 (15) ebből a hibás olvasatból adódik. A javított fájlon a helyes eredmény 936, ezt a független útszimulációval (library/.work/K-027/3/check/brute.py) és a megoldás futtatásával is igazoltuk.",
+    "minta": "kézi",
+    "blocked": false,
+    "solved_by": "haiku"
+  },
+  {
+    "path": "Kezdő/Programozási tételek: kiválasztás/4. Morze (60)",
+    "method": "Öt jeles darabokra bontás és leképezés a 0–9 kódtáblázatra.",
+    "category": "Karakterkódolás, sztring",
+    "difficulty": 1,
+    "goal": "Bevezetés",
+    "tags": ["sztring", "leképezés", "kódtábla"],
+    "note": "Vezető nullát a minták nem tartalmaznak, ezért a döntést a feladatszövegből hozzuk: a számjegysort változatlanul írjuk ki, így például „-----.....” eredménye „05”. Ha a feladat a számot szám-típusként kezeli, a vezető nullákat le kell vágni.",
+    "minta": "",
+    "blocked": false,
+    "solved_by": "haiku"
+  }
+]
